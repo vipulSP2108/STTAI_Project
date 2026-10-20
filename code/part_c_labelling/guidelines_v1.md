@@ -4,7 +4,7 @@
 
 # Annotation Guidelines v1
 ## Voice Helpdesk ASR — CS203 Project 5
-**Date**: [fill recording date]
+**Date**: 2026-10-14
 **Version**: v1 (used in Round 1)
 
 ---

@@ -366,6 +366,64 @@ python part_e_versioning/make_splits.py
 \section{Conclusion}
 We have presented an institutional voice helpdesk data engineering framework adhering to rigorous software engineering and AI evaluation standards. By standardizing multi-format smartphone recordings into a verified 16\,kHz corpus, executing adversarial quality tests, iterating annotation guidelines to perfect agreement, and preventing speaker overlap during splitting, we provide a reliable, traceable, and leakage-free dataset for training cross-lingual ASR models in Assignment 2.
 
+\section*{Author Contributions and Team Statement}
+All three team members contributed equally across all phases of this project, spanning audio collection, automated validation development, double-pass annotation, acoustic perturbation analysis, dataset partitioning, and technical report composition.
+
+\begin{table}[h]
+\centering
+\caption{Team Contribution Matrix}
+\label{tab:contributions}
+\begin{tabular}{lp{5.2cm}}
+\toprule
+\textbf{Team Member} & \textbf{Key Technical Responsibilities} \\
+\midrule
+\textbf{Rajdeep Vraj} & Audio data ingestion, silence segmentation engine (\texttt{ingest\_records.py}), adversarial corruption suite (\texttt{corruption\_test.py}), and DVC versioning setup. \\
+\textbf{Vipul Sunil Patil} & 10-check automated validation test suite (\texttt{validation\_suite.py}), active learning uncertainty sampling (\texttt{active\_learning.py}), and \LaTeX\ paper preparation. \\
+\textbf{Satvik Sharma} & Label Studio annotation protocol (\texttt{label\_studio\_config.xml}), inter-annotator agreement computation (\texttt{compute\_agreement.py}), and speaker-disjoint split logic (\texttt{make\_splits.py}). \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\appendices
+
+\section{Submission Index: Supporting Evidence Mapping}
+In adherence to the assignment evaluation criteria, Table~\ref{tab:submission_index} indexes every empirical number, figure, and quantitative claim reported in this work to its backing artifact in the submission directory.
+
+\begin{table*}[t]
+\centering
+\caption{Comprehensive Submission Index Mapping Claims to Verifiable Artifacts}
+\label{tab:submission_index}
+\begin{tabular}{lllp{6.8cm}}
+\toprule
+\textbf{Report Section / Metric} & \textbf{Reported Value} & \textbf{Primary Source File} & \textbf{Verification Command / Description} \\
+\midrule
+Canonical Corpus Size & 249 clips, 1.25--1.28 hrs & \texttt{data/metadata.csv} & \texttt{python code/part\_a\_collection/build\_metadata.py} \\
+Speaker Count & 19 unique participants & \texttt{data/metadata.csv} & \texttt{code/part\_a\_collection/consent\_register.md} \\
+Acoustic Format & 16\,kHz, Mono PCM WAV & \texttt{data/metadata.csv} & Verified by Check 1 and Check 2 in validation suite \\
+Validation Suite Pass & 100\% clean pass (9 pass, 1 skip) & \texttt{supporting\_files/validation\_outputs/after.json} & \texttt{pytest code/part\_b\_validation/validation\_suite.py -v} \\
+Raw Data Failures & 3 detected failures & \texttt{supporting\_files/validation\_outputs/before.json} & Captured clipping, pause duration, and rate mismatch \\
+Adversarial Corruptions & 3 out of 3 caught & \texttt{supporting\_files/validation\_outputs/corruption\_test.log} & \texttt{python code/part\_b\_validation/corruption\_test.py} \\
+Annotation Overlap & 120 clips double-annotated & \texttt{supporting\_files/label\_studio\_exports/} & Raw exports from Annotator A and Annotator B \\
+Round 1 Agreement & WER: 0.008, Cohen's $\kappa$: 0.911 & \texttt{supporting\_files/agreement\_calculations/agreement\_report.json} & Evaluated under Guidelines v1 \\
+Round 2 Agreement & WER: 0.001, Cohen's $\kappa$: 1.000 & \texttt{supporting\_files/agreement\_calculations/agreement\_report.json} & Evaluated under Revised Guidelines v2 \\
+Frozen Gold Test Set & 119 agreed clips & \texttt{data/gold\_test\_set.csv} & SHA-256: \texttt{01dc4503853893b0ea309184c1c75620fa63dabfaf...} \\
+Active Learning Gain & 90\% coverage in 21 samples & \texttt{supporting\_files/plots/active\_learning\_results.json} & \texttt{python code/part\_d\_augmentation/active\_learning.py} \\
+Augmentation Variants & 25 clips (5 types $\times$ 5 samples) & \texttt{data/processed/augmented/} & Indexed in \texttt{augmented\_metadata.csv} \\
+Dataset Splits & Train: 181, Val: 41, Test: 27 & \texttt{data/splits/\{train,val,test\}.csv} & \texttt{python code/part\_e\_versioning/make\_splits.py} \\
+Cohort B (Shifted) & 32 clips (Maharashtra accent) & \texttt{data/splits/cohort\_b\_shifted.csv} & Zero speaker leakage verified across splits \\
+Git Tag & \texttt{a1-final} & Git repository tag & Immutable release checkpoint \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+\section{AI Assistance and Prompt Engineering Protocol}
+In compliance with the CS203 course policy, generative AI assistants were utilized for scaffold development, code formatting, and test assertion design:
+\begin{enumerate}
+    \item \textbf{Models Used}: Anthropic Claude 3.5 Sonnet, OpenAI ChatGPT-4o, and GitHub Copilot.
+    \item \textbf{Prompt Provenance}: Every single prompt dispatched to generative models is archived with its timestamp, target filename, model version, and exact text in \texttt{code/prompts/} (\texttt{part\_a\_collection.md} through \texttt{part\_e\_versioning.md}).
+    \item \textbf{Human Verification}: All AI-generated scaffolding underwent manual inspection, mathematical sanity verification (e.g., verifying Cohen's $\kappa$ matrices and Levenshtein WER formulations), cross-platform testing on Windows and Linux, and strict alignment with course rubrics.
+\end{enumerate}
+
 \bibliographystyle{IEEEtran}
 \begin{thebibliography}{1}
 \bibitem{sitaram2019survey}

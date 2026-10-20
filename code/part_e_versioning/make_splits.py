@@ -113,7 +113,7 @@ def main():
     if not df_b.empty:
         print(f"Shifted : {len(df_b):>4} clips (Cohort B — region={region})")
 
-    print("\nLeakage check: PASSED ✓ (no speaker in multiple splits)")
+    print("\nLeakage check: PASSED [OK] (no speaker in multiple splits)")
     print(f"Splits saved to: {SPLITS_DIR}/")
     print("\nNOTE: Tag repo after this step: git tag a1-final")
 

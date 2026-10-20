@@ -65,12 +65,12 @@ This is enforced in the Label Studio UI (TextArea appears above Choices).
 | Transcript | If WER < 0.2: keep A1's version; else: discuss and reach consensus |
 | Intent | Majority vote; ties broken by third team member |
 
-Final adjudicator for ties: [name of third team member]
+Final adjudicator for ties: Satvik Sharma (Third Team Member)
 
 ---
 
 ## Timeline
 | Date | Round | Annotators | Clips | Guidelines | Label Studio Export Files |
 |------|-------|-----------|-------|-----------|--------------------------|
-| YYYY-MM-DD | Round 1 | A1, A2 | CL001–CL100 | v1 | exports/round1_annotator_a.json, round1_annotator_b.json |
-| YYYY-MM-DD | Round 2 | A1, A2 | CL001–CL060 | v2 | exports/round2_annotator_a.json, round2_annotator_b.json |
+| 2026-10-14 | Round 1 | A1, A2 | 120 clips | v1 | `supporting_files/label_studio_exports/round1_annotator_a.json`, `round1_annotator_b.json` |
+| 2026-10-17 | Round 2 | A1, A2 | 120 clips | v2 | `supporting_files/label_studio_exports/round2_annotator_a.json`, `round2_annotator_b.json` |

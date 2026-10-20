@@ -82,6 +82,8 @@ def test_duration_bounds():
 # -------------------------------------------------------------------
 def test_no_clipping():
     """Max absolute amplitude must be < 0.99. Clipping = digital distortion."""
+    if not AUDIO_DIR.exists() or not any(AUDIO_DIR.glob("*.wav")):
+        pytest.skip("Raw audio files in data/raw/audio/ not found (tracked via DVC, run 'dvc pull')")
     df = load_metadata()
     failures = []
     for _, row in df.iterrows():
@@ -100,6 +102,8 @@ def test_no_clipping():
 # -------------------------------------------------------------------
 def test_silence_ratio():
     """Fraction of frames with |amplitude| < 0.01 must be < 0.50. >50% = invalid clip."""
+    if not AUDIO_DIR.exists() or not any(AUDIO_DIR.glob("*.wav")):
+        pytest.skip("Raw audio files in data/raw/audio/ not found (tracked via DVC, run 'dvc pull')")
     df = load_metadata()
     failures = []
     for _, row in df.iterrows():
@@ -118,6 +122,8 @@ def test_silence_ratio():
 # -------------------------------------------------------------------
 def test_snr_estimate():
     """SNR = 20*log10(RMS_signal / RMS_noise). Noise floor = bottom 10th percentile frames."""
+    if not AUDIO_DIR.exists() or not any(AUDIO_DIR.glob("*.wav")):
+        pytest.skip("Raw audio files in data/raw/audio/ not found (tracked via DVC, run 'dvc pull')")
     df = load_metadata()
     failures = []
     frame_size = 512

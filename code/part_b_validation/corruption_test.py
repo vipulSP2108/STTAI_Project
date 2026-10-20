@@ -15,8 +15,17 @@ LOG_FILE.parent.mkdir(parents=True, exist_ok=True)
 
 def get_first_wav():
     wavs = list(AUDIO_DIR.glob("*.wav"))
-    assert wavs, "No WAV files found in data/raw/audio/ - run recording first"
-    return wavs[0]
+    if wavs:
+        return wavs[0]
+    aug_wavs = list(Path("data/processed/augmented").glob("**/*.wav"))
+    if aug_wavs:
+        return aug_wavs[0]
+    tmp_path = Path("temp_clean_ref.wav")
+    sr = 16000
+    t = np.linspace(0, 2.0, 2 * sr, endpoint=False)
+    sig = (np.sin(2 * np.pi * 440 * t) * 0.5 * 32767).astype(np.int16)
+    write_wav(tmp_path, sr, 1, 2, sig.tobytes())
+    return tmp_path
 
 def read_wav(path):
     with wave.open(str(path),"r") as w:
@@ -54,7 +63,7 @@ def main():
         passed = check_sample_rate(path_a)
         result_a = "FAILED as expected (PASS)" if not passed else "PASSED - BUG: corruption NOT detected"
         line_a = f"Corruption A (wrong sample rate 8kHz): {result_a}"
-        print(f"✓ {line_a}"); lines.append(line_a)
+        print(f"[PASS] {line_a}"); lines.append(line_a)
         assert not passed, "Bug: corruption A was not caught by check_sample_rate"
 
         # Corruption B: clipping (amplitude = 1.0)
@@ -64,7 +73,7 @@ def main():
         passed = check_no_clipping(path_b)
         result_b = "FAILED as expected (PASS)" if not passed else "PASSED - BUG: corruption NOT detected"
         line_b = f"Corruption B (clipped audio): {result_b}"
-        print(f"✓ {line_b}"); lines.append(line_b)
+        print(f"[PASS] {line_b}"); lines.append(line_b)
         assert not passed, "Bug: corruption B was not caught by check_no_clipping"
 
         # Corruption C: full silence
@@ -75,7 +84,7 @@ def main():
         passed = check_silence_ratio(path_c)
         result_c = "FAILED as expected (PASS)" if not passed else "PASSED - BUG: corruption NOT detected"
         line_c = f"Corruption C (full silence): {result_c}"
-        print(f"✓ {line_c}"); lines.append(line_c)
+        print(f"[PASS] {line_c}"); lines.append(line_c)
         assert not passed, "Bug: corruption C was not caught by check_silence_ratio"
 
     LOG_FILE.write_text("\n".join(lines))

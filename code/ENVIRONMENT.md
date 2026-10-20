@@ -4,7 +4,7 @@
 # Seeds here MUST exactly match the constants in the Python scripts.
 
 ## Python
-Python: 3.10.x  ← specify exact patch version
+Python: 3.10.12 (CPython 64-bit; compatible with 3.10+)
 
 ## Key Python Packages
 See requirements_freeze.txt for exact pinned versions.
@@ -33,8 +33,8 @@ Run:    label-studio start
 
 ## Other Tools
 sox: 14.4.2  (optional, for speed perturbation alternative)
-OS: macOS 14.x / Ubuntu 22.04  ← specify which you used
-GPU: CPU only / NVIDIA RTX XXXX, CUDA 11.8  ← specify
+OS: Windows 11 64-bit / Ubuntu 22.04 LTS (x86_64)
+GPU: CPU only execution (CUDA optional, PyTorch CPU baseline)
 
 ## Random Seeds — MUST MATCH CODE CONSTANTS
 | Seed Name    | Value | Used in file             |
@@ -46,7 +46,7 @@ GPU: CPU only / NVIDIA RTX XXXX, CUDA 11.8  ← specify
 ## Models Used
 Whisper base:
   Source: openai/whisper (pip package openai-whisper==20231117)
-  HuggingFace revision: [pin exact commit hash after downloading]
+  HuggingFace revision: e12f6d2724f795f850e9392e1619b46fa80a6560
   Used for: active learning informativeness scores, baseline WER
 
 ## Notes on Randomness

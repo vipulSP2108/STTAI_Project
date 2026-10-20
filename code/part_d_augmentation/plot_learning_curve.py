@@ -19,14 +19,15 @@ def main():
         results = json.load(f)
 
     budgets    = [r["budget"] for r in results]
-    al_covs    = [r["al_coverage"] for r in results]
-    rand_covs  = [r["random_coverage"] for r in results]
+    al_covs    = [r.get("al_accuracy_mean", r.get("al_coverage", 0)) for r in results]
+    rand_covs  = [r.get("random_accuracy_mean", r.get("random_coverage", 0)) for r in results]
+    y_label    = "Intent Accuracy / Coverage" if "al_accuracy_mean" in results[0] else "Intent Class Coverage (fraction of 4 classes)"
 
     fig, ax = plt.subplots(figsize=(8, 5))
     ax.plot(budgets, al_covs,   "b-o", linewidth=2, markersize=8, label="Active Learning (Whisper confidence)")
     ax.plot(budgets, rand_covs, "r--s",linewidth=2, markersize=8, label="Random Selection")
     ax.set_xlabel("Labelling Budget (# clips)", fontsize=13)
-    ax.set_ylabel("Intent Class Coverage (fraction of 4 classes)", fontsize=13)
+    ax.set_ylabel(y_label, fontsize=13)
     ax.set_title("Active Learning vs Random Selection\nLabel Efficiency Curve — CS203 Project 5", fontsize=14)
     ax.set_xticks(budgets)
     ax.set_ylim(0, 1.1)
