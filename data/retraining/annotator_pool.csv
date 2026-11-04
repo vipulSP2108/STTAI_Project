@@ -1,17 +1,17 @@
-clip_id,speaker_id,region,split
-P4_temp_P4_PTT-20261018-WA0019_seg001,P4,Maharashtra,shifted
-P4_temp_P4_PTT-20261018-WA0003_seg003,P4,Maharashtra,shifted
-P4_temp_P4_PTT-20261018-WA0017_seg003,P4,Maharashtra,shifted
-P4_temp_P4_PTT-20261018-WA0003_seg005,P4,Maharashtra,shifted
-P13_temp_P13_WhatsApp_Audio_2026-10-19_at_2_53_56_PM__1__seg009,P13,Maharashtra,shifted
-P13_temp_P13_WhatsApp_Audio_2026-10-19_at_2_53_56_PM__1__seg010,P13,Maharashtra,shifted
-P4_temp_P4_PTT-20261018-WA0019_seg002,P4,Maharashtra,shifted
-P4_temp_P4_PTT-20261018-WA0018_seg001,P4,Maharashtra,shifted
-P13_temp_P13_WhatsApp_Audio_2026-10-19_at_2_53_56_PM__1__seg013,P13,Maharashtra,shifted
-P13_temp_P13_WhatsApp_Audio_2026-10-19_at_2_53_56_PM__1__seg001,P13,Maharashtra,shifted
-P13_temp_P13_WhatsApp_Audio_2026-10-19_at_2_53_56_PM__1__seg005,P13,Maharashtra,shifted
-P4_temp_P4_PTT-20261018-WA0003_seg004,P4,Maharashtra,shifted
-P13_temp_P13_WhatsApp_Audio_2026-10-19_at_2_53_56_PM__1__seg006,P13,Maharashtra,shifted
-P4_temp_P4_PTT-20261018-WA0003_seg001,P4,Maharashtra,shifted
-P13_temp_P13_WhatsApp_Audio_2026-10-19_at_2_53_56_PM__1__seg012,P13,Maharashtra,shifted
-P4_temp_P4_PTT-20261018-WA0017_seg002,P4,Maharashtra,shifted
+clip_id,speaker_id,region,split,transcript,intent,entropy
+P4_temp_P4_PTT-20261018-WA0011_seg001,P4,Maharashtra,shifted,Hostel Aravalli block room 430 maate mess rebate refund complaint 1819 lodge karvani che. Caretaker no contact number aapi shakso? Jaldi thi status confirm karva namra vinanti.,hostel_mess,1.3850497
+P4_temp_P4_PTT-20261018-WA0018_seg002,P4,Maharashtra,shifted,"Hello hostel support desk, in hostel Aravalli room 154, we have an issue with duplicate cupboard key. Tracking ticket 1877 has been logged. Please confirm the updated protocol promptly.",hostel_mess,1.3844602
+P4_temp_P4_PTT-20261018-WA0011_seg004,P4,Maharashtra,shifted,"Namaskar, MA Society and Culture maate inquiry 1841 dwara counselling document checklist babat mahiti joiye che. Portal par verification status kyare update thase te janavso? Jaldi thi status confirm karva namra vinanti.",admissions,1.3844602
+P13_temp_P13_WhatsApp_Audio_2026-10-19_at_2_53_56_PM__1__seg008,P13,Maharashtra,shifted,Hostel Aravalli block room 254 maate duplicate cupboard key complaint 1297 lodge karvani che. Caretaker no contact number aapi shakso? Jaldi thi status confirm karva namra vinanti.,hostel_mess,1.3844602
+P4_temp_P4_PTT-20261018-WA0018_seg003,P4,Maharashtra,shifted,IT helpdesk vinti che ke HPC Data Centre ma MFA authentication reset solve karva maate ticket 1884 update karo. Network status verify karva vinanti che. Jaldi thi status confirm karva namra vinanti.,it_support,1.3844602
+P4_temp_P4_PTT-20261018-WA0011_seg003,P4,Maharashtra,shifted,"Hello student services desk, regarding application reference 1833 for medical claim reimbursement, I would like to check the processing timeline. Please confirm the updated protocol promptly.",student_services,1.3844602
+P4_temp_P4_PTT-20261018-WA0017_seg003,P4,Maharashtra,shifted,Academic section ma application 1862 dwara badminton court timing process karva apyu hatu. Status online portal par kyare dikhase janavso?,student_services,1.3844602
+P4_temp_P4_PTT-20261018-WA0019_seg002,P4,Maharashtra,shifted,Hostel Kaveri block room 206 maate vacation mess registration complaint 1906 lodge karvani che. Caretaker no contact number aapi shakso? Jaldi thi status confirm karva namra vinanti.,hostel_mess,1.3689777
+P13_temp_P13_WhatsApp_Audio_2026-10-19_at_2_53_56_PM__1__seg007,P13,Maharashtra,shifted,"Hello admission office, regarding ticket 1290 for MTech Earth Sciences, I need clarification on branch change CPI cutoff. Please confirm the current status and deadline. Please confirm the updated protocol promptly.",admissions,1.355626
+P13_temp_P13_WhatsApp_Audio_2026-10-19_at_2_53_56_PM__1__seg005,P13,Maharashtra,shifted,IT helpdesk vinti che ke Physics Lab AB3 ma network printer queue jam solve karva maate ticket 1275 update karo. Network status verify karva vinanti che.,it_support,1.3548696
+P13_temp_P13_WhatsApp_Audio_2026-10-19_at_2_53_56_PM__1__seg002,P13,Maharashtra,shifted,Academic section ma application 1253 dwara medical claim reimbursement process karva apyu hatu. Status online portal par kyare dikhase janavso? Jaldi thi status confirm karva namra vinanti.,student_services,1.353504
+P4_temp_P4_PTT-20261018-WA0003_seg004,P4,Maharashtra,shifted,Student affairs office me request 1804 par wellbeing counselling appointment submit kiya tha. Dean Academic sign hone ke baad status kab reflect hoga? Official update jald se jald provide kijiye.,student_services,1.3462979
+P4_temp_P4_PTT-20261018-WA0017_seg001,P4,Maharashtra,shifted,"Hostel Kaveri room 102 me night canteen permission issue face ho raha hai, ref 1848. Caretaker ko maintenance request notify kijiye. Official update jald se jald provide kijiye.",hostel_mess,1.344868
+P13_temp_P13_WhatsApp_Audio_2026-10-19_at_2_53_56_PM__1__seg010,P13,Maharashtra,shifted,"Hello student services desk, regarding application reference 1311 for health centre pharmacy stock, I would like to check the processing timeline. Please confirm the updated protocol promptly.",student_services,1.3418877
+P4_temp_P4_PTT-20261018-WA0003_seg001,P4,Maharashtra,shifted,"Namaste sir, BTech Materials Engineering admissions portal par PMSSS quota seat status details verify karni hain under ref 1783. Kya aap application procedure clarify kar sakte hain?",admissions,1.3397734
+P13_temp_P13_WhatsApp_Audio_2026-10-19_at_2_53_56_PM__1__seg011,P13,Maharashtra,shifted,"Namaskar, BTech Materials Engineering maate inquiry 1319 dwara PMSSS quota seat status babat mahiti joiye che. Portal par verification status kyare update thase te janavso? Jaldi thi status confirm karva namra vinanti.",admissions,1.3319014

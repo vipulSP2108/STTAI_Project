@@ -1,0 +1,49 @@
+{
+  "drift_threshold": 1.31,
+  "first_alert_batch": 5,
+  "entropy_accuracy_correlation": 0.3498,
+  "false_alarm_rate_validation": 0.0,
+  "batch_summaries": [
+    {
+      "batch_id": 1,
+      "description": "100% In-Domain Baseline",
+      "mean_entropy": 1.289,
+      "mean_accuracy": 0.55,
+      "mean_snr_db": 25.3,
+      "drift_alert_triggered": false
+    },
+    {
+      "batch_id": 2,
+      "description": "25% Regional Shift",
+      "mean_entropy": 1.241,
+      "mean_accuracy": 0.3,
+      "mean_snr_db": 26.6,
+      "drift_alert_triggered": false
+    },
+    {
+      "batch_id": 3,
+      "description": "50% Regional Shift (Trigger)",
+      "mean_entropy": 1.268,
+      "mean_accuracy": 0.35,
+      "mean_snr_db": 26.3,
+      "drift_alert_triggered": false
+    },
+    {
+      "batch_id": 4,
+      "description": "75% Regional Shift",
+      "mean_entropy": 1.272,
+      "mean_accuracy": 0.35,
+      "mean_snr_db": 27.0,
+      "drift_alert_triggered": false
+    },
+    {
+      "batch_id": 5,
+      "description": "100% Cohort B (Full Drift)",
+      "mean_entropy": 1.321,
+      "mean_accuracy": 0.35,
+      "mean_snr_db": 27.3,
+      "drift_alert_triggered": true
+    }
+  ],
+  "total_queries_replayed": 100
+}

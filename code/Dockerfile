@@ -29,7 +29,7 @@ WORKDIR /app
 ENV PYTHONUNBUFFERED=1 \
     PYTHONDONTWRITEBYTECODE=1 \
     GIT_COMMIT=a2-final \
-    MODEL_VERSION=production-v1 \
+    MODEL_VERSION=production \
     PORT=8501
 
 # Copy pinned requirements and install
