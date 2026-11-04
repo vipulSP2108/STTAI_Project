@@ -1,7 +1,9 @@
 {
-  "production_alias": "production-v1",
+  "model_name": "voice_helpdesk_intent_router",
+  "production_alias": "production",
+  "production_run_id": "026d315f1ee6482abe83efd39640f7bc",
   "production_run": {
-    "run_id": "ad7509ee49dd45009255bbbdcb73329f",
+    "run_id": "026d315f1ee6482abe83efd39640f7bc",
     "run_num": 6,
     "lr": 0.01,
     "hidden_dim": 64,
@@ -13,9 +15,10 @@
     "latency_ms": 0.01,
     "size_kb": 105.52
   },
-  "staging_alias": "staging-v1",
+  "staging_alias": "staging",
+  "staging_run_id": "f76da8fa4def44d484beec4b89ec9c00",
   "staging_run": {
-    "run_id": "7a9d96f832c3478ba8080ae9d198ea71",
+    "run_id": "f76da8fa4def44d484beec4b89ec9c00",
     "run_num": 2,
     "lr": 0.005,
     "hidden_dim": 32,
@@ -29,7 +32,7 @@
   },
   "all_runs": [
     {
-      "run_id": "29d1dee263364e76baa92bc0fc1af6fa",
+      "run_id": "2bd07497a3314571935b40caf5c0bcfe",
       "run_num": 1,
       "lr": 0.001,
       "hidden_dim": 32,
@@ -38,11 +41,11 @@
       "epochs": 25,
       "val_accuracy": 0.8824,
       "val_macro_f1": 0.8875,
-      "latency_ms": 0.2,
+      "latency_ms": 0.03,
       "size_kb": 52.77
     },
     {
-      "run_id": "7a9d96f832c3478ba8080ae9d198ea71",
+      "run_id": "f76da8fa4def44d484beec4b89ec9c00",
       "run_num": 2,
       "lr": 0.005,
       "hidden_dim": 32,
@@ -55,7 +58,7 @@
       "size_kb": 125.64
     },
     {
-      "run_id": "d700be8b57f4423a8390cf8bbc426ef1",
+      "run_id": "598be1805a344761ad1446601891abdd",
       "run_num": 3,
       "lr": 0.01,
       "hidden_dim": 32,
@@ -64,11 +67,11 @@
       "epochs": 25,
       "val_accuracy": 1.0,
       "val_macro_f1": 1.0,
-      "latency_ms": 0.01,
+      "latency_ms": 0.02,
       "size_kb": 125.64
     },
     {
-      "run_id": "0dc8b7a98fa3427a891ea1ef429c05ee",
+      "run_id": "d953192bbcf843c7990dfc21087d42b0",
       "run_num": 4,
       "lr": 0.001,
       "hidden_dim": 64,
@@ -77,11 +80,11 @@
       "epochs": 30,
       "val_accuracy": 1.0,
       "val_macro_f1": 1.0,
-      "latency_ms": 0.01,
+      "latency_ms": 0.03,
       "size_kb": 251.27
     },
     {
-      "run_id": "95139db677694e80bc7d0bc2cfaf7c73",
+      "run_id": "5b6f608038164f1d9f0047d66fedf6aa",
       "run_num": 5,
       "lr": 0.005,
       "hidden_dim": 64,
@@ -90,11 +93,11 @@
       "epochs": 30,
       "val_accuracy": 1.0,
       "val_macro_f1": 1.0,
-      "latency_ms": 0.01,
+      "latency_ms": 0.02,
       "size_kb": 251.27
     },
     {
-      "run_id": "ad7509ee49dd45009255bbbdcb73329f",
+      "run_id": "026d315f1ee6482abe83efd39640f7bc",
       "run_num": 6,
       "lr": 0.01,
       "hidden_dim": 64,
@@ -107,7 +110,7 @@
       "size_kb": 105.52
     },
     {
-      "run_id": "82ad0299d7e140c4b4a0f757eac08689",
+      "run_id": "e8d6061020634a8dbe8a7b7539a00cb2",
       "run_num": 7,
       "lr": 0.001,
       "hidden_dim": 128,
@@ -116,11 +119,11 @@
       "epochs": 35,
       "val_accuracy": 1.0,
       "val_macro_f1": 1.0,
-      "latency_ms": 0.01,
+      "latency_ms": 0.02,
       "size_kb": 502.52
     },
     {
-      "run_id": "a5daa89e5c8a4cae8d7473bcc7c49d76",
+      "run_id": "abcbb8a7a7c54502a5313b0b589cce7c",
       "run_num": 8,
       "lr": 0.005,
       "hidden_dim": 128,
@@ -129,11 +132,11 @@
       "epochs": 35,
       "val_accuracy": 1.0,
       "val_macro_f1": 1.0,
-      "latency_ms": 0.01,
+      "latency_ms": 0.03,
       "size_kb": 502.52
     },
     {
-      "run_id": "8aa8e5e6c7e74713859ca9cf59e0b355",
+      "run_id": "25f402ccdac94987929c3a74135b291e",
       "run_num": 9,
       "lr": 0.01,
       "hidden_dim": 128,
@@ -146,7 +149,7 @@
       "size_kb": 211.02
     },
     {
-      "run_id": "aed3da4e2739449282afc0ac0307655b",
+      "run_id": "665d604607404065bfa9f593c68a8c15",
       "run_num": 10,
       "lr": 0.002,
       "hidden_dim": 64,
@@ -155,11 +158,11 @@
       "epochs": 30,
       "val_accuracy": 1.0,
       "val_macro_f1": 1.0,
-      "latency_ms": 0.01,
+      "latency_ms": 0.02,
       "size_kb": 251.27
     },
     {
-      "run_id": "e31fd66e81de484b8970a082389f7d65",
+      "run_id": "31a6710f90df40d1ad53255a7beaaa3c",
       "run_num": 11,
       "lr": 0.008,
       "hidden_dim": 64,
@@ -172,7 +175,7 @@
       "size_kb": 251.27
     },
     {
-      "run_id": "fa957efa09344f6586cb27b99c962b21",
+      "run_id": "4a8d805ebf1a40aab9c2075302fd0ad2",
       "run_num": 12,
       "lr": 0.003,
       "hidden_dim": 32,
@@ -185,7 +188,7 @@
       "size_kb": 125.64
     },
     {
-      "run_id": "ec743cd50fd24b709cdc9fe274a9daa7",
+      "run_id": "1b426d573f7a482f884992ff04dfccc4",
       "run_num": 13,
       "lr": 0.007,
       "hidden_dim": 128,
@@ -198,7 +201,7 @@
       "size_kb": 502.52
     },
     {
-      "run_id": "ae726096cc0848b08b1f4b66de0dfaf3",
+      "run_id": "11311ede7df041a0997f821aae94ce41",
       "run_num": 14,
       "lr": 0.004,
       "hidden_dim": 64,
@@ -211,7 +214,7 @@
       "size_kb": 251.27
     },
     {
-      "run_id": "0545fdc700214a199a1c2b568d55470b",
+      "run_id": "bb3171efb6bd429eb22080eec5014964",
       "run_num": 15,
       "lr": 0.006,
       "hidden_dim": 96,

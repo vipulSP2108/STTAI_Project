@@ -4,7 +4,7 @@
 #
 # Implements:
 # 1. Baseline 0 (Trivial): Majority class intent classifier + heuristic text
-# 2. Baseline 1 (Unadapted): Off-the-shelf OpenAI Whisper tiny + TF-IDF classifier
+# 2. Baseline 1 (Unadapted): Off-the-shelf OpenAI Whisper base + TF-IDF classifier
 # 3. Proposed System: End-to-end Whisper ASR with Intent Routing Head
 #
 # Config-driven training with DVC hashes, seeds, and hardware tracking.
@@ -17,7 +17,6 @@ import json
 import os
 import platform
 import time
-import wave
 import numpy as np
 import pandas as pd
 import torch
@@ -39,6 +38,7 @@ TEST_CSV = DATA_DIR / "splits" / "test.csv"
 GOLD_CSV = DATA_DIR / "gold_test_set.csv"
 COHORT_B_CSV = DATA_DIR / "splits" / "cohort_b_shifted.csv"
 AUDIO_DIR = DATA_DIR / "raw" / "audio"
+CACHE_JSON = DATA_DIR / "processed" / "whisper_base_eval_cache.json"
 MODELS_DIR = Path("artefacts/models")
 MODELS_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -49,6 +49,12 @@ INTENT_MAP = {
     "student_services": 3
 }
 REV_INTENT_MAP = {v: k for k, v in INTENT_MAP.items()}
+
+def load_cached_transcripts():
+    if CACHE_JSON.exists():
+        with open(CACHE_JSON, "r") as f:
+            return json.load(f)
+    return {}
 
 # ------------------------------------------------------------
 # Baseline 0: Trivial Majority Class Predictor
@@ -62,15 +68,15 @@ class Baseline0Trivial:
         self.majority_intent = counts.index[0]
         return self
 
-    def predict(self, audio_paths, transcripts=None):
-        n = len(audio_paths)
+    def predict(self, clip_ids):
+        n = len(clip_ids)
         pred_transcripts = ["iit gandhinagar institute helpdesk support query" for _ in range(n)]
         pred_intents = [self.majority_intent for _ in range(n)]
         confidences = [0.25 for _ in range(n)]
         return pred_transcripts, pred_intents, confidences
 
 # ------------------------------------------------------------
-# Baseline 1: Unadapted Whisper Tiny + TF-IDF Text Classifier
+# Baseline 1: Unadapted Whisper Base + TF-IDF Text Classifier
 # ------------------------------------------------------------
 class Baseline1Unadapted:
     def __init__(self):
@@ -87,20 +93,25 @@ class Baseline1Unadapted:
     def load_whisper(self):
         if self.whisper_model is None:
             import whisper
-            self.whisper_model = whisper.load_model("tiny", device="cpu")
+            self.whisper_model = whisper.load_model("base", device="cpu")
         return self.whisper_model
 
-    def predict(self, audio_paths, human_transcripts=None):
-        w = self.load_whisper()
+    def predict(self, clip_ids):
+        cache = load_cached_transcripts()
+        w = None
         pred_transcripts = []
-        confidences = []
 
-        for p in audio_paths:
-            res = w.transcribe(str(p), fp16=False)
-            tx = res["text"].strip().lower()
+        for cid in clip_ids:
+            if cid in cache:
+                tx = cache[cid]["pred_transcript"]
+            else:
+                if w is None:
+                    w = self.load_whisper()
+                p = AUDIO_DIR / f"{cid}.wav"
+                res = w.transcribe(str(p), fp16=False)
+                tx = res["text"].strip().lower()
             pred_transcripts.append(tx if tx else "helpdesk query")
 
-        # Classify from generated ASR transcripts
         X = self.vectorizer.transform(pred_transcripts)
         probs = self.classifier.predict_proba(X)
         pred_intents = [REV_INTENT_MAP[i] for i in np.argmax(probs, axis=1)]
@@ -108,7 +119,7 @@ class Baseline1Unadapted:
         return pred_transcripts, pred_intents, confs
 
 # ------------------------------------------------------------
-# Proposed System: Adapted Whisper Backbone + Joint Intent Routing
+# Proposed System: Adapted Whisper Base + Joint Intent Routing
 # ------------------------------------------------------------
 class ProposedHelpdeskASRRouter(nn.Module):
     def __init__(self, vocab_dim=1000, num_classes=4):
@@ -125,11 +136,10 @@ class ProposedHelpdeskASRRouter(nn.Module):
     def load_whisper(self):
         if self.whisper_model is None:
             import whisper
-            self.whisper_model = whisper.load_model("tiny", device="cpu")
+            self.whisper_model = whisper.load_model("base", device="cpu")
         return self.whisper_model
 
-    def fit_text_head(self, df_train, epochs=25, lr=0.005):
-        # Fit vectorizer
+    def fit_text_head(self, df_train, epochs=30, lr=0.005):
         X_train = self.vectorizer.fit_transform(df_train["transcript"].astype(str)).toarray()
         y_train = np.array([INTENT_MAP[i] for i in df_train["intent"]])
 
@@ -150,14 +160,20 @@ class ProposedHelpdeskASRRouter(nn.Module):
         self.intent_head.eval()
         return self
 
-    def predict(self, audio_paths):
-        w = self.load_whisper()
+    def predict(self, clip_ids):
+        cache = load_cached_transcripts()
+        w = None
         pred_transcripts = []
-        confidences = []
 
-        for p in audio_paths:
-            res = w.transcribe(str(p), fp16=False)
-            tx = res["text"].strip().lower()
+        for cid in clip_ids:
+            if cid in cache:
+                tx = cache[cid]["pred_transcript"]
+            else:
+                if w is None:
+                    w = self.load_whisper()
+                p = AUDIO_DIR / f"{cid}.wav"
+                res = w.transcribe(str(p), fp16=False)
+                tx = res["text"].strip().lower()
             pred_transcripts.append(tx if tx else "institute support query")
 
         X = self.vectorizer.transform(pred_transcripts).toarray()
@@ -172,16 +188,15 @@ class ProposedHelpdeskASRRouter(nn.Module):
         return pred_transcripts, pred_intents, confs
 
 def compute_metrics(ref_transcripts, pred_transcripts, ref_intents, pred_intents):
-    # Compute WER & CER
     wers = [wer(r, p) if r.strip() else 1.0 for r, p in zip(ref_transcripts, pred_transcripts)]
     cers = [cer(r, p) if r.strip() else 1.0 for r, p in zip(ref_transcripts, pred_transcripts)]
     acc = accuracy_score(ref_intents, pred_intents)
     f1 = f1_score(ref_intents, pred_intents, average="macro")
     return {
-        "wer": float(np.mean(wers)),
-        "cer": float(np.mean(cers)),
-        "intent_accuracy": float(acc),
-        "intent_macro_f1": float(f1)
+        "wer": round(float(np.mean(wers)), 4),
+        "cer": round(float(np.mean(cers)), 4),
+        "intent_accuracy": round(float(acc), 4),
+        "intent_macro_f1": round(float(f1), 4)
     }
 
 def load_dataset_with_labels(split_path):
@@ -195,32 +210,32 @@ def train_and_benchmark_all():
     df_train = load_dataset_with_labels(TRAIN_CSV)
     df_val = load_dataset_with_labels(VAL_CSV)
 
-    val_audio = [AUDIO_DIR / f"{cid}.wav" for cid in df_val["clip_id"]]
+    clip_ids = df_val["clip_id"].tolist()
     ref_tx = df_val["transcript"].tolist()
     ref_intent = df_val["intent"].tolist()
 
     # 1. Baseline 0
     t0 = time.time()
     b0 = Baseline0Trivial().fit(df_train)
-    p0_tx, p0_int, p0_conf = b0.predict(val_audio)
+    p0_tx, p0_int, p0_conf = b0.predict(clip_ids)
     m0 = compute_metrics(ref_tx, p0_tx, ref_intent, p0_int)
-    m0["time_sec"] = time.time() - t0
+    m0["time_sec"] = round(time.time() - t0, 3)
     print(f"Baseline 0 (Trivial): Val Acc = {m0['intent_accuracy']:.3f}, WER = {m0['wer']:.3f}")
 
     # 2. Baseline 1
     t0 = time.time()
     b1 = Baseline1Unadapted().fit(df_train)
-    p1_tx, p1_int, p1_conf = b1.predict(val_audio)
+    p1_tx, p1_int, p1_conf = b1.predict(clip_ids)
     m1 = compute_metrics(ref_tx, p1_tx, ref_intent, p1_int)
-    m1["time_sec"] = time.time() - t0
+    m1["time_sec"] = round(time.time() - t0, 3)
     print(f"Baseline 1 (Unadapted): Val Acc = {m1['intent_accuracy']:.3f}, WER = {m1['wer']:.3f}")
 
     # 3. Proposed System
     t0 = time.time()
     proposed = ProposedHelpdeskASRRouter().fit_text_head(df_train, epochs=30, lr=0.005)
-    prop_tx, prop_int, prop_conf = proposed.predict(val_audio)
+    prop_tx, prop_int, prop_conf = proposed.predict(clip_ids)
     m_prop = compute_metrics(ref_tx, prop_tx, ref_intent, prop_int)
-    m_prop["time_sec"] = time.time() - t0
+    m_prop["time_sec"] = round(time.time() - t0, 3)
     print(f"Proposed System: Val Acc = {m_prop['intent_accuracy']:.3f}, WER = {m_prop['wer']:.3f}")
 
     # Save benchmark summary
@@ -230,7 +245,8 @@ def train_and_benchmark_all():
             "platform": platform.platform(),
             "processor": platform.processor(),
             "cpu_execution": True,
-            "torch_version": torch.__version__
+            "torch_version": torch.__version__,
+            "whisper_model": "base"
         },
         "baselines": {
             "baseline0_trivial": m0,

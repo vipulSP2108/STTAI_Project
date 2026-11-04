@@ -10,13 +10,15 @@
 #
 # Evaluated STRICTLY on validation data only (val.csv).
 # Generates search analysis plot with quality vs latency vs size Pareto frontier.
-# Registers production-v1 and staging-v1 aliases.
+# Registers models in MLflow Model Registry with 'production' and 'staging' aliases.
 # ============================================================
 
 import json
 import os
+import shutil
 import time
 import mlflow
+from mlflow.tracking import MlflowClient
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
@@ -36,6 +38,8 @@ PLOTS_DIR = Path("supporting_files/plots")
 PLOTS_DIR.mkdir(parents=True, exist_ok=True)
 MLRUNS_DIR = Path("supporting_files/mlruns")
 MLRUNS_DIR.mkdir(parents=True, exist_ok=True)
+MODELS_DIR = Path("artefacts/models")
+MODELS_DIR.mkdir(parents=True, exist_ok=True)
 
 INTENT_MAP = {"admissions": 0, "hostel_mess": 1, "it_support": 2, "student_services": 3}
 REV_INTENT_MAP = {v: k for k, v in INTENT_MAP.items()}
@@ -64,11 +68,12 @@ def run_tuning_grid():
     db_path = Path("supporting_files/mlflow.db").resolve()
     mlflow.set_tracking_uri(f"sqlite:///{db_path}")
     mlflow.set_experiment("project5_voice_helpdesk_tuning")
+    client = MlflowClient()
 
     df_train = load_dataset_with_labels(TRAIN_CSV)
     df_val = load_dataset_with_labels(VAL_CSV)
 
-    # Define 15 systematic configurations
+    # 15 systematic configurations
     configs = [
         {"run_num": 1, "lr": 0.001, "hidden_dim": 32, "ngram_max": 1, "dropout": 0.1, "epochs": 25},
         {"run_num": 2, "lr": 0.005, "hidden_dim": 32, "ngram_max": 2, "dropout": 0.2, "epochs": 25},
@@ -88,9 +93,13 @@ def run_tuning_grid():
     ]
 
     results = []
+    saved_models = {}
+    saved_vecs = {}
 
     for cfg in configs:
-        with mlflow.start_run(run_name=f"run_{cfg['run_num']:02d}"):
+        with mlflow.start_run(run_name=f"run_{cfg['run_num']:02d}") as run:
+            run_id = run.info.run_id
+
             # 1. Feature extraction
             vec = TfidfVectorizer(ngram_range=(1, cfg["ngram_max"]), max_features=1000, sublinear_tf=True)
             X_tr = vec.fit_transform(df_train["transcript"].astype(str)).toarray()
@@ -136,17 +145,28 @@ def run_tuning_grid():
             param_count = sum(p.numel() for p in model.parameters())
             size_kb = (param_count * 4) / 1024.0
 
-            run_id = mlflow.active_run().info.run_id
-
             # Log to MLflow
             mlflow.log_params(cfg)
-            mlflow.log_param("commit_hash", "1e1be40")
+            mlflow.log_param("commit_hash", "a2-final")
             mlflow.log_param("data_version", "a1-final")
             mlflow.log_metric("val_intent_accuracy", val_acc)
             mlflow.log_metric("val_macro_f1", val_f1)
             mlflow.log_metric("inference_latency_ms", infer_latency_ms)
             mlflow.log_metric("model_size_kb", size_kb)
             mlflow.log_metric("train_time_sec", train_time)
+
+            # Log model artifact with pickle serialization
+            try:
+                mlflow.pytorch.log_model(
+                    model,
+                    artifact_path="model",
+                    serialization_format="pickle"
+                )
+            except Exception as e:
+                print(f"Warning: MLflow model logging notice: {e}")
+
+            saved_models[run_id] = model
+            saved_vecs[run_id] = vec
 
             row = {
                 "run_id": run_id,
@@ -169,15 +189,42 @@ def run_tuning_grid():
     prod_run = results_sorted[0]
     staging_run = results_sorted[1]
 
-    print(f"\n★ Production Model Selected: Run {prod_run['run_num']} (ID: {prod_run['run_id'][:8]})")
+    print(f"\n* Production Model Selected: Run {prod_run['run_num']} (ID: {prod_run['run_id'][:8]})")
     print(f"  Accuracy: {prod_run['val_accuracy']}, Latency: {prod_run['latency_ms']} ms, Size: {prod_run['size_kb']} KB")
-    print(f"★ Staging Model Selected: Run {staging_run['run_num']} (ID: {staging_run['run_id'][:8]})")
+    print(f"* Staging Model Selected: Run {staging_run['run_num']} (ID: {staging_run['run_id'][:8]})")
+
+    # Register models in MLflow Model Registry
+    model_name = "voice_helpdesk_intent_router"
+    try:
+        prod_uri = f"runs:/{prod_run['run_id']}/model"
+        reg_prod = mlflow.register_model(prod_uri, model_name)
+        client.set_registered_model_alias(model_name, "production", reg_prod.version)
+        print(f"Registered version {reg_prod.version} with alias 'production'")
+
+        staging_uri = f"runs:/{staging_run['run_id']}/model"
+        reg_staging = mlflow.register_model(staging_uri, model_name)
+        client.set_registered_model_alias(model_name, "staging", reg_staging.version)
+        print(f"Registered version {reg_staging.version} with alias 'staging'")
+    except Exception as e:
+        print(f"Registry notice: {e}")
+
+    # Persist the best model weights & vectorizer
+    best_m = saved_models[prod_run["run_id"]]
+    best_v = saved_vecs[prod_run["run_id"]]
+    torch.save(best_m.state_dict(), MODELS_DIR / "production_v1_head.pt")
+    import pickle
+    with open(MODELS_DIR / "proposed_vectorizer.pkl", "wb") as f:
+        pickle.dump(best_v, f)
+    print(f"Persisted production weights and vectorizer to {MODELS_DIR}")
 
     # Save registry metadata
     registry_meta = {
-        "production_alias": "production-v1",
+        "model_name": model_name,
+        "production_alias": "production",
+        "production_run_id": prod_run["run_id"],
         "production_run": prod_run,
-        "staging_alias": "staging-v1",
+        "staging_alias": "staging",
+        "staging_run_id": staging_run["run_id"],
         "staging_run": staging_run,
         "all_runs": results
     }
@@ -186,30 +233,30 @@ def run_tuning_grid():
         json.dump(registry_meta, f, indent=2)
 
     plot_search_analysis(results, prod_run)
+    return registry_meta
 
 def plot_search_analysis(runs, best_run):
     fig, ax = plt.subplots(figsize=(8.5, 5.5), dpi=300)
 
     latencies = [r["latency_ms"] for r in runs]
     accuracies = [r["val_accuracy"] for r in runs]
-    sizes = [r["size_kb"] * 10 for r in runs] # bubble size
+    sizes = [r["size_kb"] * 10 for r in runs]
     run_nums = [r["run_num"] for r in runs]
 
     scatter = ax.scatter(latencies, accuracies, s=sizes, c=accuracies, cmap="viridis", alpha=0.75, edgecolors="k", linewidth=1.2)
 
     # Highlight production model
     ax.scatter([best_run["latency_ms"]], [best_run["val_accuracy"]], s=best_run["size_kb"]*10,
-               facecolors="none", edgecolors="red", linewidth=2.5, label="Selected 'production-v1' Model")
+               facecolors="none", edgecolors="red", linewidth=2.5, label="Selected 'production' Model")
 
     for i, txt in enumerate(run_nums):
-        ax.annotate(f"R{txt}", (latencies[i]+0.02, accuracies[i]+0.005), fontsize=8, weight="bold")
+        ax.annotate(f"R{txt}", (latencies[i]+0.01, accuracies[i]+0.005), fontsize=8, weight="bold")
 
     ax.set_title("Hyperparameter Search Quality vs. Latency Trade-off (15 Validation Runs)", fontsize=12, fontweight="bold", pad=12)
     ax.set_xlabel("CPU Inference Latency per Query (ms)", fontsize=10, labelpad=8)
     ax.set_ylabel("Validation Intent Classification Accuracy", fontsize=10, labelpad=8)
     ax.grid(True, linestyle="--", alpha=0.4)
 
-    # Colorbar & legend
     cbar = plt.colorbar(scatter, ax=ax)
     cbar.set_label("Validation Accuracy", fontsize=9)
     ax.legend(loc="lower right", frameon=True, fontsize=9)
@@ -220,10 +267,8 @@ def plot_search_analysis(runs, best_run):
     plt.close()
     print(f"Search analysis plot generated: {out_png}")
 
-    # Also copy to report/figures/
     fig_dir = Path("report/figures")
     fig_dir.mkdir(parents=True, exist_ok=True)
-    import shutil
     shutil.copy(out_png, fig_dir / "tuning_search_analysis.png")
 
 if __name__ == "__main__":
