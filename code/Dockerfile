@@ -36,6 +36,9 @@ ENV PYTHONUNBUFFERED=1 \
 COPY code/requirements.txt /app/code/requirements.txt
 RUN pip install --no-cache-dir -r /app/code/requirements.txt
 
+# Pre-cache Whisper base model weights for true offline operation (--network none)
+RUN python3 -c "import whisper; whisper.load_model('base')"
+
 # Copy source repository artifacts
 COPY code/ /app/code/
 COPY data/ /app/data/

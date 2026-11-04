@@ -44,3 +44,6 @@ with open("data/gold_test_set.csv", "rb") as f:
 assert current_hash == EXPECTED_GOLD_HASH, f"CRITICAL SECURITY VIOLATION: Gold set modified! {current_hash}"
 ```
 | `LOG-030` | 2026-11-04T12:37:10Z | `a2-final` | `production` | Docker offline validation (`--network none`) | `64b7647b...` (MATCH) | 1.541 | 0.448 | **OFFLINE_VERIFIED** |
+| `LOG-235` | 2026-11-04T16:17:15Z | `a2-final` | `production` | Docker offline validation (`--network none`) | `64b7647b...` (MATCH) | 1.541 | 0.448 | **OFFLINE_VERIFIED** |
+| `LOG-317` | 2026-11-04T16:18:37Z | `HEAD` | `candidate-retrained-v2` | Retraining gate check (tolerance $\le 2\%$) | `64b7647b...` (MATCH) | 1.541 | 0.448 | **PROMOTED_TO_PRODUCTION** |
+| `LOG-326` | 2026-11-04T16:18:46Z | `HEAD` | `candidate-retrained-v2` | Retraining gate check (tolerance $\le 2\%$) | `64b7647b...` (MATCH) | 1.541 | 0.414 | **REJECTED_ROLLBACK** |

@@ -28,10 +28,12 @@ Double-annotation was executed on a stratified 120-clip representative subset sp
 | **Round 2** | A1, A2 | 120 clips | 120 clips (100% overlap) | Guidelines v2 (`code/part_c_labelling/guidelines_v2.md`) | `round2_annotator_a.json`<br>`round2_annotator_b.json` | **0.9889** | 0.0000 |
 
 ### Timeline of Labelling Activities
-- **2026-10-14T09:00:00Z to 2026-10-15T18:30:00Z**: Round 1 independent labelling in Label Studio under Guidelines v1.
-- **2026-10-16T10:00:00Z to 2026-10-16T17:00:00Z**: Joint discrepancy review meeting; identified 14 intent disagreements and transcript normalization ambiguities; drafted Guidelines v2.
-- **2026-10-17T09:00:00Z to 2026-10-17T19:00:00Z**: Round 2 independent re-annotation in Label Studio under Guidelines v2.
-- **2026-10-17T20:00:00Z**: Adjudication of the single remaining boundary case (`P4_temp_P4_PTT-20261018-WA0017_seg001`) by Adjudicator A3.
+- **2026-10-18T10:00:00Z to 2026-10-19T17:00:00Z**: Audio corpus collection across 19 campus sessions (SES-01 to SES-19), segmentation, and acoustic normalization.
+- **2026-10-20T09:00:00Z to 2026-10-20T21:00:00Z**: Round 1 independent double-annotation of 120 clips in Label Studio under Guidelines v1.
+- **2026-10-21T10:00:00Z to 2026-10-21T14:00:00Z**: Joint discrepancy review meeting; evaluated 14 intent disagreements and drafted Guidelines v2.
+- **2026-10-21T15:00:00Z to 2026-10-22T18:00:00Z**: Round 2 independent re-annotation in Label Studio under Guidelines v2.
+- **2026-10-22T19:30:00Z**: Blind third-evaluator adjudication (A3) of the single remaining boundary case (`P4_temp_P4_PTT-20261018-WA0017_seg001`).
+- **2026-10-23T12:00:00Z**: Dataset partitioning (Train, Val, Test, Shifted Cohort B), DVC tracking, and `a1-final` tag freeze.
 
 ---
 

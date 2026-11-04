@@ -66,7 +66,7 @@ col1, col2 = st.columns([3, 2])
 
 with col1:
     st.subheader("1. Spoken Query Input")
-    input_mode = st.radio("Choose Input Mode:", ["Bundled Consented Examples", "Upload Audio File"], horizontal=True)
+    input_mode = st.radio("Choose Input Mode:", ["Bundled Consented Examples", "Upload Audio File", "Record via Microphone 🎙️"], horizontal=True)
 
     sample_clips = [
         {"desc": "Admissions: GATE Cutoff Inquiry (P6)", "clip_id": "P6_temp_P6_PTT-20261018-WA0016_seg001"},
@@ -86,7 +86,7 @@ with col1:
         if wav_file.exists():
             target_audio_path = str(wav_file)
             st.audio(target_audio_path)
-    else:
+    elif input_mode == "Upload Audio File":
         uploaded_file = st.file_uploader("Upload Audio (.wav, .m4a, .mp3, .ogg):", type=["wav", "m4a", "mp3", "ogg"])
         if uploaded_file:
             st.audio(uploaded_file)
@@ -94,6 +94,24 @@ with col1:
             with tempfile.NamedTemporaryFile(delete=False, suffix=suffix) as tmp:
                 tmp.write(uploaded_file.read())
                 target_audio_path = tmp.name
+    else:
+        # Microphone input mode
+        if hasattr(st, "audio_input"):
+            mic_audio = st.audio_input("Record voice query from microphone:")
+            if mic_audio:
+                st.audio(mic_audio)
+                with tempfile.NamedTemporaryFile(delete=False, suffix=".wav") as tmp:
+                    tmp.write(mic_audio.read())
+                    target_audio_path = tmp.name
+        else:
+            st.warning("Direct microphone capture requires Streamlit >= 1.40 (`st.audio_input`). Falling back to audio upload.")
+            uploaded_file = st.file_uploader("Record and upload your audio clip:", type=["wav", "m4a", "mp3", "ogg"])
+            if uploaded_file:
+                st.audio(uploaded_file)
+                suffix = Path(uploaded_file.name).suffix or ".wav"
+                with tempfile.NamedTemporaryFile(delete=False, suffix=suffix) as tmp:
+                    tmp.write(uploaded_file.read())
+                    target_audio_path = tmp.name
 
     if st.button("🚀 Process Voice Query", type="primary") and target_audio_path:
         with st.spinner("Executing Whisper base transcription & neural intent routing..."):
