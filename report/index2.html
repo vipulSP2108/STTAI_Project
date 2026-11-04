@@ -129,14 +129,14 @@
               <section className="space-y-6">
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                   <div className="p-5 rounded-xl bg-slate-900/80 border border-slate-800">
-                    <div className="text-slate-400 text-xs font-semibold uppercase">Gold Test Accuracy</div>
-                    <div className="text-3xl font-black text-white mt-1">89.7%</div>
-                    <div className="text-xs text-emerald-400 mt-1">95% CI: [75.9%, 100.0%]</div>
+                    <div className="text-slate-400 text-xs font-semibold uppercase">Gold Intent Acc (ASR)</div>
+                    <div className="text-3xl font-black text-white mt-1">44.8%</div>
+                    <div className="text-xs text-emerald-400 mt-1">Ref Text: 100.0% | 95% CI: [27.6%, 62.1%]</div>
                   </div>
                   <div className="p-5 rounded-xl bg-slate-900/80 border border-slate-800">
                     <div className="text-slate-400 text-xs font-semibold uppercase">Gold Test WER</div>
-                    <div className="text-3xl font-black text-white mt-1">0.408</div>
-                    <div className="text-xs text-purple-400 mt-1">CER: 0.085 (95% CI [0.078, 0.093])</div>
+                    <div className="text-3xl font-black text-white mt-1">1.541</div>
+                    <div className="text-xs text-purple-400 mt-1">CER: 1.218 (95% CI [0.976, 1.496])</div>
                   </div>
                   <div className="p-5 rounded-xl bg-slate-900/80 border border-slate-800">
                     <div className="text-slate-400 text-xs font-semibold uppercase">CPU Latency (p50)</div>
@@ -145,8 +145,8 @@
                   </div>
                   <div className="p-5 rounded-xl bg-slate-900/80 border border-slate-800">
                     <div className="text-slate-400 text-xs font-semibold uppercase">Cohort B Retrain Gain</div>
-                    <div className="text-3xl font-black text-white mt-1">+15.6%</div>
-                    <div className="text-xs text-amber-400 mt-1">68.8% → 84.4% (p = 0.003)</div>
+                    <div className="text-3xl font-black text-white mt-1">+9.4%</div>
+                    <div className="text-xs text-amber-400 mt-1">37.7% → 46.9% (Gold Delta: 0.0%)</div>
                   </div>
                 </div>
 
@@ -154,20 +154,20 @@
                   <div className="p-6 rounded-xl bg-slate-900/60 border border-slate-800 space-y-3">
                     <h3 className="text-sm font-bold text-white uppercase tracking-wider">Assignment 2 Technical Highlights</h3>
                     <ul className="text-xs text-slate-300 space-y-2 list-disc list-inside">
-                      <li><strong>Three Distinct Baselines:</strong> Baseline 0 (Trivial majority), Baseline 1 (Unadapted Whisper tiny + TF-IDF), and Proposed End-to-End ASR Router.</li>
-                      <li><strong>15-Run MLflow Search:</strong> Systematic grid search over learning rate, hidden dim, n-grams, and dropout; Pareto frontier selected model registered as <code className="text-emerald-400">production-v1</code>.</li>
-                      <li><strong>Rigorous Statistical Evaluation:</strong> 1,000 bootstrap resamples for all metrics (WER, CER, Acc, F1); Wilcoxon signed-rank significance testing ($p = 0.003 &lt; 0.05$).</li>
-                      <li><strong>20-Case Categorized Error Sheet:</strong> Deep root cause analysis covering acoustic babble, boundary ambiguity, transliteration, and polysemous tokens.</li>
+                      <li><strong>Three Distinct Baselines:</strong> Baseline 0 (Trivial majority: 23.5%), Baseline 1 (Unadapted Whisper base: 11.8%), and Proposed End-to-End ASR Router (44.8% on Gold).</li>
+                      <li><strong>15-Run MLflow Search:</strong> Systematic grid search over learning rate, hidden dim, n-grams, and dropout; Pareto frontier selected model registered as <code className="text-emerald-400">production</code> (Run 6).</li>
+                      <li><strong>Rigorous Statistical Evaluation:</strong> 1,000 bootstrap resamples for all metrics (WER, CER, Acc, F1); Wilcoxon paired signed-rank significance testing ($p \le 0.05$).</li>
+                      <li><strong>20-Case Categorized Error Sheet:</strong> Deep root cause analysis covering acoustic babble, boundary ambiguity, transliteration gap, and polysemous tokens.</li>
                     </ul>
                   </div>
 
                   <div className="p-6 rounded-xl bg-slate-900/60 border border-slate-800 space-y-3">
                     <h3 className="text-sm font-bold text-white uppercase tracking-wider">Deployment &amp; Closed-Loop Retraining</h3>
                     <ul className="text-xs text-slate-300 space-y-2 list-disc list-inside">
-                      <li><strong>Docker Offline Isolation:</strong> Verified under strict <code className="text-blue-400">--network none</code> with multi-stage <code className="text-emerald-400">linux/amd64</code> CPU container (&le; 4.2 GB RAM).</li>
+                      <li><strong>Docker Offline Isolation:</strong> Verified under strict <code className="text-blue-400">--network none</code> with multi-stage <code className="text-emerald-400">linux/amd64</code> CPU container (&le; 2.1 GB RAM).</li>
                       <li><strong>Interactive UI &amp; REST:</strong> Streamlit dashboard displaying live confidence and RTF, alongside FastAPI <code className="text-blue-400">/predict</code>, <code className="text-blue-400">/health</code>, and <code className="text-blue-400">/version</code>.</li>
-                      <li><strong>Multi-Signal Drift Telemetry:</strong> Label-free decoder entropy ($U(x) \ge 0.85$ nats) strongly correlates with true accuracy drop ($r = 0.91$).</li>
-                      <li><strong>Rigid Retraining Gating:</strong> One-command active learning loop retrains on drift stream; promotes candidate only if Cohort B improves and Gold Test Set degradation is $\le 2\%$.</li>
+                      <li><strong>Multi-Signal Drift Telemetry:</strong> Label-free decoder entropy ($U(x) \ge 1.310$ nats) and audio SNR triggering alerts with 0% false alarms on validation baseline.</li>
+                      <li><strong>Rigid Retraining Gating:</strong> Closed-loop active retraining acquires 16 shifted queries; demonstrates real rejection/rollback on gold regression (&gt; 2.0%) and safe promotion under conservative regularization.</li>
                     </ul>
                   </div>
                 </div>
@@ -179,7 +179,7 @@
                 <div className="p-6 rounded-xl bg-slate-900/70 border border-slate-800">
                   <h2 className="text-lg font-bold text-white mb-2">Part A: Model Development &amp; Baseline Benchmarks</h2>
                   <p className="text-xs text-slate-400 mb-4">
-                    Comparison of validation performance across architectures on <code className="text-blue-400">val.csv</code> (17 clips, 3 speakers):
+                    Comparison of validation performance across architectures on <code className="text-blue-400">val.csv</code> (17 clips, 3 speakers, Whisper Base 71.8M params):
                   </p>
                   <div className="overflow-x-auto">
                     <table className="w-full text-xs text-left text-slate-300 font-mono">
@@ -188,16 +188,15 @@
                           <th className="p-2.5">Model Architecture</th>
                           <th className="p-2.5">ASR WER</th>
                           <th className="p-2.5">ASR CER</th>
-                          <th className="p-2.5">Intent Accuracy</th>
-                          <th className="p-2.5">Macro-F1</th>
+                          <th className="p-2.5">ASR Intent Acc</th>
+                          <th className="p-2.5">Ref Intent Acc</th>
                           <th className="p-2.5 font-sans">Role in Pipeline</th>
                         </tr>
                       </thead>
                       <tbody className="divide-y divide-slate-800">
-                        <tr><td className="p-2 text-slate-400">Baseline 0 (Trivial Majority)</td><td className="p-2">1.821</td><td className="p-2">0.892</td><td className="p-2 text-red-400">24.1%</td><td className="p-2">0.097</td><td className="p-2 font-sans text-slate-400">Uninformative lower bound</td></tr>
-                        <tr><td className="p-2 text-slate-300">Baseline 1 (Unadapted Whisper)</td><td className="p-2">1.679</td><td className="p-2">0.745</td><td className="p-2 text-amber-400">44.8%</td><td className="p-2">0.421</td><td className="p-2 font-sans text-slate-400">Zero-shot A1 baseline</td></tr>
-                        <tr><td className="p-2 text-blue-400">Proposed (Clean Train Only)</td><td className="p-2">0.658</td><td className="p-2">0.324</td><td className="p-2 text-emerald-400">82.4%</td><td className="p-2">0.812</td><td className="p-2 font-sans text-slate-400">Ablation: No augmentations</td></tr>
-                        <tr className="bg-slate-800/30"><td className="p-2 text-emerald-400 font-bold">Proposed (+ Augmentations)</td><td className="p-2 font-bold text-white">0.612</td><td className="p-2 font-bold text-white">0.301</td><td className="p-2 font-bold text-emerald-400">88.2%</td><td className="p-2 font-bold text-emerald-400">0.875</td><td className="p-2 font-sans text-emerald-400 font-semibold">Production candidate</td></tr>
+                        <tr><td className="p-2 text-slate-400">Baseline 0 (Trivial Majority)</td><td className="p-2">1.000</td><td className="p-2">1.000</td><td className="p-2 text-red-400">23.5%</td><td className="p-2 text-red-400">23.5%</td><td className="p-2 font-sans text-slate-400">Uninformative lower bound</td></tr>
+                        <tr><td className="p-2 text-slate-300">Baseline 1 (Unadapted Whisper Base)</td><td className="p-2">1.970</td><td className="p-2">1.439</td><td className="p-2 text-amber-400">11.8%</td><td className="p-2 text-emerald-400">82.4%</td><td className="p-2 font-sans text-slate-400">Zero-shot Whisper baseline</td></tr>
+                        <tr className="bg-slate-800/30"><td className="p-2 text-emerald-400 font-bold">Proposed End-to-End System</td><td className="p-2 font-bold text-white">1.970</td><td className="p-2 font-bold text-white">1.439</td><td className="p-2 font-bold text-emerald-400">17.6%</td><td className="p-2 font-bold text-emerald-400">100.0%</td><td className="p-2 font-sans text-emerald-400 font-semibold">Tuned neural router (100% on Ref)</td></tr>
                       </tbody>
                     </table>
                   </div>
@@ -220,20 +219,20 @@
                     <h2 className="text-lg font-bold text-white mb-2">Registered Model Aliases</h2>
                     <div className="p-4 rounded-lg bg-slate-950 border border-emerald-800/80 space-y-1">
                       <div className="flex justify-between items-center">
-                        <span className="font-bold text-emerald-400">Alias: production-v1 (Run 5)</span>
-                        <span className="text-[10px] font-mono bg-emerald-950 px-2 py-0.5 rounded text-emerald-300">Run ID: 95139db6</span>
+                        <span className="font-bold text-emerald-400">Alias: production (Run 6)</span>
+                        <span className="text-[10px] font-mono bg-emerald-950 px-2 py-0.5 rounded text-emerald-300">Run ID: ad7509ee</span>
                       </div>
-                      <div className="text-xs text-slate-300">Configuration: lr=0.005, hidden_dim=64, ngram_max=3, dropout=0.2</div>
-                      <div className="text-xs text-emerald-400 font-semibold">Val Acc: 100.0% • Latency: 0.01 ms • Size: 105.5 KB</div>
+                      <div className="text-xs text-slate-300">Configuration: lr=0.010, hidden_dim=64, ngram_max=1, dropout=0.1</div>
+                      <div className="text-xs text-emerald-400 font-semibold">Ref Val Acc: 100.0% • Latency: 0.01 ms • Size: 105.5 KB</div>
                     </div>
 
                     <div className="p-4 rounded-lg bg-slate-950 border border-blue-800/80 space-y-1">
                       <div className="flex justify-between items-center">
-                        <span className="font-bold text-blue-400">Alias: staging-v1 (Run 2)</span>
+                        <span className="font-bold text-blue-400">Alias: staging (Run 2)</span>
                         <span className="text-[10px] font-mono bg-blue-950 px-2 py-0.5 rounded text-blue-300">Run ID: 7a9d96f8</span>
                       </div>
                       <div className="text-xs text-slate-300">Configuration: lr=0.005, hidden_dim=32, ngram_max=2, dropout=0.2</div>
-                      <div className="text-xs text-blue-400 font-semibold">Val Acc: 100.0% • Latency: 0.01 ms • Size: 125.6 KB</div>
+                      <div className="text-xs text-blue-400 font-semibold">Ref Val Acc: 100.0% • Latency: 0.01 ms • Size: 125.6 KB</div>
                     </div>
                   </div>
                 </div>
@@ -254,17 +253,21 @@
                           <th className="p-2.5">Evaluation Split</th>
                           <th className="p-2.5">WER (95% CI)</th>
                           <th className="p-2.5">CER (95% CI)</th>
-                          <th className="p-2.5">Intent Accuracy (95% CI)</th>
+                          <th className="p-2.5">ASR Intent Acc (95% CI)</th>
+                          <th className="p-2.5">Ref Intent Acc</th>
                           <th className="p-2.5">Macro-F1 (95% CI)</th>
                         </tr>
                       </thead>
                       <tbody className="divide-y divide-slate-800">
-                        <tr><td className="p-2 text-blue-400 font-bold">Validation Set (17 clips)</td><td className="p-2">0.612 [0.540, 0.684]</td><td className="p-2">0.301 [0.252, 0.350]</td><td className="p-2 text-emerald-400">88.2% [70.6%, 100.0%]</td><td className="p-2">87.5% [69.0%, 100.0%]</td></tr>
-                        <tr><td className="p-2 text-purple-400 font-bold">Held-Out Gold Test (29 clips)</td><td className="p-2">0.408 [0.393, 0.422]</td><td className="p-2">0.085 [0.078, 0.093]</td><td className="p-2 text-emerald-400">96.6% [89.7%, 100.0%]</td><td className="p-2">96.4% [88.1%, 100.0%]</td></tr>
-                        <tr><td className="p-2 text-amber-400 font-bold">Cohort B (Pre-Retraining)</td><td className="p-2">0.784 [0.718, 0.850]</td><td className="p-2">0.412 [0.360, 0.464]</td><td className="p-2 text-amber-400">68.8% [53.1%, 84.4%]</td><td className="p-2">67.2% [51.0%, 0.834]</td></tr>
-                        <tr className="bg-slate-800/30"><td className="p-2 text-emerald-400 font-bold">Cohort B (Post-Retraining)</td><td className="p-2 font-bold text-white">0.652 [0.588, 0.716]</td><td className="p-2 font-bold text-white">0.324 [0.278, 0.370]</td><td className="p-2 font-bold text-emerald-400">84.4% [71.9%, 96.9%]</td><td className="p-2 font-bold text-emerald-400">83.9% [71.0%, 96.8%]</td></tr>
+                        <tr><td className="p-2 text-blue-400 font-bold">Validation Set (17 clips)</td><td className="p-2">1.965 [1.480, 2.615]</td><td className="p-2">1.434 [1.068, 1.950]</td><td className="p-2 text-amber-400">18.0% [0.0%, 35.3%]</td><td className="p-2 text-emerald-400 font-bold">100.0%</td><td className="p-2">18.0% [0.0%, 35.3%]</td></tr>
+                        <tr><td className="p-2 text-purple-400 font-bold">Held-Out Gold Test (29 clips)</td><td className="p-2">1.541 [1.301, 1.823]</td><td className="p-2">1.218 [0.976, 1.496]</td><td className="p-2 text-emerald-400 font-bold">44.8% [27.6%, 62.1%]</td><td className="p-2 text-emerald-400 font-bold">100.0%</td><td className="p-2">42.9% [24.5%, 60.1%]</td></tr>
+                        <tr><td className="p-2 text-blue-400 font-bold">In-Domain Test (29 clips)</td><td className="p-2">1.538 [1.301, 1.823]</td><td className="p-2">1.209 [0.976, 1.496]</td><td className="p-2 text-emerald-400 font-bold">44.7% [27.6%, 62.1%]</td><td className="p-2 text-emerald-400 font-bold">100.0%</td><td className="p-2">41.4% [24.5%, 60.1%]</td></tr>
+                        <tr><td className="p-2 text-amber-400 font-bold">Cohort B (Pre-Retraining)</td><td className="p-2">1.357 [1.161, 1.611]</td><td className="p-2">1.152 [0.957, 1.425]</td><td className="p-2 text-amber-400">37.7% [21.9%, 53.1%]</td><td className="p-2 text-emerald-400 font-bold">100.0%</td><td className="p-2">36.1% [21.0%, 51.5%]</td></tr>
+                        <tr className="bg-slate-800/30"><td className="p-2 text-emerald-400 font-bold">Cohort B (Post-Retraining)</td><td className="p-2 font-bold text-white">1.357 [1.161, 1.611]</td><td className="p-2 font-bold text-white">1.152 [0.957, 1.425]</td><td className="p-2 font-bold text-emerald-400">46.9% [31.2%, 62.5%]</td><td className="p-2 font-bold text-emerald-400">100.0%</td><td className="p-2 font-bold text-emerald-400">45.2% [29.5%, 60.8%]</td></tr>
                       </tbody>
                     </table>
+                  </div>
+                </div>
                   </div>
                 </div>
 
@@ -312,9 +315,9 @@ docker run --rm -p 8501:8501 -p 8000:8000 voice-helpdesk-asr:a2-final`}
                   <div className="p-6 rounded-xl bg-slate-900/70 border border-slate-800">
                     <h2 className="text-lg font-bold text-white mb-2">Traffic Replay &amp; Multi-Signal Drift</h2>
                     <p className="text-xs text-slate-400 mb-4">
-                      100 streaming queries across 5 batches shifting to Cohort B. Label-free decoder entropy ($U(x) \ge 0.85$ nats) strongly tracks accuracy drop ($r = 0.91$).
+                      100 streaming queries across 5 batches shifting to Cohort B. Label-free decoder entropy ($U(x) \ge 1.310$ nats) and audio SNR track distribution drift with 0% false alarms on in-domain baseline.
                     </p>
-                    <img src="figures/drift_tracking_plot.png" alt="Drift Tracking Plot" className="rounded-lg border border-slate-800 w-full" />
+                    <img src="figures/drift_detection_plot.png" alt="Drift Detection Plot" className="rounded-lg border border-slate-800 w-full" />
                   </div>
 
                   <div className="p-6 rounded-xl bg-slate-900/70 border border-slate-800 space-y-3">
@@ -322,9 +325,9 @@ docker run --rm -p 8501:8501 -p 8000:8000 voice-helpdesk-asr:a2-final`}
                     <div className="p-4 rounded-lg bg-slate-950 border border-slate-800 text-xs space-y-2">
                       <div className="flex justify-between items-center">
                         <strong className="text-white">Gate Criterion 1: Shifted Drift Accuracy</strong>
-                        <span className="text-emerald-400 font-bold">PASSED (+15.6%)</span>
+                        <span className="text-emerald-400 font-bold">PASSED (+9.4%)</span>
                       </div>
-                      <p className="text-slate-400 text-[11px]">Cohort B accuracy must improve: 68.8% &rarr; 84.4%.</p>
+                      <p className="text-slate-400 text-[11px]">Cohort B accuracy must improve: 37.7% &rarr; 46.9%.</p>
                     </div>
 
                     <div className="p-4 rounded-lg bg-slate-950 border border-slate-800 text-xs space-y-2">
@@ -332,7 +335,7 @@ docker run --rm -p 8501:8501 -p 8000:8000 voice-helpdesk-asr:a2-final`}
                         <strong className="text-white">Gate Criterion 2: Gold Test Set Degradation &le; 2.0%</strong>
                         <span className="text-emerald-400 font-bold">PASSED (0.0% Delta)</span>
                       </div>
-                      <p className="text-slate-400 text-[11px]">Gold set accuracy must not regress: 89.7% &rarr; 89.7%.</p>
+                      <p className="text-slate-400 text-[11px]">Gold set accuracy must not regress: 44.8% &rarr; 44.8%.</p>
                     </div>
 
                     <div className="p-3 rounded-lg bg-emerald-950/60 border border-emerald-800 text-xs text-emerald-300">

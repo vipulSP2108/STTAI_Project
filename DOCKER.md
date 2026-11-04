@@ -37,15 +37,17 @@ docker run --rm --network none voice-helpdesk-asr:a2-final validate
   "evaluated_clips": 29,
   "gold_set_sha256": "64b7647b5d0d35733063c77caab122a1a7c24ac6c70b7d476ffbabd9a2448ca9",
   "gold_checksum_match": true,
-  "model_version": "production-v1",
+  "model_version": "production",
   "git_commit": "a2-final",
   "metrics": {
-    "transcript_wer": 0.628,
-    "transcript_cer": 0.312,
-    "intent_accuracy": 0.897,
-    "intent_macro_f1": 0.894,
-    "mean_inference_latency_ms": 312.4,
-    "cpu_real_time_factor": 0.174
+    "transcript_wer": 1.5411,
+    "transcript_cer": 1.2178,
+    "intent_accuracy": 0.4483,
+    "intent_macro_f1": 0.429,
+    "evaluated_clips": 29,
+    "mean_inference_latency_ms": 0.0,
+    "cpu_real_time_factor": 0.0,
+    "total_audio_duration_sec": 523.8
   },
   "offline_verified": true
 }
@@ -71,4 +73,4 @@ Open your browser at:
 |----------|--------------------|------|
 | `code/Dockerfile` | `e9f2a41bc...` | 2.1 KB |
 | `docker_image.tar.gz` (Archive) | Cataloged in `artefacts/` | 1.85 GB |
-| Bundled `tiny.pt` weights | `bd577a113a50279c4b31d407204e9651684169efc865e50bed34bfa114738baa` | 75 MB |
+| Bundled `base.pt` weights | `a3f9104cc...` | 139 MB |

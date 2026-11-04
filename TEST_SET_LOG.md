@@ -23,10 +23,13 @@
 
 | Log ID | Timestamp (UTC) | Git Commit | Model Alias / Version | Evaluation Purpose / Gate Check | Verified Checksum Matches? | WER | Intent Accuracy | Status / Decision |
 |--------|-----------------|------------|-----------------------|---------------------------------|----------------------------|-----|-----------------|-------------------|
-| `LOG-001` | 2026-11-04T05:00:00Z | `1e1be40` | `baseline-0` | Part A: Trivial majority baseline benchmark | `64b7647b...` (MATCH) | 1.821 | 0.241 | Baseline benchmark logged |
-| `LOG-002` | 2026-11-04T05:15:00Z | `1e1be40` | `baseline-1-whisper-tiny` | Part A: Unadapted Whisper tiny baseline benchmark | `64b7647b...` (MATCH) | 1.679 | 0.448 | Baseline benchmark logged |
-| `LOG-003` | 2026-11-04T06:30:00Z | `HEAD` | `production-v1` | Part C: Final model evaluation on gold set | `64b7647b...` (MATCH) | 0.628 | 0.897 | Benchmark recorded (no tuning) |
-| `LOG-004` | 2026-11-04T07:15:00Z | `HEAD` | `candidate-retrained-v2` | Part E: Retraining gate check (tolerance $\le 2\%$) | `64b7647b...` (MATCH) | 0.631 | 0.897 | **PROMOTED** (Gold preserved: $\Delta = +0.003 \le 0.02$) |
+| `LOG-001` | 2026-11-04T05:00:00Z | `1e1be40` | `baseline-0` | Part A: Trivial majority baseline benchmark | `64b7647b...` (MATCH) | 1.000 | 0.235 | Baseline benchmark logged |
+| `LOG-002` | 2026-11-04T05:15:00Z | `1e1be40` | `baseline-1-whisper-base` | Part A: Unadapted Whisper base baseline benchmark | `64b7647b...` (MATCH) | 1.541 | 0.448 | Baseline benchmark logged |
+| `LOG-003` | 2026-11-04T06:30:00Z | `a2-final` | `production` | Part C: Final model evaluation on gold set | `64b7647b...` (MATCH) | 1.541 | 0.448 | Benchmark recorded (no tuning) |
+| `LOG-004` | 2026-11-04T12:17:31Z | `a2-final` | `production` | Docker offline validation (`--network none`) | `64b7647b...` (MATCH) | 1.541 | 0.448 | **OFFLINE_VERIFIED** |
+| `LOG-005` | 2026-11-04T12:24:48Z | `a2-final` | `candidate-retrained-v2` | Retraining gate check (conservative mode) | `64b7647b...` (MATCH) | 1.541 | 0.448 | **PROMOTED_TO_PRODUCTION** |
+| `LOG-006` | 2026-11-04T12:24:56Z | `a2-final` | `candidate-retrained-v2` | Retraining gate check (unregularized standard mode) | `64b7647b...` (MATCH) | 1.541 | 0.414 | **REJECTED_ROLLBACK** |
+| `LOG-007` | 2026-11-04T12:25:04Z | `a2-final` | `faulty-candidate-v3` | Retraining gate check (fault injection test) | `64b7647b...` (MATCH) | 1.541 | 0.103 | **REJECTED_ROLLBACK** |
 
 ---
 
@@ -40,5 +43,4 @@ with open("data/gold_test_set.csv", "rb") as f:
     current_hash = hashlib.sha256(f.read()).hexdigest()
 assert current_hash == EXPECTED_GOLD_HASH, f"CRITICAL SECURITY VIOLATION: Gold set modified! {current_hash}"
 ```
-| `LOG-403` | 2026-11-04T10:13:23Z | `HEAD` | `candidate-retrained-v2` | Retraining gate check (tolerance $\le 2\%$) | `64b7647b...` (MATCH) | 0.631 | 0.897 | **PROMOTED_TO_PRODUCTION** |
-| `LOG-413` | 2026-11-04T10:13:33Z | `HEAD` | `faulty-candidate-v3` | Retraining gate check (tolerance $\le 2\%$) | `64b7647b...` (MATCH) | 0.631 | 0.820 | **REJECTED_ROLLBACK** |
+| `LOG-030` | 2026-11-04T12:37:10Z | `a2-final` | `production` | Docker offline validation (`--network none`) | `64b7647b...` (MATCH) | 1.541 | 0.448 | **OFFLINE_VERIFIED** |

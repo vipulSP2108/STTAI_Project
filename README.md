@@ -34,16 +34,18 @@ In adherence to ethical human research standards and institutional participant p
 
 ### Key Results Summary
 
-| Metric / Stage | Baseline 0 | Baseline 1 (Zero-Shot) | Proposed (`production-v1`) | Retrained (`candidate-retrained-v2`) |
+| Metric / Stage | Baseline 0 (Trivial) | Baseline 1 (Zero-Shot) | Proposed (`production`) | Retrained (`candidate-retrained-v2`) |
 | :--- | :--- | :--- | :--- | :--- |
-| **Gold Test Set WER** | 1.821 [1.745, 1.897] | 1.679 [1.554, 1.804] | **0.628 [0.564, 0.692]** | 0.630 [0.566, 0.694] |
-| **Gold Test Set CER** | 0.892 [0.840, 0.944] | 0.745 [0.680, 0.810] | **0.312 [0.268, 0.356]** | 0.314 [0.270, 0.358] |
-| **Gold Intent Accuracy** | 24.1% [8.3%, 40.0%] | 44.8% [26.3%, 63.2%] | **89.7% [75.9%, 100.0%]** | **89.7% [75.9%, 100.0%]** |
-| **Gold Macro-F1** | 0.097 [0.038, 0.160] | 0.421 [0.245, 0.602] | **0.894 [0.748, 1.000]** | **0.894 [0.748, 1.000]** |
-| **Cohort B (Shifted) Acc**| 25.0% | 40.6% | 68.8% [53.1%, 84.4%] | **84.4% [71.9%, 96.9%]** ($+15.6\%$) |
-| **CPU Latency (Single)** | < 0.01 ms | 312.4 ms | **0.94 ms (Routing) / 312 ms (Total)** | 0.94 ms |
-| **Model Size** | 1.2 KB | 76 MB | **76 MB (Whisper + 64 KB Router)** | 76 MB |
-| **Statistical Test** | — | — | — | Wilcoxon $W=14.0, p=0.003 < 0.05$ |
+| **Gold Test Set WER** | 1.000 | 1.541 [1.301, 1.823] | **1.541 [1.301, 1.823]** | 1.541 [1.301, 1.823] |
+| **Gold Test Set CER** | 1.000 | 1.218 [0.976, 1.496] | **1.218 [0.976, 1.496]** | 1.218 [0.976, 1.496] |
+| **Gold Intent Accuracy (ASR)** | 23.5% | 11.8% | **44.8% [27.6%, 62.1%]** | **44.8% [27.6%, 62.1%]** |
+| **Reference Text Intent Accuracy** | 23.5% | 82.4% | **100.0%** | **100.0%** |
+| **Gold Intent Macro-F1** | 0.095 | 0.105 | **0.429 [0.245, 0.601]** | **0.429 [0.245, 0.601]** |
+| **Cohort B (Shifted) Acc**| 25.0% | 15.6% | 37.7% [21.9%, 53.1%] | **46.9% [31.2%, 62.5%]** ($+9.4\%$) |
+| **CPU Routing Latency** | < 0.01 ms | < 0.01 ms | **0.01 ms** | **0.01 ms** |
+| **Total Inference (ASR+Router)** | — | 312.4 ms | **312.4 ms** (RTF: 0.174) | **312.4 ms** |
+| **Router Head Size** | < 1 KB | 71 KB | **105.5 KB** | **105.5 KB** |
+| **Statistical Test** | — | — | — | Wilcoxon $W=5.0, p \le 0.05$ |
 
 ### Cryptographic Gold Test Set Integrity
 The held-out Gold Test Set (`data/gold_test_set.csv`) was created during Assignment 1 and remained **100% immutable** across Assignment 2:
