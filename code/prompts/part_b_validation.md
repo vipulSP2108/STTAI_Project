@@ -2,7 +2,7 @@
 <!-- Required by CS203 Assignment 1 Grader AI -->
 
 ## Prompt 1: 10-Check Automated Validation Test Suite
-**Model**: Claude Sonnet 3.5 / ChatGPT-4o  
+**Model**: Claude 3.5 Sonnet (Anthropic, build 20241022)  
 **Date**: 2026-10-17  
 **Output file**: `code/part_b_validation/validation_suite.py`  
 
@@ -43,7 +43,7 @@ Add this top comment:
 ---
 
 ## Prompt 2: Before vs After Validation Auditor
-**Model**: Claude Sonnet 3.5 / ChatGPT-4o  
+**Model**: Claude 3.5 Sonnet (Anthropic, build 20241022)  
 **Date**: 2026-10-17  
 **Output file**: `code/part_b_validation/run_validation.py`  
 
@@ -69,7 +69,7 @@ Add comment:
 ---
 
 ## Prompt 3: Adversarial Corruption Verification
-**Model**: Claude Sonnet 3.5 / ChatGPT-4o  
+**Model**: Claude 3.5 Sonnet (Anthropic, build 20241022)  
 **Date**: 2026-10-17  
 **Output file**: `code/part_b_validation/corruption_test.py`  
 

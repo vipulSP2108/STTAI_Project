@@ -2,7 +2,7 @@
 <!-- Required by CS203 Assignment 1 Grader AI -->
 
 ## Prompt 1: Speaker-Disjoint Split Generator with Regional Drift Cohort
-**Model**: Claude Sonnet 3.5 / ChatGPT-4o  
+**Model**: Claude 3.5 Sonnet (Anthropic, build 20241022)  
 **Date**: 2026-10-18  
 **Output file**: `code/part_e_versioning/make_splits.py`  
 
@@ -44,7 +44,7 @@ Add comment:
 ---
 
 ## Prompt 2: DVC Versioning Automation Script
-**Model**: Claude Sonnet 3.5 / ChatGPT-4o  
+**Model**: Claude 3.5 Sonnet (Anthropic, build 20241022)  
 **Date**: 2026-10-18  
 **Output file**: `code/part_e_versioning/dvc_setup.sh`  
 

@@ -2,7 +2,7 @@
 <!-- Required by CS203 Assignment 1 Grader AI -->
 
 ## Prompt 1: Inter-Annotator Agreement & Gold Test Set Freeze
-**Model**: Claude Sonnet 3.5 / ChatGPT-4o  
+**Model**: Claude 3.5 Sonnet (Anthropic, build 20241022)  
 **Date**: 2026-10-18  
 **Output file**: `code/part_c_labelling/compute_agreement.py`  
 
@@ -44,7 +44,7 @@ Add comment:
 ---
 
 ## Prompt 2: Label Studio Schema with Strict Level Hierarchy
-**Model**: Claude Sonnet 3.5 / ChatGPT-4o  
+**Model**: Claude 3.5 Sonnet (Anthropic, build 20241022)  
 **Date**: 2026-10-18  
 **Output file**: `code/part_c_labelling/label_studio_config.xml`  
 
@@ -76,7 +76,7 @@ Add XML comment:
 ---
 
 ## Prompt 3: Annotation Guidelines Formulation (v1 & v2)
-**Model**: Claude Sonnet 3.5 / ChatGPT-4o  
+**Model**: Claude 3.5 Sonnet (Anthropic, build 20241022)  
 **Date**: 2026-10-18  
 **Output file**: `code/part_c_labelling/guidelines_v1.md`, `code/part_c_labelling/guidelines_v2.md`  
 

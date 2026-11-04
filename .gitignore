@@ -22,11 +22,11 @@ Thumbs.db
 .coverage
 htmlcov/
 
-# Raw audio files (tracked via DVC and data/metadata.csv)
+# Raw and generated audio files (tracked via DVC and metadata manifests)
 Records/
 Records.zip
 data/raw/audio/
-data/processed/augmented/*.wav
+data/processed/augmented/**/*.wav
 temp_*.wav
 
 # Local DVC remotes

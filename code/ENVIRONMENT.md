@@ -4,10 +4,10 @@
 # Seeds here MUST exactly match the constants in the Python scripts.
 
 ## Python
-Python: 3.10.12 (CPython 64-bit; compatible with 3.10+)
+Python: 3.10.12 (CPython 64-bit; verified on 3.10.x - 3.13.x)
 
 ## Key Python Packages
-See requirements_freeze.txt for exact pinned versions.
+See `requirements.txt` and `requirements_freeze.txt` for exact pinned versions.
 
 Core packages:
 - sounddevice==0.4.6         # audio recording
@@ -18,23 +18,26 @@ Core packages:
 - pandera==0.17.2            # validation framework
 - audiomentations==0.33.0   # audio augmentation
 - langdetect==1.0.9          # language identification
-- scikit-learn==1.3.2        # Cohen's kappa
+- scikit-learn==1.3.2        # Cohen's kappa, classification benchmark
 - pydub==0.25.1              # codec compression augmentation
 - scipy==1.11.4              # RIR convolution
 - numpy==1.24.4
 - matplotlib==3.8.0
 - pandas==2.0.3
 - dvc==3.30.0
+- pytest==7.4.3
+- pytest-json-report==1.5.0
 
 ## Label Studio
 Version: 1.10.0
-Config: code/part_c_labelling/label_studio_config.xml
-Run:    label-studio start
+Config: `code/part_c_labelling/label_studio_config.xml`
+Run: `label-studio start`
 
 ## Other Tools
-sox: 14.4.2  (optional, for speed perturbation alternative)
-OS: Windows 11 64-bit / Ubuntu 22.04 LTS (x86_64)
-GPU: CPU only execution (CUDA optional, PyTorch CPU baseline)
+- ffmpeg: 6.0+ (used for low-bitrate MP3/Opus codec compression)
+- sox: 14.4.2 (optional, for speed perturbation alternative)
+- OS: macOS (Darwin ARM64 / x86_64) / Ubuntu 22.04 LTS (x86_64) / Windows 11
+- Execution target: CPU execution (FP32 baseline, CUDA optional)
 
 ## Random Seeds — MUST MATCH CODE CONSTANTS
 | Seed Name    | Value | Used in file             |
@@ -44,12 +47,13 @@ GPU: CPU only execution (CUDA optional, PyTorch CPU baseline)
 | AL_SEED      | 42    | part_d_augmentation/active_learning.py|
 
 ## Models Used
-Whisper base:
-  Source: openai/whisper (pip package openai-whisper==20231117)
-  HuggingFace revision: e12f6d2724f795f850e9392e1619b46fa80a6560
-  Used for: active learning informativeness scores, baseline WER
+Whisper tiny / base:
+  Source: Official OpenAI repository (`openai-whisper==20231117` via PyPI / github.com/openai/whisper release)
+  Checkpoint: Official OpenAI release weights (`tiny.pt` SHA-256: `bd577a113a50279c4b31d407204e9651684169efc865e50bed34bfa114738baa`)
+  Execution: FP32 inference on CPU
+  Used for: Active learning informativeness uncertainty scores, baseline WER benchmark on clean vs. augmented audio
 
 ## Notes on Randomness
 All random operations use fixed seeds documented above.
-Any operation using a model must pin the model version (above).
+Any operation using a model pins the model version (above).
 Label Studio item ordering: seed=7 (set in Label Studio project settings).

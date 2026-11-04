@@ -2,7 +2,7 @@
 <!-- Required by CS203 Assignment 1 Grader AI -->
 
 ## Prompt 1: Label-Preserving Audio Augmentation Engine
-**Model**: Claude Sonnet 3.5 / ChatGPT-4o  
+**Model**: Claude 3.5 Sonnet (Anthropic, build 20241022)  
 **Date**: 2026-10-18  
 **Output file**: `code/part_d_augmentation/augment_audio.py`  
 
@@ -34,7 +34,7 @@ AUGMENT_SEED = 123
 ---
 
 ## Prompt 2: Uncertainty-Driven Active Learning Simulation
-**Model**: Claude Sonnet 3.5 / ChatGPT-4o  
+**Model**: Claude 3.5 Sonnet (Anthropic, build 20241022)  
 **Date**: 2026-10-18  
 **Output file**: `code/part_d_augmentation/active_learning.py`  
 
@@ -72,7 +72,7 @@ AL_SEED = 42
 ---
 
 ## Prompt 3: Label-Efficiency Curve Visualization
-**Model**: Claude Sonnet 3.5 / ChatGPT-4o  
+**Model**: Claude 3.5 Sonnet (Anthropic, build 20241022)  
 **Date**: 2026-10-18  
 **Output file**: `code/part_d_augmentation/plot_learning_curve.py`  
 

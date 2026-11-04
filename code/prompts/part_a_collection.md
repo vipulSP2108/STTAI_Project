@@ -2,7 +2,7 @@
 <!-- Required by CS203 Assignment 1 Grader AI -->
 
 ## Prompt 1: Audio Recording CLI with Automated Provenance
-**Model**: Claude Sonnet 3.5 / ChatGPT-4o  
+**Model**: Claude 3.5 Sonnet (Anthropic, build 20241022)  
 **Date**: 2026-10-17  
 **Output file**: `code/part_a_collection/record_audio.py`  
 
@@ -54,7 +54,7 @@ Add this exact comment block at top of file:
 ---
 
 ## Prompt 2: Metadata Extraction & Checksum Catalog
-**Model**: Claude Sonnet 3.5 / ChatGPT-4o  
+**Model**: Claude 3.5 Sonnet (Anthropic, build 20241022)  
 **Date**: 2026-10-17  
 **Output file**: `code/part_a_collection/build_metadata.py`  
 
@@ -86,7 +86,7 @@ Add top comment:
 ---
 
 ## Prompt 3: Dynamic Ingestion Pipeline for Field WhatsApp Recordings
-**Model**: Claude Sonnet 3.5 / ChatGPT-4o  
+**Model**: Claude 3.5 Sonnet (Anthropic, build 20241022)  
 **Date**: 2026-10-18  
 **Output file**: `code/part_a_collection/ingest_records.py`  
 
