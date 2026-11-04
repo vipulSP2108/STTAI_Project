@@ -1,10 +1,11 @@
-name: CS203 Assignment 2 - Continuous Integration & Offline Verification
+name: "CS203 Assignment 2 - Continuous Integration & Offline Verification"
 
-on:
+"on":
   push:
     branches: [ main ]
   pull_request:
     branches: [ main ]
+  workflow_dispatch:
 
 jobs:
   test_and_verify:
@@ -28,12 +29,12 @@ jobs:
         run: |
           pip install -r code/requirements.txt
 
-      - name: Step 1: Run Unit Tests & Assignment 1 Validation Suite
+      - name: "Step 1: Run Unit Tests & Assignment 1 Validation Suite"
         run: |
           pytest code/part_b_validation/validation_suite.py -v
           python code/part_b_validation/corruption_test.py
 
-      - name: Step 2: Verify Gold Test Set Checksum Protection
+      - name: "Step 2: Verify Gold Test Set Checksum Protection"
         run: |
           python -c "
           import hashlib
@@ -43,10 +44,10 @@ jobs:
           print('Gold test set hash integrity verified!')
           "
 
-      - name: Step 3: Build Docker Image
+      - name: "Step 3: Build Docker Image"
         run: |
           docker build -t voice-helpdesk-asr:ci -f code/Dockerfile .
 
-      - name: Step 4: Offline Smoke Request & Gold Set Validation (--network none)
+      - name: "Step 4: Offline Smoke Request & Gold Set Validation (--network none)"
         run: |
           docker run --rm --network none voice-helpdesk-asr:ci validate

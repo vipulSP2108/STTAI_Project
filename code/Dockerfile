@@ -41,6 +41,7 @@ COPY code/ /app/code/
 COPY data/ /app/data/
 COPY supporting_files/ /app/supporting_files/
 COPY artefacts/ /app/artefacts/
+COPY TEST_SET_LOG.md /app/TEST_SET_LOG.md
 
 # Verification assert on build
 RUN python3 -c "import hashlib; h = hashlib.sha256(open('data/gold_test_set.csv', 'rb').read()).hexdigest(); assert h == '64b7647b5d0d35733063c77caab122a1a7c24ac6c70b7d476ffbabd9a2448ca9', 'Build failed: gold hash altered!'"
