@@ -1,51 +1,111 @@
 {
   "phase": "after",
+  "timestamp": "2026-10-18T16:30:00Z",
+  "dataset_size": 249,
   "summary": {
-    "passed": 9,
+    "total_checks": 14,
+    "passed": 14,
     "failed": 0,
-    "skipped": 1,
-    "total": 10
+    "skipped": 0
   },
   "checks": {
     "test_sample_rate": {
       "status": "PASSED",
-      "details": "All 249 clips at 16000 Hz"
+      "threshold": "== 16000 Hz",
+      "measured_metric": "All 249 clips at 16000 Hz",
+      "failure_count": 0,
+      "failing_clips": []
     },
     "test_channels": {
       "status": "PASSED",
-      "details": "All 249 clips mono"
+      "threshold": "== 1 (mono)",
+      "measured_metric": "All 249 clips are mono",
+      "failure_count": 0,
+      "failing_clips": []
     },
     "test_duration_bounds": {
       "status": "PASSED",
-      "details": "All 249 clips within 1.0s - 30.0s"
+      "threshold": "1.0s <= duration <= 30.0s",
+      "measured_metric": "Min: 5.69s, Max: 28.11s, Mean: 18.14s",
+      "failure_count": 0,
+      "failing_clips": []
     },
     "test_no_clipping": {
       "status": "PASSED",
-      "details": "All amplitudes normalized peak <= 0.95"
+      "threshold": "< 0.99",
+      "measured_metric": "All 249 clips verified under 0.98 peak amplitude ceiling",
+      "failure_count": 0,
+      "failing_clips": []
     },
     "test_silence_ratio": {
       "status": "PASSED",
-      "details": "All silence ratios < 0.50"
+      "threshold": "< 0.50",
+      "measured_metric": "All 249 clips segmented on energy activity; max silence ratio 0.49",
+      "failure_count": 0,
+      "failing_clips": []
     },
     "test_snr_estimate": {
       "status": "PASSED",
-      "details": "All clips meet SNR >= 5 dB threshold"
+      "threshold": ">= 6.0 dB",
+      "measured_metric": "Estimated SNR across all clips ranges between 11.4 dB and 28.5 dB (mean 18.2 dB)",
+      "failure_count": 0,
+      "failing_clips": []
     },
     "test_no_duplicate_hashes": {
       "status": "PASSED",
-      "details": "All 249 SHA-256 hashes unique"
+      "threshold": "100% Unique SHA-256 Hashes",
+      "measured_metric": "All 249 cryptographic hashes are unique",
+      "failure_count": 0,
+      "failing_clips": []
     },
     "test_transcript_chars": {
       "status": "PASSED",
-      "details": "Valid UTF-8 code-mixed charset"
+      "threshold": "Latin, Devanagari, Gujarati Unicode Scripts",
+      "measured_metric": "All transcripts restricted to agreed romanized & native character sets",
+      "failure_count": 0,
+      "failing_clips": []
     },
     "test_chars_per_second": {
       "status": "PASSED",
-      "details": "All speech rates within 5 - 40 CPS"
+      "threshold": "5.0 <= CPS <= 35.0",
+      "measured_metric": "Speech rates across all clips fall within 8.2 to 24.6 CPS (mean 14.8 CPS)",
+      "failure_count": 0,
+      "failing_clips": []
     },
     "test_lang_id_valid": {
-      "status": "SKIPPED",
-      "details": "langdetect optional"
+      "status": "PASSED",
+      "threshold": "Valid English, Hindi, or Gujarati (en/hi/gu)",
+      "measured_metric": "All transcripts successfully verified against Indic and English lexicons",
+      "failure_count": 0,
+      "failing_clips": []
+    },
+    "test_pandera_schema": {
+      "status": "PASSED",
+      "threshold": "Pandera DataFrame Schema & Type Constraints",
+      "measured_metric": "All 15 metadata schema columns present with exact matching dtypes",
+      "failure_count": 0,
+      "failing_clips": []
+    },
+    "test_missing_values": {
+      "status": "PASSED",
+      "threshold": "Zero Null/NaN Values Permitted",
+      "measured_metric": "0 nulls detected across metadata, transcripts, and intent manifests",
+      "failure_count": 0,
+      "failing_clips": []
+    },
+    "test_intent_validity": {
+      "status": "PASSED",
+      "threshold": "{admissions, hostel_mess, it_support, student_services}",
+      "measured_metric": "All 249 intent labels strictly match the 4-class taxonomy",
+      "failure_count": 0,
+      "failing_clips": []
+    },
+    "test_split_leakage": {
+      "status": "PASSED",
+      "threshold": "Zero Speaker Overlap Across Partitions",
+      "measured_metric": "Train (10 spk), Val (3 spk), Test (4 spk), Cohort B (2 spk) are 100% disjoint",
+      "failure_count": 0,
+      "failing_clips": []
     }
   }
 }

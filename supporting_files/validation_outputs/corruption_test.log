@@ -1,3 +1,18 @@
-Corruption A (wrong sample rate 8kHz): FAILED as expected (PASS)
-Corruption B (clipped audio): FAILED as expected (PASS)
-Corruption C (full silence): FAILED as expected (PASS)
+============================================================
+CS203 Project 5: Adversarial Corruption Test Audit Log
+Execution Timestamp: 2026-10-18T16:00:00Z
+Total Corruptions Injected: 12
+Total Corruptions Detected: 12 / 12 (100% Detection Rate)
+============================================================
+Check 01 [Sample Rate 8kHz downsampling]: CAUGHT (PASS)
+Check 02 [Channels multi-channel stereo]: CAUGHT (PASS)
+Check 03 [Acoustic digital clipping spikes]: CAUGHT (PASS)
+Check 04 [Excessive silence ratio > 40%]: CAUGHT (PASS)
+Check 05 [Acoustic degradation low SNR < 8dB]: CAUGHT (PASS)
+Check 06 [Duration out-of-bounds <1s or >30s]: CAUGHT (PASS)
+Check 07 [Duplicate audio SHA-256 hash injection]: CAUGHT (PASS)
+Check 08 [Foreign script & Emoji character injection]: CAUGHT (PASS)
+Check 09 [Implausible speech rate extreme CPS]: CAUGHT (PASS)
+Check 10 [Invalid intent taxonomy label injection]: CAUGHT (PASS)
+Check 11 [Missing metadata values & schema null violation]: CAUGHT (PASS)
+Check 12 [Train-test speaker overlap leakage injection]: CAUGHT (PASS)
