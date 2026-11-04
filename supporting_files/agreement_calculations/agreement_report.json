@@ -1,10 +1,103 @@
 {
   "round1": {
-    "mean_wer": 0.008082912457912457,
-    "kappa": 0.9111111111111111
+    "annotators": [
+      "A1",
+      "A2"
+    ],
+    "guideline": "v1",
+    "evaluated_clips": 120,
+    "mean_wer": 0.002,
+    "cohen_kappa": 0.8446,
+    "disagreements_count": 14,
+    "disagreements_sample": [
+      {
+        "clip_id": "P1_temp_P1_3_seg005",
+        "intent_a": "admissions",
+        "intent_b": "student_services"
+      },
+      {
+        "clip_id": "P10_temp_P10_PTT-20261019-WA0020_seg002",
+        "intent_a": "it_support",
+        "intent_b": "admissions"
+      },
+      {
+        "clip_id": "P11_temp_P11_PTT-20261019-WA0018_seg001",
+        "intent_a": "hostel_mess",
+        "intent_b": "student_services"
+      },
+      {
+        "clip_id": "P12_temp_P12_PTT-20261019-WA0028_seg002",
+        "intent_a": "student_services",
+        "intent_b": "admissions"
+      },
+      {
+        "clip_id": "P13_temp_P13_WhatsApp_Audio_2026-10-19_at_2_53_56_PM__1__seg007",
+        "intent_a": "it_support",
+        "intent_b": "student_services"
+      },
+      {
+        "clip_id": "P14_temp_P14_WhatsApp_Audio_2026-10-19_at_2_53_56_PM_seg003",
+        "intent_a": "admissions",
+        "intent_b": "student_services"
+      },
+      {
+        "clip_id": "P15_temp_P15_WhatsApp_Audio_2026-10-19_at_2_53_57_PM_seg006",
+        "intent_a": "hostel_mess",
+        "intent_b": "student_services"
+      },
+      {
+        "clip_id": "P17_temp_P17_WhatsApp_Audio_2026-10-19_at_2_53_59_PM_seg001",
+        "intent_a": "it_support",
+        "intent_b": "student_services"
+      },
+      {
+        "clip_id": "P18_temp_P18_2_mins_recording_m4a_seg004",
+        "intent_a": "admissions",
+        "intent_b": "student_services"
+      },
+      {
+        "clip_id": "P19_temp_P19_WhatsApp_Audio_2026-10-19_at_2_53_58_PM_seg003",
+        "intent_a": "hostel_mess",
+        "intent_b": "student_services"
+      },
+      {
+        "clip_id": "P2_temp_P2_PTT-20261019-WA0003_seg001",
+        "intent_a": "it_support",
+        "intent_b": "admissions"
+      },
+      {
+        "clip_id": "P3_temp_P3_1_seg002",
+        "intent_a": "student_services",
+        "intent_b": "hostel_mess"
+      },
+      {
+        "clip_id": "P4_temp_P4_PTT-20261018-WA0003_seg004",
+        "intent_a": "it_support",
+        "intent_b": "student_services"
+      },
+      {
+        "clip_id": "P4_temp_P4_PTT-20261018-WA0017_seg001",
+        "intent_a": "student_services",
+        "intent_b": "admissions"
+      }
+    ]
   },
   "round2": {
-    "mean_wer": 0.0010416666666666667,
-    "kappa": 1.0
+    "annotators": [
+      "A1",
+      "A2"
+    ],
+    "guideline": "v2",
+    "evaluated_clips": 120,
+    "mean_wer": 0.0,
+    "cohen_kappa": 0.9889,
+    "disagreements_count": 1,
+    "disagreements_sample": [
+      {
+        "clip_id": "P4_temp_P4_PTT-20261018-WA0017_seg001",
+        "intent_a": "student_services",
+        "intent_b": "admissions"
+      }
+    ]
   }
 }
