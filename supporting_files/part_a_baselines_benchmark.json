@@ -1,0 +1,32 @@
+{
+  "timestamp": "2026-11-04T05:00:00Z",
+  "hardware": {
+    "platform": "macOS-14.5-arm64-arm-64bit-Mach-O",
+    "processor": "arm",
+    "cpu_execution": true,
+    "torch_version": "2.13.0"
+  },
+  "baselines": {
+    "baseline0_trivial": {
+      "wer": 1.0,
+      "cer": 0.8461475580562667,
+      "intent_accuracy": 0.23529411764705882,
+      "intent_macro_f1": 0.09523809523809523,
+      "time_sec": 0.009579658508300781
+    },
+    "baseline1_unadapted": {
+      "wer": 1.528846933300002,
+      "cer": 1.0226811645282616,
+      "intent_accuracy": 0.17647058823529413,
+      "intent_macro_f1": 0.175,
+      "time_sec": 49.91721796989441
+    },
+    "proposed_system": {
+      "wer": 1.5619001545885174,
+      "cer": 1.0557296988187652,
+      "intent_accuracy": 0.17647058823529413,
+      "intent_macro_f1": 0.14646464646464646,
+      "time_sec": 63.00026297569275
+    }
+  }
+}
