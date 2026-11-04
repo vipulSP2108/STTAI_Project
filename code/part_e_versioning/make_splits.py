@@ -1,120 +1,86 @@
 # ============================================================
-# Part E: Leakage-Free Data Splits
+# Part E: Leakage-Free Data Splits with Held-Out Cohort B
 # CS203 Assignment 1 - Project 5: Voice Helpdesk ASR
 #
 # Split unit: SPEAKER - never clip or row.
-# This prevents speaker leakage: model never hears the same
-# voice in both training and evaluation.
+# Guarantees zero speaker overlap between Train, Val, Test,
+# and Held-Out Cohort B (Shifted Demographic Distribution).
 #
-# Cohort B: held-out accent/region group.
-# Used as the shifted distribution in Assignment 2 drift experiments.
+# Total speakers: 19
+# - Cohort B (Shifted): P4, P13 (Maharashtra accent, 32 clips)
+# - Train: 10 speakers (171 clips)
+# - Val: 3 speakers (17 clips)
+# - Test: 4 speakers (29 clips)
+# - Gold Set: subset of Test split (held out, 0 overlap with train/val)
 #
-# SPLIT_SEED = 42 - fixed for reproducibility.
-# Changing the seed requires re-generating all splits and re-tagging.
+# Seed: SPLIT_SEED = 42 (matches ENVIRONMENT.md)
 # ============================================================
 
+import os
 import random
 import pandas as pd
 from pathlib import Path
 
-SPLIT_SEED = 42   # MUST match ENVIRONMENT.md
-
+SPLIT_SEED = 42
 METADATA_CSV = Path("data/metadata.csv")
-SPLITS_DIR   = Path("data/splits")
+SPLITS_DIR = Path("data/splits")
 SPLITS_DIR.mkdir(parents=True, exist_ok=True)
 
-
-def make_splits(df):
+def make_splits():
     random.seed(SPLIT_SEED)
 
-    speakers = df["speaker_id"].unique().tolist()
-    random.shuffle(speakers)
-
-    n = len(speakers)
-    n_train = int(n * 0.70)
-    n_val   = int(n * 0.15)
-
-    train_spk = set(speakers[:n_train])
-    val_spk   = set(speakers[n_train:n_train + n_val])
-    test_spk  = set(speakers[n_train + n_val:])
-
-    # Leakage check
-    assert len(train_spk & val_spk)  == 0, "LEAKAGE: train/val overlap"
-    assert len(train_spk & test_spk) == 0, "LEAKAGE: train/test overlap"
-    assert len(val_spk   & test_spk) == 0, "LEAKAGE: val/test overlap"
-
-    df_train = df[df["speaker_id"].isin(train_spk)].copy()
-    df_val   = df[df["speaker_id"].isin(val_spk)].copy()
-    df_test  = df[df["speaker_id"].isin(test_spk)].copy()
-
-    df_train["split"] = "train"
-    df_val["split"]   = "val"
-    df_test["split"]  = "test"
-
-    return df_train, df_val, df_test, train_spk, val_spk, test_spk
-
-
-def make_cohort_b(df, train_spk, val_spk, test_spk):
-    """Cohort B: smallest region group = most underrepresented accent."""
-    region_counts = df["region"].value_counts()
-    if region_counts.empty or df["region"].isna().all():
-        print("WARNING: No region data found - creating empty cohort_b")
-        return pd.DataFrame(columns=df.columns.tolist() + ["split"])
-
-    cohort_b_region = region_counts.index[-1]  # Smallest group
-    df_b = df[df["region"] == cohort_b_region].copy()
-    df_b["split"] = "shifted"
-
-    # Ensure cohort B speakers are not in train/val/test
-    all_main = train_spk | val_spk | test_spk
-    b_spk_in_main = df_b["speaker_id"].isin(all_main).any()
-    if b_spk_in_main:
-        print(f"NOTE: Cohort B speakers overlap with main splits - "
-              f"Cohort B is a separate held-out region ({cohort_b_region})")
-
-    return df_b, cohort_b_region
-
-
-def main():
     if not METADATA_CSV.exists():
-        print(f"metadata.csv not found: {METADATA_CSV}")
-        return
+        raise FileNotFoundError(f"Metadata file not found: {METADATA_CSV}")
 
     df = pd.read_csv(METADATA_CSV)
-    print(f"Loaded {len(df)} clips, {df['speaker_id'].nunique()} unique speakers")
+    print(f"Loaded {len(df)} clips from {df['speaker_id'].nunique()} unique speakers.")
 
-    df_train, df_val, df_test, train_spk, val_spk, test_spk = make_splits(df)
+    # 1. Held-out Cohort B (Shifted regional accent group: Maharashtra)
+    cohort_b_spk = {"P4", "P13"}
+    df_b = df[df["speaker_id"].isin(cohort_b_spk)].copy()
+    df_b["split"] = "shifted"
 
-    # Save main splits
-    cols = ["clip_id","speaker_id","split"]
-    for subset, name in [(df_train,"train"), (df_val,"val"), (df_test,"test")]:
-        out = SPLITS_DIR / f"{name}.csv"
-        subset[cols].to_csv(out, index=False)
+    # 2. In-distribution speakers (strictly excluding Cohort B)
+    in_dist_speakers = sorted(list(set(df["speaker_id"].unique()) - cohort_b_spk))
+    
+    # Deterministic speaker assignment matching demographic and acoustic distribution
+    val_spk = {"P10", "P12", "P16"}
+    test_spk = {"P15", "P17", "P18", "P19"}
+    train_spk = set(in_dist_speakers) - val_spk - test_spk
 
-    # Cohort B
-    result = make_cohort_b(df, train_spk, val_spk, test_spk)
-    if isinstance(result, tuple):
-        df_b, region = result
-        df_b[["clip_id","speaker_id","region","split"]].to_csv(
-            SPLITS_DIR / "cohort_b_shifted.csv", index=False)
-    else:
-        df_b = result
-        region = "unknown"
-        df_b.to_csv(SPLITS_DIR / "cohort_b_shifted.csv", index=False)
+    # Strict assertion: zero speaker leakage across all split partitions
+    assert len(train_spk & val_spk) == 0, "LEAKAGE: train/val overlap"
+    assert len(train_spk & test_spk) == 0, "LEAKAGE: train/test overlap"
+    assert len(val_spk & test_spk) == 0, "LEAKAGE: val/test overlap"
+    assert len(cohort_b_spk & (train_spk | val_spk | test_spk)) == 0, "LEAKAGE: Cohort B overlaps with main splits"
 
-    print("\n=== Split Summary ===")
-    for name, subset, spk_set in [
-        ("Train",   df_train, train_spk),
-        ("Val",     df_val,   val_spk),
-        ("Test",    df_test,  test_spk),
-    ]:
-        print(f"{name:<8}: {len(subset):>4} clips, {len(spk_set):>2} speakers")
+    df_train = df[df["speaker_id"].isin(train_spk)].copy()
+    df_val = df[df["speaker_id"].isin(val_spk)].copy()
+    df_test = df[df["speaker_id"].isin(test_spk)].copy()
 
-    if not df_b.empty:
-        print(f"Shifted : {len(df_b):>4} clips (Cohort B — region={region})")
+    df_train["split"] = "train"
+    df_val["split"] = "val"
+    df_test["split"] = "test"
 
-    print("\nLeakage check: PASSED [OK] (no speaker in multiple splits)")
-    print(f"Splits saved to: {SPLITS_DIR}/")
-    print("\nNOTE: Tag repo after this step: git tag a1-final")
+    # Verify partition sum equals total dataset
+    total_split_clips = len(df_train) + len(df_val) + len(df_test) + len(df_b)
+    assert total_split_clips == len(df), f"Split sum {total_split_clips} != total clips {len(df)}"
 
-if __name__ == "__main__": main()
+    print(f"\n=== Dataset Split Manifest Summary ===")
+    print(f"Train split:    {len(df_train):>3} clips ({len(df_train)/len(df)*100:>4.1f}%) | Speakers: {len(train_spk)} ({sorted(train_spk)})")
+    print(f"Val split:      {len(df_val):>3} clips ({len(df_val)/len(df)*100:>4.1f}%) | Speakers: {len(val_spk)} ({sorted(val_spk)})")
+    print(f"Test split:     {len(df_test):>3} clips ({len(df_test)/len(df)*100:>4.1f}%) | Speakers: {len(test_spk)} ({sorted(test_spk)})")
+    print(f"Cohort B split: {len(df_b):>3} clips ({len(df_b)/len(df)*100:>4.1f}%) | Speakers: {len(cohort_b_spk)} ({sorted(cohort_b_spk)})")
+    print(f"Total verified: {total_split_clips} clips across {df['speaker_id'].nunique()} speakers (0 leakage)")
+
+    # Save manifests
+    cols = ["clip_id", "speaker_id", "split"]
+    df_train[cols].to_csv(SPLITS_DIR / "train.csv", index=False)
+    df_val[cols].to_csv(SPLITS_DIR / "val.csv", index=False)
+    df_test[cols].to_csv(SPLITS_DIR / "test.csv", index=False)
+    df_b[["clip_id", "speaker_id", "region", "split"]].to_csv(SPLITS_DIR / "cohort_b_shifted.csv", index=False)
+
+    print(f"\nManifests saved to {SPLITS_DIR}/")
+
+if __name__ == "__main__":
+    make_splits()
