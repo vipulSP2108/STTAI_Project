@@ -1,11 +1,11 @@
-# CS203 Assignment 1 - Project 5: Voice Helpdesk ASR
+# CS203 Assignment 1 & 2 - Project 5: Voice Helpdesk ASR
 # Core dependencies strictly pinned with == for exact reproducibility
 
 sounddevice==0.4.6
 soundfile==0.12.1
 librosa==0.10.1
 openai-whisper==20231117
-jiwer==3.0.3
+jiwer==4.0.0
 pandera==0.17.2
 audiomentations==0.33.0
 langdetect==1.0.9
@@ -18,3 +18,11 @@ pandas==2.0.3
 dvc==3.30.0
 pytest==7.4.3
 pytest-json-report==1.5.0
+
+# Assignment 2 additions: Tracking, Deployment, Offline UI, and Reporting
+mlflow==3.18.0
+fastapi==0.124.0
+uvicorn==0.38.0
+streamlit==1.56.0
+reportlab==5.0.1
+pypdf==6.10.2

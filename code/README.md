@@ -1,74 +1,66 @@
-# CS203 Assignment 1 — Project 5: Voice Helpdesk ASR
+# CS203 Assignments 1 & 2 — Project 5: Voice Helpdesk ASR
 **Cross-Lingual Institute Voice Helpdesk with Drift-Triggered Retraining**
 
 - **Team**: Rajdeep Vraj, Vipul Sunil Patil, Satvik Sharma
-- **Equal Contribution**: All 3 members contributed equally (33.3% each) to all project phases.
+- **Equal Contribution**: All 3 members contributed equally (33.3% each) across all project phases in both Assignment 1 and Assignment 2.
 - **Course**: CS 203, IIT Gandhinagar, Semester I 2026-27
 - **GitHub**: https://github.com/vipulSP2108/STTAI_Project.git
 - **Participant Anonymization**: Per participant and evaluator privacy preferences, numerical tokens (P1–P19 for speakers, A1–A3 for annotators) are used in all public manifests while preserving 100% authentic campus recordings and acoustics.
-- **Deadline**: 18 October 2026 (Release Tag: `a1-final`)
+- **Release Tags**: `a1-final` (Assignment 1), `a2-final` (Assignment 2)
 
 ---
 
-## Quickstart — Rebuild Pipeline in 5 Commands
+## Assignment 2 Quickstart (5 Reproduction Commands)
 
 ```bash
-# 1. Install all dependencies strictly pinned with ==
+# 1. Install pinned dependencies (==)
 pip install -r requirements.txt
 
-# 2. Build metadata.csv from raw audio files
-python part_a_collection/build_metadata.py --audio-dir ../data/raw/audio/
+# 2. Run 15-run MLflow hyperparameter tuning search
+python a2_part_b_tuning/tune_experiments.py
 
-# 3. Run 14 validation checks (all pass on clean calibrated data)
-pytest part_b_validation/validation_suite.py -v
+# 3. Evaluate unified production model on held-out gold test set with 1,000 bootstrap CIs
+python a2_part_c_evaluation/evaluate.py --split gold
 
-# 4. Compute inter-annotator agreement + freeze gold test set
-python part_c_labelling/compute_agreement.py
+# 4. Replay production traffic and verify drift detection (Batch 3 alert)
+python a2_part_e_monitoring/traffic_replay.py
 
-# 5. Create leakage-free speaker-disjoint splits (train/val/test/cohort_b)
-python part_e_versioning/make_splits.py
+# 5. Execute closed-loop active retraining and promotion
+python a2_part_e_monitoring/retrain_pipeline.py
 ```
 
 ---
 
-## What Each Command Does
+## Assignment 2 Modules & Artefacts
 
-| Step | Command | Output Artifact |
-|------|---------|-----------------|
-| 1 | `pip install -r requirements.txt` | Python environment pinned to exact versions (`==`) |
-| 2 | `build_metadata.py` | `data/metadata.csv` with SHA-256 hashes & provenance |
-| 3 | `pytest validation_suite.py -v` | 14 quality checks on audio, text, Pandera schema, and leakage |
-| 4 | `compute_agreement.py` | Agreement report (WER & $\kappa$), freezes `data/gold_test_set.csv` (29 clips) |
-| 5 | `make_splits.py` | Speaker-disjoint `data/splits/*.csv` (Train: 171, Val: 17, Test: 29, Cohort B: 32) |
+| Module | Purpose | Key Artifacts |
+| :--- | :--- | :--- |
+| `a2_part_a_models/` | Baseline 0 (majority), Baseline 1 (unadapted Whisper + TF-IDF), Proposed adapted router | `supporting_files/part_a_baselines_benchmark.json`, `artefacts/models/` |
+| `a2_part_b_tuning/` | 15-run systematic hyperparameter search logged to local SQLite MLflow | `supporting_files/mlflow.db`, `supporting_files/plots/tuning_runs.json`, `supporting_files/plots/tuning_search_analysis.png` |
+| `a2_part_c_evaluation/` | Unified evaluation CLI with 1,000 bootstrap CIs, slice analysis, 20 categorized errors | `supporting_files/error_analysis.csv`, `MODEL_CARD.md` |
+| `a2_part_d_deployment/` | Self-contained Dockerfile, offline validator, FastAPI REST server, Streamlit UI | `Dockerfile`, `supporting_files/offline_validation_output.json`, `DOCKER.md` |
+| `a2_part_e_monitoring/` | 5-batch traffic replay, label-free entropy tracking ($r=0.91$), gated retraining | `data/replay/traffic_stream.jsonl`, `data/retraining/`, `TEST_SET_LOG.md` |
+| `scripts/` | Automated ReportLab PDF generator mirroring `report/report2.tex` | `report/report2.pdf` (7 pages) |
 
 ---
 
-## Data Lifecycle Architecture
+## Docker Offline Verification & UI Launch
 
-```
-Speaker recording (P1-P19) → ingest_records.py → data/raw/audio/*.wav (249 clips)
-                                                → data/metadata.csv (19 phones, 5 noises)
-                                                ↓
-                                    validation_suite.py (14 checks, 100% pass)
-                                                ↓
-                               Label Studio (Level 1: transcripts, Level 2: intent)
-                                                ↓
-                                compute_agreement.py → agreement_report.json
-                                                     → data/gold_test_set.csv (29 held-out test clips)
-                                                ↓
-                                 augment_audio.py → data/processed/augmented/ (60 clips)
-                                                  → augmentation_wer_table.csv (Whisper WER)
-                               active_learning.py → supporting_files/plots/ (5-fold AL curve)
-                                                ↓
-                                  make_splits.py → data/splits/ (Train: 171, Val: 17, Test: 29, Cohort B: 32)
-                                                ↓
-                                     git tag a1-final (Release freeze)
+```bash
+# Build image
+docker build -t voice-helpdesk-asr:a2-final -f Dockerfile ..
+
+# Offline verification (--network none):
+docker run --rm --network none voice-helpdesk-asr:a2-final validate
+
+# Launch Streamlit UI (port 8501) and FastAPI REST service (port 8000):
+docker run --rm -p 8501:8501 -p 8000:8000 voice-helpdesk-asr:a2-final
 ```
 
 ---
 
-## Checksum Handoff Summary for Assignment 2
-- `data/gold_test_set.csv`: `64b7647b5d0d35733063c77caab122a1a7c24ac6c70b7d476ffbabd9a2448ca9`
+## Assignment 1 Checksum Handoff Summary
+- `data/gold_test_set.csv`: `64b7647b5d0d35733063c77caab122a1a7c24ac6c70b7d476ffbabd9a2448ca9` (strictly immutable)
 - `data/splits/train.csv`: `f75a7a0779ca54fcd532904aa17586d24b1c6f876549bf70f89bc2e929cc3122`
 - `data/splits/val.csv`: `b544e5aa091b093f9ca469b69e0fcca7170ba1fd233270567f742406a2f21dfa`
 - `data/splits/test.csv`: `be9b04ed9b40e1f99265d1a36f0cb9b5671837dae27882f41aeb2b72403dd971`

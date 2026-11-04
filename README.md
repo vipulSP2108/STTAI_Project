@@ -1,6 +1,6 @@
 # Cross-Lingual Institute Voice Helpdesk with Drift-Triggered Retraining
 
-**CS203: Software Tools and Techniques in AI — Assignment 1 (Project 5)**  
+**CS203: Software Tools and Techniques in AI — Assignments 1 & 2 (Project 5)**  
 Department of Computer Science and Engineering, Indian Institute of Technology Gandhinagar  
 **Repository**: [https://github.com/vipulSP2108/STTAI_Project.git](https://github.com/vipulSP2108/STTAI_Project.git)
 
@@ -14,14 +14,10 @@ Department of Computer Science and Engineering, Indian Institute of Technology G
 | **Vipul Sunil Patil** | 24110381 | B.Tech CSE and CE, IIT Gandhinagar | 33.3% Equal Technical Contribution |
 | **Satvik Sharma** | 24110300 | B.Tech CSE, IIT Gandhinagar | 33.3% Equal Technical Contribution |
 
-> **Statement of Equal Contribution (1/3rd each):**  
-> All three team members (**Rajdeep Vraj**, **Vipul Sunil Patil**, and **Satvik Sharma**) contributed equally (33.3% each) across all phases of this project. Responsibilities were collaboratively planned, shared, and executed in equal measure, including:
-> - Audio data collection, multi-format container parsing, and audio segmentation (`Records/` & `1 clip 1 tar`).
-> - Automated 14-check validation test suite using `pytest` and `pandera`, plus 12-case adversarial corruption tests.
-> - Label Studio double-annotation protocol, guideline calibration, and inter-annotator agreement computation (WER & Cohen's $\kappa$).
-> - Audio perturbation augmentations (speed, pitch, MUSAN noise, RIR reverb, MP3 codec) and active learning 5-fold cross-validation simulation.
-> - Speaker-disjoint train/val/test splits, Cohort B demographic distribution shift creation, and DVC/Git release management.
-> - Academic research paper authoring (`report/report.tex`), interactive visual dashboards (`ReportDashboard.tsx`, `index.html`), and dataset documentation.
+> **Statement of Equal Contribution (1/3rd each across Assignments 1 & 2):**  
+> All three team members (**Rajdeep Vraj**, **Vipul Sunil Patil**, and **Satvik Sharma**) contributed equally (33.3% each) across all phases of this project:
+> - **Assignment 1 (Data Engineering & Governance):** Authentic audio corpus collection (19 student speakers, 5 acoustic environments, 249 clips), 14-check validation suite with 12-case corruption tests, Label Studio double annotation with guideline iteration ($\kappa=0.989$), multi-condition acoustic augmentations, 5-fold active learning simulation, speaker-disjoint splits, and research report 1 (`report/report.pdf`, tag `a1-final`).
+> - **Assignment 2 (Modeling, Deployment, Monitoring & Governance):** Baseline formulating (Trivial Majority, Unadapted Whisper + TF-IDF) and proposed adapted Whisper routing head, 15-run MLflow experiment tracking (`supporting_files/mlflow.db`) with Pareto frontier analysis, 1,000 bootstrap CI evaluations, Wilcoxon signed-rank significance testing ($p=0.003$), slice analysis, 20 categorized test error modes, self-contained offline Docker image for `linux/amd64` ($\le 4.2$ GB RAM, `--network none` verified), FastAPI REST service, interactive Streamlit UI, 5-batch traffic drift simulation ($r=0.91$), closed-loop active retraining with rigid 2-stage promotion gating, and research report 2 (`report/report2.pdf`, tag `a2-final`).
 
 ---
 
@@ -34,21 +30,70 @@ In adherence to ethical human research standards and institutional participant p
 
 ---
 
-## Project Overview
+## Assignment 2: Model Development, Deployment & Monitoring
 
-This repository implements the end-to-end data engineering, quality validation, annotation agreement, audio augmentation, and provenance tracking pipeline for an institute voice helpdesk ASR system (Project 5). The system is designed to handle Indian academic campus acoustic environments characterized by heavy code-mixing (English, Hindi, and Gujarati), smartphone microphone variability, and regional accent diversity.
+### Key Results Summary
 
-### Corpus Summary
-- **Participants**: 19 unique student speakers (P1–P19) across 4 administrative domains (*Admissions*, *Hostel & Mess*, *IT Support*, *Student Services*).
-- **Audio Profiles**:
-  - **P1–P12**: Extended spontaneous and structured voice queries (~1 min/clip, mean $62.3\,\text{s}$).
-  - **P13–P19**: Bundled multi-query sessions segmented into discrete individual query audio files stored in `Records/P<N>/1 clip 1 tar/` (101 clips, mean $8.5\,\text{s}$).
-- **Canonical Corpus**: 249 standardized $16\,\text{kHz}$ mono WAV audio clips totaling $1.255$ hours ($4{,}516.53\,\text{s}$ segmented; $1.286$ hours / $4{,}628.4\,\text{s}$ raw source audio) with complete SHA-256 cryptographic provenance in `data/metadata.csv`.
-- **Validation**: 14 automated quality checks passing 100% on clean calibrated data, with 12 adversarial tests catching downsampling, clipping, silence, extreme CPS, schema errors, and split leakage.
-- **Inter-Annotator Agreement**: Dual-pass annotation across 120 clips showing convergence from Round 1 ($\text{WER}=0.002, \kappa=0.845$, 14 intent disagreements) to Round 2 ($\text{WER}=0.000, \kappa=0.989$, 1 residual boundary disagreement adjudicated by A3).
-- **Held-Out Gold Test Set**: 29 clips drawn strictly from held-out Test split ($0$ in train, $0$ in val) with immutable SHA-256 hash.
-- **Active Learning**: Uncertainty sampling reaches $90\%$ intent accuracy in $21$ samples vs. $45$ samples for random baseline ($\sim 45\%$ reduction in annotation effort, $p < 0.05$ across 5 folds).
-- **Speaker-Disjoint Splits**: Zero-leakage partitions: Train (171 clips, 10 spk), Val (17 clips, 3 spk), Test (29 clips, 4 spk), Cohort B Shifted (32 clips, 2 spk). Total = 249 clips, 0 speaker overlap.
+| Metric / Stage | Baseline 0 | Baseline 1 (Zero-Shot) | Proposed (`production-v1`) | Retrained (`candidate-retrained-v2`) |
+| :--- | :--- | :--- | :--- | :--- |
+| **Gold Test Set WER** | 1.821 [1.745, 1.897] | 1.679 [1.554, 1.804] | **0.628 [0.564, 0.692]** | 0.630 [0.566, 0.694] |
+| **Gold Test Set CER** | 0.892 [0.840, 0.944] | 0.745 [0.680, 0.810] | **0.312 [0.268, 0.356]** | 0.314 [0.270, 0.358] |
+| **Gold Intent Accuracy** | 24.1% [8.3%, 40.0%] | 44.8% [26.3%, 63.2%] | **89.7% [75.9%, 100.0%]** | **89.7% [75.9%, 100.0%]** |
+| **Gold Macro-F1** | 0.097 [0.038, 0.160] | 0.421 [0.245, 0.602] | **0.894 [0.748, 1.000]** | **0.894 [0.748, 1.000]** |
+| **Cohort B (Shifted) Acc**| 25.0% | 40.6% | 68.8% [53.1%, 84.4%] | **84.4% [71.9%, 96.9%]** ($+15.6\%$) |
+| **CPU Latency (Single)** | < 0.01 ms | 312.4 ms | **0.94 ms (Routing) / 312 ms (Total)** | 0.94 ms |
+| **Model Size** | 1.2 KB | 76 MB | **76 MB (Whisper + 64 KB Router)** | 76 MB |
+| **Statistical Test** | — | — | — | Wilcoxon $W=14.0, p=0.003 < 0.05$ |
+
+### Cryptographic Gold Test Set Integrity
+The held-out Gold Test Set (`data/gold_test_set.csv`) was created during Assignment 1 and remained **100% immutable** across Assignment 2:
+- **Immutable SHA-256 Checksum**: `64b7647b5d0d35733063c77caab122a1a7c24ac6c70b7d476ffbabd9a2448ca9`
+- **Zero Training / Tuning Leakage**: Gold clips were never used for training or hyperparameter selection.
+- **Audit Log**: Every evaluation is logged in [`TEST_SET_LOG.md`](TEST_SET_LOG.md) with exact timestamp, caller, model version, and SHA-256 assertions.
+
+---
+
+## Assignment 2 Quickstart (5 Reproduction Commands)
+
+```bash
+# 1. Install pinned dependencies (==)
+pip install -r code/requirements.txt
+
+# 2. Run 15-run MLflow hyperparameter tuning search on validation set
+python code/a2_part_b_tuning/tune_experiments.py
+
+# 3. Evaluate unified production model on held-out gold test set with 1,000 bootstrap CIs
+python code/a2_part_c_evaluation/evaluate.py --split gold
+
+# 4. Replay production traffic and verify label-free drift detection (Batch 3 alert)
+python code/a2_part_e_monitoring/traffic_replay.py
+
+# 5. Execute closed-loop active retraining, 2-stage gating verification, and promotion
+python code/a2_part_e_monitoring/retrain_pipeline.py
+```
+
+---
+
+## Docker Deployment & Offline Verification
+
+The container is fully self-contained for `linux/amd64` CPU execution ($\le 4.2$ GB peak RAM vs. 16 GB ceiling) and verified with **zero network access** (`--network none`):
+
+```bash
+# 1. Build Docker image
+docker build -t voice-helpdesk-asr:a2-final -f code/Dockerfile .
+
+# 2. Offline Gold Set Validation (strict --network none):
+docker run --rm --network none voice-helpdesk-asr:a2-final validate
+
+# 3. Run Streamlit UI (port 8501) and FastAPI endpoints (port 8000):
+docker run --rm -p 8501:8501 -p 8000:8000 voice-helpdesk-asr:a2-final
+```
+
+- **Streamlit Web Dashboard**: Open [http://localhost:8501](http://localhost:8501) for interactive audio recording, file upload, preloaded sample queries, real-time code-mixed transcription, and Real-Time Factor (RTF) gauge.
+- **FastAPI Endpoints**:
+  - `POST /predict`: Ingests audio base64 or file and returns JSON transcript, intent, confidence, and latency.
+  - `GET /health`: Health probe returning system status, model version, and memory usage.
+  - `GET /version`: Returns git commit hash (`a2-final`) and registered model versions.
 
 ---
 
@@ -56,77 +101,60 @@ This repository implements the end-to-end data engineering, quality validation, 
 
 ```
 STTAI_Project/
+├── TEST_SET_LOG.md              # Cryptographic audit log of every gold test set access
+├── DATA_CHANGES.md              # Explicit record of zero changes to frozen A1 datasets & A2 additions
+├── DOCKER.md                    # Docker build specifications, resource limits, & offline verification
+├── MODELS.md                    # Model registry: baselines, production-v1, candidate-retrained-v2
+├── MODEL_CARD.md                # Comprehensive model card with slice analysis & ethical bounds
 ├── Records/                     # Raw multi-format audio organized by speaker (P1–P19)
-│   ├── P1/ ... P12/             # Large voice notes (~1 min each)
-│   └── P13/ ... P19/            # Bundled recordings + "1 clip 1 tar" discrete query subfolders
 ├── code/                        # Modular pipeline implementation
-│   ├── part_a_collection/       # Ingestion, collection log, & metadata extraction
-│   ├── part_b_validation/       # 14-check automated pytest suite & corruption tests
-│   ├── part_c_labelling/        # Label Studio schema, guidelines v1/v2, & agreement engine
-│   ├── part_d_augmentation/     # 5 audio augmentations, Whisper WER benchmark, & active learning
-│   ├── part_e_versioning/       # Speaker-disjoint dataset splitting logic & DVC tracking
-│   ├── part_f_report/           # Dataset card & ethical protocol
+│   ├── Dockerfile               # Pinned multi-stage CPU-only container definition
 │   ├── requirements.txt         # Pinned Python package dependencies (==)
-│   ├── ENVIRONMENT.md           # Runtime environment, seeds, & Whisper specs
-│   ├── LABELLING_PROTOCOL.md    # Two-level UI hierarchy, 14 disagreement analyses, & gold set rules
-│   └── HANDOFF_A2.md            # Frozen checksums and specifications for Assignment 2 handoff
-├── data/                        # Canonical dataset & labels
-│   ├── raw/audio/               # 249 canonical 16 kHz mono WAV clips
-│   ├── labels/                  # Authentic transcripts and 4-class intent labels
+│   ├── ENVIRONMENT.md           # Runtime environment, seeds, & model specifications
+│   ├── a2_part_a_models/        # Baselines 0 & 1, and proposed adapted router
+│   ├── a2_part_b_tuning/        # 15-run MLflow hyperparameter tuning search
+│   ├── a2_part_c_evaluation/    # Unified evaluation CLI, 1,000 bootstrap CIs, slice analysis
+│   ├── a2_part_d_deployment/    # Offline validator, FastAPI server, & Streamlit UI
+│   ├── a2_part_e_monitoring/    # Traffic replay, drift detector, & gated retrain pipeline
+│   ├── part_a_collection/       # Assignment 1 ingestion & metadata extraction
+│   ├── part_b_validation/       # Assignment 1 14-check validation suite
+│   ├── part_c_labelling/        # Assignment 1 Label Studio annotation & agreement engine
+│   ├── part_d_augmentation/     # Assignment 1 audio augmentations & active learning
+│   ├── part_e_versioning/       # Assignment 1 speaker-disjoint splitting logic
+│   └── scripts/                 # PDF report generator & utility scripts
+├── data/                        # Canonical dataset, labels, and replay batches
+│   ├── raw/audio/               # 249 canonical 16 kHz mono WAV clips (A1 frozen)
+│   ├── labels/                  # Authentic transcripts and 4-class intent labels (A1 frozen)
 │   ├── splits/                  # train.csv (171), val.csv (17), test.csv (29), cohort_b_shifted.csv (32)
-│   └── gold_test_set.csv        # Immutable frozen gold test benchmark (29 clips, zero leakage)
-├── supporting_files/            # Validation logs, Label Studio JSONs, plots
-│   ├── collection_log.csv       # Complete campus recording log (Oct 8–14, 2026)
-│   ├── label_studio_exports/    # Authentic Round 1 & Round 2 double-annotation JSONs
-│   ├── agreement_calculations/  # Agreement report (WER & Cohen's kappa)
-│   ├── validation_outputs/      # Before/after audit JSONs & 12-case corruption test logs
-│   └── plots/                   # Publication-grade figures, WER table, & AL simulation data
-├── references/                  # Course briefs and assignment reference documentation
-└── report/                      # Academic report deliverables
-    ├── report.tex               # IEEE journal format LaTeX source
-    ├── report.pdf               # Compiled technical report PDF
-    ├── ReportDashboard.tsx      # Interactive React TSX report dashboard
-    ├── index.html               # Standalone browser viewer
-    └── figures/                 # Embedded publication-grade diagrams and plots
+│   ├── gold_test_set.csv        # Immutable frozen gold test benchmark (29 clips, zero leakage)
+│   ├── replay/                  # Production traffic stream (100 queries, 5 batches)
+│   └── retraining/              # Active retraining query logs & simulated annotator pool
+├── supporting_files/            # Validation logs, Label Studio JSONs, plots, and benchmarks
+│   ├── mlflow.db                # SQLite MLflow tracking registry (15 systematic runs)
+│   ├── error_analysis.csv       # 20 categorized test error modes with root causes and fixes
+│   ├── offline_validation_output.json # Exact JSON output from offline container evaluation
+│   ├── part_a_baselines_benchmark.json # Baseline performance benchmark comparisons
+│   └── plots/                   # Tuning analysis plot, drift tracking plot, AL curves
+├── report/                      # Academic report deliverables
+│   ├── report.pdf / report.tex  # Assignment 1 technical report (5 pages, tag a1-final)
+│   ├── report2.pdf / report2.tex# Assignment 2 technical report (7 pages, tag a2-final)
+│   ├── ReportDashboard.tsx / index.html   # Assignment 1 interactive React dashboard
+│   ├── ReportDashboard2.tsx / index2.html # Assignment 2 interactive React dashboard
+│   └── figures/                 # High-resolution figures embedded in reports
+└── .github/workflows/ci.yml     # Automated GitHub Actions CI workflow
 ```
 
 ---
 
-## Quickstart & Reproduction
+## Frozen Benchmarks & Git Releases
 
-All steps can be executed sequentially in a clean Python 3.10+ virtual environment:
-
-```bash
-# 1. Install pinned dependencies (==)
-pip install -r code/requirements.txt
-
-# 2. Ingest raw records & generate canonical metadata
-python code/part_a_collection/ingest_records.py --records-dir Records
-python code/part_a_collection/build_metadata.py --audio-dir data/raw/audio/
-
-# 3. Run automated validation suite (14 checks) & 12 corruption tests
-pytest code/part_b_validation/validation_suite.py -v
-python code/part_b_validation/corruption_test.py
-
-# 4. Compute inter-annotator agreement & verify frozen gold test set
-python code/part_c_labelling/compute_agreement.py
-
-# 5. Generate audio augmentations, Whisper WER benchmark, & active learning curve
-python code/part_d_augmentation/augment_audio.py
-python code/part_d_augmentation/active_learning.py
-
-# 6. Create speaker-disjoint splits with Cohort B shift
-python code/part_e_versioning/make_splits.py
-```
-
----
-
-## Frozen Benchmarks & Git Release
-
-- **Release Tag**: `a1-final`
+- **Assignment 1 Release Tag**: `a1-final`
+- **Assignment 2 Release Tag**: `a2-final`
 - **Gold Test Set SHA-256**: `64b7647b5d0d35733063c77caab122a1a7c24ac6c70b7d476ffbabd9a2448ca9`
 - **Train Split SHA-256**: `f75a7a0779ca54fcd532904aa17586d24b1c6f876549bf70f89bc2e929cc3122`
 - **Val Split SHA-256**: `b544e5aa091b093f9ca469b69e0fcca7170ba1fd233270567f742406a2f21dfa`
 - **Test Split SHA-256**: `be9b04ed9b40e1f99265d1a36f0cb9b5671837dae27882f41aeb2b72403dd971`
 - **Cohort B Shifted SHA-256**: `0d780ed6b5e4456590bdaa115f1815594d185b1e6372fb607c6afd78f285a47f`
-- **Academic Report**: [report/report.tex](report/report.tex)
+- **Assignment 1 Report**: [report/report.pdf](report/report.pdf)
+- **Assignment 2 Report**: [report/report2.pdf](report/report2.pdf)
+- **Assignment 2 Interactive Dashboard**: [report/index2.html](report/index2.html)
