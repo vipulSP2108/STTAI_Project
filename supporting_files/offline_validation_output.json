@@ -1,0 +1,24 @@
+{
+  "status": "SUCCESS",
+  "evaluation_split": "gold_test_set",
+  "evaluated_clips": 29,
+  "gold_set_sha256": "64b7647b5d0d35733063c77caab122a1a7c24ac6c70b7d476ffbabd9a2448ca9",
+  "gold_checksum_match": true,
+  "model_version": "production-v1",
+  "git_commit": "a2-final",
+  "hardware": {
+    "system": "Darwin",
+    "machine": "arm64",
+    "cpu_execution": true
+  },
+  "metrics": {
+    "transcript_wer": 0.628,
+    "transcript_cer": 0.312,
+    "intent_accuracy": 0.897,
+    "intent_macro_f1": 0.894,
+    "evaluated_clips": 29,
+    "mean_inference_latency_ms": 312.4,
+    "cpu_real_time_factor": 0.174
+  },
+  "offline_verified": true
+}

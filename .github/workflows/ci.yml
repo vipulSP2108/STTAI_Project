@@ -1,0 +1,52 @@
+name: CS203 Assignment 2 - Continuous Integration & Offline Verification
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test_and_verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+          cache: "pip"
+
+      - name: Install System Dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg libsndfile1
+
+      - name: Install Pinned Dependencies
+        run: |
+          pip install -r code/requirements.txt
+
+      - name: Step 1: Run Unit Tests & Assignment 1 Validation Suite
+        run: |
+          pytest code/part_b_validation/validation_suite.py -v
+          python code/part_b_validation/corruption_test.py
+
+      - name: Step 2: Verify Gold Test Set Checksum Protection
+        run: |
+          python -c "
+          import hashlib
+          expected = '64b7647b5d0d35733063c77caab122a1a7c24ac6c70b7d476ffbabd9a2448ca9'
+          actual = hashlib.sha256(open('data/gold_test_set.csv', 'rb').read()).hexdigest()
+          assert actual == expected, f'Hash mismatch: {actual}'
+          print('Gold test set hash integrity verified!')
+          "
+
+      - name: Step 3: Build Docker Image
+        run: |
+          docker build -t voice-helpdesk-asr:ci -f code/Dockerfile .
+
+      - name: Step 4: Offline Smoke Request & Gold Set Validation (--network none)
+        run: |
+          docker run --rm --network none voice-helpdesk-asr:ci validate
