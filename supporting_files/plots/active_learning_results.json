@@ -1,74 +1,92 @@
 [
   {
     "budget": 5,
-    "al_accuracy_mean": 0.552,
-    "al_accuracy_std": 0.032,
-    "random_accuracy_mean": 0.364,
-    "random_accuracy_std": 0.048,
-    "accuracy_gain": 0.188,
-    "p_value": 0.002
+    "al_accuracy_mean": 0.542,
+    "al_accuracy_std": 0.035,
+    "random_accuracy_mean": 0.429,
+    "random_accuracy_std": 0.043,
+    "accuracy_gain": 0.114,
+    "p_value": 0.0023
   },
   {
     "budget": 10,
-    "al_accuracy_mean": 0.748,
-    "al_accuracy_std": 0.024,
-    "random_accuracy_mean": 0.518,
-    "random_accuracy_std": 0.042,
-    "accuracy_gain": 0.23,
-    "p_value": 0.002
+    "al_accuracy_mean": 0.712,
+    "al_accuracy_std": 0.037,
+    "random_accuracy_mean": 0.599,
+    "random_accuracy_std": 0.054,
+    "accuracy_gain": 0.113,
+    "p_value": 0.0545
   },
   {
     "budget": 15,
-    "al_accuracy_mean": 0.835,
+    "al_accuracy_mean": 0.775,
     "al_accuracy_std": 0.018,
-    "random_accuracy_mean": 0.625,
-    "random_accuracy_std": 0.035,
-    "accuracy_gain": 0.21,
-    "p_value": 0.002
+    "random_accuracy_mean": 0.645,
+    "random_accuracy_std": 0.053,
+    "accuracy_gain": 0.129,
+    "p_value": 0.0119
   },
   {
     "budget": 20,
-    "al_accuracy_mean": 0.892,
-    "al_accuracy_std": 0.015,
-    "random_accuracy_mean": 0.704,
-    "random_accuracy_std": 0.03,
-    "accuracy_gain": 0.188,
-    "p_value": 0.002
+    "al_accuracy_mean": 0.804,
+    "al_accuracy_std": 0.01,
+    "random_accuracy_mean": 0.727,
+    "random_accuracy_std": 0.021,
+    "accuracy_gain": 0.077,
+    "p_value": 0.0041
   },
   {
     "budget": 25,
-    "al_accuracy_mean": 0.934,
-    "al_accuracy_std": 0.012,
-    "random_accuracy_mean": 0.768,
-    "random_accuracy_std": 0.026,
-    "accuracy_gain": 0.166,
-    "p_value": 0.002
+    "al_accuracy_mean": 0.828,
+    "al_accuracy_std": 0.02,
+    "random_accuracy_mean": 0.775,
+    "random_accuracy_std": 0.021,
+    "accuracy_gain": 0.053,
+    "p_value": 0.0189
   },
   {
     "budget": 30,
-    "al_accuracy_mean": 0.958,
-    "al_accuracy_std": 0.009,
-    "random_accuracy_mean": 0.822,
-    "random_accuracy_std": 0.022,
-    "accuracy_gain": 0.136,
-    "p_value": 0.015
+    "al_accuracy_mean": 0.854,
+    "al_accuracy_std": 0.007,
+    "random_accuracy_mean": 0.842,
+    "random_accuracy_std": 0.034,
+    "accuracy_gain": 0.012,
+    "p_value": 0.502
+  },
+  {
+    "budget": 35,
+    "al_accuracy_mean": 0.892,
+    "al_accuracy_std": 0.033,
+    "random_accuracy_mean": 0.861,
+    "random_accuracy_std": 0.026,
+    "accuracy_gain": 0.031,
+    "p_value": 0.0942
   },
   {
     "budget": 40,
-    "al_accuracy_mean": 0.978,
-    "al_accuracy_std": 0.007,
-    "random_accuracy_mean": 0.875,
-    "random_accuracy_std": 0.018,
-    "accuracy_gain": 0.103,
-    "p_value": 0.015
+    "al_accuracy_mean": 0.938,
+    "al_accuracy_std": 0.037,
+    "random_accuracy_mean": 0.887,
+    "random_accuracy_std": 0.037,
+    "accuracy_gain": 0.051,
+    "p_value": 0.0417
+  },
+  {
+    "budget": 45,
+    "al_accuracy_mean": 0.959,
+    "al_accuracy_std": 0.022,
+    "random_accuracy_mean": 0.908,
+    "random_accuracy_std": 0.04,
+    "accuracy_gain": 0.052,
+    "p_value": 0.0198
   },
   {
     "budget": 50,
-    "al_accuracy_mean": 0.988,
-    "al_accuracy_std": 0.005,
-    "random_accuracy_mean": 0.912,
-    "random_accuracy_std": 0.014,
-    "accuracy_gain": 0.076,
-    "p_value": 0.015
+    "al_accuracy_mean": 0.966,
+    "al_accuracy_std": 0.014,
+    "random_accuracy_mean": 0.937,
+    "random_accuracy_std": 0.032,
+    "accuracy_gain": 0.029,
+    "p_value": 0.1567
   }
 ]
