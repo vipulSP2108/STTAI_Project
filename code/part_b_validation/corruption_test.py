@@ -10,7 +10,7 @@
 # ============================================================
 
 import io
-import os
+from datetime import datetime, timezone
 import wave
 import json
 import struct
@@ -181,7 +181,7 @@ def main():
     report = (
         "============================================================\n"
         "CS203 Project 5: Adversarial Corruption Test Audit Log\n"
-        f"Execution Timestamp: 2026-10-18T16:00:00Z\n"
+        f"Execution Timestamp: {datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')}\n"
         f"Total Corruptions Injected: {total_tests}\n"
         f"Total Corruptions Detected: {passed_tests} / {total_tests} (100% Detection Rate)\n"
         "============================================================\n" +
