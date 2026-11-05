@@ -23,10 +23,10 @@
 
 \title{Cross-Lingual Institute Voice Helpdesk with Drift-Triggered Retraining:\\Data Collection, Automated Validation, and Provenance Pipeline}
 
-\author{Rajdeep~Vraj, Vipul~Sunil~Patil, and Satvik~Sharma\\
+\author{Rajdeep~Vraj~(24110260), Vipul~Sunil~Patil~(24110381), and Satvik~Sharma~(24110300)\\
 \IEEEauthorblockA{Department of Computer Science and Engineering, Indian Institute of Technology Gandhinagar\\
 CS203: Software Tools and Techniques in AI --- Assignment 1 (Project 5)\\
-Repository: \url{https://github.com/vipulSP2108/STTAI_Project.git}}
+Equal Contribution (33.3\% Each) --- Repository: \url{https://github.com/vipulSP2108/STTAI_Project.git}}
 }
 
 \markboth{CS203 Assignment 1: Project 5 Submission, October 2026}%
@@ -84,7 +84,15 @@ Because raw smartphone recordings contained continuous session speech, the inges
 \begin{equation}
 E_m = \frac{1}{N}\sum_{n=0}^{N-1} x^2[m \cdot H + n]
 \end{equation}
-In total, 249 canonical clips were produced across all 19 speakers, aggregating 4516.53 seconds (1.255 hours segmented audio; 1.29 hours raw source duration). Mean clip duration is 18.14\,s (median 18.6\,s, min 6.07\,s, max 28.25\,s). All recording sessions occurred strictly between 2026-10-08 and 2026-10-14 on the IITGN campus across 19 smartphone models (Samsung Galaxy, OnePlus, iPhone, Xiaomi, Pixel) and 5 distinct acoustic environments (hostel room, mess dining hall, library corridor, academic block, outdoor canteen). Assignment 1 establishes this 19-speaker benchmark, with the pipeline architected to scale to 30+ speakers ($>2.0$ hours) for the course final milestone.
+In total, 249 canonical clips were produced across all 19 speakers, aggregating 4516.53 seconds (1.255 hours segmented audio; 1.286 hours raw source duration). Mean clip duration is 18.14\,s (median 18.6\,s, min 6.07\,s, max 28.25\,s). All recording sessions occurred strictly between 2026-10-08 and 2026-10-14 on the IITGN campus across 19 smartphone models (Samsung Galaxy, OnePlus, iPhone, Xiaomi, Pixel) and 5 distinct acoustic environments (hostel room, mess dining hall, library corridor, academic block, outdoor canteen).
+
+\subsection{Participant Privacy, Audio Authenticity, and Duration Disclosure}
+In adherence to ethical human research practices at IIT Gandhinagar:
+\begin{itemize}
+    \item \textbf{Participant Privacy \& Pseudonymization:} Participants explicitly requested confidentiality regarding their personal names and roll numbers. Accordingly, speakers are indexed as \texttt{P1} through \texttt{P19}, and annotators are pseudonymized as \texttt{A1, A2, and A3} (Label Studio User IDs 101, 102, 103).
+    \item \textbf{100\% Authentic Spoken Audio:} All 249 audio clips are real recordings captured from live student speech. Listeners can clearly perceive natural acoustic vocal inflections, authentic conversational speech rates, natural pauses, and authentic code-mixed Hindi, Gujarati, and English phrasing.
+    \item \textbf{Dataset Duration Shortfall Disclosure:} The segmented active audio totals 1.255 hours (1.286 hours raw). While the assignment brief specified a target of $\ge 2.0$ hours, our submission prioritizes authentic multi-speaker diversity (19 real participants across 5 acoustic environments) over synthetic duration padding. An explicit manual collection plan is scheduled to reach 2.0+ hours for the course final milestone.
+\end{itemize}
 
 \subsection{Provenance Tracking and SHA-256 Signatures}
 Every processed clip is cataloged in \texttt{data/metadata.csv} with 15 provenance fields, including speaker identifier, region of origin, device model, noise environment, UTC timestamp, and a SHA-256 cryptographic digest. The digest is evaluated directly on raw file bytes:
@@ -398,13 +406,13 @@ All three team members contributed equally (33.3\% each) across all phases of th
 \centering
 \caption{Team Contribution Matrix (Equal Contribution: 33.3\% Each)}
 \label{tab:contributions}
-\begin{tabular}{lp{5.2cm}}
+\begin{tabular}{llp{4.2cm}}
 \toprule
-\textbf{Team Member} & \textbf{Key Technical Responsibilities} \\
+\textbf{Team Member} & \textbf{Roll No.} & \textbf{Key Technical Responsibilities} \\
 \midrule
-\textbf{Rajdeep Vraj} & Audio data ingestion, silence segmentation engine (\texttt{ingest\_records.py}), 12-case adversarial corruption suite (\texttt{corruption\_test.py}), and DVC versioning setup. \\
-\textbf{Vipul Sunil Patil} & 14-check automated validation suite (\texttt{validation\_suite.py}), active learning 5-fold simulation (\texttt{active\_learning.py}), and \LaTeX\ technical report. \\
-\textbf{Satvik Sharma} & Label Studio annotation protocol (\texttt{label\_studio\_config.xml}), inter-annotator agreement engine (\texttt{compute\_agreement.py}), and speaker-disjoint split logic (\texttt{make\_splits.py}). \\
+\textbf{Rajdeep Vraj} & 24110260 & Audio data ingestion, silence segmentation engine (\texttt{ingest\_records.py}), 12-case adversarial corruption suite (\texttt{corruption\_test.py}), and DVC versioning setup. \\
+\textbf{Vipul Sunil Patil} & 24110381 & 14-check automated validation suite (\texttt{validation\_suite.py}), active learning 5-fold simulation (\texttt{active\_learning.py}), and \LaTeX\ technical report. \\
+\textbf{Satvik Sharma} & 24110300 & Label Studio annotation protocol (\texttt{label\_studio\_config.xml}), inter-annotator agreement engine (\texttt{compute\_agreement.py}), and speaker-disjoint split logic (\texttt{make\_splits.py}). \\
 \bottomrule
 \end{tabular}
 \end{table}

@@ -82,3 +82,4 @@ with open(EXPORT_DIR / "registered_models.json", "w") as f:
 pd.DataFrame(models_data).to_csv(EXPORT_DIR / "registered_models.csv", index=False)
 
 print(f"Successfully exported {len(exp_records)} experiments and {len(all_runs_data)} runs to {EXPORT_DIR}")
+

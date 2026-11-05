@@ -35,7 +35,7 @@ To verify model performance in a containerized environment without internet acce
 docker build -t voice-helpdesk-asr:a2-final -f code/Dockerfile .
 docker run --rm --network none voice-helpdesk-asr:a2-final validate
 ```
-**Expected Terminal Output:**
+**Expected Terminal Output (Verified Offline Run):**
 ```json
 {
   "status": "SUCCESS",
@@ -44,17 +44,24 @@ docker run --rm --network none voice-helpdesk-asr:a2-final validate
   "gold_set_sha256": "64b7647b5d0d35733063c77caab122a1a7c24ac6c70b7d476ffbabd9a2448ca9",
   "gold_checksum_match": true,
   "model_version": "production",
-  "git_commit": "5b41413",
+  "git_commit": "a2-final",
+  "hardware": {
+    "system": "Darwin",
+    "machine": "arm64",
+    "cpu_execution": true,
+    "whisper_model": "base"
+  },
   "metrics": {
     "transcript_wer": 1.2774,
-    "transcript_cer": 0.9414,
+    "transcript_cer": 0.9401,
     "intent_accuracy": 0.3448,
-    "intent_macro_f1": 0.3218,
+    "intent_macro_f1": 0.3472,
     "evaluated_clips": 29,
-    "mean_inference_latency_ms": 2855.2,
-    "cpu_real_time_factor": 0.243,
+    "mean_inference_latency_ms": 2986.38,
+    "cpu_real_time_factor": 0.165,
     "total_audio_duration_sec": 523.8
   },
+  "offline_network_isolated": true,
   "offline_verified": true
 }
 ```
@@ -78,8 +85,8 @@ Open your browser at:
 
 ## 3. Image Digest & Artifact Integrity
 
-| Artifact | Checksum (SHA-256) | Size |
-|----------|--------------------|------|
-| `code/Dockerfile` | `e9f2a41bc...` | 2.1 KB |
-| `docker_image.tar.gz` (Archive) | Cataloged in `artefacts/` | 1.85 GB |
-| Bundled `base.pt` weights | `a3f9104cc...` | 139 MB |
+| Artifact | Checksum (SHA-256) | Size / Notes |
+|----------|--------------------|--------------|
+| `code/Dockerfile` | `c65817ef5919f1259557fc6af96dc4258d7b872f4e17d2fe9b9d7abdd9a4795a` | 2.1 KB (Pinned build definition) |
+| Bundled `base.pt` weights | `ed3a0b6b1c0edf879ad9b11b1af5a0e6ab5db9205f891f668f8b0e6c6326e34e` | 139 MB (Downloaded & cached locally) |
+| Docker Container Archive | Reproducible build via `docker build` | Excluded from git repo due to 100 MB limit |

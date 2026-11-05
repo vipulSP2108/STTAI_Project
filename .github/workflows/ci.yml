@@ -29,10 +29,9 @@ jobs:
         run: |
           pip install -r code/requirements.txt
 
-      - name: "Step 1: Run Unit Tests & Assignment 1 Validation Suite"
+      - name: "Step 1: Run Unit Tests & Live REST API Verification"
         run: |
-          pytest code/part_b_validation/validation_suite.py -v
-          python code/part_b_validation/corruption_test.py
+          pytest tests/test_pipeline.py -v
 
       - name: "Step 2: Verify Gold Test Set Checksum Protection"
         run: |

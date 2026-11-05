@@ -44,3 +44,4 @@ data:
   intents: "data/labels/intents.csv"
   audio_dir: "data/raw/audio"
   gold_sha256: "64b7647b5d0d35733063c77caab122a1a7c24ac6c70b7d476ffbabd9a2448ca9"
+

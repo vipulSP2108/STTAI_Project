@@ -212,41 +212,63 @@ def train_pipeline(config_path="configs/final.yaml", compare_augmentations=False
     # 6. Comparison Table on Validation (Guide 3.1.4)
     comp_results = []
     if compare_augmentations:
-        print("\n=== Running Required Comparison Across Training Configurations (Guide Section 3.1.4) ===")
-        comp_configs = [
-            ("Train Only (171 clips)", df_train),
-            ("Train + Augmented (231 clips)", None),
-            ("Train + Actively Selected (187 clips)", None),
-            ("Train + Both (247 clips)", None)
-        ]
-
+        print("\n=== Running Empirical Comparison Across Training Configurations (Guide Section 3.1.4) ===")
         # Load augmented metadata if exists
         aug_p = data_dir / "processed/augmented/augmented_metadata.csv"
         df_aug = pd.read_csv(aug_p) if aug_p.exists() else pd.DataFrame()
 
-        for name, _ in comp_configs:
-            # Evaluate empirical scores
-            if name.startswith("Train Only"):
-                c_acc = val_acc
-                c_wer = val_wer
-            elif "Augmented" in name:
-                c_acc = round(val_acc + 0.059, 4)
-                c_wer = round(max(0.20, val_wer - 0.04), 4)
-            elif "Actively" in name:
-                c_acc = round(val_acc + 0.088, 4)
-                c_wer = round(max(0.18, val_wer - 0.06), 4)
-            else:
-                c_acc = round(val_acc + 0.118, 4)
-                c_wer = round(max(0.15, val_wer - 0.08), 4)
+        # Build genuine datasets
+        datasets = {
+            "Train Only (171 clips)": df_train[["transcript", "intent"]].copy(),
+        }
+        if not df_aug.empty:
+            datasets["Train + Augmented (231 clips)"] = pd.concat(
+                [df_train[["transcript", "intent"]], df_aug[["transcript", "intent"]]],
+                ignore_index=True
+            )
 
-            with mlflow.start_run(run_name=f"ablation_{name.split()[1].lower()}") as ab_run:
+        y_val_indices = np.array([INTENT_MAP[i] for i in df_val["intent"]])
+        for name, d_df in datasets.items():
+            t_vec = TfidfVectorizer(ngram_range=(1, 2), max_features=1000, sublinear_tf=True)
+            X_t = t_vec.fit_transform([normalise_text(t) for t in d_df["transcript"].astype(str)]).toarray()
+            y_t = np.array([INTENT_MAP[i] for i in d_df["intent"]])
+
+            torch.manual_seed(seed)
+            t_model = nn.Sequential(
+                nn.Linear(X_t.shape[1], m_cfg.get("hidden_dim", 64)),
+                nn.ReLU(),
+                nn.Dropout(m_cfg.get("dropout", 0.2)),
+                nn.Linear(m_cfg.get("hidden_dim", 64), 4)
+            )
+            t_opt = torch.optim.Adam(t_model.parameters(), lr=t_cfg.get("lr", 0.005))
+            t_crit = nn.CrossEntropyLoss()
+
+            t_model.train()
+            tx_tensor = torch.tensor(X_t, dtype=torch.float32)
+            ty_tensor = torch.tensor(y_t, dtype=torch.long)
+            for _ in range(epochs):
+                t_opt.zero_grad()
+                l = t_crit(t_model(tx_tensor), ty_tensor)
+                l.backward()
+                t_opt.step()
+
+            t_model.eval()
+            with torch.no_grad():
+                val_feats = torch.tensor(t_vec.transform(val_preds_tx).toarray(), dtype=torch.float32)
+                p_out = t_model(val_feats).argmax(dim=1).numpy()
+            c_acc = float(accuracy_score(y_val_indices, p_out))
+            c_wer = float(val_wer)  # Whisper base validation WER remains governed by acoustic backbone
+
+            with mlflow.start_run(run_name=f"emp_eval_{name.split()[0].lower()}") as ab_run:
                 mlflow.log_param("training_data", name)
+                mlflow.log_param("num_samples", len(d_df))
                 mlflow.log_metrics({"val_wer": c_wer, "val_intent_acc": c_acc})
                 ab_id = ab_run.info.run_id
 
             comp_results.append({
                 "Training Data": name,
-                "Val WER": f"{c_wer:.3f}",
+                "Sample Count": len(d_df),
+                "Val WER (Whisper Base)": f"{c_wer:.3f}",
                 "Val Intent Acc": f"{c_acc*100:.1f}%",
                 "MLflow Run ID": ab_id[:8]
             })
@@ -270,5 +292,10 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--config", default="configs/final.yaml")
     parser.add_argument("--compare-augmentations", action="store_true")
+    parser.add_argument("--train-asr", action="store_true", help="Fine-tune Whisper base decoder cross-attention")
     args = parser.parse_args()
+    if args.train_asr:
+        from train_asr import train_whisper_adaptation
+        train_whisper_adaptation()
     train_pipeline(args.config, args.compare_augmentations)
+

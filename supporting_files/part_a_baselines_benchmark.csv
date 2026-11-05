@@ -1,5 +1,3 @@
-Training Data,Val WER,Val Intent Acc,MLflow Run ID
-Train Only (171 clips),1.455,23.5%,4ed418b4
-Train + Augmented (231 clips),1.415,29.4%,6da4447a
-Train + Actively Selected (187 clips),1.395,32.3%,f7f52312
-Train + Both (247 clips),1.375,35.3%,7e711f7b
+Training Data,Sample Count,Val WER (Whisper Base),Val Intent Acc,MLflow Run ID
+Train Only (171 clips),171,1.455,23.5%,f9b404cc
+Train + Augmented (231 clips),231,1.455,29.4%,55609985

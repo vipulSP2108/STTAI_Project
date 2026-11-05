@@ -19,11 +19,11 @@ At commit `a1-final` (Git tag `a1-final`), the canonical dataset partitions and 
 | Dataset Addition | File / Directory | Size / Records | Purpose in Assignment 2 |
 |------------------|------------------|----------------|--------------------------|
 | **Streaming Traffic Stream** | `data/replay/traffic_stream.jsonl` | 100 queries | Simulates production traffic sequence gradually shifting from in-distribution test queries to out-of-distribution Cohort B queries (fixed seed: `SEED=42`). |
-| **Simulated Annotator Pool** | `data/retraining/annotator_pool.csv` | 32 clips | Pre-labelled pool representing ground-truth annotations from simulated human annotator for drift retraining. Revealed only upon active learning uncertainty query. |
-| **Retrained Training Manifest** | `data/retraining/train_retrained.csv` | 187 clips | Augmented training partition incorporating 16 newly labelled drift queries selected via active learning uncertainty scoring, with 0 test or gold leakage. |
+| **Simulated Annotator Pool** | `data/retraining/annotator_pool.csv` | 16 clips (Speaker P4) | Pre-labelled adaptation candidate pool from Speaker P4 available for active learning uncertainty query. |
 | **Cohort B Adaptation Split** | `data/retraining/cohort_b_adapt.csv` | 19 clips (Speaker P4) | Disjoint adaptation pool available for simulated annotator query during active retraining. |
 | **Cohort B Held-Out Eval Split** | `data/retraining/cohort_b_heldout.csv` | 13 clips (Speaker P13) | Completely held-out evaluation partition for Cohort B distribution drift; strictly isolated from selection and training. |
 | **Cohort B Partition Manifest** | `data/retraining/cohort_b_split.csv` | 32 clips (2 speakers) | Full disjoint partition manifest establishing speaker-isolated adaptation vs evaluation roles. |
+| **Retrained Training Manifest** | `data/retraining/train_retrained.csv` | 183 clips (rehearsal) / 12 clips (no-rehearsal) | Active-retraining corpus containing 12 uncertainty-queried drift samples from Speaker P4 (with or without 171 rehearsal samples; zero gold leakage). |
 
 ---
 

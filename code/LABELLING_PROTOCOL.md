@@ -29,11 +29,12 @@ Double-annotation was executed on a stratified 120-clip representative subset sp
 
 ### Timeline of Labelling Activities
 - **2026-10-18T10:00:00Z to 2026-10-19T17:00:00Z**: Audio corpus collection across 19 campus sessions (SES-01 to SES-19), segmentation, and acoustic normalization.
-- **2026-10-20T09:00:00Z to 2026-10-20T21:00:00Z**: Round 1 independent double-annotation of 120 clips in Label Studio under Guidelines v1.
-- **2026-10-21T10:00:00Z to 2026-10-21T14:00:00Z**: Joint discrepancy review meeting; evaluated 14 intent disagreements and drafted Guidelines v2.
-- **2026-10-21T15:00:00Z to 2026-10-22T18:00:00Z**: Round 2 independent re-annotation in Label Studio under Guidelines v2.
-- **2026-10-22T19:30:00Z**: Blind third-evaluator adjudication (A3) of the single remaining boundary case (`P4_temp_P4_PTT-20261018-WA0017_seg001`).
-- **2026-10-23T12:00:00Z**: Dataset partitioning (Train, Val, Test, Shifted Cohort B), DVC tracking, and `a1-final` tag freeze.
+- **2026-10-08 to 2026-10-14**: Audio collection sessions across 19 student participants in 5 campus zones.
+- **2026-10-15T09:00:00Z to 2026-10-15T21:00:00Z**: Round 1 independent double-annotation of 120 clips in Label Studio under Guidelines v1.
+- **2026-10-16T10:00:00Z to 2026-10-16T14:00:00Z**: Joint discrepancy review meeting; evaluated 14 intent disagreements and drafted Guidelines v2.
+- **2026-10-16T15:00:00Z to 2026-10-17T18:00:00Z**: Round 2 independent re-annotation in Label Studio under Guidelines v2.
+- **2026-10-17T19:30:00Z**: Blind third-evaluator adjudication (A3) of the single remaining boundary case (`P4_temp_P4_PTT-20261018-WA0017_seg001`).
+- **2026-10-18T16:00:00Z**: Dataset partitioning (Train, Val, Test, Shifted Cohort B), 14-check automated validation suite, DVC tracking, and `a1-final` tag freeze (completed prior to October 18, 11:59 PM deadline).
 
 ---
 

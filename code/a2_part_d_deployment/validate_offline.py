@@ -45,7 +45,7 @@ OUT_JSON.parent.mkdir(parents=True, exist_ok=True)
 INTENT_MAP = {"admissions": 0, "hostel_mess": 1, "it_support": 2, "student_services": 3}
 REV_INTENT_MAP = {v: k for k, v in INTENT_MAP.items()}
 
-def validate_offline(fast_cached=True):
+def validate_offline(fast_cached=False):
     # 1. Assert Gold Checksum
     if not GOLD_CSV.exists():
         print(f"ERROR: {GOLD_CSV} not found!", file=sys.stderr)
@@ -89,8 +89,10 @@ def validate_offline(fast_cached=True):
                 import whisper
                 whisper_model = whisper.load_model("base", device="cpu")
             wav_path = AUDIO_DIR / f"{cid}.wav"
+            audio_arr = whisper.load_audio(str(wav_path))
+            dur = len(audio_arr) / 16000.0
             res = whisper_model.transcribe(
-                str(wav_path),
+                audio_arr,
                 fp16=False,
                 condition_on_previous_text=False,
                 temperature=0.0,
@@ -99,7 +101,6 @@ def validate_offline(fast_cached=True):
                 beam_size=1
             )
             tx = res.get("text", "").strip()
-            dur = 15.0
         pred_transcripts.append(normalise_text(tx if tx else "institute support desk query"))
         durations.append(dur)
 
@@ -163,6 +164,20 @@ def validate_offline(fast_cached=True):
     timestamp = time.strftime("%Y-%m-%dT%H:%M:%SZ")
     git_commit = os.environ.get("GIT_COMMIT", "a2-final")
 
+    # Check outbound network isolation
+    import socket
+    def is_offline():
+        try:
+            s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+            s.settimeout(0.4)
+            s.connect(("8.8.8.8", 53))
+            s.close()
+            return False
+        except Exception:
+            return True
+
+    network_offline = is_offline()
+
     payload = {
         "status": "SUCCESS",
         "evaluation_split": "gold_test_set",
@@ -178,6 +193,7 @@ def validate_offline(fast_cached=True):
             "whisper_model": "base"
         },
         "metrics": metrics,
+        "offline_network_isolated": network_offline,
         "offline_verified": True
     }
 
@@ -195,6 +211,8 @@ def validate_offline(fast_cached=True):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--live", action="store_true", help="Force live transcription rather than cache")
+    parser.add_argument("--cached", action="store_true", help="Use cache instead of live model transcription")
+    parser.add_argument("--live", action="store_true", help="Force live transcription (default behavior)")
     args = parser.parse_args()
+    validate_offline(fast_cached=args.cached)
     validate_offline(fast_cached=not args.live)

@@ -159,7 +159,8 @@ def execute_retraining_pipeline(mode="rehearsal"):
         nn.Dropout(0.2),
         nn.Linear(64, 4)
     )
-    optimizer = torch.optim.Adam(cand_head.parameters(), lr=0.005, weight_decay=1e-4)
+    lr = 0.005 if mode == "rehearsal" else 0.01
+    optimizer = torch.optim.Adam(cand_head.parameters(), lr=lr, weight_decay=1e-4)
     criterion = nn.CrossEntropyLoss()
 
     cand_head.train()
@@ -242,8 +243,16 @@ def execute_retraining_pipeline(mode="rehearsal"):
 
     # 6. Append audit entry to TEST_SET_LOG.md
     log_entry = f"| `LOG-{int(time.time())%1000:03d}` | {ts} | `{git_hash}` | `{candidate_version}` | Active Retraining Gate ({mode}) | `64b7647b...` (MATCH) | {gold_wer:.3f} | {cand_gold_acc:.3f} | **{decision}** |\n"
-    with open(TEST_SET_LOG, "a") as f:
-        f.write(log_entry)
+    with open(TEST_SET_LOG, "r") as f:
+        content = f.read()
+    target = "\n---\n\n## 3. Automated Checksum Assertion Hook"
+    if target in content:
+        content = content.replace(target, log_entry + target)
+        with open(TEST_SET_LOG, "w") as f:
+            f.write(content)
+    else:
+        with open(TEST_SET_LOG, "a") as f:
+            f.write(log_entry)
     print(f"Appended gate verification audit entry to {TEST_SET_LOG}")
 
     return {
