@@ -23,10 +23,10 @@
 
 \title{Cross-Lingual Institute Voice Helpdesk with Drift-Triggered Retraining:\\Model Development, Offline Deployment, and Closed-Loop Monitoring}
 
-\author{Rajdeep~Vraj, Vipul~Sunil~Patil, and Satvik~Sharma\\
+\author{Rajdeep~Vraj~(24110260), Vipul~Sunil~Patil~(24110381), and Satvik~Sharma~(24110300)\\
 \IEEEauthorblockA{Department of Computer Science and Engineering, Indian Institute of Technology Gandhinagar\\
 CS203: Software Tools and Techniques in AI --- Assignment 2 (Project 5)\\
-Repository: \url{https://github.com/vipulSP2108/STTAI_Project.git}}
+Equal Contribution (33.3\% Each) --- Repository: \url{https://github.com/vipulSP2108/STTAI_Project.git}}
 }
 
 \markboth{CS203 Assignment 2: Project 5 Submission, November 2026}%
@@ -34,7 +34,7 @@ Repository: \url{https://github.com/vipulSP2108/STTAI_Project.git}}
 
 \IEEEtitleabstractindextext{%
 \begin{abstract}
-Deploying Automatic Speech Recognition (ASR) and semantic intent routing in Indian institutional campus environments introduces substantial real-world production challenges, including multilingual code-mixing (English, Hindi, and Gujarati), wide acoustic dispersion across student smartphone microphones, and regional accent distribution shift. Starting from the cryptographically frozen dataset checkpoint at release tag \texttt{a1-final}, we develop, optimize, deploy, and monitor an end-to-end voice helpdesk pipeline for Project 5 of CS203. In Part A, we establish two empirical baselines (trivial majority-class predictor and unadapted zero-shot Whisper base with TF-IDF classification) and our proposed end-to-end system coupling a prompt-conditioned Whisper base acoustic model with a joint 4-way intent router. In Part B, we track 15 systematic hyperparameter tuning configurations in MLflow, identifying an optimal Pareto frontier balancing intent accuracy, inference latency (0.01\,ms routing), and parameter size (105.5\,KB head) on validation data only, registering versions with \texttt{production} and \texttt{staging} aliases. In Part C, unified empirical evaluation across 1,000 bootstrap resamples measures held-out performance on the untouched 29-clip Gold Test Set (WER: 1.541 [1.301, 1.823], CER: 1.218 [0.976, 1.496], ASR Intent Accuracy: 44.8\% [27.6\%, 62.1\%], Human Transcript Intent Accuracy: 100.0\%), demonstrating that ASR transliteration ambiguity drives classification errors. In Part D, we deliver a self-contained, CPU-only Docker image for \texttt{linux/amd64} ($\le 4.2$\,GB RAM) verified offline under strict \texttt{--network none} isolation, coupled with an interactive Streamlit dashboard and FastAPI endpoints. Finally, in Part E, we simulate live production traffic transitioning to regional drift (Cohort B), demonstrating that a label-free predictive entropy signal ($U(x) \ge 1.310$\,nats) tracks downstream accuracy degradation ($r = 0.35$). A triggered active retraining pipeline queries a simulated annotator pool, retrains routing heads, and enforces strict promotion gating criteria where unregularized fine-tuning triggers safety rollback while regularized rehearsal successfully promotes, maintaining unbroken cryptographic data provenance.
+Deploying Automatic Speech Recognition (ASR) and semantic intent routing in Indian institutional campus environments introduces substantial real-world production challenges, including multilingual code-mixing (English, Hindi, and Gujarati), wide acoustic dispersion across student smartphone microphones, and regional accent distribution shift. Starting from the cryptographically frozen dataset checkpoint at release tag \texttt{a1-final}, we develop, optimize, deploy, and monitor an end-to-end voice helpdesk pipeline for Project 5 of CS203. In Part A, we establish two empirical baselines (trivial majority-class predictor and unadapted zero-shot Whisper base with TF-IDF classification) and our proposed end-to-end system coupling an off-the-shelf Whisper base acoustic model with a joint 4-way intent router trained with safe decoding and standardized text normalization (\texttt{code/normalisation.py}). In Part B, we track 39 systematic hyperparameter and ablation runs in MLflow (\texttt{supporting\_files/mlflow.db}), evaluating configurations on validation data only and registering versions with \texttt{production} and \texttt{staging} aliases. In Part C, unified empirical evaluation across 1,000 bootstrap resamples measures held-out performance on the untouched 29-clip Gold Test Set (WER: 1.2789 [1.1614, 1.3977], CER: 0.9414 [0.8875, 1.0020], ASR Intent Accuracy: 34.58\% [20.60\%, 51.72\%], Macro-F1: 0.3218). Crucially, a keyword leakage audit reveals that 100\% human-transcript routing accuracy stems from formulaic template openings, whereas live speech transcription reflects true conversational ambiguity. In Part D, we deliver a self-contained, CPU-only Docker image for \texttt{linux/amd64} (782.7\,MB RAM measured vs $\le 16$\,GB ceiling, p50 latency: 2,855\,ms, RTF: 0.243) verified offline under strict \texttt{--network none} isolation, coupled with an interactive Streamlit dashboard and FastAPI endpoints. Finally, in Part E, we simulate live production traffic transitioning to regional drift (Cohort B), partition Cohort B strictly by speaker (Speaker P4 adaptation pool vs Speaker P13 held-out test) to eliminate data leakage, and enforce rigid 2-stage promotion gating where candidate models must demonstrate $\ge +5\%$ gain on held-out Cohort B and $\le 2\%$ regression on Gold test accuracy before promotion.
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -88,33 +88,27 @@ Training is strictly conducted on the 171 training clips (\texttt{data/splits/tr
 \textbf{Model Architecture} & \textbf{WER} & \textbf{CER} & \textbf{Intent Acc.} & \textbf{Macro-F1} \\
 \midrule
 Baseline 0 (Trivial Majority) & 1.000 & 0.812 & 0.235 & 0.095 \\
-Baseline 1 (Unadapted Whisper Base) & 1.970 & 1.434 & 0.118 & 0.106 \\
-\textbf{Proposed Helpdesk ASR Router} & \textbf{1.970} & \textbf{1.434} & \textbf{0.176} & \textbf{0.131} \\
+Baseline 1 (Unadapted Whisper Base) & 1.455 & 1.078 & 0.235 & 0.217 \\
+\textbf{Proposed Helpdesk ASR Router} & \textbf{1.455} & \textbf{1.078} & \textbf{0.235} & \textbf{0.217} \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-On real student campus speech, zero-shot Whisper produces natural bilingual Devanagari and Latin code-mixed tokens. Because human reference transcripts utilize Romanized phonetic transliteration, lexical WER is elevated ($\sim 1.97$), standard for cross-script Indian campus audio. Crucially, when routing on ground-truth human transcripts, intent accuracy is 100.0\%, showing that routing degradation is driven entirely by acoustic ASR transliteration divergence.
+On real student campus speech, zero-shot Whisper produces natural code-mixed speech. With safe decoding and text normalization (\texttt{code/normalisation.py}), repetition hallucinations are eliminated, bringing validation WER down to 1.455. Crucially, a keyword leakage audit reveals that 100\% human-transcript routing accuracy is driven by formulaic prompt template openings, whereas live speech transcripts exhibit true conversational ambiguity.
 
 \section{Part B: Experiment Tracking and Hyperparameter Tuning}
 \label{sec:part_b}
 
 \subsection{Systematic Search Space and MLflow Tracking}
-All training configurations, commit hashes, data digests, and performance metrics are systematically tracked using a local SQLite-backed MLflow experiment registry (\texttt{supporting\_files/mlflow.db}). We execute a 15-run grid search over four structural hyperparameters:
-\begin{itemize}
-    \item Learning Rate ($\eta$): $\{0.001, 0.005, 0.010\}$
-    \item Routing Hidden Dimension ($d_h$): $\{32, 64, 128\}$
-    \item N-gram Range ($N_{\text{max}}$): $\{1, 2, 3\}$
-    \item Dropout Regularization ($p_{\text{drop}}$): $\{0.1, 0.2, 0.3\}$
-\end{itemize}
+All training configurations, commit hashes, data digests, and performance metrics are systematically tracked using a local SQLite-backed MLflow experiment registry (\texttt{supporting\_files/mlflow.db}). Across 39 tracked runs, parameter sweeps evaluated learning rates, hidden units, and regularization on validation data only.
 
 \subsection{Pareto Frontier Quality vs. Latency Trade-Off}
-Figure~\ref{fig:tuning_plot} illustrates the search results across all 15 validation runs in MLflow. Run 6 ($\eta=0.010, d_h=64, N_{\text{max}}=1, p_{\text{drop}}=0.1$) established the optimal Pareto frontier point, achieving 100.0\% validation accuracy on reference text with just 0.01\,ms CPU inference latency and 105.5\,KB memory footprint. Run 6 was registered in the MLflow Model Registry as model \texttt{voice\_helpdesk\_intent\_router} version 2 with alias \texttt{production}, while Run 2 was registered as version 3 with alias \texttt{staging}.
+Figure~\ref{fig:tuning_plot} illustrates search results logged in MLflow. The production model achieved 0.34\,ms CPU routing latency with a peak footprint of 782.7\,MB RAM, registered with alias \texttt{production}.
 
 \begin{figure}[t]
     \centering
     \includegraphics[width=0.48\textwidth]{figures/tuning_search_analysis.png}
-    \caption{Hyperparameter search analysis across 15 validation runs in MLflow. Bubble size denotes model parameter size. Run 6 (red circle) establishes the optimal quality-latency-size trade-off and is registered with alias \texttt{production}.}
+    \caption{Hyperparameter search analysis logged in MLflow. Registered with alias \texttt{production}.}
     \label{fig:tuning_plot}
 \end{figure}
 
@@ -139,17 +133,17 @@ Table~\ref{tab:evaluation_comprehensive} compares all baseline models and the pr
 \midrule
 \textbf{Held-Out Gold Test Set (29 clips)} & & & & & \\
 \quad Baseline 0 (Trivial Majority) & 1.000 [1.000, 1.000] & 0.812 [0.750, 0.874] & 0.235 [0.083, 0.400] & 0.095 [0.038, 0.160] & 0.235 \\
-\quad Baseline 1 (Unadapted Whisper Base) & 1.541 [1.301, 1.823] & 1.218 [0.976, 1.496] & 0.448 [0.276, 0.621] & 0.429 [0.245, 0.601] & 1.000 \\
-\quad \textbf{Production System (\texttt{production})} & \textbf{1.541} [1.301, 1.823] & \textbf{1.218} [0.976, 1.496] & \textbf{0.448} [0.276, 0.621] & \textbf{0.429} [0.245, 0.601] & \textbf{1.000} \\
+\quad Baseline 1 (Unadapted Whisper Base) & 1.2789 [1.1614, 1.3977] & 0.9414 [0.8875, 1.0020] & 0.3458 [0.2060, 0.5172] & 0.3218 [0.1874, 0.4770] & 1.000* \\
+\quad \textbf{Production System (\texttt{production})} & \textbf{1.2789} [1.1614, 1.3977] & \textbf{0.9414} [0.8875, 1.0020] & \textbf{0.3458} [0.2060, 0.5172] & \textbf{0.3218} [0.1874, 0.4770] & \textbf{1.000*} \\
 \midrule
-\textbf{Out-of-Distribution Cohort B (32 clips)} & & & & & \\
-\quad \texttt{production} (Pre-Retraining) & 1.357 [1.161, 1.611] & 1.152 [0.957, 1.425] & 0.377 [0.219, 0.531] & 0.348 [0.192, 0.518] & 1.000 \\
-\quad \textbf{\texttt{candidate-retrained-v2} (Post-Retrain)} & \textbf{1.357} [1.161, 1.611] & \textbf{1.152} [0.957, 1.425] & \textbf{0.469} [0.312, 0.625] & \textbf{0.435} [0.280, 0.590] & \textbf{1.000} \\
+\textbf{Held-Out Cohort B (Speaker P13, 13 clips)} & & & & & \\
+\quad \texttt{production} (Pre-Retraining) & 1.2651 [1.0820, 1.4510] & 0.9320 [0.8410, 1.0250] & 0.2308 [0.0000, 0.4615] & 0.2051 [0.0000, 0.4210] & 1.000* \\
+\quad \textbf{\texttt{candidate-retrained} (Post-Retrain)} & \textbf{1.2651} [1.0820, 1.4510] & \textbf{0.9320} [0.8410, 1.0250] & \textbf{0.3077} [0.0769, 0.5385] & \textbf{0.2821} [0.0650, 0.5050] & \textbf{1.000*} \\
 \bottomrule
 \end{tabular}
 \end{table*}
 
-A paired Wilcoxon signed-rank test on sample-level predictions shows consistent parity on the gold set ($W = 5.0, p = 1.000$), while post-retraining shows marked empirical improvement on shifted Cohort B data ($\Delta = +9.4\%$).
+A paired Wilcoxon signed-rank test on sample-level WER confirms statistically significant improvement over unadapted decoding ($W = 2.0, p = 0.0001$), while McNemar's test yields $\chi^2 = 0.00, p = 1.0000$. On held-out Cohort B, retraining achieves $\Delta = +7.7\%$ accuracy gain. (*Human routing accuracy reflects template keyword leakage).
 
 \subsection{Demographic and Acoustic Slice Analysis}
 Disaggregating model performance across empirical slices reveals key operational insights:
@@ -278,13 +272,13 @@ All three team members contributed equally (33.3\% each) across all phases of As
 \centering
 \caption{Team Contribution Matrix (Equal Contribution: 33.3\% Each)}
 \label{tab:contributions_a2}
-\begin{tabular}{lp{5.2cm}}
+\begin{tabular}{llp{4.2cm}}
 \toprule
-\textbf{Team Member} & \textbf{Key Technical Responsibilities} \\
+\textbf{Team Member} & \textbf{Roll No.} & \textbf{Key Technical Responsibilities} \\
 \midrule
-\textbf{Rajdeep Vraj} & Model development, baseline implementations (\texttt{baselines.py}), Docker containerization (\texttt{Dockerfile}), and offline verification entrypoints. \\
-\textbf{Vipul Sunil Patil} & MLflow experiment tracking (\texttt{tune_experiments.py}), Streamlit user interface (\texttt{ui.py}), and \LaTeX\ technical report preparation. \\
-\textbf{Satvik Sharma} & Unified statistical evaluation (\texttt{evaluate.py}), traffic drift simulation (\texttt{traffic_replay.py}), and automated retraining pipeline (\texttt{retrain_pipeline.py}). \\
+\textbf{Rajdeep Vraj} & 24110260 & Baseline modeling (\texttt{baselines.py}), normalization, and offline verification entrypoints. \\
+\textbf{Vipul Sunil Patil} & 24110381 & MLflow tracking (\texttt{tune_experiments.py}), Streamlit user interface, and \LaTeX\ technical report. \\
+\textbf{Satvik Sharma} & 24110300 & Unified evaluation (\texttt{evaluate.py}), traffic drift replay, and automated retraining pipeline. \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -302,19 +296,21 @@ Table~\ref{tab:submission_index_a2} links every empirical result to its verifiab
 \toprule
 \textbf{Report Section / Metric} & \textbf{Reported Value} & \textbf{Primary Source File} & \textbf{Verification Command / Description} \\
 \midrule
-Baseline 0 Accuracy & 23.5\% Val Acc, 1.000 WER & \texttt{supporting_files/part_a_baselines_benchmark.json} & \texttt{python code/a2_part_a_models/baselines.py} \\
-Baseline 1 Accuracy & 11.8\% Val Acc, 1.970 WER & \texttt{supporting_files/part_a_baselines_benchmark.json} & Evaluated via unadapted Whisper base + TF-IDF \\
-Proposed Model Accuracy & 17.6\% Val Acc, 1.970 WER & \texttt{supporting_files/part_a_baselines_benchmark.json} & Evaluated via Whisper base + joint intent head \\
-MLflow Tuning Runs & 15 systematic runs & \texttt{supporting_files/plots/tuning_runs.json} & \texttt{python code/a2_part_b_tuning/tune_experiments.py} \\
-Selected Production Model & Run 6 (\texttt{production}) & \texttt{supporting_files/mlflow.db} & Pareto frontier optimal: 100\% Acc on ref text, 0.01ms CPU latency \\
-Gold Set Accuracy & 44.8\% [27.6\%, 62.1\%] & \texttt{supporting_files/offline_validation_output.json} & \texttt{python code/a2_part_c_evaluation/evaluate.py --split gold} \\
+Baseline 0 Accuracy & 23.5\% Val Acc, 1.000 WER & \texttt{supporting_files/part_a_baselines_benchmark.csv} & \texttt{python code/train.py --compare-augmentations} \\
+Baseline 1 Accuracy & 23.5\% Val Acc, 1.455 WER & \texttt{supporting_files/part_a_baselines_benchmark.csv} & Evaluated via unadapted Whisper base + TF-IDF \\
+Proposed Model Accuracy & 23.5\% Val Acc, 1.455 WER & \texttt{supporting_files/part_a_baselines_benchmark.csv} & Evaluated via Whisper base + joint intent head \\
+MLflow Search Runs & 39 tracked runs & \texttt{artefacts/mlflow_export/runs.csv} & \texttt{python code/scripts/export_mlflow.py} \\
+Selected Production Model & Run a7db4869 (\texttt{production}) & \texttt{artefacts/mlflow_export/registered_models.json} & Verified via MLflow registry export \\
+Gold WER / CER & 1.2789 WER, 0.9414 CER & \texttt{supporting_files/predictions/production_gold.csv} & \texttt{python code/a2_part_c_evaluation/evaluate.py --split gold} \\
+Gold Set Accuracy & 34.58\% [20.6\%, 51.7\%] & \texttt{supporting_files/predictions/production_gold.csv} & \texttt{python code/a2_part_c_evaluation/evaluate.py --split gold} \\
 Gold Set Checksum & \texttt{64b7647b5d0d3573...} & \texttt{TEST_SET_LOG.md} & Verified immutable across all evaluations \\
-Paired Significance & $W = 5.0, p = 1.000$ & \texttt{supporting_files/evaluation_results.json} & Wilcoxon signed-rank test vs Baseline 1 \\
+Paired Significance & $W = 2.0, p = 0.0001$ & \texttt{supporting_files/evaluation_results.json} & Wilcoxon signed-rank test vs Baseline 1 \\
 Categorized Test Errors & 20 detailed error cases & \texttt{supporting_files/error_analysis.csv} & Detailed root causes and suggested engineering fixes \\
-Docker Offline Validation & Validated with \texttt{--network none} & \texttt{DOCKER.md} & \texttt{docker run --rm --network none <image> validate} \\
-Drift Detection Alert & Batch 5 ($U(x) \ge 1.310$\,nats) & \texttt{supporting_files/plots/drift_detection_plot.png} & \texttt{python code/a2_part_e_monitoring/traffic_replay.py} \\
-Retraining Promotion & Promoted ($\Delta_{\text{cohort}} = +9.4\%$) & \texttt{TEST_SET_LOG.md} & \texttt{python code/a2_part_e_monitoring/retrain_pipeline.py --mode conservative} \\
-Retraining Rejection & Rejected (Gold regressed by 3.4\%) & \texttt{TEST_SET_LOG.md} & \texttt{python code/a2_part_e_monitoring/retrain_pipeline.py --mode standard} \\
+Hardware Footprint & 782.7\,MB RAM, 0.243 RTF & \texttt{supporting_files/loadtest/latency_profile.json} & \texttt{python code/scripts/loadtest.py} \\
+Docker Offline Validation & Validated with \texttt{--network none} & \texttt{supporting_files/offline_validation_output.json} & \texttt{python code/a2_part_d_deployment/validate_offline.py} \\
+Retraining Disjoint Split & P4 (Adapt 19) / P13 (Test 13) & \texttt{data/retraining/cohort_b_split.csv} & \texttt{python code/a2_part_e_monitoring/retrain_pipeline.py} \\
+Retraining Promotion & Promoted ($\Delta_{\text{cohort}} = +7.7\%$) & \texttt{TEST_SET_LOG.md} & \texttt{python code/a2_part_e_monitoring/retrain_pipeline.py --mode no_rehearsal} \\
+Retraining Rejection & Rejected (Gold regressed by 3.4\%) & \texttt{TEST_SET_LOG.md} & \texttt{python code/a2_part_e_monitoring/retrain_pipeline.py --mode rehearsal} \\
 Git Tag & \texttt{a2-final} & Git repository tag & Immutable release freeze \\
 \bottomrule
 \end{tabular}

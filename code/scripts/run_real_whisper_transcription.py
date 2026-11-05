@@ -18,13 +18,15 @@ import numpy as np
 import pandas as pd
 from pathlib import Path
 
+import sys
+sys.path.append(str(Path(__file__).parent.parent))
+from normalisation import normalise_text, detect_repetition
+
 DATA_DIR = Path("data")
 AUDIO_DIR = DATA_DIR / "raw" / "audio"
 CACHE_JSON = DATA_DIR / "processed" / "whisper_base_eval_cache.json"
 CACHE_CSV = DATA_DIR / "processed" / "whisper_base_eval_cache.csv"
 CACHE_JSON.parent.mkdir(parents=True, exist_ok=True)
-
-PROMPT = "IIT Gandhinagar student voice helpdesk query: admissions, hostel mess, IT support, student affairs, fees, wifi."
 
 def compute_audio_snr(wav_path):
     """Computes empirical signal-to-noise ratio in dB from audio waveform."""
@@ -77,12 +79,12 @@ def save_cache(cache):
     if rows:
         pd.DataFrame(rows).to_csv(CACHE_CSV, index=False)
 
-def run_transcription(splits=["gold", "val", "test", "cohort_b"]):
-    print(f"=== Running Real Whisper Base Transcription on Splits: {splits} ===")
+def run_transcription(splits=["gold", "val", "test", "cohort_b"], force=False):
+    print(f"=== Running Real Safe Whisper Base Transcription on Splits: {splits} ===")
     import whisper
-    
-    cache = load_cache()
-    print(f"Loaded existing cache with {len(cache)} entries.")
+
+    cache = load_cache() if not force else {}
+    print(f"Loaded existing cache with {len(cache)} entries (force={force}).")
 
     clip_ids = []
     for s in splits:
@@ -103,8 +105,8 @@ def run_transcription(splits=["gold", "val", "test", "cohort_b"]):
             clip_ids.extend(df["clip_id"].tolist())
 
     unique_cids = list(dict.fromkeys(clip_ids))
-    missing_cids = [cid for cid in unique_cids if cid not in cache]
-    print(f"Total unique clips requested: {len(unique_cids)}, missing from cache: {len(missing_cids)}")
+    missing_cids = unique_cids if force else [cid for cid in unique_cids if cid not in cache]
+    print(f"Total unique clips requested: {len(unique_cids)}, to transcribe: {len(missing_cids)}")
 
     if not missing_cids:
         print("All requested clips are already cached! No transcription needed.")
@@ -114,6 +116,7 @@ def run_transcription(splits=["gold", "val", "test", "cohort_b"]):
     model = whisper.load_model("base", device="cpu")
 
     t0_all = time.time()
+    repetition_flags = 0
     for idx, cid in enumerate(missing_cids):
         wav_path = AUDIO_DIR / f"{cid}.wav"
         if not wav_path.exists():
@@ -121,16 +124,24 @@ def run_transcription(splits=["gold", "val", "test", "cohort_b"]):
             continue
 
         t0 = time.time()
+        # Safe decoding per Guide Section 3.0.1: No prompt loop, greedy beam=1
         res = model.transcribe(
             str(wav_path),
             fp16=False,
-            initial_prompt=PROMPT,
+            condition_on_previous_text=False,
             temperature=0.0,
-            condition_on_previous_text=False
+            compression_ratio_threshold=2.0,
+            no_speech_threshold=0.6,
+            beam_size=1
         )
         latency_sec = time.time() - t0
 
-        tx = res.get("text", "").strip()
+        raw_tx = res.get("text", "").strip()
+        has_loop = detect_repetition(raw_tx)
+        if has_loop:
+            repetition_flags += 1
+        tx = normalise_text(raw_tx)
+
         avg_logprob = -1.0
         no_speech_prob = 0.0
         if "segments" in res and res["segments"]:
@@ -143,24 +154,28 @@ def run_transcription(splits=["gold", "val", "test", "cohort_b"]):
         cache[cid] = {
             "clip_id": cid,
             "pred_transcript": tx,
+            "raw_transcript": raw_tx,
             "avg_logprob": round(avg_logprob, 4),
             "no_speech_prob": round(no_speech_prob, 4),
             "snr_db": snr,
             "duration_sec": duration,
-            "transcribe_latency_sec": round(latency_sec, 3)
+            "transcribe_latency_sec": round(latency_sec, 3),
+            "repetition_flagged": has_loop
         }
 
         if (idx + 1) % 5 == 0 or idx == len(missing_cids) - 1:
             save_cache(cache)
             elapsed = time.time() - t0_all
-            print(f"[{idx+1}/{len(missing_cids)}] Transcribed {cid} ({latency_sec:.2f}s) | Total elapsed: {elapsed:.1f}s")
+            print(f"[{idx+1}/{len(missing_cids)}] Transcribed {cid} ({latency_sec:.2f}s) | Repetitions: {repetition_flags} | Elapsed: {elapsed:.1f}s")
 
     save_cache(cache)
-    print(f"Transcription complete! Saved {len(cache)} entries to {CACHE_JSON}")
+    print(f"\nTranscription complete! Saved {len(cache)} entries to {CACHE_JSON}")
+    print(f"Total prompt-induced repetition loops caught and filtered: {repetition_flags}")
     return cache
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--splits", nargs="+", default=["gold", "val", "test", "cohort_b"])
+    parser.add_argument("--force", action="store_true", help="Force re-transcription of all clips")
     args = parser.parse_args()
-    run_transcription(args.splits)
+    run_transcription(args.splits, force=args.force)

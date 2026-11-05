@@ -1,704 +1,860 @@
 {
   "P15_temp_P15_WhatsApp_Audio_2026-10-19_at_2_53_57_PM_seg001": {
     "clip_id": "P15_temp_P15_WhatsApp_Audio_2026-10-19_at_2_53_57_PM_seg001",
-    "pred_transcript": "Hello IIT Gandhinagar voice helpdesk, hostel mess, IT support, student affairs, IT support, hostel mess, IT support, hostel mess, IT support, hostel mess, IT support, hostel mess, IT support, hostel mess, IT support, hostel mess, IT support, hostel mess, IT support,",
-    "avg_logprob": -0.2961,
-    "no_speech_prob": 0.0881,
+    "pred_transcript": "hello id ganga nagar vaisal desk para hoster in room ki chappi khovi nain chappi banwanik lekitha panagyanda please may the help be to you hello id ganga nagar vaisal desk murala",
+    "raw_transcript": "Hello ID Ganga Nagar Vaisal Desk Para Hoster in Room ki Chappi Khovi Nain Chappi Banwanik Lekitha Panagyanda Please May the Help be to you Hello ID Ganga Nagar Vaisal Desk Murala",
+    "avg_logprob": -1.0101,
+    "no_speech_prob": 0.4092,
     "snr_db": 24.45,
     "duration_sec": 14.83,
-    "transcribe_latency_sec": 3.324
+    "transcribe_latency_sec": 2.629,
+    "repetition_flagged": false
   },
   "P15_temp_P15_WhatsApp_Audio_2026-10-19_at_2_53_57_PM_seg002": {
     "clip_id": "P15_temp_P15_WhatsApp_Audio_2026-10-19_at_2_53_57_PM_seg002",
-    "pred_transcript": "IIT Gandhinagar student voice helpdesk query, IIT Gandhinagar student voice helpdesk query, IIT Gandhinagar student voice helpdesk query, IIT Gandhinagar student voice helpdesk query, IIT Gandhinagar student voice helpdesk query, IIT Gandhinagar student voice helpdesk query, IIT Gandhinagar student voice helpdesk query, IIT Gandhinagar student voice helpdesk query, IIT Gandhinagar student voice helpdesk query, IIT Gandhinagar student voice helpdesk query, IIT Gandhinagar student voice helpdesk query, IIT Gandhinagar student voice helpdesk query, IIT Gandhinagar student voice helpdesk query, IIT Gandhinagar student voice helpdesk query, IIT Gandhinagar student voice helpdesk query, IIT Gandhinagar student voice helpdesk query, IIT Gandhinagar student voice helpdesk query, IIT Gandhinagar student voice helpdesk query, IIT Gandhinagar student voice",
-    "avg_logprob": -0.0857,
-    "no_speech_prob": 0.1233,
+    "pred_transcript": "\u0906\u092a\u0928\u0947 \u092a\u093e\u0930\u0947 \u092a\u093e\u0930\u0947 \u092a\u093e\u0930\u0947 \u092a",
+    "raw_transcript": "\u0906\u092a\u0928\u0947 \u092a\u093e\u0930\u0947 \u092a\u093e\u0930\u0947 \u092a\u093e\u0930\u0947 \u092a\u093e\u0930\u0947 \u092a\u093e\u0930\u0947 \u092a\u093e\u0930\u0947 \u092a\u093e\u0930\u0947 \u092a\u093e\u0930\u0947 \u092a\u093e\u0930\u0947 \u092a\u093e\u0930\u0947 \u092a\u093e\u0930\u0947 \u092a\u093e\u0930\u0947 \u092a\u093e\u0930\u0947 \u092a\u093e\u0930\u0947 \u092a\u093e\u0930\u0947 \u092a\u093e\u0930\u0947 \u092a\u093e\u0930\u0947 \u092a\u093e\u0930\u0947 \u092a\u093e\u0930\u0947 \u092a\u093e\u0930\u0947 \u092a\u093e\u0930\u0947 \u092a\u093e\u0930\u0947 \u092a\u093e\u0930\u0947 \u092a\u093e\u0930\u0947 \u092a\u093e\u0930\u0947 \u092a\u093e\u0930\u0947 \u092a\u093e\u0930\u0947 \u092a\u093e\u0930\u0947 \u092a\u093e\u0930\u0947 \u092a\u093e\u0930\u0947 \u092a\u093e\u0930\u0947 \u092a\u093e\u0930\u0947 \u092a\u093e\u0930\u0947 \u092a\u093e\u0930\u0947 \u092a\u093e\u0930\u0947 \u092a\u093e\u0930\u0947 \u092a\u093e\u0930\u0947 \u092a\u093e\u0930\u0947 \u092a\u093e\u0930\u0947 \u092a\u093e\u0930\u0947 \u092a\u093e\u0930\u0947 \u092a\u093e\u0930\u0947 \u092a\u093e\u0930\u0947 \u092a",
+    "avg_logprob": -0.1876,
+    "no_speech_prob": 0.3921,
     "snr_db": 22.68,
     "duration_sec": 14.24,
-    "transcribe_latency_sec": 6.67
+    "transcribe_latency_sec": 5.916,
+    "repetition_flagged": true
   },
   "P15_temp_P15_WhatsApp_Audio_2026-10-19_at_2_53_57_PM_seg003": {
     "clip_id": "P15_temp_P15_WhatsApp_Audio_2026-10-19_at_2_53_57_PM_seg003",
-    "pred_transcript": "POTPP is not coming, please help me. IIT Gandhinagar voice helpdesk, my hostel room is not filled with empty room, please give some technician to me. IIT Gandhinagar voice helpdesk, I have filled the room with empty room.",
-    "avg_logprob": -0.7065,
-    "no_speech_prob": 0.0671,
+    "pred_transcript": "potppnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+    "raw_transcript": "POTPPNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN",
+    "avg_logprob": -0.0856,
+    "no_speech_prob": 0.3782,
     "snr_db": 21.5,
     "duration_sec": 19.83,
-    "transcribe_latency_sec": 2.221
+    "transcribe_latency_sec": 5.015,
+    "repetition_flagged": false
   },
   "P15_temp_P15_WhatsApp_Audio_2026-10-19_at_2_53_57_PM_seg004": {
     "clip_id": "P15_temp_P15_WhatsApp_Audio_2026-10-19_at_2_53_57_PM_seg004",
-    "pred_transcript": "Please tell me, what is my form? Hello IIT Gandhinagar voice helpdesk. My parents are now sitting here.",
-    "avg_logprob": -0.9109,
-    "no_speech_prob": 0.0198,
+    "pred_transcript": "\u0906\u092a\u0928\u0947 \u092a\u0930\u0942\u092a\u0928 \u0915\u093e \u092a\u0930\u0942\u092a",
+    "raw_transcript": "\u0906\u092a\u0928\u0947 \u092a\u0930\u0942\u092a\u0928 \u0915\u093e \u092a\u0930\u0942\u092a\u0928 \u0915\u093e \u092a\u0930\u0942\u092a\u0928 \u0915\u093e \u092a\u0930\u0942\u092a\u0928 \u0915\u093e \u092a\u0930\u0942\u092a\u0928 \u0915\u093e \u092a\u0930\u0942\u092a\u0928 \u0915\u093e \u092a\u0930\u0942\u092a\u0928 \u0915\u093e \u092a\u0930\u0942\u092a\u0928 \u0915\u093e \u092a\u0930\u0942\u092a\u0928 \u0915\u093e \u092a\u0930\u0942\u092a\u0928 \u0915\u093e \u092a\u0930\u0942\u092a\u0928 \u0915\u093e \u092a\u0930\u0942\u092a\u0928 \u0915\u093e \u092a\u0930\u0942\u092a\u0928 \u0915\u093e \u092a\u0930\u0942\u092a\u0928 \u0915\u093e \u092a\u0930\u0942\u092a\u0928 \u0915\u093e \u092a\u0930\u0942\u092a\u0928 \u0915\u093e \u092a\u0930\u0942\u092a\u0928 \u0915\u093e \u092a\u0930\u0942\u092a\u0928 \u0915\u093e \u092a\u0930\u0942\u092a\u0928 \u0915\u093e \u092a\u0930\u0942\u092a\u0928 \u0915\u093e \u092a\u0930\u0942\u092a\u0928 \u0915\u093e \u092a\u0930\u0942\u092a",
+    "avg_logprob": -0.2516,
+    "no_speech_prob": 0.2377,
     "snr_db": 23.72,
     "duration_sec": 22.87,
-    "transcribe_latency_sec": 1.712
+    "transcribe_latency_sec": 4.987,
+    "repetition_flagged": true
   },
   "P15_temp_P15_WhatsApp_Audio_2026-10-19_at_2_53_57_PM_seg005": {
     "clip_id": "P15_temp_P15_WhatsApp_Audio_2026-10-19_at_2_53_57_PM_seg005",
-    "pred_transcript": "Hello IIT Gandhinagar voice helpdesk, we can talk about our own hostel, electric kettle. Please tell me the rules.",
-    "avg_logprob": -0.8119,
-    "no_speech_prob": 0.064,
+    "pred_transcript": "\u092c\u093e\u0928\u0940 \u0915\u093e \u092a\u094d\u0930 \u0915\u0930 \u092c\u093e\u0917\u0940 \u091c\u0940\u0935\u0947 \u092c\u093e\u0917\u0940 \u091c\u0940\u0935\u0947 \u092c\u093e\u0917\u0940 \u092c\u093e\u0917\u0940 \u092c\u093e\u0917\u0940",
+    "raw_transcript": "\u092c\u093e\u0928\u0940 \u0915\u093e \u092a\u094d\u0930 \u0915\u0930 \u092c\u093e\u0917\u0940 \u091c\u0940\u0935\u0947 \u092c\u093e\u0917\u0940 \u091c\u0940\u0935\u0947 \u092c\u093e\u0917\u0940 \u092c\u093e\u0917\u0940 \u092c\u093e\u0917\u0940 \u092c\u093e\u0917\u0940 \u092c\u093e\u0917\u0940 \u092c\u093e\u0917\u0940 \u092c\u093e\u0917\u0940 \u092c\u093e\u0917\u0940 \u092c\u093e\u0917\u0940 \u092c\u093e\u0917\u0940 \u092c\u093e\u0917\u0940 \u092c\u093e\u0917\u0940 \u092c\u093e\u0917\u0940 \u092c\u093e\u0917\u0940 \u092c\u093e\u0917\u0940 \u092c\u093e\u0917\u0940 \u092c\u093e\u0917\u0940 \u092c\u093e\u0917\u0940 \u092c\u093e\u0917\u0940 \u092c\u093e\u0917\u0940 \u092c\u093e\u0917\u0940 \u092c\u093e\u0917\u0940 \u092c\u093e\u0917\u0940 \u092c\u093e\u0917\u0940 \u092c\u093e\u0917\u0940 \u092c\u093e\u0917\u0940 \u092c\u093e\u0917\u0940 \u092c\u093e\u0917\u0940 \u092c\u093e\u0917\u0940 \u092c\u093e\u0917\u0940 \u092c\u093e\u0917\u0940",
+    "avg_logprob": -0.2799,
+    "no_speech_prob": 0.3685,
     "snr_db": 26.93,
     "duration_sec": 17.63,
-    "transcribe_latency_sec": 1.467
+    "transcribe_latency_sec": 4.911,
+    "repetition_flagged": true
   },
   "P15_temp_P15_WhatsApp_Audio_2026-10-19_at_2_53_57_PM_seg006": {
     "clip_id": "P15_temp_P15_WhatsApp_Audio_2026-10-19_at_2_53_57_PM_seg006",
-    "pred_transcript": "mj palaq campus, gandhi magrappor, mdhavad, ralpratishan, jhani wali kwalic, proper time janna hai, please shatul patakhi ji hai. Hello IIT Gandhinagar voice helpdesk.",
-    "avg_logprob": -1.1205,
-    "no_speech_prob": 0.0109,
+    "pred_transcript": "mj palaq sikandhi magraq aur mdhavad reelprisitian jhani wali koil is koperstime janna hai please shatul patakhi ji hai hello aity gandhi magraq voice help desk",
+    "raw_transcript": "mj palaq sikandhi magraq aur mdhavad reelprisitian jhani wali koil is koperstime janna hai please shatul patakhi ji hai hello aity gandhi magraq voice help desk",
+    "avg_logprob": -1.3253,
+    "no_speech_prob": 0.053,
     "snr_db": 13.37,
     "duration_sec": 12.2,
-    "transcribe_latency_sec": 2.648
+    "transcribe_latency_sec": 2.019,
+    "repetition_flagged": false
   },
   "P15_temp_P15_WhatsApp_Audio_2026-10-19_at_2_53_57_PM_seg007": {
     "clip_id": "P15_temp_P15_WhatsApp_Audio_2026-10-19_at_2_53_57_PM_seg007",
-    "pred_transcript": "We can build gym and sports complex for time. Please, bring back time. Hello IIT Gandhinagar voice helpdesk.",
-    "avg_logprob": -0.7672,
-    "no_speech_prob": 0.0103,
+    "pred_transcript": "mj vikint berjim or sports complex ke time janna hai please time being back at the gym hello iadig andyanda nagar boys help desk na college ke bahar set college we vein use neiger pa rauho please is it heat karna ne midi help ki jee",
+    "raw_transcript": "mj vikint berjim or sports complex ke time janna hai please time being back at the gym hello iadig andyanda nagar boys help desk na college ke bahar set college we vein use neiger pa rauho please is it heat karna ne midi help ki jee",
+    "avg_logprob": -1.1959,
+    "no_speech_prob": 0.0533,
     "snr_db": 14.24,
     "duration_sec": 17.54,
-    "transcribe_latency_sec": 1.441
+    "transcribe_latency_sec": 2.368,
+    "repetition_flagged": false
   },
   "P17_temp_P17_WhatsApp_Audio_2026-10-19_at_2_53_59_PM_seg001": {
     "clip_id": "P17_temp_P17_WhatsApp_Audio_2026-10-19_at_2_53_59_PM_seg001",
-    "pred_transcript": "Hello IIT JN helpdesk, I want to report a damaged footpath near the academic buildings, students to call trip over it, I should I submit the complaint, hello IIT JN helpdesk, there is a power outrage in our hostel block and the emergency lights are not working.",
-    "avg_logprob": -0.3789,
-    "no_speech_prob": 0.008,
+    "pred_transcript": "hello iitgn helpdesk i want to report a damaged footpath near the academic buildings students could trip over it i should i submit the complaint hello iitgn helpdesk there is a power outrage in our hostel block and the emergency lights are not working",
+    "raw_transcript": "Hello IITGN Helpdesk. I want to report a damaged footpath near the academic buildings. Students could trip over it. I should I submit the complaint. Hello IITGN Helpdesk. There is a power outrage in our hostel block and the emergency lights are not working.",
+    "avg_logprob": -0.3441,
+    "no_speech_prob": 0.0124,
     "snr_db": 31.31,
     "duration_sec": 15.26,
-    "transcribe_latency_sec": 2.315
+    "transcribe_latency_sec": 2.0,
+    "repetition_flagged": false
   },
   "P17_temp_P17_WhatsApp_Audio_2026-10-19_at_2_53_59_PM_seg002": {
     "clip_id": "P17_temp_P17_WhatsApp_Audio_2026-10-19_at_2_53_59_PM_seg002",
-    "pred_transcript": "Please escalate this issue. Hello IIT Gen Helpdesk. I have misplaced my wallet near the library. Is there a campus security number for the lost property? Hello IIT Gen Helpdesk. My visitor has reached the main gate. But their entry approval is not showing in the security system. Can you help? Hello IIT Gen Helpdesk. I left my backpack in the campus shuttle yesterday evening.",
-    "avg_logprob": -0.2256,
-    "no_speech_prob": 0.0871,
+    "pred_transcript": "please escalate this issue hello iit gen help desk i have misplaced my wallet near the library is there a campus security number for the lost property hello iit gen help desk my visitor has reached the main gate but their entry approval is not showing in the security system can you help hello iit gen help desk i left my backpack in the campus shuttle yesterday evening",
+    "raw_transcript": "Please escalate this issue. Hello, IIT Gen Help Desk. I have misplaced my wallet near the library. Is there a campus security number for the lost property? Hello, IIT Gen Help Desk. My visitor has reached the main gate. But their entry approval is not showing in the security system. Can you help? Hello, IIT Gen Help Desk. I left my backpack in the campus shuttle yesterday evening.",
+    "avg_logprob": -0.2574,
+    "no_speech_prob": 0.0533,
     "snr_db": 31.82,
     "duration_sec": 23.56,
-    "transcribe_latency_sec": 2.902
+    "transcribe_latency_sec": 2.538,
+    "repetition_flagged": false
   },
   "P17_temp_P17_WhatsApp_Audio_2026-10-19_at_2_53_59_PM_seg003": {
     "clip_id": "P17_temp_P17_WhatsApp_Audio_2026-10-19_at_2_53_59_PM_seg003",
-    "pred_transcript": "Is there a lost and found desk I can contact? Hello IIT Gen Helpdesk, my lab computer has lost access to the shared data set drive. The research deadline is approaching. Home should I contact. Hello IT General Desk, pre-placement offer, accept courage.",
-    "avg_logprob": -0.566,
-    "no_speech_prob": 0.092,
+    "pred_transcript": "is there a lost and found desk i can contact hello iit gen help desk my lab computer has lost access to the shared data set drive the research deadline is approaching home should i contact hello iit gen help desk replacement offer accept courage",
+    "raw_transcript": "Is there a lost and found desk I can contact? Hello, IIT Gen Help Desk. My lab computer has lost access to the shared data set drive. The research deadline is approaching. Home should I contact? Hello, IIT Gen Help Desk. replacement offer accept courage.",
+    "avg_logprob": -0.5244,
+    "no_speech_prob": 0.0646,
     "snr_db": 31.6,
     "duration_sec": 18.3,
-    "transcribe_latency_sec": 2.873
+    "transcribe_latency_sec": 2.522,
+    "repetition_flagged": false
   },
   "P17_temp_P17_WhatsApp_Audio_2026-10-19_at_2_53_59_PM_seg004": {
     "clip_id": "P17_temp_P17_WhatsApp_Audio_2026-10-19_at_2_53_59_PM_seg004",
-    "pred_transcript": "dhidhi chhe shubhu bhi kampanena campus placement processma partispet karishaku. Hi it, hello IIT Jain Helpless PhD scholar nik conference travel mate institute taraf thi financial Reemversement much, Hello IDGN help us.",
-    "avg_logprob": -1.0322,
-    "no_speech_prob": 0.1275,
+    "pred_transcript": "dhidhi chhe shubhu bhi kampanina campus placement processma partispet karishaku hait halo aityjian helpdesh pht scholar ne conference travel mate instur tarafthi financial reimbursement match hait halo aityjian helpdesh",
+    "raw_transcript": "dhidhi chhe shubhu bhi kampanina campus placement processma partispet karishaku hait halo aityjian helpdesh pht scholar ne conference travel mate instur tarafthi financial reimbursement match hait halo aityjian helpdesh",
+    "avg_logprob": -0.797,
+    "no_speech_prob": 0.31,
     "snr_db": 32.13,
     "duration_sec": 17.72,
-    "transcribe_latency_sec": 3.25
+    "transcribe_latency_sec": 2.108,
+    "repetition_flagged": false
   },
   "P17_temp_P17_WhatsApp_Audio_2026-10-19_at_2_53_59_PM_seg005": {
     "clip_id": "P17_temp_P17_WhatsApp_Audio_2026-10-19_at_2_53_59_PM_seg005",
-    "pred_transcript": "Placement portal for company registration opens, but resume upload error is error, deadline is here please help. Hello IIT general desk, research proposal submit, Korea Pachi Ethics Committee approval, KTLA Time Malachha.",
-    "avg_logprob": -0.874,
-    "no_speech_prob": 0.1668,
+    "pred_transcript": "placement portal pair company registration open pan resume upload error average deadline average average average please help l o i t general business research pro posal submit karya pachi ethics committee approval k t l a time mahalachha",
+    "raw_transcript": "Placement Portal Pair Company Registration Open PAN Resume Upload Error Average Deadline Average Average Average Please Help L.O.I.T. General Business Research Pro POSAL Submit Karya Pachi Ethics Committee Approval K.T.L.A. Time Mahalachha",
+    "avg_logprob": -0.9838,
+    "no_speech_prob": 0.2613,
     "snr_db": 32.39,
     "duration_sec": 20.05,
-    "transcribe_latency_sec": 2.708
+    "transcribe_latency_sec": 2.31,
+    "repetition_flagged": false
   },
   "P17_temp_P17_WhatsApp_Audio_2026-10-19_at_2_53_59_PM_seg006": {
     "clip_id": "P17_temp_P17_WhatsApp_Audio_2026-10-19_at_2_53_59_PM_seg006",
-    "pred_transcript": "Hello IIT Gen Helpdesk, my library tree access card stopped working, even though my project registration is active, can access permissions be checked. Hello IIT Gen Helpdesk, did access to a journal article that is behind the publisher pay world as this institute library provides remote access. Hello IIT Gen Helpdesk, I have graduated and need my original degree certificate urgently for a job deadline. Can I request expected procession?",
-    "avg_logprob": -0.2656,
-    "no_speech_prob": 0.0321,
+    "pred_transcript": "hello iit gen help desk my laboratory access card stopped working even though my project registration is active can access permission speed checked hello iit gen help desk did access to a journal article that is behind the publisher pay world as this institute library provides remote access hello iit gen help desk i have graduated and need my original degree certificate urgently for a job deadline can i request expected procession",
+    "raw_transcript": "Hello IIT Gen Help Desk, My Laboratory Access card stopped working, even though my project registration is active, can access permission speed checked. Hello IIT Gen Help Desk, did access to a journal article that is behind the publisher pay world as this institute library provides remote access. Hello IIT Gen Help Desk, I have graduated and need my original degree certificate urgently for a job deadline. Can I request expected procession?",
+    "avg_logprob": -0.3636,
+    "no_speech_prob": 0.0862,
     "snr_db": 30.78,
     "duration_sec": 25.95,
-    "transcribe_latency_sec": 3.541
+    "transcribe_latency_sec": 2.633,
+    "repetition_flagged": false
   },
   "P18_temp_P18_2_mins_recording_m4a_seg001": {
     "clip_id": "P18_temp_P18_2_mins_recording_m4a_seg001",
-    "pred_transcript": "Hello IITGN Healthdesk, mid semester exam time table is released, IITGN Healthdesk has been released, IITGN Healthdesk has been released, IITGN Healthdesk has been released, IITGN Healthdesk has been released, IITGN Healthdesk has been released, IITGN Healthdesk has been released, IITGN Healthdesk has been released, IITGN Healthdesk has been released, IITGN Healthdesk has been released, IITGN Healthdesk has been released, IITGN Healthdesk has been released, IITGN Healthdesk has been released, IITGN Healthdesk has been released, IITGN Healthdesk has been released, IITGN Healthdesk has been released, IITGN Healthdesk has been released, IITGN Healthdesk has been released, IITGN Healthdesk has been released, IITGN Healthdesk has",
-    "avg_logprob": -0.1261,
-    "no_speech_prob": 0.0128,
+    "pred_transcript": "hello iitgn healthness mid semester exam time table has been released i am not showing the date of the model yet please help me hello iitgn healthness my course registration has been done but the erp is not showing the subject on the portal please check",
+    "raw_transcript": "Hello IITGN Healthness Mid semester exam time table has been released I am not showing the date of the model yet Please help me Hello IITGN Healthness My course registration has been done But the ERP is not showing the subject on the portal Please check",
+    "avg_logprob": -0.9507,
+    "no_speech_prob": 0.0889,
     "snr_db": 15.71,
     "duration_sec": 20.55,
-    "transcribe_latency_sec": 6.181
+    "transcribe_latency_sec": 2.171,
+    "repetition_flagged": false
   },
   "P18_temp_P18_2_mins_recording_m4a_seg002": {
     "clip_id": "P18_temp_P18_2_mins_recording_m4a_seg002",
-    "pred_transcript": "kervado, hello ITG and helpdesk, professor, e-assignment, not deadline extend, pan model parolded line je di kaya ce su",
-    "avg_logprob": -0.9601,
-    "no_speech_prob": 0.421,
+    "pred_transcript": "karvado hello itg and hilbert prof e assignment dhidlain extend karitse pan model par old deadline je dhikhaya cha shoo",
+    "raw_transcript": "Karvado, Hello ITG and Hilbert, Prof. e Assignment dhidlain extend karitse pan model par old deadline je dhikhaya cha shoo",
+    "avg_logprob": -1.1818,
+    "no_speech_prob": 0.2775,
     "snr_db": 16.28,
     "duration_sec": 12.5,
-    "transcribe_latency_sec": 2.238
+    "transcribe_latency_sec": 1.97,
+    "repetition_flagged": false
   },
   "P18_temp_P18_2_mins_recording_m4a_seg003": {
     "clip_id": "P18_temp_P18_2_mins_recording_m4a_seg003",
-    "pred_transcript": "Karyayu, hello IIT general desk, I missed my end semester exam due to medical emergency, supplementary exam for application, how to say hello IIT general desk, my grade card, subject no result, result absent show",
-    "avg_logprob": -0.7095,
-    "no_speech_prob": 0.1193,
+    "pred_transcript": "karyayu hello iit general desk i missed my end semester exam due to medical emergency supplementary exam for application hello iit general desk my grade card may be subject no result absent show karyayu 6",
+    "raw_transcript": "Karyayu, Hello IIT General Desk, I missed my end semester exam due to medical emergency, supplementary exam for application, Hello IIT General Desk, my grade card may be subject no result, absent show Karyayu, 6",
+    "avg_logprob": -0.653,
+    "no_speech_prob": 0.3692,
     "snr_db": 16.21,
     "duration_sec": 18.0,
-    "transcribe_latency_sec": 3.778
+    "transcribe_latency_sec": 1.849,
+    "repetition_flagged": false
   },
   "P18_temp_P18_2_mins_recording_m4a_seg004": {
     "clip_id": "P18_temp_P18_2_mins_recording_m4a_seg004",
-    "pred_transcript": "JRA may exam, Apeo, Hato, Liesel, Hello, IIT Gen Helpdesk, KEDIT requirements complete, Karwa Maate Minimum CPI Ketli.",
-    "avg_logprob": -0.7907,
-    "no_speech_prob": 0.1568,
+    "pred_transcript": "jra may exam apo hato liesel hello iedg and helibus credit requirements complete karwa maate minimum cpi ketli",
+    "raw_transcript": "JRA may exam Apo, Hato, Liesel, Hello IEDG and Helibus, credit requirements complete, Karwa Maate Minimum CPI Ketli.",
+    "avg_logprob": -0.8758,
+    "no_speech_prob": 0.2489,
     "snr_db": 16.88,
     "duration_sec": 12.7,
-    "transcribe_latency_sec": 3.294
+    "transcribe_latency_sec": 1.584,
+    "repetition_flagged": false
   },
   "P18_temp_P18_2_mins_recording_m4a_seg005": {
     "clip_id": "P18_temp_P18_2_mins_recording_m4a_seg005",
-    "pred_transcript": "Hi, IIT Gandhinagar student voice helpdesk query, IIT Gandhinagar student voice helpdesk query, IIT Gandhinagar student voice helpdesk query, IIT Gandhinagar student voice helpdesk query, IIT Gandhinagar student voice helpdesk query, IIT Gandhinagar student voice helpdesk query, IIT Gandhinagar student voice helpdesk query, IIT Gandhinagar student voice helpdesk query, IIT Gandhinagar student voice helpdesk query, IIT Gandhinagar student voice helpdesk query, IIT Gandhinagar student voice helpdesk query, IIT Gandhinagar student voice helpdesk query, IIT Gandhinagar student voice helpdesk query, IIT Gandhinagar student voice helpdesk query, IIT Gandhinagar student voice helpdesk query,",
-    "avg_logprob": -0.2477,
-    "no_speech_prob": 0.0773,
+    "pred_transcript": "hoi joy for graduation hello iit gen heladas can i audit an additional elective course without it affecting my semester grade point average hello iit gen heladas can i audit an additional elective",
+    "raw_transcript": "Hoi Joy for graduation. Hello IIT Gen. Heladas. Can I audit an additional elective course without it affecting my semester grade point average? Hello IIT Gen. Heladas. Can I audit an additional elective?",
+    "avg_logprob": -0.4867,
+    "no_speech_prob": 0.1221,
     "snr_db": 17.35,
     "duration_sec": 17.1,
-    "transcribe_latency_sec": 6.834
+    "transcribe_latency_sec": 1.764,
+    "repetition_flagged": false
   },
   "P18_temp_P18_2_mins_recording_m4a_seg006": {
     "clip_id": "P18_temp_P18_2_mins_recording_m4a_seg006",
-    "pred_transcript": "Without it affecting my semester grade point average, hello IIT generally this summer semester back lock course offer, thus say, a next academic year, Sudhi Wade.",
-    "avg_logprob": -0.7165,
-    "no_speech_prob": 0.1607,
+    "pred_transcript": "without it affecting my semester grade point average hello iitgnhl this summer semester back lock course offer thus say a next academic year sudhi wade",
+    "raw_transcript": "Without it affecting my semester grade point average, hello IITGNHL this summer semester back lock course offer, thus say, a next academic year, Sudhi Wade.",
+    "avg_logprob": -0.7863,
+    "no_speech_prob": 0.1993,
     "snr_db": 17.26,
     "duration_sec": 12.7,
-    "transcribe_latency_sec": 2.078
+    "transcribe_latency_sec": 1.917,
+    "repetition_flagged": false
   },
   "P18_temp_P18_2_mins_recording_m4a_seg007": {
     "clip_id": "P18_temp_P18_2_mins_recording_m4a_seg007",
-    "pred_transcript": "Kava Yuparse, Aloha IIT Gen. Heldes, My attendance percentage is discrepancy, faculty k\u00e9pals, jha huya, academic office, me complaint race kuru, Aloha IIT Gen. Heldes, Research project mateh thi si submission format ane legarism limitni guidelines",
-    "avg_logprob": -0.8789,
-    "no_speech_prob": 0.0926,
+    "pred_transcript": "kava yupad se aloha idign helddesk my attendance percentage may discoprenshi hai faculty ke pas jaa huya ekadami koffis may complain race kuru aloha idign helddesk research project mateh thisi submission format ane lekorism limitni guidelines",
+    "raw_transcript": "Kava Yupad se Aloha, IDIGN Helddesk My attendance percentage may discoprenshi hai Faculty ke pas jaa huya ekadami koffis may complain race kuru Aloha, IDIGN Helddesk Research project mateh thisi submission format ane Lekorism limitni guidelines",
+    "avg_logprob": -0.9887,
+    "no_speech_prob": 0.3713,
     "snr_db": 17.5,
     "duration_sec": 21.7,
-    "transcribe_latency_sec": 2.805
+    "transcribe_latency_sec": 2.341,
+    "repetition_flagged": false
   },
   "P18_temp_P18_2_mins_recording_m4a_seg008": {
     "clip_id": "P18_temp_P18_2_mins_recording_m4a_seg008",
-    "pred_transcript": "Kaimad se, hello IIT JNH desk, hostel ma hot water supply, sabare avat, thi nathi, Ayeshuma maintenance complaint, kairajister, karvi, hello IIT JNH desk, my hostel room has a water leakage problem near this study table, can someone inspect it today?",
-    "avg_logprob": -0.6142,
-    "no_speech_prob": 0.1385,
+    "pred_transcript": "kaimad se haloh iytg in heldesk hostel ma hot water supply sabare avat thi nathhi ayesu ma maintenance complaint kairajister karvi haloh iytg in heldesk my hostel room has a water leakage problem near this study table can someone inspect it today",
+    "raw_transcript": "Kaimad se, Haloh iytg in Heldesk, hostel ma hot water supply, sabare avat thi nathhi, Ayesu ma, maintenance complaint, kairajister, karvi, Haloh iytg in Heldesk, my hostel room has a water leakage problem near this study table, can someone inspect it today?",
+    "avg_logprob": -0.6901,
+    "no_speech_prob": 0.2877,
     "snr_db": 17.78,
     "duration_sec": 22.6,
-    "transcribe_latency_sec": 2.44
+    "transcribe_latency_sec": 2.34,
+    "repetition_flagged": false
   },
   "P18_temp_P18_2_mins_recording_m4a_seg009": {
     "clip_id": "P18_temp_P18_2_mins_recording_m4a_seg009",
-    "pred_transcript": "Hello IIT Gen. Hilbes, mesma food quality last few week, thip purche, formal feedback, athawa, complaint submit, karvani process, sutche. Hello IIT Gen. Hilbes, hostel gate per late entry, mate, permission online, levy, paday, keseq, t, register my entry, enough ...",
-    "avg_logprob": -0.9685,
-    "no_speech_prob": 0.2688,
+    "pred_transcript": "hello iedgn hilbes mesma food quality last few week thip pooor chae formal feedback athava complain submit karwani process chae hello iedgn hilbes hostel gate laten trima parmission online layvil pade ksequility rasistarma entry innufjay",
+    "raw_transcript": "Hello IEDGN Hilbes, Mesma Food Quality last few week, Thip Pooor Chae, Formal Feedback, Athava, Complain, Submit, Karwani Process, Chae, Hello IEDGN Hilbes, Hostel Gate, LATEN TRIMA, PARMISSION, ONLINE, LAYVIL, PADE, KSEQUILITY, RASISTARMA, ENTRY, INNUFJAY",
+    "avg_logprob": -0.8495,
+    "no_speech_prob": 0.3375,
     "snr_db": 18.22,
     "duration_sec": 23.3,
-    "transcribe_latency_sec": 3.431
+    "transcribe_latency_sec": 3.214,
+    "repetition_flagged": false
   },
   "P18_temp_P18_2_mins_recording_m4a_seg010": {
     "clip_id": "P18_temp_P18_2_mins_recording_m4a_seg010",
-    "pred_transcript": "Hello IIT Jhan Hariddesk, my parents will stay on campus for two nights, guest accommodation, and charges check the carry side.",
-    "avg_logprob": -1.0867,
-    "no_speech_prob": 0.0892,
+    "pred_transcript": "hello iitg and heldus my parents will stay on campus for two nights guest accommodation availability and charges check curry sakiye",
+    "raw_transcript": "Hello IITG and Heldus, my parents will stay on campus for two nights, guest accommodation, availability and charges, check curry sakiye.",
+    "avg_logprob": -0.6594,
+    "no_speech_prob": 0.0779,
     "snr_db": 17.76,
     "duration_sec": 14.18,
-    "transcribe_latency_sec": 2.386
+    "transcribe_latency_sec": 1.419,
+    "repetition_flagged": false
   },
   "P19_temp_P19_WhatsApp_Audio_2026-10-19_at_2_53_58_PM_seg001": {
     "clip_id": "P19_temp_P19_WhatsApp_Audio_2026-10-19_at_2_53_58_PM_seg001",
-    "pred_transcript": "Hello Adigen, Helbless, mid semester exam time table release has come. I have not yet updated the model. I will help you in the script. Hello Adigen, Helbless, my course has been registered. But the ERP portal is not showing the subject. Please check it.",
-    "avg_logprob": -0.7573,
-    "no_speech_prob": 0.0403,
+    "pred_transcript": "hello adigen helbless mid semester exam time table release has come model is not yet updated help me in the script hello adigen helbless my course has been registered but the erp portal is not showing the subject please check the card",
+    "raw_transcript": "Hello Adigen, Helbless, mid semester exam time table release has come. Model is not yet updated. Help me in the script. Hello Adigen, Helbless, my course has been registered. But the ERP portal is not showing the subject. Please check the card.",
+    "avg_logprob": -0.9727,
+    "no_speech_prob": 0.2149,
     "snr_db": 35.0,
     "duration_sec": 19.07,
-    "transcribe_latency_sec": 3.989
+    "transcribe_latency_sec": 2.05,
+    "repetition_flagged": false
   },
   "P19_temp_P19_WhatsApp_Audio_2026-10-19_at_2_53_58_PM_seg002": {
     "clip_id": "P19_temp_P19_WhatsApp_Audio_2026-10-19_at_2_53_58_PM_seg002",
-    "pred_transcript": "Hello Adigen helpdesk, I am Mishmael, and semester exam due to medical emergency. Sublimatory exam for application, how to do this? Hello Adigen helpdesk, my attendance percentage is in disferency. \u0641\u06a9\u0644\u0679\u06cc \u06a9\u06d2 \u067e\u0627\u0633 \u062c\u0648 \u0627\u06cc\u06a9 \u0627\u06cc\u062f\u0645\u06cc \u06a9\u0627\u0641\u06cc\u0633 \u0645\u06cc\u06ba \u06a9\u0645\u067e\u0644\u06cc\u0646\u0679 \u0631\u06cc\u0633 \u06a9\u0631\u0648\u06ba",
-    "avg_logprob": -0.8114,
-    "no_speech_prob": 0.0223,
+    "pred_transcript": "\u0627\u0644\u0644\u06c1 \u0627\u0688\u062c\u06cc\u0646 \u06c1\u06d2 \u062f\u0633 i am in semi shak exam due to medical emergency \u0633\u0628\u0644\u0645\u0646\u0679\u0631 \u0627\u06af\u0631 \u0627\u067e\u0644\u06af\u06cc\u0634\u0646 \u06a9\u06cc\u0633\u06d2 \u06a9\u0631\u0648\u06ba \u0627\u0644\u0644\u06c1 \u0627\u0688\u062c\u06cc\u0646 \u06c1\u06d2 \u062f\u0633 \u0645\u06cc\u0631\u06cc \u0627\u0679\u0646\u062f\u0646\u0633 \u067e\u0631 \u0633\u0646\u062a\u062c \u0645\u06cc\u0646\u0688 \u0627\u0633\u0641\u0631\u0646\u0633\u06cc \u06c1\u06d2 \u0641\u06a9\u0644\u0679\u06cc \u06a9\u06d2 \u067e\u0627\u0633 \u062c\u0648 \u0627\u06cc\u06a9 \u0627\u06cc\u062f\u0645\u06cc \u06a9\u0627\u0641\u06cc\u0633 \u0645\u06cc\u06ba \u0642\u0628\u0644 \u0627\u0646\u062a\u0631\u0633 \u06a9\u0631\u0648\u06ba",
+    "raw_transcript": "\u0627\u0644\u0644\u06c1 \u0627\u0688\u062c\u06cc\u0646 \u06c1\u06d2 \u062f\u0633 I am in semi shak exam due to medical emergency \u0633\u0628\u0644\u0645\u0646\u0679\u0631 \u0627\u06af\u0631 \u0627\u067e\u0644\u06af\u06cc\u0634\u0646 \u06a9\u06cc\u0633\u06d2 \u06a9\u0631\u0648\u06ba \u0627\u0644\u0644\u06c1 \u0627\u0688\u062c\u06cc\u0646 \u06c1\u06d2 \u062f\u0633 \u0645\u06cc\u0631\u06cc \u0627\u0679\u0646\u062f\u0646\u0633 \u067e\u0631 \u0633\u0646\u062a\u062c \u0645\u06cc\u0646\u0688 \u0627\u0633\u0641\u0631\u0646\u0633\u06cc \u06c1\u06d2 \u0641\u06a9\u0644\u0679\u06cc \u06a9\u06d2 \u067e\u0627\u0633 \u062c\u0648 \u0627\u06cc\u06a9 \u0627\u06cc\u062f\u0645\u06cc \u06a9\u0627\u0641\u06cc\u0633 \u0645\u06cc\u06ba \u0642\u0628\u0644 \u0627\u0646\u062a\u0631\u0633 \u06a9\u0631\u0648\u06ba",
+    "avg_logprob": -0.7952,
+    "no_speech_prob": 0.144,
     "snr_db": 35.0,
     "duration_sec": 20.31,
-    "transcribe_latency_sec": 4.13
+    "transcribe_latency_sec": 3.041,
+    "repetition_flagged": false
   },
   "P19_temp_P19_WhatsApp_Audio_2026-10-19_at_2_53_58_PM_seg003": {
     "clip_id": "P19_temp_P19_WhatsApp_Audio_2026-10-19_at_2_53_58_PM_seg003",
-    "pred_transcript": "Hello Adijyan, hello. My hostel room has a water leakage problem near the study table. Can someone HELLO, Hello, IDIGEN, HELLBASS. My parents will stay on campus for two nights. Guest, Accommodation, availability or charges. KAHHA, CHECKER, ZAKTHA.",
-    "avg_logprob": -0.7931,
-    "no_speech_prob": 0.4432,
+    "pred_transcript": "hello adijyan hello dhiyan my hostel room has a water leakage problem near the study table can someone expect it today hello adijyan hello dhiyan hello dhiyan my parents will stay on campus for two nights guest accommodation availability or charges kaha chakar zakar",
+    "raw_transcript": "Hello Adijyan, hello dhiyan, my hostel room has a water leakage problem near the study table. Can someone expect it today? Hello Adijyan, hello dhiyan, hello dhiyan, my parents will stay on campus for two nights. Guest Accommodation Availability or Charges kaha chakar zakar",
+    "avg_logprob": -0.7281,
+    "no_speech_prob": 0.4863,
     "snr_db": 35.0,
     "duration_sec": 19.59,
-    "transcribe_latency_sec": 3.881
+    "transcribe_latency_sec": 3.203,
+    "repetition_flagged": false
   },
   "P19_temp_P19_WhatsApp_Audio_2026-10-19_at_2_53_58_PM_seg004": {
     "clip_id": "P19_temp_P19_WhatsApp_Audio_2026-10-19_at_2_53_58_PM_seg004",
-    "pred_transcript": "Hello IIT JN helpdesk is there a separate facility for storing luggage during semester Hello, I dig in. help us my institute email inbox is full.",
-    "avg_logprob": -0.744,
-    "no_speech_prob": 0.2316,
+    "pred_transcript": "hello adjian helbes is there a separate facility for storing luggage during semester hello i dig in help us my institute email inbox is full",
+    "raw_transcript": "Hello, Adjian Helbes is there a separate facility for storing luggage during semester Hello, I dig in. help us my institute email inbox is full.",
+    "avg_logprob": -0.8101,
+    "no_speech_prob": 0.2838,
     "snr_db": 35.0,
     "duration_sec": 13.43,
-    "transcribe_latency_sec": 3.699
+    "transcribe_latency_sec": 2.238,
+    "repetition_flagged": false
   },
   "P19_temp_P19_WhatsApp_Audio_2026-10-19_at_2_53_58_PM_seg005": {
     "clip_id": "P19_temp_P19_WhatsApp_Audio_2026-10-19_at_2_53_58_PM_seg005",
-    "pred_transcript": "And important, faculty emails are bouncing back. Storage, how to clear the problem? Hello, IIT Jinn, helpdesk, my student portal keeps logging me out every 5 minutes, even after clearing the browser cache. Can IIT investigate?",
-    "avg_logprob": -0.6433,
-    "no_speech_prob": 0.1438,
+    "pred_transcript": "and important faculty emails are bouncing back storage how to clear the problems hello i did you help us my student portal keeps logging me out every five minutes even after clearing the browser cache can id investigate",
+    "raw_transcript": "and important, faculty, emails are bouncing back. Storage, how to clear the problems? Hello, I did you help us? My student portal keeps logging me out every five minutes, even after clearing the browser cache. Can ID investigate?",
+    "avg_logprob": -0.6406,
+    "no_speech_prob": 0.2941,
     "snr_db": 35.0,
     "duration_sec": 17.02,
-    "transcribe_latency_sec": 2.527
+    "transcribe_latency_sec": 1.881,
+    "repetition_flagged": false
   },
   "P19_temp_P19_WhatsApp_Audio_2026-10-19_at_2_53_58_PM_seg006": {
     "clip_id": "P19_temp_P19_WhatsApp_Audio_2026-10-19_at_2_53_58_PM_seg006",
-    "pred_transcript": "Hello ITGN Healthdesk, GitHub student developer pack, Kili Institute verification bejected, official student status certificate, where will you get it? Hello ITGN Healthdesk, online fee payment \u092a\u0947 \u092e\u0947\u0902 \u0926\u0942\u0930\u093e \u0915\u0930 \u0915\u0930 \u0915\u0947 \u0935\u0915 \u092c\u0930\u093e\u0935\u091c\u0932 \u0915\u0930\u0947\u0936 \u092a\u0947 \u0932\u0917\u093e \u092a\u0930 \u092a\u0942\u0930 \u092a\u0942\u0930 \u092a\u0942\u0930 \u092a\u0942\u0930 \u092a\u0942\u0930 \u092a\u0942\u0930 \u092a\u0942\u0930 \u092a\u0942\u0930 \u092a\u0942\u0930 \u092a\u0942\u0930 \u092a\u0942\u0930 \u092a\u0942\u0930 \u092a\u0942\u0930 \u092a\u0942\u0930 \u092a\u0942\u0930 \u092a\u0942\u0930 \u092a\u0942\u0930 \u092a\u0942\u0930 \u092a\u0942\u0930 \u092a\u0942\u0930 \u092a\u0942\u0930 \u092a\u0942\u0930 \u092a\u0942\u0930 \u092a\u0942\u0930 \u092a\u0942\u0930 \u092a\u0942\u0930 \u092a\u0942\u0930 \u092a\u0942\u0930 \u092a\u0942\u0930 \u092a\u0942\u0930 \u092a\u0942\u0930 \u092a\u0942\u0930 \u092a\u0942\u0930 \u092a\u0942\u0930 \u092a\u0942\u0930 \u092a",
-    "avg_logprob": -0.6898,
-    "no_speech_prob": 0.2433,
+    "pred_transcript": "hello itgn healthless github student developer pack kili institute verification rejected officially student stator certificate kami lega hello itgn healthless online fee pment karte wakt brawzal crash and a portal transaction pending pement dwarakarna safe",
+    "raw_transcript": "Hello ITGN Healthless, GitHub Student Developer Pack, Kili Institute Verification Rejected, Officially Student Stator Certificate, KAMI Lega. Hello ITGN Healthless, Online Fee Pment, Karte Wakt, Brawzal Crash, and a Portal Transaction Pending, Pement, Dwarakarna Safe,",
+    "avg_logprob": -0.9338,
+    "no_speech_prob": 0.5982,
     "snr_db": 35.0,
     "duration_sec": 19.11,
-    "transcribe_latency_sec": 7.182
+    "transcribe_latency_sec": 2.616,
+    "repetition_flagged": false
   },
   "P10_temp_P10_PTT-20261019-WA0014_seg001": {
     "clip_id": "P10_temp_P10_PTT-20261019-WA0014_seg001",
-    "pred_transcript": "Namaskar IIT Gandhinagar voice helpdesk. I have a query regarding hostel mess timings and delivery. This entry I notice that dinner service sometimes starts later. Then the display schedule. Students who have evening training labs or project meetings are finding a difficult to reach the main swamp tent.",
-    "avg_logprob": -0.6027,
-    "no_speech_prob": 0.1105,
+    "pred_transcript": "namaskar i have to go on the other way to the disc i have a query regarding those till missed timings and the delivery this entry i noticed that dinner suddenly starts later then the dispersion students who have evening laps or project meetings are finding difficult to reach the miss on tent",
+    "raw_transcript": "Namaskar, I have to go on the other way to the disc. I have a query regarding those till missed timings and the delivery. This entry I noticed that dinner suddenly starts later. Then the dispersion. Students who have evening laps or project meetings are finding difficult to reach the miss on tent.",
+    "avg_logprob": -0.6148,
+    "no_speech_prob": 0.1491,
     "snr_db": 27.5,
     "duration_sec": 18.74,
-    "transcribe_latency_sec": 2.47
+    "transcribe_latency_sec": 2.557,
+    "repetition_flagged": false
   },
   "P10_temp_P10_PTT-20261019-WA0014_seg002": {
     "clip_id": "P10_temp_P10_PTT-20261019-WA0014_seg002",
-    "pred_transcript": "IIT Gandhinagar student voice helpdesk query, admissions, hostel mess, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support",
-    "avg_logprob": -0.0958,
-    "no_speech_prob": 0.1083,
+    "pred_transcript": "\u0688\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be",
+    "raw_transcript": "\u0688\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be\u0691\u06be",
+    "avg_logprob": -0.1349,
+    "no_speech_prob": 0.3851,
     "snr_db": 24.59,
     "duration_sec": 18.21,
-    "transcribe_latency_sec": 4.928
+    "transcribe_latency_sec": 5.446,
+    "repetition_flagged": false
   },
   "P10_temp_P10_PTT-20261019-WA0014_seg003": {
     "clip_id": "P10_temp_P10_PTT-20261019-WA0014_seg003",
-    "pred_transcript": "It would be helpful in the menu and timings where updated goal orderly so that students could plan their meals accordingly. Could you please guide me to the appropriate mismanagement contact for completing photon. Otherwise you should share information about issue. Please do it.",
-    "avg_logprob": -0.6132,
-    "no_speech_prob": 0.0864,
+    "pred_transcript": "\u0688\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691",
+    "raw_transcript": "\u0688\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691",
+    "avg_logprob": -0.0932,
+    "no_speech_prob": 0.2779,
     "snr_db": 27.26,
     "duration_sec": 17.39,
-    "transcribe_latency_sec": 1.96
+    "transcribe_latency_sec": 5.682,
+    "repetition_flagged": false
   },
   "P10_temp_P10_PTT-20261019-WA0020_seg001": {
     "clip_id": "P10_temp_P10_PTT-20261019-WA0020_seg001",
-    "pred_transcript": "Ramnam IIT Gandhinagar always helpdesk. I am calling to report a lost item on campus. I think I misplaced my black backpack somewhere between the academic building and the library the back contents of the notebook were because of some stationary and few busolite effects.",
-    "avg_logprob": -0.7376,
-    "no_speech_prob": 0.1771,
+    "pred_transcript": "ramnam i had taken the nagarhoush i am calling to report the lost item on campus i think i misplaced my black backpack somewhere between the academic building and the library i have to do the back contains a notebook work out some stationary and few personal items",
+    "raw_transcript": "Ramnam, I had taken the nagarhoush, I am calling to report the lost item on campus. I think I misplaced my black backpack somewhere between the academic building and the library I have to do. The back contains a notebook, work out some stationary and few personal items.",
+    "avg_logprob": -0.6874,
+    "no_speech_prob": 0.2464,
     "snr_db": 28.73,
     "duration_sec": 18.59,
-    "transcribe_latency_sec": 2.348
+    "transcribe_latency_sec": 2.248,
+    "repetition_flagged": false
   },
   "P10_temp_P10_PTT-20261019-WA0020_seg002": {
     "clip_id": "P10_temp_P10_PTT-20261019-WA0020_seg002",
-    "pred_transcript": "I have already checked the classrooms, I visited and asked a couple of friends whether they are not to speak but I have not been able to locate it. Back then, some important study methods were, so I would really appreciate any assistance in finding it. Could you please tell me whether the student has lost or found this or only reporting system we also don't can disturb missing belongings.",
-    "avg_logprob": -0.5404,
-    "no_speech_prob": 0.0737,
+    "pred_transcript": "i have already checked the classrooms i visited and asked a couple of friends without the electricity but i have not been able to locate it back then some important study methods were so i would really appreciate any assistance in finding it could you please tell me whether the student has lost or found this or an online reporting system where students can register missing belongings",
+    "raw_transcript": "I have already checked the classrooms, I visited and asked a couple of friends without the electricity but I have not been able to locate it. Back then, some important study methods were, so I would really appreciate any assistance in finding it. Could you please tell me whether the student has lost or found this or an online reporting system where students can register missing belongings?",
+    "avg_logprob": -0.4524,
+    "no_speech_prob": 0.0779,
     "snr_db": 23.98,
     "duration_sec": 22.92,
-    "transcribe_latency_sec": 2.703
+    "transcribe_latency_sec": 2.548,
+    "repetition_flagged": false
   },
   "P10_temp_P10_PTT-20261019-WA0020_seg003": {
     "clip_id": "P10_temp_P10_PTT-20261019-WA0020_seg003",
-    "pred_transcript": "I would also like to know if there is any designated office here, I can check whether someone has submitted the bag. If required, I can provide more details description of backpack and the external text. Prepare a movie reporting process, but I would like to thank you.",
-    "avg_logprob": -0.4496,
-    "no_speech_prob": 0.0589,
+    "pred_transcript": "i would also like to know if there is any designated office here i can check whether someone has submitted the bag if required i can provide more details description of backpack and its context prepare movie reporting process but i would like to thank you",
+    "raw_transcript": "I would also like to know if there is any designated office here, I can check whether someone has submitted the bag. If required, I can provide more details description of backpack and its context. Prepare movie reporting process, but I would like to thank you.",
+    "avg_logprob": -0.4821,
+    "no_speech_prob": 0.0948,
     "snr_db": 28.39,
     "duration_sec": 17.17,
-    "transcribe_latency_sec": 2.183
+    "transcribe_latency_sec": 1.56,
+    "repetition_flagged": false
   },
   "P12_temp_P12_PTT-20261019-WA0028_seg001": {
     "clip_id": "P12_temp_P12_PTT-20261019-WA0028_seg001",
-    "pred_transcript": "Hello sir. So I want to raise an issue regarding the water supply in the hostel. So since past 34 days there is continuous red muddhical water has been continuously coming from the tap.",
-    "avg_logprob": -0.4331,
-    "no_speech_prob": 0.1722,
+    "pred_transcript": "hello sir so i want to raise an issue regarding the water supply in the hostel so since past 34 days there is continuous red muddacle water as been continuously coming from the tap",
+    "raw_transcript": "Hello sir. So I want to raise an issue regarding the water supply in the hostel. So since past 34 days there is continuous red muddacle water as been continuously coming from the tap.",
+    "avg_logprob": -0.4672,
+    "no_speech_prob": 0.2389,
     "snr_db": 30.58,
     "duration_sec": 15.27,
-    "transcribe_latency_sec": 1.659
+    "transcribe_latency_sec": 1.55,
+    "repetition_flagged": false
   },
   "P12_temp_P12_PTT-20261019-WA0028_seg002": {
     "clip_id": "P12_temp_P12_PTT-20261019-WA0028_seg002",
-    "pred_transcript": "With small particles and contaminates visible in the water. So we are unable to use this water for bathing or the daily activities. So this is creating serious, hygienic and safety concerns for the residents. So I request you to kindly look into this issue and resolve it as soon as possible. Because it is related to the safety of the individual. So please look into this. Thank you.",
-    "avg_logprob": -0.2544,
-    "no_speech_prob": 0.228,
+    "pred_transcript": "with small particles and contaminates visible in the water so we are unable to use this water for bathing or the daily activities so this is creating serious hygienic and safety concerns for the residents so i request you to kindly look into this issue and resolve it as soon as possible because it is related to the safety of the individual so please look into this thank you",
+    "raw_transcript": "with small particles and contaminates visible in the water. So we are unable to use this water for bathing or the daily activities. So this is creating serious, hygienic and safety concerns for the residents. So I request you to kindly look into this issue and resolve it as soon as possible because it is related to the safety of the individual. So please look into this. Thank you.",
+    "avg_logprob": -0.2946,
+    "no_speech_prob": 0.3306,
     "snr_db": 28.7,
     "duration_sec": 25.84,
-    "transcribe_latency_sec": 2.288
+    "transcribe_latency_sec": 2.519,
+    "repetition_flagged": false
   },
   "P12_temp_P12_PTT-20261019-WA0029_seg001": {
     "clip_id": "P12_temp_P12_PTT-20261019-WA0029_seg001",
-    "pred_transcript": "IIT Gandhinagar student voice helpdesk query, admissions, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support",
-    "avg_logprob": -0.0993,
-    "no_speech_prob": 0.0396,
+    "pred_transcript": "\u0645\u06cc\u06ba \u0622\u062c \u06c1\u0bbf\u0bcd\u0b9f\u0bbf\u0bb2\u0bcd \u0b95\u0bbf\u0bb1\u0bcd\u0b9a\u0bbf\u0ba9\u0bcd \u0bae\u0bc7\u0bb7\u0bcd \u0645\u06cc\u06ba \u0bae\u0bbf\u0ba9\u0bcd\u0bb1\u0bbf\u0bb5\u0bb3\u06d2 \u0b95\u0bbe\u0ba3\u0bc8\u0b95\u0bcd\u0b95\u0bc1 \u0644\u06cc\u06a9\u0bcd\u0b95\u0bc1 \u0bb7\u0bbf\u0b95\u0bcd\u0b95\u0bbe\u0ba4\u0bcd \u0ba4\u0bb0\u0bb8\u0bcd\u0b95\u0bbe\u0ba4\u0bcd\u0ba4\u0bbe\u0ba9\u0bcd \u0bb2\u0bc8\u0baf\u0bbe \u0bb0\u0bcb\u0bb8\u0bcd \u0b8f\u0b95\u0bcd \u0b8f\u0b9a\u0bc8 \u0b95\u0bbe\u0ba3\u0bbe\u0bae\u0bc1\u0bb2\u0bcd \u0ba4\u0bc7 \u0bae\u0bc7\u0ba9\u0bc1\u0bae\u0bc7 \u0ba4\u0bcb\u0ba9\u0bcb\u0bcd\u0b9f\u0bc8\u0bae\u0bbe\u0bb2\u0bc1 \u0baf\u0bbe\u0bb2\u0bc1 \u0bb0\u0bcb\u0bb8\u0bcd \u0bb0\u0bcb\u0bb8\u0bcd \u0bb0\u0bcb\u0bb8\u0bcd \u0905\u0930 \u0938\u091c\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f",
+    "raw_transcript": "\u0645\u06cc\u06ba \u0622\u062c \u06c1\u0bbf\u0bcd\u0b9f\u0bbf\u0bb2\u0bcd \u0b95\u0bbf\u0bb1\u0bcd\u0b9a\u0bbf\u0ba9\u0bcd \u0bae\u0bc7\u0bb7\u0bcd \u0645\u06cc\u06ba \u0bae\u0bbf\u0ba9\u0bcd\u0bb1\u0bbf\u0bb5\u0bb3\u06d2 \u0b95\u0bbe\u0ba3\u0bc8\u0b95\u0bcd\u0b95\u0bc1 \u0644\u06cc\u06a9\u0bcd\u0b95\u0bc1 \u0bb7\u0bbf\u0b95\u0bcd\u0b95\u0bbe\u0ba4\u0bcd \u0ba4\u0bb0\u0bb8\u0bcd\u0b95\u0bbe\u0ba4\u0bcd\u0ba4\u0bbe\u0ba9\u0bcd \u0bb2\u0bc8\u0baf\u0bbe \u0bb0\u0bcb\u0bb8\u0bcd \u0b8f\u0b95\u0bcd \u0b8f\u0b9a\u0bc8 \u0b95\u0bbe\u0ba3\u0bbe\u0bae\u0bc1\u0bb2\u0bcd \u0ba4\u0bc7 \u0bae\u0bc7\u0ba9\u0bc1\u0bae\u0bc7 \u0ba4\u0bcb\u0ba9\u0bcb\u0bcd\u0b9f\u0bc8\u0bae\u0bbe\u0bb2\u0bc1 \u0baf\u0bbe\u0bb2\u0bc1 \u0bb0\u0bcb\u0bb8\u0bcd \u0bb0\u0bcb\u0bb8\u0bcd \u0bb0\u0bcb\u0bb8\u0bcd \u0bb0\u0bcb\u0bb8\u0bcd \u0bb0\u0bcb\u0bb8\u0bcd \u0bb0\u0bcb\u0bb8\u0bcd \u0bb0\u0bcb\u0bb8\u0bcd \u0bb0\u0bcb\u0bb8\u0bcd \u0bb0\u0bcb\u0bb8\u0bcd \u0bb0\u0bcb\u0bb8\u0bcd \u0bb0\u0bcb\u0bb8\u0bcd \u0905\u0930 \u0938\u091c\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f\u0935\u093f",
+    "avg_logprob": -0.5361,
+    "no_speech_prob": 0.1674,
     "snr_db": 29.41,
     "duration_sec": 23.52,
-    "transcribe_latency_sec": 4.697
+    "transcribe_latency_sec": 9.45,
+    "repetition_flagged": true
   },
   "P12_temp_P12_PTT-20261019-WA0029_seg002": {
     "clip_id": "P12_temp_P12_PTT-20261019-WA0029_seg002",
-    "pred_transcript": "\u06be\u0648 \u0628\u0634\u0627\u0645 \u062f\u06cc\u06a9\u06be\u0648\u06ba \u0645\u06cc\u06ba \u0622\u0644\u0648 \u0628\u06be\u06cc \u06c1\u0648 \u06af\u06d2 \u0627\u0648 \u06a9\u06be\u0627\u06a9\u06be\u0627 \u06a9\u06c1 \u062a\u0648 \u0645\u06cc\u06ba \u0627\u0633 \u06a9\u06d2 \u0644\u06cc\u0634\u06a9\u0627\u06cc\u062a \u062f\u0631\u062c \u06a9\u0631\u0646\u0627 \u0686\u0627\u06c1\u062a\u0627 \u06c1\u0648\u06ba \u06a9\u06c1 \u067e\u0631\u0648\u062c \u0627\u06cc\u06a9 \u062c\u06cc\u0633\u06d2 \u06a9\u06be\u0627\u0646\u0627 \u06a9\u06be\u0627 \u06a9\u0631 \u0627\u0645\u0631 \u06c1\u0648 \u06af\u06d2 \u06a9\u0631\u0648 \u067e\u06cc\u0631 \u0645\u06cc\u06ba \u0645\u06cc\u06ba \u0627\u0648 \u0645\u06cc\u06ba \u0627\u0648 \u0645\u06cc\u06ba \u0627\u0648 \u0645\u06cc\u06ba \u0627\u0648 \u06a9\u06be\u0627 \u0633\u0628\u062c\u0648 \u06a9\u06cc\u0644\u06c1 \u0648 \u062f\u0648\u0633\u0631 \u0628\u06be\u06cc \u06a9\u0686\u06be \u0634\u0627\u0645\u0644\u06cc\u0644 \u0627\u0648\u0631 \u06a9\u06be\u0648\u0644\u06cc\u0679\u06cc \u067e\u06d2 \u0628\u06be\u06cc \u062f\u06cc\u0646 \u06a9\u0631 \u062f\u06d2 \u0633\u0648 \u067e\u0644\u06cc\u0632 \u0644\u06a9\u06be\u06cc\u06ba \u062f\u06cc\u0633\u06d2",
-    "avg_logprob": -0.7399,
-    "no_speech_prob": 0.0358,
+    "pred_transcript": "\u06be\u0627 \u0633\u0648 \u0628\u0634\u0627\u0645 \u0645\u06cc\u06ba \u0622\u0644\u0648 \u0628\u06be\u06cc \u06c1\u0648 \u06af\u06d2 \u0627\u0648 \u06a9\u06be\u0627\u06a9\u06be\u0627 \u06a9\u06c1 \u062a\u0648 \u0645\u06cc\u06ba \u0627\u0633 \u06a9\u06d2 \u0644\u06cc\u0634\u06a9\u0627\u06cc\u062a \u062f\u0631\u062c \u06a9\u0631\u0646\u0627 \u0686\u0627\u06c1\u062a\u0627 \u06c1\u0648\u06ba \u06a9\u06c1 \u067e\u0631 \u0627\u0648 \u062c\u06cc\u0633\u06d2 \u06a9\u06be\u0627 \u0646\u0627 \u06a9\u06be\u0627 \u06a9\u0631 \u0627\u0645 \u0628\u0648\u0631 \u06c1\u0648 \u06af\u06d2 \u06a9\u0631\u0648 \u067e\u06cc\u0645 \u0645\u06cc\u06ba \u0645\u06cc\u06ba \u0627\u0648 \u06a9\u06cc \u0633\u0628\u062c\u0648 \u06a9\u06cc\u0644\u06c1 \u062f\u0648\u0633\u0631 \u0628\u06be\u06cc \u06a9\u0686\u06be \u0634\u0627\u0645\u0644\u06c1 \u0627\u0648\u0631 \u06a9\u0648\u0644\u0679\u06cc \u067e\u06cc \u0628\u06be\u06cc \u062f\u06cc\u0646 \u06a9\u0631 \u062f\u06d2 \u0633\u0648 \u067e\u0644\u06cc\u0632 \u0644\u06a9\u06be\u06cc\u06ba \u062f\u06cc\u0633\u06d2",
+    "raw_transcript": "\u06be\u0627 \u0633\u0648 \u0628\u0634\u0627\u0645 \u0645\u06cc\u06ba \u0622\u0644\u0648 \u0628\u06be\u06cc \u06c1\u0648 \u06af\u06d2 \u0627\u0648 \u06a9\u06be\u0627\u06a9\u06be\u0627 \u06a9\u06c1 \u062a\u0648 \u0645\u06cc\u06ba \u0627\u0633 \u06a9\u06d2 \u0644\u06cc\u0634\u06a9\u0627\u06cc\u062a \u062f\u0631\u062c \u06a9\u0631\u0646\u0627 \u0686\u0627\u06c1\u062a\u0627 \u06c1\u0648\u06ba \u06a9\u06c1 \u067e\u0631 \u0627\u0648 \u062c\u06cc\u0633\u06d2 \u06a9\u06be\u0627 \u0646\u0627 \u06a9\u06be\u0627 \u06a9\u0631 \u0627\u0645 \u0628\u0648\u0631 \u06c1\u0648 \u06af\u06d2 \u06a9\u0631\u0648 \u067e\u06cc\u0645 \u0645\u06cc\u06ba \u0645\u06cc\u06ba \u0627\u0648 \u0645\u06cc\u06ba \u0627\u0648 \u0645\u06cc\u06ba \u0627\u0648 \u0645\u06cc\u06ba \u0627\u0648 \u0645\u06cc\u06ba \u0627\u0648 \u06a9\u06cc \u0633\u0628\u062c\u0648 \u06a9\u06cc\u0644\u06c1 \u062f\u0648\u0633\u0631 \u0628\u06be\u06cc \u06a9\u0686\u06be \u0634\u0627\u0645\u0644\u06c1 \u0627\u0648\u0631 \u06a9\u0648\u0644\u0679\u06cc \u067e\u06cc \u0628\u06be\u06cc \u062f\u06cc\u0646 \u06a9\u0631 \u062f\u06d2 \u0633\u0648 \u067e\u0644\u06cc\u0632 \u0644\u06a9\u06be\u06cc\u06ba \u062f\u06cc\u0633\u06d2",
+    "avg_logprob": -0.7578,
+    "no_speech_prob": 0.0814,
     "snr_db": 27.77,
     "duration_sec": 20.05,
-    "transcribe_latency_sec": 3.297
+    "transcribe_latency_sec": 4.125,
+    "repetition_flagged": true
   },
   "P16_temp_P16_WhatsApp_Audio_2026-10-19_at_2_53_57_PM_seg001": {
     "clip_id": "P16_temp_P16_WhatsApp_Audio_2026-10-19_at_2_53_57_PM_seg001",
-    "pred_transcript": "Hello IITGN helpdesk, can I audit an additional elective without it affecting my semester grade point average? Hello IITGN helpdesk, my hostel room has a water leakage problem near the study table. Can someone inspect it today?",
-    "avg_logprob": -0.283,
-    "no_speech_prob": 0.0169,
+    "pred_transcript": "hello iitgn help desk can i order an additional elective without it affecting my semester grade point average hello iitgn help desk my hostel room has a water leakage problem near the study table can someone inspect it today",
+    "raw_transcript": "Hello IITGN Help Desk. Can I order an additional elective without it affecting my semester grade point average? Hello IITGN Help Desk. My hostel room has a water leakage problem near the study table. Can someone inspect it today?",
+    "avg_logprob": -0.3147,
+    "no_speech_prob": 0.0245,
     "snr_db": 35.0,
     "duration_sec": 15.66,
-    "transcribe_latency_sec": 1.732
+    "transcribe_latency_sec": 2.168,
+    "repetition_flagged": false
   },
   "P16_temp_P16_WhatsApp_Audio_2026-10-19_at_2_53_57_PM_seg002": {
     "clip_id": "P16_temp_P16_WhatsApp_Audio_2026-10-19_at_2_53_57_PM_seg002",
-    "pred_transcript": "Hello IIT Jhin helpdesk, is there a separate facility for storage luggage during semester breaks? Hello IIT Jhin helpdesk, my student portal keeps logging me out every few minutes, even after clearing the browser cache. and IT investigate.",
-    "avg_logprob": -0.5219,
-    "no_speech_prob": 0.1306,
+    "pred_transcript": "hello iitgn helpdisc is there a separate facility for storage luggage during semester breaks hello iitgn helpdisc my student portal keeps logging me out every few minutes even after clearing the browser cache can iit investigate",
+    "raw_transcript": "Hello IITGN HelpDisc. Is there a separate facility for storage luggage during semester breaks? Hello IITGN HelpDisc. My student portal keeps logging me out every few minutes. Even after clearing the browser cache, can IIT investigate?",
+    "avg_logprob": -0.3056,
+    "no_speech_prob": 0.01,
     "snr_db": 35.0,
     "duration_sec": 15.8,
-    "transcribe_latency_sec": 2.077
+    "transcribe_latency_sec": 2.033,
+    "repetition_flagged": false
   },
   "P16_temp_P16_WhatsApp_Audio_2026-10-19_at_2_53_57_PM_seg003": {
     "clip_id": "P16_temp_P16_WhatsApp_Audio_2026-10-19_at_2_53_57_PM_seg003",
-    "pred_transcript": "Hello IIT JN helpdesk. My laptop is enabled to connect to the campus VPN after a recent operating system update. Please help troubleshoot. Hello IIT JN helpdesk. My scholarship application shows document verification pending for three weeks.",
-    "avg_logprob": -0.2658,
-    "no_speech_prob": 0.0126,
+    "pred_transcript": "hello iitgn helpdesk my laptop is enabled to connect to the campus vpn after a recent operating system update please help troubleshoot hello iitgn helpdesk my scholarship application shows document verification pending for three weeks",
+    "raw_transcript": "Hello IITGN helpdesk. My laptop is enabled to connect to the campus VPN after a recent operating system update. Please help troubleshoot. Hello IITGN helpdesk. My scholarship application shows document verification pending for three weeks.",
+    "avg_logprob": -0.3042,
+    "no_speech_prob": 0.0139,
     "snr_db": 33.19,
     "duration_sec": 15.92,
-    "transcribe_latency_sec": 1.701
+    "transcribe_latency_sec": 1.96,
+    "repetition_flagged": false
   },
   "P16_temp_P16_WhatsApp_Audio_2026-10-19_at_2_53_57_PM_seg004": {
     "clip_id": "P16_temp_P16_WhatsApp_Audio_2026-10-19_at_2_53_57_PM_seg004",
-    "pred_transcript": "whom should I contact for an update? Hello IIT Jhin helpdesk. Internship company is asking for a bonafide letter and NOC. Are both documents available through the student portal? Hello IIT Jhin helpdesk. I need an official medium of instruction certificate for my master's application abroad.",
-    "avg_logprob": -0.3429,
-    "no_speech_prob": 0.0074,
+    "pred_transcript": "whom should i contact for an update hello iitgn helpdisc internship company is asking for a bonafide letter and noc or both documents available through the student portal hello iitgn helpdisc i need an official medium of instruction certificate for my master s application abroad",
+    "raw_transcript": "whom should I contact for an update. Hello IITGN HelpDisc. Internship Company is asking for a bonafide letter and NOC. Or both documents available through the student portal. Hello IITGN HelpDisc. I need an official medium of instruction certificate for my master's application abroad.",
+    "avg_logprob": -0.3242,
+    "no_speech_prob": 0.0138,
     "snr_db": 35.0,
     "duration_sec": 19.14,
-    "transcribe_latency_sec": 1.896
+    "transcribe_latency_sec": 2.429,
+    "repetition_flagged": false
   },
   "P16_temp_P16_WhatsApp_Audio_2026-10-19_at_2_53_57_PM_seg005": {
     "clip_id": "P16_temp_P16_WhatsApp_Audio_2026-10-19_at_2_53_57_PM_seg005",
-    "pred_transcript": "How can I request one? Hello IIT Jain helpdesk. My name is spelled differently on different student ID and academic records. What is the correction procedure? Hello IIT Jain helpdesk. I need access to a general article that is behind a publisher paywall. Does the institute library provide remote access?",
-    "avg_logprob": -0.2508,
-    "no_speech_prob": 0.0157,
+    "pred_transcript": "how can i request one hello iitgn help disk my name is spelled differently on different student id and academic records what is the correction procedure hello iitgn help disk i need access to a general article that is behind a publisher paywall does the institute library provide remote access",
+    "raw_transcript": "How can I request one? Hello IITGN help disk. My name is spelled differently on different student ID and academic records. What is the correction procedure? Hello IITGN help disk. I need access to a general article that is behind a publisher paywall. Does the institute library provide remote access?",
+    "avg_logprob": -0.2705,
+    "no_speech_prob": 0.0159,
     "snr_db": 35.0,
     "duration_sec": 20.73,
-    "transcribe_latency_sec": 1.951
+    "transcribe_latency_sec": 2.677,
+    "repetition_flagged": false
   },
   "P16_temp_P16_WhatsApp_Audio_2026-10-19_at_2_53_57_PM_seg006": {
     "clip_id": "P16_temp_P16_WhatsApp_Audio_2026-10-19_at_2_53_57_PM_seg006",
-    "pred_transcript": "Hello IIT Jain helpdesk. My laboratory access card stopped working even though my project registration is active. Can access permissions be checked? Hello IIT Jain helpdesk. Can undergraduate students apply for summer research internships with IIT Gandhinagar faculty?",
-    "avg_logprob": -0.2036,
-    "no_speech_prob": 0.0141,
+    "pred_transcript": "hello iitgn help desk my laboratory access card stopped working even though my project registration is active can access permissions be checked hello iitgn help desk can undergraduate students apply for summer research internships with iit gandhi nagar faculty",
+    "raw_transcript": "Hello IITGN Help Desk. My laboratory access card stopped working even though my project registration is active. Can access permissions be checked? Hello IITGN Help Desk. Can undergraduate students apply for summer research internships with IIT Gandhi Nagar faculty?",
+    "avg_logprob": -0.3192,
+    "no_speech_prob": 0.0194,
     "snr_db": 35.0,
     "duration_sec": 17.39,
-    "transcribe_latency_sec": 1.695
+    "transcribe_latency_sec": 2.082,
+    "repetition_flagged": false
   },
   "P16_temp_P16_WhatsApp_Audio_2026-10-19_at_2_53_57_PM_seg007": {
     "clip_id": "P16_temp_P16_WhatsApp_Audio_2026-10-19_at_2_53_57_PM_seg007",
-    "pred_transcript": "Hello IIT Gene helpdesk, my lab computer has lost access to the shared data dataset drive. The research deadline is approaching. Whom should I contact? Hello IIT Gene helpdesk, I left my backpack in the campus shortly yesterday evening. Is there a loss in founddesk I can contact?",
-    "avg_logprob": -0.3703,
-    "no_speech_prob": 0.015,
+    "pred_transcript": "hello iitg in helpdisk my lab computer has lost access to the shared data set drive the research deadline is approaching whom should i contact hello iitg in helpdisk i left my backpack in the campus shortly yesterday evening is there a loss in found disk i can contact",
+    "raw_transcript": "Hello, IITG in HelpDisk. My lab computer has lost access to the shared data set drive. The research deadline is approaching. Whom should I contact? Hello, IITG in HelpDisk. I left my backpack in the campus shortly yesterday evening. Is there a loss in found disk I can contact?",
+    "avg_logprob": -0.3881,
+    "no_speech_prob": 0.0362,
     "snr_db": 35.0,
     "duration_sec": 19.18,
-    "transcribe_latency_sec": 1.995
+    "transcribe_latency_sec": 2.443,
+    "repetition_flagged": false
   },
   "P13_temp_P13_WhatsApp_Audio_2026-10-19_at_2_53_56_PM__1__seg001": {
     "clip_id": "P13_temp_P13_WhatsApp_Audio_2026-10-19_at_2_53_56_PM__1__seg001",
-    "pred_transcript": "Namaskar, IIT GN voice helpdesk. Mtech computer science eligibility criteria shows, can non-gate candidates apply for a written test? Kupia urgent support abho. Namaskar, IIT Gandhinagar voice helpdesk. phd advisions interview call letter cup release haga website per update haga website",
-    "avg_logprob": -0.7659,
-    "no_speech_prob": 0.078,
+    "pred_transcript": "namaskar iitgn voice help desk mtaq computer science eligibility criteria shooshai can non gate candidates apply for heteron test kupia urgent support apo namaskar iit ghani nagar voice help desk ph d advisions interview call letter cub release website per update no 1",
+    "raw_transcript": "Namaskar, IITGN Voice Help Desk MTAQ Computer Science Eligibility Criteria Shooshai Can Non-Gate Candidates Apply for Heteron Test? Kupia Urgent Support Apo Namaskar, IIT Ghani Nagar Voice Help Desk Ph.D. Advisions Interview Call Letter, CUB Release Website per Update No.1",
+    "avg_logprob": -0.561,
+    "no_speech_prob": 0.2392,
     "snr_db": 20.39,
     "duration_sec": 24.18,
-    "transcribe_latency_sec": 2.369
+    "transcribe_latency_sec": 2.982,
+    "repetition_flagged": false
   },
   "P13_temp_P13_WhatsApp_Audio_2026-10-19_at_2_53_56_PM__1__seg002": {
     "clip_id": "P13_temp_P13_WhatsApp_Audio_2026-10-19_at_2_53_56_PM__1__seg002",
-    "pred_transcript": "Kupia urgent support abho Namaskar, IIT Gandhinagar voice helpdesk, VTEC seat acceptance fee payment portal open na di dhato. Payment link send kaisha ko cojo Kupia urgent support abho.",
-    "avg_logprob": -0.5654,
-    "no_speech_prob": 0.0433,
+    "pred_transcript": "kupia urgent support abho namaskar iit gandhi nagar voice help desk vtec seat acceptance fee payment portal open na di dhato payment link send kaisha ko cojo kupia urgent support abho",
+    "raw_transcript": "Kupia urgent support abho Namaskar, IIT Gandhi Nagar voice help desk VTEC seat acceptance fee payment portal open na di dhato payment link send kaisha ko cojo Kupia urgent support abho",
+    "avg_logprob": -0.7135,
+    "no_speech_prob": 0.3335,
     "snr_db": 20.47,
     "duration_sec": 12.73,
-    "transcribe_latency_sec": 1.639
+    "transcribe_latency_sec": 2.073,
+    "repetition_flagged": false
   },
   "P13_temp_P13_WhatsApp_Audio_2026-10-19_at_2_53_56_PM__1__seg003": {
     "clip_id": "P13_temp_P13_WhatsApp_Audio_2026-10-19_at_2_53_56_PM__1__seg003",
-    "pred_transcript": "NAMASKAR IIT Gandhinagar voice helpdesk Document verification of physical reporting mandatory to upload online, kupia urgent support app. NAMASKAR IIT Gandhinagar voice helpdesk JEE advance.",
-    "avg_logprob": -0.6363,
-    "no_speech_prob": 0.0769,
+    "pred_transcript": "namaskar iit kanthi nagar voice helped desk document verification for physical reporting mandatory ki online upload ga vi shaka hai kupia urgent support ako namaskar iit kanthi nagar voice helped desk jee advanced",
+    "raw_transcript": "Namaskar, IIT Kanthi Nagar Voice Helped desk Document verification for physical reporting mandatory ki online upload ga vi shaka hai Kupia urgent support ako Namaskar, IIT Kanthi Nagar Voice Helped desk Jee Advanced",
+    "avg_logprob": -0.7656,
+    "no_speech_prob": 0.1804,
     "snr_db": 26.42,
     "duration_sec": 14.42,
-    "transcribe_latency_sec": 1.653
+    "transcribe_latency_sec": 2.162,
+    "repetition_flagged": false
   },
   "P13_temp_P13_WhatsApp_Audio_2026-10-19_at_2_53_56_PM__1__seg004": {
     "clip_id": "P13_temp_P13_WhatsApp_Audio_2026-10-19_at_2_53_56_PM__1__seg004",
-    "pred_transcript": "Vang, 5-30 per electrical engineering department, my admission maalisha kye kye kya kupya urgent support ako. Namaskar, IIT Gandhinagar voice helpdesk. Admissions office new direct contact number shows. Reception call disconnect thay jay chay.",
-    "avg_logprob": -0.809,
-    "no_speech_prob": 0.0292,
+    "pred_transcript": "vanck pantisopur electrical engineering department of admission malaysia kupia urgent support namaskar iit gandhi nagar voice help desk admissions office direct contact number shoes reception call disconnect",
+    "raw_transcript": "Vanck, Pantisopur, Electrical Engineering, Department of Admission, Malaysia, Kupia, Urgent Support, Namaskar, IIT Gandhi Nagar, Voice Help Desk, Admissions Office, Direct Contact Number, Shoes, Reception Call Disconnect,",
+    "avg_logprob": -0.7327,
+    "no_speech_prob": 0.0601,
     "snr_db": 26.59,
     "duration_sec": 14.31,
-    "transcribe_latency_sec": 1.987
+    "transcribe_latency_sec": 2.046,
+    "repetition_flagged": false
   },
   "P13_temp_P13_WhatsApp_Audio_2026-10-19_at_2_53_56_PM__1__seg005": {
     "clip_id": "P13_temp_P13_WhatsApp_Audio_2026-10-19_at_2_53_56_PM__1__seg005",
-    "pred_transcript": "Kupia urgent support appo. Namaskar, IIT Gandhinagar voice helpdesk. Can institute direct phd NGNF offer kata hai for meetag graduate with high CPI kubia urgent support apo",
-    "avg_logprob": -0.8295,
-    "no_speech_prob": 0.2308,
+    "pred_transcript": "kupia urgent support appo namaskar iit kaninagar voice help desk can institute direct phd agnation offer kata hai for meetag graduate with high cpi kupia urgent support appo",
+    "raw_transcript": "Kupia urgent support appo Namaskar IIT Kaninagar voice help desk Can institute direct phd agnation offer kata hai For meetag graduate with high cpi Kupia urgent support appo",
+    "avg_logprob": -0.5536,
+    "no_speech_prob": 0.3918,
     "snr_db": 26.48,
     "duration_sec": 12.27,
-    "transcribe_latency_sec": 1.988
+    "transcribe_latency_sec": 1.906,
+    "repetition_flagged": false
   },
   "P13_temp_P13_WhatsApp_Audio_2026-10-19_at_2_53_56_PM__1__seg006": {
     "clip_id": "P13_temp_P13_WhatsApp_Audio_2026-10-19_at_2_53_56_PM__1__seg006",
-    "pred_transcript": "Namaskar, IIT Gandhinagar voice helpdesk, MSC chemistry program, syllabus or fee structure, details where can download the data, kupia urgent support. Namaskar, IIT Gandhinagar voice helpdesk. Foreign National students' Marta admission application form on a scholarship rules Shoo Che, Kupia urgent support appo. Namaskar.",
-    "avg_logprob": -0.6687,
-    "no_speech_prob": 0.0825,
+    "pred_transcript": "namaskar ayati khandinagya voice helpedesk msc chemistry programme s syllabus or feastructure details where can we download the details kupia urgent support namaskar ayati khandinagya voice helpedesk foreign national students marte admission application form on a scholarship rules shoes kupia urgent support namaskar",
+    "raw_transcript": "Namaskar, Ayati Khandinagya Voice Helpedesk, MSC Chemistry Programme's syllabus or Feastructure details, where can we download the details, Kupia urgent support. Namaskar, Ayati Khandinagya Voice Helpedesk, foreign national students, marte, admission, application form on a scholarship rules, shoes, Kupia urgent support. Namaskar,",
+    "avg_logprob": -0.6442,
+    "no_speech_prob": 0.3016,
     "snr_db": 24.65,
     "duration_sec": 20.04,
-    "transcribe_latency_sec": 2.768
+    "transcribe_latency_sec": 2.937,
+    "repetition_flagged": false
   },
   "P13_temp_P13_WhatsApp_Audio_2026-10-19_at_2_53_56_PM__1__seg007": {
     "clip_id": "P13_temp_P13_WhatsApp_Audio_2026-10-19_at_2_53_56_PM__1__seg007",
-    "pred_transcript": "Spot around admission schedule released, hihochhe ke nei, for vacant seats in BTEC, kupia urgent support appo. Namaskar, IIT Gandhinagar voice helpdesk. Admissions portal per offer letter accept kaju hathu pan confirmation email abyo na thi, kupia urgent support appo. Namaskar, mess, rebate, form, submit kaju hathu pan monthly billma deduction left",
-    "avg_logprob": -0.582,
-    "no_speech_prob": 0.0896,
+    "pred_transcript": "spot on admission schedule will be released ihochhe ke nei for vacant seats in btec kupia urgent support apple namaskar iati kandinagga voice help desk admissions portal per offer letter accept kaju hatu pan confirmation email aavyo na thi kupia urgent support apple namaskar mess we bait form submit kaju hatu pan monthly bill ma deduction left",
+    "raw_transcript": "Spot on admission schedule will be released ihochhe ke nei for vacant seats in BTEC kupia urgent support apple Namaskar iati kandinagga voice help desk Admissions portal per offer letter accept kaju hatu pan confirmation email aavyo na thi kupia urgent support apple Namaskar Mess we bait form submit kaju hatu pan monthly bill ma deduction left",
+    "avg_logprob": -0.7385,
+    "no_speech_prob": 0.1908,
     "snr_db": 25.35,
     "duration_sec": 23.84,
-    "transcribe_latency_sec": 3.068
+    "transcribe_latency_sec": 2.952,
+    "repetition_flagged": false
   },
   "P13_temp_P13_WhatsApp_Audio_2026-10-19_at_2_53_56_PM__1__seg008": {
     "clip_id": "P13_temp_P13_WhatsApp_Audio_2026-10-19_at_2_53_56_PM__1__seg008",
-    "pred_transcript": "\u0688\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691\u0691",
-    "avg_logprob": -0.1262,
-    "no_speech_prob": 0.0884,
+    "pred_transcript": "reflact tha thithao kupia urgent support apo namaskar mesk rebate form submit ka yuhatu pan manthi klee bill ma reduction reflect nathithao kupia urgent support apo namaskar idy kandhi nagar voice helped esk",
+    "raw_transcript": "Reflact Tha Thithao Kupia Urgent Support Apo Namaskar Mesk Rebate Form Submit Ka Yuhatu Pan Manthi Klee Bill Ma Reduction Reflect Nathithao Kupia Urgent Support Apo Namaskar Idy Kandhi Nagar Voice Helped Esk",
+    "avg_logprob": -0.7744,
+    "no_speech_prob": 0.1487,
     "snr_db": 18.99,
     "duration_sec": 16.23,
-    "transcribe_latency_sec": 4.915
+    "transcribe_latency_sec": 2.735,
+    "repetition_flagged": false
   },
   "P13_temp_P13_WhatsApp_Audio_2026-10-19_at_2_53_56_PM__1__seg009": {
     "clip_id": "P13_temp_P13_WhatsApp_Audio_2026-10-19_at_2_53_56_PM__1__seg009",
-    "pred_transcript": "Room number b, busocharma, AI conditional cooling, please maintain instantiation moklo. Kupia urgent support, Namaskar, IIT Gandhinagar voice helpdesk. Hostel block 5 na washroom ma giza work, karm na thika ayu. Agent plumbing inspection, Kupia urgent support,",
-    "avg_logprob": -0.7699,
-    "no_speech_prob": 0.0103,
+    "pred_transcript": "rung nambu bhi baso chaal ma ai conditional cooling na thika to please maintain its technician moklo kupia urgent support ako namaskal iit gandhina ka voice help desk hostel block 5 na washroom ma giza wa karm na thika ayu urgent plumbing inspection juiye sa kupia urgent support ako",
+    "raw_transcript": "Rung Nambu bhi baso chaal ma AI Conditional cooling na thika to Please maintain its technician moklo Kupia urgent support ako Namaskal IIT Gandhina ka voice help desk Hostel block 5 na washroom ma giza wa karm na thika ayu urgent plumbing inspection juiye sa Kupia urgent support ako",
+    "avg_logprob": -0.8112,
+    "no_speech_prob": 0.0367,
     "snr_db": 25.11,
     "duration_sec": 19.13,
-    "transcribe_latency_sec": 2.652
+    "transcribe_latency_sec": 2.761,
+    "repetition_flagged": false
   },
   "P13_temp_P13_WhatsApp_Audio_2026-10-19_at_2_53_56_PM__1__seg010": {
     "clip_id": "P13_temp_P13_WhatsApp_Audio_2026-10-19_at_2_53_56_PM__1__seg010",
-    "pred_transcript": "Namaskar, IIT Gandhinagar voice helpdesk, hostel room change application form, kaya apu thase, wardens office ma sign baki chai, kupia urgent support apu. Namaskar, IIT Gandhinagar voice helpdesk, exam weekma night canteen timings extend, thase ke usual baayava je takh",
-    "avg_logprob": -0.4977,
-    "no_speech_prob": 0.0092,
+    "pred_transcript": "namaskar iit ghandinagar voice help desk hostel room change application form kaya apu thase warden s office ma sign bhaakee cha kupia urgent support apu namaskar iit ghandinagar voice help desk exam week ma night canteen timings extend thase ke usual bhaava je takh",
+    "raw_transcript": "Namaskar, IIT Ghandinagar voice help desk, hostel room change application form, kaya apu Thase, warden's office ma sign bhaakee cha, kupia urgent support apu. Namaskar, IIT Ghandinagar voice help desk, exam week ma night canteen timings extend, Thase ke usual bhaava je takh",
+    "avg_logprob": -0.6707,
+    "no_speech_prob": 0.1064,
     "snr_db": 26.24,
     "duration_sec": 17.62,
-    "transcribe_latency_sec": 3.155
+    "transcribe_latency_sec": 2.702,
+    "repetition_flagged": false
   },
   "P13_temp_P13_WhatsApp_Audio_2026-10-19_at_2_53_56_PM__1__seg011": {
     "clip_id": "P13_temp_P13_WhatsApp_Audio_2026-10-19_at_2_53_56_PM__1__seg011",
-    "pred_transcript": "Kupia urgent support appo. Namaskar. London service close to it or 4 days, 4 days, token number 92 is Kupia urgent support appo. Namaskar.",
-    "avg_logprob": -0.7596,
-    "no_speech_prob": 0.3444,
+    "pred_transcript": "\u06be\u0627\u06a9\u06be\u0627 \u06be\u0627\u06a9\u06be\u0627 \u06be\u0627\u06a9\u06be\u0627",
+    "raw_transcript": "\u06be\u0627\u06a9\u06be\u0627 \u06be\u0627\u06a9\u06be\u0627 \u06be\u0627\u06a9\u06be\u0627 \u06be\u0627\u06a9\u06be\u0627 \u06be\u0627\u06a9\u06be\u0627 \u06be\u0627\u06a9\u06be\u0627 \u06be\u0627\u06a9\u06be\u0627 \u06be\u0627\u06a9\u06be\u0627 \u06be\u0627\u06a9\u06be\u0627 \u06be\u0627\u06a9\u06be\u0627 \u06be\u0627\u06a9\u06be\u0627 \u06be\u0627\u06a9\u06be\u0627 \u06be\u0627\u06a9\u06be\u0627 \u06be\u0627\u06a9\u06be\u0627 \u06be\u0627\u06a9\u06be\u0627 \u06be\u0627\u06a9\u06be\u0627 \u06be\u0627\u06a9\u06be\u0627 \u06be\u0627\u06a9\u06be\u0627 \u06be\u0627\u06a9\u06be\u0627 \u06be\u0627\u06a9\u06be\u0627 \u06be\u0627\u06a9\u06be\u0627 \u06be\u0627\u06a9\u06be\u0627 \u06be\u0627\u06a9\u06be\u0627 \u06be\u0627\u06a9\u06be\u0627 \u06be\u0627\u06a9\u06be\u0627 \u06be\u0627\u06a9\u06be\u0627 \u06be\u0627\u06a9\u06be\u0627 \u06be\u0627\u06a9\u06be\u0627 \u06be\u0627\u06a9\u06be\u0627 \u06be\u0627\u06a9\u06be\u0627 \u06be\u0627\u06a9\u06be\u0627 \u06be\u0627\u06a9\u06be\u0627 \u06be\u0627\u06a9\u06be\u0627 \u06be\u0627\u06a9\u06be\u0627 \u06be\u0627\u06a9\u06be\u0627 \u06be\u0627\u06a9\u06be\u0627 \u06be\u0627\u06a9\u06be\u0627",
+    "avg_logprob": -0.0895,
+    "no_speech_prob": 0.4943,
     "snr_db": 23.84,
     "duration_sec": 14.32,
-    "transcribe_latency_sec": 1.941
+    "transcribe_latency_sec": 5.713,
+    "repetition_flagged": true
   },
   "P13_temp_P13_WhatsApp_Audio_2026-10-19_at_2_53_56_PM__1__seg012": {
     "clip_id": "P13_temp_P13_WhatsApp_Audio_2026-10-19_at_2_53_56_PM__1__seg012",
-    "pred_transcript": "IIT Gandhinagar voice desk, mess, dining hall, main jn, food, any, rigiday and options separate, so forth. Kupia urgent support abo. Namaskar, IIT Gandhinagar voice helpdesk. Guest house dining room booking confirmation mail, not here, you are for parents visiting next Saturday. Kupia urgent support abo. Namaskar, hostel corridor lights flickering thai rai sir.",
-    "avg_logprob": -0.5448,
-    "no_speech_prob": 0.019,
+    "pred_transcript": "\u0688 \u0688",
+    "raw_transcript": "\u0688 \u0688 \u0688 \u0688 \u0688 \u0688 \u0688 \u0688 \u0688 \u0688 \u0688 \u0688 \u0688 \u0688 \u0688 \u0688 \u0688 \u0688 \u0688 \u0688 \u0688 \u0688 \u0688 \u0688 \u0688 \u0688 \u0688 \u0688 \u0688 \u0688 \u0688 \u0688 \u0688 \u0688 \u0688 \u0688 \u0688 \u0688 \u0688 \u0688 \u0688 \u0688 \u0688 \u0688 \u0688 \u0688 \u0688 \u0688 \u0688 \u0688 \u0688 \u0688 \u0688 \u0688 \u0688 \u0688 \u0688 \u0688 \u0688 \u0688 \u0688 \u0688 \u0688 \u0688 \u0688 \u0688 \u0688 \u0688 \u0688 \u0688 \u0688 \u0688 \u0688 \u0688",
+    "avg_logprob": -0.0658,
+    "no_speech_prob": 0.0596,
     "snr_db": 22.75,
     "duration_sec": 23.53,
-    "transcribe_latency_sec": 3.058
+    "transcribe_latency_sec": 5.716,
+    "repetition_flagged": true
   },
   "P13_temp_P13_WhatsApp_Audio_2026-10-19_at_2_53_56_PM__1__seg013": {
     "clip_id": "P13_temp_P13_WhatsApp_Audio_2026-10-19_at_2_53_56_PM__1__seg013",
-    "pred_transcript": "Electration, Mokliya Poyal, Kupia urgent support, NERSKAL, MESS MANOPERATED, MESS COMMITY MEETINGS, KIAE, SHIDUEL, THAYALI, KUPIA urgent support, NERSKAL, MESS MANOPERATED, MESS COMMITY MEETINGS, KIAE, SHIDUEL, THAYALI, Kupia,ArgentSupportApple",
-    "avg_logprob": -0.5392,
-    "no_speech_prob": 0.1163,
+    "pred_transcript": "\u0688\u06cc\u0644\u06cc\u06a9\u0679\u06cc\u0634\u0646 \u0646\u06d2 \u0645\u0648\u06a9\u0644\u06cc\u06c1 \u067e\u0648 \u06cc\u0627 \u06a9\u0628\u06cc\u06c1 \u0627\u0631\u062c\u0646 \u0633\u067e\u0648\u0679 \u0622\u067e\u0648 \u0646\u0648\u0627\u0632\u06a9\u06c1 \u0645\u06cc\u0633 \u0645\u06cc\u06ba \u0648\u067e\u0691\u0691\u0688 \u06a9\u0631\u0627 \u0645\u0627\u062a\u06d2 \u0645\u06cc\u0633 \u06a9\u0645\u06cc\u0679\u06cc \u0645\u06cc\u0679\u0646\u06af\u0632 \u06a9\u06cc\u0627 \u06c1\u06d2 \u0634\u062f\u06cc\u0648\u0644 \u062a\u06be\u0627 \u0639\u0644\u06cc \u0633\u06d2 \u06a9\u0628\u06cc\u06c1 \u0627\u0631\u062c\u0646 \u0633\u067e\u0648\u0679 \u0622\u067e\u0648",
+    "raw_transcript": "\u0688\u06cc\u0644\u06cc\u06a9\u0679\u06cc\u0634\u0646 \u0646\u06d2 \u0645\u0648\u06a9\u0644\u06cc\u06c1 \u067e\u0648 \u06cc\u0627 \u06a9\u0628\u06cc\u06c1 \u0627\u0631\u062c\u0646 \u0633\u067e\u0648\u0679 \u0622\u067e\u0648 \u0646\u0648\u0627\u0632\u06a9\u06c1 \u0645\u06cc\u0633 \u0645\u06cc\u06ba \u0648\u067e\u0691\u0691\u0688 \u06a9\u0631\u0627 \u0645\u0627\u062a\u06d2 \u0645\u06cc\u0633 \u06a9\u0645\u06cc\u0679\u06cc \u0645\u06cc\u0679\u0646\u06af\u0632 \u06a9\u06cc\u0627 \u06c1\u06d2 \u0634\u062f\u06cc\u0648\u0644 \u062a\u06be\u0627 \u0639\u0644\u06cc \u0633\u06d2 \u06a9\u0628\u06cc\u06c1 \u0627\u0631\u062c\u0646 \u0633\u067e\u0648\u0679 \u0622\u067e\u0648",
+    "avg_logprob": -0.7511,
+    "no_speech_prob": 0.2072,
     "snr_db": 23.33,
     "duration_sec": 11.54,
-    "transcribe_latency_sec": 7.793
+    "transcribe_latency_sec": 3.032,
+    "repetition_flagged": false
   },
   "P4_temp_P4_PTT-20261018-WA0003_seg001": {
     "clip_id": "P4_temp_P4_PTT-20261018-WA0003_seg001",
-    "pred_transcript": "Namaskar sir, my nithin popat pattil dhulia, he is my teacher, Rajya's dhulia, Jile's speaking to me.",
-    "avg_logprob": -1.0462,
-    "no_speech_prob": 0.0175,
+    "pred_transcript": "namaskar sir my nithin popat pattil dhuliya en ik hima rast rajek ki dhuliya jile se vol rahu",
+    "raw_transcript": "Namaskar sir, my nithin popat pattil dhuliya en ik hima rast rajek ki dhuliya jile se vol rahu",
+    "avg_logprob": -0.8344,
+    "no_speech_prob": 0.0517,
     "snr_db": 35.0,
     "duration_sec": 11.47,
-    "transcribe_latency_sec": 1.9
+    "transcribe_latency_sec": 1.658,
+    "repetition_flagged": false
   },
   "P4_temp_P4_PTT-20261018-WA0003_seg002": {
     "clip_id": "P4_temp_P4_PTT-20261018-WA0003_seg002",
-    "pred_transcript": "IIT Gandhinagar student voice helpdesk query, admission, student affairs, fees, wifi.",
-    "avg_logprob": -0.8175,
-    "no_speech_prob": 0.0362,
+    "pred_transcript": "mj vk aayate ghandinagar me admission chaayeta iskili mj vkrupeya sanjayinghe peetis tara se is",
+    "raw_transcript": "mj vk aayate ghandinagar me admission chaayeta iskili mj vkrupeya sanjayinghe peetis tara se is",
+    "avg_logprob": -1.072,
+    "no_speech_prob": 0.1358,
     "snr_db": 35.0,
     "duration_sec": 11.58,
-    "transcribe_latency_sec": 1.694
+    "transcribe_latency_sec": 1.724,
+    "repetition_flagged": false
   },
   "P4_temp_P4_PTT-20261018-WA0003_seg003": {
     "clip_id": "P4_temp_P4_PTT-20261018-WA0003_seg003",
-    "pred_transcript": "University, I can get a scholarship. I can get a scholarship for how many months I have been in the J.W. And then I finally get so much money, I have to study till this year.",
-    "avg_logprob": -1.297,
-    "no_speech_prob": 0.0335,
+    "pred_transcript": "\u06be\u0627\u06ba \u0645\u06cc\u06ba \u0645\u06cc\u06ba \u067e\u0631\u0648\u06cc\u0634 \u0645\u06cc\u06ba \u0645\u06cc\u06ba \u0633\u06d2 \u067e\u0631\u0648\u06cc\u0634 \u0645\u06cc\u06ba \u0633\u06d2",
+    "raw_transcript": "\u06be\u0627\u06ba \u0645\u06cc\u06ba \u0645\u06cc\u06ba \u067e\u0631\u0648\u06cc\u0634 \u0645\u06cc\u06ba \u0645\u06cc\u06ba \u0633\u06d2 \u067e\u0631\u0648\u06cc\u0634 \u0645\u06cc\u06ba \u0633\u06d2 \u067e\u0631\u0648\u06cc\u0634 \u0645\u06cc\u06ba \u0633\u06d2 \u067e\u0631\u0648\u06cc\u0634 \u0645\u06cc\u06ba \u0633\u06d2 \u067e\u0631\u0648\u06cc\u0634 \u0645\u06cc\u06ba \u0633\u06d2 \u067e\u0631\u0648\u06cc\u0634 \u0645\u06cc\u06ba \u0633\u06d2 \u067e\u0631\u0648\u06cc\u0634 \u0645\u06cc\u06ba \u0633\u06d2 \u067e\u0631\u0648\u06cc\u0634 \u0645\u06cc\u06ba \u0633\u06d2 \u067e\u0631\u0648\u06cc\u0634 \u0645\u06cc\u06ba \u0633\u06d2 \u067e\u0631\u0648\u06cc\u0634 \u0645\u06cc\u06ba \u0633\u06d2 \u067e\u0631\u0648\u06cc\u0634 \u0645\u06cc\u06ba \u0633\u06d2 \u067e\u0631\u0648\u06cc\u0634 \u0645\u06cc\u06ba \u0633\u06d2 \u067e\u0631\u0648\u06cc\u0634 \u0645\u06cc\u06ba \u0633\u06d2 \u067e\u0631\u0648\u06cc\u0634 \u0645\u06cc\u06ba \u0633\u06d2 \u067e\u0631\u0648\u06cc\u0634 \u0645\u06cc\u06ba \u0633\u06d2 \u067e\u0631\u0648\u06cc\u0634 \u0645\u06cc\u06ba \u0633\u06d2 \u067e\u0631\u0648\u06cc\u0634 \u0645\u06cc\u06ba \u0633\u06d2 \u067e\u0631\u0648\u06cc\u0634 \u0645\u06cc\u06ba \u0633\u06d2 \u067e\u0631\u0648\u06cc\u0634 \u0645\u06cc\u06ba \u0633\u06d2 \u067e\u0631\u0648\u06cc\u0634 \u0645\u06cc\u06ba \u0633\u06d2 \u067e\u0631\u0648\u06cc\u0634 \u0645\u06cc\u06ba \u0633\u06d2 \u067e\u0631\u0648\u06cc\u0634 \u0645\u06cc\u06ba \u0633\u06d2 \u067e\u0631\u0648\u06cc\u0634 \u0645\u06cc\u06ba \u0633\u06d2 \u067e\u0631\u0648\u06cc\u0634 \u0645\u06cc\u06ba \u0633\u06d2 \u067e\u0631\u0648\u06cc\u0634 \u0645\u06cc\u06ba \u0633\u06d2 \u067e\u0631\u0648\u06cc\u0634 \u0645\u06cc\u06ba \u0633\u06d2 \u067e\u0631\u0648\u06cc\u0634 \u0645\u06cc\u06ba \u0633\u06d2 \u067e\u0631\u0648\u06cc\u0634 \u0645\u06cc\u06ba \u0633\u06d2 \u067e\u0631\u0648\u06cc\u0634 \u0645\u06cc\u06ba \u0633\u06d2 \u067e\u0631\u0648\u06cc\u0634 \u0645\u06cc\u06ba \u0633\u06d2 \u067e\u0631\u0648\u06cc\u0634 \u0645\u06cc\u06ba \u0633\u06d2 \u067e\u0631\u0648\u06cc\u0634 \u0645\u06cc\u06ba \u0633\u06d2 \u067e\u0631\u0648\u06cc\u0634 \u0645\u06cc\u06ba \u0633\u06d2 \u067e\u0631\u0648\u06cc\u0634 \u0645\u06cc\u06ba \u0633\u06d2 \u067e\u0631\u0648\u06cc\u0634 \u0645\u06cc\u06ba \u0633\u06d2 \u067e\u0631\u0648\u06cc\u0634 \u0645\u06cc\u06ba \u0633\u06d2",
+    "avg_logprob": -0.2072,
+    "no_speech_prob": 0.123,
     "snr_db": 33.22,
     "duration_sec": 19.4,
-    "transcribe_latency_sec": 2.457
+    "transcribe_latency_sec": 5.731,
+    "repetition_flagged": true
   },
   "P4_temp_P4_PTT-20261018-WA0003_seg004": {
     "clip_id": "P4_temp_P4_PTT-20261018-WA0003_seg004",
-    "pred_transcript": "Miskele, what application to do, how much will it cost to do it? hostel fees, fees, and there is a level of available for them. So, I will get the information about this, so I will be surprised.",
-    "avg_logprob": -1.3824,
-    "no_speech_prob": 0.0545,
+    "pred_transcript": "msql kiya application karnapur nga usql kiya kiya",
+    "raw_transcript": "msql, kiya application karnapur nga, usql, kiya, kiya, kiya, kiya, kiya, kiya, kiya, kiya, kiya, kiya, kiya, kiya, kiya, kiya, kiya, kiya, kiya, kiya, kiya, kiya, kiya, kiya, kiya, kiya, kiya, kiya, kiya, kiya, kiya, kiya, kiya, kiya, kiya, kiya, kiya, kiya, kiya, kiya, kiya, kiya, kiya, kiya, kiya, kiya, kiya, kiya, kiya, kiya, kiya, kiya, kiya, kiya, kiya, kiya, kiya, kiya, kiya, kiya, kiya, kiya, kiya, kiya, kiya, kiya, kiya, kiya, kiya, kiya,",
+    "avg_logprob": -0.2718,
+    "no_speech_prob": 0.3234,
     "snr_db": 35.0,
     "duration_sec": 21.74,
-    "transcribe_latency_sec": 2.327
+    "transcribe_latency_sec": 5.648,
+    "repetition_flagged": true
   },
   "P4_temp_P4_PTT-20261018-WA0003_seg005": {
     "clip_id": "P4_temp_P4_PTT-20261018-WA0003_seg005",
-    "pred_transcript": "Kittna duration lagirga, degree complete to nekiliyayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayay",
-    "avg_logprob": -0.103,
-    "no_speech_prob": 0.0178,
+    "pred_transcript": "\u0905\u091a\u093f\u0924\u0947 \u0938\u093e\u0935\u0915\u093f\u0924\u0928\u093e \u090f\u0915 \u092c\u0942\u0930\u0947 \u092c\u0942\u0930\u0947",
+    "raw_transcript": "\u0905\u091a\u093f\u0924\u0947 \u0938\u093e\u0935\u0915\u093f\u0924\u0928\u093e \u090f\u0915 \u092c\u0942\u0930\u0947 \u092c\u0942\u0930\u0947 \u092c\u0942\u0930\u0947 \u092c\u0942\u0930\u0947 \u092c\u0942\u0930\u0947 \u092c\u0942\u0930\u0947 \u092c\u0942\u0930\u0947 \u092c\u0942\u0930\u0947 \u092c\u0942\u0930\u0947 \u092c\u0942\u0930\u0947 \u092c\u0942\u0930\u0947 \u092c\u0942\u0930\u0947 \u092c\u0942\u0930\u0947 \u092c\u0942\u0930\u0947 \u092c\u0942\u0930\u0947 \u092c\u0942\u0930\u0947 \u092c\u0942\u0930\u0947 \u092c\u0942\u0930\u0947 \u092c\u0942\u0930\u0947 \u092c\u0942\u0930\u0947 \u092c\u0942\u0930\u0947 \u092c\u0942\u0930\u0947 \u092c\u0942\u0930\u0947 \u092c\u0942\u0930\u0947 \u092c\u0942\u0930\u0947 \u092c\u0942\u0930\u0947 \u092c\u0942\u0930\u0947 \u092c\u0942\u0930\u0947 \u092c\u0942\u0930\u0947 \u092c\u0942\u0930\u0947 \u092c\u0942\u0930\u0947 \u092c\u0942\u0930\u0947 \u092c\u0942\u0930\u0947 \u092c\u0942\u0930\u0947",
+    "avg_logprob": -0.2812,
+    "no_speech_prob": 0.0225,
     "snr_db": 30.93,
     "duration_sec": 8.67,
-    "transcribe_latency_sec": 5.76
+    "transcribe_latency_sec": 5.679,
+    "repetition_flagged": true
   },
   "P4_temp_P4_PTT-20261018-WA0011_seg001": {
     "clip_id": "P4_temp_P4_PTT-20261018-WA0011_seg001",
-    "pred_transcript": "Hello, sorghinamase, my maharashtra ki jalrav jalese bol raho. \u0645\u06cc\u0631\u0627 \u06af\u0631\u06af\u06cc\u0648\u0634\u0646 \u06a9\u0645\u067e\u0644\u0679\u06d2 \u0645\u062c\u06be\u06d2 \u0627\u067e\u06a9\u06d2 \u0622\u06cc\u0679\u06d2 \u06af\u0646\u062f\u06cc\u0646\u06af\u0631 \u0645\u06cc\u06ba \u0645\u062c\u06be\u06d2 \u067e\u0648\u0686 \u06af\u0631\u06af\u06cc\u0648\u0634\u0646 \u06a9\u06cc\u0644\u06d2 \u0622\u062f\u0645\u06cc\u0634\u0646 \u0644\u06cc\u0646\u06c1 \u062a\u06be\u0627 \u067e\u0648\u0644\u0679\u06cc\u06a9\u0633 \u0645\u06cc\u06ba \u0645\u062c\u06be\u06d2",
-    "avg_logprob": -0.7073,
-    "no_speech_prob": 0.1087,
+    "pred_transcript": "hello surghi namaste my name is moharashtra jehrao jehle se bhol rahu my graduation complete i am in the it ghandinagar i had to take admission for post graduation i was in politics",
+    "raw_transcript": "Hello, Surghi Namaste. My name is Moharashtra Jehrao Jehle Se Bhol Rahu. My graduation complete. I am in the IT Ghandinagar. I had to take admission for post-graduation. I was in politics.",
+    "avg_logprob": -0.7875,
+    "no_speech_prob": 0.1447,
     "snr_db": 35.0,
     "duration_sec": 22.05,
-    "transcribe_latency_sec": 4.293
+    "transcribe_latency_sec": 2.275,
+    "repetition_flagged": false
   },
   "P4_temp_P4_PTT-20261018-WA0011_seg002": {
     "clip_id": "P4_temp_P4_PTT-20261018-WA0011_seg002",
-    "pred_transcript": "IIT Gandhinagar student voice helpdesk query, student affairs, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT support, IT",
-    "avg_logprob": -0.1063,
-    "no_speech_prob": 0.179,
+    "pred_transcript": "\u092a\u094b\u0936\u094d\u0935\u0930\u093e\u091c\u094b\u0937\u093f\u0928 \u0915\u0930\u0928\u093e\u0924\u093e \u091c\u094b \u092a\u094d\u0930\u0942\u092a\u0947 \u0906\u092a \u0939\u092e\u0947\u0902 \u091c\u093e\u0928 \u0915\u0930 \u0924\u0940 \u091c\u0940 \u0915\u0940 \u092e\u0941\u091c\u0947 \u0935\u093e\u092a\u0947 \u0915\u093f \u0924\u0940 \u0924\u0940 \u0926\u0940\u0928\u0947 \u092a\u0930\u0947\u0917\u0947 \u0915\u093f \u092f\u0939 \u092a\u0930\u0947\u0917\u0947 \u092a\u0930\u0947\u0917\u0947 \u092f\u0939 \u092a\u0930\u0947\u0917\u0947 \u092a\u0930\u0947\u0917\u0947 \u092f\u0939 \u092a",
+    "raw_transcript": "\u092a\u094b\u0936\u094d\u0935\u0930\u093e\u091c\u094b\u0937\u093f\u0928 \u0915\u0930\u0928\u093e\u0924\u093e \u091c\u094b \u092a\u094d\u0930\u0942\u092a\u0947 \u0906\u092a \u0939\u092e\u0947\u0902 \u091c\u093e\u0928 \u0915\u0930 \u0924\u0940 \u091c\u0940 \u0915\u0940 \u092e\u0941\u091c\u0947 \u0935\u093e\u092a\u0947 \u0915\u093f \u0924\u0940 \u0924\u0940 \u0926\u0940\u0928\u0947 \u092a\u0930\u0947\u0917\u0947 \u0915\u093f \u092f\u0939 \u092a\u0930\u0947\u0917\u0947 \u092f\u0939 \u092a\u0930\u0947\u0917\u0947 \u092f\u0939 \u092a\u0930\u0947\u0917\u0947 \u092f\u0939 \u092a\u0930\u0947\u0917\u0947 \u092f\u0939 \u092a\u0930\u0947\u0917\u0947 \u092f\u0939 \u092a\u0930\u0947\u0917\u0947 \u092f\u0939 \u092a\u0930\u0947\u0917\u0947 \u092f\u0939 \u092a\u0930\u0947\u0917\u0947 \u092f\u0939 \u092a\u0930\u0947\u0917\u0947 \u092f\u0939 \u092a\u0930\u0947\u0917\u0947 \u092f\u0939 \u092a\u0930\u0947\u0917\u0947 \u092f\u0939 \u092a\u0930\u0947\u0917\u0947 \u092f\u0939 \u092a\u0930\u0947\u0917\u0947 \u092f\u0939 \u092a\u0930\u0947\u0917\u0947 \u092f\u0939 \u092a\u0930\u0947\u0917\u0947 \u092f\u0939 \u092a\u0930\u0947\u0917\u0947 \u092a\u0930\u0947\u0917\u0947 \u092f\u0939 \u092a\u0930\u0947\u0917\u0947 \u092a\u0930\u0947\u0917\u0947 \u092f\u0939 \u092a",
+    "avg_logprob": -0.4168,
+    "no_speech_prob": 0.3899,
     "snr_db": 33.06,
     "duration_sec": 17.71,
-    "transcribe_latency_sec": 8.248
+    "transcribe_latency_sec": 10.975,
+    "repetition_flagged": true
   },
   "P4_temp_P4_PTT-20261018-WA0011_seg003": {
     "clip_id": "P4_temp_P4_PTT-20261018-WA0011_seg003",
-    "pred_transcript": "\u0627\u0636\u0627\u0645\u06cc \u062a\u0648 \u062c\u0648 \u06a9\u0631\u0648\u067e\u06cc\u06c1 \u0645\u062c\u06be\u06d2 \u0648\u062d\u0642\u06cc \u0648 \u062d\u0634\u062a\u0644 \u06a9\u06d2 \u0628\u0627\u0631\u06d2 \u0645\u06cc\u06ba \u0645\u0635 \u06a9\u06d2 \u0628\u0627\u0631\u06d2 \u0645\u06cc\u06ba \u062c\u0646 \u06a9\u0631\u062f\u06cc \u062c\u06cc \u0627\u0648\u0631 \u06a9\u062a\u0646\u06cc \u0641\u06cc\u0632 \u0644\u06af\u06d2 \u06af\u06cc \u06a9\u062a\u0646\u06c1 \u06a9\u0631\u0686\u0627 \u06c1\u06d2 \u06af\u0627.",
-    "avg_logprob": -0.7506,
-    "no_speech_prob": 0.0727,
+    "pred_transcript": "\u0627\u06cc\u0632\u0627\u0645 \u0645\u06cc\u06ba \u062a\u0648 \u06af\u0631\u0648\u067e\u06cc\u06c1 \u0645\u062c\u06be\u06d2 \u0648\u062d\u06a9\u06cc \u0648\u062d\u0634\u062a\u0644 \u06a9\u06d2 \u0628\u0627\u0631\u06d2 \u0645\u06cc\u06ba \u0645\u06cc\u0633 \u06a9\u06d2 \u0628\u0627\u0631\u06d2 \u0645\u06cc\u06ba \u062c\u0646 \u06a9\u0631\u062f\u06cc \u062c\u06cc \u0627\u0648\u0631 \u06a9\u062a\u0646\u06cc \u067e\u06cc\u0632 \u0644\u06af\u06cc \u06af\u06cc \u06a9\u062a\u0646\u06c1 \u06a9\u0631\u0686\u0627 \u06c1\u06d2 \u06af\u0627",
+    "raw_transcript": "\u0627\u06cc\u0632\u0627\u0645 \u0645\u06cc\u06ba \u062a\u0648 \u06af\u0631\u0648\u067e\u06cc\u06c1 \u0645\u062c\u06be\u06d2 \u0648\u062d\u06a9\u06cc \u0648\u062d\u0634\u062a\u0644 \u06a9\u06d2 \u0628\u0627\u0631\u06d2 \u0645\u06cc\u06ba \u0645\u06cc\u0633 \u06a9\u06d2 \u0628\u0627\u0631\u06d2 \u0645\u06cc\u06ba \u062c\u0646 \u06a9\u0631\u062f\u06cc \u062c\u06cc \u0627\u0648\u0631 \u06a9\u062a\u0646\u06cc \u067e\u06cc\u0632 \u0644\u06af\u06cc \u06af\u06cc \u06a9\u062a\u0646\u06c1 \u06a9\u0631\u0686\u0627 \u06c1\u06d2 \u06af\u0627",
+    "avg_logprob": -0.6773,
+    "no_speech_prob": 0.4251,
     "snr_db": 35.0,
     "duration_sec": 14.5,
-    "transcribe_latency_sec": 2.993
+    "transcribe_latency_sec": 2.295,
+    "repetition_flagged": false
   },
   "P4_temp_P4_PTT-20261018-WA0011_seg004": {
     "clip_id": "P4_temp_P4_PTT-20261018-WA0011_seg004",
-    "pred_transcript": "Vaharai Karhme, Pompatat exam, PDA, PDA, PDA, PDA, PDA, PDA, PDA, PDA, PDA, PDA, PDA, PDA, PDA, PDA, PDA, PDA, PDA, PDA, PDA, PDA, PDA, PDA, PDA, PDA, PDA, PDA, PDA, PDA, PDA, PDA, PDA, PDA, PDA, PDA, PDA, PDA, PDA, PDA, PDA, PDA, PDA, PDA, PDA, PDA, PDA, PDA, PDA, PDA, PDA, PDA, PDA, PDA, PDA, PDA, PDA, PDA, PDA, PDA, PDA, PDA, PDA, PDA, PDA, PDA, PDA, PDA, PDA, PDA, PDA, PDA",
-    "avg_logprob": -0.1905,
-    "no_speech_prob": 0.0681,
+    "pred_transcript": "\u0648\u0648\u062d\u0627\u0631\u06c1 \u06a9\u0631 \u0645\u06cc\u06ba \u067e\u0645\u067e\u0679\u0679\u0679\u06d2 \u0627\u06af\u0633\u0627\u0645 \u06cc\u0627 \u0633\u0648 \u0622\u06af\u06d2 \u062c\u0627 \u06a9\u06cc \u067e\u06cc\u0691\u06cc \u06a9\u06cc \u0644\u06cc \u0627\u067e\u0644\u0627\u0626 \u06a9\u0631 \u0633\u06a9\u06be\u0627 \u06c1\u0648 \u062c\u06cc\u0627 \u0648 \u0627\u06cc\u0645 \u067e\u0648\u0644\u0679\u06cc\u06a9\u0633 \u0644\u06cc\u06a9\u06cc \u0645\u06cc\u06ba \u06a9\u0646\u0633 \u06a9\u0627\u06a9\u06c1 \u0633\u0631\u06cc\u0644 \u06a9\u0631 \u0633\u06a9\u06be\u062a\u0627\u0648 \u0633\u0648 \u067e\u06c1\u0646\u06af\u0648\u06ba \u06a9\u06cc \u0627\u0633\u0679\u06cc \u0628\u0627\u0631\u06cc \u0645\u06cc\u06ba \u0686\u06be\u0648\u0691\u06d2 \u062c\u0627\u0646\u06d2 \u0686\u0627\u06c1\u06cc \u062c\u06cc\u06cc\u06cc\u06cc\u06cc\u06cc",
+    "raw_transcript": "\u0648\u0648\u062d\u0627\u0631\u06c1 \u06a9\u0631 \u0645\u06cc\u06ba \u067e\u0645\u067e\u0679\u0679\u0679\u06d2 \u0627\u06af\u0633\u0627\u0645 \u06cc\u0627 \u0633\u0648 \u0622\u06af\u06d2 \u062c\u0627 \u06a9\u06cc \u067e\u06cc\u0691\u06cc \u06a9\u06cc \u0644\u06cc \u0627\u067e\u0644\u0627\u0626 \u06a9\u0631 \u0633\u06a9\u06be\u0627 \u06c1\u0648 \u062c\u06cc\u0627 \u0648 \u0627\u06cc\u0645 \u067e\u0648\u0644\u0679\u06cc\u06a9\u0633 \u0644\u06cc\u06a9\u06cc \u0645\u06cc\u06ba \u06a9\u0646\u0633 \u06a9\u0627\u06a9\u06c1 \u0633\u0631\u06cc\u0644 \u06a9\u0631 \u0633\u06a9\u06be\u062a\u0627\u0648 \u0633\u0648 \u067e\u06c1\u0646\u06af\u0648\u06ba \u06a9\u06cc \u0627\u0633\u0679\u06cc \u0628\u0627\u0631\u06cc \u0645\u06cc\u06ba \u0686\u06be\u0648\u0691\u06d2 \u062c\u0627\u0646\u06d2 \u0686\u0627\u06c1\u06cc \u062c\u06cc\u06cc\u06cc\u06cc\u06cc\u06cc",
+    "avg_logprob": -0.8512,
+    "no_speech_prob": 0.0935,
     "snr_db": 30.76,
     "duration_sec": 18.68,
-    "transcribe_latency_sec": 5.808
+    "transcribe_latency_sec": 3.58,
+    "repetition_flagged": false
   },
   "P4_temp_P4_PTT-20261018-WA0017_seg001": {
     "clip_id": "P4_temp_P4_PTT-20261018-WA0017_seg001",
-    "pred_transcript": "Hello, Namaskar, sir. I am speaking in the Val make party in Nando, Barchiles. My pre-wab is now ready. So I have been binding for the final thesis. I have been binding for the final thesis. I have been preparing for the final.",
-    "avg_logprob": -1.0399,
-    "no_speech_prob": 0.028,
+    "pred_transcript": "hello namaskar sir i am speaking in the name of patil nandobarjilai my pre wab is now completed so i have been binding for the final thesis",
+    "raw_transcript": "Hello, Namaskar sir, I am speaking in the name of Patil Nandobarjilai. My pre-wab is now completed, so I have been binding for the final thesis. I have been binding for the final thesis, I have been binding for the final thesis.",
+    "avg_logprob": -0.8888,
+    "no_speech_prob": 0.177,
     "snr_db": 22.33,
     "duration_sec": 24.04,
-    "transcribe_latency_sec": 2.707
+    "transcribe_latency_sec": 2.227,
+    "repetition_flagged": false
   },
   "P4_temp_P4_PTT-20261018-WA0017_seg002": {
     "clip_id": "P4_temp_P4_PTT-20261018-WA0017_seg002",
-    "pred_transcript": "IIT Gandhinagar student voice helpdesk query, admissions, hostel mess, IT support, fees, wifi.",
-    "avg_logprob": -0.6987,
-    "no_speech_prob": 0.0449,
+    "pred_transcript": "\u06be\u0627\u06ba \u0645\u06cc\u06ba \u0646\u06d2 \u0627\u0633\u06d2 \u06a9\u06cc \u0641\u06cc\u0628\u06cc \u0633\u0645\u06cc\u0679 \u06a9\u0631 \u062f\u06cc \u06c1\u06d2 \u062a\u0648 \u0627\u0628 \u06a9\u062a\u06c1 \u06a9\u062a\u0646\u0627 \u0679\u0627\u0626\u0645 \u0644\u06af\u06d2 \u06af\u06d2 \u06a9\u062a\u06c1 \u062f\u06cc\u0646 \u0644\u06af\u06d2 \u0645\u062c\u06be\u06d2 \u0641\u06cc\u0646\u0644\u0648 \u06c1\u06cc\u0648\u06c1 \u06af\u06d2 \u0644\u06d2 \u0645\u06cc\u0631\u06d2 \u0641\u06cc\u0646\u0644\u0648 \u06c1\u06cc\u0648\u06c1 \u06c1\u06cc\u0648\u06c1 \u06a9\u0645\u0633\u06d2 \u06c1\u0648\u06ba \u06a9\u062a\u06c1 \u062f\u06cc\u0646\u0648\u06ba \u0645\u06cc\u06ba \u06c1\u0648\u06af\u06c1 \u0627\u0648\u0631 \u0627\u0633 \u06a9\u06d2 \u0644\u06d2 \u0645\u06cc\u06ba \u06a9\u06cc\u0627 \u067e\u06cc\u067e\u0679\u06cc \u06c1\u06cc \u06a9\u0631\u0646\u06d2 \u067e\u0691\u06d2 \u06af\u06d2 \u0627\u0648\u0631 \u06a9\u06cc\u0627 \u06a9\u06cc\u0627 \u067e\u0631\u06cc\u067e\u0631\u06cc\u0634\u0646 \u06a9\u0631\u0646\u06d2 \u067e\u0691\u06d2 \u06af\u06d2",
+    "raw_transcript": "\u06be\u0627\u06ba \u0645\u06cc\u06ba \u0646\u06d2 \u0627\u0633\u06d2 \u06a9\u06cc \u0641\u06cc\u0628\u06cc \u0633\u0645\u06cc\u0679 \u06a9\u0631 \u062f\u06cc \u06c1\u06d2 \u062a\u0648 \u0627\u0628 \u06a9\u062a\u06c1 \u06a9\u062a\u0646\u0627 \u0679\u0627\u0626\u0645 \u0644\u06af\u06d2 \u06af\u06d2 \u06a9\u062a\u06c1 \u062f\u06cc\u0646 \u0644\u06af\u06d2 \u0645\u062c\u06be\u06d2 \u0641\u06cc\u0646\u0644\u0648 \u06c1\u06cc\u0648\u06c1 \u06af\u06d2 \u0644\u06d2 \u0645\u06cc\u0631\u06d2 \u0641\u06cc\u0646\u0644\u0648 \u06c1\u06cc\u0648\u06c1 \u06c1\u06cc\u0648\u06c1 \u06a9\u0645\u0633\u06d2 \u06c1\u0648\u06ba \u06a9\u062a\u06c1 \u062f\u06cc\u0646\u0648\u06ba \u0645\u06cc\u06ba \u06c1\u0648\u06af\u06c1 \u0627\u0648\u0631 \u0627\u0633 \u06a9\u06d2 \u0644\u06d2 \u0645\u06cc\u06ba \u06a9\u06cc\u0627 \u067e\u06cc\u067e\u0679\u06cc \u06c1\u06cc \u06a9\u0631\u0646\u06d2 \u067e\u0691\u06d2 \u06af\u06d2 \u0627\u0648\u0631 \u06a9\u06cc\u0627 \u06a9\u06cc\u0627 \u067e\u0631\u06cc\u067e\u0631\u06cc\u0634\u0646 \u06a9\u0631\u0646\u06d2 \u067e\u0691\u06d2 \u06af\u06d2",
+    "avg_logprob": -0.7088,
+    "no_speech_prob": 0.2586,
     "snr_db": 24.78,
     "duration_sec": 21.52,
-    "transcribe_latency_sec": 1.917
+    "transcribe_latency_sec": 4.068,
+    "repetition_flagged": false
   },
   "P4_temp_P4_PTT-20261018-WA0017_seg003": {
     "clip_id": "P4_temp_P4_PTT-20261018-WA0017_seg003",
-    "pred_transcript": "Kripekar kaya mea, hiske jantar dhijiye ka? Thank you.",
-    "avg_logprob": -0.8264,
-    "no_speech_prob": 0.0071,
+    "pred_transcript": "\u092f\u0939 \u0932\u093f\u092a\u0947 \u0915\u0930 \u0915\u093f \u092c\u0947 \u0932\u093f\u090f \u091c\u0928\u094d\u0924\u0947 \u0924\u0940\u091c\u0940\u091c\u0940\u0917\u093e",
+    "raw_transcript": "\u092f\u0939 \u0932\u093f\u092a\u0947 \u0915\u0930 \u0915\u093f \u092c\u0947 \u0932\u093f\u090f \u091c\u0928\u094d\u0924\u0947 \u0924\u0940\u091c\u0940\u091c\u0940\u0917\u093e",
+    "avg_logprob": -1.0954,
+    "no_speech_prob": 0.0406,
     "snr_db": 25.1,
     "duration_sec": 6.19,
-    "transcribe_latency_sec": 2.214
+    "transcribe_latency_sec": 1.608,
+    "repetition_flagged": false
   },
   "P4_temp_P4_PTT-20261018-WA0018_seg001": {
     "clip_id": "P4_temp_P4_PTT-20261018-WA0018_seg001",
-    "pred_transcript": "Namaskar sir, I am from Nandu Barjale, Khandamurigao, Sunil Patil. \u092e\u0941\u091c\u093f \u092e\u0947\u0930 \u0935\u0930 \u0915\u093e \u0939\u0948 \u0906\u092a\u0940 \u092c\u093e\u0926\u093f \u092c\u093e\u0926\u093f \u092c\u093e\u0926\u093f \u092c\u093e\u0926\u093f \u092c\u093e\u0926\u093f \u092c\u093e\u0926\u093f \u092c\u093e\u0926\u093f \u092c\u093e\u0926\u093f \u092c\u093e\u0926\u093f \u092c\u093e\u0926\u093f \u092c\u093e\u0926\u093f \u092c\u093e\u0926\u093f \u092c\u093e\u0926\u093f \u092c\u093e\u0926\u093f \u092c\u093e\u0926\u093f \u092c\u093e\u0926\u093f \u092c\u093e\u0926\u093f \u092c\u093e\u0926\u093f \u092c\u093e\u0926\u093f \u092c\u093e\u0926\u093f \u092c\u093e\u0926\u093f \u092c\u093e\u0926\u093f \u092c\u093e\u0926\u093f \u092c\u093e\u0926\u093f \u092c\u093e\u0926\u093f \u092c\u093e\u0926\u093f \u092c\u093e\u0926\u093f \u092c\u093e\u0926\u093f \u092c\u093e\u0926\u093f \u092c\u093e\u0926\u093f \u092c\u093e\u0926\u093f \u092c\u093e\u0926\u093f \u092c\u093e\u0926\u093f \u092c\u093e\ufffd",
-    "avg_logprob": -0.5976,
-    "no_speech_prob": 0.268,
+    "pred_transcript": "namaskar sir i am from nandu barjale khandamurigao i am speaking sunil patil i am a girl in the ayati gandhi s house so this year i am a friend of mine",
+    "raw_transcript": "Namaskar sir. I am from Nandu Barjale, Khandamurigao. I am speaking Sunil Patil. I am a girl in the Ayati Gandhi's house. So, this year, I am a friend of mine.",
+    "avg_logprob": -0.8652,
+    "no_speech_prob": 0.3102,
     "snr_db": 28.59,
     "duration_sec": 18.61,
-    "transcribe_latency_sec": 7.988
+    "transcribe_latency_sec": 2.147,
+    "repetition_flagged": false
   },
   "P4_temp_P4_PTT-20261018-WA0018_seg002": {
     "clip_id": "P4_temp_P4_PTT-20261018-WA0018_seg002",
-    "pred_transcript": "Suka Padaa, Suka Padaa, Suka Padaa, Suka Padaa, Suka Padaa, Suka Padaa, Suka Padaa, Suka Padaa, Suka Padaa, Suka Padaa, Suka Padaa, Suka Padaa, Suka Padaa, Suka Padaa, Suka Padaa, Suka Padaa, Suka Padaa, Suka Padaa, Suka Padaa, Suka Padaa, Suka Padaa, Suka Padaa, Suka Padaa, Suka Padaa, Suka Padaa, Suka Padaa, Suka Padaa, Suka Padaa, Suka Padaa, Suka Padaa, Suka Padaa, Suka Padaa, Suka Padaa, Suka Padaa, Suka Padaa, Suka Padaa, Suka Padaa, S",
-    "avg_logprob": -0.1142,
-    "no_speech_prob": 0.0595,
+    "pred_transcript": "\u06a9\u06cc \u0633\u0645\u0633\u06d2 \u06a9\u06cc \u0648\u062c\u06c1 \u0633\u06d2 \u0633\u06a9\u06c1 \u067e\u0691\u0627 \u06c1\u06d2 \u0627\u0633 \u06a9\u06cc \u0648\u062c\u06c1 \u0633\u06d2 \u0633\u0628 \u06a9\u06cc \u06af\u0648\u0631\u0645\u0646 \u06a9\u06cc \u067e\u06be\u06cc\u0645\u06c1 \u067e\u0648 \u06af\u0626\u06cc \u06c1\u06d2 \u062a\u0648 \u06a9\u06cc\u0627 \u0645\u06cc\u0631\u06d2 \u0644\u0691\u06be \u06a9\u0627 \u062c\u0648 \u0622\u067e \u06a9\u06d2 \u0622\u0626\u06cc\u0679\u06cc \u06af\u0646\u062f\u06cc \u0646\u06af\u0631 \u0645\u06cc\u06ba \u067e\u0691\u06be\u062a\u0627 \u06c1\u06d2 \u062a\u0648 \u0627\u0633 \u06a9\u06cc \u0628\u06be\u06cc \u067e\u06be\u06cc\u0645\u06c1 \u067e\u0648 \u06af\u0626\u06cc \u06a9\u06cc\u0627 \u06cc\u0627 \u0627\u0628\u06be\u06cc \u06a9\u0686\u06be \u062f\u0634\u06a9\u06c1 \u06a9\u06d2 \u0633\u06a9\u06c1 \u06a9\u06d2 \u0637\u0648\u0631 \u067e\u0631 \u06a9\u0686\u06be \u0627\u067e\u0627\u0626\u06d2",
+    "raw_transcript": "\u06a9\u06cc \u0633\u0645\u0633\u06d2 \u06a9\u06cc \u0648\u062c\u06c1 \u0633\u06d2 \u0633\u06a9\u06c1 \u067e\u0691\u0627 \u06c1\u06d2 \u0627\u0633 \u06a9\u06cc \u0648\u062c\u06c1 \u0633\u06d2 \u0633\u0628 \u06a9\u06cc \u06af\u0648\u0631\u0645\u0646 \u06a9\u06cc \u067e\u06be\u06cc\u0645\u06c1 \u067e\u0648 \u06af\u0626\u06cc \u06c1\u06d2 \u062a\u0648 \u06a9\u06cc\u0627 \u0645\u06cc\u0631\u06d2 \u0644\u0691\u06be \u06a9\u0627 \u062c\u0648 \u0622\u067e \u06a9\u06d2 \u0622\u0626\u06cc\u0679\u06cc \u06af\u0646\u062f\u06cc \u0646\u06af\u0631 \u0645\u06cc\u06ba \u067e\u0691\u06be\u062a\u0627 \u06c1\u06d2 \u062a\u0648 \u0627\u0633 \u06a9\u06cc \u0628\u06be\u06cc \u067e\u06be\u06cc\u0645\u06c1 \u067e\u0648 \u06af\u0626\u06cc \u06a9\u06cc\u0627 \u06cc\u0627 \u0627\u0628\u06be\u06cc \u06a9\u0686\u06be \u062f\u0634\u06a9\u06c1 \u06a9\u06d2 \u0633\u06a9\u06c1 \u06a9\u06d2 \u0637\u0648\u0631 \u067e\u0631 \u06a9\u0686\u06be \u0627\u067e\u0627\u0626\u06d2",
+    "avg_logprob": -0.5,
+    "no_speech_prob": 0.3153,
     "snr_db": 29.28,
     "duration_sec": 23.65,
-    "transcribe_latency_sec": 6.357
+    "transcribe_latency_sec": 3.466,
+    "repetition_flagged": false
   },
   "P4_temp_P4_PTT-20261018-WA0018_seg003": {
     "clip_id": "P4_temp_P4_PTT-20261018-WA0018_seg003",
-    "pred_transcript": "\u0906\u092a\u0915\u093e\u0930\u0924\u0947 \u091c\u094b\u0915\u093f \u092c\u091a\u094d\u091a\u094b\u0915\u094b \u0921\u0942\u0928\u0947 \u092a\u093e\u0930\u0947\u0928\u0938 \u0915\u094b \u0915\u0947 \u0928\u0939\u093e\u0916\u093e \u092e\u093f\u0932 \u0938\u0915\u0924\u0940 \u0939\u0948. \u0906\u092a\u0915\u093e \u0935\u093f\u0938\u094d\u091a\u0932 \u0915\u0947 \u092a\u0942\u0930\u0940 \u092a\u0940 \u092c\u0930\u0928 \u0927\u092e \u092a\u0932 \u0938\u0930\u0940 \u0939\u094b\u0917\u093e. \u0905\u092a\u0915\u094b \u0935\u093f\u0938\u094d\u091a\u0930 \u092c\u0926\u093e\u0917\u0947, \u0906\u092a\u0947 \u0905\u0938\u093e\u0928\u0947 \u0939\u094b\u0917\u0947, \u0935\u093f\u0938\u094d\u091a\u0932 \u0915\u0940 \u0935\u093f\u0930\u0947\u0928\u094d\u091a \u0915\u0930\u0928\u0947 \u092e\u0947\u0902...",
-    "avg_logprob": -0.7798,
-    "no_speech_prob": 0.1684,
+    "pred_transcript": "\u092f\u0939 \u0932\u093f\u0917\u093c \u0915\u0947 \u0932\u093f\u0917\u093c \u0915\u094b \u0905\u092a\u091a\u094b \u0915\u094b \u0905\u092a\u0928\u0947 \u092a\u0930\u0947\u0916\u0928\u0947 \u0938\u0915\u094b \u0915\u0947 \u0928\u0939\u093e\u0916 \u092c\u093f\u0932 \u0938\u0915\u0924\u0940 \u0939\u0948 \u0906\u092a\u0915\u093e \u0935\u093f\u0938\u094d\u091f \u0915\u0947 \u092a\u0942\u0930\u0940 \u092a\u0940 \u0932\u093f\u0917\u093c \u092a\u0930\u0928\u093e \u092c\u093f\u0932 \u0938\u0930\u0940 \u0939\u094b\u0917\u093e \u0915\u0941\u092a\u0947 \u0935\u093f\u0938\u094d\u091f\u0930 \u092c\u0926\u093e\u092f\u0947 amai asane hoongi e sal ki p arench karnay me",
+    "raw_transcript": "\u092f\u0939 \u0932\u093f\u0917\u093c \u0915\u0947 \u0932\u093f\u0917\u093c \u0915\u094b \u0905\u092a\u091a\u094b \u0915\u094b \u0905\u092a\u0928\u0947 \u092a\u0930\u0947\u0916\u0928\u0947 \u0938\u0915\u094b \u0915\u0947 \u0928\u0939\u093e\u0916 \u092c\u093f\u0932 \u0938\u0915\u0924\u0940 \u0939\u0948 \u0906\u092a\u0915\u093e \u0935\u093f\u0938\u094d\u091f \u0915\u0947 \u092a\u0942\u0930\u0940 \u092a\u0940 \u0932\u093f\u0917\u093c \u092a\u0930\u0928\u093e \u092c\u093f\u0932 \u0938\u0930\u0940 \u0939\u094b\u0917\u093e \u0915\u0941\u092a\u0947 \u0935\u093f\u0938\u094d\u091f\u0930 \u092c\u0926\u093e\u092f\u0947 amai asane hoongi e sal ki p arench karnay me",
+    "avg_logprob": -1.0373,
+    "no_speech_prob": 0.4656,
     "snr_db": 34.12,
     "duration_sec": 18.66,
-    "transcribe_latency_sec": 5.982
+    "transcribe_latency_sec": 4.497,
+    "repetition_flagged": false
   },
   "P4_temp_P4_PTT-20261018-WA0018_seg004": {
     "clip_id": "P4_temp_P4_PTT-20261018-WA0018_seg004",
-    "pred_transcript": "And next year keep fees, Jama karni mein. And if you meet your friends, you will be very busy. You will be busy, I am a marketing director.",
-    "avg_logprob": -1.1381,
-    "no_speech_prob": 0.0731,
+    "pred_transcript": "\u0627\u0648\u0631 \u0646\u06a9\u0634\u0679\u06cc\u0631 \u06a9\u06cc \u067e\u06cc\u0686 \u062c\u0645\u0627 \u06a9\u0631\u0646\u06d2 \u0645\u06cc\u06ba \u0627\u0648\u0631 \u0627\u06af\u0631 \u0627\u0631\u062d\u0627\u062a \u0645\u06cc\u06ba \u0644\u06af\u06cc \u062a\u0648 \u0628\u0691\u06cc \u067e\u0631\u0648\u067e\u0627 \u06c1\u0648\u06af\u06cc \u067e\u0631\u0648\u067e\u0627\u06cc\u0627\u06ba \u0645\u06cc\u06ba \u0645\u0627\u0631\u06a9\u0691 \u0631\u06cc\u0634\u0646 \u06a9\u0631\u06cc\u06ba \u062f\u0646\u06cc\u0627",
+    "raw_transcript": "\u0627\u0648\u0631 \u0646\u06a9\u0634\u0679\u06cc\u0631 \u06a9\u06cc \u067e\u06cc\u0686 \u062c\u0645\u0627 \u06a9\u0631\u0646\u06d2 \u0645\u06cc\u06ba \u0627\u0648\u0631 \u0627\u06af\u0631 \u0627\u0631\u062d\u0627\u062a \u0645\u06cc\u06ba \u0644\u06af\u06cc \u062a\u0648 \u0628\u0691\u06cc \u067e\u0631\u0648\u067e\u0627 \u06c1\u0648\u06af\u06cc \u067e\u0631\u0648\u067e\u0627\u06cc\u0627\u06ba \u0645\u06cc\u06ba \u0645\u0627\u0631\u06a9\u0691 \u0631\u06cc\u0634\u0646 \u06a9\u0631\u06cc\u06ba \u062f\u0646\u06cc\u0627",
+    "avg_logprob": -0.6909,
+    "no_speech_prob": 0.0631,
     "snr_db": 30.12,
     "duration_sec": 11.98,
-    "transcribe_latency_sec": 2.37
+    "transcribe_latency_sec": 2.302,
+    "repetition_flagged": false
   },
   "P4_temp_P4_PTT-20261018-WA0019_seg001": {
     "clip_id": "P4_temp_P4_PTT-20261018-WA0019_seg001",
-    "pred_transcript": "NOS Sir ji, I am Nithin Patil, I am Rajesh Hathura Vishayam in Poj Raju, and I am the director of Maharashtra Vidyamandal's Video Deepakshaka.",
-    "avg_logprob": -0.9423,
-    "no_speech_prob": 0.0312,
+    "pred_transcript": "\u0905\u092a\u094d\u0930\u0947 \u0932\u093f\u0935\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e",
+    "raw_transcript": "\u0905\u092a\u094d\u0930\u0947 \u0932\u093f\u0935\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e\u0936\u093e",
+    "avg_logprob": -0.1986,
+    "no_speech_prob": 0.1768,
     "snr_db": 23.55,
     "duration_sec": 14.89,
-    "transcribe_latency_sec": 3.325
+    "transcribe_latency_sec": 5.033,
+    "repetition_flagged": false
   },
   "P4_temp_P4_PTT-20261018-WA0019_seg002": {
     "clip_id": "P4_temp_P4_PTT-20261018-WA0019_seg002",
-    "pred_transcript": "Sandoonagar Chauhda, Chubhi Sthakka, May Aadhinkarrao, PED SanShadamkarrao, My thesis is over, but my Plagiarism is 7%. And Plagiarism is 7% similar to 7%. So, to reduce my thesis, I have to do something.",
-    "avg_logprob": -1.0166,
-    "no_speech_prob": 0.1035,
+    "pred_transcript": "\u0964 \u0964",
+    "raw_transcript": "\u0964 \u0964 \u0964 \u0964 \u0964 \u0964 \u0964 \u0964 \u0964 \u0964 \u0964 \u0964 \u0964 \u0964 \u0964 \u0964 \u0964 \u0964 \u0964 \u0964 \u0964 \u0964 \u0964 \u0964 \u0964 \u0964 \u0964 \u0964 \u0964 \u0964 \u0964 \u0964 \u0964 \u0964 \u0964 \u0964 \u0964 \u0964 \u0964 \u0964 \u0964 \u0964 \u0964 \u0964 \u0964 \u0964 \u0964 \u0964 \u0964 \u0964 \u0964 \u0964 \u0964 \u0964 \u0964 \u0964 \u0964 \u0964 \u0964 \u0964 \u0964 \u0964 \u0964 \u0964 \u0964 \u0964 \u0964 \u0964 \u0964 \u0964 \u0964 \u0964 \u0964 \u0964",
+    "avg_logprob": -0.0603,
+    "no_speech_prob": 0.3047,
     "snr_db": 24.02,
     "duration_sec": 23.69,
-    "transcribe_latency_sec": 2.78
+    "transcribe_latency_sec": 5.534,
+    "repetition_flagged": true
   },
   "P4_temp_P4_PTT-20261018-WA0019_seg003": {
     "clip_id": "P4_temp_P4_PTT-20261018-WA0019_seg003",
-    "pred_transcript": "IIT Gandhinagar student voice helpdesk query",
-    "avg_logprob": -0.5282,
-    "no_speech_prob": 0.1604,
+    "pred_transcript": "\u0906\u092a\u0928\u0947 \u0932\u093f\u0935\u093e\u0923 \u092a\u0930\u093e\u0923 \u092a\u0930\u093e\u0923 \u092a\u0930\u093e\ufffd",
+    "raw_transcript": "\u0906\u092a\u0928\u0947 \u0932\u093f\u0935\u093e\u0923 \u092a\u0930\u093e\u0923 \u092a\u0930\u093e\u0923 \u092a\u0930\u093e\u0923 \u092a\u0930\u093e\u0923 \u092a\u0930\u093e\u0923 \u092a\u0930\u093e\u0923 \u092a\u0930\u093e\u0923 \u092a\u0930\u093e\u0923 \u092a\u0930\u093e\u0923 \u092a\u0930\u093e\u0923 \u092a\u0930\u093e\u0923 \u092a\u0930\u093e\u0923 \u092a\u0930\u093e\u0923 \u092a\u0930\u093e\u0923 \u092a\u0930\u093e\u0923 \u092a\u0930\u093e\u0923 \u092a\u0930\u093e\u0923 \u092a\u0930\u093e\u0923 \u092a\u0930\u093e\u0923 \u092a\u0930\u093e\u0923 \u092a\u0930\u093e\u0923 \u092a\u0930\u093e\u0923 \u092a\u0930\u093e\u0923 \u092a\u0930\u093e\u0923 \u092a\u0930\u093e\u0923 \u092a\u0930\u093e\u0923 \u092a\u0930\u093e\u0923 \u092a\u0930\u093e\u0923 \u092a\u0930\u093e\u0923 \u092a\u0930\u093e\u0923 \u092a\u0930\u093e\u0923 \u092a\u0930\u093e\u0923 \u092a\u0930\u093e\u0923 \u092a\u0930\u093e\u0923 \u092a\u0930\u093e\ufffd",
+    "avg_logprob": -0.3083,
+    "no_speech_prob": 0.5776,
     "snr_db": 23.57,
     "duration_sec": 13.37,
-    "transcribe_latency_sec": 1.389
+    "transcribe_latency_sec": 5.235,
+    "repetition_flagged": true
   }
 }

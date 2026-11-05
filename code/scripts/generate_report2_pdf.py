@@ -164,7 +164,7 @@ def build_pdf(filename="report/report2.pdf"):
     story.append(HRFlowable(width="100%", thickness=1, color=colors.HexColor('#CBD5E1'), spaceBefore=2, spaceAfter=8))
 
     # Abstract
-    story.append(Paragraph("<b>Abstract</b>—Deploying Automatic Speech Recognition (ASR) and semantic intent routing in Indian institutional campus environments introduces substantial real-world production challenges, including multilingual code-mixing (English, Hindi, and Gujarati), wide acoustic dispersion across student smartphone microphones, and regional accent distribution shift. Starting from the cryptographically frozen dataset checkpoint at release tag a1-final, we develop, optimize, deploy, and monitor an end-to-end voice helpdesk pipeline for Project 5 of CS203. In Part A, we establish two empirical baselines (trivial majority-class predictor and unadapted zero-shot Whisper base with TF-IDF classification) and our proposed system coupling a prompt-conditioned Whisper base acoustic model with a joint 4-way intent router. In Part B, we track 15 systematic hyperparameter tuning configurations in MLflow, identifying an optimal Pareto frontier balancing intent accuracy, inference latency (0.01 ms routing), and parameter size (105.5 KB head) on validation data only, registering versions with production and staging aliases. In Part C, unified empirical evaluation across 1,000 bootstrap resamples measures held-out performance on the untouched 29-clip Gold Test Set (WER: 1.541 [1.301, 1.823], CER: 1.218 [0.976, 1.496], ASR Intent Accuracy: 44.8% [27.6%, 62.1%], Human Transcript Intent Accuracy: 100.0%), demonstrating that ASR transliteration ambiguity drives classification errors. In Part D, we deliver a self-contained, CPU-only Docker image for linux/amd64 (&le; 4.2 GB RAM) verified offline under strict --network none isolation, coupled with an interactive Streamlit dashboard and FastAPI endpoints. Finally, in Part E, we simulate live production traffic transitioning to regional drift (Cohort B), demonstrating that a label-free predictive entropy signal (U(x) &ge; 1.310 nats) tracks downstream accuracy degradation (r = 0.35). A triggered active retraining pipeline queries a simulated annotator pool, retrains routing heads, and enforces strict promotion gating criteria where unregularized fine-tuning triggers safety rollback while regularized rehearsal successfully promotes, maintaining unbroken cryptographic data provenance.", abstract_style))
+    story.append(Paragraph("<b>Abstract</b>—Deploying Automatic Speech Recognition (ASR) and semantic intent routing in Indian institutional campus environments introduces substantial real-world production challenges, including multilingual code-mixing (English, Hindi, and Gujarati), wide acoustic dispersion across student smartphone microphones, and regional accent distribution shift. Starting from the cryptographically frozen dataset checkpoint at release tag a1-final, we develop, optimize, deploy, and monitor an end-to-end voice helpdesk pipeline for Project 5 of CS203. In Part A, we establish two empirical baselines (trivial majority-class predictor and unadapted zero-shot Whisper base with TF-IDF classification) and our proposed system coupling an off-the-shelf Whisper base acoustic model with a joint 4-way intent router trained with safe decoding and standardized text normalization (code/normalisation.py). In Part B, we track 39 systematic hyperparameter and ablation runs in MLflow (supporting_files/mlflow.db), evaluating configurations on validation data only and registering versions with production and staging aliases. In Part C, unified empirical evaluation across 1,000 bootstrap resamples measures held-out performance on the untouched 29-clip Gold Test Set (WER: 1.2789 [1.1614, 1.3977], CER: 0.9414 [0.8875, 1.0020], ASR Intent Accuracy: 34.58% [20.60%, 51.72%], Macro-F1: 0.3218). Crucially, a keyword leakage audit reveals that 100% human-transcript routing accuracy stems from formulaic template openings, whereas live speech transcription reflects true conversational ambiguity. In Part D, we deliver a self-contained, CPU-only Docker image for linux/amd64 (782.7 MB RAM measured vs &le; 16 GB ceiling, p50 latency: 2,855 ms, RTF: 0.243) verified offline under strict --network none isolation, coupled with an interactive Streamlit dashboard and FastAPI endpoints. Finally, in Part E, we simulate live production traffic transitioning to regional drift (Cohort B), partition Cohort B strictly by speaker (Speaker P4 adaptation pool vs Speaker P13 held-out test) to eliminate data leakage, and enforce rigid 2-stage promotion gating where candidate models must demonstrate &ge; +5% gain on held-out Cohort B and &le; 2% regression on Gold test accuracy before promotion.", abstract_style))
     story.append(HRFlowable(width="100%", thickness=0.5, color=colors.HexColor('#E2E8F0'), spaceBefore=2, spaceAfter=8))
 
     # Section 1: Introduction
@@ -175,14 +175,14 @@ def build_pdf(filename="report/report2.pdf"):
     # Section 2: Part A
     story.append(Paragraph("2. Part A: Model Development & Baselines", h1_style))
     story.append(Paragraph("The system ingests a single-channel 16 kHz PCM audio waveform and jointly predicts a code-mixed orthographic transcript and a mutually exclusive administrative intent category: admissions, hostel_mess, it_support, or student_services. To establish rigorous empirical lower and upper bounds, we implement three distinct modeling architectures:", body_style))
-    story.append(Paragraph("• <b>Baseline 0 (Trivial Majority Predictor):</b> Predicts the training set empirical mode (admissions) and outputs static boilerplate text, providing the uninformative empirical lower bound.<br/>• <b>Baseline 1 (Unadapted Zero-Shot Whisper Base):</b> Couples off-the-shelf OpenAI Whisper base (71.8M params) with an unadapted TF-IDF feature extractor and Logistic Regression classifier trained on reference transcripts.<br/>• <b>Proposed System (IITGN-Helpdesk-ASR-Router):</b> End-to-end prompt-conditioned Whisper base acoustic backbone coupled with sublinear TF-IDF and a 2-layer MLP intent routing head (64 hidden units, ReLU, Dropout 0.2).", body_style))
+    story.append(Paragraph("• <b>Baseline 0 (Trivial Majority Predictor):</b> Predicts the training set empirical mode (admissions) and outputs static boilerplate text, providing the uninformative empirical lower bound.<br/>• <b>Baseline 1 (Unadapted Zero-Shot Whisper Base):</b> Couples off-the-shelf OpenAI Whisper base (71.8M params) with an unadapted TF-IDF feature extractor and Logistic Regression classifier trained on reference transcripts.<br/>• <b>Proposed System (IITGN-Helpdesk-ASR-Router):</b> End-to-end Whisper base acoustic backbone coupled with normalized sublinear TF-IDF and a 2-layer MLP intent routing head (64 hidden units, ReLU, Dropout 0.2).", body_style))
 
     # Table 1: Validation Baselines
     val_table_data = [
         ["Model Architecture", "WER", "CER", "Intent Acc.", "Macro-F1", "Status / Hardware"],
         ["Baseline 0 (Trivial Majority)", "1.000", "0.812", "0.235", "0.095", "CPU FP32 (< 1ms)"],
-        ["Baseline 1 (Unadapted Whisper Base)", "1.970", "1.434", "0.118", "0.106", "OpenAI Whisper Base (71.8M)"],
-        ["Proposed Helpdesk ASR Router", "1.970", "1.434", "0.176", "0.131", "Prompt-Conditioned + MLP"]
+        ["Baseline 1 (Unadapted Whisper Base)", "1.455", "1.078", "0.235", "0.217", "OpenAI Whisper Base (71.8M)"],
+        ["Proposed Helpdesk ASR Router", "1.455", "1.078", "0.235", "0.217", "Whisper Base + MLP (782 MB)"]
     ]
     t1 = Table(val_table_data, colWidths=[160, 45, 45, 65, 55, 134])
     t1.setStyle(TableStyle([
@@ -198,19 +198,19 @@ def build_pdf(filename="report/report2.pdf"):
     ]))
     story.append(t1)
     story.append(Spacer(1, 6))
-    story.append(Paragraph("<i>Scientific Insight:</i> Zero-shot Whisper outputs bilingual Devanagari/Latin script, producing high lexical WER against phonetic Romanized reference transcripts. Crucially, when routing on ground-truth human transcripts, intent accuracy is 100.0%, proving that transcription transliteration divergence drives intent misclassifications.", body_style))
+    story.append(Paragraph("<i>Scientific Insight:</i> Zero-shot Whisper prompted with repetitive context triggers severe repetition loops. Removing the repetitive prompt and enforcing safe decoding with standardized normalization (code/normalisation.py) eliminates hallucinations, bringing WER down to 1.2789.", body_style))
 
     # Section 3: Part B
     story.append(Paragraph("3. Part B: Systematic Hyperparameter Search & MLflow Tracking", h1_style))
-    story.append(Paragraph("All training runs, parameter configurations, commit hashes, data digests, and performance metrics were logged systematically in a local SQLite-backed MLflow tracking registry (supporting_files/mlflow.db). We executed a 15-run systematic search over learning rates (0.001–0.010), hidden units (32, 64, 128), n-gram ranges (1–3), and dropout (0.1–0.3) strictly evaluated on validation data only.", body_style))
-    story.append(Paragraph("Run 6 (lr=0.010, hidden=64, ngram_max=1, dropout=0.1) established the optimal Pareto frontier point, achieving 100.0% validation accuracy on reference text with 0.01 ms CPU routing latency and 105.5 KB memory footprint. Run 6 was officially registered in the MLflow Model Registry as model <b>voice_helpdesk_intent_router</b> version 2 with alias <b>production</b>, while Run 2 was registered as version 3 with alias <b>staging</b>.", body_style))
+    story.append(Paragraph("All training runs, parameter configurations, commit hashes, data digests, and performance metrics were logged systematically in a local SQLite-backed MLflow tracking registry (supporting_files/mlflow.db). Across 39 logged runs in MLflow, configurations were evaluated strictly on validation data only.", body_style))
+    story.append(Paragraph("Run a7db4869 / 4ed418b4 established the optimal Pareto frontier point, achieving robust validation performance with 0.34 ms CPU routing latency and 782.7 MB peak memory footprint. The production router head is saved in artefacts/models/production_v1_head.pt with registered aliases in MLflow.", body_style))
 
     # Tuning figure if exists
     tuning_png = Path("report/figures/tuning_search_analysis.png")
     if tuning_png.exists():
         story.append(KeepTogether([
             Image(str(tuning_png), width=420, height=210),
-            Paragraph("<font size=7 color='#555555'><b>Figure 1:</b> 15-run MLflow hyperparameter search analysis. Bubble size denotes model parameter size. Run 6 (red circle) establishes the optimal quality-latency-size trade-off and is registered with alias <b>production</b>.</font>", body_style)
+            Paragraph("<font size=7 color='#555555'><b>Figure 1:</b> MLflow hyperparameter search analysis. Bubble size denotes model parameter size. Registered with alias <b>production</b>.</font>", body_style)
         ]))
 
     # Section 4: Part C
@@ -218,14 +218,14 @@ def build_pdf(filename="report/report2.pdf"):
     story.append(Paragraph("Unified evaluation across all partitions was executed via code/a2_part_c_evaluation/evaluate.py. All reported numbers reflect authentic empirical measurements with 95% bootstrap confidence intervals (1,000 resamples). Under no circumstances was the held-out Gold Test Set accessed during training or tuning.", body_style))
 
     eval_table_data = [
-        ["Split Partition / Model", "Clips", "WER (95% CI)", "CER (95% CI)", "ASR Intent Acc.", "Macro-F1", "Human Acc."],
+        ["Split Partition / Model", "Clips", "WER (95% CI)", "CER (95% CI)", "ASR Intent Acc.", "Macro-F1", "Ground Truth Acc."],
         ["Gold Test Set: Baseline 0", "29", "1.000 [1.000, 1.000]", "0.812 [0.750, 0.874]", "0.235 [0.083, 0.400]", "0.095", "0.235"],
-        ["Gold Test Set: Baseline 1", "29", "1.541 [1.301, 1.823]", "1.218 [0.976, 1.496]", "0.448 [0.276, 0.621]", "0.429", "1.000"],
-        ["Gold Test Set: Production", "29", "1.541 [1.301, 1.823]", "1.218 [0.976, 1.496]", "0.448 [0.276, 0.621]", "0.429", "1.000"],
-        ["In-Domain Test Split", "29", "1.538 [1.301, 1.823]", "1.209 [0.976, 1.496]", "0.447 [0.276, 0.621]", "0.414", "1.000"],
-        ["Validation Split (val.csv)", "17", "1.965 [1.480, 2.615]", "1.434 [1.068, 1.950]", "0.180 [0.000, 0.353]", "0.131", "1.000"],
-        ["Shifted Cohort B (Pre-Retrain)", "32", "1.357 [1.161, 1.611]", "1.152 [0.957, 1.425]", "0.377 [0.219, 0.531]", "0.348", "1.000"],
-        ["Shifted Cohort B (Post-Retrain)", "32", "1.357 [1.161, 1.611]", "1.152 [0.957, 1.425]", "0.469 [0.312, 0.625]", "0.435", "1.000"]
+        ["Gold Test Set: Baseline 1", "29", "1.279 [1.161, 1.398]", "0.941 [0.888, 1.002]", "0.346 [0.206, 0.517]", "0.322", "1.000* (leak)"],
+        ["Gold Test Set: Production", "29", "1.279 [1.161, 1.398]", "0.941 [0.888, 1.002]", "0.346 [0.206, 0.517]", "0.322", "1.000* (leak)"],
+        ["In-Domain Test Split", "29", "1.279 [1.161, 1.398]", "0.941 [0.888, 1.002]", "0.346 [0.206, 0.517]", "0.322", "1.000* (leak)"],
+        ["Validation Split (val.csv)", "17", "1.455 [1.218, 1.702]", "1.078 [0.892, 1.265]", "0.235 [0.059, 0.471]", "0.217", "1.000* (leak)"],
+        ["Shifted Cohort B (Held-Out P13)", "13", "1.265 [1.082, 1.451]", "0.932 [0.841, 1.025]", "0.231 [0.000, 0.462]", "0.205", "1.000* (leak)"],
+        ["Shifted Cohort B (Retrained)", "13", "1.265 [1.082, 1.451]", "0.932 [0.841, 1.025]", "0.308 [0.077, 0.538]", "0.282", "1.000* (leak)"]
     ]
     t2 = Table(eval_table_data, colWidths=[130, 28, 92, 92, 70, 42, 50])
     t2.setStyle(TableStyle([
@@ -242,28 +242,28 @@ def build_pdf(filename="report/report2.pdf"):
     story.append(t2)
     story.append(Spacer(1, 6))
 
-    story.append(Paragraph("<b>Demographic & Acoustic Slices:</b> Disaggregating performance reveals that quiet rooms achieve 50.0% intent accuracy vs 33.3% in outdoor cafeteria babble. Hindi-English code-mixing reaches 50.0% vs 38.5% for Gujarati-English. Western/Northern India cohorts achieve 50.0% vs 37.7% for the shifted Maharashtra cohort.", body_style))
-    story.append(Paragraph("<b>Categorized Test Error Taxonomy:</b> 20 real empirical failure cases were cataloged into supporting_files/error_analysis.csv spanning: (1) Acoustic babble masking (e.g., cafeteria noise obscuring short tokens), (2) Administrative boundary ambiguity between hostel fees and IT portals, (3) Transliteration phonetic divergence, (4) Accent cadence clipping, and (5) Polysemous technical jargon.", body_style))
+    story.append(Paragraph("<b>Demographic & Acoustic Slices:</b> Disaggregating performance on Gold reveals that quiet rooms achieve 40.0% intent accuracy vs 33.3% in corridors and 28.6% in outdoor cafeteria babble. Spontaneous speech yields 36.4% vs 33.3% for read speech. Gujarati-Hindi-English mix achieves 38.5% vs 33.3% for Hindi-English.", body_style))
+    story.append(Paragraph("<b>Categorized Test Error Taxonomy:</b> 20 real empirical failure cases were cataloged into supporting_files/error_analysis.csv spanning: (1) Acoustic babble masking (cafeteria noise obscuring short tokens), (2) Administrative boundary ambiguity between hostel fees and IT webmail, (3) Transliteration phonetic divergence, (4) Accent cadence clipping, and (5) Polysemous technical jargon.", body_style))
 
     # Section 5: Part D
     story.append(Paragraph("5. Part D: Docker Microservice & Offline Verification", h1_style))
-    story.append(Paragraph("The service is packaged as a CPU-only Docker image for linux/amd64 built from code/Dockerfile (&le; 4.2 GB RAM, well below the 16 GB ceiling). The image bundles all model weights, code, and the frozen gold test set.", body_style))
-    story.append(Paragraph("<b>Offline Verification Command (--network none):</b><br/><code>docker run --rm --network none voice-helpdesk-asr:a2-final validate</code><br/>The script cryptographically validates gold_test_set.csv SHA-256 (64b7647b...), executes offline CPU inference across all 29 clips, and writes JSON output to supporting_files/offline_validation_output.json (WER: 1.5411, Accuracy: 0.4483).", body_style))
-    story.append(Paragraph("<b>Interactive Web UI & REST API:</b> Launched via <code>docker run --rm -p 8501:8501 -p 8000:8000 voice-helpdesk-asr:a2-final</code>. Streamlit serves interactive audio upload and bundled examples with real-time inference (RTF &approx; 0.17 &lt;&lt; 1.0). FastAPI exposes /predict, /health, and /version endpoints with non-PII telemetry logging.", body_style))
+    story.append(Paragraph("The service is packaged as a CPU-only Docker image built from code/Dockerfile (782.7 MB peak RAM measured, well below the 16 GB ceiling). The image bundles all model weights, code, and the frozen gold test set.", body_style))
+    story.append(Paragraph("<b>Offline Verification Command (--network none):</b><br/><code>docker run --rm --network none voice-helpdesk-asr:a2-final validate</code><br/>(Local execution equivalent: <code>python code/a2_part_d_deployment/validate_offline.py</code>). The script validates gold_test_set.csv SHA-256 (64b7647b...), executes offline CPU inference across all 29 clips, and writes JSON output to supporting_files/offline_validation_output.json (WER: 1.2774, Accuracy: 0.3448).", body_style))
+    story.append(Paragraph("<b>Interactive Web UI & REST API:</b> Launched via <code>streamlit run code/a2_part_d_deployment/app.py --server.port 8501</code>. Streamlit serves interactive audio upload and preloaded samples with real-time inference (RTF = 0.243 &lt; 1.0). FastAPI exposes /predict, /health, and /version endpoints with non-PII telemetry logging.", body_style))
 
     # Section 6: Part E
     story.append(Paragraph("6. Part E: Traffic Monitoring, Drift Detection & Retraining", h1_style))
-    story.append(Paragraph("To model real production distribution shifts, traffic_replay.py simulated 100 queries across 5 sequential batches shifting from in-domain test to Cohort B. Tracking label-free predictive entropy U(x) revealed that uncertainty climbed from 1.241 nats to 1.321 nats, crossing the calibrated threshold (1.310 nats) at Batch 5, with 0% false alarms on in-domain validation data.", body_style))
+    story.append(Paragraph("To model real production distribution shifts, traffic_replay.py simulated queries shifting towards Cohort B. Tracking label-free predictive entropy U(x) revealed that uncertainty climbed significantly upon regional acoustic shift.", body_style))
 
     # Drift figure if exists
     drift_png = Path("report/figures/drift_detection_plot.png")
     if drift_png.exists():
         story.append(KeepTogether([
             Image(str(drift_png), width=420, height=200),
-            Paragraph("<font size=7 color='#555555'><b>Figure 2:</b> Online traffic monitoring across 5 batches. Predictive entropy reaches 1.321 nats at Batch 5, crossing the calibrated 1.310 threshold and dispatching the automated retraining pipeline.</font>", body_style)
+            Paragraph("<font size=7 color='#555555'><b>Figure 2:</b> Online traffic monitoring across sequential batches showing predictive entropy tracking distribution shift.</font>", body_style)
         ]))
 
-    story.append(Paragraph("<b>Retraining Pipeline & Safety Gating Logic:</b> Upon alert, retrain_pipeline.py acquires 16 high-uncertainty Cohort B queries from the simulated annotator pool, verifies 0 leakage with the gold test set, and retrains the model. When unregularized retraining is executed, Cohort B accuracy jumps to 56.2% (+18.8%), but Gold Set accuracy regresses from 44.8% to 41.4% (3.4% regression &gt; 2.0% tolerance). The gate automatically triggers rollback to protect production! When conservative rehearsal weighting is applied, Cohort B reaches 46.9% (+9.4%) while Gold accuracy is preserved at 44.8% (0.0% degradation &le; 2.0%), permitting promotion to candidate-retrained-v2. All checks are recorded in TEST_SET_LOG.md.", body_style))
+    story.append(Paragraph("<b>Retraining Pipeline & Safety Gating Logic:</b> Cohort B is partitioned strictly by speaker: Speaker P4 (19 clips) forms the active adaptation pool, while Speaker P13 (13 clips) is held out for evaluation. Retraining adapts on Speaker P4 queries and tests on held-out Speaker P13, yielding +7.7% accuracy improvement (exceeding &ge; +5% gate). Gold Set degradation is checked against the &le; 2.0% tolerance. Rehearsal training bounds degradation, while unregularized runs trigger rollback to protect production. All gate runs are cryptographically logged in TEST_SET_LOG.md.", body_style))
 
     # Section 7: Part F & Team Statement
     story.append(Paragraph("7. Author Contributions & Evidence Index", h1_style))
@@ -271,9 +271,9 @@ def build_pdf(filename="report/report2.pdf"):
 
     contrib_data = [
         ["Group Member", "Roll Number", "Contribution", "Key Technical Responsibilities"],
-        ["Rajdeep Vraj", "23110255", "33.33%", "Baseline modeling (baselines.py), Docker containerization, offline validation"],
-        ["Vipul Sunil Patil", "23110372", "33.33%", "MLflow experiment tracking, Streamlit UI, LaTeX technical report"],
-        ["Satvik Sharma", "23110287", "33.33%", "Statistical evaluation (evaluate.py), drift replay, active retraining pipeline"]
+        ["Rajdeep Vraj", "24110260", "33.33%", "Baseline modeling (baselines.py), normalization, offline validation"],
+        ["Vipul Sunil Patil", "24110381", "33.33%", "MLflow experiment tracking, Streamlit UI, LaTeX technical report"],
+        ["Satvik Sharma", "24110300", "33.33%", "Statistical evaluation (evaluate.py), drift replay, active retraining pipeline"]
     ]
     t3 = Table(contrib_data, colWidths=[90, 60, 55, 299])
     t3.setStyle(TableStyle([
@@ -292,17 +292,18 @@ def build_pdf(filename="report/report2.pdf"):
     # Evidence index table
     evidence_data = [
         ["Report Section / Metric", "Empirical Value", "Primary Artifact File", "Verification CLI Command"],
-        ["Part A: Baseline 0 WER / Acc", "1.000 WER / 0.235 Acc", "supporting_files/part_a_baselines_benchmark.json", "python code/a2_part_a_models/baselines.py"],
-        ["Part A: Baseline 1 WER / Acc", "1.970 WER / 0.118 Acc", "supporting_files/part_a_baselines_benchmark.json", "Unadapted Whisper base + TF-IDF"],
-        ["Part B: MLflow Search Runs", "15 systematic runs", "supporting_files/plots/tuning_runs.json", "python code/a2_part_b_tuning/tune_experiments.py"],
-        ["Part B: Registered Aliases", "production (v2), staging (v3)", "supporting_files/mlflow.db", "MLflow Model Registry search"],
-        ["Part C: Gold WER / Acc", "1.541 WER / 0.448 Acc", "supporting_files/offline_validation_output.json", "python code/a2_part_c_evaluation/evaluate.py --split gold"],
-        ["Part C: Human Transcript Acc", "1.000 (100.0% Routing)", "supporting_files/evaluation_results.json", "Intent classification on reference text"],
-        ["Part C: Error Taxonomy", "20 categorized cases", "supporting_files/error_analysis.csv", "Detailed root causes and fixes"],
-        ["Part D: Docker Offline Validation", "Verified (--network none)", "DOCKER.md", "docker run --rm --network none <image> validate"],
-        ["Part E: Drift Alert Trigger", "Batch 5 (Entropy 1.321)", "supporting_files/traffic_replay_log.json", "python code/a2_part_e_monitoring/traffic_replay.py"],
-        ["Part E: Retraining Rollback", "Gold degraded 3.4% > 2%", "TEST_SET_LOG.md", "python code/a2_part_e_monitoring/retrain_pipeline.py --mode standard"],
-        ["Part E: Retraining Promotion", "Delta +9.4%, Gold preserved", "TEST_SET_LOG.md", "python code/a2_part_e_monitoring/retrain_pipeline.py --mode conservative"]
+        ["Part A: Baseline 0 WER / Acc", "1.000 WER / 0.235 Acc", "supporting_files/part_a_baselines_benchmark.csv", "python code/train.py --compare-augmentations"],
+        ["Part A: Baseline 1 WER / Acc", "1.455 WER / 0.235 Acc", "supporting_files/part_a_baselines_benchmark.csv", "python code/train.py --compare-augmentations"],
+        ["Part B: MLflow Search Runs", "39 tracked runs", "artefacts/mlflow_export/runs.csv", "python code/scripts/export_mlflow.py"],
+        ["Part B: Registered Aliases", "production, staging", "artefacts/mlflow_export/registered_models.json", "python code/scripts/export_mlflow.py"],
+        ["Part C: Gold WER / CER", "1.2789 WER / 0.9414 CER", "supporting_files/predictions/production_gold.csv", "python code/a2_part_c_evaluation/evaluate.py --split gold"],
+        ["Part C: Gold Intent Accuracy", "34.58% (95% CI: 20.6-51.7%)", "supporting_files/predictions/production_gold.csv", "python code/a2_part_c_evaluation/evaluate.py --split gold"],
+        ["Part C: Keyword Leak Disclosure", "100% human routing (3 words)", "docs/normalisation.md", "python code/check_keyword_leak.py"],
+        ["Part C: Error Taxonomy", "20 categorized cases", "supporting_files/error_analysis.csv", "python code/a2_part_c_evaluation/evaluate.py --split gold"],
+        ["Part D: Hardware Footprint", "782.7 MB RAM, 0.243 RTF", "supporting_files/loadtest/latency_profile.json", "python code/scripts/loadtest.py"],
+        ["Part D: Offline Validation", "Verified (WER 1.277, Acc 34.5%)", "supporting_files/offline_validation_output.json", "python code/a2_part_d_deployment/validate_offline.py"],
+        ["Part E: Retraining Disjoint Split", "P4 (Adapt 19) / P13 (Test 13)", "data/retraining/cohort_b_split.csv", "python code/a2_part_e_monitoring/retrain_pipeline.py"],
+        ["Part E: Gating Rollback / Promotion", "Delta +7.7%, Bound <= 2%", "TEST_SET_LOG.md", "python code/a2_part_e_monitoring/retrain_pipeline.py --mode rehearsal"]
     ]
     t4 = Table(evidence_data, colWidths=[110, 95, 145, 154])
     t4.setStyle(TableStyle([

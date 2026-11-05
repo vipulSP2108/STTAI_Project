@@ -1,0 +1,46 @@
+# ============================================================
+# Final Production Training Configuration
+# CS203 Assignment 2 - Project 5: Voice Helpdesk ASR
+# ============================================================
+
+experiment_name: "cs203_voice_helpdesk_production"
+run_name: "production_v1_whisper_base_router"
+seed: 42
+
+model:
+  asr_backbone: "openai/whisper-base"
+  asr_weights_path: "artefacts/models/whisper_base"
+  freeze_encoder: true
+  num_classes: 4
+  hidden_dim: 64
+  dropout: 0.2
+
+training:
+  epochs: 10
+  batch_size: 8
+  lr: 0.005
+  weight_decay: 0.0001
+  loss: "cross_entropy"
+
+features:
+  vectorizer: "tfidf"
+  max_features: 1000
+  ngram_range: [1, 2]
+  sublinear_tf: true
+
+decoding:
+  beam_size: 1
+  temperature: 0.0
+  condition_on_previous_text: false
+  compression_ratio_threshold: 2.0
+  no_speech_threshold: 0.6
+  initial_prompt: null
+
+data:
+  train_manifest: "data/splits/train.csv"
+  val_manifest: "data/splits/val.csv"
+  gold_manifest: "data/gold_test_set.csv"
+  transcripts: "data/labels/transcripts.csv"
+  intents: "data/labels/intents.csv"
+  audio_dir: "data/raw/audio"
+  gold_sha256: "64b7647b5d0d35733063c77caab122a1a7c24ac6c70b7d476ffbabd9a2448ca9"

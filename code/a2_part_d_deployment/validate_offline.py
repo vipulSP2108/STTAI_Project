@@ -28,6 +28,11 @@ from pathlib import Path
 from jiwer import wer, cer
 from sklearn.metrics import accuracy_score, f1_score
 
+# Deterministic text normaliser
+import sys
+sys.path.append(str(Path(__file__).parent.parent))
+from normalisation import normalise_text
+
 EXPECTED_GOLD_HASH = "64b7647b5d0d35733063c77caab122a1a7c24ac6c70b7d476ffbabd9a2448ca9"
 GOLD_CSV = Path("data/gold_test_set.csv")
 AUDIO_DIR = Path("data/raw/audio")
@@ -87,13 +92,15 @@ def validate_offline(fast_cached=True):
             res = whisper_model.transcribe(
                 str(wav_path),
                 fp16=False,
-                initial_prompt="IIT Gandhinagar student voice helpdesk query: admissions, hostel mess, IT support, student affairs, fees, wifi.",
+                condition_on_previous_text=False,
                 temperature=0.0,
-                condition_on_previous_text=False
+                compression_ratio_threshold=2.0,
+                no_speech_threshold=0.6,
+                beam_size=1
             )
             tx = res.get("text", "").strip()
             dur = 15.0
-        pred_transcripts.append(tx if tx else "institute support desk query")
+        pred_transcripts.append(normalise_text(tx if tx else "institute support desk query"))
         durations.append(dur)
 
     infer_elapsed = time.time() - t_start
@@ -127,8 +134,8 @@ def validate_offline(fast_cached=True):
     pred_intents = [REV_INTENT_MAP[i] for i in np.argmax(probs, axis=1)]
     confs = [float(np.max(p)) for p in probs]
 
-    # 4. Compute Real Empirical Metrics
-    ref_transcripts = df_gold["transcript"].astype(str).tolist()
+    # 4. Compute Real Empirical Metrics on Normalised Text
+    ref_transcripts = [normalise_text(t) for t in df_gold["transcript"]]
     ref_intents = df_gold["intent"].astype(str).tolist()
 
     wers = [wer(r, p) if r.strip() else 1.0 for r, p in zip(ref_transcripts, pred_transcripts)]

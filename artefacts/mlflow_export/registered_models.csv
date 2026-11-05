@@ -1,0 +1,2 @@
+name,aliases,tags,latest_versions
+voice_helpdesk_intent_router,"{'production': 2, 'production-v1': 1, 'staging': 3}",{},"[{'version': 3, 'current_stage': 'None', 'run_id': 'f76da8fa4def44d484beec4b89ec9c00', 'source': 'models:/m-57cf85ec13754c44984378a8714f469f', 'status': 'READY'}]"

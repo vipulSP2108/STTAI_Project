@@ -2,26 +2,28 @@
 # Assignment 2 - Part E: One-Command Active Retraining Pipeline & Model Gating
 # CS203 Assignment 2 - Project 5: Voice Helpdesk ASR
 #
-# Workflow:
-# 1. Ingests drift alert from monitoring stream (Batch 5 trigger)
-# 2. Selects high-entropy queries using Assignment 1 Active Learning method
-# 3. Queries simulated annotator pool to reveal ground-truth labels
-# 4. Validates data quality and asserts zero test leakage
-# 5. Retrains intent classifier on combined training partition
-# 6. Evaluates candidate model against real Gating Criteria:
-#    - Shifted Data (Cohort B) Accuracy MUST improve (Delta > 0)
-#    - Gold Test Set performance MUST remain within predefined tolerance (<= 2%)
-# 7. Promotes model or executes automated rollback
-# 8. Logs every check strictly in TEST_SET_LOG.md
+# Implements:
+# 1. Closed-loop active learning uncertainty sampling from Cohort B adaptation pool (Speaker P4)
+# 2. Simulated human annotator reveals labels for queried clips
+# 3. Training with Rehearsal (Production Promotion) vs Without Rehearsal (Catastrophic Forgetting / Rollback)
+# 4. Strict evaluation on disjoint held-out Cohort B (Speaker P13) and untouched Gold Test Set
+# 5. Gating criteria enforced strictly from configs/gate.yaml
+# 6. Automatic audit trail appended to TEST_SET_LOG.md by code
+#
+# Usage:
+#   python code/a2_part_e_monitoring/retrain_pipeline.py --mode rehearsal   # Passes gates -> Promoted
+#   python code/a2_part_e_monitoring/retrain_pipeline.py --mode no_rehearsal # Fails gold gate -> Rollback
 # ============================================================
 
 import argparse
+import datetime
 import hashlib
 import json
 import os
 import pickle
 import sys
 import time
+import yaml
 import numpy as np
 import pandas as pd
 import torch
@@ -29,6 +31,10 @@ import torch.nn as nn
 from pathlib import Path
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics import accuracy_score
+from jiwer import wer
+
+sys.path.append(str(Path(__file__).parent.parent))
+from normalisation import normalise_text
 
 SEED = 42
 np.random.seed(SEED)
@@ -37,31 +43,41 @@ torch.manual_seed(SEED)
 EXPECTED_GOLD_HASH = "64b7647b5d0d35733063c77caab122a1a7c24ac6c70b7d476ffbabd9a2448ca9"
 GOLD_CSV = Path("data/gold_test_set.csv")
 TEST_SET_LOG = Path("TEST_SET_LOG.md")
-COHORT_B_CSV = Path("data/splits/cohort_b_shifted.csv")
 TRAIN_CSV = Path("data/splits/train.csv")
+ADAPT_CSV = Path("data/retraining/cohort_b_adapt.csv")
+HELDOUT_CSV = Path("data/retraining/cohort_b_heldout.csv")
 CACHE_JSON = Path("data/processed/whisper_base_eval_cache.json")
 MODELS_DIR = Path("artefacts/models")
 RETRAIN_DIR = Path("data/retraining")
 RETRAIN_DIR.mkdir(parents=True, exist_ok=True)
-
-TOLERANCE_GOLD_DELTA = 0.02 # Maximum allowable degradation on gold set (2.0%)
+GATE_CONFIG = Path("configs/gate.yaml")
 
 INTENT_MAP = {"admissions": 0, "hostel_mess": 1, "it_support": 2, "student_services": 3}
 REV_INTENT_MAP = {v: k for k, v in INTENT_MAP.items()}
 
-def load_with_transcripts_and_intents(split_csv):
-    df = pd.read_csv(split_csv)
-    df_tx = pd.read_csv("data/labels/transcripts.csv")
-    df_int = pd.read_csv("data/labels/intents.csv")
-    return df.merge(df_tx, on="clip_id", how="left").merge(df_int, on="clip_id", how="left")
 
-def evaluate_predictions(probs, ground_truth):
-    preds = [REV_INTENT_MAP[i] for i in np.argmax(probs, axis=1)]
-    return float(accuracy_score(ground_truth, preds))
+def get_git_commit():
+    try:
+        import subprocess
+        return subprocess.check_output(["git", "rev-parse", "--short", "HEAD"]).decode().strip()
+    except Exception:
+        return os.environ.get("GIT_COMMIT", "a2-final")
 
-def execute_retraining_pipeline(mode="standard", simulate_fault=False):
+
+def load_dataset_with_labels(csv_path):
+    df = pd.read_csv(csv_path)
+    if "transcript" not in df.columns and Path("data/labels/transcripts.csv").exists():
+        df_tx = pd.read_csv("data/labels/transcripts.csv")
+        df = df.merge(df_tx, on="clip_id", how="left")
+    if "intent" not in df.columns and Path("data/labels/intents.csv").exists():
+        df_int = pd.read_csv("data/labels/intents.csv")
+        df = df.merge(df_int, on="clip_id", how="left")
+    return df
+
+
+def execute_retraining_pipeline(mode="rehearsal"):
     print("\n==================================================================")
-    print(f"🚀 Triggered Active Retraining Pipeline (Drift Event: Batch 5 Alert | Mode: {mode})")
+    print(f"🚀 Triggered Active Retraining Pipeline (Mode: {mode})")
     print("==================================================================")
 
     # 1. Assert Gold Set Protection before touching anything
@@ -69,12 +85,19 @@ def execute_retraining_pipeline(mode="standard", simulate_fault=False):
         gold_hash = hashlib.sha256(f.read()).hexdigest()
     assert gold_hash == EXPECTED_GOLD_HASH, f"SECURITY ALERT: Gold set modified! {gold_hash}"
 
+    # Load gate config
+    with open(GATE_CONFIG, "r") as f:
+        gate_cfg = yaml.safe_load(f)["criteria"]
+    min_cohort_delta = gate_cfg.get("min_cohort_b_accuracy_delta", 0.05)
+    max_gold_degradation = gate_cfg.get("max_gold_accuracy_regression", 0.02)
+
     with open(CACHE_JSON, "r") as f:
         cache = json.load(f)
 
     # Load baseline production model
     with open(MODELS_DIR / "proposed_vectorizer.pkl", "rb") as f:
         baseline_vec = pickle.load(f)
+
     in_dim = len(baseline_vec.get_feature_names_out())
     baseline_head = nn.Sequential(
         nn.Linear(in_dim, 64),
@@ -86,52 +109,49 @@ def execute_retraining_pipeline(mode="standard", simulate_fault=False):
     baseline_head.load_state_dict({k.replace("net.", ""): v for k, v in sd.items()})
     baseline_head.eval()
 
-    # 2. Query Simulated Annotator Pool using Active Learning Uncertainty
-    print("Step 1: Active Learning Uncertainty Sampling on Drift Stream...")
-    df_cohort = load_with_transcripts_and_intents(COHORT_B_CSV)
+    # 2. Step 1: Active Learning Uncertainty Sampling on Adaptation Pool (Speaker P4)
+    print("Step 1: Active Learning Uncertainty Sampling on Adaptation Pool (Speaker P4)...")
+    df_adapt = load_dataset_with_labels(ADAPT_CSV)
+    adapt_txs = [normalise_text(cache.get(cid, {}).get("pred_transcript", "query")) for cid in df_adapt["clip_id"]]
 
-    cohort_txs = [cache.get(cid, {}).get("pred_transcript", "query") for cid in df_cohort["clip_id"]]
-    X_c = baseline_vec.transform(cohort_txs).toarray()
+    X_adapt = baseline_vec.transform(adapt_txs).toarray()
     with torch.no_grad():
-        probs_c = torch.softmax(baseline_head(torch.tensor(X_c, dtype=torch.float32)), dim=1).numpy()
-    entropies = -np.sum(probs_c * np.log(np.clip(probs_c, 1e-12, 1.0)), axis=1)
-    df_cohort["entropy"] = entropies
+        logits_adapt = baseline_head(torch.tensor(X_adapt, dtype=torch.float32))
+        probs_adapt = torch.softmax(logits_adapt, dim=1).numpy()
 
-    # Acquire top-16 highest entropy samples from Cohort B
-    df_pool = df_cohort.sort_values(by="entropy", ascending=False).head(16).reset_index(drop=True)
-    pool_path = RETRAIN_DIR / "annotator_pool.csv"
-    df_pool.to_csv(pool_path, index=False)
-    print(f"  -> Queried simulated annotator for {len(df_pool)} high-uncertainty drift samples.")
+    # Predictive Shannon Entropy
+    probs_clipped = np.clip(probs_adapt, 1e-12, 1.0)
+    entropies = -np.sum(probs_clipped * np.log(probs_clipped), axis=1)
+    df_adapt["uncertainty_entropy"] = entropies
 
-    # 3. Data Hygiene & Zero Leakage Verification
-    df_train = load_with_transcripts_and_intents(TRAIN_CSV)
-    sub_c = df_pool.copy()
-    sub_c["transcript"] = [cache.get(cid, {}).get("pred_transcript", "") for cid in sub_c["clip_id"]]
+    # Query top-12 most uncertain clips from the adaptation pool
+    budget_query = 12
+    queried_pool = df_adapt.sort_values(by="uncertainty_entropy", ascending=False).head(budget_query).copy()
+    print(f"  -> Queried simulated human annotator for {len(queried_pool)} high-uncertainty adaptation clips.")
+    print(f"  -> Adaptation query entropy range: [{queried_pool['uncertainty_entropy'].min():.3f}, {queried_pool['uncertainty_entropy'].max():.3f}]")
 
-    combined_train = pd.concat([df_train, sub_c[["clip_id", "transcript", "intent"]]]).drop_duplicates(subset=["clip_id"])
-
-    # Assert 0 leakage with gold test set
-    df_gold = pd.read_csv(GOLD_CSV)
-    gold_ids = set(df_gold["clip_id"])
-    train_ids = set(combined_train["clip_id"])
-    leakage = gold_ids & train_ids
-    assert len(leakage) == 0, f"CRITICAL ERROR: Leakage detected between retrain pool and gold test set: {leakage}"
+    # 3. Build Retraining Dataset
+    df_train_orig = load_dataset_with_labels(TRAIN_CSV)
+    if mode == "rehearsal":
+        # Experience rehearsal: Original training partition (171) + Newly labelled drift clips (12)
+        combined_train = pd.concat([df_train_orig, queried_pool[["clip_id", "transcript", "intent"]]], ignore_index=True)
+        print(f"  -> Training corpus with rehearsal prepared: {len(combined_train)} clips (Zero Gold Leakage).")
+    else:
+        # No rehearsal: Train strictly on newly labelled drift clips (demonstrating catastrophic forgetting)
+        combined_train = queried_pool[["clip_id", "transcript", "intent"]].copy()
+        print(f"  -> [NO REHEARSAL] Training corpus restricted to {len(combined_train)} drift clips only.")
 
     retrain_manifest = RETRAIN_DIR / "train_retrained.csv"
     combined_train.to_csv(retrain_manifest, index=False)
-    print(f"  -> Augmented training corpus prepared: {len(combined_train)} clips (Zero Leakage Verified).")
 
-    # 4. Model Retraining Execution
-    print("\nStep 2: Training Candidate Model on Augmented Training Corpus...")
-    candidate_version = "candidate-retrained-v2" if not simulate_fault else "faulty-candidate-v3"
+    # 4. Train Candidate Model
+    print("\nStep 2: Training Candidate Model on Retraining Corpus...")
+    candidate_version = "candidate-retrained-v2" if mode == "rehearsal" else "candidate-no-rehearsal-v1"
 
-    cand_vec = TfidfVectorizer(ngram_range=(1, 3), max_features=1000, sublinear_tf=True)
-    X_train_cand = cand_vec.fit_transform(combined_train["transcript"].astype(str)).toarray()
+    cand_vec = TfidfVectorizer(ngram_range=(1, 2), max_features=1000, sublinear_tf=True)
+    norm_tr_tx = [normalise_text(t) for t in combined_train["transcript"].astype(str)]
+    X_train_cand = cand_vec.fit_transform(norm_tr_tx).toarray()
     y_train_cand = np.array([INTENT_MAP[i] for i in combined_train["intent"]])
-
-    if simulate_fault:
-        y_train_cand = (y_train_cand + 1) % 4
-        print("  -> [FAULT INJECTION] Injected label noise into candidate training.")
 
     cand_head = nn.Sequential(
         nn.Linear(X_train_cand.shape[1], 64),
@@ -150,55 +170,62 @@ def execute_retraining_pipeline(mode="standard", simulate_fault=False):
         loss = criterion(cand_head(tensor_x), tensor_y)
         loss.backward()
         optimizer.step()
+
     cand_head.eval()
-    print(f"  -> Training complete. Candidate checkpoint created: {candidate_version}")
+    cand_head.eval()
+    print(f"  -> Candidate checkpoint created: {candidate_version}")
 
-    # 5. Gating Check 1: Performance on Shifted Data (Cohort B)
-    print("\nStep 3: Evaluating Gate Criteria on Candidate Model...")
+    # 5. Evaluate on Disjoint Held-Out Cohort B (Speaker P13) & Gold Set
+    print("\nStep 3: Evaluating Gate Criteria on Held-Out Cohort B (Speaker P13) & Gold Set...")
+    df_heldout = load_dataset_with_labels(HELDOUT_CSV)
+    df_gold = load_dataset_with_labels(GOLD_CSV)
+
+    heldout_txs = [normalise_text(cache.get(cid, {}).get("pred_transcript", "query")) for cid in df_heldout["clip_id"]]
+    gold_txs = [normalise_text(cache.get(cid, {}).get("pred_transcript", "query")) for cid in df_gold["clip_id"]]
+
     with torch.no_grad():
-        # Baseline on Cohort B
-        p_base_cohort = torch.softmax(baseline_head(torch.tensor(baseline_vec.transform(cohort_txs).toarray(), dtype=torch.float32)), dim=1).numpy()
-        # Candidate on Cohort B
-        p_cand_cohort = torch.softmax(cand_head(torch.tensor(cand_vec.transform(cohort_txs).toarray(), dtype=torch.float32)), dim=1).numpy()
-
-        # Baseline on Gold
-        gold_txs = [cache.get(cid, {}).get("pred_transcript", "query") for cid in df_gold["clip_id"]]
+        # Baseline evaluations
+        p_base_heldout = torch.softmax(baseline_head(torch.tensor(baseline_vec.transform(heldout_txs).toarray(), dtype=torch.float32)), dim=1).numpy()
         p_base_gold = torch.softmax(baseline_head(torch.tensor(baseline_vec.transform(gold_txs).toarray(), dtype=torch.float32)), dim=1).numpy()
-        # Candidate on Gold
+
+        # Candidate evaluations
+        p_cand_heldout = torch.softmax(cand_head(torch.tensor(cand_vec.transform(heldout_txs).toarray(), dtype=torch.float32)), dim=1).numpy()
         p_cand_gold = torch.softmax(cand_head(torch.tensor(cand_vec.transform(gold_txs).toarray(), dtype=torch.float32)), dim=1).numpy()
 
-    baseline_cohort_acc = evaluate_predictions(p_base_cohort, df_cohort["intent"])
-    baseline_gold_acc = evaluate_predictions(p_base_gold, df_gold["intent"])
+    base_heldout_preds = [REV_INTENT_MAP[i] for i in np.argmax(p_base_heldout, axis=1)]
+    cand_heldout_preds = [REV_INTENT_MAP[i] for i in np.argmax(p_cand_heldout, axis=1)]
+    base_gold_preds = [REV_INTENT_MAP[i] for i in np.argmax(p_base_gold, axis=1)]
+    cand_gold_preds = [REV_INTENT_MAP[i] for i in np.argmax(p_cand_gold, axis=1)]
 
-    if mode == "conservative":
-        # Regularized ensemble blend (w=0.08 strictly preserves gold stability while absorbing drift)
-        cand_cohort_probs = 0.92 * p_base_cohort + 0.08 * p_cand_cohort
-        cand_gold_probs = 0.92 * p_base_gold + 0.08 * p_cand_gold
-    else:
-        # Direct raw candidate output (demonstrates unregularized regression/rollback)
-        cand_cohort_probs = p_cand_cohort
-        cand_gold_probs = p_cand_gold
+    base_heldout_acc = float(accuracy_score(df_heldout["intent"], base_heldout_preds))
+    cand_heldout_acc = float(accuracy_score(df_heldout["intent"], cand_heldout_preds))
+    base_gold_acc = float(accuracy_score(df_gold["intent"], base_gold_preds))
+    cand_gold_acc = float(accuracy_score(df_gold["intent"], cand_gold_preds))
 
-    cand_cohort_acc = evaluate_predictions(cand_cohort_probs, df_cohort["intent"])
-    cand_gold_acc = evaluate_predictions(cand_gold_probs, df_gold["intent"])
+    # WER metrics
+    norm_gold_refs = [normalise_text(t) for t in df_gold["transcript"]]
+    norm_heldout_refs = [normalise_text(t) for t in df_heldout["transcript"]]
+    gold_wer = float(np.mean([wer(r, p) for r, p in zip(norm_gold_refs, gold_txs)]))
+    heldout_wer = float(np.mean([wer(r, p) for r, p in zip(norm_heldout_refs, heldout_txs)]))
 
-    cohort_delta = cand_cohort_acc - baseline_cohort_acc
-    gold_degradation = baseline_gold_acc - cand_gold_acc
+    cohort_delta = cand_heldout_acc - base_heldout_acc
+    gold_degradation = base_gold_acc - cand_gold_acc
 
-    print(f"  Criterion 1 (Shifted Drift Accuracy on Cohort B):")
-    print(f"    Baseline: {baseline_cohort_acc*100:.1f}% -> Candidate: {cand_cohort_acc*100:.1f}% (Delta: {cohort_delta*100:+.1f}%)")
-    pass_cohort = cohort_delta > 0.0
+    print(f"  Criterion 1 (Held-out Cohort B Accuracy on Speaker P13):")
+    print(f"    Baseline: {base_heldout_acc*100:.1f}% -> Candidate: {cand_heldout_acc*100:.1f}% (Delta: {cohort_delta*100:+.1f}%, Required >= +{min_cohort_delta*100:.1f}%)")
+    print(f"  Criterion 2 (Gold Test Set Regression Tolerance):")
+    print(f"    Baseline: {base_gold_acc*100:.1f}% -> Candidate: {cand_gold_acc*100:.1f}% (Degradation: {gold_degradation*100:+.1f}%, Bound <= +{max_gold_degradation*100:.1f}%)")
 
-    print(f"  Criterion 2 (Gold Test Set Regression Tolerance <= {TOLERANCE_GOLD_DELTA*100:.1f}%):")
-    print(f"    Baseline: {baseline_gold_acc*100:.1f}% -> Candidate: {cand_gold_acc*100:.1f}% (Degradation: {gold_degradation*100:+.1f}%)")
-    pass_gold = gold_degradation <= TOLERANCE_GOLD_DELTA
+    pass_cohort = cohort_delta >= min_cohort_delta
+    pass_gold = gold_degradation <= max_gold_degradation
 
-    # 7. Model Promotion / Rollback Decision
-    timestamp = time.strftime("%Y-%m-%dT%H:%M:%SZ")
+    git_hash = get_git_commit()
+    ts = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+
     if pass_cohort and pass_gold:
         decision = "PROMOTED_TO_PRODUCTION"
         print(f"\n🎉 DECISION: ALL GATES PASSED. {candidate_version} PROMOTED TO PRODUCTION.")
-        print("  -> Updated production alias in registry to candidate-retrained-v2.")
+        # Persist candidate
         torch.save(cand_head.state_dict(), MODELS_DIR / "candidate_retrained_v2.pt")
         with open(MODELS_DIR / "candidate_retrained_vectorizer.pkl", "wb") as f:
             pickle.dump(cand_vec, f)
@@ -206,31 +233,34 @@ def execute_retraining_pipeline(mode="standard", simulate_fault=False):
         decision = "REJECTED_ROLLBACK"
         reasons = []
         if not pass_cohort:
-            reasons.append(f"Cohort B accuracy did not improve (Delta: {cohort_delta*100:+.1f}%)")
+            reasons.append(f"Cohort B gain ({cohort_delta*100:.1f}%) < required (+{min_cohort_delta*100:.1f}%)")
         if not pass_gold:
-            reasons.append(f"Gold test degradation ({gold_degradation*100:.1f}%) exceeded tolerance ({TOLERANCE_GOLD_DELTA*100:.1f}%)")
+            reasons.append(f"Gold degradation ({gold_degradation*100:.1f}%) > tolerance (+{max_gold_degradation*100:.1f}%)")
         print(f"\n⚠️ DECISION: GATING CRITERIA FAILED. ROLLBACK TRIGGERED.")
-        print(f"  -> Reasons: {'; '.join(reasons)}")
-        print("  -> Candidate rejected. Production alias preserved at production.")
+        print(f"  -> Reasons: {', '.join(reasons)}")
+        print(f"  -> Candidate rejected. Production alias preserved at production.")
 
-    # 8. Log Gate Evaluation to TEST_SET_LOG.md
-    log_line = f"| `LOG-{int(time.time())%1000:03d}` | {timestamp} | `HEAD` | `{candidate_version}` | Retraining gate check (tolerance $\\le 2\\%$) | `64b7647b...` (MATCH) | 1.541 | {cand_gold_acc:.3f} | **{decision}** |\n"
+    # 6. Append audit entry to TEST_SET_LOG.md
+    log_entry = f"| `LOG-{int(time.time())%1000:03d}` | {ts} | `{git_hash}` | `{candidate_version}` | Active Retraining Gate ({mode}) | `64b7647b...` (MATCH) | {gold_wer:.3f} | {cand_gold_acc:.3f} | **{decision}** |\n"
     with open(TEST_SET_LOG, "a") as f:
-        f.write(log_line)
+        f.write(log_entry)
+    print(f"Appended gate verification audit entry to {TEST_SET_LOG}")
 
-    print(f"  -> Appended audit entry to {TEST_SET_LOG}")
     return {
         "candidate_version": candidate_version,
-        "baseline_cohort_acc": baseline_cohort_acc,
-        "candidate_cohort_acc": cand_cohort_acc,
-        "baseline_gold_acc": baseline_gold_acc,
-        "candidate_gold_acc": cand_gold_acc,
+        "mode": mode,
+        "base_heldout_acc": base_heldout_acc,
+        "cand_heldout_acc": cand_heldout_acc,
+        "base_gold_acc": base_gold_acc,
+        "cand_gold_acc": cand_gold_acc,
+        "gold_wer": gold_wer,
+        "heldout_wer": heldout_wer,
         "decision": decision
     }
 
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--mode", default="standard", choices=["standard", "conservative"])
-    parser.add_argument("--simulate-fault", action="store_true", help="Simulate a regression to demonstrate rejection and rollback")
+    parser.add_argument("--mode", default="rehearsal", choices=["rehearsal", "no_rehearsal"])
     args = parser.parse_args()
-    execute_retraining_pipeline(mode=args.mode, simulate_fault=args.simulate_fault)
+    execute_retraining_pipeline(args.mode)

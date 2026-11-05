@@ -1,0 +1,5 @@
+Training Data,Val WER,Val Intent Acc,MLflow Run ID
+Train Only (171 clips),1.455,23.5%,4ed418b4
+Train + Augmented (231 clips),1.415,29.4%,6da4447a
+Train + Actively Selected (187 clips),1.395,32.3%,f7f52312
+Train + Both (247 clips),1.375,35.3%,7e711f7b

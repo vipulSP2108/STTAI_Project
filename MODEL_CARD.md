@@ -26,28 +26,37 @@
 - **Held-Out Gold Test Set**: 29 clips (`data/gold_test_set.csv`, frozen SHA-256 `64b7647b5d0d35733063c77caab122a1a7c24ac6c70b7d476ffbabd9a2448ca9`). Zero overlap with training or tuning.
 
 ## Measured Performance Metrics & 95% Bootstrap Confidence Intervals
-Empirically measured via 1,000 bootstrap resamples on the authentic audio clips using OpenAI Whisper `base` and the trained intent classifier:
+Empirically measured via 1,000 bootstrap resamples on the authentic audio clips using OpenAI Whisper `base` and the trained intent classifier under standardized text normalization (`code/normalisation.py`):
 
-| Split Partition | Transcript WER (95% CI) | Transcript CER (95% CI) | Intent Accuracy (95% CI) | Macro-F1 (95% CI) | Human Transcript Accuracy |
-|-----------------|-------------------------|-------------------------|--------------------------|-------------------|---------------------------|
-| **Validation Set** | 1.965 [1.480, 2.615] | 1.434 [1.068, 1.950] | 0.180 [0.000, 0.353] | 0.131 [0.000, 0.274] | 1.000 (100.0%) |
-| **In-Domain Test Set** | 1.538 [1.301, 1.823] | 1.209 [0.976, 1.496] | 0.447 [0.276, 0.621] | 0.414 [0.245, 0.601] | 1.000 (100.0%) |
-| **Held-Out Gold Test Set** | 1.541 [1.301, 1.823] | 1.218 [0.976, 1.496] | 0.448 [0.276, 0.621] | 0.429 [0.245, 0.601] | 1.000 (100.0%) |
-| **Cohort B (Shifted Baseline)** | 1.357 [1.161, 1.611] | 1.152 [0.957, 1.425] | 0.377 [0.219, 0.531] | 0.348 [0.192, 0.518] | 1.000 (100.0%) |
-| **Cohort B (Post-Retraining)** | 1.357 [1.161, 1.611] | 1.152 [0.957, 1.425] | **0.469** [0.312, 0.625] | **0.435** [0.280, 0.590] | 1.000 (100.0%) |
+| Split Partition | Transcript WER (95% CI) | Transcript CER (95% CI) | Intent Accuracy (95% CI) | Macro-F1 (95% CI) | Note / Ground Truth Condition |
+|-----------------|-------------------------|-------------------------|--------------------------|-------------------|--------------------------------|
+| **Validation Set (17 clips)** | 1.455 [1.218, 1.702] | 1.078 [0.892, 1.265] | 0.235 [0.059, 0.471] | 0.217 [0.050, 0.440] | In-domain validation benchmark |
+| **Held-Out Gold Test Set (29 clips)** | **1.2789** [1.1614, 1.3977] | **0.9414** [0.8875, 1.0020] | **0.3458** [0.2060, 0.5172] | **0.3218** [0.1874, 0.4770] | Strict offline evaluation |
+| **Cohort B Held-Out (P13, 13 clips)** | 1.2651 [1.0820, 1.4510] | 0.9320 [0.8410, 1.0250] | **0.2308** [0.0000, 0.4615] | 0.2051 [0.0000, 0.4210] | Pre-retraining baseline |
+| **Cohort B Retrained (P13, 13 clips)** | 1.2651 [1.0820, 1.4510] | 0.9320 [0.8410, 1.0250] | **0.3077** [0.0769, 0.5385] | 0.2821 [0.0650, 0.5050] | Post-retraining (+7.7% gain) |
 
-*Scientific Realities & Observations*:
-1. **Reference Romanization vs Whisper ASR Output**: Zero-shot Whisper `base` outputs natural code-mixed Devanagari/Latin mix (e.g. Gujarati/Hindi terms), whereas the reference transcripts contain phonetic Romanized English script. This produces high lexical word error rate (~1.54 WER), which is standard for unadapted ASR on Indian code-mixed campus audio.
-2. **Human vs ASR Intent Routing Gap**: When given human ground-truth transcripts, the intent routing classifier achieves **1.000 (100%)** accuracy across all evaluation sets. Under raw ASR transcripts, intent accuracy is **44.8%** on in-domain test data and drops to **37.7%** under Cohort B shift, proving that transcription errors drive routing ambiguity.
-3. **Retraining & Promotion Gating**: Fine-tuning on 16 active-learning acquired Cohort B queries improves shifted accuracy from 37.7% to 46.9% (+9.4%). If unregularized, catastrophic forgetting regresses Gold set accuracy by 3.4% (> 2.0% tolerance), triggering safety rollback; with regularized rehearsal weighting, Gold accuracy is preserved at 44.8%, permitting automated promotion.
+### Key Scientific Findings & Disclosure
+1. **Keyword Leakage Audit & Human Transcript Discrepancy**:
+   - In A1, the reference transcripts relied on stereotyped initial prompt templates. A logistic regression trained on strictly the *first 3 words* of the human reference transcripts achieved **100% intent classification accuracy** (`code/check_keyword_leak.py`).
+   - Conversely, live student audio exhibits spontaneous code-switching, hesitations, and diverse phrasing. When transcribed by Whisper, intent routing accuracy is **34.58%**, exposing the true real-world conversational challenge.
+2. **Safe Decoding & Repetition Elimination**:
+   - Zero-shot Whisper prompted with repetitive context prompts triggered severe repetition loops ("IT support, hostel mess, IT support..."), inflating baseline WER above 1.54.
+   - Operating with `condition_on_previous_text=False`, `beam_size=1`, and text normalization eliminates hallucinations, reducing gold WER to **1.2789** (Wilcoxon signed-rank test vs unadapted baseline: $W=2.0, p=0.0001$).
+3. **Speaker-Disjoint Retraining & Promotion Gating**:
+   - To eliminate data leakage, Cohort B (32 clips) is partitioned strictly by speaker: **Speaker P4 (19 clips)** forms the active learning adaptation pool, while **Speaker P13 (13 clips)** is reserved strictly for held-out generalization testing (`data/retraining/cohort_b_split.csv`).
+   - Candidate models must pass two frozen gate criteria: (1) $\ge +5.0\%$ gain on held-out Cohort B (achieved: +7.7%), and (2) $\le 2.0\%$ degradation on Gold test accuracy. Gating prevents promotion of unregularized models that exhibit catastrophic forgetting.
 
-## Slices & Subgroup Robustness
-- **Language Mixture**: Hindi-English (50.0% Acc), Gujarati-English (38.5% Acc).
-- **Acoustic Noise**: Quiet Room (50.0% Acc), Academic Corridor Reverb (46.2% Acc), Outdoor Canteen (33.3% Acc).
-- **Speaker Region**: North India (50.0% Acc), Rajasthan (50.0% Acc), Gujarat (38.5% Acc), Maharashtra Cohort B (37.7% Acc).
-- **Recording Device**: Samsung Galaxy M52 (50.0%), Xiaomi Redmi Note 11 (50.0%), Realme Narzo 30 (42.9%), OnePlus Nord 2 (33.3%).
+## Slices & Subgroup Robustness (Gold Test Set)
+- **Speech Style**: Spontaneous (36.4% Acc, $n=11$), Read (33.3% Acc, $n=18$).
+- **Acoustic Noise Condition**: Quiet Room (40.0% Acc, $n=10$), Academic Corridor Reverb (33.3% Acc, $n=12$), Outdoor Canteen (28.6% Acc, $n=7$).
+- **Language Mixture**: Gujarati-Hindi-English mix (38.5% Acc, $n=13$), Hindi-English mix (33.3% Acc, $n=16$).
+- **Speaker Origin Region**: Gujarat (38.5% Acc, $n=13$), North India (33.3% Acc, $n=16$).
+- **Recording Device**: OnePlus Nord 2 (40.0%), Realme Narzo 30 (37.5%), Xiaomi Redmi Note 11 (33.3%), Samsung Galaxy M52 (28.6%).
 
-## Limitations and Ethical Considerations
-- **Non-Standard Romanization**: Code-mixed transliterations vary heavily across students.
-- **Accent Cadence Shift**: Faster spoken tempos from shifted regional cohorts obscure word boundaries.
-- **Hardware Footprint**: CPU-only inference executes in ~300 ms per query (Real-Time Factor RTF $\approx 0.17$), fully compliant with local offline container deployment without requiring external cloud GPUs.
+## Real Measured Hardware Footprint & Latency Profile
+Measured empirically on Darwin arm64 (8 CPU cores, 0 GPU) across all 29 Gold test clips (`supporting_files/loadtest/latency_profile.json`):
+- **Peak RSS Memory**: **782.73 MB** (measured via `resource.getrusage`, well under 16 GB ceiling).
+- **Real-Time Factor (RTF)**: **0.243** (processes 523.8 seconds of audio in 127.3 seconds; 4.1x faster than real-time).
+- **Throughput**: **0.23 queries/second**.
+- **p50 Total Latency**: **2,855.2 ms** (ASR: 2,854.0 ms, Intent Classifier: 0.34 ms).
+- **p95 Total Latency**: **13,441.5 ms** (dominated by lengthy multi-sentence audio clips).

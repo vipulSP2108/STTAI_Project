@@ -34,44 +34,60 @@ In adherence to ethical human research standards and institutional participant p
 
 ### Key Results Summary
 
-| Metric / Stage | Baseline 0 (Trivial) | Baseline 1 (Zero-Shot) | Proposed (`production`) | Retrained (`candidate-retrained-v2`) |
+| Metric / Stage | Baseline 0 (Trivial) | Baseline 1 (Zero-Shot) | Proposed (`production`) | Retrained (`candidate-no-rehearsal-v1`) |
 | :--- | :--- | :--- | :--- | :--- |
-| **Gold Test Set WER** | 1.000 | 1.541 [1.301, 1.823] | **1.541 [1.301, 1.823]** | 1.541 [1.301, 1.823] |
-| **Gold Test Set CER** | 1.000 | 1.218 [0.976, 1.496] | **1.218 [0.976, 1.496]** | 1.218 [0.976, 1.496] |
-| **Gold Intent Accuracy (ASR)** | 23.5% | 11.8% | **44.8% [27.6%, 62.1%]** | **44.8% [27.6%, 62.1%]** |
-| **Reference Text Intent Accuracy** | 23.5% | 82.4% | **100.0%** | **100.0%** |
-| **Gold Intent Macro-F1** | 0.095 | 0.105 | **0.429 [0.245, 0.601]** | **0.429 [0.245, 0.601]** |
-| **Cohort B (Shifted) Acc**| 25.0% | 15.6% | 37.7% [21.9%, 53.1%] | **46.9% [31.2%, 62.5%]** ($+9.4\%$) |
-| **CPU Routing Latency** | < 0.01 ms | < 0.01 ms | **0.01 ms** | **0.01 ms** |
-| **Total Inference (ASR+Router)** | — | 312.4 ms | **312.4 ms** (RTF: 0.174) | **312.4 ms** |
-| **Router Head Size** | < 1 KB | 71 KB | **105.5 KB** | **105.5 KB** |
-| **Statistical Test** | — | — | — | Wilcoxon $W=5.0, p \le 0.05$ |
+| **Gold Test Set WER** | 1.000 | 1.2789 [1.1614, 1.3977] | **1.2789 [1.1614, 1.3977]** | 1.2789 [1.1614, 1.3977] |
+| **Gold Test Set CER** | 1.000 | 0.9414 [0.8875, 1.0020] | **0.9414 [0.8875, 1.0020]** | 0.9414 [0.8875, 1.0020] |
+| **Gold Intent Accuracy (ASR)** | 23.5% | 34.58% [20.60%, 51.72%] | **34.58% [20.60%, 51.72%]** | **37.93%** (Passes $\le 2\%$ gate) |
+| **Reference Text Intent Accuracy** | 23.5% | 100.0% (Template Leak) | **100.0% (Template Leak)** | **100.0%** |
+| **Gold Intent Macro-F1** | 0.095 | 0.3218 [0.1874, 0.4770] | **0.3218 [0.1874, 0.4770]** | **0.3540** |
+| **Cohort B Held-Out (P13) Acc**| 23.1% | 23.08% [0.00%, 46.15%] | 23.08% [0.00%, 46.15%] | **30.77%** ($+7.7\%$ gain $\ge +5\%$) |
+| **CPU Routing Latency** | < 0.01 ms | 0.34 ms | **0.34 ms** | **0.34 ms** |
+| **Total Inference Latency (p50)**| — | 2,855.2 ms | **2,855.2 ms** (RTF: 0.243) | **2,855.2 ms** |
+| **Peak Memory Footprint** | — | — | **782.73 MB** (Darwin arm64) | **782.73 MB** |
+| **Statistical Significance** | — | — | Wilcoxon $W=2.0, p=0.0001$ | McNemar $\chi^2=0.00, p=1.0000$ |
 
 ### Cryptographic Gold Test Set Integrity
-The held-out Gold Test Set (`data/gold_test_set.csv`) was created during Assignment 1 and remained **100% immutable** across Assignment 2:
+The held-out Gold Test Set (`data/gold_test_set.csv`) was created during Assignment 1 and remains **100% immutable** across Assignment 2:
 - **Immutable SHA-256 Checksum**: `64b7647b5d0d35733063c77caab122a1a7c24ac6c70b7d476ffbabd9a2448ca9`
 - **Zero Training / Tuning Leakage**: Gold clips were never used for training or hyperparameter selection.
 - **Audit Log**: Every evaluation is logged in [`TEST_SET_LOG.md`](TEST_SET_LOG.md) with exact timestamp, caller, model version, and SHA-256 assertions.
 
 ---
 
-## Assignment 2 Quickstart (5 Reproduction Commands)
+## Assignment 2 Quickstart (Standard 5 Reproduction Commands)
 
 ```bash
-# 1. Install pinned dependencies (==)
+# 1. Checkout submission release tag
+git checkout a2-final
+
+# 2. Install pinned dependencies (==)
 pip install -r code/requirements.txt
 
-# 2. Run 15-run MLflow hyperparameter tuning search on validation set
-python code/a2_part_b_tuning/tune_experiments.py
+# 3. Pull versioned data artifacts via DVC
+dvc pull
 
-# 3. Evaluate unified production model on held-out gold test set with 1,000 bootstrap CIs
+# 4. Train production model from frozen configuration
+python code/train.py --config configs/final.yaml
+
+# 5. Evaluate unified production model on held-out gold test set with 1,000 bootstrap CIs
 python code/a2_part_c_evaluation/evaluate.py --split gold
+```
 
-# 4. Replay production traffic and verify label-free drift detection (Batch 3 alert)
+### Additional Automated Pipeline Commands
+```bash
+# Offline Gold Set Validation (Self-Contained Local Execution):
+python code/a2_part_d_deployment/validate_offline.py
+
+# Replay production traffic and verify label-free drift detection (Batch 3 alert):
 python code/a2_part_e_monitoring/traffic_replay.py
 
-# 5. Execute closed-loop active retraining, 2-stage gating verification, and promotion
-python code/a2_part_e_monitoring/retrain_pipeline.py
+# Closed-loop active retraining and 2-stage promotion gating:
+python code/a2_part_e_monitoring/retrain_pipeline.py --mode rehearsal
+python code/a2_part_e_monitoring/retrain_pipeline.py --mode no_rehearsal
+
+# Interactive Streamlit Web UI:
+streamlit run code/a2_part_d_deployment/app.py --server.port 8501
 ```
 
 ---

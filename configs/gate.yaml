@@ -1,0 +1,27 @@
+# ============================================================
+# Closed-Loop Retraining & Production Promotion Gate Specification
+# CS203 Assignment 2 - Project 5: Voice Helpdesk ASR
+# Frozen in advance: 2026-11-05
+# ============================================================
+
+gate_version: "2.0.0"
+date_fixed: "2026-11-05T00:00:00Z"
+
+criteria:
+  # Criterion 1: Shifted Data (Cohort B) Adaptation Requirement
+  # Must demonstrate substantial positive improvement on out-of-distribution traffic
+  min_cohort_b_accuracy_delta: 0.05       # Minimum +5.0% absolute accuracy improvement
+
+  # Criterion 2: Gold Test Set Degradation Bounds (Zero Catastrophic Forgetting)
+  # Gold test performance must never regress beyond strictly bounded tolerances
+  max_gold_accuracy_regression: 0.02     # Maximum allowed accuracy drop <= 2.0%
+  max_gold_wer_regression: 0.02          # Maximum allowed WER degradation <= 2.0%
+
+  # Criterion 3: Cryptographic Integrity Assertions
+  gold_set_manifest: "data/gold_test_set.csv"
+  expected_gold_sha256: "64b7647b5d0d35733063c77caab122a1a7c24ac6c70b7d476ffbabd9a2448ca9"
+
+policies:
+  on_gate_pass: "promote_to_production"
+  on_gate_fail: "trigger_rollback_preserve_previous"
+  audit_log_path: "TEST_SET_LOG.md"

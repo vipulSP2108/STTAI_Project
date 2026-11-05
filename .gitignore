@@ -32,4 +32,4 @@ temp_*.wav
 # Local DVC remotes
 ../dvc-remote
 
-IMPROVEMENT_PLAN.md
+dump

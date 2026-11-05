@@ -13,12 +13,12 @@
     "whisper_model": "base"
   },
   "metrics": {
-    "transcript_wer": 1.5411,
-    "transcript_cer": 1.2178,
-    "intent_accuracy": 0.4483,
-    "intent_macro_f1": 0.429,
+    "transcript_wer": 1.2774,
+    "transcript_cer": 0.9401,
+    "intent_accuracy": 0.3448,
+    "intent_macro_f1": 0.3472,
     "evaluated_clips": 29,
-    "mean_inference_latency_ms": 0.0,
+    "mean_inference_latency_ms": 0.1,
     "cpu_real_time_factor": 0.0,
     "total_audio_duration_sec": 523.8
   },
