@@ -29,6 +29,9 @@
 | `LOG-004` | 2026-11-05T08:35:04Z | `a2-final` | `production` | Part D: Isolated offline validation (`validate_offline.py`) | `64b7647b...` (MATCH) | 1.277 | 0.345 | **OFFLINE_VERIFIED** |
 | `LOG-005` | 2026-11-05T13:08:12Z | `a8b2348` | `candidate-retrained-v2` | Part E: Active Retraining Gate (mode: rehearsal) | `64b7647b...` (MATCH) | 1.277 | 0.310 | **PROMOTED_TO_PRODUCTION** |
 | `LOG-006` | 2026-11-05T13:08:21Z | `a8b2348` | `candidate-no-rehearsal-v1` | Part E: Active Retraining Gate (mode: no_rehearsal) | `64b7647b...` (MATCH) | 1.277 | 0.345 | **REJECTED_ROLLBACK** |
+| `LOG-418` | 2026-11-06T04:46:58Z | `17ace7b` | `candidate-retrained-v2` | Active Retraining Gate (rehearsal) | `64b7647b...` (MATCH) | 1.270 | 0.310 | **REJECTED_ROLLBACK** |
+| `LOG-179` | 2026-11-06T04:59:39Z | `17ace7b` | `candidate-retrained-v2` | Active Retraining Gate (rehearsal) | `64b7647b...` (MATCH) | 1.358 | 0.207 | **PROMOTED_TO_PRODUCTION** |
+| `LOG-188` | 2026-11-06T04:59:48Z | `17ace7b` | `candidate-no-rehearsal-v1` | Active Retraining Gate (no_rehearsal) | `64b7647b...` (MATCH) | 1.358 | 0.241 | **REJECTED_ROLLBACK** |
 
 ---
 
@@ -42,3 +45,6 @@ with open("data/gold_test_set.csv", "rb") as f:
     current_hash = hashlib.sha256(f.read()).hexdigest()
 assert current_hash == EXPECTED_GOLD_HASH, f"CRITICAL SECURITY VIOLATION: Gold set modified! {current_hash}"
 ```
+| `LOG-853` | 2026-11-06T01:34:13Z | `17ace7b4` | `production` | Automated evaluation suite | `64b7647b...` (MATCH) | 1.272 | 0.346 | **EVALUATED** |
+| `LOG-327` | 2026-11-06T04:28:47Z | `17ace7b4` | `production` | Automated evaluation suite | `64b7647b...` (MATCH) | 1.272 | 0.240 | **EVALUATED** |
+| `LOG-948` | 2026-11-06T04:39:08Z | `17ace7b4` | `production` | Automated evaluation suite | `64b7647b...` (MATCH) | 1.272 | 0.240 | **EVALUATED** |

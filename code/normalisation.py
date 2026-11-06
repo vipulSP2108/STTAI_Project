@@ -25,6 +25,11 @@ def normalise_text(text: str) -> str:
     # 2. Lowercase
     text = text.lower()
 
+    # 2b. Transliterate accented Latin letters and strip non-Latin script artifacts (Devanagari/Urdu/CJK)
+    text = unicodedata.normalize("NFKD", text)
+    text = "".join(c for c in text if not unicodedata.combining(c))
+    text = re.sub(r"[^\x00-\x7F]+", " ", text)
+
     # 3. Strip punctuation
     text = PUNCTUATION_REGEX.sub(" ", text)
 

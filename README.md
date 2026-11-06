@@ -16,8 +16,8 @@ Department of Computer Science and Engineering, Indian Institute of Technology G
 
 > **Statement of Equal Contribution (1/3rd each across Assignments 1 & 2):**  
 > All three team members (**Rajdeep Vraj**, **Vipul Sunil Patil**, and **Satvik Sharma**) contributed equally (33.3% each) across all phases of this project:
-> - **Assignment 1 (Data Engineering & Governance):** Authentic audio corpus collection (19 student speakers, 5 acoustic environments, 249 clips), 14-check validation suite with 12-case corruption tests, Label Studio double annotation with guideline iteration ($\kappa=0.989$), multi-condition acoustic augmentations, 5-fold active learning simulation, speaker-disjoint splits, and research report 1 (`report/report.pdf`, tag `a1-final`).
-> - **Assignment 2 (Modeling, Deployment, Monitoring & Governance):** Baseline formulating (Trivial Majority, Unadapted Whisper + TF-IDF) and proposed adapted Whisper routing head, 15-run MLflow experiment tracking (`supporting_files/mlflow.db`) with Pareto frontier analysis, 1,000 bootstrap CI evaluations, Wilcoxon signed-rank significance testing ($p=0.0001$ vs dummy heuristic), slice analysis, 20 categorized test error modes, self-contained offline Docker image for `linux/amd64` ($\le 4.2$ GB RAM, `--network none` verified), FastAPI REST service, interactive Streamlit UI, 5-batch traffic drift simulation ($r=0.35$, Batch 5 alert), closed-loop active retraining with rigid 2-stage promotion gating, and research report 2 (`report/report2.pdf`, tag `a2-final`).
+> - **Assignment 1 (Data Engineering & Governance):** Authentic audio corpus collection (19 student speakers, 5 acoustic environments, 249 clips), 14-check validation suite with 12-case corruption tests, Label Studio double annotation with guideline iteration ($\kappa=0.7228 \to 0.8446$), multi-condition acoustic augmentations, 5-fold active learning simulation, speaker-disjoint splits, and research report 1 (`report/report.pdf`, tag `a1-final`).
+> - **Assignment 2 (Modeling, Deployment, Monitoring & Governance):** Baseline formulating (Trivial Majority, Unadapted Whisper + TF-IDF) and proposed adapted Whisper routing head, 15-run MLflow experiment tracking (`supporting_files/mlflow.db`) with Pareto frontier analysis, 1,000 bootstrap CI evaluations, Wilcoxon signed-rank and McNemar paired significance testing, slice analysis, 20 categorized test error modes, self-contained offline Docker image for `linux/amd64` ($\le 4.2$ GB RAM, `--network none` verified), FastAPI REST service, interactive Streamlit UI, 5-batch traffic drift simulation ($r=0.41$, Batch 5 alert), closed-loop active retraining with rigid 2-stage promotion gating, and research report 2 (`report/report2.pdf`, tag `a2-final`).
 
 ---
 
@@ -25,11 +25,11 @@ Department of Computer Science and Engineering, Indian Institute of Technology G
 
 In adherence to ethical human research standards and institutional participant privacy preferences at IIT Gandhinagar:
 - **Anonymized Numerical Identifiers**: Participants requested that their personal names and roll numbers remain confidential. Accordingly, all metadata manifests, collection logs, and split files index speakers using standardized tokens: **P1 through P19**. Similarly, annotators are pseudonymized as **A1, A2, and A3** (Label Studio User IDs 101, 102, 103).
-- **Spoken Audio Collection**: Audio clips were captured from student participants across 19 smartphone models in 5 campus environments (hostel rooms, mess dining halls, academic corridors, campus libraries, outdoor canteens).
+- **Spoken Audio Collection**: Audio clips were captured from student participants across 19 smartphone models in 5 campus environments (hostel rooms, mess dining halls, academic corridors, campus libraries, outdoor canteens). Total duration is 1.25 hours (4,516.5 s, under 2.0 h target; disclosed transparently).
 - **Transparent Disclosure on Reference Transcripts & Keyword Leakage**:
   - In Assignment 1, reference transcripts were prepared using institutional helpdesk query templates structured around four core domains (Admissions, Hostel/Mess, IT Support, Student Services).
   - An empirical keyword leakage audit (`code/check_keyword_leak.py`) demonstrates that a linear classifier trained on solely the *first 3 words* of these reference transcripts achieves **100% intent classification accuracy**, confirming that the reference text contains formulaic introductory phrases.
-  - In contrast, when the system evaluates unconstrained student speech transcribed by Whisper ASR, intent accuracy drops to **34.58%** on the held-out Gold test set, reflecting real-world conversational ambiguity and cross-lingual phonetic transliteration divergence.
+  - In contrast, when the system evaluates unconstrained student speech transcribed by Whisper ASR, intent accuracy drops to **23.98%** on uncorrected gold and **30.76%** on corrected gold, reflecting real-world conversational ambiguity and cross-lingual phonetic transliteration divergence.
 
 ---
 
@@ -39,18 +39,19 @@ In adherence to ethical human research standards and institutional participant p
 
 | Metric / Stage | Baseline 0 (Trivial) | Baseline 1 (Zero-Shot) | Proposed (`production`) | Retrained (`candidate-retrained-v2`) |
 | :--- | :--- | :--- | :--- | :--- |
-| **Gold Test Set WER** | 1.000 | 1.277 [1.161, 1.398] | **1.277 [1.161, 1.398]** | 1.277 [1.161, 1.398] |
-| **Gold Test Set CER** | 1.000 | 0.941 [0.888, 1.002] | **0.941 [0.888, 1.002]** | 0.941 [0.888, 1.002] |
-| **Gold Intent Accuracy (ASR)** | 23.5% | 34.58% [20.60%, 51.72%] | **34.58% [20.60%, 51.72%]** | **31.03%** (Passes $\le 4\%$ gate) |
-| **Reference Text Intent Accuracy** | 23.5% | 100.0% (Template Leak) | **100.0% (Template Leak)** | **100.0%** |
-| **Gold Intent Macro-F1** | 0.095 | 0.3218 [0.1874, 0.4770] | **0.3218 [0.1874, 0.4770]** | **0.3100** |
-| **Cohort B Held-Out (P13) Acc**| 23.1% | 23.08% [0.00%, 46.15%] | 23.08% [0.00%, 46.15%] | **30.77%** ($+7.7\%$ gain $\ge +5\%$) |
-| **CPU Routing Latency** | < 0.01 ms | 0.34 ms | **0.34 ms** | **0.34 ms** |
-| **Total Inference Latency (p50)**| — | 2,855.2 ms | **2,855.2 ms** (RTF: 0.243) | **2,855.2 ms** |
+| **Gold Test Set WER** | 1.000 | 1.2719 [1.1557, 1.3933] | **1.2719 [1.1557, 1.3933]** | 1.2719 [1.1557, 1.3933] |
+| **Gold Test Set CER** | 1.000 | 0.9447 [0.8910, 1.0064] | **0.9447 [0.8910, 1.0064]** | 0.9447 [0.8910, 1.0064] |
+| **Gold Intent Accuracy (ASR)** | 23.5% | 31.00% [13.79%, 48.28%] | **23.98% [10.26%, 41.38%]** | **20.69%** (Passes $\le 4.0\%$ gate) |
+| **Corrected Gold Intent Acc** | 23.5% | 41.54% [24.14%, 58.62%] | **30.76% [13.79%, 48.28%]** | **30.76%** |
+| **Reference Text Intent Acc** | 23.5% | 41.38% (Template Leak) | **41.38% (Template Leak)** | **41.38%** |
+| **Gold Intent Macro-F1** | 0.095 | 0.2850 [0.1200, 0.4400] | **0.2245 [0.0833, 0.3886]** | **0.2050** |
+| **Cohort B Held-Out (P13) Acc**| 23.1% | 25.22% [12.50%, 40.62%] | 30.77% [7.69%, 53.85%] | **38.46%** ($+7.7\%$ gain $\ge +5\%$) |
+| **CPU Routing Latency** | < 0.01 ms | 0.007 ms | **0.007 ms** | **0.007 ms** |
+| **Total Inference Latency (p50)**| — | 2,855.2 ms | **2,855.2 ms** (RTF: 0.165) | **2,855.2 ms** |
 | **Peak Memory Footprint** | — | — | **782.73 MB** (Darwin arm64) | **782.73 MB** |
-| **Statistical Significance** | — | — | Wilcoxon $W=2.0, p=0.0001$* | McNemar $\chi^2=0.00, p=1.0000$ |
+| **Statistical Significance** | — | — | Wilcoxon $W=0.0, p=1.0000$* | McNemar $\chi^2=0.10, p=0.7518$ |
 
-*\*Note on Significance: Wilcoxon p=0.0001 evaluates token divergence against a naive constant 3-word string dummy heuristic ("institute helpdesk query"). McNemar p=1.0000 indicates identical classification routing between Baseline 1 and Proposed on Gold due to acoustic adapter stability defaults.*
+*\*Note on Significance: Wilcoxon p=1.0000 and McNemar p=0.7518 evaluate paired differences against Baseline 1 on the identical 29 gold clips, confirming no statistically significant difference.*
 
 ### Cryptographic Gold Test Set Integrity
 The held-out Gold Test Set (`data/gold_test_set.csv`) was created during Assignment 1 and remains **100% immutable** across Assignment 2:

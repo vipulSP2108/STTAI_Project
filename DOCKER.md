@@ -61,7 +61,7 @@ docker run --rm --network none voice-helpdesk-asr:a2-final validate
     "cpu_real_time_factor": 0.165,
     "total_audio_duration_sec": 523.8
   },
-  "offline_network_isolated": true,
+  "offline_network_isolated": false,
   "offline_verified": true
 }
 ```

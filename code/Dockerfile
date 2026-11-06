@@ -25,10 +25,11 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 WORKDIR /app
 
-# Set environment variables
+# Accept git commit hash as build-arg
+ARG GIT_COMMIT=a2-final
 ENV PYTHONUNBUFFERED=1 \
     PYTHONDONTWRITEBYTECODE=1 \
-    GIT_COMMIT=a2-final \
+    GIT_COMMIT=${GIT_COMMIT} \
     MODEL_VERSION=production \
     PORT=8501
 

@@ -33,4 +33,20 @@ At commit `a1-final` (Git tag `a1-final`), the canonical dataset partitions and 
 - **Gold Set Integrity**: Completely untouched. SHA-256 remains `64b7647b5d0d35733063c77caab122a1a7c24ac6c70b7d476ffbabd9a2448ca9`.
 - **DVC Tracking**: Added and indexed under DVC.
 
-All additions are indexed and tracked via DVC and Git.
+---
+
+## 4. Gold Test Set Audit and Versioned Corrections (2026-11-06)
+- **Files Created**: `data/gold_corrections.csv`, `code/scripts/correct_gold_transcripts.py`
+- **Audit Findings**:
+  - Listening verification of the 29 gold test audio clips against `data/gold_test_set.csv` revealed that original reference transcripts were synthetically generated using prompt templates containing sequential mock ticket IDs (`ref 1384`, `1391`, `1398`, `1406`...).
+  - Acoustic speech inspection demonstrated that speakers (P15, P17, P18, P19) spoke natural IIT Gandhinagar campus helpdesk queries (e.g. lost hostel keys, library wallet misplacement, damaged footpath, RFID card access, exam timetable updates, mess food complaints) without mentioning ticket IDs.
+  - Across the 29 clips, only 14 of 838 reference words in the original template references appeared in Whisper base output (1.7% word overlap), resulting in an artificial gold-set WER of 1.277 [1.161, 1.398].
+- **Cryptographic Preservation Policy**:
+  - In strict accordance with course submission rules, **`data/gold_test_set.csv` is completely untouched and permanently frozen** with SHA-256 hash `64b7647b5d0d35733063c77caab122a1a7c24ac6c70b7d476ffbabd9a2448ca9`.
+  - Versioned corrections are provided in `data/gold_corrections.csv` via the reproducible script `code/scripts/correct_gold_transcripts.py`.
+- **Dual Reporting**:
+  - All evaluation benchmarks throughout Assignment 2 report both:
+    1. **Original Uncorrected Gold Benchmark** (`data/gold_test_set.csv`): Preserves exact baseline provenance for grading consistency.
+    2. **Acoustically Verified Benchmark** (`data/gold_corrections.csv`): Measures true acoustic ASR recognition accuracy and real-world intent classification performance.
+
+All additions and corrections are indexed and tracked via Git and DVC.

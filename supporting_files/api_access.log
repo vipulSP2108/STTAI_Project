@@ -7,3 +7,5 @@
 [2026-11-06 06:15:30] model=production intent=it_support conf=0.283 lat_ms=5529.47
 [2026-11-06 06:23:59] model=production intent=it_support conf=0.283 lat_ms=4746.61
 [2026-11-06 06:35:41] model=production intent=it_support conf=0.283 lat_ms=4514.00
+[2026-11-06 10:33:50] model=production intent=admissions conf=0.513 lat_ms=4729.99
+[2026-11-06 10:38:18] model=production intent=admissions conf=0.513 lat_ms=4657.93

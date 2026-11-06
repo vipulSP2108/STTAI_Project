@@ -94,8 +94,25 @@ def train_pipeline(config_path="configs/final.yaml", compare_augmentations=False
     df_val = load_dataset(cfg["data"]["val_manifest"], data_dir)
     print(f"Loaded Train: {len(df_train)} clips | Val: {len(df_val)} clips")
 
+    # Load ASR transcripts for training clips if available (bridges domain gap)
+    train_cache_path = data_dir / "processed/whisper_base_train_cache.json"
+    train_cache = {}
+    if train_cache_path.exists():
+        try:
+            with open(train_cache_path, "r") as f:
+                train_cache = json.load(f)
+        except Exception:
+            train_cache = {}
+
+    norm_train_tx = []
+    for _, r in df_train.iterrows():
+        cid = r["clip_id"]
+        if cid in train_cache:
+            norm_train_tx.append(normalise_text(train_cache[cid].get("pred_transcript", r["transcript"])))
+        else:
+            norm_train_tx.append(normalise_text(r["transcript"]))
+
     # 1. Fit Vectorizer on Training Transcripts (normalised)
-    norm_train_tx = [normalise_text(t) for t in df_train["transcript"].astype(str)]
     feat_cfg = cfg.get("features", {})
     vectorizer = TfidfVectorizer(
         ngram_range=tuple(feat_cfg.get("ngram_range", [1, 2])),
@@ -213,17 +230,30 @@ def train_pipeline(config_path="configs/final.yaml", compare_augmentations=False
     comp_results = []
     if compare_augmentations:
         print("\n=== Running Empirical Comparison Across Training Configurations (Guide Section 3.1.4) ===")
-        # Load augmented metadata if exists
         aug_p = data_dir / "processed/augmented/augmented_metadata.csv"
         df_aug = pd.read_csv(aug_p) if aug_p.exists() else pd.DataFrame()
 
-        # Build genuine datasets
+        al_p = data_dir / "retraining/train_retrained.csv"
+        df_al = pd.read_csv(al_p) if al_p.exists() else pd.DataFrame()
+        if not df_al.empty and "transcript" not in df_al.columns:
+            df_tx_all = pd.read_csv(data_dir / "labels/transcripts.csv")
+            df_al = df_al.merge(df_tx_all, on="clip_id", how="left")
+            if "intent" not in df_al.columns:
+                df_int_all = pd.read_csv(data_dir / "labels/intents.csv")
+                df_al = df_al.merge(df_int_all, on="clip_id", how="left")
+
+        # Build 3 empirical ablation configurations
         datasets = {
             "Train Only (171 clips)": df_train[["transcript", "intent"]].copy(),
         }
         if not df_aug.empty:
             datasets["Train + Augmented (231 clips)"] = pd.concat(
                 [df_train[["transcript", "intent"]], df_aug[["transcript", "intent"]]],
+                ignore_index=True
+            )
+        if not df_al.empty:
+            datasets["Train + AL Selected (183 clips)"] = pd.concat(
+                [df_train[["transcript", "intent"]], df_al[["transcript", "intent"]]],
                 ignore_index=True
             )
 
@@ -257,19 +287,31 @@ def train_pipeline(config_path="configs/final.yaml", compare_augmentations=False
                 val_feats = torch.tensor(t_vec.transform(val_preds_tx).toarray(), dtype=torch.float32)
                 p_out = t_model(val_feats).argmax(dim=1).numpy()
             c_acc = float(accuracy_score(y_val_indices, p_out))
-            c_wer = float(val_wer)  # Whisper base validation WER remains governed by acoustic backbone
+            c_f1 = float(f1_score(y_val_indices, p_out, average="macro", zero_division=0))
+            c_wer = float(val_wer)
+
+            # Empirical bootstrap 95% CI on validation accuracy
+            rng = np.random.default_rng(seed)
+            boot_accs = []
+            for _ in range(1000):
+                b_idx = rng.choice(len(y_val_indices), size=len(y_val_indices), replace=True)
+                boot_accs.append(accuracy_score(y_val_indices[b_idx], p_out[b_idx]))
+            ci_low = np.percentile(boot_accs, 2.5)
+            ci_high = np.percentile(boot_accs, 97.5)
 
             with mlflow.start_run(run_name=f"emp_eval_{name.split()[0].lower()}") as ab_run:
                 mlflow.log_param("training_data", name)
                 mlflow.log_param("num_samples", len(d_df))
-                mlflow.log_metrics({"val_wer": c_wer, "val_intent_acc": c_acc})
+                mlflow.log_param("git_commit", git_commit)
+                mlflow.log_metrics({"val_wer": c_wer, "val_intent_acc": c_acc, "val_macro_f1": c_f1})
                 ab_id = ab_run.info.run_id
 
             comp_results.append({
-                "Training Data": name,
+                "Training Configuration": name,
                 "Sample Count": len(d_df),
-                "Val WER (Whisper Base)": f"{c_wer:.3f}",
-                "Val Intent Acc": f"{c_acc*100:.1f}%",
+                "Val WER": f"{c_wer:.3f}",
+                "Val Intent Acc (95% CI)": f"{c_acc*100:.1f}% [{ci_low*100:.1f}%, {ci_high*100:.1f}%]",
+                "Val Macro-F1": f"{c_f1:.3f}",
                 "MLflow Run ID": ab_id[:8]
             })
 

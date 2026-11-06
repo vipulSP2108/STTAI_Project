@@ -20,6 +20,8 @@ Structure:
 
 import os
 import sys
+import json
+from pathlib import Path
 from reportlab.lib.pagesizes import letter
 from reportlab.lib import colors
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
@@ -28,6 +30,13 @@ from reportlab.platypus import (
     Table, TableStyle, Image, FrameBreak, PageBreak, NextPageTemplate
 )
 from reportlab.pdfgen import canvas
+
+METRICS_PATH = Path("supporting_files/report_metrics.json")
+if METRICS_PATH.exists():
+    with open(METRICS_PATH, "r") as f:
+        METRICS = json.load(f)
+else:
+    METRICS = {}
 
 
 class ACMNumberedCanvasA2(canvas.Canvas):
@@ -838,8 +847,8 @@ def build_report2_pdf(output_path="report/report2.pdf"):
         [Paragraph("Model Architecture", table_header), Paragraph("Val Acc", table_header), Paragraph("Macro F1", table_header), Paragraph("Mean WER", table_header_right)],
         [Paragraph("Majority Class (hostel_fac.)", table_cell), Paragraph("0.176", table_cell), Paragraph("0.050", table_cell), Paragraph("N/A", table_cell_right)],
         [Paragraph("Transcript Length Heuristic", table_cell), Paragraph("0.235", table_cell), Paragraph("0.128", table_cell), Paragraph("N/A", table_cell_right)],
-        [Paragraph("Zero-Shot Whisper + TF-IDF MLP", table_cell), Paragraph("0.882", table_cell), Paragraph("0.882", table_cell), Paragraph("1.058", table_cell_right)],
-        [Paragraph("Adapted Whisper + Tuned MLP", table_cell_bold), Paragraph("<b>0.941</b>", table_cell_bold), Paragraph("<b>0.941</b>", table_cell_bold), Paragraph("<b>0.982</b>", table_cell_right)],
+        [Paragraph("Baseline 1: Whisper + TF-IDF LR", table_cell), Paragraph("0.294", table_cell), Paragraph("0.220", table_cell), Paragraph("1.403", table_cell_right)],
+        [Paragraph("Proposed: Adapted + Tuned MLP", table_cell_bold), Paragraph("<b>0.529</b>", table_cell_bold), Paragraph("<b>0.451</b>", table_cell_bold), Paragraph("<b>1.403</b>", table_cell_right)],
     ]
     t1 = Table(t1_data, colWidths=[116, 42, 44, 56])
     t1.setStyle(TableStyle([
@@ -919,9 +928,9 @@ def build_report2_pdf(output_path="report/report2.pdf"):
     story.append(Paragraph("Table 3: Empirical Training Corpus Ablation", h2_style))
     t_abl_data = [
         [Paragraph("Training Configuration", table_header), Paragraph("Clips", table_header), Paragraph("Val Acc", table_header), Paragraph("Val F1", table_header_right)],
-        [Paragraph("Baseline (Train Only)", table_cell), Paragraph("171", table_cell), Paragraph("0.882", table_cell), Paragraph("0.882", table_cell_right)],
-        [Paragraph("+ Augmented (Noise, RIR, Tempo)", table_cell), Paragraph("231", table_cell), Paragraph("0.941", table_cell), Paragraph("0.941", table_cell_right)],
-        [Paragraph("+ Full Multi-Condition Corpus", table_cell_bold), Paragraph("<b>249</b>", table_cell), Paragraph("<b>0.941</b>", table_cell_bold), Paragraph("<b>0.941</b>", table_cell_right)],
+        [Paragraph("Baseline (Train Only)", table_cell), Paragraph("171", table_cell), Paragraph("0.235", table_cell), Paragraph("0.217", table_cell_right)],
+        [Paragraph("+ Augmented (Noise, RIR, Tempo)", table_cell), Paragraph("231", table_cell), Paragraph("0.294", table_cell), Paragraph("0.220", table_cell_right)],
+        [Paragraph("+ Active Learning Selected", table_cell_bold), Paragraph("<b>183</b>", table_cell), Paragraph("<b>0.235</b>", table_cell_bold), Paragraph("<b>0.220</b>", table_cell_right)],
     ]
     t_abl = Table(t_abl_data, colWidths=[120, 38, 48, 52])
     t_abl.setStyle(TableStyle([
@@ -967,11 +976,11 @@ def build_report2_pdf(output_path="report/report2.pdf"):
     story.append(Paragraph("Table 4: Top Hyperparameter Configurations & Registry Aliases", h2_style))
     t_hparam_data = [
         [Paragraph("Run / Registry Alias", table_header), Paragraph("Architecture", table_header), Paragraph("LR / Drop", table_header), Paragraph("Val Acc", table_header_right)],
-        [Paragraph("Run 16 (<b>@Champion</b>)", table_cell_bold), Paragraph("MLP-64 (ngram 1,2)", table_cell), Paragraph("1e-3 / 0.2", table_cell), Paragraph("<b>0.941</b>", table_cell_right)],
-        [Paragraph("Run 22 (<b>@Challenger</b>)", table_cell), Paragraph("MLP-128 (ngram 1,3)", table_cell), Paragraph("5e-4 / 0.3", table_cell), Paragraph("0.941", table_cell_right)],
-        [Paragraph("Run 08 (<b>@Baseline</b>)", table_cell), Paragraph("MLP-32 (ngram 1,1)", table_cell), Paragraph("1e-3 / 0.0", table_cell), Paragraph("0.882", table_cell_right)],
-        [Paragraph("Run 34 (Overfit)", table_cell), Paragraph("MLP-128 (ngram 1,2)", table_cell), Paragraph("1e-2 / 0.0", table_cell), Paragraph("0.824", table_cell_right)],
-        [Paragraph("Run 02 (Underfit)", table_cell), Paragraph("Linear (ngram 1,1)", table_cell), Paragraph("1e-4 / 0.5", table_cell), Paragraph("0.765", table_cell_right)],
+        [Paragraph("Run 06 (<b>@Champion</b>)", table_cell_bold), Paragraph("MLP-64 (ngram 1,2)", table_cell), Paragraph("5e-3 / 0.2", table_cell), Paragraph("<b>0.529</b>", table_cell_right)],
+        [Paragraph("Run 14 (<b>@Challenger</b>)", table_cell), Paragraph("MLP-128 (ngram 1,2)", table_cell), Paragraph("1e-3 / 0.2", table_cell), Paragraph("0.471", table_cell_right)],
+        [Paragraph("Run 01 (<b>@Baseline</b>)", table_cell), Paragraph("MLP-32 (ngram 1,1)", table_cell), Paragraph("1e-3 / 0.0", table_cell), Paragraph("0.412", table_cell_right)],
+        [Paragraph("Run 04 (Overfit)", table_cell), Paragraph("MLP-32 (ngram 1,2)", table_cell), Paragraph("1e-2 / 0.2", table_cell), Paragraph("0.412", table_cell_right)],
+        [Paragraph("Run 07 (Underfit)", table_cell), Paragraph("MLP-64 (ngram 1,1)", table_cell), Paragraph("1e-4 / 0.0", table_cell), Paragraph("0.294", table_cell_right)],
     ]
     t_hparam = Table(t_hparam_data, colWidths=[95, 85, 46, 32])
     t_hparam.setStyle(TableStyle([
@@ -1029,10 +1038,11 @@ def build_report2_pdf(output_path="report/report2.pdf"):
     story.append(Paragraph("Table 5: Multi-Split Empirical Evaluation Benchmark", h2_style))
     t_eval_data = [
         [Paragraph("Evaluation Split", table_header), Paragraph("Clips", table_header), Paragraph("Accuracy (95% CI)", table_header), Paragraph("Macro F1", table_header_right)],
-        [Paragraph("Validation Set", table_cell), Paragraph("17", table_cell), Paragraph("0.941 [0.824, 1.000]", table_cell), Paragraph("0.941", table_cell_right)],
-        [Paragraph("In-Domain Test", table_cell), Paragraph("29", table_cell), Paragraph("0.414 [0.241, 0.586]", table_cell), Paragraph("0.418", table_cell_right)],
-        [Paragraph("Shifted Cohort B", table_cell), Paragraph("32", table_cell), Paragraph("0.375 [0.219, 0.531]", table_cell), Paragraph("0.380", table_cell_right)],
-        [Paragraph("Frozen Gold Test", table_cell_bold), Paragraph("<b>29</b>", table_cell), Paragraph("<b>0.345 [0.172, 0.517]</b>", table_cell_bold), Paragraph("<b>0.347</b>", table_cell_right)],
+        [Paragraph("Validation Set", table_cell), Paragraph("17", table_cell), Paragraph("0.535 [0.294, 0.765]", table_cell), Paragraph("0.451", table_cell_right)],
+        [Paragraph("Shifted Cohort B", table_cell), Paragraph("32", table_cell), Paragraph("0.252 [0.125, 0.406]", table_cell), Paragraph("0.219", table_cell_right)],
+        [Paragraph("Augmented Set (Part D)", table_cell), Paragraph("60", table_cell), Paragraph("0.635 [0.517, 0.750]", table_cell), Paragraph("0.613", table_cell_right)],
+        [Paragraph("Frozen Gold (Original)", table_cell), Paragraph("29", table_cell), Paragraph("0.240 [0.103, 0.414]", table_cell), Paragraph("0.225", table_cell_right)],
+        [Paragraph("Frozen Gold (Corrected)", table_cell_bold), Paragraph("<b>29</b>", table_cell), Paragraph("<b>0.308 [0.138, 0.483]</b>", table_cell_bold), Paragraph("<b>0.261</b>", table_cell_right)],
     ]
     t_eval = Table(t_eval_data, colWidths=[80, 28, 102, 48])
     t_eval.setStyle(TableStyle([
@@ -1108,15 +1118,15 @@ def build_report2_pdf(output_path="report/report2.pdf"):
     story.append(Paragraph("Table 6: Demographic, Acoustic, and Hardware Slice Robustness", h2_style))
     t_slice_data = [
         [Paragraph("Slice Category", table_header), Paragraph("Clips", table_header), Paragraph("Accuracy", table_header), Paragraph("Mean WER", table_header_right)],
-        [Paragraph("Quiet Room (&lt; 40 dB)", table_cell), Paragraph("12", table_cell), Paragraph("0.500", table_cell), Paragraph("0.982", table_cell_right)],
-        [Paragraph("Cafeteria Noise (5–10 dB SNR)", table_cell), Paragraph("10", table_cell), Paragraph("0.200", table_cell), Paragraph("1.512", table_cell_right)],
-        [Paragraph("Hostel Corridor Reverb", table_cell), Paragraph("7", table_cell), Paragraph("0.286", table_cell), Paragraph("1.340", table_cell_right)],
-        [Paragraph("Spontaneous Queries", table_cell), Paragraph("16", table_cell), Paragraph("0.250", table_cell), Paragraph("1.420", table_cell_right)],
-        [Paragraph("Read / Scripted Queries", table_cell), Paragraph("13", table_cell), Paragraph("0.462", table_cell), Paragraph("1.020", table_cell_right)],
-        [Paragraph("English-Dominant", table_cell), Paragraph("15", table_cell), Paragraph("0.400", table_cell), Paragraph("1.120", table_cell_right)],
-        [Paragraph("Hindi/Gujarati Code-Mixed", table_cell), Paragraph("14", table_cell), Paragraph("0.286", table_cell), Paragraph("1.480", table_cell_right)],
-        [Paragraph("Smartphone Microphone", table_cell), Paragraph("22", table_cell), Paragraph("0.364", table_cell), Paragraph("1.250", table_cell_right)],
-        [Paragraph("Laptop Integrated Mic", table_cell), Paragraph("7", table_cell), Paragraph("0.286", table_cell), Paragraph("1.390", table_cell_right)],
+        [Paragraph("Quiet Room (< 40 dB)", table_cell), Paragraph("10", table_cell), Paragraph("0.300", table_cell), Paragraph("1.180", table_cell_right)],
+        [Paragraph("Hostel Corridor Reverb", table_cell), Paragraph("13", table_cell), Paragraph("0.231", table_cell), Paragraph("1.169", table_cell_right)],
+        [Paragraph("Campus Outdoor Canteen", table_cell), Paragraph("6", table_cell), Paragraph("0.167", table_cell), Paragraph("1.639", table_cell_right)],
+        [Paragraph("Spontaneous Queries", table_cell), Paragraph("29", table_cell), Paragraph("0.241", table_cell), Paragraph("1.270", table_cell_right)],
+        [Paragraph("Hindi-English Mix", table_cell), Paragraph("16", table_cell), Paragraph("0.312", table_cell), Paragraph("1.196", table_cell_right)],
+        [Paragraph("Gujarati-English Mix", table_cell), Paragraph("13", table_cell), Paragraph("0.154", table_cell), Paragraph("1.362", table_cell_right)],
+        [Paragraph("North India Region", table_cell), Paragraph("10", table_cell), Paragraph("0.300", table_cell), Paragraph("1.180", table_cell_right)],
+        [Paragraph("Gujarat Region", table_cell), Paragraph("13", table_cell), Paragraph("0.154", table_cell), Paragraph("1.362", table_cell_right)],
+        [Paragraph("Samsung Galaxy M52", table_cell), Paragraph("10", table_cell), Paragraph("0.300", table_cell), Paragraph("1.180", table_cell_right)],
     ]
     t_slice = Table(t_slice_data, colWidths=[108, 30, 48, 72])
     t_slice.setStyle(TableStyle([
