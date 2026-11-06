@@ -13,7 +13,7 @@
 #      docker run --rm -p 8501:8501 -p 8000:8000 voice-helpdesk-asr:a2-final
 # ============================================================
 
-FROM python:3.10-slim
+FROM python:3.10-slim@sha256:d9bba76dc77e0965d93e1577fe0d01b1b9e599e09d57a3e7a0864ac362c3f8f1
 
 # Install system audio and compilation tools
 RUN apt-get update && apt-get install -y --no-install-recommends \

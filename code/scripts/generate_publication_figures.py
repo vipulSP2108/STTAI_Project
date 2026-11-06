@@ -262,9 +262,9 @@ def create_iaa_progression():
     fig, ax = plt.subplots(figsize=(6.5, 3.4), dpi=300)
 
     stages = ['Round 1\n(Initial Guidelines)', 'Round 2\n(Refined Guidelines)', 'Post-Adjudication\n(Consensus)']
-    cohen_k = [0.8446, 0.9889, 1.0000]
-    kripp_a = [0.8441, 0.9888, 1.0000]
-    disagreements = [10, 1, 0]
+    cohen_k = [0.7228, 0.8446, 1.0000]
+    kripp_a = [0.7231, 0.8448, 1.0000]
+    disagreements = [25, 14, 0]
 
     x = np.arange(len(stages))
     w = 0.28
@@ -288,9 +288,9 @@ def create_iaa_progression():
         ax.text(r.get_x() + r.get_width()/2., h + 0.02, f'{h:.4f}', ha='center', va='bottom', fontsize=7.0)
 
     # Annotate disagreement drops
-    ax.annotate('10 Disagreements\n(Boundary Ambiguities)', xy=(0, 0.84), xytext=(0.2, 0.65),
+    ax.annotate('25 Disagreements\n(Initial Ambiguities)', xy=(0, 0.72), xytext=(0.2, 0.55),
                 arrowprops=dict(arrowstyle='->', color='#dc2626', lw=1.2), fontsize=7, color='#dc2626')
-    ax.annotate('1 Residual Case\n(Wi-Fi Credentials)', xy=(1, 0.98), xytext=(1.1, 0.80),
+    ax.annotate('14 Residual Cases\n(Refined v2)', xy=(1, 0.84), xytext=(1.1, 0.68),
                 arrowprops=dict(arrowstyle='->', color='#d97706', lw=1.2), fontsize=7, color='#d97706')
 
     plt.tight_layout()

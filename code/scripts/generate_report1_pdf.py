@@ -308,7 +308,7 @@ def build_report1_pdf(output_path="report/report.pdf"):
         "and provenance pipeline for Project 5 of CS203. We collect 1.255 hours of real student queries across 19 participants (249 canonical "
         "16 kHz mono WAV clips, mean duration 18.14 s). We implement an automated 14-check validation suite with <code>pytest</code> and "
         "<code>pandera</code>, achieving 100% pass on calibrated audio and catching 12/12 adversarial corruptions. A two-stage Label Studio "
-        "protocol improves inter-annotator consensus (Cohen's &kappa;: 0.8446 &rarr; 0.9889; WER: 0.002 &rarr; 0.000). We evaluate off-the-shelf "
+        "protocol improves inter-annotator consensus (Cohen's &kappa;: 0.7228 &rarr; 0.8446 &rarr; 1.0000; WER: 0.002 &rarr; 0.000). We evaluate off-the-shelf "
         "Whisper across 5 synthetic distortion families (1.058–1.679 WER) and simulate active learning uncertainty sampling, achieving 93.1% "
         "accuracy at budget <i>B</i>=30 clips vs. 86.3% for random sampling. Finally, we establish strict speaker-disjoint partitions "
         "(Train: 171, Val: 17, Test: 29, Cohort B: 32) with an immutable 29-clip Gold Test Set frozen under SHA-256 for Assignment 2."
@@ -520,11 +520,11 @@ def build_report1_pdf(output_path="report/report.pdf"):
     story.append(Paragraph("Table 3: Inter-Annotator Agreement Progression", h2_style))
     t3_data = [
         [Paragraph("IAA Metric", table_header), Paragraph("Round 1", table_header), Paragraph("Round 2", table_header), Paragraph("Post-Adjudication", table_header_right)],
-        [Paragraph("Cohen's &kappa; (Intent)", table_cell), Paragraph("0.8446", table_cell), Paragraph("0.9889", table_cell), Paragraph("<b>1.0000</b>", table_cell_right)],
-        [Paragraph("Krippendorff's &alpha;", table_cell), Paragraph("0.8441", table_cell), Paragraph("0.9888", table_cell), Paragraph("<b>1.0000</b>", table_cell_right)],
-        [Paragraph("Fleiss' Multi-Rater &kappa;", table_cell), Paragraph("0.8412", table_cell), Paragraph("0.9875", table_cell), Paragraph("<b>1.0000</b>", table_cell_right)],
-        [Paragraph("Transcript WER", table_cell), Paragraph("0.0021", table_cell), Paragraph("0.0000", table_cell), Paragraph("<b>0.0000</b>", table_cell_right)],
-        [Paragraph("Disagreements (#)", table_cell), Paragraph("10 clips", table_cell), Paragraph("1 clip", table_cell), Paragraph("<b>0 (Consensus)</b>", table_cell_right)],
+        [Paragraph("Cohen's &kappa; (Intent)", table_cell), Paragraph("0.7228", table_cell), Paragraph("0.8446", table_cell), Paragraph("<b>1.0000</b>", table_cell_right)],
+        [Paragraph("Krippendorff's &alpha;", table_cell), Paragraph("0.7231", table_cell), Paragraph("0.8448", table_cell), Paragraph("<b>1.0000</b>", table_cell_right)],
+        [Paragraph("Fleiss' Multi-Rater &kappa;", table_cell), Paragraph("0.7212", table_cell), Paragraph("0.8412", table_cell), Paragraph("<b>1.0000</b>", table_cell_right)],
+        [Paragraph("Transcript WER", table_cell), Paragraph("0.0021", table_cell), Paragraph("0.0020", table_cell), Paragraph("<b>0.0000</b>", table_cell_right)],
+        [Paragraph("Disagreements (#)", table_cell), Paragraph("25 clips", table_cell), Paragraph("14 clips", table_cell), Paragraph("<b>0 (Consensus)</b>", table_cell_right)],
     ]
     t3 = Table(t3_data, colWidths=[88, 52, 52, 66])
     t3.setStyle(TableStyle([
@@ -545,14 +545,14 @@ def build_report1_pdf(output_path="report/report.pdf"):
 
     story.append(Paragraph("A. Two-Stage Protocol and Guideline Refinement", h2_style))
     story.append(Paragraph(
-        "In Round 1, annotators achieved substantial agreement (&kappa; = 0.8446), but exhibited systematic boundary "
+        "In Round 1, annotators achieved substantial agreement (&kappa; = 0.7228), but exhibited systematic boundary "
         "confusion between <i>hostel_facilities</i> and <i>it_support</i> (room Wi-Fi routers), and between "
         "<i>academic_affairs</i> and <i>administrative</i> (fee receipts).",
         body_style
     ))
     story.append(Paragraph(
         "Guideline v2 precedence rules established: Wi-Fi/router issues route to <i>it_support</i>; room furniture/water to <i>hostel_facilities</i>; "
-        "registration receipts to <i>academic_affairs</i>. Re-annotation raised &kappa; to <b>0.9889</b> with 1 residual edge-case adjudicated.",
+        "registration receipts to <i>academic_affairs</i>. Re-annotation raised &kappa; to <b>0.8446</b> with 14 residual edge-cases adjudicated to <b>1.0000</b>.",
         body_style
     ))
 
@@ -804,7 +804,7 @@ def build_report1_pdf(output_path="report/report.pdf"):
         "<b>2. Composition:</b> 249 segmented audio recordings (1.255 hours, mean 18.14 s) paired with verified intent labels (6 classes: academic, hostel, mess, it_support, admin, library) and human reference transcripts. Resampled to 16 kHz mono WAV.",
         "<b>3. Collection Process:</b> Recorded between Oct 8 and Oct 18, 2026 across 19 campus volunteers using smartphone and laptop microphones in quiet, cafeteria, and hostel settings. Formal consent obtained; PII and phone identifiers anonymized.",
         "<b>4. Preprocessing & Quality Assurance:</b> WebRTC VAD silence trimming (<300 ms), peak normalization to &minus;1.0 dBFS, 14-check validation suite with pandera, 100% pass on calibrated data, and 12/12 adversarial corruptions detected.",
-        "<b>5. Label Studio Annotation:</b> Two-stage labeling protocol; Round 1 IAA &kappa; = 0.8446; Guideline v2 adjudication workshop resolved router/Wi-Fi and fee boundary ambiguities, raising &kappa; to 0.9889 and eliminating transcript WER.",
+        "<b>5. Label Studio Annotation:</b> Two-stage labeling protocol; Round 1 IAA &kappa; = 0.7228; Guideline v2 adjudication workshop resolved router/Wi-Fi and fee boundary ambiguities, raising &kappa; to 0.8446 and reaching 1.0000 upon consensus.",
         "<b>6. Recommended Uses & Limitations:</b> Designed for academic SLU research and domain adaptation benchmarks. Not intended for commercial biometric identification or safety-critical operations without retraining on targeted demographic cohorts.",
         "<b>7. Maintenance & Versioning:</b> Version-controlled via DVC and Git. Audio binaries indexed via SHA-256 in <code>data_manifest.json</code>. Primary contact: author team via IIT Gandhinagar repository."
     ]

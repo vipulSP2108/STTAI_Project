@@ -110,7 +110,7 @@ Based on Round 1 disagreement analysis (see `supporting_files/agreement_calculat
 ### 7.3 Multi-topic intent tie-breaking [REVISED]
 - **v1 Rule**: "Choose dominant topic" (subjective when topics have equal emphasis).
 - **v2 Rule**: If two topics are equally prominent, choose the **FIRST mentioned topic**.
-- **Reason**: Annotators disagreed on 8 dual-intent queries in Round 1 (e.g., WiFi + mess rebate). The first-mention rule eliminated ambiguity and brought Cohen's kappa to 1.000 in Round 2.
+- **Reason**: Annotators disagreed on dual-intent queries in Round 1 (e.g., WiFi + mess rebate). The first-mention rule eliminated ambiguity and brought Cohen's kappa to 0.8446 in Round 2, with full 1.0000 consensus upon adjudication.
 
 ### 7.4 Partial sentences [REVISED]
 - **v2 Rule**: If the speaker restarts a sentence mid-clip, transcribe both clauses. Do not truncate at clause boundaries.

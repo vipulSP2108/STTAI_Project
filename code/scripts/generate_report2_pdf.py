@@ -648,7 +648,7 @@ def build_report2_pdf(output_path="report/report2.pdf"):
         "The raw audio files were ingested through an automated validation suite that enforced rigid data hygiene constraints: converting multi-channel "
         "recordings to single-channel 16 kHz mono PCM WAV, trimming leading and trailing acoustic silence using an energy-based Voice Activity Detector (VAD) "
         "with a 30 dB relative threshold, and rejecting files outside the operational duration bounds of [2.0, 35.0] seconds. Ground truth intent labels "
-        "were verified via a multi-annotator consensus protocol achieving an initial Cohen's &kappa; of 0.8446 and perfect 1.0000 agreement after adjudication.",
+        "were verified via a multi-annotator consensus protocol achieving an initial Cohen's &kappa; of 0.7228, rising to 0.8446 in Round 2, and reaching 1.0000 agreement after adjudication.",
         body_style
     ))
     story.append(Paragraph(
@@ -1048,12 +1048,13 @@ def build_report2_pdf(output_path="report/report2.pdf"):
 
     story.append(Paragraph("6.2 Non-Parametric Statistical Significance Testing", h2_style))
     story.append(Paragraph(
-        "Formal non-parametric hypothesis tests confirm statistically significant superiority over unguided guessing: (1) <b>Paired Wilcoxon "
-        "signed-rank test:</b> Evaluated against the majority class baseline across individual test instances, yielding test statistic <i>W</i> = 2.0 "
-        "with <i>p</i> = 0.0001 (&alpha; = 0.01). This confirms statistically significant superiority over unguided heuristics. "
-        "(2) <b>McNemar test:</b> Evaluated against unadapted zero-shot Whisper, yielding &chi;<sup>2</sup> = 0.00, <i>p</i> = 1.0000. Under severe "
-        "acoustic distortion, both models produce identical predictions on 28 of 29 clips, proving that acoustic distortion forms the primary "
-        "performance ceiling on downstream semantic routing.",
+        "Formal non-parametric hypothesis tests evaluate model behavior: (1) <b>Paired Wilcoxon signed-rank test:</b> Evaluated "
+        "against a constant three-word dummy string ('institute helpdesk query'), yielding test statistic <i>W</i> = 2.0 (<i>p</i> = 0.0001). "
+        "Because our system produces full conversational sentences, its WER (1.277) is numerically higher than a trivial 3-word insertion "
+        "or null output (WER 1.000), showing that significance over degenerate strawman baselines does not equate to linguistic fidelity over silence. "
+        "(2) <b>McNemar test:</b> Evaluated against unadapted Baseline 1 on Gold, yielding &chi;<sup>2</sup> = 0.00, <i>p</i> = 1.0000. Because the "
+        "acoustic adapter was trained for only 5 steps (loss ~9.8) and inference defaults to base Whisper for operational stability, downstream "
+        "intent predictions are identical between Baseline 1 and Proposed on Gold, demonstrating acoustic dominance over classification.",
         body_style
     ))
 
@@ -1157,9 +1158,9 @@ def build_report2_pdf(output_path="report/report2.pdf"):
     ))
 
     # SECTION 7: AUTHENTIC ERROR TAXONOMY
-    story.append(Paragraph("7 ERROR TAXONOMY: 19 AUTHENTIC FAILURE CASES", h1_style))
+    story.append(Paragraph("7 ERROR TAXONOMY: 20 AUTHENTIC FAILURE CASES", h1_style))
     story.append(Paragraph(
-        "Rather than analyzing synthetic errors, we extracted all 19 genuine misclassifications produced on the frozen Gold Test Set from "
+        "Rather than analyzing synthetic errors, we extracted all 20 genuine misclassifications produced on the frozen Gold Test Set from "
         "<code>supporting_files/error_analysis.csv</code>. Table 7 catalogs representative failure cases with root causes and actionable fixes.",
         body_style
     ))
@@ -1189,7 +1190,7 @@ def build_report2_pdf(output_path="report/report2.pdf"):
     story.append(Spacer(1, 2))
 
     story.append(Paragraph(
-        "The 19 failure cases decompose into four failure archetypes: (1) <b>Phonetic Keyword Substitution (42%):</b> The acoustic decoder "
+        "The 20 failure cases decompose into four failure archetypes: (1) <b>Phonetic Keyword Substitution (40%):</b> The acoustic decoder "
         "substitutes domain keywords (e.g., <i>'rebate'</i> &rarr; <i>'rebit'</i>), depriving the classifier of discriminative features. "
         "(2) <b>Acoustic Deletion Under Noise (26%):</b> In reverberant clips, subtle tokens (e.g., <i>'wifi'</i>) drop below the VAD threshold, "
         "leaving generic nouns (e.g., <i>'room'</i>) that trigger hostel facilities. (3) <b>Polysemous Administrative Overlap (21%):</b> Queries "
@@ -1324,9 +1325,10 @@ def build_report2_pdf(output_path="report/report2.pdf"):
     story.append(Paragraph("9.1 Streaming Traffic Telemetry & Drift Detection", h2_style))
     story.append(Paragraph(
         "To detect production performance decay, the inference service logs query confidence, audio length, and predicted intent distributions. "
-        "We simulated streaming production traffic across 5 sequential batches (<i>N</i> = 20 queries each). A two-sample Kolmogorov-Smirnov test "
-        "flags statistically significant distribution drift at Batch 4 (<i>KS</i> = 0.35, <i>p</i> = 0.04 &le; &alpha;=0.05), triggering automated "
-        "retraining on held-out Cohort B. Figure 8 shows the confidence divergence trajectory, and Figure 9 tracks the multi-batch drift progression.",
+        "We simulated streaming production traffic across 5 sequential batches (<i>N</i> = 20 queries each; logged in <code>data/replay/traffic_stream.jsonl</code> "
+        "with simulated arrival telemetry). Tracking entropy across batches reveals empirical correlation <i>r</i> = 0.35 with accuracy decay, with the first "
+        "drift alert triggering at Batch 5 (entropy = 1.321 > 1.31). Furthermore, acoustic SNR correlates negatively with accuracy (<i>r</i> = &minus;0.81), "
+        "proving that SNR alone cannot serve as an intuitive drift alarm. Figure 8 shows confidence divergence, and Figure 9 tracks drift progression.",
         body_style
     ))
 
@@ -1364,7 +1366,7 @@ def build_report2_pdf(output_path="report/report2.pdf"):
     story.append(Paragraph("Table 9: Retraining Gating Decision Matrix", h2_style))
     t8_data = [
         [Paragraph("Run ID & Condition", table_header), Paragraph("Cohort B Gain", table_header), Paragraph("Gold Delta", table_header), Paragraph("Gate Status", table_header_right)],
-        [Paragraph("LOG-005 (<b>Rehearsal</b>)", table_cell_bold), Paragraph("+7.7% (&ge; +5%)", table_cell), Paragraph("+3.4% (&le; 4%)", table_cell), Paragraph("<b>PROMOTED</b>", table_cell_right)],
+        [Paragraph("LOG-005 (<b>Rehearsal</b>)", table_cell_bold), Paragraph("+7.7% (&ge; +5%)", table_cell), Paragraph("&minus;3.4% (&le; 4%)", table_cell), Paragraph("<b>PROMOTED</b>", table_cell_right)],
         [Paragraph("LOG-006 (<b>No-Rehearsal</b>)", table_cell), Paragraph("0.0% (< +5%)", table_cell), Paragraph("0.0% (&le; 4%)", table_cell), Paragraph("<font color='#b91c1c'><b>REJECTED</b></font>", table_cell_right)],
     ]
     t8 = Table(t8_data, colWidths=[92, 64, 54, 48])
@@ -1381,9 +1383,9 @@ def build_report2_pdf(output_path="report/report2.pdf"):
 
     story.append(Paragraph(
         "Under Rehearsal mode (Run LOG-005), 30% of historical clean training samples are mixed into the retraining pool. This achieves a +7.7% gain on "
-        "Cohort B while improving Gold accuracy by +3.4%, satisfying both gating criteria and earning <b>PROMOTED</b> status. In contrast, No-Rehearsal mode "
-        "(Run LOG-006) fails Criterion 1 (0.0% gain on Cohort B) and is decisively <b>REJECTED</b>. All gate decisions and weights checksums are logged "
-        "cryptographically to <code>TEST_SET_LOG.md</code>.",
+        "Cohort B (4/13 vs 3/13, passing the +5% gate by exactly 1 clip) while bounding Gold regression to &minus;3.4% (9/29 vs 10/29), satisfying the 4% "
+        "tolerance bound and earning <b>PROMOTED</b> status. We disclose that on small evaluation sets (<i>N</i> = 13 and <i>N</i> = 29), a single clip "
+        "shifts accuracy by 7.7% and 3.45% respectively, illustrating discrete sensitivity on boundary gating.",
         body_style
     ))
     story.append(Paragraph(
@@ -1533,10 +1535,10 @@ def build_report2_pdf(output_path="report/report2.pdf"):
         "We analyze four dimensions of study validity: (1) <b>Construct Validity:</b> The six institutional intent classes reflect authentic "
         "operational workflows at IIT Gandhinagar; however, student queries that blur boundaries (e.g., hostel LAN hardware failures) expose "
         "limitations of discrete single-label taxonomies. (2) <b>Internal Validity:</b> Experimenter bias was controlled through multi-round "
-        "adjudicated annotation (&kappa; = 0.9889) and automated zero-leakage test freezing. (3) <b>External Validity:</b> While evaluations "
+        "adjudicated annotation (&kappa; = 0.8446 &rarr; 1.0000) and automated zero-leakage test freezing. (3) <b>External Validity:</b> While evaluations "
         "capture 19 diverse speakers across three regional languages, campus acoustic profiles differ from commercial contact centers. "
         "(4) <b>Statistical Conclusion Validity:</b> Non-parametric Wilcoxon tests (<i>W</i> = 2.0, <i>p</i> = 0.0001) and 1,000 bootstrap "
-        "resamples ensure that reported performance gains reflect genuine algorithmic superiority rather than stochastic sampling anomalies.",
+        "resamples are calibrated against transparent baselines (with Gold WER 1.277 [1.161, 1.398]).",
         body_style
     ))
     story.append(Paragraph(
@@ -1624,7 +1626,7 @@ def build_report2_pdf(output_path="report/report2.pdf"):
         "[15] M. Zaharia et al., 'Accelerating the ML Lifecycle with MLflow,' <i>IEEE Data Eng. Bull.</i>, 2018."
     ]
     for r in refs2:
-        story.append(Paragraph(r, ParagraphStyle('Ref2', parent=body_style, fontSize=6.1, leading=7.5, spaceAfter=1.0)))
+        story.append(Paragraph(r, ParagraphStyle('Ref2', parent=body_style, fontSize=5.9, leading=7.1, spaceAfter=0.5)))
     # ==========================================
     # PAGE 9 - FULL WIDTH: APPENDIX A & B
     # ==========================================
@@ -1654,7 +1656,7 @@ def build_report2_pdf(output_path="report/report2.pdf"):
         img_al = Image("supporting_files/plots/active_learning_curve.png", width=258, height=84)
         supp_fig_data.append([img_iaa, img_al])
         supp_fig_data.append([
-            Paragraph("<b>Figure A.3:</b> Inter-Annotator Agreement progression across rounds (&kappa; = 0.9889).", caption_style),
+            Paragraph("<b>Figure A.3:</b> Inter-Annotator Agreement progression across rounds (&kappa; = 0.8446 &rarr; 1.0000).", caption_style),
             Paragraph("<b>Figure A.4:</b> Active learning curve: Uncertainty sampling vs Random selection.", caption_style)
         ])
 
@@ -1673,7 +1675,7 @@ def build_report2_pdf(output_path="report/report2.pdf"):
         "Figure A.1 demonstrates that clip durations cluster normally around the 18.14 s mean (bounds: [2.0, 35.0] s) without truncated utterances. "
         "Figure A.2 confirms semantic intent class balance across all six service departments (ranging from 12.0% for Academic Affairs to 20.1% for "
         "Hostel Facilities), ruling out single-class dominance. Figure A.3 charts the progressive convergence of Inter-Annotator Agreement (Cohen's &kappa;) "
-        "from 0.724 in Round 1 to 0.9889 in Round 3 following code-mixing disambiguation guidelines. Figure A.4 shows that active uncertainty sampling "
+        "from 0.7228 in Round 1 to 0.8446 in Round 2 and 1.0000 upon consensus adjudication following code-mixing disambiguation guidelines. Figure A.4 shows that active uncertainty sampling "
         "achieves 90% intent routing accuracy with 42% fewer annotations than random acquisition, establishing sample efficiency.",
         body_style
     ))
@@ -1797,9 +1799,9 @@ def build_report2_pdf(output_path="report/report2.pdf"):
         [
             Paragraph("Error Extraction<br/>(Part C)", table_cell_bold),
             Paragraph("Claude 3.5<br/>Sonnet", table_cell),
-            Paragraph("'Script to compare Gold test predictions with ground truth, extract exact 19 failures, and output CSV with reference and ASR text'", table_cell),
+            Paragraph("'Script to compare Gold test predictions with ground truth, extract exact 20 failures, and output CSV with reference and ASR text'", table_cell),
             Paragraph("Extraction script <code>code/scripts/generate_authentic_error_analysis.py</code>", table_cell),
-            Paragraph("Audited all 19 rows against <code>gold_test_set.csv</code>; listened to audio clips to verify genuine acoustic failure causes.", table_cell)
+            Paragraph("Audited all 20 rows against <code>gold_test_set.csv</code>; listened to audio clips to verify genuine acoustic failure causes.", table_cell)
         ],
         [
             Paragraph("FastAPI & Loadtest<br/>(Part D)", table_cell_bold),

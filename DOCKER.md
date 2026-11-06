@@ -15,7 +15,7 @@
 | **Throughput** | **0.23 queries/second** on standard multi-core CPU |
 | **p50 Latency** | **2,855.2 ms** (ASR: 2,854.0 ms, Intent Router: 0.34 ms) |
 | **p95 Latency** | **13,441.5 ms** (dominated by long audio clip decoding) |
-| **Container Base Image** | `python:3.10-slim` (Pinned Debian baseline) |
+| **Container Base Image** | `python:3.10-slim@sha256:d9bba76dc77e0965d93e1577fe0d01b1b9e599e09d57a3e7a0864ac362c3f8f1` (Pinned by digest) |
 | **Self-Contained Bundling** | All model weights, code, gold test set, and Streamlit/FastAPI UI bundled directly |
 | **Outbound Network Policy** | **Strictly offline** (`--network none` verified; zero outbound HTTP/API calls) |
 
@@ -66,6 +66,7 @@ docker run --rm --network none voice-helpdesk-asr:a2-final validate
 }
 ```
 *Note*: The validation script verifies the SHA-256 digest of `data/gold_test_set.csv` before running, asserts offline execution, and writes formatted JSON output to `supporting_files/offline_validation_output.json`.
+*Network Isolation Note*: When executed locally on the host machine (`python code/a2_part_d_deployment/validate_offline.py`), `offline_network_isolated` in `supporting_files/offline_validation_output.json` records `false` because host interface network routes are active (though zero external HTTP calls are dispatched by inference). Under containerized `--network none` execution, all network routing is disabled at the kernel boundary, yielding `offline_network_isolated: true`.
 
 ### C. Launch Interactive Streamlit UI & REST API
 ```bash

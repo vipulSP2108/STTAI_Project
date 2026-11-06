@@ -20,8 +20,8 @@ for code-mixed multilingual helpdesk queries.
 ## Size
 | Metric | Value |
 |--------|-------|
-| Total clips | 249 |
-| Total duration | 1.28 hours (4625.1 sec) |
+| Total clips | 249 (217 in standard splits + 32 Cohort B) |
+| Total duration | 1.25 hours (4516.5 sec) — *Note: below 2.0 h target; compensated via acoustic augmentation* |
 | Unique speakers (A1) | 19 (≥15 requirement met) |
 | Unique speakers (target) | 30+ (final project) |
 
@@ -50,9 +50,9 @@ for code-mixed multilingual helpdesk queries.
 ## Splits
 | Split | Speakers | Clips | Notes |
 |-------|----------|-------|-------|
-| Train | 13 | 181 | 70% of speakers (speaker-disjoint) |
-| Val | 2 | 41 | 15% of speakers |
-| Test | 4 | 27 | 15% of speakers |
+| Train | 13 | 171 | ~79% of partition clips (speaker-disjoint) |
+| Val | 2 | 17 | ~8% of partition clips |
+| Test (Gold Benchmark) | 4 | 29 | ~13% of partition clips (frozen 100% consensus Gold Set) |
 | Cohort B (shifted) | 2 | 32 | Held-out accent/region group (Maharashtra) |
 
 ## Metadata Fields

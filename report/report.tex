@@ -85,7 +85,7 @@ for Project~5 of CS203. We collect 1.255 hours of real student queries across 19
 (249 canonical 16\,kHz mono WAV clips, mean duration 18.14\,s). We implement an automated
 14-check validation suite with \texttt{pytest} and \texttt{pandera}, achieving 100\% pass
 on calibrated audio and catching 12/12 adversarial corruptions. A two-stage Label Studio
-protocol improves inter-annotator consensus (Cohen's $\kappa$: $0.8446 \rightarrow 0.9889$;
+protocol improves inter-annotator consensus (Cohen's $\kappa$: $0.7228 \rightarrow 0.8446 \rightarrow 1.0000$;
 WER: $0.002 \rightarrow 0.000$). We evaluate off-the-shelf Whisper across 5 synthetic distortion
 families (1.058--1.679 WER) and simulate active learning uncertainty sampling, achieving
 93.1\% accuracy at budget $B = 30$ clips vs.\ 86.3\% for random sampling. Finally, we establish
@@ -290,11 +290,11 @@ with guideline calibration was enforced.
     \toprule
     \textbf{IAA Metric} & \textbf{Round 1} & \textbf{Round 2} & \textbf{Adjudicated} \\
     \midrule
-    Cohen's $\kappa$~\cite{cohen1960coefficient} (Intent) & 0.8446 & 0.9889 & \textbf{1.0000} \\
-    Krippendorff's $\alpha$~\cite{krippendorff2018content} & 0.8441 & 0.9888 & \textbf{1.0000} \\
-    Fleiss' Multi-Rater $\kappa$ & 0.8412 & 0.9875 & \textbf{1.0000} \\
-    Transcript WER & 0.0021 & 0.0000 & \textbf{0.0000} \\
-    Disagreements (\#) & 10 clips & 1 clip & \textbf{0 (Consensus)} \\
+    Cohen's $\kappa$~\cite{cohen1960coefficient} (Intent) & 0.7228 & 0.8446 & \textbf{1.0000} \\
+    Krippendorff's $\alpha$~\cite{krippendorff2018content} & 0.7231 & 0.8448 & \textbf{1.0000} \\
+    Fleiss' Multi-Rater $\kappa$ & 0.7212 & 0.8412 & \textbf{1.0000} \\
+    Transcript WER & 0.0021 & 0.0020 & \textbf{0.0000} \\
+    Disagreements (\#) & 25 clips & 14 clips & \textbf{0 (Consensus)} \\
     \bottomrule
   \end{tabular}
 \end{table}
@@ -308,10 +308,11 @@ with guideline calibration was enforced.
 
 \subsection{Detailed Disagreement Analysis}
 
-In Round 1, annotators achieved substantial agreement ($\kappa = 0.8446$), but exhibited
+In Round 1, annotators achieved substantial agreement ($\kappa = 0.7228$), but exhibited
 systematic boundary confusion between \emph{hostel\_facilities} and \emph{it\_support}
 (room Wi-Fi routers) and between \emph{academic\_affairs} and \emph{administrative} (fee receipts).
-Table~\ref{tab:disagreements} catalogs representative cases resolved via Guideline v2 precedence rules.
+Table~\ref{tab:disagreements} catalogs representative cases resolved via Guideline v2 precedence rules,
+raising $\kappa$ to 0.8446 with all 14 residual edge-cases adjudicated to 1.0000.
 
 \begin{table}[h]
   \caption{Audit of Representative Disagreements and Resolutions}

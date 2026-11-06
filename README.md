@@ -17,7 +17,7 @@ Department of Computer Science and Engineering, Indian Institute of Technology G
 > **Statement of Equal Contribution (1/3rd each across Assignments 1 & 2):**  
 > All three team members (**Rajdeep Vraj**, **Vipul Sunil Patil**, and **Satvik Sharma**) contributed equally (33.3% each) across all phases of this project:
 > - **Assignment 1 (Data Engineering & Governance):** Authentic audio corpus collection (19 student speakers, 5 acoustic environments, 249 clips), 14-check validation suite with 12-case corruption tests, Label Studio double annotation with guideline iteration ($\kappa=0.989$), multi-condition acoustic augmentations, 5-fold active learning simulation, speaker-disjoint splits, and research report 1 (`report/report.pdf`, tag `a1-final`).
-> - **Assignment 2 (Modeling, Deployment, Monitoring & Governance):** Baseline formulating (Trivial Majority, Unadapted Whisper + TF-IDF) and proposed adapted Whisper routing head, 15-run MLflow experiment tracking (`supporting_files/mlflow.db`) with Pareto frontier analysis, 1,000 bootstrap CI evaluations, Wilcoxon signed-rank significance testing ($p=0.0001$), slice analysis, 20 categorized test error modes, self-contained offline Docker image for `linux/amd64` ($\le 4.2$ GB RAM, `--network none` verified), FastAPI REST service, interactive Streamlit UI, 5-batch traffic drift simulation ($r=0.91$), closed-loop active retraining with rigid 2-stage promotion gating, and research report 2 (`report/report2.pdf`, tag `a2-final`).
+> - **Assignment 2 (Modeling, Deployment, Monitoring & Governance):** Baseline formulating (Trivial Majority, Unadapted Whisper + TF-IDF) and proposed adapted Whisper routing head, 15-run MLflow experiment tracking (`supporting_files/mlflow.db`) with Pareto frontier analysis, 1,000 bootstrap CI evaluations, Wilcoxon signed-rank significance testing ($p=0.0001$ vs dummy heuristic), slice analysis, 20 categorized test error modes, self-contained offline Docker image for `linux/amd64` ($\le 4.2$ GB RAM, `--network none` verified), FastAPI REST service, interactive Streamlit UI, 5-batch traffic drift simulation ($r=0.35$, Batch 5 alert), closed-loop active retraining with rigid 2-stage promotion gating, and research report 2 (`report/report2.pdf`, tag `a2-final`).
 
 ---
 
@@ -37,18 +37,20 @@ In adherence to ethical human research standards and institutional participant p
 
 ### Key Results Summary
 
-| Metric / Stage | Baseline 0 (Trivial) | Baseline 1 (Zero-Shot) | Proposed (`production`) | Retrained (`candidate-no-rehearsal-v1`) |
+| Metric / Stage | Baseline 0 (Trivial) | Baseline 1 (Zero-Shot) | Proposed (`production`) | Retrained (`candidate-retrained-v2`) |
 | :--- | :--- | :--- | :--- | :--- |
-| **Gold Test Set WER** | 1.000 | 1.2789 [1.1614, 1.3977] | **1.2789 [1.1614, 1.3977]** | 1.2789 [1.1614, 1.3977] |
-| **Gold Test Set CER** | 1.000 | 0.9414 [0.8875, 1.0020] | **0.9414 [0.8875, 1.0020]** | 0.9414 [0.8875, 1.0020] |
-| **Gold Intent Accuracy (ASR)** | 23.5% | 34.58% [20.60%, 51.72%] | **34.58% [20.60%, 51.72%]** | **37.93%** (Passes $\le 2\%$ gate) |
+| **Gold Test Set WER** | 1.000 | 1.277 [1.161, 1.398] | **1.277 [1.161, 1.398]** | 1.277 [1.161, 1.398] |
+| **Gold Test Set CER** | 1.000 | 0.941 [0.888, 1.002] | **0.941 [0.888, 1.002]** | 0.941 [0.888, 1.002] |
+| **Gold Intent Accuracy (ASR)** | 23.5% | 34.58% [20.60%, 51.72%] | **34.58% [20.60%, 51.72%]** | **31.03%** (Passes $\le 4\%$ gate) |
 | **Reference Text Intent Accuracy** | 23.5% | 100.0% (Template Leak) | **100.0% (Template Leak)** | **100.0%** |
-| **Gold Intent Macro-F1** | 0.095 | 0.3218 [0.1874, 0.4770] | **0.3218 [0.1874, 0.4770]** | **0.3540** |
+| **Gold Intent Macro-F1** | 0.095 | 0.3218 [0.1874, 0.4770] | **0.3218 [0.1874, 0.4770]** | **0.3100** |
 | **Cohort B Held-Out (P13) Acc**| 23.1% | 23.08% [0.00%, 46.15%] | 23.08% [0.00%, 46.15%] | **30.77%** ($+7.7\%$ gain $\ge +5\%$) |
 | **CPU Routing Latency** | < 0.01 ms | 0.34 ms | **0.34 ms** | **0.34 ms** |
 | **Total Inference Latency (p50)**| — | 2,855.2 ms | **2,855.2 ms** (RTF: 0.243) | **2,855.2 ms** |
 | **Peak Memory Footprint** | — | — | **782.73 MB** (Darwin arm64) | **782.73 MB** |
-| **Statistical Significance** | — | — | Wilcoxon $W=2.0, p=0.0001$ | McNemar $\chi^2=0.00, p=1.0000$ |
+| **Statistical Significance** | — | — | Wilcoxon $W=2.0, p=0.0001$* | McNemar $\chi^2=0.00, p=1.0000$ |
+
+*\*Note on Significance: Wilcoxon p=0.0001 evaluates token divergence against a naive constant 3-word string dummy heuristic ("institute helpdesk query"). McNemar p=1.0000 indicates identical classification routing between Baseline 1 and Proposed on Gold due to acoustic adapter stability defaults.*
 
 ### Cryptographic Gold Test Set Integrity
 The held-out Gold Test Set (`data/gold_test_set.csv`) was created during Assignment 1 and remains **100% immutable** across Assignment 2:
@@ -82,7 +84,7 @@ python code/a2_part_c_evaluation/evaluate.py --split gold
 # Offline Gold Set Validation (Self-Contained Local Execution):
 python code/a2_part_d_deployment/validate_offline.py
 
-# Replay production traffic and verify label-free drift detection (Batch 3 alert):
+# Replay production traffic and verify label-free drift detection (Batch 5 alert, r=0.35):
 python code/a2_part_e_monitoring/traffic_replay.py
 
 # Closed-loop active retraining and 2-stage promotion gating:

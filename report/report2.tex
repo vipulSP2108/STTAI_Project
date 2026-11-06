@@ -511,12 +511,15 @@ To verify whether observed gains reflect genuine structural superiority rather t
 sampling artifacts, we performed formal non-parametric significance tests:
 
 \begin{itemize}
-  \item \textbf{Paired Wilcoxon Signed-Rank Test}: Evaluated against the majority class baseline
-    across individual test instances, yielding test statistic $W = 2.0$ with $p = 0.0001$ ($\alpha = 0.01$).
-    This confirms statistically significant superiority over unguided guessing.
-  \item \textbf{McNemar Test}: Evaluated against unadapted zero-shot Whisper, yielding $\chi^2 = 0.00, p = 1.0000$.
-    Under extreme acoustic distortion, both models produce identical predictions on 28 of 29 clips,
-    demonstrating that acoustic distortion acts as an upper-bound bottleneck on downstream routing.
+  \item \textbf{Paired Wilcoxon Signed-Rank Test}: Evaluated against a constant three-word dummy
+    string (``institute helpdesk query''), yielding test statistic $W = 2.0$ with $p = 0.0001$.
+    Because our system produces full conversational sentences, its WER (1.277) is numerically
+    higher than a trivial 3-word insertion or null output (WER 1.000), illustrating that
+    significance over degenerate strawman baselines must not be conflated with linguistic fidelity over silence.
+  \item \textbf{McNemar Test}: Evaluated against unadapted Baseline~1 on the Gold set, yielding $\chi^2 = 0.00, p = 1.0000$.
+    Because the acoustic adapter was trained for only 5 steps (loss $\approx 9.8$) and runtime inference safely
+    defaults to base Whisper for operational stability, downstream intent predictions are identical
+    between Baseline~1 and Proposed on Gold, demonstrating acoustic dominance over classification.
 \end{itemize}
 
 \begin{figure}[h]
@@ -670,9 +673,12 @@ All \textbf{8 out of 8 unit tests pass} in \texttt{tests/test\_pipeline.py}.
 
 \subsection{Streaming Traffic Telemetry & Drift Detection}
 
-Production traffic was simulated across 5 sequential batches ($N = 20$ queries each).
-A two-sample Kolmogorov-Smirnov test on decoder confidence scores flags statistically significant
-distribution drift at Batch~4 ($KS = 0.35, p = 0.04 \le \alpha = 0.05$), as depicted in Figure~\ref{fig:drift}.
+Production traffic was simulated across 5 sequential batches ($N = 20$ queries each; logged in
+\texttt{data/replay/traffic\_stream.jsonl} with simulated ground-truth flags). Entropy tracking
+exhibits empirical correlation $r = 0.35$ with accuracy, triggering the threshold alarm at Batch~5
+(entropy $= 1.321 > 1.31$). Crucially, acoustic SNR correlates negatively with routing accuracy ($r = -0.81$),
+proving that acoustic SNR is inadequate as an isolated alarm. Two-sample Kolmogorov-Smirnov testing
+flags distribution divergence ($KS = 0.35, p = 0.04$), as depicted in Figure~\ref{fig:drift}.
 
 \begin{figure}[h]
   \centering
@@ -705,11 +711,19 @@ Following the drift trigger at Batch~4, active retraining was executed on held-o
     \toprule
     \textbf{Run ID & Condition} & \textbf{Cohort B Gain} & \textbf{Gold Delta} & \textbf{Gate Decision} \\
     \midrule
-    LOG-005 (\textbf{Rehearsal}) & \textbf{+7.7\% ($\ge +5\%$)} & \textbf{+3.4\% ($\le 4\%$)} & \textbf{PROMOTED} \\
+    LOG-005 (\textbf{Rehearsal}) & \textbf{+7.7\% ($\ge +5\%$)} & \textbf{-3.4\% ($\le 4\%$)} & \textbf{PROMOTED} \\
     LOG-006 (\textbf{No-Rehearsal}) & 0.0\% ($< +5\%$) & 0.0\% ($\le 4\%$) & \textbf{REJECTED} \\
     \bottomrule
   \end{tabular}
 \end{table}
+
+Under Rehearsal mode (Run LOG-005), 30\% of historical clean training samples are mixed into
+the retraining pool. This achieves a +7.7\% gain on Cohort~B ($4/13$ vs $3/13$, passing the +5\%
+gate by exactly 1 clip) while bounding Gold regression to $-3.45\%$ ($9/29$ vs $10/29$), satisfying
+the 4\% tolerance bound and earning PROMOTED status. We candidly disclose that on small evaluation sets
+($N=13$ and $N=29$), a single clip shifts accuracy by 7.7\% and 3.45\% respectively, illustrating
+discrete sensitivity on boundary gating. All gate decisions and weights checksums are logged
+cryptographically to \texttt{TEST\_SET\_LOG.md}.
 
 Under Rehearsal mode (Run LOG-005), 30\% of historical clean training samples are mixed into the retraining
 pool. This achieves a +7.7\% gain on Cohort~B while improving Gold accuracy by +3.4\%, satisfying both
@@ -946,7 +960,7 @@ investigations described in the main text.
 \begin{figure}[h]
   \centering
   \includegraphics[width=\linewidth]{supporting_files/plots/annotation_iaa_progression.png}
-  \caption{Inter-Annotator Agreement metric progression across annotation rounds. Guideline v2 calibration drove Cohen's $\kappa$ from 0.8446 to 0.9889, reaching 1.0000 upon consensus adjudication.}
+  \caption{Inter-Annotator Agreement metric progression across annotation rounds. Guideline v2 calibration drove Cohen's $\kappa$ from 0.7228 to 0.8446, reaching 1.0000 upon consensus adjudication.}
   \Description{Grouped bar chart showing Cohen's kappa, Krippendorff's alpha, and Fleiss' kappa progression across rounds.}
   \label{app:fig:iaa}
 \end{figure}
@@ -1014,7 +1028,7 @@ investigations described in the main text.
   \item \textbf{Model Details}: Whisper Base decoder cross-attention fine-tuned (6.3M adapted params, frozen encoder 21.5M params) coupled with a 2-layer MLP intent classifier (hidden dimension 64, dropout 0.20, sub-linear TF-IDF n-grams [1, 2]). Serialized in PyTorch.
   \item \textbf{Intended Use}: Automated intent classification and spoken query routing for code-mixed Indian university voice helpdesks across six campus operational departments (academic, hostel, mess, IT, admin, library).
   \item \textbf{Factors}: Evaluated across 19 student participants, Indian English, Hindi, and Gujarati code-mixing, three acoustic environments (quiet dorms, reverberant corridors, noisy cafeterias), and smartphone vs.\ laptop recording hardware.
-  \item \textbf{Metrics}: Intent Accuracy (34.5\% on Gold, 94.1\% on Val), Macro F1 (0.347), Transcription WER (0.982 Val, 1.2789 Gold), Median Latency (2,855.2\,ms), Real-Time Factor (0.165), and Peak RAM (782.7\,MB).
+  \item \textbf{Metrics}: Intent Accuracy (34.5\% on Gold, 94.1\% on Val), Macro F1 (0.347), Transcription WER (0.982 Val, 1.277 Gold [1.161, 1.398]), Median Latency (2,855.2\,ms), Real-Time Factor (0.165), and Peak RAM (782.7\,MB).
   \item \textbf{Ethical Considerations & Limitations}: System performance degrades in extreme noise (SNR $< 5$\,dB). Low-confidence queries ($P(y \mid \hat{W}) < 0.45$) must route to human campus administrators rather than silent failure.
 \end{enumerate}
 
@@ -1056,7 +1070,7 @@ Table~\ref{tab:course_matrix} provides a formal mapping of Assignment~2 engineer
     \midrule
     Part A: Acoustic Adaptation & Whisper Base decoder cross-attention fine-tuning (6.3M params) & Val Acc: 94.1\%, WER: 0.982 (vs 1.058 unadapted) & \texttt{artefacts/models/whisper\_base\_adapted.pt} \\
     Part B: MLflow Search & 41-run grid search over MLP hidden dims, dropout, and n-grams & @Champion Run 16: Macro F1 0.941, dim 64, drop 0.20 & \texttt{supporting\_files/mlflow.db} (SQLite) \\
-    Part C: Statistical Eval & Frozen 29-clip Gold test set evaluation with Wilcoxon \& McNemar & Gold Acc: 34.5\% ($W = 2.0, p = 0.0001$); 19 failure taxonomy & \texttt{data/gold\_test\_set.csv} (SHA-256: \texttt{64b7647b...}) \\
+    Part C: Statistical Eval & Frozen 29-clip Gold test set evaluation with Wilcoxon \& McNemar & Gold Acc: 34.5\% ($W = 2.0, p = 0.0001$); 20 failure taxonomy & \texttt{data/gold\_test\_set.csv} (SHA-256: \texttt{64b7647b...}) \\
     Part D: REST Deployment & FastAPI async REST endpoint + Streamlit UI with load testing & Latency p50: 2,855\,ms, RTF: 0.165, RAM: 782.7\,MB & \texttt{code/a2\_part\_d\_deployment/app.py} \\
     Part E: Retraining Gate & Streaming traffic drift KS test + replay retraining quality gate & Batch 4 drift ($p = 0.04$); LOG-005 PROMOTED (+7.7\% gain) & \texttt{retrain\_pipeline.py}, \texttt{TEST\_SET\_LOG.md} \\
     \bottomrule
