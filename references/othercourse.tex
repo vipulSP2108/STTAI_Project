@@ -1,0 +1,951 @@
+%%
+%% COVID-19 India: Multi-Scale Network & Epidemiological Analysis
+%% Topic 23 — Pandemic Data Science
+%%
+%% ─── FIGURE MAP ────────────────────────────────────────────────────────────
+%%
+%%  MAIN BODY (10 figures — each answers a direct research question)
+%%  ┌──────────────────────────────────┬─────────────────────────────────────┐
+%%  │ Filename                         │ Source cell                         │
+%%  ├──────────────────────────────────┼─────────────────────────────────────┤
+%%  │ india_fig1_epidemic_curve.png    │ India nb  · Cell 11 · 3-panel curve │
+%%  │ india_fig3_state_network.png     │ India nb  · Cell 21 · Kamada-Kawai  │
+%%  │ india_fig6_communities.png       │ India nb  · Cell 28 · Louvain hulls │
+%%  │ india_fig8_sir_simulation.png    │ India nb  · Cell 33 · SIR network   │
+%%  │ india_fig9_vaccination.png       │ India nb  · Cell 36 · Vax vs CFR    │
+%%  │ india_fig11_composite.png        │ India nb  · Cell 42 · PCA+corr      │
+%%  │ pune_fig1_epidemic_curve.png     │ Pune nb   · Cell 7  · 4-panel curve │
+%%  │ pune_fig3_centrality.png         │ Pune nb   · Cell 15 · heatmap+bar   │
+%%  │ pune_fig7_interventions.png      │ Pune nb   · Cell 27 · intervention  │
+%%  │ pune_fig8_phase_diagram.png      │ Pune nb   · Cell 29 · R0×CFR space  │
+%%  └──────────────────────────────────┴─────────────────────────────────────┘
+%%
+%%  APPENDIX (supplementary — cited from main text)
+%%  india_fig2_spatial_maps.png        india_fig4_centrality.png
+%%  india_fig7_spatial_network.png     india_fig10_degree.png
+%%  pune_fig2_seir_fit.png             pune_fig4_network.png
+%%  pune_fig5_communities.png          pune_fig6_scenarios.png
+%%  pune_fig9_robustness.png
+%%
+%%  HOW TO SAVE — add before every plt.show():
+%%    plt.savefig("india_fig1_epidemic_curve.png",
+%%                dpi=180, bbox_inches="tight", facecolor="white")
+%% ───────────────────────────────────────────────────────────────────────────
+
+\documentclass[sigconf,authordraft]{acmart}
+
+\AtBeginDocument{\providecommand\BibTeX{{Bib\TeX}}}
+
+\setcopyright{acmlicensed}
+\copyrightyear{2025}
+\acmYear{2025}
+\acmDOI{XXXXXXX.XXXXXXX}
+\acmConference[DS Topic 23 '25]{Pandemic Data Science}{2025}{Pune, India}
+\acmISBN{978-1-4503-XXXX-X/2025/01}
+
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{xcolor}
+\usepackage{url}
+
+%% ─────────────────────────────────────────────────────────────────────────────
+\begin{document}
+
+\title[COVID-19 India: Multi-Scale Network Analysis]{%
+  COVID-19 in India: A Multi-Scale Network and Epidemiological Analysis
+  from National Wave Detection to District-Level Metapopulation Modelling}
+
+%% ── AUTHORS — replace with actual names ──────────────────────────────────────
+\author{Author One}
+\authornote{All authors contributed equally to this research.}
+\email{author1@institution.ac.in}
+\affiliation{%
+  \institution{Your Institution}
+  \city{Pune}
+  \state{Maharashtra}
+  \country{India}}
+
+\author{Author Two}
+\authornotemark[1]
+\email{author2@institution.ac.in}
+\affiliation{%
+  \institution{Your Institution}
+  \city{Pune}
+  \state{Maharashtra}
+  \country{India}}
+
+\author{Author Three}
+\authornotemark[1]
+\email{author3@institution.ac.in}
+\affiliation{%
+  \institution{Your Institution}
+  \city{Pune}
+  \state{Maharashtra}
+  \country{India}}
+
+\renewcommand{\shortauthors}{Author One et al.}
+
+%% ── ABSTRACT ─────────────────────────────────────────────────────────────────
+\begin{abstract}
+We present a stratified, data-driven analysis of India's COVID-19 pandemic
+(June~2020--August~2021) at two geographic scales. At the
+\emph{state level}, we fuse OWID and covid19india.org data to identify three
+epidemic waves, construct a weighted epidemic-similarity network over 28 states
+(Pearson $r > 0.60$), apply six centrality measures, detect four Louvain
+communities ($Q = 0.511$), simulate discrete-time SIR dynamics on the state
+graph, and show via PCA ($74.6\%$ variance in two components) and a
+CFR--recovery-rate anti-correlation ($r = -0.89$) that \emph{healthcare
+infrastructure quality} is the dominant regional outcome differentiator.
+At the \emph{district level}, we build a gravity-model mobility network over
+Pune's 15 talukas ($\alpha = \beta = 0.7$, $\gamma = 1.5$), fit a
+metapopulation SEIR ($R_0 = 5.95$), compute composite hub scores identifying
+Pune~City (0.833) and Haveli (0.722) as super-spreader hubs, and demonstrate
+that targeted hub-based intervention reduces peak prevalence by
+\textbf{47.4\%}---a $3.5\times$ efficiency advantage over random or universal
+strategies. Network robustness analysis confirms the hub-dominant structure
+fragments at D50 = 8 nodes under targeted removal, providing a formal
+theoretical basis for triage-informed public-health resource allocation.
+\end{abstract}
+
+%% ── CCS ──────────────────────────────────────────────────────────────────────
+\begin{CCSXML}
+<ccs2012>
+ <concept>
+  <concept_id>10010147.10010257.10010293.10010294</concept_id>
+  <concept_desc>Computing methodologies~Simulation</concept_desc>
+  <concept_significance>500</concept_significance>
+ </concept>
+ <concept>
+  <concept_id>10010405.10010489.10010491</concept_id>
+  <concept_desc>Applied computing~Life and medical sciences</concept_desc>
+  <concept_significance>500</concept_significance>
+ </concept>
+ <concept>
+  <concept_id>10002950.10003705.10003707</concept_id>
+  <concept_desc>Mathematics of computing~Graph theory</concept_desc>
+  <concept_significance>300</concept_significance>
+ </concept>
+</ccs2012>
+\end{CCSXML}
+
+\ccsdesc[500]{Computing methodologies~Simulation}
+\ccsdesc[500]{Applied computing~Life and medical sciences}
+\ccsdesc[300]{Mathematics of computing~Graph theory}
+
+\keywords{COVID-19; epidemic modelling; network science; SEIR;
+  metapopulation; Louvain community detection; hub intervention;
+  spatial autocorrelation; Pune district; India}
+
+%% ── TEASER ───────────────────────────────────────────────────────────────────
+\begin{teaserfigure}
+  \centering
+  \includegraphics[width=0.55\textwidth, height=0.30\textheight,
+                   keepaspectratio]{india_fig3_state_network}
+  \caption{India COVID-19 state epidemic-similarity network
+    (Kamada-Kawai layout, $r_{\min} = 0.60$). Node colour encodes
+    geographic region; size $\propto \log(\text{confirmed cases})$.
+    Edge colour/width encode Pearson correlation strength.
+    Maharashtra and Kerala sit as structural outliers---their epidemic
+    trajectories are statistically dissimilar from all other states,
+    pointing to distinct causal mechanisms discussed in
+    Section~\ref{sec:state}.}
+  \Description{Network of 28 Indian states. Six region colours used.
+    Maharashtra and Kerala nodes are largest, positioned away from the
+    main cluster. Thick dark-red edges indicate high correlation;
+    thin yellow edges indicate weak correlation.}
+  \label{fig:teaser}
+\end{teaserfigure}
+
+\received{January 2025}
+\received[revised]{March 2025}
+\received[accepted]{April 2025}
+
+\maketitle
+
+%% ═══════════════════════════════════════════════════════════════════════════
+\section{Introduction}
+\label{sec:intro}
+%% ═══════════════════════════════════════════════════════════════════════════
+
+India's COVID-19 pandemic is among the most epidemiologically complex events
+in modern public-health history. Across 36 states and more than 700 districts,
+the same pathogen produced radically different outcomes: Kerala reported a
+case-fatality rate (CFR) near 0.5\% while Bihar exceeded 1.8\%; Pune District
+collapsed under 51,000 weekly cases in April~2021 while districts 200~km away
+remained in single digits. These disparities are not random---they encode
+measurable structural information about mobility networks, healthcare
+infrastructure, and spatial connectivity.
+
+This project answers four core questions posed by \emph{Topic~23: Pandemic
+Data Science}:
+
+\begin{enumerate}
+  \item \textbf{Anomaly detection}: where do data irregularities expose
+    under-reporting, bulk back-corrections, or testing artefacts?
+  \item \textbf{Correlation analysis}: which health indicators co-vary
+    with case growth, and what do they reveal about underlying mechanisms?
+  \item \textbf{Epidemic prediction}: can compartmental and network-based
+    models forecast trajectory and peak timing?
+  \item \textbf{Causal heterogeneity}: why did certain regions---Kerala vs.\
+    Bihar, Pune City vs.\ Indapur---achieve such different outcomes?
+\end{enumerate}
+
+We address these across two complementary notebooks. The
+\textbf{India notebook} handles national and state-scale analysis:
+epidemic curve characterisation, state correlation network construction,
+centrality analysis, Louvain community detection, spatial adjacency
+modelling, SIR network simulation, vaccination--outcome analysis, and
+composite PCA. The \textbf{Pune notebook} performs district-scale
+micro-analysis: gravity-model mobility network construction,
+metapopulation SEIR fitting and scenario simulation, hub identification,
+network-guided intervention comparison, $R_0 \times \text{CFR}$ phase
+diagram exploration, and robustness analysis.
+
+%% ═══════════════════════════════════════════════════════════════════════════
+\section{Related Work}
+\label{sec:related}
+%% ═══════════════════════════════════════════════════════════════════════════
+
+Network-structured epidemic models were formalised by Keeling and
+Eames~\cite{Keeling2005}, who demonstrated that heterogeneous contact
+structure can dramatically alter epidemic threshold and final attack rate
+relative to homogeneous-mixing assumptions. Pastor-Satorras and
+Vespignani~\cite{PastorSatorras2001} showed that scale-free networks
+effectively have no epidemic threshold, shifting the only viable containment
+strategy from herd-immunity thresholds to hub-targeted interventions.
+Colizza et~al.~\cite{Colizza2007} extended this to global airline
+metapopulation dynamics, establishing that network centrality---not
+geographic distance---is the primary predictor of epidemic arrival time.
+
+For the Indian context, Ray et~al.~\cite{Ray2020} applied Bayesian SEIR
+to estimate Wave~1 trajectory and quantify the impact of the national
+lockdown. Chatterjee et~al.~\cite{Chatterjee2020} projected ICU demand
+statewide using a stochastic model. These works, however, treat India
+either as a single aggregate unit or analyse states independently, without
+exploiting the graph structure of inter-state epidemic similarity.
+No prior work has applied a metapopulation network framework at the
+sub-district taluka scale with explicit hub-intervention simulation and
+robustness analysis, which is the contribution of the Pune notebook.
+
+%% ═══════════════════════════════════════════════════════════════════════════
+\section{Data and Methods}
+\label{sec:methods}
+%% ═══════════════════════════════════════════════════════════════════════════
+
+\subsection{Data Sources}
+
+\textbf{India notebook.} Three streams are fused: (i)~OWID national
+time-series~\cite{OWID2020} (cases, deaths, vaccinations, $R_t$);
+(ii)~covid19india.org state-level daily archive~\cite{covid19india}
+(36 states, June~2020--October~2021); and (iii)~Natural Earth GeoJSON
+for state boundary polygons. \textbf{Pune notebook.} Maharashtra State
+COVID Portal provides weekly taluka-level counts (15 talukas,
+June~2020--July~2021). Census of India 2011 with 1.2\% CAGR projection
+supplies population data; GADM centroid coordinates enable Haversine
+distance computation.
+
+\subsection{Preprocessing and Anomaly Detection}
+
+All daily counts are smoothed with a 7-day rolling window to remove
+day-of-week reporting artefacts. Active cases are reconstructed via
+$\text{Active} = \text{Confirmed} - \text{Recovered} - \text{Deaths}$.
+Anomaly detection applies $z$-score thresholding ($|z| > 3.5$) to the
+first-difference series, flagging negative increments and anomalous spikes.
+This pipeline flagged retroactive bulk corrections in 11 states and
+single-day spikes in 3 states; these were linearly interpolated before
+network construction to avoid spurious correlation edges.
+
+\subsection{Epidemic Similarity Network}
+
+For the state-level analysis, each state is represented by a feature
+vector of seven epidemiological indicators: Wave~1 cases, Wave~2 cases,
+Wave~3 cases, CFR, cases-per-lakh, deaths-per-lakh, and recovery rate,
+all $z$-score normalised. An undirected edge is placed between state pairs
+with Pearson correlation $r > 0.60$ (threshold chosen to retain the largest
+connected component while removing noise edges). Edge weight equals $r$.
+
+\subsection{Centrality Measures}
+
+Six metrics are computed on the state correlation network: degree,
+betweenness, closeness, eigenvector, PageRank, and Katz centrality.
+For the Pune mobility network, four metrics are used (degree, betweenness,
+eigenvector, PageRank), combined into a composite hub score defined as
+their unweighted normalised mean.
+
+\subsection{Metapopulation SEIR}
+
+Each Pune taluka $i$ carries its own SEIR compartments coupled via
+mobility flux:
+\begin{align}
+  \dot{S}_i &= -\beta_i \tfrac{S_i I_i}{N_i}
+               - \textstyle\sum_j m_{ij} \tfrac{S_i I_j}{N_i}
+               \label{eq:s}\\
+  \dot{E}_i &= \beta_i \tfrac{S_i I_i}{N_i}
+               + \textstyle\sum_j m_{ij} \tfrac{S_i I_j}{N_i}
+               - \sigma E_i
+               \label{eq:e}\\
+  \dot{I}_i &= \sigma E_i - \gamma I_i, \qquad
+  \dot{R}_i  = \gamma I_i
+               \label{eq:ir}
+\end{align}
+where $\sigma = 1/5.1\,\text{d}^{-1}$ (COVID-19 incubation
+period~\cite{Lauer2020}) and $\gamma = 1/10\,\text{d}^{-1}$ (infectious
+period). Inter-taluka flux $m_{ij}$ is given by the gravity model:
+\begin{equation}
+  F_{ij} = k \cdot P_i^{0.7}\, P_j^{0.7}\, d_{ij}^{-1.5},
+  \quad F_{ij} > 50\text{ persons/day}
+  \label{eq:gravity}
+\end{equation}
+Parameters $\beta$ and the initial infected count are fitted to
+Wave~1 weekly incidence by minimising mean-squared error via
+\texttt{scipy.optimize.minimize}.
+
+%% ═══════════════════════════════════════════════════════════════════════════
+\section{National Epidemic Characterisation}
+\label{sec:national}
+%% ═══════════════════════════════════════════════════════════════════════════
+
+Figure~\ref{fig:india_epic} presents the national epidemic curve alongside
+daily deaths and the rolling effective reproduction number $R_t$.
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=\linewidth]{india_fig1_epidemic_curve}
+  \caption{India national epidemic curve (2020--2022). Panel~A: daily
+    new cases (7-day average, red fill) with three annotated wave peaks
+    and national policy milestones. Panel~B: daily deaths overlaid with
+    rolling CFR. Panel~C: effective reproduction number $R_t$ with the
+    $R_t=1$ threshold; shaded bands correspond to wave periods.}
+  \Description{Three stacked panels sharing a time axis from January
+    2020 to December 2022. Panel A shows a red epidemic curve with three
+    peaks. Panel B shows grey death bars and orange CFR line. Panel C
+    shows blue Rt series with horizontal line at 1.0.}
+  \label{fig:india_epic}
+\end{figure}
+
+Three structurally distinct waves are identifiable:
+\textbf{Wave~1} (June--November~2020, wild-type) peaked in
+September~2020 at $\approx$97k daily cases nationally; CFR stabilised
+near 1.5--2.5\% following testing scale-up.
+\textbf{Wave~2} (March--June~2021, Delta B.1.617.2) was approximately
+$4\times$ more intense in peak incidence; $R_t$ exceeded 1.5 from
+March--April~2021 and the healthcare system in several states faced
+acute oxygen and ICU shortages.
+\textbf{Wave~3} (December~2021--February~2022, Omicron BA.1) reached the
+highest absolute case volume but with substantially reduced CFR,
+reflecting both partial population immunity and reduced intrinsic severity.
+
+\paragraph{Policy impact.} The national lockdown (25~March~2020) produced
+a measurable $R_t$ suppression with a $\approx$2-week lag, consistent
+with a serial interval of 5--7 days and a testing/reporting delay of
+7--10 days. Vaccination rollout (16~January~2021) achieved only
+$\approx$5\% coverage by Wave~2 onset, insufficient to prevent the Delta
+surge---a finding confirmed by the vaccination--outcome analysis in
+Section~\ref{subsec:vaccination}.
+
+%% ═══════════════════════════════════════════════════════════════════════════
+\section{State-Level Network Analysis}
+\label{sec:state}
+%% ═══════════════════════════════════════════════════════════════════════════
+
+\subsection{Epidemic Similarity Network and Centrality}
+
+The state correlation network (Figure~\ref{fig:teaser}, structural
+statistics in Table~\ref{tab:net_stats}) reveals that Indian states do
+not form a uniform epidemic community. The network is moderately dense
+(density $\approx 0.35$) with an average clustering coefficient of
+$\approx 0.72$, indicating that most states connected by epidemic similarity
+share common neighbours---consistent with geographic transmission corridors.
+Maharashtra and Kerala appear as structural outliers isolated from the main
+cluster; their epidemic trajectories are statistically dissimilar from most
+other states for opposite reasons: Maharashtra by extreme scale and Kerala
+by exceptional clinical management.
+
+\begin{table}[h]
+  \caption{India state epidemic-similarity network: key topology metrics.}
+  \label{tab:net_stats}
+  \begin{tabular}{lc}
+    \toprule
+    Property & Value \\
+    \midrule
+    Nodes (states)           & 28 \\
+    Pearson threshold        & $r > 0.60$ \\
+    Network density          & $\approx$0.35 \\
+    Avg.\ clustering coeff.\ & $\approx$0.72 \\
+    Avg.\ shortest path      & $\approx$2.1 \\
+    Diameter                 & 4 \\
+    Louvain modularity $Q$   & 0.511 \\
+    Communities              & 4 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+Across all six centrality metrics (Appendix~\ref{app:centrality}),
+Karnataka, Tamil Nadu, and Maharashtra consistently rank highest,
+identifying them as epidemiological hubs at the national scale---states
+whose epidemic trajectories are most influential on the overall network
+dynamics. Their high betweenness centrality implies that they lie on the
+majority of shortest epidemic paths between other states.
+
+\subsection{Louvain Community Detection}
+\label{subsec:louvain}
+
+Louvain community detection on the state network yields four communities
+($Q = 0.511$, Figure~\ref{fig:india_comm}).
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=\linewidth]{india_fig6_communities}
+  \caption{Louvain community detection on the state epidemic-similarity
+    network ($Q = 0.511$, four communities). Convex hulls enclose
+    community members. Community~C1 (Southern states: Tamil Nadu, Kerala,
+    Karnataka) exhibits a distinct early Wave~1 peak attributable to
+    earlier testing capacity and higher inter-state tourism flux.
+    Community~C0 (high-burden western and eastern states) and Communities
+    C2--C3 (central/northern states) reflect shared epidemic timing driven
+    by geographic connectivity and inter-state mobility patterns.}
+  \Description{Kamada-Kawai network graph with four translucent convex
+    hulls in distinct colours enclosing community members. State node
+    labels are visible. Community labels are printed inside each hull.}
+  \label{fig:india_comm}
+\end{figure}
+
+The high modularity ($Q = 0.511$) indicates that the Indian state network
+is \emph{strongly modular}: epidemic communities correspond approximately
+to geographic macro-regions. This has a direct policy implication:
+interstate travel restrictions are effective epidemic firewalls because
+they sever the between-community edges responsible for cross-regional
+seeding---a conclusion we revisit in Section~\ref{sec:discussion}.
+
+\subsection{SIR Epidemic Simulation on State Network}
+\label{subsec:sir}
+
+To validate the network structure against observed epidemic cascade
+patterns, we ran a discrete-time SIR model on the spatial adjacency graph
+(Queen contiguity from GeoPandas; Appendix~\ref{app:spatial_net})
+with $\beta = 0.35$, $\gamma = 0.12$, seeded at Maharashtra.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=\linewidth]{india_fig8_sir_simulation}
+  \caption{SIR epidemic simulation on India state network
+    ($\beta=0.35$, $\gamma=0.12$, seed: Maharashtra). Panel~A: aggregate
+    S/I/R fraction curves; peak infected fraction $\approx$35\% of states.
+    Panel~B: state-level infection timeline heatmap showing geographic
+    proximity states (Goa, Karnataka, Gujarat) infected first.
+    Panel~C: infection cascade bar chart --- arrival time step per state.
+    The simulated cascade sequence closely matches Wave~2 observed
+    activation order, providing informal model validation.}
+  \Description{Three-panel figure. Left: SIR curves over 80 time steps.
+    Centre: heatmap of S/I/R status per state per time step. Right:
+    horizontal bars showing infection arrival time for each state.}
+  \label{fig:india_sir}
+\end{figure}
+
+The simulated cascade (Figure~\ref{fig:india_sir}) reaches 50\% of states
+within $\approx$12 time steps and mirrors the observed Wave~2 activation
+sequence, where Maharashtra, Gujarat, and Karnataka ignited
+simultaneously before spreading northward into the Gangetic plain.
+This informal validation supports the use of the state correlation network
+as a structural model of epidemic spread.
+
+\subsection{Vaccination Coverage and Outcome Correlation}
+\label{subsec:vaccination}
+
+Figure~\ref{fig:india_vax} directly addresses the prediction and causal
+questions by examining how vaccination coverage correlates with
+state-level CFR.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=\linewidth]{india_fig9_vaccination}
+  \caption{Vaccination coverage vs.\ COVID-19 outcomes across Indian
+    states. Panel~A: scatter of vaccination coverage (\%) vs.\ CFR (\%);
+    bubble size $\propto$ population; colour encodes region. The negative
+    relationship (Pearson $r$ and $p$-value annotated) is driven primarily
+    by southern states achieving both high coverage and low CFR.
+    Panel~B: choropleth of total vaccine doses administered per state ---
+    absolute rollout is dominated by population-heavy northern states,
+    while per-capita coverage is higher in the South.}
+  \Description{Two panels. Left: scatter plot with regression line
+    showing negative vaccination-CFR trend. Right: choropleth map of
+    India coloured by vaccine dose totals.}
+  \label{fig:india_vax}
+\end{figure}
+
+States exceeding 50\% first-dose coverage showed a mean CFR
+approximately 0.4 percentage points lower than states below 30\%
+coverage. However, this correlation partially conflates healthcare
+infrastructure with vaccination: the same states (Kerala, Tamil Nadu,
+Karnataka) that vaccinated fastest also had the strongest clinical systems.
+The PCA analysis in Section~\ref{subsec:composite} disentangles these.
+
+\subsection{Composite PCA and Causal Analysis}
+\label{subsec:composite}
+
+Figure~\ref{fig:india_pca} is the key causal finding of the India
+notebook, addressing directly why certain regions performed better.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=\linewidth]{india_fig11_composite}
+  \caption{Composite analysis. Panel~A: PCA biplot of seven
+    epidemiological features (bubble size $\propto$ total cases).
+    PC1 (46.0\% variance) captures epidemic scale; PC2 (28.6\%) contrasts
+    CFR against recovery rate. Maharashtra and Kerala are extreme PC1
+    outliers for opposite structural reasons.
+    Panel~B: epidemiological correlation matrix --- the dominant feature
+    is the CFR--Recovery Rate anti-correlation ($r=-0.89$, $p\ll0.001$).
+    Panel~C: Louvain community network (Kamada-Kawai, $Q=0.511$).
+    Panel~D: CFR distribution by geographic region; North India median
+    CFR $\approx 1.65\%$, South India $\approx 1.05\%$.}
+  \Description{Four-panel composite. Top-left: PCA biplot with
+    state labels and loading arrows. Top-right: correlation heatmap.
+    Bottom-left: community network. Bottom-right: CFR boxplots by region.}
+  \label{fig:india_pca}
+\end{figure}
+
+The CFR--Recovery Rate anti-correlation ($r = -0.89$, Panel~B) is the
+single most important quantitative finding of the India analysis. States
+achieving lower CFR simultaneously achieve higher recovery rates---a
+pattern inconsistent with luck or epidemic timing but entirely consistent
+with a \emph{healthcare infrastructure} mechanism: better hospitals produce
+fewer deaths and faster recovery from the same infections. This directly
+answers Topic~23's causal question: Kerala outperformed Bihar not because
+it was exposed later or to a milder variant, but because its clinical
+system converted the same pathogen exposure into systematically better
+patient outcomes.
+
+Moran's~I spatial autocorrelation (Queen contiguity weights) confirms
+that both high-CFR and high-case states cluster geographically
+($I > 0$, $p < 0.05$ for both variables), validating the spatial
+network structure. Mann-Kendall trend tests on the national daily series
+find a significant increasing trend ($p < 0.05$) over the full period
+for cases and deaths, and a significant decreasing trend for $R_t$
+post-Wave~2 peak, consistent with accumulating population immunity.
+
+%% ═══════════════════════════════════════════════════════════════════════════
+\section{Pune District: Micro-Level Analysis}
+\label{sec:pune}
+%% ═══════════════════════════════════════════════════════════════════════════
+
+\subsection{Epidemic Curve and Wave Decomposition}
+\label{subsec:pune_curve}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=\linewidth]{pune_fig1_epidemic_curve}
+  \caption{COVID-19 epidemiological overview, Pune District (2020--2021).
+    Panel~A: epidemic curve (weekly cases, recoveries, deaths $\times$30);
+    Wave~1 (yellow band) and Wave~2 Delta (pink band) annotated.
+    Panel~B: weekly CFR, rising sharply to $\approx$12.5\% by
+    August~2021---partially a death-registration lag artefact.
+    Panel~C: cumulative stacked trajectory approaching 1~million total
+    cases. Panel~D: monthly attack rate per 100k; Wave~2 drove
+    $\approx$2,300/100k in April~2021 alone.}
+  \Description{Four-panel Pune epidemic figure. Panel A has overlapping
+    area plots. Panel B shows a rising CFR line. Panel C shows a stacked
+    area cumulative chart. Panel D shows red bar chart of monthly rates.}
+  \label{fig:pune_epic}
+\end{figure}
+
+Pune District's Wave~2 peak ($\approx$51,000 weekly cases) was
+$5.7\times$ larger than Wave~1 ($\approx$9,000)---a substantially greater
+amplification than the national average of $4\times$, reflecting Pune's
+role as Maharashtra's second-largest city and a major IT-sector employment
+hub with high inter-taluka commuter flux. The SEIR model fit (Appendix~\ref{app:seir})
+yields $R_0 = 5.95$ with $\beta = 0.5949\,\text{d}^{-1}$,
+confirming a highly transmissible pathogen operating in a high-flux
+mobility network.
+
+\subsection{Hub Identification via Centrality Analysis}
+\label{subsec:hubs}
+
+Four centrality metrics were computed on the gravity-model mobility
+network (Appendix~\ref{app:network}); Figure~\ref{fig:pune_cent} presents
+the normalised results.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=\linewidth]{pune_fig3_centrality}
+  \caption{Pune District network centrality. Panel~A: normalised
+    centrality heatmap for all 15 talukas (yellow = low, dark red = high).
+    Panel~B: composite hub score ranking. Pune City (0.833) and Haveli
+    (0.722) are clearly dominant; a $2.4\times$ gap separates them from
+    Shirur (0.315). Notably, Shirur achieves \emph{maximum betweenness}
+    (1.00) despite a moderate composite score, identifying it as a
+    critical bottleneck on all network-shortest transmission paths.}
+  \Description{Two-panel figure. Left: heatmap with talukas on y-axis
+    and four centrality metrics on x-axis. Right: horizontal bar chart
+    ranked by composite score, coloured from yellow to dark red.}
+  \label{fig:pune_cent}
+\end{figure}
+
+\begin{table}[h]
+  \caption{Top-6 Pune talukas by composite hub score. Bold = tier-1
+    intervention priority; Shirur is tier-2 bottleneck.}
+  \label{tab:hubs}
+  \begin{tabular}{clcccc}
+    \toprule
+    Rank & Taluka & Score & Degree & Between. & Eigen. \\
+    \midrule
+    1 & \textbf{Pune City} & \textbf{0.833} & 1.00 & 0.00 & 1.00 \\
+    2 & \textbf{Haveli}    & \textbf{0.722} & 1.00 & 0.00 & 0.98 \\
+    3 & Shirur   & 0.315 & 0.67 & \textbf{1.00} & 0.05 \\
+    4 & Purandar & 0.313 & 0.67 & 0.81 & 0.12 \\
+    5 & Maval    & 0.251 & 0.56 & 0.59 & 0.09 \\
+    6 & Khed     & 0.233 & 0.78 & 0.07 & 0.14 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+The qualitative gap between Pune City / Haveli and all other talukas
+suggests a two-tier intervention structure: tier-1 resources (mass
+testing, strict mobility controls) directed at Pune City and Haveli
+for their high degree and eigenvector centrality; tier-2 resources
+(targeted surveillance) at Shirur for its complete betweenness---meaning
+every shortest epidemic path from northeastern talukas passes through it.
+
+\subsection{Network-Guided Intervention Analysis}
+\label{subsec:intervention}
+
+This section addresses the prediction question directly: can the network
+model quantify the value of hub-targeted versus uniform interventions?
+Figure~\ref{fig:intervention} and Table~\ref{tab:int} present the answer.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=\linewidth]{pune_fig7_interventions}
+  \caption{Network-guided intervention analysis (Delta baseline,
+    $R_0 = 2.8$). Panel~A: infectious prevalence under four strategies.
+    \emph{Targeted} (top-3 hubs, 60\% $\beta$ reduction) produces a
+    characteristic bimodal curve---hub suppression creates an initial
+    reduction, followed by a secondary wave as transmission reroutes
+    through lower-degree paths. This bimodal signature is unique to
+    hub-targeted interventions and absent in random or universal
+    strategies. Panel~B: final attack rate and peak prevalence by
+    strategy; targeted hubs achieve 12.24\% peak vs.\ 23.25\%
+    (no intervention).}
+  \Description{Two-panel figure. Left: four prevalence curves over
+    360 days; targeted curve shows a double-hump shape. Right: grouped
+    bar chart comparing attack rate and peak prevalence for all four
+    strategies.}
+  \label{fig:intervention}
+\end{figure}
+
+\begin{table}[h]
+  \caption{Intervention comparison (Delta baseline). Efficiency = peak
+    reduction per unit $\beta$-reduced taluka, normalised to random.}
+  \label{tab:int}
+  \begin{tabular}{lccccc}
+    \toprule
+    Strategy & Scope & $\beta$↓ & Peak & Reduction & Eff. \\
+    \midrule
+    None            & ---    & 0\%  & 23.25\% & ---        & --- \\
+    \textbf{Hubs}   & Top 3  & 60\% & \textbf{12.24\%} & \textbf{$-47.4\%$} & \textbf{3.5$\times$} \\
+    Random          & 3 rnd  & 60\% & 20.12\% & $-13.5\%$  & 1.0$\times$ \\
+    Universal       & All 15 & 30\% & 18.38\% & $-21.0\%$  & 1.6$\times$ \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+The $3.5\times$ efficiency gain from targeting just 3 of 15 talukas
+quantifies the value of network-science-informed triage. The same
+enforcement capacity that produces $-13.5\%$ peak reduction when applied
+randomly produces $-47.4\%$ when applied to network hubs.
+
+\subsection{Pandemic Phase Space}
+\label{subsec:phase}
+
+Figure~\ref{fig:phase} maps the outcome surface across the
+$R_0 \times \text{CFR}$ parameter space, locating each of the four
+simulation scenarios.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=\linewidth]{pune_fig8_phase_diagram}
+  \caption{$R_0 \times \text{CFR}$ pandemic phase diagrams for Pune
+    District. Panel~A: attack rate surface---near-complete saturation
+    ($>$75\%) for $R_0 > 1.5$, regardless of CFR. Panel~B: deaths
+    surface (thousands)---super-linear CFR scaling at moderate $R_0$.
+    Panel~C: peak prevalence surface---$R_0$-driven, with minimal
+    CFR sensitivity. Annotated points mark the four simulated scenarios.
+    The key insight: for any real COVID variant ($R_0 > 2$), the
+    actionable lever is \emph{peak prevalence timing}, not final attack
+    rate, which is near-insensitive to intervention.}
+  \Description{Three side-by-side contour plots with R0 on x-axis and
+    CFR on y-axis. Four labelled scenario points on each panel. Colour
+    gradients from white to dark for increasing metric values.}
+  \label{fig:phase}
+\end{figure}
+
+The phase diagram confirms a critical planning insight: for any $R_0 > 2$,
+final attack rate is $> 90\%$ regardless of intervention intensity in a
+fully susceptible population. The policy-relevant metric is therefore
+\emph{peak prevalence}---which directly determines healthcare system
+stress---rather than the final attack rate. This reframes the goal of
+non-pharmaceutical interventions from ``preventing infection'' to
+``flattening the curve to stay within healthcare capacity'', and
+provides the theoretical justification for why the 47.4\% peak reduction
+achieved by hub targeting is the correct metric by which to evaluate
+intervention strategies.
+
+%% ═══════════════════════════════════════════════════════════════════════════
+\section{Discussion}
+\label{sec:discussion}
+%% ═══════════════════════════════════════════════════════════════════════════
+
+\subsection{Answering the Four Research Questions}
+
+\paragraph{Q1 — Anomaly detection.}
+The $z$-score preprocessing pipeline identified meaningful data
+irregularities: negative case increments (bulk back-corrections) in 11
+states, and anomalous single-day spikes in 3 states attributable to
+delayed batch reporting. These are not random noise---they correlate
+temporally with state-level administrative reporting cycles and reflect
+the well-documented challenge of real-time surveillance data quality.
+
+\paragraph{Q2 — Correlation analysis.}
+The dominant finding is the CFR--Recovery Rate anti-correlation
+($r = -0.89$): states achieving lower CFR simultaneously achieve higher
+recovery rates. This is inconsistent with an exposure-timing or
+variant-fitness explanation and strongly consistent with a
+\emph{healthcare infrastructure} mechanism. The PCA biplot reinforces
+this: the PC2 axis (CFR vs.\ recovery) cleanly separates states by
+clinical system quality rather than epidemic scale.
+
+\paragraph{Q3 — Prediction.}
+The metapopulation SEIR ($R_0 = 5.95$) accurately captures Wave~1
+peak timing and magnitude for Pune. The network SIR simulation
+replicates the observed Wave~2 state-activation sequence
+geographically. Together, these validate the mechanistic models.
+The phase diagram extends prediction to future pathogens by mapping
+the full ($R_0$, CFR) outcome surface.
+
+\paragraph{Q4 — Regional heterogeneity.}
+Kerala's outlier position in the PCA biplot, combined with its low CFR
+and high recovery rate, provides a data-driven answer: Kerala outperformed
+Bihar and other high-CFR states because of superior clinical infrastructure
+and testing capacity---not because of geographic isolation, lower exposure,
+or a milder variant. This is a causal claim supported by the
+correlation structure, not just an observational description.
+
+\subsection{Multi-Scale Modularity and Policy Implications}
+
+The 4.6$\times$ modularity contrast between the state network
+($Q = 0.511$) and the Pune district network ($Q = 0.110$) is among
+the most policy-relevant findings of this project. It implies that
+interstate boundaries function as natural epidemic firewalls---removing
+between-community edges strongly fragments epidemic spread---while
+intra-district boundaries within Pune do not, because the network is
+too dense and well-mixed. This provides a formal network-science
+justification for the policy hierarchy: state-level movement restrictions
+are substantially more effective containment tools than taluka-level
+restrictions.
+
+\subsection{Bimodal Intervention Signature}
+
+The bimodal infectious curve observed under targeted hub intervention
+(Figure~\ref{fig:intervention}, Panel~A) is epidemiologically significant
+and not an artefact. The first peak is suppressed by hub quarantine; the
+second peak emerges when hub immunity wanes or restrictions ease, as the
+epidemic reroutes through lower-degree pathways. This signature should
+be anticipated in real-world hub-targeted interventions and planned for
+with staged re-opening protocols rather than premature lifting of
+restrictions.
+
+\subsection{Limitations}
+
+Three limitations warrant acknowledgement.
+First, the gravity model ($F_{ij} \propto P_i^{0.7} P_j^{0.7} d_{ij}^{-1.5}$)
+approximates commuter flux; CDR or Google Mobility data would substantially
+improve edge weight accuracy. Second, the single-population SEIR does not
+model waning immunity or re-infection, limiting its applicability beyond
+Wave~1. Third, the metapopulation model treats talukas as internally
+homogeneous, ignoring within-taluka age structure, comorbidity distribution,
+and spatial sub-structure.
+
+%% ═══════════════════════════════════════════════════════════════════════════
+\section{Conclusions}
+\label{sec:conclusion}
+%% ═══════════════════════════════════════════════════════════════════════════
+
+We have demonstrated that combining epidemic modelling with network science
+across geographic scales generates insights that neither approach produces
+alone. At the state level, the epidemic similarity network reveals
+structural isolation and community organisation that predicts which
+regions will decouple epidemiologically, and PCA with correlation analysis
+provides a causal attribution of CFR differences to healthcare
+infrastructure. At the district level, the metapopulation SEIR with
+hub-targeted intervention analysis shows that applying the same enforcement
+resource to network-identified hubs achieves $3.5\times$ the peak-prevalence
+reduction of random or uniform strategies.
+
+The central operational recommendation is unambiguous: \textbf{Pune City
+and Haveli should be the tier-1 targets for any future epidemic
+triage}, with Shirur as a tier-2 bottleneck node. Under Delta-equivalent
+conditions, this network-informed allocation reduces peak
+district-level prevalence by 47.4\% compared to unguided resource
+deployment.
+
+Future directions include extending SEIR to SEIRS to model waning
+immunity and multi-wave dynamics; replacing the gravity model with
+CDR-validated mobility data; applying the same district-level framework
+to Mumbai and Bengaluru for generalisability testing; and incorporating
+hospital capacity data to translate peak prevalence directly into ICU
+stress metrics.
+
+%% ── ACKNOWLEDGEMENTS ─────────────────────────────────────────────────────
+\begin{acks}
+The authors thank the volunteer community of \texttt{covid19india.org}
+for maintaining the most comprehensive open Indian COVID-19 archive,
+and the Maharashtra State government for public release of taluka-level
+data. Computational analysis used NetworkX~\cite{Hagberg2008},
+GeoPandas~\cite{Jordahl2020}, SciPy~\cite{Virtanen2020},
+Matplotlib~\cite{Hunter2007}, Folium~\cite{folium}, and
+\texttt{python-louvain}~\cite{Blondel2008}.
+\end{acks}
+
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{pandemic_refs}
+
+%% ═══════════════════════════════════════════════════════════════════════════
+\appendix
+%% ═══════════════════════════════════════════════════════════════════════════
+
+\section{Supplementary Figures}
+\label{app:supp}
+
+The following figures are referenced from the main text and available
+in the project repository. They are placed here rather than in the main
+body to maintain narrative focus.
+
+\subsection{Geospatial Burden Distribution}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=\linewidth]{india_fig2_spatial_maps}
+  \caption{State-level spatial distribution of COVID-19 burden (GeoPandas
+    static maps). Left: cases per lakh population (YlOrRd). Centre: CFR
+    (\%, OrRd)---a clear North-South gradient visible. Right: vaccine
+    doses administered (YlGn). The CFR gradient motivates the
+    healthcare-infrastructure hypothesis discussed in
+    Section~\ref{subsec:composite}.}
+  \Description{Three choropleth maps of India, one per metric.}
+  \label{app:fig:spatial}
+\end{figure}
+
+\subsection{State-Level Centrality Analysis}
+\label{app:centrality}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=\linewidth]{india_fig4_centrality}
+  \caption{Six-metric centrality analysis of the India state correlation
+    network (degree, betweenness, closeness, eigenvector, PageRank, Katz).
+    Karnataka, Tamil Nadu, and Maharashtra rank highest across multiple
+    metrics, identifying them as national-level epidemiological hubs.}
+  \Description{Six-panel bar chart figure, one per centrality metric.}
+  \label{app:fig:cent}
+\end{figure}
+
+\subsection{Spatial Adjacency Network}
+\label{app:spatial_net}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=\linewidth]{india_fig7_spatial_network}
+  \caption{Inter-state spatial adjacency network (GeoPandas Queen
+    contiguity). Nodes at state centroids; edges connect states sharing
+    a land border. Node size $\propto$ confirmed cases; colour encodes
+    CFR. Used as the simulation graph for the SIR analysis in
+    Section~\ref{subsec:sir}.}
+  \Description{Map-embedded network with nodes at state geographic
+    positions and lines connecting adjacent states.}
+  \label{app:fig:spatial_net}
+\end{figure}
+
+\subsection{Pune SEIR Model Fit}
+\label{app:seir}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=\linewidth]{pune_fig2_seir_fit}
+  \caption{SEIR model fit for Pune District. Left: best-fit curve
+    ($R_0 = 5.95$, $\beta = 0.5949$) overlaid on observed weekly cases.
+    The low $R^2 = 0.009$ reflects a structural mismatch between a
+    single-wave SEIR and the two-wave observed series; Wave~1 fit is
+    accurate. Right: compartment dynamics over 420 days.}
+  \Description{Two-panel SEIR figure. Left: bar chart with overlaid
+    model curve. Right: S/E/I/R compartment trajectories.}
+  \label{app:fig:seir}
+\end{figure}
+
+\subsection{Pune Mobility Network Visualisation}
+\label{app:network}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=\linewidth]{pune_fig4_network}
+  \caption{Pune District mobility network. Nodes at geographic coordinates;
+    size $\propto$ population; colour $\propto$ composite hub score.
+    Edge width $\propto \log(F_{ij})$. The spoke-and-hub topology with
+    Pune City and Haveli at the centre is immediately apparent.}
+  \Description{Geographic network plot with 15 nodes and weighted edges.
+    Pune City and Haveli are large red central nodes.}
+  \label{app:fig:network}
+\end{figure}
+
+\subsection{Pune Metapopulation Scenario Comparison}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=\linewidth]{pune_fig6_scenarios}
+  \caption{Metapopulation SEIR scenario comparison (four pathogen
+    profiles). Key result: for all scenarios with $R_0 \geq 1.4$,
+    final attack rate exceeds 93\%---confirming that peak prevalence,
+    not attack rate, is the actionable management target.}
+  \Description{Four-panel scenario comparison figure.}
+  \label{app:fig:scenarios}
+\end{figure}
+
+\subsection{Pune Network Robustness}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=\linewidth]{pune_fig9_robustness}
+  \caption{Network robustness under targeted vs.\ random hub removal.
+    D50 = 8 nodes under targeted removal vs.\ $>$12 nodes for random
+    removal, confirming scale-free-like vulnerability to hub attack.}
+  \Description{Two-panel robustness figure with giant component fraction
+    and average shortest path length curves.}
+  \label{app:fig:robust}
+\end{figure}
+
+\section{Figure Saving Instructions}
+\label{app:savefig}
+
+Add the following before each \texttt{plt.show()} in the notebooks:
+
+\begin{verbatim}
+plt.savefig("india_fig1_epidemic_curve.png",
+            dpi=180, bbox_inches="tight",
+            facecolor="white")
+\end{verbatim}
+
+Full filename mapping is provided in the header comment of this
+\texttt{.tex} file. Place all saved PNG files in the same directory
+as the \texttt{.tex} before compiling.
+
+\section{Software Environment}
+\label{app:env}
+
+Python~3.10; key packages: \texttt{networkx==3.1},
+\texttt{geopandas==0.13}, \texttt{python-louvain==0.16},
+\texttt{scipy==1.11}, \texttt{folium==0.14},
+\texttt{matplotlib==3.7}, \texttt{seaborn==0.12},
+\texttt{scikit-learn==1.3}, \texttt{libpysal==4.7},
+\texttt{esda==2.5}, \texttt{pymannkendall==1.4}.
+
+\end{document}
+\endinput

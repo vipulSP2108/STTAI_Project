@@ -1,3 +1,6 @@
 [2026-11-05 18:40:54] model=production intent=it_support conf=0.283 lat_ms=7621.39
 [2026-11-05 18:48:40] model=production intent=it_support conf=0.283 lat_ms=4675.51
 [2026-11-05 19:03:26] model=production intent=it_support conf=0.283 lat_ms=7518.34
+[2026-11-06 04:21:55] model=production intent=it_support conf=0.283 lat_ms=13077.50
+[2026-11-06 04:37:24] model=production intent=it_support conf=0.283 lat_ms=11294.74
+[2026-11-06 05:40:42] model=production intent=it_support conf=0.283 lat_ms=14998.83
