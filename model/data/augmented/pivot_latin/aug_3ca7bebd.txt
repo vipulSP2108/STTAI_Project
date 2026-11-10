@@ -1,0 +1,7 @@
+UUID: aug_3ca7bebd
+Parent_UUID: 8ae8905b
+Augmentation_Type: pivot_latin
+Similarity_Score: 0.9685
+Transcript: someone inspected today? Hello IITGN assistance bureau. Is there a separate facility for storage luggage during semester?
+Target_Label: student_services
+Spoken_Languages: ['English']

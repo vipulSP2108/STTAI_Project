@@ -35,7 +35,8 @@ ENV PYTHONUNBUFFERED=1 \
 
 # Copy pinned requirements and install
 COPY code/requirements.txt /app/code/requirements.txt
-RUN pip install --no-cache-dir -r /app/code/requirements.txt
+RUN pip install --no-cache-dir --upgrade pip "setuptools<70" wheel && \
+    pip install --no-cache-dir -r /app/code/requirements.txt
 
 # Pre-cache Whisper base model weights for true offline operation (--network none)
 RUN python3 -c "import whisper; whisper.load_model('base')"

@@ -1,0 +1,7 @@
+UUID: aug_33bc4982
+Parent_UUID: f5f59b22
+Augmentation_Type: pivot_latin
+Similarity_Score: 0.9609
+Transcript: Hello IITGN Helpdesk, my hostel assigned quarters has a water leakage problem near the window sill. Could maintenance send someone to fix it?
+Target_Label: hostel_mess
+Spoken_Languages: ['English']

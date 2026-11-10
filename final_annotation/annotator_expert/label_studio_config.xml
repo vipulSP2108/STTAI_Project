@@ -1,0 +1,60 @@
+<!-- Label Studio Configuration - Expert Adjudication (CS203 Project 5)
+     Resolving 47 inter-annotator disputes + 8 blind test-retest repeats
+-->
+<View>
+  <Header value="Expert Adjudication Panel — Voice Helpdesk Disagreement Resolution"/>
+  
+  <View style="background: #fffbeb; border: 1px solid #fef3c7; border-left: 6px solid #f59e0b; border-radius: 6px; padding: 14px; margin-bottom: 16px;">
+    <Header value="Inter-Annotator Conflict &amp; Protocol Rule Guidance" size="4" style="margin-top: 0; color: #92400e;"/>
+    <Text name="conflict_summary" value="$conflict_summary"/>
+    <Text name="applicable_rule" value="$applicable_rule"/>
+  </View>
+
+  <Audio name="audio" value="$audio" zoom="true" hotkey="space"/>
+
+  <!-- STEP 1: Languages & Transcript -->
+  <Header value="Step 1: Spoken Languages &amp; Audio Verification"/>
+  <Choices name="languages" toName="audio" choice="multiple">
+    <Choice value="English" hotkey="e" hint="Contains spoken English"/>
+    <Choice value="Hindi" hotkey="h" hint="Contains spoken Hindi (हिन्दी)"/>
+    <Choice value="Gujarati" hotkey="g" hint="Contains spoken Gujarati (ગુજરાતી)"/>
+  </Choices>
+
+  <TextArea
+    name="transcript"
+    toName="audio"
+    placeholder="Type verbatim code-mixed transcript (optional / as needed)"
+    rows="2"
+    editable="true"
+    required="false"
+  />
+
+  <!-- STEP 2: Final Gold Intent Decision -->
+  <Header value="Step 2: Adjudicated Gold Intent (Decisive Ground Truth)"/>
+  <Choices
+    name="intent"
+    toName="audio"
+    choice="single"
+    required="true"
+    requiredMessage="Please select the final adjudicated intent category.">
+    <Choice value="admissions" hotkey="1"
+            hint="Admissions: Entrance rank, cutoffs, admission form, seat acceptance, fee deposit"/>
+    <Choice value="hostel_mess" hotkey="2"
+            hint="Hostel/Mess: Room maintenance, mess rebate, food menu, caretaker, room allotment"/>
+    <Choice value="it_support" hotkey="3"
+            hint="IT Support: WiFi connectivity, student portal password, email/LDAP account, printers"/>
+    <Choice value="student_services" hotkey="4"
+            hint="Student Services: ID cards, library fines/books, health center, shuttle buses, bonafide"/>
+  </Choices>
+
+  <!-- STEP 3: Adjudication Notes -->
+  <Header value="Step 3: Adjudication Rationale / Notes"/>
+  <TextArea
+    name="adjudication_notes"
+    toName="audio"
+    placeholder="State why this label is chosen per GUIDELINES.md boundary rules"
+    rows="2"
+    editable="true"
+    required="false"
+  />
+</View>

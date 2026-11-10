@@ -1,0 +1,44 @@
+{
+  "timestamp": "2026-11-10T00:11:12.370543",
+  "model_size": "base",
+  "total_transcribed": 5,
+  "total_time_seconds": 55.54,
+  "mean_latency_seconds": 11.11,
+  "results": [
+    {
+      "uuid": "016b6287",
+      "transcript": "Hello, IIT Gandhi Nagar voice cell disk. I am facing a serious internet connectivity issue on my laptop. The campus Wi-Fi connects successfully but website are loading very slowly and sometimes the connection gets disconnected automatically. This has been happening since yesterday evening and I restarted my laptop. I have been connecting with the network before but nothing seems to have changed. My online lectures and assignments are very difficult to complete. I also tried using the Wi-Fi in another location on campus but the speed was still. Could you please check whether there is a network issue or if I need to update my settings on my device? Please let me know if I should visit the IIT Support Office or submit online complaint. I need a stable connection for my academic work so an early reservation would be very helpful than Nehwad.",
+      "detected_language": "en",
+      "latency_seconds": 5.92,
+      "status": "SUCCESS"
+    },
+    {
+      "uuid": "018267c4",
+      "transcript": "Namaste, mouge hostel ke name ke baare mein, nimo ke baare mein, jankari chai ye, kyo ki mera beta, apne ayati gandhinagar mein, advishan ke baad, ghar se dhur zahra hai, mai janna chata hou, ki ayati gandhinagar mein, hostel mein, rene ke rene wale viddhar to ke liye, aane jane ka, koi samayne, nichidhae, yaa, yaa, kisi viddhar kyo, sabta mein, sabta mein, shahra zahana hou ta hai, yaa, kus dino ke liye, ghar lottna hou, lottna hou, to, kya, ushe peli anumeti lene parti hai, kya, iske liye, kui online, chutti ka, avidhan karna hou ta hai, yaa, hostel waard ka, usutna dene ka, apparyat, dena paryat hohe, iske alawa, kui aapethi siti mein, mata pita ki saadikari ko, samper ka kar sakte hai, haam yeh abhi zana, samanda saathe hai, ki hostel ki anushashan, agun ka ko, rath mein, bahar rene ke, samayne, jo niem hai, wo kaha uplad hai, mera uddiske wal niemu ko, peli hai, samanda hai, ta ki mera beta campus mein, surajshit aur gymmejdari ke saat, raha sakta hai, probayakar ke iske leye, margadashin ki ji,",
+      "detected_language": "hi",
+      "latency_seconds": 14.78,
+      "status": "SUCCESS"
+    },
+    {
+      "uuid": "0200b1f0",
+      "transcript": "Namaskal, IITGN voice help desk mtech computer science eligibility criteria shows can non gate candidates apply for hidden test?",
+      "detected_language": "hi",
+      "latency_seconds": 1.47,
+      "status": "SUCCESS"
+    },
+    {
+      "uuid": "0279b6a6",
+      "transcript": "G<|uk|>",
+      "detected_language": "ml",
+      "latency_seconds": 26.37,
+      "status": "SUCCESS"
+    },
+    {
+      "uuid": "0640be0f",
+      "transcript": "Namaste, I am going to take a few questions about the food and the lifestyle of my son. If you get admission to Ayati Gandhi Nagar, then it is the first time that the road is going to be taken away from the house. So, we need to know what is the purpose of living in the hostel. What is the purpose of living in the hostel? Is there food in the house in the middle of the month or two? Is there food in the middle of the month, or is there food in the middle of the month or two? My son is worried about food. That is why we need to know that what is the purpose of living in the hostel. The purpose of living in the hostel is to go to the hostel. If the hostel is in the middle of the month, then what is the purpose of living in the hostel? Please do a few questions about it.",
+      "detected_language": "hi",
+      "latency_seconds": 6.99,
+      "status": "SUCCESS"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+UUID: aug_a5d804c3
+Parent_UUID: 6ba25efe
+Augmentation_Type: pivot_latin
+Similarity_Score: 0.9209
+Transcript: Hello iITGN inquiry office Here we have clean up We put it in the bucket You can sell it quickly You can sell it.
+Target_Label: student_services
+Spoken_Languages: ['Hindi']

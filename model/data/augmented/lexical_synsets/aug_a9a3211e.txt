@@ -1,0 +1,7 @@
+UUID: aug_a9a3211e
+Parent_UUID: 81392443
+Augmentation_Type: lexical_synsets
+Similarity_Score: 0.8689
+Transcript: After applying for a late entry gate pass on the dormitory ERP portal, where will the caretaker approval be displayed?
+Target_Label: hostel_mess
+Spoken_Languages: ['English']

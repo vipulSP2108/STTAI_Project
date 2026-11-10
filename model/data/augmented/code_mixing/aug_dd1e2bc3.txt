@@ -1,0 +1,7 @@
+UUID: aug_dd1e2bc3
+Parent_UUID: 9479e1e6
+Augmentation_Type: code_mixing
+Similarity_Score: 0.907
+Transcript: Are Jain mess meal alternatives readily provided in the central mess or is a prior subscription required?
+Target_Label: hostel_mess
+Spoken_Languages: ['English']

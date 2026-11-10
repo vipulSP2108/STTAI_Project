@@ -1,0 +1,7 @@
+UUID: aug_9ac64bb3
+Parent_UUID: 688c7015
+Augmentation_Type: back_translation
+Similarity_Score: 0.9012
+Transcript: I need to submit a room change application on medical grounds, kripya share the approval protocol.
+Target_Label: hostel_mess
+Spoken_Languages: ['English']

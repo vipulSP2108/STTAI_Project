@@ -1,0 +1,7 @@
+UUID: aug_2c0010da
+Parent_UUID: 20de435d
+Augmentation_Type: lexical_synsets
+Similarity_Score: 0.8505
+Transcript: Hello student services desk, what is the procedure to obtain an official bonafide verification letter for passport renewal?
+Target_Label: student_services
+Spoken_Languages: ['English']

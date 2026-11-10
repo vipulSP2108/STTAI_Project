@@ -1,0 +1,7 @@
+UUID: aug_be0b26d7
+Parent_UUID: 286218b8
+Augmentation_Type: lexical_synsets
+Similarity_Score: 0.8806
+Transcript: નમસ ્ ત ે સહ ા ય હ ુ ં મ ા ર ી દ ી કર ી ન ા અભ ્ ય ા સ અન ે ખર ્ ચ મ ા ટ ે આર ્ થ િ ક સહ ા યન ી શક ્ યત ા વ િ શ ે જ ા ણવ ા મ ા ં કર ા વવ ા ન ી પ ્ રક ્ ર િ ય ા પર ક ો લરશ ી પ અન ે આર ્ થ િ ક સહ ા ય સ ં બ ં ધ િ ત સત ્ ત ા વ ા ર મ ા હ િ ત ી તથ ા પર િ ણ ા મ ા ં અરજ ી કરવ ા ન ી છ ે લ ્ લ ી ત ા ર ી ક ્ ય ા ં થ ી જ ો ઈ શક ા ય ત ે જણ ા વશ ો.
+Target_Label: student_services
+Spoken_Languages: ['Gujarati']

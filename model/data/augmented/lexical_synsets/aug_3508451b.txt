@@ -1,0 +1,7 @@
+UUID: aug_3508451b
+Parent_UUID: cd29a36f
+Augmentation_Type: lexical_synsets
+Similarity_Score: 0.973
+Transcript: Could additional drying racks be installed in the washing service drying area of the hostel wing?
+Target_Label: hostel_mess
+Spoken_Languages: ['English']

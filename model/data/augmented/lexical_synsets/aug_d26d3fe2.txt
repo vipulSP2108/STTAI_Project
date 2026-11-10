@@ -1,0 +1,7 @@
+UUID: aug_d26d3fe2
+Parent_UUID: 1223b513
+Augmentation_Type: lexical_synsets
+Similarity_Score: 0.9488
+Transcript: Hello, IITGN, Helpdesk, Online fee payment Karthewakt, Brawzal crash and a Intranet Page transaction pending Dekharaa, Payment Dwarakanna Safe.
+Target_Label: it_support
+Spoken_Languages: ['Hindi']

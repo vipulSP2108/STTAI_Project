@@ -1,0 +1,7 @@
+UUID: aug_f709062b
+Parent_UUID: 3170f437
+Augmentation_Type: lexical_synsets
+Similarity_Score: 0.8783
+Transcript: નમસ ્ ક ા ર, આઇઆઇટ ી ગ ા ં ધ ી નગર વ ો ઇસ હ ે લ ્ પડ ે સ ્ ક, ફ ો ર ે ન ન ે શનલ અન ે એનઆરઆઇ વ િ દ ્ ય ા ર ્ થ ી ઓ મ ા ટ ે એડમ િ શન એપ ્ લ િ ક ે શન ફ ો ર ્ મ અન ે સ ્ ક ો લરશ ી પન ા ન િ યમ ો શ ુ ં છ ે?
+Target_Label: admissions
+Spoken_Languages: ['Gujarati']

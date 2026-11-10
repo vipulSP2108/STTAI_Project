@@ -1,0 +1,7 @@
+UUID: aug_4e583f4c
+Parent_UUID: 0200b1f0
+Augmentation_Type: lexical_synsets
+Similarity_Score: 0.9631
+Transcript: Namaskal, IITGN voice help desk MTAC computer science eligibility criteria shows Can non qualifying GATE score candidates apply for hidden test?
+Target_Label: admissions
+Spoken_Languages: ['English', 'Hindi']

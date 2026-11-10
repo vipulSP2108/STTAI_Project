@@ -1,0 +1,7 @@
+UUID: aug_09d42d70
+Parent_UUID: dc815fe7
+Augmentation_Type: lexical_synsets
+Similarity_Score: 0.94
+Transcript: નમસ ્ ત ્ ર હ ો ં મ ા ર ી દ ી કર ી ન ે આન િ ર ્ ણગરમ ા ં એડમ િ શન મ ા ટ ે મ ા હ િ ત ી મળ ી છ ે તમ ા ર ા છ ે ત ે બહ ા ર ત ્ ય ા ં અફ ે સ ટ ે બલ અન ે ઇન ્ ટરન ે ટ સ ુ વ િ ધ ા ઓ મળ ે છ ે ક ે ક ે ટલ ી ક વસ ્ ત ુ ઓ ઘર ે થ ી લ ા વ ી પડ ે છ ે અલગથ ી કરવ ા ન ી હ � હવ ે જ ે ફ ્ ર ે ડ.
+Target_Label: admissions
+Spoken_Languages: ['Gujarati']

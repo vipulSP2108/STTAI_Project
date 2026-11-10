@@ -1,0 +1,7 @@
+UUID: aug_7168f508
+Parent_UUID: 89456f27
+Augmentation_Type: lexical_synsets
+Similarity_Score: 1.0
+Transcript: ھا ھا ( Ref: campus query 110 ).
+Target_Label: it_support
+Spoken_Languages: ['Hindi']

@@ -1,0 +1,7 @@
+UUID: aug_de13c5c3
+Parent_UUID: ecf27e76
+Augmentation_Type: lexical_synsets
+Similarity_Score: 0.89
+Transcript: હ ો સ ્ ટ ે લ ગ ે ટ પર લ ે ટ એન ્ ટ ્ ર ી મ ા ટ ે પરમ િ શન ઓનલ ા ઇન લ ે વ ી પડ ે છ ે ક ે સ િ ક ્ ય ુ ર િ ટ ી રજ િ સ ્ ટરમ ા ં એન ્ ટ ્ ર ી પ ૂ રત ી છ ે?
+Target_Label: student_services
+Spoken_Languages: ['Gujarati']

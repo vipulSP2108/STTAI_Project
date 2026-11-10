@@ -1,0 +1,7 @@
+UUID: aug_43781b84
+Parent_UUID: cd29a36f
+Augmentation_Type: lexical_synsets
+Similarity_Score: 0.9339
+Transcript: Could additional drying racks be installed in the laundry drying area of the dormitory wing?
+Target_Label: hostel_mess
+Spoken_Languages: ['English']

@@ -1,0 +1,7 @@
+UUID: aug_193a718b
+Parent_UUID: ef48e8d5
+Augmentation_Type: lexical_synsets
+Similarity_Score: 0.9614
+Transcript: કર ે છ ે લ ્ લ ે ( Ref: campus query 056 ).
+Target_Label: it_support
+Spoken_Languages: ['Gujarati']

@@ -1,0 +1,7 @@
+UUID: aug_757eaf5d
+Parent_UUID: 922fe15a
+Augmentation_Type: lexical_synsets
+Similarity_Score: 0.9564
+Transcript: नमल े र त ा ल ु क े स े ज ा द ि ए व ा द कर ी । hamare gaon mein lagbha kpanra se bistin o se pani nye aar hai hum nye nagar pali ke mhe boh chare kum plen bhi dars kare hai leke hum kai se bhe pani uplab ne hore hai hum hain kuch saeta karein ke to ھا ہوں گa ھم شاپ کالیوارے لوگوں نے ملکے بہت سے بہت سے Notice Jama کری ہے ھمیں ہوں گوں کو بولا ہے کہ ہوں ہوں میں کالی میں پانی نہیں آ رہے بہت سے رہے تکلی فیں ہوں میں اٹھانے پڑھ رہے تو آپ جل سے جل ہوں میں پانی فہے جے وہ 12 بر ہے یہ کی باک باتا رہے کہ ہوں لوگ کوشش کرے وہ پائپلاں کہا ھاں کچھ کچھ.
+Target_Label: student_services
+Spoken_Languages: ['Hindi']

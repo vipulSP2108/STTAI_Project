@@ -1,0 +1,7 @@
+UUID: aug_1fa3b7d5
+Parent_UUID: 939b462d
+Augmentation_Type: lexical_synsets
+Similarity_Score: 0.9053
+Transcript: એડમ િ શન પ ો ર ્ ટલ પર ફ ી જમ ા કર ા વ ી દ ી ધ ી છ ે પણ પ ે મ ે ન ્ ટ સ ્ ટ ે ટસ પ ે ન ્ ડ િ ં ગ બત ા વ ે છ ે, ક ૃ પ ા કર ી ન ે કન ્ ફર ્ મ કરશ ો?
+Target_Label: admissions
+Spoken_Languages: ['Gujarati']

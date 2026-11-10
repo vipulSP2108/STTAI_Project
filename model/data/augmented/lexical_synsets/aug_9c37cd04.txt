@@ -1,0 +1,7 @@
+UUID: aug_9c37cd04
+Parent_UUID: 2b70e525
+Augmentation_Type: lexical_synsets
+Similarity_Score: 0.8903
+Transcript: ક ે મ ્ પસ આઇટ ી સપ ો ર ્ ટ, મ ા ર ા લ ે પટ ો પમ ા ં ન ે ટવર ્ ક કન ે ક ્ શન ઇશ ્ ય ૂ આવ ે છ ે અન ે વ ા ઇફ ા ઇ કન ે ક ્ ટ નથ ી થત ુ ં, પ ્ લ ી ઝ હ ે લ ્ પ મ ી.
+Target_Label: it_support
+Spoken_Languages: ['Hindi', 'Gujarati']

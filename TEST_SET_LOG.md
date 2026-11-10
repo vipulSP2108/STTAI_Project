@@ -48,3 +48,5 @@ assert current_hash == EXPECTED_GOLD_HASH, f"CRITICAL SECURITY VIOLATION: Gold s
 | `LOG-853` | 2026-11-06T01:34:13Z | `17ace7b4` | `production` | Automated evaluation suite | `64b7647b...` (MATCH) | 1.272 | 0.346 | **EVALUATED** |
 | `LOG-327` | 2026-11-06T04:28:47Z | `17ace7b4` | `production` | Automated evaluation suite | `64b7647b...` (MATCH) | 1.272 | 0.240 | **EVALUATED** |
 | `LOG-948` | 2026-11-06T04:39:08Z | `17ace7b4` | `production` | Automated evaluation suite | `64b7647b...` (MATCH) | 1.272 | 0.240 | **EVALUATED** |
+| `LOG-016` | 2026-11-08T06:20:16Z | `a2-final` | `production` | Docker offline validation (`--network none`) | `64b7647b...` (MATCH) | 1.358 | 0.241 | **OFFLINE_VERIFIED** |
+| `LOG-016` | 2026-11-08T06:20:16Z | `a2-final` | `production` | Docker offline validation (`--network none`) | `64b7647b...` (MATCH) | 1.358 | 0.241 | **OFFLINE_VERIFIED** |

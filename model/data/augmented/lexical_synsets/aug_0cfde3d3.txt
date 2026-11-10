@@ -1,0 +1,7 @@
+UUID: aug_0cfde3d3
+Parent_UUID: 1bac27a7
+Augmentation_Type: lexical_synsets
+Similarity_Score: 0.9862
+Transcript: Hello IT helpdesk, Eduroam Wi-Fi connection repeatedly connects and disconnects on my Android phone across campus.
+Target_Label: it_support
+Spoken_Languages: ['English']

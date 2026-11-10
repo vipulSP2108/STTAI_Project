@@ -1,0 +1,7 @@
+UUID: aug_ca047c27
+Parent_UUID: ac619e63
+Augmentation_Type: pivot_latin
+Similarity_Score: 0.9556
+Transcript: Hello, is it IT cell? I am a newly admitted PhD student and I just got my domiciliary residence chamber. How do I configure my laptop for campus LAN and Wi-Fi access?
+Target_Label: it_support
+Spoken_Languages: ['English']

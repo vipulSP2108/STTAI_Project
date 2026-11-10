@@ -1,0 +1,7 @@
+UUID: aug_93cbe0a1
+Parent_UUID: 34f3193c
+Augmentation_Type: lexical_synsets
+Similarity_Score: 0.9004
+Transcript: I applied for mess rebate on the student system, will the deduction reflect in next month ' s dining hall bill?
+Target_Label: hostel_mess
+Spoken_Languages: ['English']

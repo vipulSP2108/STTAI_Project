@@ -1,0 +1,4 @@
+UUID: 9d9262af
+Transcript: नमस्ते सर, मुझे एडमिशन के समय जमा किए जाने वाले माइग्रेशन सर्टिफिकेट और कैरेक्टर सर्टिफिकेट के बारे में जानकारी चाहिए।
+Target_Label: admissions
+Spoken_Languages: Hindi

@@ -1,0 +1,1174 @@
+[
+  {
+    "id": 1,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P21/WhatsApp Ptt 2026-11-06 at 11.14.57 AM.wav",
+      "conflict_summary": "Adjudication Task #1 [P21 - WhatsApp Ptt 2026-11-06 at 11.14.57 AM.wav] | Annotator 1 voted: [student_services] (Langs: Hindi) vs. Annotator 2 voted: [hostel_mess] (Langs: Hindi)",
+      "applicable_rule": "Dispute Focus: hostel_mess vs student_services. Rule 3: hostel_mess vs. student_services \u2014 Residential Room/Mess Rebate vs. Campus Wide Amenities",
+      "adjudication_task_id": 1,
+      "speaker_id": "P21",
+      "file_name": "WhatsApp Ptt 2026-11-06 at 11.14.57 AM.wav",
+      "clip_id": "P21_76",
+      "a1_intent": "student_services",
+      "a2_intent": "hostel_mess",
+      "a1_langs": [
+        "Hindi"
+      ],
+      "a2_langs": [
+        "Hindi"
+      ],
+      "conflict_type": "hostel_mess <-> student_services"
+    }
+  },
+  {
+    "id": 2,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P4/PTT-20261018-WA0018.wav",
+      "conflict_summary": "Adjudication Task #2 [P4 - PTT-20261018-WA0018.wav] | Annotator 1 voted: [student_services] (Langs: Hindi) vs. Annotator 2 voted: [admissions] (Langs: Hindi)",
+      "applicable_rule": "Dispute Focus: admissions vs student_services. Rule 2: admissions vs. student_services \u2014 Prospective Intake/Seat Offer vs. Enrolled Student Affairs",
+      "adjudication_task_id": 2,
+      "speaker_id": "P4",
+      "file_name": "PTT-20261018-WA0018.wav",
+      "clip_id": "P4_13",
+      "a1_intent": "student_services",
+      "a2_intent": "admissions",
+      "a1_langs": [
+        "Hindi"
+      ],
+      "a2_langs": [
+        "Hindi"
+      ],
+      "conflict_type": "admissions <-> student_services"
+    }
+  },
+  {
+    "id": 3,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P22/WhatsApp Ptt 2026-11-06 at 2.40.32 PM.wav",
+      "conflict_summary": "Adjudication Task #3 [P22 - WhatsApp Ptt 2026-11-06 at 2.40.32 PM.wav] | Annotator 1 voted: [student_services] (Langs: English) vs. Annotator 2 voted: [it_support] (Langs: English)",
+      "applicable_rule": "Dispute Focus: it_support vs student_services. Rule 1: it_support vs. student_services \u2014 Digital Infrastructure vs. Administrative Policy/Physical Facility",
+      "adjudication_task_id": 3,
+      "speaker_id": "P22",
+      "file_name": "WhatsApp Ptt 2026-11-06 at 2.40.32 PM.wav",
+      "clip_id": "P22_96",
+      "a1_intent": "student_services",
+      "a2_intent": "it_support",
+      "a1_langs": [
+        "English"
+      ],
+      "a2_langs": [
+        "English"
+      ],
+      "conflict_type": "it_support <-> student_services"
+    }
+  },
+  {
+    "id": 4,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P7/WhatsApp Audio 2026-10-19 at 2.37.57 PM (1).wav",
+      "conflict_summary": "Adjudication Task #4 [P7 - WhatsApp Audio 2026-10-19 at 2.37.57 PM (1).wav] | Annotator 1 voted: [hostel_mess] (Langs: English) vs. Annotator 2 voted: [admissions] (Langs: English)",
+      "applicable_rule": "Dispute Focus: admissions vs hostel_mess. Rule 4: admissions vs. hostel_mess \u2014 Freshman Reporting/Registration vs. Room Allotment/Mess Possession",
+      "adjudication_task_id": 4,
+      "speaker_id": "P7",
+      "file_name": "WhatsApp Audio 2026-10-19 at 2.37.57 PM (1).wav",
+      "clip_id": "P7_28",
+      "a1_intent": "hostel_mess",
+      "a2_intent": "admissions",
+      "a1_langs": [
+        "English"
+      ],
+      "a2_langs": [
+        "English"
+      ],
+      "conflict_type": "admissions <-> hostel_mess"
+    }
+  },
+  {
+    "id": 5,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P14/clip_08.wav",
+      "conflict_summary": "Adjudication Task #5 [P14 - clip_08.wav] | Annotator 1 voted: [student_services] (Langs: Hindi) vs. Annotator 2 voted: [admissions] (Langs: English, Hindi)",
+      "applicable_rule": "Dispute Focus: admissions vs student_services. Rule 2: admissions vs. student_services \u2014 Prospective Intake/Seat Offer vs. Enrolled Student Affairs",
+      "adjudication_task_id": 5,
+      "speaker_id": "P14",
+      "file_name": "clip_08.wav",
+      "clip_id": "P14_95",
+      "a1_intent": "student_services",
+      "a2_intent": "admissions",
+      "a1_langs": [
+        "Hindi"
+      ],
+      "a2_langs": [
+        "English",
+        "Hindi"
+      ],
+      "conflict_type": "admissions <-> student_services"
+    }
+  },
+  {
+    "id": 6,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P11/PTT-20261019-WA0018.wav",
+      "conflict_summary": "Adjudication Task #6 [P11 - PTT-20261019-WA0018.wav] | Annotator 1 voted: [student_services] (Langs: English, Hindi) vs. Annotator 2 voted: [it_support] (Langs: English)",
+      "applicable_rule": "Dispute Focus: it_support vs student_services. Rule 1: it_support vs. student_services \u2014 Digital Infrastructure vs. Administrative Policy/Physical Facility",
+      "adjudication_task_id": 6,
+      "speaker_id": "P11",
+      "file_name": "PTT-20261019-WA0018.wav",
+      "clip_id": "P11_55",
+      "a1_intent": "student_services",
+      "a2_intent": "it_support",
+      "a1_langs": [
+        "English",
+        "Hindi"
+      ],
+      "a2_langs": [
+        "English"
+      ],
+      "conflict_type": "it_support <-> student_services"
+    }
+  },
+  {
+    "id": 7,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P9/PTT-20261019-WA0025.wav",
+      "conflict_summary": "Adjudication Task #7 [P9 - PTT-20261019-WA0025.wav] | Annotator 1 voted: [student_services] (Langs: English, Hindi) vs. Annotator 2 voted: [it_support] (Langs: English)",
+      "applicable_rule": "Dispute Focus: it_support vs student_services. Rule 1: it_support vs. student_services \u2014 Digital Infrastructure vs. Administrative Policy/Physical Facility",
+      "adjudication_task_id": 7,
+      "speaker_id": "P9",
+      "file_name": "PTT-20261019-WA0025.wav",
+      "clip_id": "P9_48",
+      "a1_intent": "student_services",
+      "a2_intent": "it_support",
+      "a1_langs": [
+        "English",
+        "Hindi"
+      ],
+      "a2_langs": [
+        "English"
+      ],
+      "conflict_type": "it_support <-> student_services"
+    }
+  },
+  {
+    "id": 8,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P2/WhatsApp Ptt 2026-11-06 at 12.08.35 PM.wav",
+      "conflict_summary": "Adjudication Task #8 [P2 - WhatsApp Ptt 2026-11-06 at 12.08.35 PM.wav] | Annotator 1 voted: [it_support] (Langs: English) vs. Annotator 2 voted: [student_services] (Langs: English)",
+      "applicable_rule": "Dispute Focus: it_support vs student_services. Rule 1: it_support vs. student_services \u2014 Digital Infrastructure vs. Administrative Policy/Physical Facility",
+      "adjudication_task_id": 8,
+      "speaker_id": "P2",
+      "file_name": "WhatsApp Ptt 2026-11-06 at 12.08.35 PM.wav",
+      "clip_id": "P2_11",
+      "a1_intent": "it_support",
+      "a2_intent": "student_services",
+      "a1_langs": [
+        "English"
+      ],
+      "a2_langs": [
+        "English"
+      ],
+      "conflict_type": "it_support <-> student_services"
+    }
+  },
+  {
+    "id": 9,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P14/clip_02.wav",
+      "conflict_summary": "Adjudication Task #9 [P14 - clip_02.wav] | Annotator 1 voted: [admissions] (Langs: Hindi) vs. Annotator 2 voted: [it_support] (Langs: English, Hindi)",
+      "applicable_rule": "Dispute Focus: admissions vs it_support. Rule 2/1 Principle: admissions vs. it_support \u2014 Candidate Application Portal vs. Central Institute IT/LDAP",
+      "adjudication_task_id": 9,
+      "speaker_id": "P14",
+      "file_name": "clip_02.wav",
+      "clip_id": "P14_89",
+      "a1_intent": "admissions",
+      "a2_intent": "it_support",
+      "a1_langs": [
+        "Hindi"
+      ],
+      "a2_langs": [
+        "English",
+        "Hindi"
+      ],
+      "conflict_type": "admissions <-> it_support"
+    }
+  },
+  {
+    "id": 10,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P11/PTT-20261019-WA0016.wav",
+      "conflict_summary": "Adjudication Task #10 [P11 - PTT-20261019-WA0016.wav] | Annotator 1 voted: [admissions] (Langs: English) vs. Annotator 2 voted: [it_support] (Langs: English)",
+      "applicable_rule": "Dispute Focus: admissions vs it_support. Rule 2/1 Principle: admissions vs. it_support \u2014 Candidate Application Portal vs. Central Institute IT/LDAP",
+      "adjudication_task_id": 10,
+      "speaker_id": "P11",
+      "file_name": "PTT-20261019-WA0016.wav",
+      "clip_id": "P11_54",
+      "a1_intent": "admissions",
+      "a2_intent": "it_support",
+      "a1_langs": [
+        "English"
+      ],
+      "a2_langs": [
+        "English"
+      ],
+      "conflict_type": "admissions <-> it_support"
+    }
+  },
+  {
+    "id": 11,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P16/clip_07.wav",
+      "conflict_summary": "Adjudication Task #11 [P16 - clip_07.wav] | Annotator 1 voted: [student_services] (Langs: Hindi) vs. Annotator 2 voted: [it_support] (Langs: English)",
+      "applicable_rule": "Dispute Focus: it_support vs student_services. Rule 1: it_support vs. student_services \u2014 Digital Infrastructure vs. Administrative Policy/Physical Facility",
+      "adjudication_task_id": 11,
+      "speaker_id": "P16",
+      "file_name": "clip_07.wav",
+      "clip_id": "P16_105",
+      "a1_intent": "student_services",
+      "a2_intent": "it_support",
+      "a1_langs": [
+        "Hindi"
+      ],
+      "a2_langs": [
+        "English"
+      ],
+      "conflict_type": "it_support <-> student_services"
+    }
+  },
+  {
+    "id": 12,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P21/WhatsApp Ptt 2026-11-06 at 11.20.56 AM.wav",
+      "conflict_summary": "Adjudication Task #12 [P21 - WhatsApp Ptt 2026-11-06 at 11.20.56 AM.wav] | Annotator 1 voted: [hostel_mess] (Langs: Hindi) vs. Annotator 2 voted: [student_services] (Langs: Hindi)",
+      "applicable_rule": "Dispute Focus: hostel_mess vs student_services. Rule 3: hostel_mess vs. student_services \u2014 Residential Room/Mess Rebate vs. Campus Wide Amenities",
+      "adjudication_task_id": 12,
+      "speaker_id": "P21",
+      "file_name": "WhatsApp Ptt 2026-11-06 at 11.20.56 AM.wav",
+      "clip_id": "P21_81",
+      "a1_intent": "hostel_mess",
+      "a2_intent": "student_services",
+      "a1_langs": [
+        "Hindi"
+      ],
+      "a2_langs": [
+        "Hindi"
+      ],
+      "conflict_type": "hostel_mess <-> student_services"
+    }
+  },
+  {
+    "id": 13,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P16/clip_11.wav",
+      "conflict_summary": "Adjudication Task #13 [P16 - clip_11.wav] | Annotator 1 voted: [it_support] (Langs: English) vs. Annotator 2 voted: [student_services] (Langs: English)",
+      "applicable_rule": "Dispute Focus: it_support vs student_services. Rule 1: it_support vs. student_services \u2014 Digital Infrastructure vs. Administrative Policy/Physical Facility",
+      "adjudication_task_id": 13,
+      "speaker_id": "P16",
+      "file_name": "clip_11.wav",
+      "clip_id": "P16_109",
+      "a1_intent": "it_support",
+      "a2_intent": "student_services",
+      "a1_langs": [
+        "English"
+      ],
+      "a2_langs": [
+        "English"
+      ],
+      "conflict_type": "it_support <-> student_services"
+    }
+  },
+  {
+    "id": 14,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P20/WhatsApp Ptt 2026-11-05 at 6.49.35 PM.wav",
+      "conflict_summary": "Adjudication Task #14 [P20 - WhatsApp Ptt 2026-11-05 at 6.49.35 PM.wav] | Annotator 1 voted: [hostel_mess] (Langs: Gujarati) vs. Annotator 2 voted: [admissions] (Langs: Gujarati)",
+      "applicable_rule": "Dispute Focus: admissions vs hostel_mess. Rule 4: admissions vs. hostel_mess \u2014 Freshman Reporting/Registration vs. Room Allotment/Mess Possession",
+      "adjudication_task_id": 14,
+      "speaker_id": "P20",
+      "file_name": "WhatsApp Ptt 2026-11-05 at 6.49.35 PM.wav",
+      "clip_id": "P20_62",
+      "a1_intent": "hostel_mess",
+      "a2_intent": "admissions",
+      "a1_langs": [
+        "Gujarati"
+      ],
+      "a2_langs": [
+        "Gujarati"
+      ],
+      "conflict_type": "admissions <-> hostel_mess"
+    }
+  },
+  {
+    "id": 15,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P8/PTT-20261019-WA0007.wav",
+      "conflict_summary": "Adjudication Task #15 [P8 - PTT-20261019-WA0007.wav] | Annotator 1 voted: [student_services] (Langs: Hindi) vs. Annotator 2 voted: [admissions] (Langs: Hindi)",
+      "applicable_rule": "Dispute Focus: admissions vs student_services. Rule 2: admissions vs. student_services \u2014 Prospective Intake/Seat Offer vs. Enrolled Student Affairs",
+      "adjudication_task_id": 15,
+      "speaker_id": "P8",
+      "file_name": "PTT-20261019-WA0007.wav",
+      "clip_id": "P8_32",
+      "a1_intent": "student_services",
+      "a2_intent": "admissions",
+      "a1_langs": [
+        "Hindi"
+      ],
+      "a2_langs": [
+        "Hindi"
+      ],
+      "conflict_type": "admissions <-> student_services"
+    }
+  },
+  {
+    "id": 16,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P5/PTT-20261018-WA0012.wav",
+      "conflict_summary": "Adjudication Task #16 [P5 - PTT-20261018-WA0012.wav] | Annotator 1 voted: [student_services] (Langs: Hindi) vs. Annotator 2 voted: [admissions] (Langs: Hindi)",
+      "applicable_rule": "Dispute Focus: admissions vs student_services. Rule 2: admissions vs. student_services \u2014 Prospective Intake/Seat Offer vs. Enrolled Student Affairs",
+      "adjudication_task_id": 16,
+      "speaker_id": "P5",
+      "file_name": "PTT-20261018-WA0012.wav",
+      "clip_id": "P5_17",
+      "a1_intent": "student_services",
+      "a2_intent": "admissions",
+      "a1_langs": [
+        "Hindi"
+      ],
+      "a2_langs": [
+        "Hindi"
+      ],
+      "conflict_type": "admissions <-> student_services"
+    }
+  },
+  {
+    "id": 17,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P19/clip_07.wav",
+      "conflict_summary": "Adjudication Task #17 [P19 - clip_07.wav] | Annotator 1 voted: [hostel_mess] (Langs: English) vs. Annotator 2 voted: [student_services] (Langs: English)",
+      "applicable_rule": "Dispute Focus: hostel_mess vs student_services. Rule 3: hostel_mess vs. student_services \u2014 Residential Room/Mess Rebate vs. Campus Wide Amenities",
+      "adjudication_task_id": 17,
+      "speaker_id": "P19",
+      "file_name": "clip_07.wav",
+      "clip_id": "P19_135",
+      "a1_intent": "hostel_mess",
+      "a2_intent": "student_services",
+      "a1_langs": [
+        "English"
+      ],
+      "a2_langs": [
+        "English"
+      ],
+      "conflict_type": "hostel_mess <-> student_services"
+    }
+  },
+  {
+    "id": 18,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P18/clip_15.wav",
+      "conflict_summary": "Adjudication Task #18 [P18 - clip_15.wav] | Annotator 1 voted: [hostel_mess] (Langs: Gujarati) vs. Annotator 2 voted: [student_services] (Langs: English, Gujarati)",
+      "applicable_rule": "Dispute Focus: hostel_mess vs student_services. Rule 3: hostel_mess vs. student_services \u2014 Residential Room/Mess Rebate vs. Campus Wide Amenities",
+      "adjudication_task_id": 18,
+      "speaker_id": "P18",
+      "file_name": "clip_15.wav",
+      "clip_id": "P18_127",
+      "a1_intent": "hostel_mess",
+      "a2_intent": "student_services",
+      "a1_langs": [
+        "Gujarati"
+      ],
+      "a2_langs": [
+        "English",
+        "Gujarati"
+      ],
+      "conflict_type": "hostel_mess <-> student_services"
+    }
+  },
+  {
+    "id": 19,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P18/clip_01.wav",
+      "conflict_summary": "Adjudication Task #19 [P18 - clip_01.wav] | Annotator 1 voted: [student_services] (Langs: Hindi) vs. Annotator 2 voted: [it_support] (Langs: English, Hindi)",
+      "applicable_rule": "Dispute Focus: it_support vs student_services. Rule 1: it_support vs. student_services \u2014 Digital Infrastructure vs. Administrative Policy/Physical Facility",
+      "adjudication_task_id": 19,
+      "speaker_id": "P18",
+      "file_name": "clip_01.wav",
+      "clip_id": "P18_113",
+      "a1_intent": "student_services",
+      "a2_intent": "it_support",
+      "a1_langs": [
+        "Hindi"
+      ],
+      "a2_langs": [
+        "English",
+        "Hindi"
+      ],
+      "conflict_type": "it_support <-> student_services"
+    }
+  },
+  {
+    "id": 20,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P5/PTT-20261018-WA0014.wav",
+      "conflict_summary": "Adjudication Task #20 [P5 - PTT-20261018-WA0014.wav] | Annotator 1 voted: [hostel_mess] (Langs: Hindi) vs. Annotator 2 voted: [student_services] (Langs: Hindi)",
+      "applicable_rule": "Dispute Focus: hostel_mess vs student_services. Rule 3: hostel_mess vs. student_services \u2014 Residential Room/Mess Rebate vs. Campus Wide Amenities",
+      "adjudication_task_id": 20,
+      "speaker_id": "P5",
+      "file_name": "PTT-20261018-WA0014.wav",
+      "clip_id": "P5_19",
+      "a1_intent": "hostel_mess",
+      "a2_intent": "student_services",
+      "a1_langs": [
+        "Hindi"
+      ],
+      "a2_langs": [
+        "Hindi"
+      ],
+      "conflict_type": "hostel_mess <-> student_services"
+    }
+  },
+  {
+    "id": 21,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P20/WhatsApp Ptt 2026-11-05 at 6.56.15 PM.wav",
+      "conflict_summary": "Adjudication Task #21 [P20 - WhatsApp Ptt 2026-11-05 at 6.56.15 PM.wav] | Annotator 1 voted: [student_services] (Langs: Gujarati) vs. Annotator 2 voted: [hostel_mess] (Langs: Gujarati)",
+      "applicable_rule": "Dispute Focus: hostel_mess vs student_services. Rule 3: hostel_mess vs. student_services \u2014 Residential Room/Mess Rebate vs. Campus Wide Amenities",
+      "adjudication_task_id": 21,
+      "speaker_id": "P20",
+      "file_name": "WhatsApp Ptt 2026-11-05 at 6.56.15 PM.wav",
+      "clip_id": "P20_67",
+      "a1_intent": "student_services",
+      "a2_intent": "hostel_mess",
+      "a1_langs": [
+        "Gujarati"
+      ],
+      "a2_langs": [
+        "Gujarati"
+      ],
+      "conflict_type": "hostel_mess <-> student_services"
+    }
+  },
+  {
+    "id": 22,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P13/clip_09.wav",
+      "conflict_summary": "Adjudication Task #22 [P13 - clip_09.wav] | Annotator 1 voted: [student_services] (Langs: Gujarati) vs. Annotator 2 voted: [admissions] (Langs: English, Gujarati)",
+      "applicable_rule": "Dispute Focus: admissions vs student_services. Rule 2: admissions vs. student_services \u2014 Prospective Intake/Seat Offer vs. Enrolled Student Affairs",
+      "adjudication_task_id": 22,
+      "speaker_id": "P13",
+      "file_name": "clip_09.wav",
+      "clip_id": "P13_74",
+      "a1_intent": "student_services",
+      "a2_intent": "admissions",
+      "a1_langs": [
+        "Gujarati"
+      ],
+      "a2_langs": [
+        "English",
+        "Gujarati"
+      ],
+      "conflict_type": "admissions <-> student_services"
+    }
+  },
+  {
+    "id": 23,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P20/WhatsApp Ptt 2026-11-05 at 6.47.47 PM.wav",
+      "conflict_summary": "Adjudication Task #23 [P20 - WhatsApp Ptt 2026-11-05 at 6.47.47 PM.wav] | Annotator 1 voted: [hostel_mess] (Langs: Gujarati) vs. Annotator 2 voted: [admissions] (Langs: Gujarati)",
+      "applicable_rule": "Dispute Focus: admissions vs hostel_mess. Rule 4: admissions vs. hostel_mess \u2014 Freshman Reporting/Registration vs. Room Allotment/Mess Possession",
+      "adjudication_task_id": 23,
+      "speaker_id": "P20",
+      "file_name": "WhatsApp Ptt 2026-11-05 at 6.47.47 PM.wav",
+      "clip_id": "P20_61",
+      "a1_intent": "hostel_mess",
+      "a2_intent": "admissions",
+      "a1_langs": [
+        "Gujarati"
+      ],
+      "a2_langs": [
+        "Gujarati"
+      ],
+      "conflict_type": "admissions <-> hostel_mess"
+    }
+  },
+  {
+    "id": 24,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P16/clip_10.wav",
+      "conflict_summary": "Adjudication Task #24 [P16 - clip_10.wav] | Annotator 1 voted: [student_services] (Langs: English) vs. Annotator 2 voted: [it_support] (Langs: English)",
+      "applicable_rule": "Dispute Focus: it_support vs student_services. Rule 1: it_support vs. student_services \u2014 Digital Infrastructure vs. Administrative Policy/Physical Facility",
+      "adjudication_task_id": 24,
+      "speaker_id": "P16",
+      "file_name": "clip_10.wav",
+      "clip_id": "P16_108",
+      "a1_intent": "student_services",
+      "a2_intent": "it_support",
+      "a1_langs": [
+        "English"
+      ],
+      "a2_langs": [
+        "English"
+      ],
+      "conflict_type": "it_support <-> student_services"
+    }
+  },
+  {
+    "id": 25,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P18/clip_10.wav",
+      "conflict_summary": "Adjudication Task #25 [P18 - clip_10.wav] | Annotator 1 voted: [student_services] (Langs: Hindi) vs. Annotator 2 voted: [it_support] (Langs: English, Hindi)",
+      "applicable_rule": "Dispute Focus: it_support vs student_services. Rule 1: it_support vs. student_services \u2014 Digital Infrastructure vs. Administrative Policy/Physical Facility",
+      "adjudication_task_id": 25,
+      "speaker_id": "P18",
+      "file_name": "clip_10.wav",
+      "clip_id": "P18_122",
+      "a1_intent": "student_services",
+      "a2_intent": "it_support",
+      "a1_langs": [
+        "Hindi"
+      ],
+      "a2_langs": [
+        "English",
+        "Hindi"
+      ],
+      "conflict_type": "it_support <-> student_services"
+    }
+  },
+  {
+    "id": 26,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P8/PTT-20261019-WA0039.wav",
+      "conflict_summary": "Adjudication Task #26 [P8 - PTT-20261019-WA0039.wav] | Annotator 1 voted: [student_services] (Langs: Hindi) vs. Annotator 2 voted: [admissions] (Langs: Hindi)",
+      "applicable_rule": "Dispute Focus: admissions vs student_services. Rule 2: admissions vs. student_services \u2014 Prospective Intake/Seat Offer vs. Enrolled Student Affairs",
+      "adjudication_task_id": 26,
+      "speaker_id": "P8",
+      "file_name": "PTT-20261019-WA0039.wav",
+      "clip_id": "P8_36",
+      "a1_intent": "student_services",
+      "a2_intent": "admissions",
+      "a1_langs": [
+        "Hindi"
+      ],
+      "a2_langs": [
+        "Hindi"
+      ],
+      "conflict_type": "admissions <-> student_services"
+    }
+  },
+  {
+    "id": 27,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P20/WhatsApp Ptt 2026-11-05 at 6.55.01 PM.wav",
+      "conflict_summary": "Adjudication Task #27 [P20 - WhatsApp Ptt 2026-11-05 at 6.55.01 PM.wav] | Annotator 1 voted: [hostel_mess] (Langs: Gujarati) vs. Annotator 2 voted: [admissions] (Langs: Gujarati)",
+      "applicable_rule": "Dispute Focus: admissions vs hostel_mess. Rule 4: admissions vs. hostel_mess \u2014 Freshman Reporting/Registration vs. Room Allotment/Mess Possession",
+      "adjudication_task_id": 27,
+      "speaker_id": "P20",
+      "file_name": "WhatsApp Ptt 2026-11-05 at 6.55.01 PM.wav",
+      "clip_id": "P20_66",
+      "a1_intent": "hostel_mess",
+      "a2_intent": "admissions",
+      "a1_langs": [
+        "Gujarati"
+      ],
+      "a2_langs": [
+        "Gujarati"
+      ],
+      "conflict_type": "admissions <-> hostel_mess"
+    }
+  },
+  {
+    "id": 28,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P16/clip_08.wav",
+      "conflict_summary": "Adjudication Task #28 [P16 - clip_08.wav] | Annotator 1 voted: [student_services] (Langs: English) vs. Annotator 2 voted: [it_support] (Langs: English)",
+      "applicable_rule": "Dispute Focus: it_support vs student_services. Rule 1: it_support vs. student_services \u2014 Digital Infrastructure vs. Administrative Policy/Physical Facility",
+      "adjudication_task_id": 28,
+      "speaker_id": "P16",
+      "file_name": "clip_08.wav",
+      "clip_id": "P16_106",
+      "a1_intent": "student_services",
+      "a2_intent": "it_support",
+      "a1_langs": [
+        "English"
+      ],
+      "a2_langs": [
+        "English"
+      ],
+      "conflict_type": "it_support <-> student_services"
+    }
+  },
+  {
+    "id": 29,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P16/clip_09.wav",
+      "conflict_summary": "Adjudication Task #29 [P16 - clip_09.wav] | Annotator 1 voted: [it_support] (Langs: English) vs. Annotator 2 voted: [student_services] (Langs: English)",
+      "applicable_rule": "Dispute Focus: it_support vs student_services. Rule 1: it_support vs. student_services \u2014 Digital Infrastructure vs. Administrative Policy/Physical Facility",
+      "adjudication_task_id": 29,
+      "speaker_id": "P16",
+      "file_name": "clip_09.wav",
+      "clip_id": "P16_107",
+      "a1_intent": "it_support",
+      "a2_intent": "student_services",
+      "a1_langs": [
+        "English"
+      ],
+      "a2_langs": [
+        "English"
+      ],
+      "conflict_type": "it_support <-> student_services"
+    }
+  },
+  {
+    "id": 30,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P13/clip_17.wav",
+      "conflict_summary": "Adjudication Task #30 [P13 - clip_17.wav] | Annotator 1 voted: [hostel_mess] (Langs: Hindi, Gujarati) vs. Annotator 2 voted: [student_services] (Langs: English, Gujarati)",
+      "applicable_rule": "Dispute Focus: hostel_mess vs student_services. Rule 3: hostel_mess vs. student_services \u2014 Residential Room/Mess Rebate vs. Campus Wide Amenities",
+      "adjudication_task_id": 30,
+      "speaker_id": "P13",
+      "file_name": "clip_17.wav",
+      "clip_id": "P13_82",
+      "a1_intent": "hostel_mess",
+      "a2_intent": "student_services",
+      "a1_langs": [
+        "Hindi",
+        "Gujarati"
+      ],
+      "a2_langs": [
+        "English",
+        "Gujarati"
+      ],
+      "conflict_type": "hostel_mess <-> student_services"
+    }
+  },
+  {
+    "id": 31,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P13/clip_03.wav",
+      "conflict_summary": "Adjudication Task #31 [P13 - clip_03.wav] | Annotator 1 voted: [admissions] (Langs: Gujarati) vs. Annotator 2 voted: [it_support] (Langs: English, Gujarati)",
+      "applicable_rule": "Dispute Focus: admissions vs it_support. Rule 2/1 Principle: admissions vs. it_support \u2014 Candidate Application Portal vs. Central Institute IT/LDAP",
+      "adjudication_task_id": 31,
+      "speaker_id": "P13",
+      "file_name": "clip_03.wav",
+      "clip_id": "P13_68",
+      "a1_intent": "admissions",
+      "a2_intent": "it_support",
+      "a1_langs": [
+        "Gujarati"
+      ],
+      "a2_langs": [
+        "English",
+        "Gujarati"
+      ],
+      "conflict_type": "admissions <-> it_support"
+    }
+  },
+  {
+    "id": 32,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P22/WhatsApp Ptt 2026-11-06 at 2.32.06 PM.wav",
+      "conflict_summary": "Adjudication Task #32 [P22 - WhatsApp Ptt 2026-11-06 at 2.32.06 PM.wav] | Annotator 1 voted: [student_services] (Langs: English) vs. Annotator 2 voted: [admissions] (Langs: English)",
+      "applicable_rule": "Dispute Focus: admissions vs student_services. Rule 2: admissions vs. student_services \u2014 Prospective Intake/Seat Offer vs. Enrolled Student Affairs",
+      "adjudication_task_id": 32,
+      "speaker_id": "P22",
+      "file_name": "WhatsApp Ptt 2026-11-06 at 2.32.06 PM.wav",
+      "clip_id": "P22_88",
+      "a1_intent": "student_services",
+      "a2_intent": "admissions",
+      "a1_langs": [
+        "English"
+      ],
+      "a2_langs": [
+        "English"
+      ],
+      "conflict_type": "admissions <-> student_services"
+    }
+  },
+  {
+    "id": 33,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P22/WhatsApp Ptt 2026-11-06 at 2.43.41 PM.wav",
+      "conflict_summary": "Adjudication Task #33 [P22 - WhatsApp Ptt 2026-11-06 at 2.43.41 PM.wav] | Annotator 1 voted: [hostel_mess] (Langs: English) vs. Annotator 2 voted: [student_services] (Langs: English)",
+      "applicable_rule": "Dispute Focus: hostel_mess vs student_services. Rule 3: hostel_mess vs. student_services \u2014 Residential Room/Mess Rebate vs. Campus Wide Amenities",
+      "adjudication_task_id": 33,
+      "speaker_id": "P22",
+      "file_name": "WhatsApp Ptt 2026-11-06 at 2.43.41 PM.wav",
+      "clip_id": "P22_99",
+      "a1_intent": "hostel_mess",
+      "a2_intent": "student_services",
+      "a1_langs": [
+        "English"
+      ],
+      "a2_langs": [
+        "English"
+      ],
+      "conflict_type": "hostel_mess <-> student_services"
+    }
+  },
+  {
+    "id": 34,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P19/clip_02.wav",
+      "conflict_summary": "Adjudication Task #34 [P19 - clip_02.wav] | Annotator 1 voted: [student_services] (Langs: Hindi) vs. Annotator 2 voted: [it_support] (Langs: Hindi)",
+      "applicable_rule": "Dispute Focus: it_support vs student_services. Rule 1: it_support vs. student_services \u2014 Digital Infrastructure vs. Administrative Policy/Physical Facility",
+      "adjudication_task_id": 34,
+      "speaker_id": "P19",
+      "file_name": "clip_02.wav",
+      "clip_id": "P19_130",
+      "a1_intent": "student_services",
+      "a2_intent": "it_support",
+      "a1_langs": [
+        "Hindi"
+      ],
+      "a2_langs": [
+        "Hindi"
+      ],
+      "conflict_type": "it_support <-> student_services"
+    }
+  },
+  {
+    "id": 35,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P21/WhatsApp Ptt 2026-11-06 at 11.06.08 AM.wav",
+      "conflict_summary": "Adjudication Task #35 [P21 - WhatsApp Ptt 2026-11-06 at 11.06.08 AM.wav] | Annotator 1 voted: [hostel_mess] (Langs: Hindi) vs. Annotator 2 voted: [admissions] (Langs: Hindi)",
+      "applicable_rule": "Dispute Focus: admissions vs hostel_mess. Rule 4: admissions vs. hostel_mess \u2014 Freshman Reporting/Registration vs. Room Allotment/Mess Possession",
+      "adjudication_task_id": 35,
+      "speaker_id": "P21",
+      "file_name": "WhatsApp Ptt 2026-11-06 at 11.06.08 AM.wav",
+      "clip_id": "P21_69",
+      "a1_intent": "hostel_mess",
+      "a2_intent": "admissions",
+      "a1_langs": [
+        "Hindi"
+      ],
+      "a2_langs": [
+        "Hindi"
+      ],
+      "conflict_type": "admissions <-> hostel_mess"
+    }
+  },
+  {
+    "id": 36,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P4/PTT-20261018-WA0019.wav",
+      "conflict_summary": "Adjudication Task #36 [P4 - PTT-20261018-WA0019.wav] | Annotator 1 voted: [student_services] (Langs: Hindi) vs. Annotator 2 voted: [it_support] (Langs: Hindi)",
+      "applicable_rule": "Dispute Focus: it_support vs student_services. Rule 1: it_support vs. student_services \u2014 Digital Infrastructure vs. Administrative Policy/Physical Facility",
+      "adjudication_task_id": 36,
+      "speaker_id": "P4",
+      "file_name": "PTT-20261018-WA0019.wav",
+      "clip_id": "P4_14",
+      "a1_intent": "student_services",
+      "a2_intent": "it_support",
+      "a1_langs": [
+        "Hindi"
+      ],
+      "a2_langs": [
+        "Hindi"
+      ],
+      "conflict_type": "it_support <-> student_services"
+    }
+  },
+  {
+    "id": 37,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P21/WhatsApp Ptt 2026-11-06 at 2.36.31 PM.wav",
+      "conflict_summary": "Adjudication Task #37 [P21 - WhatsApp Ptt 2026-11-06 at 2.36.31 PM.wav] | Annotator 1 voted: [student_services] (Langs: Hindi) vs. Annotator 2 voted: [hostel_mess] (Langs: Hindi)",
+      "applicable_rule": "Dispute Focus: hostel_mess vs student_services. Rule 3: hostel_mess vs. student_services \u2014 Residential Room/Mess Rebate vs. Campus Wide Amenities",
+      "adjudication_task_id": 37,
+      "speaker_id": "P21",
+      "file_name": "WhatsApp Ptt 2026-11-06 at 2.36.31 PM.wav",
+      "clip_id": "P21_85",
+      "a1_intent": "student_services",
+      "a2_intent": "hostel_mess",
+      "a1_langs": [
+        "Hindi"
+      ],
+      "a2_langs": [
+        "Hindi"
+      ],
+      "conflict_type": "hostel_mess <-> student_services"
+    }
+  },
+  {
+    "id": 38,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P20/WhatsApp Ptt 2026-11-05 at 6.57.26 PM.wav",
+      "conflict_summary": "Adjudication Task #38 [P20 - WhatsApp Ptt 2026-11-05 at 6.57.26 PM.wav] | Annotator 1 voted: [hostel_mess] (Langs: Gujarati) vs. Annotator 2 voted: [admissions] (Langs: Gujarati)",
+      "applicable_rule": "Dispute Focus: admissions vs hostel_mess. Rule 4: admissions vs. hostel_mess \u2014 Freshman Reporting/Registration vs. Room Allotment/Mess Possession",
+      "adjudication_task_id": 38,
+      "speaker_id": "P20",
+      "file_name": "WhatsApp Ptt 2026-11-05 at 6.57.26 PM.wav",
+      "clip_id": "P20_68",
+      "a1_intent": "hostel_mess",
+      "a2_intent": "admissions",
+      "a1_langs": [
+        "Gujarati"
+      ],
+      "a2_langs": [
+        "Gujarati"
+      ],
+      "conflict_type": "admissions <-> hostel_mess"
+    }
+  },
+  {
+    "id": 39,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P4/PTT-20261018-WA0018.wav",
+      "conflict_summary": "Adjudication Task #39 [P4 - PTT-20261018-WA0018.wav] | Annotator 1 voted: [student_services] (Langs: Hindi) vs. Annotator 2 voted: [admissions] (Langs: Hindi)",
+      "applicable_rule": "Dispute Focus: admissions vs student_services. Rule 2: admissions vs. student_services \u2014 Prospective Intake/Seat Offer vs. Enrolled Student Affairs",
+      "adjudication_task_id": 39,
+      "speaker_id": "P4",
+      "file_name": "PTT-20261018-WA0018.wav",
+      "clip_id": "P4_13",
+      "a1_intent": "student_services",
+      "a2_intent": "admissions",
+      "a1_langs": [
+        "Hindi"
+      ],
+      "a2_langs": [
+        "Hindi"
+      ],
+      "conflict_type": "admissions <-> student_services"
+    }
+  },
+  {
+    "id": 40,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P8/PTT-20261019-WA0008.wav",
+      "conflict_summary": "Adjudication Task #40 [P8 - PTT-20261019-WA0008.wav] | Annotator 1 voted: [student_services] (Langs: Hindi) vs. Annotator 2 voted: [admissions] (Langs: Hindi)",
+      "applicable_rule": "Dispute Focus: admissions vs student_services. Rule 2: admissions vs. student_services \u2014 Prospective Intake/Seat Offer vs. Enrolled Student Affairs",
+      "adjudication_task_id": 40,
+      "speaker_id": "P8",
+      "file_name": "PTT-20261019-WA0008.wav",
+      "clip_id": "P8_33",
+      "a1_intent": "student_services",
+      "a2_intent": "admissions",
+      "a1_langs": [
+        "Hindi"
+      ],
+      "a2_langs": [
+        "Hindi"
+      ],
+      "conflict_type": "admissions <-> student_services"
+    }
+  },
+  {
+    "id": 41,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P7/WhatsApp Audio 2026-10-19 at 2.37.57 PM (1).wav",
+      "conflict_summary": "Adjudication Task #41 [P7 - WhatsApp Audio 2026-10-19 at 2.37.57 PM (1).wav] | Annotator 1 voted: [hostel_mess] (Langs: English) vs. Annotator 2 voted: [admissions] (Langs: English)",
+      "applicable_rule": "Dispute Focus: admissions vs hostel_mess. Rule 4: admissions vs. hostel_mess \u2014 Freshman Reporting/Registration vs. Room Allotment/Mess Possession",
+      "adjudication_task_id": 41,
+      "speaker_id": "P7",
+      "file_name": "WhatsApp Audio 2026-10-19 at 2.37.57 PM (1).wav",
+      "clip_id": "P7_28",
+      "a1_intent": "hostel_mess",
+      "a2_intent": "admissions",
+      "a1_langs": [
+        "English"
+      ],
+      "a2_langs": [
+        "English"
+      ],
+      "conflict_type": "admissions <-> hostel_mess"
+    }
+  },
+  {
+    "id": 42,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P20/WhatsApp Ptt 2026-11-05 at 6.50.45 PM.wav",
+      "conflict_summary": "Adjudication Task #42 [P20 - WhatsApp Ptt 2026-11-05 at 6.50.45 PM.wav] | Annotator 1 voted: [hostel_mess] (Langs: Gujarati) vs. Annotator 2 voted: [admissions] (Langs: Gujarati)",
+      "applicable_rule": "Dispute Focus: admissions vs hostel_mess. Rule 4: admissions vs. hostel_mess \u2014 Freshman Reporting/Registration vs. Room Allotment/Mess Possession",
+      "adjudication_task_id": 42,
+      "speaker_id": "P20",
+      "file_name": "WhatsApp Ptt 2026-11-05 at 6.50.45 PM.wav",
+      "clip_id": "P20_63",
+      "a1_intent": "hostel_mess",
+      "a2_intent": "admissions",
+      "a1_langs": [
+        "Gujarati"
+      ],
+      "a2_langs": [
+        "Gujarati"
+      ],
+      "conflict_type": "admissions <-> hostel_mess"
+    }
+  },
+  {
+    "id": 43,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P9/PTT-20261019-WA0025.wav",
+      "conflict_summary": "Adjudication Task #43 [P9 - PTT-20261019-WA0025.wav] | Annotator 1 voted: [student_services] (Langs: English, Hindi) vs. Annotator 2 voted: [it_support] (Langs: English)",
+      "applicable_rule": "Dispute Focus: it_support vs student_services. Rule 1: it_support vs. student_services \u2014 Digital Infrastructure vs. Administrative Policy/Physical Facility",
+      "adjudication_task_id": 43,
+      "speaker_id": "P9",
+      "file_name": "PTT-20261019-WA0025.wav",
+      "clip_id": "P9_48",
+      "a1_intent": "student_services",
+      "a2_intent": "it_support",
+      "a1_langs": [
+        "English",
+        "Hindi"
+      ],
+      "a2_langs": [
+        "English"
+      ],
+      "conflict_type": "it_support <-> student_services"
+    }
+  },
+  {
+    "id": 44,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P18/clip_11.wav",
+      "conflict_summary": "Adjudication Task #44 [P18 - clip_11.wav] | Annotator 1 voted: [student_services] (Langs: Gujarati) vs. Annotator 2 voted: [it_support] (Langs: English, Gujarati)",
+      "applicable_rule": "Dispute Focus: it_support vs student_services. Rule 1: it_support vs. student_services \u2014 Digital Infrastructure vs. Administrative Policy/Physical Facility",
+      "adjudication_task_id": 44,
+      "speaker_id": "P18",
+      "file_name": "clip_11.wav",
+      "clip_id": "P18_123",
+      "a1_intent": "student_services",
+      "a2_intent": "it_support",
+      "a1_langs": [
+        "Gujarati"
+      ],
+      "a2_langs": [
+        "English",
+        "Gujarati"
+      ],
+      "conflict_type": "it_support <-> student_services"
+    }
+  },
+  {
+    "id": 45,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P14/clip_02.wav",
+      "conflict_summary": "Adjudication Task #45 [P14 - clip_02.wav] | Annotator 1 voted: [admissions] (Langs: Hindi) vs. Annotator 2 voted: [it_support] (Langs: English, Hindi)",
+      "applicable_rule": "Dispute Focus: admissions vs it_support. Rule 2/1 Principle: admissions vs. it_support \u2014 Candidate Application Portal vs. Central Institute IT/LDAP",
+      "adjudication_task_id": 45,
+      "speaker_id": "P14",
+      "file_name": "clip_02.wav",
+      "clip_id": "P14_89",
+      "a1_intent": "admissions",
+      "a2_intent": "it_support",
+      "a1_langs": [
+        "Hindi"
+      ],
+      "a2_langs": [
+        "English",
+        "Hindi"
+      ],
+      "conflict_type": "admissions <-> it_support"
+    }
+  },
+  {
+    "id": 46,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P5/PTT-20261018-WA0004.wav",
+      "conflict_summary": "Adjudication Task #46 [P5 - PTT-20261018-WA0004.wav] | Annotator 1 voted: [hostel_mess] (Langs: Hindi) vs. Annotator 2 voted: [admissions] (Langs: Hindi)",
+      "applicable_rule": "Dispute Focus: admissions vs hostel_mess. Rule 4: admissions vs. hostel_mess \u2014 Freshman Reporting/Registration vs. Room Allotment/Mess Possession",
+      "adjudication_task_id": 46,
+      "speaker_id": "P5",
+      "file_name": "PTT-20261018-WA0004.wav",
+      "clip_id": "P5_15",
+      "a1_intent": "hostel_mess",
+      "a2_intent": "admissions",
+      "a1_langs": [
+        "Hindi"
+      ],
+      "a2_langs": [
+        "Hindi"
+      ],
+      "conflict_type": "admissions <-> hostel_mess"
+    }
+  },
+  {
+    "id": 47,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P5/PTT-20261018-WA0005.wav",
+      "conflict_summary": "Adjudication Task #47 [P5 - PTT-20261018-WA0005.wav] | Annotator 1 voted: [student_services] (Langs: Hindi) vs. Annotator 2 voted: [admissions] (Langs: Hindi)",
+      "applicable_rule": "Dispute Focus: admissions vs student_services. Rule 2: admissions vs. student_services \u2014 Prospective Intake/Seat Offer vs. Enrolled Student Affairs",
+      "adjudication_task_id": 47,
+      "speaker_id": "P5",
+      "file_name": "PTT-20261018-WA0005.wav",
+      "clip_id": "P5_16",
+      "a1_intent": "student_services",
+      "a2_intent": "admissions",
+      "a1_langs": [
+        "Hindi"
+      ],
+      "a2_langs": [
+        "Hindi"
+      ],
+      "conflict_type": "admissions <-> student_services"
+    }
+  },
+  {
+    "id": 48,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P21/WhatsApp Ptt 2026-11-06 at 11.20.56 AM.wav",
+      "conflict_summary": "Adjudication Task #48 [P21 - WhatsApp Ptt 2026-11-06 at 11.20.56 AM.wav] | Annotator 1 voted: [hostel_mess] (Langs: Hindi) vs. Annotator 2 voted: [student_services] (Langs: Hindi)",
+      "applicable_rule": "Dispute Focus: hostel_mess vs student_services. Rule 3: hostel_mess vs. student_services \u2014 Residential Room/Mess Rebate vs. Campus Wide Amenities",
+      "adjudication_task_id": 48,
+      "speaker_id": "P21",
+      "file_name": "WhatsApp Ptt 2026-11-06 at 11.20.56 AM.wav",
+      "clip_id": "P21_81",
+      "a1_intent": "hostel_mess",
+      "a2_intent": "student_services",
+      "a1_langs": [
+        "Hindi"
+      ],
+      "a2_langs": [
+        "Hindi"
+      ],
+      "conflict_type": "hostel_mess <-> student_services"
+    }
+  },
+  {
+    "id": 49,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P13/clip_18.wav",
+      "conflict_summary": "Adjudication Task #49 [P13 - clip_18.wav] | Annotator 1 voted: [hostel_mess] (Langs: Gujarati) vs. Annotator 2 voted: [student_services] (Langs: English, Gujarati)",
+      "applicable_rule": "Dispute Focus: hostel_mess vs student_services. Rule 3: hostel_mess vs. student_services \u2014 Residential Room/Mess Rebate vs. Campus Wide Amenities",
+      "adjudication_task_id": 49,
+      "speaker_id": "P13",
+      "file_name": "clip_18.wav",
+      "clip_id": "P13_83",
+      "a1_intent": "hostel_mess",
+      "a2_intent": "student_services",
+      "a1_langs": [
+        "Gujarati"
+      ],
+      "a2_langs": [
+        "English",
+        "Gujarati"
+      ],
+      "conflict_type": "hostel_mess <-> student_services"
+    }
+  },
+  {
+    "id": 50,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P8/PTT-20261019-WA0007.wav",
+      "conflict_summary": "Adjudication Task #50 [P8 - PTT-20261019-WA0007.wav] | Annotator 1 voted: [student_services] (Langs: Hindi) vs. Annotator 2 voted: [admissions] (Langs: Hindi)",
+      "applicable_rule": "Dispute Focus: admissions vs student_services. Rule 2: admissions vs. student_services \u2014 Prospective Intake/Seat Offer vs. Enrolled Student Affairs",
+      "adjudication_task_id": 50,
+      "speaker_id": "P8",
+      "file_name": "PTT-20261019-WA0007.wav",
+      "clip_id": "P8_32",
+      "a1_intent": "student_services",
+      "a2_intent": "admissions",
+      "a1_langs": [
+        "Hindi"
+      ],
+      "a2_langs": [
+        "Hindi"
+      ],
+      "conflict_type": "admissions <-> student_services"
+    }
+  },
+  {
+    "id": 51,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P7/WhatsApp Audio 2026-10-19 at 2.37.55 PM.wav",
+      "conflict_summary": "Adjudication Task #51 [P7 - WhatsApp Audio 2026-10-19 at 2.37.55 PM.wav] | Annotator 1 voted: [hostel_mess] (Langs: English) vs. Annotator 2 voted: [admissions] (Langs: English)",
+      "applicable_rule": "Dispute Focus: admissions vs hostel_mess. Rule 4: admissions vs. hostel_mess \u2014 Freshman Reporting/Registration vs. Room Allotment/Mess Possession",
+      "adjudication_task_id": 51,
+      "speaker_id": "P7",
+      "file_name": "WhatsApp Audio 2026-10-19 at 2.37.55 PM.wav",
+      "clip_id": "P7_24",
+      "a1_intent": "hostel_mess",
+      "a2_intent": "admissions",
+      "a1_langs": [
+        "English"
+      ],
+      "a2_langs": [
+        "English"
+      ],
+      "conflict_type": "admissions <-> hostel_mess"
+    }
+  },
+  {
+    "id": 52,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P19/clip_07.wav",
+      "conflict_summary": "Adjudication Task #52 [P19 - clip_07.wav] | Annotator 1 voted: [hostel_mess] (Langs: English) vs. Annotator 2 voted: [student_services] (Langs: English)",
+      "applicable_rule": "Dispute Focus: hostel_mess vs student_services. Rule 3: hostel_mess vs. student_services \u2014 Residential Room/Mess Rebate vs. Campus Wide Amenities",
+      "adjudication_task_id": 52,
+      "speaker_id": "P19",
+      "file_name": "clip_07.wav",
+      "clip_id": "P19_135",
+      "a1_intent": "hostel_mess",
+      "a2_intent": "student_services",
+      "a1_langs": [
+        "English"
+      ],
+      "a2_langs": [
+        "English"
+      ],
+      "conflict_type": "hostel_mess <-> student_services"
+    }
+  },
+  {
+    "id": 53,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P18/clip_03.wav",
+      "conflict_summary": "Adjudication Task #53 [P18 - clip_03.wav] | Annotator 1 voted: [student_services] (Langs: Gujarati) vs. Annotator 2 voted: [it_support] (Langs: English, Gujarati)",
+      "applicable_rule": "Dispute Focus: it_support vs student_services. Rule 1: it_support vs. student_services \u2014 Digital Infrastructure vs. Administrative Policy/Physical Facility",
+      "adjudication_task_id": 53,
+      "speaker_id": "P18",
+      "file_name": "clip_03.wav",
+      "clip_id": "P18_115",
+      "a1_intent": "student_services",
+      "a2_intent": "it_support",
+      "a1_langs": [
+        "Gujarati"
+      ],
+      "a2_langs": [
+        "English",
+        "Gujarati"
+      ],
+      "conflict_type": "it_support <-> student_services"
+    }
+  },
+  {
+    "id": 54,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P7/WhatsApp Audio 2026-10-19 at 2.37.56 PM.wav",
+      "conflict_summary": "Adjudication Task #54 [P7 - WhatsApp Audio 2026-10-19 at 2.37.56 PM.wav] | Annotator 1 voted: [student_services] (Langs: English) vs. Annotator 2 voted: [admissions] (Langs: English)",
+      "applicable_rule": "Dispute Focus: admissions vs student_services. Rule 2: admissions vs. student_services \u2014 Prospective Intake/Seat Offer vs. Enrolled Student Affairs",
+      "adjudication_task_id": 54,
+      "speaker_id": "P7",
+      "file_name": "WhatsApp Audio 2026-10-19 at 2.37.56 PM.wav",
+      "clip_id": "P7_27",
+      "a1_intent": "student_services",
+      "a2_intent": "admissions",
+      "a1_langs": [
+        "English"
+      ],
+      "a2_langs": [
+        "English"
+      ],
+      "conflict_type": "admissions <-> student_services"
+    }
+  },
+  {
+    "id": 55,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P18/clip_01.wav",
+      "conflict_summary": "Adjudication Task #55 [P18 - clip_01.wav] | Annotator 1 voted: [student_services] (Langs: Hindi) vs. Annotator 2 voted: [it_support] (Langs: English, Hindi)",
+      "applicable_rule": "Dispute Focus: it_support vs student_services. Rule 1: it_support vs. student_services \u2014 Digital Infrastructure vs. Administrative Policy/Physical Facility",
+      "adjudication_task_id": 55,
+      "speaker_id": "P18",
+      "file_name": "clip_01.wav",
+      "clip_id": "P18_113",
+      "a1_intent": "student_services",
+      "a2_intent": "it_support",
+      "a1_langs": [
+        "Hindi"
+      ],
+      "a2_langs": [
+        "English",
+        "Hindi"
+      ],
+      "conflict_type": "it_support <-> student_services"
+    }
+  }
+]

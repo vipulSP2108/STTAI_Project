@@ -1,0 +1,4 @@
+UUID: df57c59a
+Transcript: Hello IITGN Helpdesk, my parents will stay on campus for two nights. How can I confirm guest accommodation booking?
+Target_Label: student_services
+Spoken_Languages: English

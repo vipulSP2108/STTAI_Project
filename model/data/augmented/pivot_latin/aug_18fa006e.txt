@@ -1,0 +1,7 @@
+UUID: aug_18fa006e
+Parent_UUID: f53d4330
+Augmentation_Type: pivot_latin
+Similarity_Score: 0.8576
+Transcript: Hello, iDGN inquiry office i had to go to know how to do residential hall development and i had to go to single hostel room, double room, triple room i had to choose the roommates ok.
+Target_Label: hostel_mess
+Spoken_Languages: ['Hindi']

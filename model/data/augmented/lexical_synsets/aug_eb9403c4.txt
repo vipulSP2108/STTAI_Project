@@ -1,0 +1,7 @@
+UUID: aug_eb9403c4
+Parent_UUID: ec5b227c
+Augmentation_Type: lexical_synsets
+Similarity_Score: 0.8678
+Transcript: Hello sir, I want to ask about the dormitory facility for my son who is preparing to join the BTech program this semester.
+Target_Label: hostel_mess
+Spoken_Languages: ['English']

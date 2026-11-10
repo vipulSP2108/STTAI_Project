@@ -1,0 +1,7 @@
+UUID: aug_a7a0e885
+Parent_UUID: 30beb45f
+Augmentation_Type: pivot_latin
+Similarity_Score: 0.8531
+Transcript: Hello hostel support desk, I have misplaced my assigned quarters key, where should I submit the petition for a duplicate key?
+Target_Label: hostel_mess
+Spoken_Languages: ['English']

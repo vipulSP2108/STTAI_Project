@@ -1,0 +1,4 @@
+UUID: 4e20fd1a
+Transcript: During my registration to the company there are a lot of bugs that I found out on to the portal of CDS. Especially when I am logging into the portal it logouts directly without even making clicking the button. I don't know what is happening here. Next book which I found out was related to the email query that has been coming. So if I registered for any particular company and then the email comes. So, the email for the reminder of the company, the issue is that the reminder is coming like 15 minutes early. So I personally think that this should not happen and the query or the reminder should come at least 1 hour to 6 hour before the data registration closed. 15 minutes is quite less and even it is coming through the mail so most probably the 15 minutes watch time is quite less I think so so kindly consider increasing that.
+Target_Label: it_support
+Spoken_Languages: English

@@ -1,0 +1,7 @@
+UUID: aug_cea9b0a8
+Parent_UUID: a18ff6b6
+Augmentation_Type: pivot_latin
+Similarity_Score: 0.9304
+Transcript: I dropped my candidate identity card near the central library, where is the official lost and found register located?
+Target_Label: student_services
+Spoken_Languages: ['English']

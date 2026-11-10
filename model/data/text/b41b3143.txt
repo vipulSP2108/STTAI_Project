@@ -1,0 +1,4 @@
+UUID: b41b3143
+Transcript: સપોર્ટ આપો નમસ્કાર આઇએટ ગાંધીનગંબ વોઈસ હેલ્પ એડમિશન ઓફિસ ડિરેક્ટ કોન્ટેક્ટ નંબર શું .
+Target_Label: admissions
+Spoken_Languages: Gujarati

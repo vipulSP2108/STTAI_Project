@@ -1,0 +1,7 @@
+UUID: aug_25d9b751
+Parent_UUID: 688c7015
+Augmentation_Type: pivot_latin
+Similarity_Score: 0.8761
+Transcript: I need to submit a chamber change application on medical grounds, please share the approval protocol.
+Target_Label: hostel_mess
+Spoken_Languages: ['English']

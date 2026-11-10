@@ -1,0 +1,7 @@
+UUID: aug_9e8b150e
+Parent_UUID: c2b6d2c5
+Augmentation_Type: code_mixing
+Similarity_Score: 0.9084
+Transcript: Hello IITGN admission office, what was the qualifying GATE minimum rank score for the MTech Computer Science program last year?
+Target_Label: admissions
+Spoken_Languages: ['English']

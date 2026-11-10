@@ -1,0 +1,7 @@
+UUID: aug_a6c195d9
+Parent_UUID: f5f59b22
+Augmentation_Type: lexical_synsets
+Similarity_Score: 0.9575
+Transcript: curvy, hello IITG and help desk, my student housing room has a water leakage problem near this study table. Can someone inspect it today?
+Target_Label: hostel_mess
+Spoken_Languages: ['English']

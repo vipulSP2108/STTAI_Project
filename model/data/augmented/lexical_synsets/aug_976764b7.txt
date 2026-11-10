@@ -1,0 +1,7 @@
+UUID: aug_976764b7
+Parent_UUID: 36386821
+Augmentation_Type: lexical_synsets
+Similarity_Score: 0.9191
+Transcript: Hello, Hello Assnesh, I am Jagurudhi Patil, I am aayatee Gandhina, I am an Archive department, I have to take application process. ھa ھa ھاں میں ہوڑھاں میں ہوڑھاں میں ہوڑھاں میں ہوڑھاں میں ہوڑھاں میں ہوڑھاں میں ہوڑھاں میں ہوڑھاں میں ہوڑھاں میں ہوڑھاں میں ہوڑھاں میں ہوڑھاں میں ہوڑھاں میں ہوڑھاں میں ہوڑھاں میں ہوڑھاں میں ہوڑھاں میں ہوڑھاں میں ہوڑھاں میں ہوڑھاں میں ہوڑھاں میں ہوڑھاں میں ہوڑھاں میں ہوڑھاں میں ہوڑھاں میں ہوڑھاں میں ہوڑھاں میں ہو.
+Target_Label: admissions
+Spoken_Languages: ['Hindi']

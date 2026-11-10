@@ -1,0 +1,7 @@
+UUID: aug_f5855f01
+Parent_UUID: 34f3193c
+Augmentation_Type: code_mixing
+Similarity_Score: 0.8499
+Transcript: I applied for bhojanalaya rebate on the student website login, will the deduction reflect in next month's mess bill?
+Target_Label: hostel_mess
+Spoken_Languages: ['English']

@@ -1,0 +1,7 @@
+UUID: aug_05dab59e
+Parent_UUID: 6f3f920c
+Augmentation_Type: lexical_synsets
+Similarity_Score: 0.9068
+Transcript: Hello IT Gen. Helbless, GitHub Student Developer Pack, for Instudent Verification Reject, official Student Status Verification Letter, where will we get the official document?
+Target_Label: it_support
+Spoken_Languages: ['Hindi']

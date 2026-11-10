@@ -1,0 +1,7 @@
+UUID: aug_c57f4c5a
+Parent_UUID: abae4f43
+Augmentation_Type: lexical_synsets
+Similarity_Score: 0.9615
+Transcript: Hello Namaste Sir, My name is J. B. B. I. M. and I am from India. So now I have to take application process in your college. So my financial condition is not good. So please tell us that what kind of fellowship, or bank loan, student loan, education loan, kota kota k.
+Target_Label: admissions
+Spoken_Languages: ['Hindi']

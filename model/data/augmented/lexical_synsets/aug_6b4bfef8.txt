@@ -1,0 +1,7 @@
+UUID: aug_6b4bfef8
+Parent_UUID: f26b4776
+Augmentation_Type: lexical_synsets
+Similarity_Score: 0.8446
+Transcript: એમ ા ં ત ે પર મ િ શન ઓનલ ા ઇન લ ે વ ી ક ે સ ે ક ્ ય ુ ર િ ટ ી રજ િ સ ્ ટર છ ે.
+Target_Label: student_services
+Spoken_Languages: ['Gujarati']

@@ -1,0 +1,7 @@
+UUID: aug_c811835a
+Parent_UUID: 0279b6a6
+Augmentation_Type: lexical_synsets
+Similarity_Score: 0.8969
+Transcript: હ ે લ ો આઇઆઇટ ી ગ ા ં ધ ી નગર વ ો ઇસ હ ે લ ્ પડ ે સ ્ ક, મ ા ર ા હ ો સ ્ ટ ે લ ર ૂ મન ી ચ ા વ ી ખ ો વ ા ઈ ગઈ છ ે, નવ ી બન ા વવ ા મ ા ટ ે શ ુ ં કરવ ુ ં પડશ ે?
+Target_Label: hostel_mess
+Spoken_Languages: ['Gujarati']

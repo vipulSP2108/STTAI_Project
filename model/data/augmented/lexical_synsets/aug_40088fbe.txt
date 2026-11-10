@@ -1,0 +1,7 @@
+UUID: aug_40088fbe
+Parent_UUID: 2db69edb
+Augmentation_Type: lexical_synsets
+Similarity_Score: 0.9251
+Transcript: નમસ ્ ત ે સહ ા ય કય ા દસ ્ ત ા વ ે જ ો ન ી જર ૂ ર પડ ે છ ે સ ા થ ે જ ો વ િ દ ્ ય ા ર ્ થ ી પ ા સ ે હ ો ય ત ો શ ુ ં કર ે ક ો ણ કર ી ન ે સત ્ ત ા દસ ્ ત ા વ ે જ ો ન ી ચ ે કલ િ સ ્ ટ ક ્ ય ા ં થ ી મળશ ે ત ે પણ જણ ા વશ ો જ ે થ ી છ ે લ ્ લ ી ઘડ ી એ ક ો ઈ મ ુ શ ્ ક ે લ ી ન પડ ે.
+Target_Label: admissions
+Spoken_Languages: ['Gujarati']

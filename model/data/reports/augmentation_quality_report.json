@@ -1,0 +1,18 @@
+{
+  "timestamp": "2026-11-10T07:52:46.701852",
+  "threshold": 0.82,
+  "statistics": {
+    "candidates_generated": 461,
+    "rejected_by_embedding": 95,
+    "rejected_by_polarity": 34,
+    "rejected_by_dedup": 208,
+    "accepted": 124,
+    "by_technique": {
+      "back_translation": 2,
+      "pivot_latin": 51,
+      "lexical_synsets": 60,
+      "code_mixing": 11
+    }
+  },
+  "total_augmented_samples": 124
+}

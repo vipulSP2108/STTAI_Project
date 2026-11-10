@@ -1,0 +1,7 @@
+UUID: aug_fb63e626
+Parent_UUID: b82c9074
+Augmentation_Type: pivot_latin
+Similarity_Score: 0.8713
+Transcript: Hello, IITGN Helpdesk. I will have to change my assigned quarters partner and you both have to change the look partner. Hello, IITGN Helpdesk. My table is broken. My table is broken.
+Target_Label: hostel_mess
+Spoken_Languages: ['English']

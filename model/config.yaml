@@ -1,0 +1,99 @@
+# model/config.yaml - Centralized Configuration for Voice Helpdesk NLP Pipeline
+# IIT Gandhinagar - CS203 / Project 5
+
+project:
+  name: "voice_helpdesk_multilingual_nlp"
+  seed: 42
+  device: "mps" # Apple Silicon Metal acceleration, fallback to "cpu"
+
+paths:
+  raw_gold_json: "model/data/raw/consensus_gold_182.json"
+  audio_dir: "model/data/audio"
+  text_dir: "model/data/text"
+  augmented_dir: "model/data/augmented"
+  metadata_dir: "model/data/metadata"
+  splits_dir: "model/data/splits"
+  reports_dir: "model/data/reports"
+  models_dir: "model/models"
+  results_dir: "model/results"
+
+asr:
+  model_name: "openai/whisper-large-v3"
+  fallback_model: "openai/whisper-medium"
+  local_checkpoint_dir: "model/models/asr_checkpoints"
+  language: null # auto-detect
+  task: "transcribe"
+  batch_size: 4
+  sampling_rate: 16000
+
+sanitization:
+  uuid_length: 8
+  strip_features:
+    - "speaker_id"
+    - "file_name"
+    - "clip_id"
+    - "duration"
+    - "completed"
+    - "annotated"
+    - "recording_session"
+    - "resolution_source"
+  manifest_path: "model/data/metadata/internal_manifest.json"
+
+augmentation:
+  max_variants_per_sample: 6
+  back_translation:
+    enabled: true
+    pairs:
+      - ["hi", "en", "hi"]
+      - ["gu", "en", "gu"]
+      - ["en", "hi", "en"]
+      - ["gu", "hi", "gu"]
+  pivot_latin:
+    enabled: true
+    path: ["en", "la", "en"]
+  lexical_synset:
+    enabled: true
+    replacement_prob: 0.15
+  code_mixing:
+    enabled: true
+    rate: 0.25
+  acoustic:
+    enabled: true
+    speed_factors: [0.9, 1.1]
+    pitch_shifts: [-2.0, 2.0]
+    snr_db: 15.0
+
+quality_gates:
+  embedding_model: "sentence-transformers/LaBSE"
+  cosine_similarity_threshold: 0.82
+  minhash_duplicate_threshold: 0.88
+  enforce_negation_consistency: true
+  enforce_intent_precedence: true
+
+cross_validation:
+  strategy: "StratifiedGroupKFold"
+  n_splits: 5
+  group_key: "split_group_id" # parent_clip_id + speaker_id
+  stratify_key: "gold_intent"
+  shuffle: true
+
+training:
+  models:
+    - "google/muril-base-cased"
+    - "ai4bharat/indic-bert"
+    - "xlm-roberta-base"
+  default_model: "google/muril-base-cased"
+  max_length: 128
+  batch_size: 16
+  epochs: 15
+  learning_rate: 2.0e-5
+  weight_decay: 0.01
+  warmup_ratio: 0.1
+  early_stopping_patience: 5
+  num_labels: 4
+  target_names:
+    - "admissions"
+    - "hostel_mess"
+    - "it_support"
+    - "student_services"
+

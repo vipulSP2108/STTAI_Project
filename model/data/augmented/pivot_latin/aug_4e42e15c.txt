@@ -1,0 +1,7 @@
+UUID: aug_4e42e15c
+Parent_UUID: f53d4330
+Augmentation_Type: pivot_latin
+Similarity_Score: 0.8291
+Transcript: Hello, iDGN help desk i had to go to know how to do domiciliary residence development and i had to go to single chamber, double room, triple room i had to choose the roommates ok.
+Target_Label: hostel_mess
+Spoken_Languages: ['Hindi']

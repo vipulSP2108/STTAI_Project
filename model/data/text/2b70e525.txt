@@ -1,0 +1,4 @@
+UUID: 2b70e525
+Transcript: હાઇટીજેનલ બસ મીરા ગ્રેટ કાર્ડને એક સબ્જેક્ટ રિઝલ ટેપ્શન શો કરી છે જે આરે એક્ઝામ આપો હત.
+Target_Label: it_support
+Spoken_Languages: Hindi, Gujarati

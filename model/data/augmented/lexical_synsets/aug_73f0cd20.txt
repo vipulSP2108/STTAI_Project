@@ -1,0 +1,7 @@
+UUID: aug_73f0cd20
+Parent_UUID: 4e20fd1a
+Augmentation_Type: lexical_synsets
+Similarity_Score: 0.9887
+Transcript: My institute LDAP account credentials has expired and the password reset link is not arriving on my recovery email.
+Target_Label: it_support
+Spoken_Languages: ['English']

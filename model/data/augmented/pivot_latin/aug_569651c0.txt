@@ -1,0 +1,7 @@
+UUID: aug_569651c0
+Parent_UUID: 3fa7f104
+Augmentation_Type: pivot_latin
+Similarity_Score: 0.9391
+Transcript: Hello, good morning. I am a second year BTech mechanical engineering student. I am facing an operational complication logging into the MATLAB campus license portal.
+Target_Label: it_support
+Spoken_Languages: ['English']

@@ -1,0 +1,4 @@
+UUID: f41402b1
+Transcript: हेलो हेल्पडेस्क, हमने कैंपस में नई स्टूडेंट रोबोटिक्स क्लब बनाई है, क्लब रजिस्ट्रेशन और एक्टिविटी रूम अप्रूवल के लिए क्या प्रक्रिया है?
+Target_Label: student_services
+Spoken_Languages: Hindi

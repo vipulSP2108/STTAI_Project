@@ -1,0 +1,7 @@
+UUID: aug_da05d5b3
+Parent_UUID: b758588d
+Augmentation_Type: lexical_synsets
+Similarity_Score: 0.9158
+Transcript: નમસ ્ કર સ ા હ ે બ હ ુ ં મ ા ર ા દ ી કર ા ન ા આભ ્ ય ા સ ા થ ે હ ો સ ્ ટ ે લ અન ે જવ ા ન ા ખર ્ ચન ી મ ા હ િ ત ી મ ે ળવવ ા મ ા ં ગ ુ અલગ હ ો ય ત ો ત ે દર મહ િ ન ે ભરવ ા ન ી હ ો ય છ ે ક ે સમ િ સ ્ ટ ા ર પ ્ રવ ા હન ે બ ી જ ી સ ુ વ િ ધ ા વ ા મ ા ટ ે ક ો ઈ વધ ા ર ા � અભ ્ ય ા સ અન ે રહ ે વ ા ન ા ખર ્ ચન ુ ં ય ો ગ ્ ય આય ો જન કરવ ા મદ ા ત મળશ ે.
+Target_Label: hostel_mess
+Spoken_Languages: ['Gujarati']

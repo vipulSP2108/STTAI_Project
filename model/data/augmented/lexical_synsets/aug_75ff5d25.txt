@@ -1,0 +1,7 @@
+UUID: aug_75ff5d25
+Parent_UUID: 430f801d
+Augmentation_Type: lexical_synsets
+Similarity_Score: 0.9995
+Transcript: نمس کر. میں اپنے بیٹے کے ایڈیوشن کی اگلی پرکریہ کے بارے میں جان لینہ چاہتا ہوں. اسے آیٹی گندینگر میں پریوش ملنے کی امید ہے. اور ہم جاننا چاہتے ہیں. اسیٹ کے آوانٹی کھو نے کے بعد. اوٹ کھو نے کے بعد. کین کین چرنوں میں. چرنوں میں پرکریہ پریریکرہ کرنا ضروری ہوتا ہے. کیا اس میں سب سے پہلے ان ் ளین فیز زمہ ہون زمہ کرنا ہوتی ہے اور اس کے بعد دستاوی جو کا ستپن ہوتا ہے کیا اینمیشن کنفم ہونے کے بعد اوشٹیل کی لیے الکس ایم فرم برنا پر دا ہے یا வیدر دیو کے آپ اپنے آپ اوشٹیل آویدت کیا جاتا ہے میں یہ وہ بھی پوچھنا چاہتا ہوں ki pizzama karni ki ya dhastavit ap Lord karni ki koi taakni ki akni ki samas se asakni hai maa to kis help desk help desk ko sampur ke karna saa ye kiya nae viddhar diya aur hun ke matapita ko orientaliy karagam ko आज ि त क ा र े कर े कर े करप ा कर कर क े हम े स े ी करम पत ा द े नह ी ं नह ी ं.
+Target_Label: admissions
+Spoken_Languages: ['Hindi']

@@ -1,0 +1,7 @@
+UUID: aug_476a65ba
+Parent_UUID: 34f3193c
+Augmentation_Type: pivot_latin
+Similarity_Score: 0.9109
+Transcript: I applied for mess rebate on the scholar portal, will the deduction reflect in next month's mess bill?
+Target_Label: hostel_mess
+Spoken_Languages: ['English']

@@ -1,0 +1,7 @@
+UUID: aug_9539e08b
+Parent_UUID: f5f59b22
+Augmentation_Type: pivot_latin
+Similarity_Score: 0.962
+Transcript: curvy, hello IITG and inquiry office, my residential hall hostel room has a water leakage problem near this study table. Can someone inspect it today?
+Target_Label: hostel_mess
+Spoken_Languages: ['English']

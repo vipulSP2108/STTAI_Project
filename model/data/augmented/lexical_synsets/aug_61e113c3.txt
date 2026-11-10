@@ -1,0 +1,7 @@
+UUID: aug_61e113c3
+Parent_UUID: b24445a7
+Augmentation_Type: lexical_synsets
+Similarity_Score: 0.8389
+Transcript: નમસ ્ ક ા ર, આઇઆઇટ ી ગ ા ં ધ ી નગર એડમ િ શન સ ે લ, બ ્ ર ા ન ્ ચ ચ ે ન ્ જ મ ા ટ ે સ ી પ ી આઇ કટ ો ફ અન ે પ ્ રક ્ ર િ ય ા ન ી મ ા હ િ ત ી આપવ ા વ િ ન ં ત ી.
+Target_Label: admissions
+Spoken_Languages: ['Gujarati']

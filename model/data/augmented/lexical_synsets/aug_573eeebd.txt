@@ -1,0 +1,7 @@
+UUID: aug_573eeebd
+Parent_UUID: 286218b8
+Augmentation_Type: lexical_synsets
+Similarity_Score: 0.8953
+Transcript: લ ા ઇબ ્ ર ે ર ી ક ા ર ્ ડ ખ ો વ ા ઈ ગય ુ ં છ ે અન ે પર ી ક ્ ષ ા નજ ી ક છ ે, ડ ુ પ ્ લ િ ક ે ટ આઇડ ી ક ા ર ્ ડ ક ્ ય ા ર ે ઇશ ્ ય ૂ થશ ે?
+Target_Label: student_services
+Spoken_Languages: ['Gujarati']

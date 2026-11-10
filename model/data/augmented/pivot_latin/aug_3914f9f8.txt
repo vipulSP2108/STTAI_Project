@@ -1,0 +1,7 @@
+UUID: aug_3914f9f8
+Parent_UUID: 3f07f814
+Augmentation_Type: pivot_latin
+Similarity_Score: 0.9745
+Transcript: My student webmail quota is 95% full and incoming emails are bouncing back, how do I formal solicit a storage extension?
+Target_Label: it_support
+Spoken_Languages: ['English']

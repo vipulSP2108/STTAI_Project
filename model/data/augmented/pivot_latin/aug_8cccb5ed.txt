@@ -1,0 +1,7 @@
+UUID: aug_8cccb5ed
+Parent_UUID: f9e8a369
+Augmentation_Type: pivot_latin
+Similarity_Score: 0.8401
+Transcript: portal. Hello, IIT June Helpdesk. I need an official medium of instruction attestation document from my master's application abroad. How can I request one?
+Target_Label: student_services
+Spoken_Languages: ['English']

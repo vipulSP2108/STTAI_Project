@@ -1,0 +1,7 @@
+UUID: aug_783f4ed1
+Parent_UUID: 20de435d
+Augmentation_Type: pivot_latin
+Similarity_Score: 0.874
+Transcript: Hello student services desk, what is the procedure to obtain an official bonafide official charter for passport renewal?
+Target_Label: student_services
+Spoken_Languages: ['English']

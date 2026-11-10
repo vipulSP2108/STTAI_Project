@@ -1,0 +1,7 @@
+UUID: aug_616c20e2
+Parent_UUID: 30beb45f
+Augmentation_Type: lexical_synsets
+Similarity_Score: 0.9344
+Transcript: Hello student housing support desk, I have misplaced my room key, where should I submit the request for a duplicate key?
+Target_Label: hostel_mess
+Spoken_Languages: ['English']

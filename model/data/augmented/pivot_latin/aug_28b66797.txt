@@ -1,0 +1,7 @@
+UUID: aug_28b66797
+Parent_UUID: b82c9074
+Augmentation_Type: pivot_latin
+Similarity_Score: 0.8945
+Transcript: What are the evening visiting hours to meet the hostel warden regarding assigned quarters allotment issues?
+Target_Label: hostel_mess
+Spoken_Languages: ['English']

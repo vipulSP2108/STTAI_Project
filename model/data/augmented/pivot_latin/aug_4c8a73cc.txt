@@ -1,0 +1,7 @@
+UUID: aug_4c8a73cc
+Parent_UUID: c2b6d2c5
+Augmentation_Type: pivot_latin
+Similarity_Score: 0.9717
+Transcript: Hello IITGN enrollment office, what was the qualifying GATE cutoff score for the MTech Computer Science program last year?
+Target_Label: admissions
+Spoken_Languages: ['English']

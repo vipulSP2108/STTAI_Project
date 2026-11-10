@@ -1,0 +1,7 @@
+UUID: aug_c3240795
+Parent_UUID: a18ff6b6
+Augmentation_Type: lexical_synsets
+Similarity_Score: 0.938
+Transcript: I dropped my student identity card near the central resource centre, where is the official lost and found register located?
+Target_Label: student_services
+Spoken_Languages: ['English']

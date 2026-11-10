@@ -1,0 +1,4 @@
+UUID: cd29a36f
+Transcript: Hi, I am a final year student from Hikom hostel. I am calling regarding the Masribet policy. I have been selected for an off campus internship and I will not be on campus for the entire month of February. I know we need to apply for a Masribet in advance. I have already filled out the form on the MS portal but the status is showing as pending approval. You will also need to submit a hard copy of my lever approval from faculty advisor to the hostel office. Or is the online approval sufficient to stop the mischarges?
+Target_Label: hostel_mess
+Spoken_Languages: English

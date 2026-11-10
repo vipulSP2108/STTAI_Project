@@ -1,0 +1,7 @@
+UUID: aug_941cda17
+Parent_UUID: 4774bc58
+Augmentation_Type: lexical_synsets
+Similarity_Score: 0.8639
+Transcript: નમસ ્ ક ા ર મ ે ટર ્ મ ફ ા ર ્ મ કર ્ ય ુ ં હત ુ ં પણ મ ા નથ ી બ િ લમ ા ં નથ ી થય ુ ં ક ે.
+Target_Label: hostel_mess
+Spoken_Languages: ['Gujarati']

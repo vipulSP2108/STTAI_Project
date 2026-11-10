@@ -1,0 +1,135 @@
+{
+  "timestamp": "2026-11-09T15:01:06.379673",
+  "included_folders": [
+    "P1",
+    "P2",
+    "P3",
+    "P4",
+    "P5",
+    "P6",
+    "P7",
+    "P8",
+    "P9",
+    "P10",
+    "P11",
+    "P12",
+    "P13",
+    "P14",
+    "P16",
+    "P18",
+    "P19",
+    "P20",
+    "P21",
+    "P22"
+  ],
+  "excluded_folders": [
+    "P15",
+    "P17"
+  ],
+  "total_folders": 20,
+  "total_audio_files": 182,
+  "total_duration_seconds": 6560.31,
+  "total_duration_formatted": "1h 49m 20.31s",
+  "folder_breakdown": {
+    "P1": {
+      "file_count": 2,
+      "duration_seconds": 102.87,
+      "duration_formatted": "1m 42.87s"
+    },
+    "P2": {
+      "file_count": 11,
+      "duration_seconds": 599.99,
+      "duration_formatted": "9m 59.99s"
+    },
+    "P3": {
+      "file_count": 3,
+      "duration_seconds": 184.04,
+      "duration_formatted": "3m 4.04s"
+    },
+    "P4": {
+      "file_count": 5,
+      "duration_seconds": 331.83,
+      "duration_formatted": "5m 31.83s"
+    },
+    "P5": {
+      "file_count": 6,
+      "duration_seconds": 381.46,
+      "duration_formatted": "6m 21.46s"
+    },
+    "P6": {
+      "file_count": 1,
+      "duration_seconds": 53.41,
+      "duration_formatted": "0m 53.41s"
+    },
+    "P7": {
+      "file_count": 9,
+      "duration_seconds": 530.46,
+      "duration_formatted": "8m 50.46s"
+    },
+    "P8": {
+      "file_count": 10,
+      "duration_seconds": 838.0,
+      "duration_formatted": "13m 58.00s"
+    },
+    "P9": {
+      "file_count": 10,
+      "duration_seconds": 504.21,
+      "duration_formatted": "8m 24.21s"
+    },
+    "P10": {
+      "file_count": 2,
+      "duration_seconds": 114.47,
+      "duration_formatted": "1m 54.47s"
+    },
+    "P11": {
+      "file_count": 4,
+      "duration_seconds": 274.87,
+      "duration_formatted": "4m 34.87s"
+    },
+    "P12": {
+      "file_count": 2,
+      "duration_seconds": 85.21,
+      "duration_formatted": "1m 25.21s"
+    },
+    "P13": {
+      "file_count": 22,
+      "duration_seconds": 227.93,
+      "duration_formatted": "3m 47.93s"
+    },
+    "P14": {
+      "file_count": 11,
+      "duration_seconds": 121.05,
+      "duration_formatted": "2m 1.05s"
+    },
+    "P16": {
+      "file_count": 14,
+      "duration_seconds": 128.37,
+      "duration_formatted": "2m 8.37s"
+    },
+    "P18": {
+      "file_count": 16,
+      "duration_seconds": 175.38,
+      "duration_formatted": "2m 55.38s"
+    },
+    "P19": {
+      "file_count": 11,
+      "duration_seconds": 115.76,
+      "duration_formatted": "1m 55.76s"
+    },
+    "P20": {
+      "file_count": 10,
+      "duration_seconds": 622.65,
+      "duration_formatted": "10m 22.65s"
+    },
+    "P21": {
+      "file_count": 18,
+      "duration_seconds": 365.32,
+      "duration_formatted": "6m 5.32s"
+    },
+    "P22": {
+      "file_count": 15,
+      "duration_seconds": 803.02,
+      "duration_formatted": "13m 23.02s"
+    }
+  }
+}

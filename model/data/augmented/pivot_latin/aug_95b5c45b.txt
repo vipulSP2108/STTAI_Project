@@ -1,0 +1,7 @@
+UUID: aug_95b5c45b
+Parent_UUID: 36386821
+Augmentation_Type: pivot_latin
+Similarity_Score: 0.9589
+Transcript: Hello, Hello Assnesh, I am Jagurudhi Patil, I am aayatee Gandhina, I am an Archive department, I have to take enrollment. ھa ھa ھاں میں ہوڑھاں میں ہوڑھاں میں ہوڑھاں میں ہوڑھاں میں ہوڑھاں میں ہوڑھاں میں ہوڑھاں میں ہوڑھاں میں ہوڑھاں میں ہوڑھاں میں ہوڑھاں میں ہوڑھاں میں ہوڑھاں میں ہوڑھاں میں ہوڑھاں میں ہوڑھاں میں ہوڑھاں میں ہوڑھاں میں ہوڑھاں میں ہوڑھاں میں ہوڑھاں میں ہوڑھاں میں ہوڑھاں میں ہوڑھاں میں ہوڑھاں میں ہوڑھاں میں ہوڑھاں میں ہو.
+Target_Label: admissions
+Spoken_Languages: ['Hindi']

@@ -1,0 +1,7 @@
+UUID: aug_0604464f
+Parent_UUID: b20dcb6e
+Augmentation_Type: pivot_latin
+Similarity_Score: 0.9238
+Transcript: Hello IT Gene, help desk, OBCNCAL official charter validity date cutoff date patching in itch ۔.
+Target_Label: admissions
+Spoken_Languages: ['Hindi']

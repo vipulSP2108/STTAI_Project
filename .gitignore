@@ -26,10 +26,39 @@ htmlcov/
 Records/
 Records.zip
 data/raw/audio/
+model/data/audio/
+final_annotation/records/
 data/processed/augmented/**/*.wav
 temp_*.wav
 
-# Local DVC remotes
+# Local DVC remotes & MLflow
 ../dvc-remote
+mlruns/
+*.db
+*.sqlite3
 
-dump
+# Scratch dumps, prompts, and temporary generator scripts
+dump/
+dump.md
+scratch/
+prompts/
+code/prompts/
+*.log
+*.pid
+*.tmp
+*.scratch
+references/refrance_*
+
+# Model binaries & checkpoints (managed via local caches / scripts)
+model/models/
+final_annotation/annotator_*/data/
+final_annotation/annotator_*/records/
+supporting_files/*.mp4
+supporting_files/screen_recording.mp4
+
+# Agent / Tooling footprints
+.gemini/
+.system_generated/
+brain/
+
+modelprep.md

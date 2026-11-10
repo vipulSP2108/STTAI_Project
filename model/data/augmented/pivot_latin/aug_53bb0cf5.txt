@@ -1,0 +1,7 @@
+UUID: aug_53bb0cf5
+Parent_UUID: 30beb45f
+Augmentation_Type: pivot_latin
+Similarity_Score: 0.8258
+Transcript: Hello domiciliary residence support desk, I have misplaced my chamber key, where should I submit the request for a duplicate key?
+Target_Label: hostel_mess
+Spoken_Languages: ['English']

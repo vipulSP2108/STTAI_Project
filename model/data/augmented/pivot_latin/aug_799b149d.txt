@@ -1,0 +1,7 @@
+UUID: aug_799b149d
+Parent_UUID: 1d870966
+Augmentation_Type: pivot_latin
+Similarity_Score: 0.9583
+Transcript: Is the written enrollment test conducted offline at the Palaj campus or will there be an online proctored examination?
+Target_Label: admissions
+Spoken_Languages: ['English']

@@ -1,0 +1,7 @@
+UUID: aug_c20c8426
+Parent_UUID: 46d483f3
+Augmentation_Type: pivot_latin
+Similarity_Score: 0.9746
+Transcript: Namaskar, iIT Gandhi Nagar voice inquiry office Can institute direct phd agnation offer kata hai? For meetag graduate with high CPI, kupia critical requirement assistance.
+Target_Label: admissions
+Spoken_Languages: ['Hindi']

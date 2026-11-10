@@ -1,0 +1,7 @@
+UUID: aug_8b2714fe
+Parent_UUID: 9a6ec2f5
+Augmentation_Type: pivot_latin
+Similarity_Score: 0.9674
+Transcript: Please send the AC maintenance technician to room 304 in Aravalli residential hall, the cooling is not working at all.
+Target_Label: hostel_mess
+Spoken_Languages: ['English']

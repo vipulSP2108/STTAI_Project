@@ -1,0 +1,7 @@
+UUID: aug_f3ea217d
+Parent_UUID: 51d87c64
+Augmentation_Type: pivot_latin
+Similarity_Score: 0.9193
+Transcript: Hello IITGN Healthness, I am going to book a assigned quarters for this event. I guess I will be able to do this event for 2-3 days. For weekends, this event will be held in Hakeedhan, where all the people will be there. ھیکسان 2 دن کے چاہیے ہوگا ھیکسان 2 دن کے چاہیے ہوگا ھیکسان 2 دن کے چاہیے ہوگا ھیکسان 2 دن کے چاہیے ہوگا ھیکسان 2 دن کے چاہیے ہوگا ھیکسان 2 دن کے چاہیے ہوگا ھیکسان 2 دن کے چاہیے ہوگا ھیکسان 2 دن کے چاہیے ہوگا ھیکسان 2 دن کے چاہیے ہوگا ھیکسان 2 دن کے چاہیے ہوگا ھیکسان 2 دن کے چاہیے ہوگا ھیکسان 2 دن کے چاہیے ہوگا ھیکسان 2 دن کے چاہیے ہوگا ھ.
+Target_Label: student_services
+Spoken_Languages: ['Hindi']

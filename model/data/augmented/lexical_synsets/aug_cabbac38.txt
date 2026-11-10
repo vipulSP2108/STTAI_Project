@@ -1,0 +1,7 @@
+UUID: aug_cabbac38
+Parent_UUID: 4774bc58
+Augmentation_Type: lexical_synsets
+Similarity_Score: 0.8598
+Transcript: હ ો સ ્ ટ ે લ બ ્ લ ો કમ ા ં પ ા વર કટ થય ો છ ે અન ે વ ા ઇફ ા ઇ ર ા ઉટર પણ બ ં ધ છ ે, ત ા ત ્ ક ા લ િ ક ઇલ ે ક ્ ટ ્ ર િ શ િ યન મ ો કલવ ા નમ ્ ર વ િ ન ં ત ી.
+Target_Label: hostel_mess
+Spoken_Languages: ['Gujarati']

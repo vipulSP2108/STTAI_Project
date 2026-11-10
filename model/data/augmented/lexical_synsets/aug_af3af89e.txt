@@ -1,0 +1,7 @@
+UUID: aug_af3af89e
+Parent_UUID: 464c04af
+Augmentation_Type: lexical_synsets
+Similarity_Score: 0.8645
+Transcript: Could you please tell me the weekend dinner timings and special menu schedule for hostel canteen hall 2?
+Target_Label: hostel_mess
+Spoken_Languages: ['English']

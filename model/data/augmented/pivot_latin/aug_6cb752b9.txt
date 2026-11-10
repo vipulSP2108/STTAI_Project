@@ -1,0 +1,7 @@
+UUID: aug_6cb752b9
+Parent_UUID: 956b8c0c
+Augmentation_Type: pivot_latin
+Similarity_Score: 0.8343
+Transcript: The ethernet LAN port in my hostel assigned quarters has no digital communication network connectivity even after connecting a working cable.
+Target_Label: it_support
+Spoken_Languages: ['English']

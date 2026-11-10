@@ -1,0 +1,7 @@
+UUID: aug_8aad3acf
+Parent_UUID: 464c04af
+Augmentation_Type: back_translation
+Similarity_Score: 0.9604
+Transcript: Could you kripya tell me the weekend dinner timings and special menu schedule for mess hall 2?
+Target_Label: hostel_mess
+Spoken_Languages: ['English']

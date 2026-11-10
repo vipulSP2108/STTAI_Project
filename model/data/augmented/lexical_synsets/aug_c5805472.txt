@@ -1,0 +1,7 @@
+UUID: aug_c5805472
+Parent_UUID: 464c04af
+Augmentation_Type: lexical_synsets
+Similarity_Score: 0.8495
+Transcript: Could you please tell me the weekend dinner timings and special menu schedule for bhojanalaya hall 2?
+Target_Label: hostel_mess
+Spoken_Languages: ['English']

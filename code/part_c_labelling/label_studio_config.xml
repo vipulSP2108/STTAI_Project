@@ -1,44 +1,45 @@
 <!-- Label Studio Configuration - Voice Helpdesk ASR (Project 5)
-     CS203 Assignment 1
+     CS203 Assignment 1 & 2
 
-     LABEL ORDER: transcript -> intent
-     Annotators MUST fill transcript first, then choose intent.
-     This prevents intent choice from biasing the transcription.
-     See LABELLING_PROTOCOL.md for the rationale.
-
-     Layout: Audio player -> Transcript text area -> Intent choices
+     LABEL ORDER: languages / transcript -> intent
+     Annotators can select multiple languages (English, Hindi, Gujarati)
+     and optionally transcribe before choosing intent.
 -->
 <View>
   <Header value="Voice Helpdesk Annotation — CS203 Project 5"/>
   <Audio name="audio" value="$audio" zoom="true" hotkey="space"/>
 
-  <!-- STEP 1: Transcribe the audio clip first -->
-  <Header value="Step 1: Transcript (fill this FIRST)"/>
+  <!-- STEP 1: Spoken Languages (multiple selection) & Transcript -->
+  <Header value="Step 1: Spoken Languages &amp; Transcript (fill this FIRST)"/>
+  <Choices name="languages" toName="audio" choice="multiple" required="false">
+    <Choice value="English" hotkey="e" hint="Contains English speech"/>
+    <Choice value="Hindi" hotkey="h" hint="Contains Hindi speech (हिन्दी)"/>
+    <Choice value="Gujarati" hotkey="g" hint="Contains Gujarati speech (ગુજરાતી)"/>
+  </Choices>
+
   <TextArea
     name="transcript"
     toName="audio"
-    placeholder="Type the transcript in code-mixed English / हिन्दी / ગુજરાતી"
+    placeholder="Type verbatim code-mixed transcript (optional / as needed)"
     rows="3"
     editable="true"
-    required="true"
-    requiredMessage="Transcript is required before choosing intent."
   />
 
-  <!-- STEP 2: Choose intent AFTER completing transcript -->
-  <Header value="Step 2: Intent (fill AFTER transcript)"/>
+  <!-- STEP 2: Intent Classification -->
+  <Header value="Step 2: Intent (fill AFTER Step 1)"/>
   <Choices
     name="intent"
     toName="audio"
     choice="single"
     required="true"
     requiredMessage="Please select one intent category.">
-    <Choice value="admissions"
+    <Choice value="admissions" hotkey="1"
             hint="Queries about admission process, forms, deadlines, seat availability"/>
-    <Choice value="hostel_mess"
+    <Choice value="hostel_mess" hotkey="2"
             hint="Queries about hostel rooms, mess food, timings, hostel complaints"/>
-    <Choice value="it_support"
+    <Choice value="it_support" hotkey="3"
             hint="Queries about WiFi, email/accounts, software, printers, lab PCs"/>
-    <Choice value="student_services"
+    <Choice value="student_services" hotkey="4"
             hint="Queries about library, health center, transport, student ID cards"/>
   </Choices>
 </View>

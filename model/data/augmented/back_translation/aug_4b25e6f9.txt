@@ -1,0 +1,7 @@
+UUID: aug_4b25e6f9
+Parent_UUID: 35c7936c
+Augmentation_Type: back_translation
+Similarity_Score: 0.9791
+Transcript: Hello IADGNLBless, My course registration has been done, but the ERP is not showing on the Subject show is not happening, kripya check the door.
+Target_Label: it_support
+Spoken_Languages: ['Hindi']

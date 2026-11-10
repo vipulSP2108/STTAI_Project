@@ -1,0 +1,7 @@
+UUID: aug_3ee45bad
+Parent_UUID: 944528c0
+Augmentation_Type: pivot_latin
+Similarity_Score: 0.9614
+Transcript: Hello, IITGN HelpDisc. Internship Company is asking for a bonafide letter and NOC. Are both documents available through the candidates?
+Target_Label: student_services
+Spoken_Languages: ['English']

@@ -1,0 +1,2942 @@
+{
+  "generated_at": "2026-11-10T00:09:17.110651",
+  "description": "SECRET internal audit manifest mapping randomized UUIDs to parent clips and speakers.",
+  "total_samples": 182,
+  "manifest": [
+    {
+      "uuid": "f26b4776",
+      "original_clip_id": "P18_127",
+      "original_file_name": "clip_15.wav",
+      "original_speaker_id": "P18",
+      "parent_uuid": "f26b4776",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "student_services",
+      "languages": [
+        "Gujarati"
+      ],
+      "split_group_id": "GRP_P18_P18_127",
+      "audio_path": "model/data/audio/f26b4776.wav",
+      "text_path": "model/data/text/f26b4776.txt"
+    },
+    {
+      "uuid": "7c69dee1",
+      "original_clip_id": "P9_50",
+      "original_file_name": "PTT-20261019-WA0027.wav",
+      "original_speaker_id": "P9",
+      "parent_uuid": "7c69dee1",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "it_support",
+      "languages": [
+        "English",
+        "Hindi"
+      ],
+      "split_group_id": "GRP_P9_P9_50",
+      "audio_path": "model/data/audio/7c69dee1.wav",
+      "text_path": "model/data/text/7c69dee1.txt"
+    },
+    {
+      "uuid": "c2b6d2c5",
+      "original_clip_id": "P7_22",
+      "original_file_name": "PTT-20261018-WA0021.wav",
+      "original_speaker_id": "P7",
+      "parent_uuid": "c2b6d2c5",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "admissions",
+      "languages": [
+        "English"
+      ],
+      "split_group_id": "GRP_P7_P7_22",
+      "audio_path": "model/data/audio/c2b6d2c5.wav",
+      "text_path": "model/data/text/c2b6d2c5.txt"
+    },
+    {
+      "uuid": "20de435d",
+      "original_clip_id": "P16_104",
+      "original_file_name": "clip_06.wav",
+      "original_speaker_id": "P16",
+      "parent_uuid": "20de435d",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "student_services",
+      "languages": [
+        "English"
+      ],
+      "split_group_id": "GRP_P16_P16_104",
+      "audio_path": "model/data/audio/20de435d.wav",
+      "text_path": "model/data/text/20de435d.txt"
+    },
+    {
+      "uuid": "8cbfedb0",
+      "original_clip_id": "P5_20",
+      "original_file_name": "PTT-20261018-WA0015.wav",
+      "original_speaker_id": "P5",
+      "parent_uuid": "8cbfedb0",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "admissions",
+      "languages": [
+        "Hindi"
+      ],
+      "split_group_id": "GRP_P5_P5_20",
+      "audio_path": "model/data/audio/8cbfedb0.wav",
+      "text_path": "model/data/text/8cbfedb0.txt"
+    },
+    {
+      "uuid": "df57c59a",
+      "original_clip_id": "P18_128",
+      "original_file_name": "clip_16.wav",
+      "original_speaker_id": "P18",
+      "parent_uuid": "df57c59a",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "student_services",
+      "languages": [
+        "English"
+      ],
+      "split_group_id": "GRP_P18_P18_128",
+      "audio_path": "model/data/audio/df57c59a.wav",
+      "text_path": "model/data/text/df57c59a.txt"
+    },
+    {
+      "uuid": "36386821",
+      "original_clip_id": "P5_16",
+      "original_file_name": "PTT-20261018-WA0005.wav",
+      "original_speaker_id": "P5",
+      "parent_uuid": "36386821",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "admissions",
+      "languages": [
+        "Hindi"
+      ],
+      "split_group_id": "GRP_P5_P5_16",
+      "audio_path": "model/data/audio/36386821.wav",
+      "text_path": "model/data/text/36386821.txt"
+    },
+    {
+      "uuid": "badcc32a",
+      "original_clip_id": "P19_136",
+      "original_file_name": "clip_08.wav",
+      "original_speaker_id": "P19",
+      "parent_uuid": "badcc32a",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "it_support",
+      "languages": [
+        "English",
+        "Hindi"
+      ],
+      "split_group_id": "GRP_P19_P19_136",
+      "audio_path": "model/data/audio/badcc32a.wav",
+      "text_path": "model/data/text/badcc32a.txt"
+    },
+    {
+      "uuid": "4fcca39a",
+      "original_clip_id": "P22_93",
+      "original_file_name": "WhatsApp Ptt 2026-11-06 at 2.37.05 PM.wav",
+      "original_speaker_id": "P22",
+      "parent_uuid": "4fcca39a",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "it_support",
+      "languages": [
+        "English"
+      ],
+      "split_group_id": "GRP_P22_P22_93",
+      "audio_path": "model/data/audio/4fcca39a.wav",
+      "text_path": "model/data/text/4fcca39a.txt"
+    },
+    {
+      "uuid": "a65e688e",
+      "original_clip_id": "P7_29",
+      "original_file_name": "WhatsApp Audio 2026-10-19 at 2.37.57 PM (2).wav",
+      "original_speaker_id": "P7",
+      "parent_uuid": "a65e688e",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "admissions",
+      "languages": [
+        "English"
+      ],
+      "split_group_id": "GRP_P7_P7_29",
+      "audio_path": "model/data/audio/a65e688e.wav",
+      "text_path": "model/data/text/a65e688e.txt"
+    },
+    {
+      "uuid": "847fd9b4",
+      "original_clip_id": "P9_43",
+      "original_file_name": "PTT-20261019-WA0011.wav",
+      "original_speaker_id": "P9",
+      "parent_uuid": "847fd9b4",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "student_services",
+      "languages": [
+        "English"
+      ],
+      "split_group_id": "GRP_P9_P9_43",
+      "audio_path": "model/data/audio/847fd9b4.wav",
+      "text_path": "model/data/text/847fd9b4.txt"
+    },
+    {
+      "uuid": "3985c3cf",
+      "original_clip_id": "P6_21",
+      "original_file_name": "PTT-20261018-WA0016.wav",
+      "original_speaker_id": "P6",
+      "parent_uuid": "3985c3cf",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "admissions",
+      "languages": [
+        "Hindi"
+      ],
+      "split_group_id": "GRP_P6_P6_21",
+      "audio_path": "model/data/audio/3985c3cf.wav",
+      "text_path": "model/data/text/3985c3cf.txt"
+    },
+    {
+      "uuid": "969b6662",
+      "original_clip_id": "P18_121",
+      "original_file_name": "clip_09.wav",
+      "original_speaker_id": "P18",
+      "parent_uuid": "969b6662",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "student_services",
+      "languages": [
+        "Gujarati"
+      ],
+      "split_group_id": "GRP_P18_P18_121",
+      "audio_path": "model/data/audio/969b6662.wav",
+      "text_path": "model/data/text/969b6662.txt"
+    },
+    {
+      "uuid": "38602ab6",
+      "original_clip_id": "P2_3",
+      "original_file_name": "1.wav",
+      "original_speaker_id": "P2",
+      "parent_uuid": "38602ab6",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "English",
+        "Hindi"
+      ],
+      "split_group_id": "GRP_P2_P2_3",
+      "audio_path": "model/data/audio/38602ab6.wav",
+      "text_path": "model/data/text/38602ab6.txt"
+    },
+    {
+      "uuid": "a18ff6b6",
+      "original_clip_id": "P18_120",
+      "original_file_name": "clip_08.wav",
+      "original_speaker_id": "P18",
+      "parent_uuid": "a18ff6b6",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "student_services",
+      "languages": [
+        "English"
+      ],
+      "split_group_id": "GRP_P18_P18_120",
+      "audio_path": "model/data/audio/a18ff6b6.wav",
+      "text_path": "model/data/text/a18ff6b6.txt"
+    },
+    {
+      "uuid": "e7c99b26",
+      "original_clip_id": "P19_132",
+      "original_file_name": "clip_04.wav",
+      "original_speaker_id": "P19",
+      "parent_uuid": "e7c99b26",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "student_services",
+      "languages": [
+        "Hindi"
+      ],
+      "split_group_id": "GRP_P19_P19_132",
+      "audio_path": "model/data/audio/e7c99b26.wav",
+      "text_path": "model/data/text/e7c99b26.txt"
+    },
+    {
+      "uuid": "1223b513",
+      "original_clip_id": "P19_139",
+      "original_file_name": "clip_11.wav",
+      "original_speaker_id": "P19",
+      "parent_uuid": "1223b513",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "it_support",
+      "languages": [
+        "Hindi"
+      ],
+      "split_group_id": "GRP_P19_P19_139",
+      "audio_path": "model/data/audio/1223b513.wav",
+      "text_path": "model/data/text/1223b513.txt"
+    },
+    {
+      "uuid": "ab4220a7",
+      "original_clip_id": "P20_66",
+      "original_file_name": "WhatsApp Ptt 2026-11-05 at 6.55.01 PM.wav",
+      "original_speaker_id": "P20",
+      "parent_uuid": "ab4220a7",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "Gujarati"
+      ],
+      "split_group_id": "GRP_P20_P20_66",
+      "audio_path": "model/data/audio/ab4220a7.wav",
+      "text_path": "model/data/text/ab4220a7.txt"
+    },
+    {
+      "uuid": "21df306f",
+      "original_clip_id": "P21_85",
+      "original_file_name": "WhatsApp Ptt 2026-11-06 at 2.36.31 PM.wav",
+      "original_speaker_id": "P21",
+      "parent_uuid": "21df306f",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "student_services",
+      "languages": [
+        "Hindi"
+      ],
+      "split_group_id": "GRP_P21_P21_85",
+      "audio_path": "model/data/audio/21df306f.wav",
+      "text_path": "model/data/text/21df306f.txt"
+    },
+    {
+      "uuid": "922fe15a",
+      "original_clip_id": "P5_15",
+      "original_file_name": "PTT-20261018-WA0004.wav",
+      "original_speaker_id": "P5",
+      "parent_uuid": "922fe15a",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "student_services",
+      "languages": [
+        "Hindi"
+      ],
+      "split_group_id": "GRP_P5_P5_15",
+      "audio_path": "model/data/audio/922fe15a.wav",
+      "text_path": "model/data/text/922fe15a.txt"
+    },
+    {
+      "uuid": "c8dcd19f",
+      "original_clip_id": "P2_11",
+      "original_file_name": "WhatsApp Ptt 2026-11-06 at 12.08.35 PM.wav",
+      "original_speaker_id": "P2",
+      "parent_uuid": "c8dcd19f",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "it_support",
+      "languages": [
+        "English"
+      ],
+      "split_group_id": "GRP_P2_P2_11",
+      "audio_path": "model/data/audio/c8dcd19f.wav",
+      "text_path": "model/data/text/c8dcd19f.txt"
+    },
+    {
+      "uuid": "30beb45f",
+      "original_clip_id": "P2_8",
+      "original_file_name": "WhatsApp Ptt 2026-11-06 at 12.03.53 PM.wav",
+      "original_speaker_id": "P2",
+      "parent_uuid": "30beb45f",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "English"
+      ],
+      "split_group_id": "GRP_P2_P2_8",
+      "audio_path": "model/data/audio/30beb45f.wav",
+      "text_path": "model/data/text/30beb45f.txt"
+    },
+    {
+      "uuid": "6e595ed3",
+      "original_clip_id": "P8_38",
+      "original_file_name": "PTT-20261019-WA0041.wav",
+      "original_speaker_id": "P8",
+      "parent_uuid": "6e595ed3",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "admissions",
+      "languages": [
+        "Hindi"
+      ],
+      "split_group_id": "GRP_P8_P8_38",
+      "audio_path": "model/data/audio/6e595ed3.wav",
+      "text_path": "model/data/text/6e595ed3.txt"
+    },
+    {
+      "uuid": "778eedb3",
+      "original_clip_id": "P21_86",
+      "original_file_name": "WhatsApp Ptt 2026-11-06 at 2.37.16 PM.wav",
+      "original_speaker_id": "P21",
+      "parent_uuid": "778eedb3",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "English",
+        "Hindi"
+      ],
+      "split_group_id": "GRP_P21_P21_86",
+      "audio_path": "model/data/audio/778eedb3.wav",
+      "text_path": "model/data/text/778eedb3.txt"
+    },
+    {
+      "uuid": "ac619e63",
+      "original_clip_id": "P22_92",
+      "original_file_name": "WhatsApp Ptt 2026-11-06 at 2.36.05 PM.wav",
+      "original_speaker_id": "P22",
+      "parent_uuid": "ac619e63",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "it_support",
+      "languages": [
+        "English"
+      ],
+      "split_group_id": "GRP_P22_P22_92",
+      "audio_path": "model/data/audio/ac619e63.wav",
+      "text_path": "model/data/text/ac619e63.txt"
+    },
+    {
+      "uuid": "1931e9ee",
+      "original_clip_id": "P12_58",
+      "original_file_name": "PTT-20261019-WA0029.wav",
+      "original_speaker_id": "P12",
+      "parent_uuid": "1931e9ee",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "Hindi"
+      ],
+      "split_group_id": "GRP_P12_P12_58",
+      "audio_path": "model/data/audio/1931e9ee.wav",
+      "text_path": "model/data/text/1931e9ee.txt"
+    },
+    {
+      "uuid": "56dc8907",
+      "original_clip_id": "P14_91",
+      "original_file_name": "clip_04.wav",
+      "original_speaker_id": "P14",
+      "parent_uuid": "56dc8907",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "Gujarati"
+      ],
+      "split_group_id": "GRP_P14_P14_91",
+      "audio_path": "model/data/audio/56dc8907.wav",
+      "text_path": "model/data/text/56dc8907.txt"
+    },
+    {
+      "uuid": "3fa7f104",
+      "original_clip_id": "P22_87",
+      "original_file_name": "WhatsApp Ptt 2026-11-06 at 2.31.14 PM.wav",
+      "original_speaker_id": "P22",
+      "parent_uuid": "3fa7f104",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "it_support",
+      "languages": [
+        "English"
+      ],
+      "split_group_id": "GRP_P22_P22_87",
+      "audio_path": "model/data/audio/3fa7f104.wav",
+      "text_path": "model/data/text/3fa7f104.txt"
+    },
+    {
+      "uuid": "72d8567d",
+      "original_clip_id": "P22_91",
+      "original_file_name": "WhatsApp Ptt 2026-11-06 at 2.35.11 PM.wav",
+      "original_speaker_id": "P22",
+      "parent_uuid": "72d8567d",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "student_services",
+      "languages": [
+        "English"
+      ],
+      "split_group_id": "GRP_P22_P22_91",
+      "audio_path": "model/data/audio/72d8567d.wav",
+      "text_path": "model/data/text/72d8567d.txt"
+    },
+    {
+      "uuid": "474ebc19",
+      "original_clip_id": "P8_36",
+      "original_file_name": "PTT-20261019-WA0039.wav",
+      "original_speaker_id": "P8",
+      "parent_uuid": "474ebc19",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "student_services",
+      "languages": [
+        "Hindi"
+      ],
+      "split_group_id": "GRP_P8_P8_36",
+      "audio_path": "model/data/audio/474ebc19.wav",
+      "text_path": "model/data/text/474ebc19.txt"
+    },
+    {
+      "uuid": "ec5b227c",
+      "original_clip_id": "P7_28",
+      "original_file_name": "WhatsApp Audio 2026-10-19 at 2.37.57 PM (1).wav",
+      "original_speaker_id": "P7",
+      "parent_uuid": "ec5b227c",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "English"
+      ],
+      "split_group_id": "GRP_P7_P7_28",
+      "audio_path": "model/data/audio/ec5b227c.wav",
+      "text_path": "model/data/text/ec5b227c.txt"
+    },
+    {
+      "uuid": "dc815fe7",
+      "original_clip_id": "P20_60",
+      "original_file_name": "WhatsApp Ptt 2026-11-05 at 6.45.32 PM.wav",
+      "original_speaker_id": "P20",
+      "parent_uuid": "dc815fe7",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "admissions",
+      "languages": [
+        "Gujarati"
+      ],
+      "split_group_id": "GRP_P20_P20_60",
+      "audio_path": "model/data/audio/dc815fe7.wav",
+      "text_path": "model/data/text/dc815fe7.txt"
+    },
+    {
+      "uuid": "0cf35b58",
+      "original_clip_id": "P21_77",
+      "original_file_name": "WhatsApp Ptt 2026-11-06 at 11.15.57 AM.wav",
+      "original_speaker_id": "P21",
+      "parent_uuid": "0cf35b58",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "Hindi"
+      ],
+      "split_group_id": "GRP_P21_P21_77",
+      "audio_path": "model/data/audio/0cf35b58.wav",
+      "text_path": "model/data/text/0cf35b58.txt"
+    },
+    {
+      "uuid": "d605e770",
+      "original_clip_id": "P21_75",
+      "original_file_name": "WhatsApp Ptt 2026-11-06 at 11.13.42 AM.wav",
+      "original_speaker_id": "P21",
+      "parent_uuid": "d605e770",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "Hindi"
+      ],
+      "split_group_id": "GRP_P21_P21_75",
+      "audio_path": "model/data/audio/d605e770.wav",
+      "text_path": "model/data/text/d605e770.txt"
+    },
+    {
+      "uuid": "ed2662e9",
+      "original_clip_id": "P2_7",
+      "original_file_name": "WhatsApp Ptt 2026-11-06 at 12.02.57 PM.wav",
+      "original_speaker_id": "P2",
+      "parent_uuid": "ed2662e9",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "it_support",
+      "languages": [
+        "Hindi"
+      ],
+      "split_group_id": "GRP_P2_P2_7",
+      "audio_path": "model/data/audio/ed2662e9.wav",
+      "text_path": "model/data/text/ed2662e9.txt"
+    },
+    {
+      "uuid": "2a935d62",
+      "original_clip_id": "P16_109",
+      "original_file_name": "clip_11.wav",
+      "original_speaker_id": "P16",
+      "parent_uuid": "2a935d62",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "student_services",
+      "languages": [
+        "English"
+      ],
+      "split_group_id": "GRP_P16_P16_109",
+      "audio_path": "model/data/audio/2a935d62.wav",
+      "text_path": "model/data/text/2a935d62.txt"
+    },
+    {
+      "uuid": "36b82481",
+      "original_clip_id": "P14_93",
+      "original_file_name": "clip_06.wav",
+      "original_speaker_id": "P14",
+      "parent_uuid": "36b82481",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "student_services",
+      "languages": [
+        "Hindi"
+      ],
+      "split_group_id": "GRP_P14_P14_93",
+      "audio_path": "model/data/audio/36b82481.wav",
+      "text_path": "model/data/text/36b82481.txt"
+    },
+    {
+      "uuid": "0f02bad0",
+      "original_clip_id": "P2_10",
+      "original_file_name": "WhatsApp Ptt 2026-11-06 at 12.07.26 PM.wav",
+      "original_speaker_id": "P2",
+      "parent_uuid": "0f02bad0",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "it_support",
+      "languages": [
+        "English"
+      ],
+      "split_group_id": "GRP_P2_P2_10",
+      "audio_path": "model/data/audio/0f02bad0.wav",
+      "text_path": "model/data/text/0f02bad0.txt"
+    },
+    {
+      "uuid": "fc3d3348",
+      "original_clip_id": "P14_98",
+      "original_file_name": "clip_11.wav",
+      "original_speaker_id": "P14",
+      "parent_uuid": "fc3d3348",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "student_services",
+      "languages": [
+        "Hindi"
+      ],
+      "split_group_id": "GRP_P14_P14_98",
+      "audio_path": "model/data/audio/fc3d3348.wav",
+      "text_path": "model/data/text/fc3d3348.txt"
+    },
+    {
+      "uuid": "c8b8d9c6",
+      "original_clip_id": "P13_74",
+      "original_file_name": "clip_09.wav",
+      "original_speaker_id": "P13",
+      "parent_uuid": "c8b8d9c6",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "admissions",
+      "languages": [
+        "Gujarati"
+      ],
+      "split_group_id": "GRP_P13_P13_74",
+      "audio_path": "model/data/audio/c8b8d9c6.wav",
+      "text_path": "model/data/text/c8b8d9c6.txt"
+    },
+    {
+      "uuid": "6c4a37ea",
+      "original_clip_id": "P1_1",
+      "original_file_name": "1.wav",
+      "original_speaker_id": "P1",
+      "parent_uuid": "6c4a37ea",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "Hindi"
+      ],
+      "split_group_id": "GRP_P1_P1_1",
+      "audio_path": "model/data/audio/6c4a37ea.wav",
+      "text_path": "model/data/text/6c4a37ea.txt"
+    },
+    {
+      "uuid": "fed4057d",
+      "original_clip_id": "P18_118",
+      "original_file_name": "clip_06.wav",
+      "original_speaker_id": "P18",
+      "parent_uuid": "fed4057d",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "student_services",
+      "languages": [
+        "Gujarati"
+      ],
+      "split_group_id": "GRP_P18_P18_118",
+      "audio_path": "model/data/audio/fed4057d.wav",
+      "text_path": "model/data/text/fed4057d.txt"
+    },
+    {
+      "uuid": "b7e99aca",
+      "original_clip_id": "P7_23",
+      "original_file_name": "PTT-20261019-WA0017.wav",
+      "original_speaker_id": "P7",
+      "parent_uuid": "b7e99aca",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "student_services",
+      "languages": [
+        "English",
+        "Hindi"
+      ],
+      "split_group_id": "GRP_P7_P7_23",
+      "audio_path": "model/data/audio/b7e99aca.wav",
+      "text_path": "model/data/text/b7e99aca.txt"
+    },
+    {
+      "uuid": "4bf50b52",
+      "original_clip_id": "P22_97",
+      "original_file_name": "WhatsApp Ptt 2026-11-06 at 2.41.26 PM.wav",
+      "original_speaker_id": "P22",
+      "parent_uuid": "4bf50b52",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "English"
+      ],
+      "split_group_id": "GRP_P22_P22_97",
+      "audio_path": "model/data/audio/4bf50b52.wav",
+      "text_path": "model/data/text/4bf50b52.txt"
+    },
+    {
+      "uuid": "944528c0",
+      "original_clip_id": "P16_105",
+      "original_file_name": "clip_07.wav",
+      "original_speaker_id": "P16",
+      "parent_uuid": "944528c0",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "student_services",
+      "languages": [
+        "English"
+      ],
+      "split_group_id": "GRP_P16_P16_105",
+      "audio_path": "model/data/audio/944528c0.wav",
+      "text_path": "model/data/text/944528c0.txt"
+    },
+    {
+      "uuid": "bf7b539b",
+      "original_clip_id": "P19_134",
+      "original_file_name": "clip_06.wav",
+      "original_speaker_id": "P19",
+      "parent_uuid": "bf7b539b",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "student_services",
+      "languages": [
+        "English",
+        "Hindi"
+      ],
+      "split_group_id": "GRP_P19_P19_134",
+      "audio_path": "model/data/audio/bf7b539b.wav",
+      "text_path": "model/data/text/bf7b539b.txt"
+    },
+    {
+      "uuid": "958ca9ba",
+      "original_clip_id": "P16_110",
+      "original_file_name": "clip_12.wav",
+      "original_speaker_id": "P16",
+      "parent_uuid": "958ca9ba",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "student_services",
+      "languages": [
+        "English"
+      ],
+      "split_group_id": "GRP_P16_P16_110",
+      "audio_path": "model/data/audio/958ca9ba.wav",
+      "text_path": "model/data/text/958ca9ba.txt"
+    },
+    {
+      "uuid": "da4bd9ca",
+      "original_clip_id": "P9_48",
+      "original_file_name": "PTT-20261019-WA0025.wav",
+      "original_speaker_id": "P9",
+      "parent_uuid": "da4bd9ca",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "student_services",
+      "languages": [
+        "English",
+        "Hindi"
+      ],
+      "split_group_id": "GRP_P9_P9_48",
+      "audio_path": "model/data/audio/da4bd9ca.wav",
+      "text_path": "model/data/text/da4bd9ca.txt"
+    },
+    {
+      "uuid": "f5f59b22",
+      "original_clip_id": "P18_125",
+      "original_file_name": "clip_13.wav",
+      "original_speaker_id": "P18",
+      "parent_uuid": "f5f59b22",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "English"
+      ],
+      "split_group_id": "GRP_P18_P18_125",
+      "audio_path": "model/data/audio/f5f59b22.wav",
+      "text_path": "model/data/text/f5f59b22.txt"
+    },
+    {
+      "uuid": "2f923996",
+      "original_clip_id": "P10_52",
+      "original_file_name": "PTT-20261019-WA0020.wav",
+      "original_speaker_id": "P10",
+      "parent_uuid": "2f923996",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "student_services",
+      "languages": [
+        "English"
+      ],
+      "split_group_id": "GRP_P10_P10_52",
+      "audio_path": "model/data/audio/2f923996.wav",
+      "text_path": "model/data/text/2f923996.txt"
+    },
+    {
+      "uuid": "acdabacc",
+      "original_clip_id": "P14_96",
+      "original_file_name": "clip_09.wav",
+      "original_speaker_id": "P14",
+      "parent_uuid": "acdabacc",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "student_services",
+      "languages": [
+        "Gujarati"
+      ],
+      "split_group_id": "GRP_P14_P14_96",
+      "audio_path": "model/data/audio/acdabacc.wav",
+      "text_path": "model/data/text/acdabacc.txt"
+    },
+    {
+      "uuid": "1eb0e38a",
+      "original_clip_id": "P20_59",
+      "original_file_name": "WhatsApp Ptt 2026-11-05 at 6.44.09 PM.wav",
+      "original_speaker_id": "P20",
+      "parent_uuid": "1eb0e38a",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "admissions",
+      "languages": [
+        "Gujarati"
+      ],
+      "split_group_id": "GRP_P20_P20_59",
+      "audio_path": "model/data/audio/1eb0e38a.wav",
+      "text_path": "model/data/text/1eb0e38a.txt"
+    },
+    {
+      "uuid": "3f07f814",
+      "original_clip_id": "P19_137",
+      "original_file_name": "clip_09.wav",
+      "original_speaker_id": "P19",
+      "parent_uuid": "3f07f814",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "it_support",
+      "languages": [
+        "English"
+      ],
+      "split_group_id": "GRP_P19_P19_137",
+      "audio_path": "model/data/audio/3f07f814.wav",
+      "text_path": "model/data/text/3f07f814.txt"
+    },
+    {
+      "uuid": "9e8fc965",
+      "original_clip_id": "P18_126",
+      "original_file_name": "clip_14.wav",
+      "original_speaker_id": "P18",
+      "parent_uuid": "9e8fc965",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "Gujarati"
+      ],
+      "split_group_id": "GRP_P18_P18_126",
+      "audio_path": "model/data/audio/9e8fc965.wav",
+      "text_path": "model/data/text/9e8fc965.txt"
+    },
+    {
+      "uuid": "956b8c0c",
+      "original_clip_id": "P2_13",
+      "original_file_name": "WhatsApp Ptt 2026-11-06 at 12.11.00 PM.wav",
+      "original_speaker_id": "P2",
+      "parent_uuid": "956b8c0c",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "it_support",
+      "languages": [
+        "English"
+      ],
+      "split_group_id": "GRP_P2_P2_13",
+      "audio_path": "model/data/audio/956b8c0c.wav",
+      "text_path": "model/data/text/956b8c0c.txt"
+    },
+    {
+      "uuid": "ef48e8d5",
+      "original_clip_id": "P14_97",
+      "original_file_name": "clip_10.wav",
+      "original_speaker_id": "P14",
+      "parent_uuid": "ef48e8d5",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "it_support",
+      "languages": [
+        "Gujarati"
+      ],
+      "split_group_id": "GRP_P14_P14_97",
+      "audio_path": "model/data/audio/ef48e8d5.wav",
+      "text_path": "model/data/text/ef48e8d5.txt"
+    },
+    {
+      "uuid": "b758588d",
+      "original_clip_id": "P20_61",
+      "original_file_name": "WhatsApp Ptt 2026-11-05 at 6.47.47 PM.wav",
+      "original_speaker_id": "P20",
+      "parent_uuid": "b758588d",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "Gujarati"
+      ],
+      "split_group_id": "GRP_P20_P20_61",
+      "audio_path": "model/data/audio/b758588d.wav",
+      "text_path": "model/data/text/b758588d.txt"
+    },
+    {
+      "uuid": "655238a6",
+      "original_clip_id": "P21_81",
+      "original_file_name": "WhatsApp Ptt 2026-11-06 at 11.20.56 AM.wav",
+      "original_speaker_id": "P21",
+      "parent_uuid": "655238a6",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "English",
+        "Hindi"
+      ],
+      "split_group_id": "GRP_P21_P21_81",
+      "audio_path": "model/data/audio/655238a6.wav",
+      "text_path": "model/data/text/655238a6.txt"
+    },
+    {
+      "uuid": "4ccc9bc2",
+      "original_clip_id": "P2_4",
+      "original_file_name": "2.wav",
+      "original_speaker_id": "P2",
+      "parent_uuid": "4ccc9bc2",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "Hindi"
+      ],
+      "split_group_id": "GRP_P2_P2_4",
+      "audio_path": "model/data/audio/4ccc9bc2.wav",
+      "text_path": "model/data/text/4ccc9bc2.txt"
+    },
+    {
+      "uuid": "c07a30f2",
+      "original_clip_id": "P13_86",
+      "original_file_name": "clip_21.wav",
+      "original_speaker_id": "P13",
+      "parent_uuid": "c07a30f2",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "Gujarati"
+      ],
+      "split_group_id": "GRP_P13_P13_86",
+      "audio_path": "model/data/audio/c07a30f2.wav",
+      "text_path": "model/data/text/c07a30f2.txt"
+    },
+    {
+      "uuid": "75523327",
+      "original_clip_id": "P2_6",
+      "original_file_name": "PTT-20261019-WA0004.wav",
+      "original_speaker_id": "P2",
+      "parent_uuid": "75523327",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "it_support",
+      "languages": [
+        "English",
+        "Hindi"
+      ],
+      "split_group_id": "GRP_P2_P2_6",
+      "audio_path": "model/data/audio/75523327.wav",
+      "text_path": "model/data/text/75523327.txt"
+    },
+    {
+      "uuid": "ff002d4d",
+      "original_clip_id": "P13_83",
+      "original_file_name": "clip_18.wav",
+      "original_speaker_id": "P13",
+      "parent_uuid": "ff002d4d",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "student_services",
+      "languages": [
+        "Gujarati"
+      ],
+      "split_group_id": "GRP_P13_P13_83",
+      "audio_path": "model/data/audio/ff002d4d.wav",
+      "text_path": "model/data/text/ff002d4d.txt"
+    },
+    {
+      "uuid": "369147eb",
+      "original_clip_id": "P9_45",
+      "original_file_name": "PTT-20261019-WA0022.wav",
+      "original_speaker_id": "P9",
+      "parent_uuid": "369147eb",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "student_services",
+      "languages": [
+        "English",
+        "Hindi"
+      ],
+      "split_group_id": "GRP_P9_P9_45",
+      "audio_path": "model/data/audio/369147eb.wav",
+      "text_path": "model/data/text/369147eb.txt"
+    },
+    {
+      "uuid": "eeea163e",
+      "original_clip_id": "P11_55",
+      "original_file_name": "PTT-20261019-WA0018.wav",
+      "original_speaker_id": "P11",
+      "parent_uuid": "eeea163e",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "student_services",
+      "languages": [
+        "English",
+        "Hindi"
+      ],
+      "split_group_id": "GRP_P11_P11_55",
+      "audio_path": "model/data/audio/eeea163e.wav",
+      "text_path": "model/data/text/eeea163e.txt"
+    },
+    {
+      "uuid": "e117dac3",
+      "original_clip_id": "P13_79",
+      "original_file_name": "clip_14.wav",
+      "original_speaker_id": "P13",
+      "parent_uuid": "e117dac3",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "Gujarati"
+      ],
+      "split_group_id": "GRP_P13_P13_79",
+      "audio_path": "model/data/audio/e117dac3.wav",
+      "text_path": "model/data/text/e117dac3.txt"
+    },
+    {
+      "uuid": "286218b8",
+      "original_clip_id": "P20_67",
+      "original_file_name": "WhatsApp Ptt 2026-11-05 at 6.56.15 PM.wav",
+      "original_speaker_id": "P20",
+      "parent_uuid": "286218b8",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "student_services",
+      "languages": [
+        "Gujarati"
+      ],
+      "split_group_id": "GRP_P20_P20_67",
+      "audio_path": "model/data/audio/286218b8.wav",
+      "text_path": "model/data/text/286218b8.txt"
+    },
+    {
+      "uuid": "b41b3143",
+      "original_clip_id": "P13_71",
+      "original_file_name": "clip_06.wav",
+      "original_speaker_id": "P13",
+      "parent_uuid": "b41b3143",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "admissions",
+      "languages": [
+        "Gujarati"
+      ],
+      "split_group_id": "GRP_P13_P13_71",
+      "audio_path": "model/data/audio/b41b3143.wav",
+      "text_path": "model/data/text/b41b3143.txt"
+    },
+    {
+      "uuid": "fcbb4e59",
+      "original_clip_id": "P21_78",
+      "original_file_name": "WhatsApp Ptt 2026-11-06 at 11.16.28 AM.wav",
+      "original_speaker_id": "P21",
+      "parent_uuid": "fcbb4e59",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "it_support",
+      "languages": [
+        "Hindi"
+      ],
+      "split_group_id": "GRP_P21_P21_78",
+      "audio_path": "model/data/audio/fcbb4e59.wav",
+      "text_path": "model/data/text/fcbb4e59.txt"
+    },
+    {
+      "uuid": "0200b1f0",
+      "original_clip_id": "P13_66",
+      "original_file_name": "clip_01.wav",
+      "original_speaker_id": "P13",
+      "parent_uuid": "0200b1f0",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "admissions",
+      "languages": [
+        "English",
+        "Hindi"
+      ],
+      "split_group_id": "GRP_P13_P13_66",
+      "audio_path": "model/data/audio/0200b1f0.wav",
+      "text_path": "model/data/text/0200b1f0.txt"
+    },
+    {
+      "uuid": "4ca415ea",
+      "original_clip_id": "P14_92",
+      "original_file_name": "clip_05.wav",
+      "original_speaker_id": "P14",
+      "parent_uuid": "4ca415ea",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "student_services",
+      "languages": [
+        "Gujarati"
+      ],
+      "split_group_id": "GRP_P14_P14_92",
+      "audio_path": "model/data/audio/4ca415ea.wav",
+      "text_path": "model/data/text/4ca415ea.txt"
+    },
+    {
+      "uuid": "f05db76e",
+      "original_clip_id": "P19_129",
+      "original_file_name": "clip_01.wav",
+      "original_speaker_id": "P19",
+      "parent_uuid": "f05db76e",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "it_support",
+      "languages": [
+        "Hindi"
+      ],
+      "split_group_id": "GRP_P19_P19_129",
+      "audio_path": "model/data/audio/f05db76e.wav",
+      "text_path": "model/data/text/f05db76e.txt"
+    },
+    {
+      "uuid": "1d8cbbac",
+      "original_clip_id": "P7_27",
+      "original_file_name": "WhatsApp Audio 2026-10-19 at 2.37.56 PM.wav",
+      "original_speaker_id": "P7",
+      "parent_uuid": "1d8cbbac",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "student_services",
+      "languages": [
+        "English"
+      ],
+      "split_group_id": "GRP_P7_P7_27",
+      "audio_path": "model/data/audio/1d8cbbac.wav",
+      "text_path": "model/data/text/1d8cbbac.txt"
+    },
+    {
+      "uuid": "8da01097",
+      "original_clip_id": "P9_46",
+      "original_file_name": "PTT-20261019-WA0023.wav",
+      "original_speaker_id": "P9",
+      "parent_uuid": "8da01097",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "it_support",
+      "languages": [
+        "English",
+        "Hindi"
+      ],
+      "split_group_id": "GRP_P9_P9_46",
+      "audio_path": "model/data/audio/8da01097.wav",
+      "text_path": "model/data/text/8da01097.txt"
+    },
+    {
+      "uuid": "9ad620ab",
+      "original_clip_id": "P7_26",
+      "original_file_name": "WhatsApp Audio 2026-10-19 at 2.37.56 PM (2).wav",
+      "original_speaker_id": "P7",
+      "parent_uuid": "9ad620ab",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "admissions",
+      "languages": [
+        "English"
+      ],
+      "split_group_id": "GRP_P7_P7_26",
+      "audio_path": "model/data/audio/9ad620ab.wav",
+      "text_path": "model/data/text/9ad620ab.txt"
+    },
+    {
+      "uuid": "341ef40b",
+      "original_clip_id": "P4_13",
+      "original_file_name": "PTT-20261018-WA0018.wav",
+      "original_speaker_id": "P4",
+      "parent_uuid": "341ef40b",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "student_services",
+      "languages": [
+        "Hindi"
+      ],
+      "split_group_id": "GRP_P4_P4_13",
+      "audio_path": "model/data/audio/341ef40b.wav",
+      "text_path": "model/data/text/341ef40b.txt"
+    },
+    {
+      "uuid": "439472e6",
+      "original_clip_id": "P18_122",
+      "original_file_name": "clip_10.wav",
+      "original_speaker_id": "P18",
+      "parent_uuid": "439472e6",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "student_services",
+      "languages": [
+        "Hindi"
+      ],
+      "split_group_id": "GRP_P18_P18_122",
+      "audio_path": "model/data/audio/439472e6.wav",
+      "text_path": "model/data/text/439472e6.txt"
+    },
+    {
+      "uuid": "e7c421c7",
+      "original_clip_id": "P22_90",
+      "original_file_name": "WhatsApp Ptt 2026-11-06 at 2.34.17 PM.wav",
+      "original_speaker_id": "P22",
+      "parent_uuid": "e7c421c7",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "it_support",
+      "languages": [
+        "English"
+      ],
+      "split_group_id": "GRP_P22_P22_90",
+      "audio_path": "model/data/audio/e7c421c7.wav",
+      "text_path": "model/data/text/e7c421c7.txt"
+    },
+    {
+      "uuid": "17a0df49",
+      "original_clip_id": "P13_67",
+      "original_file_name": "clip_02.wav",
+      "original_speaker_id": "P13",
+      "parent_uuid": "17a0df49",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "admissions",
+      "languages": [
+        "Hindi",
+        "Gujarati"
+      ],
+      "split_group_id": "GRP_P13_P13_67",
+      "audio_path": "model/data/audio/17a0df49.wav",
+      "text_path": "model/data/text/17a0df49.txt"
+    },
+    {
+      "uuid": "46d483f3",
+      "original_clip_id": "P13_72",
+      "original_file_name": "clip_07.wav",
+      "original_speaker_id": "P13",
+      "parent_uuid": "46d483f3",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "admissions",
+      "languages": [
+        "Hindi"
+      ],
+      "split_group_id": "GRP_P13_P13_72",
+      "audio_path": "model/data/audio/46d483f3.wav",
+      "text_path": "model/data/text/46d483f3.txt"
+    },
+    {
+      "uuid": "c56811cd",
+      "original_clip_id": "P22_101",
+      "original_file_name": "WhatsApp Ptt 2026-11-06 at 2.45.48 PM.wav",
+      "original_speaker_id": "P22",
+      "parent_uuid": "c56811cd",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "student_services",
+      "languages": [
+        "English"
+      ],
+      "split_group_id": "GRP_P22_P22_101",
+      "audio_path": "model/data/audio/c56811cd.wav",
+      "text_path": "model/data/text/c56811cd.txt"
+    },
+    {
+      "uuid": "430f801d",
+      "original_clip_id": "P8_40",
+      "original_file_name": "PTT-20261019-WA0043.wav",
+      "original_speaker_id": "P8",
+      "parent_uuid": "430f801d",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "admissions",
+      "languages": [
+        "Hindi"
+      ],
+      "split_group_id": "GRP_P8_P8_40",
+      "audio_path": "model/data/audio/430f801d.wav",
+      "text_path": "model/data/text/430f801d.txt"
+    },
+    {
+      "uuid": "8d3aed99",
+      "original_clip_id": "P19_130",
+      "original_file_name": "clip_02.wav",
+      "original_speaker_id": "P19",
+      "parent_uuid": "8d3aed99",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "it_support",
+      "languages": [
+        "Hindi"
+      ],
+      "split_group_id": "GRP_P19_P19_130",
+      "audio_path": "model/data/audio/8d3aed99.wav",
+      "text_path": "model/data/text/8d3aed99.txt"
+    },
+    {
+      "uuid": "0279b6a6",
+      "original_clip_id": "P13_85",
+      "original_file_name": "clip_20.wav",
+      "original_speaker_id": "P13",
+      "parent_uuid": "0279b6a6",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "Gujarati"
+      ],
+      "split_group_id": "GRP_P13_P13_85",
+      "audio_path": "model/data/audio/0279b6a6.wav",
+      "text_path": "model/data/text/0279b6a6.txt"
+    },
+    {
+      "uuid": "e21342b0",
+      "original_clip_id": "P21_74",
+      "original_file_name": "WhatsApp Ptt 2026-11-06 at 11.11.07 AM.wav",
+      "original_speaker_id": "P21",
+      "parent_uuid": "e21342b0",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "Hindi"
+      ],
+      "split_group_id": "GRP_P21_P21_74",
+      "audio_path": "model/data/audio/e21342b0.wav",
+      "text_path": "model/data/text/e21342b0.txt"
+    },
+    {
+      "uuid": "8babce3b",
+      "original_clip_id": "P4_14",
+      "original_file_name": "PTT-20261018-WA0019.wav",
+      "original_speaker_id": "P4",
+      "parent_uuid": "8babce3b",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "student_services",
+      "languages": [
+        "Hindi"
+      ],
+      "split_group_id": "GRP_P4_P4_14",
+      "audio_path": "model/data/audio/8babce3b.wav",
+      "text_path": "model/data/text/8babce3b.txt"
+    },
+    {
+      "uuid": "951f58d0",
+      "original_clip_id": "P2_5",
+      "original_file_name": "PTT-20261019-WA0003.wav",
+      "original_speaker_id": "P2",
+      "parent_uuid": "951f58d0",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "English",
+        "Hindi"
+      ],
+      "split_group_id": "GRP_P2_P2_5",
+      "audio_path": "model/data/audio/951f58d0.wav",
+      "text_path": "model/data/text/951f58d0.txt"
+    },
+    {
+      "uuid": "20a04502",
+      "original_clip_id": "P18_124",
+      "original_file_name": "clip_12.wav",
+      "original_speaker_id": "P18",
+      "parent_uuid": "20a04502",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "Gujarati"
+      ],
+      "split_group_id": "GRP_P18_P18_124",
+      "audio_path": "model/data/audio/20a04502.wav",
+      "text_path": "model/data/text/20a04502.txt"
+    },
+    {
+      "uuid": "e623a689",
+      "original_clip_id": "P22_99",
+      "original_file_name": "WhatsApp Ptt 2026-11-06 at 2.43.41 PM.wav",
+      "original_speaker_id": "P22",
+      "parent_uuid": "e623a689",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "student_services",
+      "languages": [
+        "English"
+      ],
+      "split_group_id": "GRP_P22_P22_99",
+      "audio_path": "model/data/audio/e623a689.wav",
+      "text_path": "model/data/text/e623a689.txt"
+    },
+    {
+      "uuid": "dc570131",
+      "original_clip_id": "P12_57",
+      "original_file_name": "PTT-20261019-WA0028.wav",
+      "original_speaker_id": "P12",
+      "parent_uuid": "dc570131",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "English"
+      ],
+      "split_group_id": "GRP_P12_P12_57",
+      "audio_path": "model/data/audio/dc570131.wav",
+      "text_path": "model/data/text/dc570131.txt"
+    },
+    {
+      "uuid": "35c7936c",
+      "original_clip_id": "P18_114",
+      "original_file_name": "clip_02.wav",
+      "original_speaker_id": "P18",
+      "parent_uuid": "35c7936c",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "it_support",
+      "languages": [
+        "Hindi"
+      ],
+      "split_group_id": "GRP_P18_P18_114",
+      "audio_path": "model/data/audio/35c7936c.wav",
+      "text_path": "model/data/text/35c7936c.txt"
+    },
+    {
+      "uuid": "1a50aec3",
+      "original_clip_id": "P18_115",
+      "original_file_name": "clip_03.wav",
+      "original_speaker_id": "P18",
+      "parent_uuid": "1a50aec3",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "student_services",
+      "languages": [
+        "Gujarati"
+      ],
+      "split_group_id": "GRP_P18_P18_115",
+      "audio_path": "model/data/audio/1a50aec3.wav",
+      "text_path": "model/data/text/1a50aec3.txt"
+    },
+    {
+      "uuid": "e256a6dc",
+      "original_clip_id": "P20_62",
+      "original_file_name": "WhatsApp Ptt 2026-11-05 at 6.49.35 PM.wav",
+      "original_speaker_id": "P20",
+      "parent_uuid": "e256a6dc",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "Gujarati"
+      ],
+      "split_group_id": "GRP_P20_P20_62",
+      "audio_path": "model/data/audio/e256a6dc.wav",
+      "text_path": "model/data/text/e256a6dc.txt"
+    },
+    {
+      "uuid": "9ee3ac2a",
+      "original_clip_id": "P16_108",
+      "original_file_name": "clip_10.wav",
+      "original_speaker_id": "P16",
+      "parent_uuid": "9ee3ac2a",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "it_support",
+      "languages": [
+        "English"
+      ],
+      "split_group_id": "GRP_P16_P16_108",
+      "audio_path": "model/data/audio/9ee3ac2a.wav",
+      "text_path": "model/data/text/9ee3ac2a.txt"
+    },
+    {
+      "uuid": "ee0caeb5",
+      "original_clip_id": "P14_94",
+      "original_file_name": "clip_07.wav",
+      "original_speaker_id": "P14",
+      "parent_uuid": "ee0caeb5",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "admissions",
+      "languages": [
+        "Hindi",
+        "Gujarati"
+      ],
+      "split_group_id": "GRP_P14_P14_94",
+      "audio_path": "model/data/audio/ee0caeb5.wav",
+      "text_path": "model/data/text/ee0caeb5.txt"
+    },
+    {
+      "uuid": "f9e8a369",
+      "original_clip_id": "P16_106",
+      "original_file_name": "clip_08.wav",
+      "original_speaker_id": "P16",
+      "parent_uuid": "f9e8a369",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "student_services",
+      "languages": [
+        "English"
+      ],
+      "split_group_id": "GRP_P16_P16_106",
+      "audio_path": "model/data/audio/f9e8a369.wav",
+      "text_path": "model/data/text/f9e8a369.txt"
+    },
+    {
+      "uuid": "e1a47e10",
+      "original_clip_id": "P18_119",
+      "original_file_name": "clip_07.wav",
+      "original_speaker_id": "P18",
+      "parent_uuid": "e1a47e10",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "student_services",
+      "languages": [
+        "English"
+      ],
+      "split_group_id": "GRP_P18_P18_119",
+      "audio_path": "model/data/audio/e1a47e10.wav",
+      "text_path": "model/data/text/e1a47e10.txt"
+    },
+    {
+      "uuid": "bc8f7d29",
+      "original_clip_id": "P13_82",
+      "original_file_name": "clip_17.wav",
+      "original_speaker_id": "P13",
+      "parent_uuid": "bc8f7d29",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "Hindi",
+        "Gujarati"
+      ],
+      "split_group_id": "GRP_P13_P13_82",
+      "audio_path": "model/data/audio/bc8f7d29.wav",
+      "text_path": "model/data/text/bc8f7d29.txt"
+    },
+    {
+      "uuid": "ee49f329",
+      "original_clip_id": "P16_111",
+      "original_file_name": "clip_13.wav",
+      "original_speaker_id": "P16",
+      "parent_uuid": "ee49f329",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "it_support",
+      "languages": [
+        "English"
+      ],
+      "split_group_id": "GRP_P16_P16_111",
+      "audio_path": "model/data/audio/ee49f329.wav",
+      "text_path": "model/data/text/ee49f329.txt"
+    },
+    {
+      "uuid": "dd334cc7",
+      "original_clip_id": "P21_76",
+      "original_file_name": "WhatsApp Ptt 2026-11-06 at 11.14.57 AM.wav",
+      "original_speaker_id": "P21",
+      "parent_uuid": "dd334cc7",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "student_services",
+      "languages": [
+        "Hindi"
+      ],
+      "split_group_id": "GRP_P21_P21_76",
+      "audio_path": "model/data/audio/dd334cc7.wav",
+      "text_path": "model/data/text/dd334cc7.txt"
+    },
+    {
+      "uuid": "444d610b",
+      "original_clip_id": "P13_84",
+      "original_file_name": "clip_19.wav",
+      "original_speaker_id": "P13",
+      "parent_uuid": "444d610b",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "Gujarati"
+      ],
+      "split_group_id": "GRP_P13_P13_84",
+      "audio_path": "model/data/audio/444d610b.wav",
+      "text_path": "model/data/text/444d610b.txt"
+    },
+    {
+      "uuid": "1bac27a7",
+      "original_clip_id": "P22_95",
+      "original_file_name": "WhatsApp Ptt 2026-11-06 at 2.39.25 PM.wav",
+      "original_speaker_id": "P22",
+      "parent_uuid": "1bac27a7",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "it_support",
+      "languages": [
+        "English"
+      ],
+      "split_group_id": "GRP_P22_P22_95",
+      "audio_path": "model/data/audio/1bac27a7.wav",
+      "text_path": "model/data/text/1bac27a7.txt"
+    },
+    {
+      "uuid": "dbccc477",
+      "original_clip_id": "P8_31",
+      "original_file_name": "PTT-20261019-WA0006.wav",
+      "original_speaker_id": "P8",
+      "parent_uuid": "dbccc477",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "admissions",
+      "languages": [
+        "Hindi"
+      ],
+      "split_group_id": "GRP_P8_P8_31",
+      "audio_path": "model/data/audio/dbccc477.wav",
+      "text_path": "model/data/text/dbccc477.txt"
+    },
+    {
+      "uuid": "d10bd1d0",
+      "original_clip_id": "P18_116",
+      "original_file_name": "clip_04.wav",
+      "original_speaker_id": "P18",
+      "parent_uuid": "d10bd1d0",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "student_services",
+      "languages": [
+        "English"
+      ],
+      "split_group_id": "GRP_P18_P18_116",
+      "audio_path": "model/data/audio/d10bd1d0.wav",
+      "text_path": "model/data/text/d10bd1d0.txt"
+    },
+    {
+      "uuid": "4e20fd1a",
+      "original_clip_id": "P2_12",
+      "original_file_name": "WhatsApp Ptt 2026-11-06 at 12.09.45 PM.wav",
+      "original_speaker_id": "P2",
+      "parent_uuid": "4e20fd1a",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "it_support",
+      "languages": [
+        "English"
+      ],
+      "split_group_id": "GRP_P2_P2_12",
+      "audio_path": "model/data/audio/4e20fd1a.wav",
+      "text_path": "model/data/text/4e20fd1a.txt"
+    },
+    {
+      "uuid": "3a43b2ba",
+      "original_clip_id": "P4_10",
+      "original_file_name": "PTT-20261018-WA0003.wav",
+      "original_speaker_id": "P4",
+      "parent_uuid": "3a43b2ba",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "admissions",
+      "languages": [
+        "Hindi"
+      ],
+      "split_group_id": "GRP_P4_P4_10",
+      "audio_path": "model/data/audio/3a43b2ba.wav",
+      "text_path": "model/data/text/3a43b2ba.txt"
+    },
+    {
+      "uuid": "3170f437",
+      "original_clip_id": "P13_70",
+      "original_file_name": "clip_05.wav",
+      "original_speaker_id": "P13",
+      "parent_uuid": "3170f437",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "admissions",
+      "languages": [
+        "Gujarati"
+      ],
+      "split_group_id": "GRP_P13_P13_70",
+      "audio_path": "model/data/audio/3170f437.wav",
+      "text_path": "model/data/text/3170f437.txt"
+    },
+    {
+      "uuid": "dd463c09",
+      "original_clip_id": "P8_32",
+      "original_file_name": "PTT-20261019-WA0007.wav",
+      "original_speaker_id": "P8",
+      "parent_uuid": "dd463c09",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "admissions",
+      "languages": [
+        "English",
+        "Hindi"
+      ],
+      "split_group_id": "GRP_P8_P8_32",
+      "audio_path": "model/data/audio/dd463c09.wav",
+      "text_path": "model/data/text/dd463c09.txt"
+    },
+    {
+      "uuid": "4774bc58",
+      "original_clip_id": "P13_78",
+      "original_file_name": "clip_13.wav",
+      "original_speaker_id": "P13",
+      "parent_uuid": "4774bc58",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "Gujarati"
+      ],
+      "split_group_id": "GRP_P13_P13_78",
+      "audio_path": "model/data/audio/4774bc58.wav",
+      "text_path": "model/data/text/4774bc58.txt"
+    },
+    {
+      "uuid": "6651529e",
+      "original_clip_id": "P9_47",
+      "original_file_name": "PTT-20261019-WA0024.wav",
+      "original_speaker_id": "P9",
+      "parent_uuid": "6651529e",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "student_services",
+      "languages": [
+        "English",
+        "Hindi"
+      ],
+      "split_group_id": "GRP_P9_P9_47",
+      "audio_path": "model/data/audio/6651529e.wav",
+      "text_path": "model/data/text/6651529e.txt"
+    },
+    {
+      "uuid": "89456f27",
+      "original_clip_id": "P13_73",
+      "original_file_name": "clip_08.wav",
+      "original_speaker_id": "P13",
+      "parent_uuid": "89456f27",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "it_support",
+      "languages": [
+        "Hindi"
+      ],
+      "split_group_id": "GRP_P13_P13_73",
+      "audio_path": "model/data/audio/89456f27.wav",
+      "text_path": "model/data/text/89456f27.txt"
+    },
+    {
+      "uuid": "1d870966",
+      "original_clip_id": "P11_54",
+      "original_file_name": "PTT-20261019-WA0016.wav",
+      "original_speaker_id": "P11",
+      "parent_uuid": "1d870966",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "admissions",
+      "languages": [
+        "English"
+      ],
+      "split_group_id": "GRP_P11_P11_54",
+      "audio_path": "model/data/audio/1d870966.wav",
+      "text_path": "model/data/text/1d870966.txt"
+    },
+    {
+      "uuid": "2db69edb",
+      "original_clip_id": "P20_64",
+      "original_file_name": "WhatsApp Ptt 2026-11-05 at 6.52.04 PM.wav",
+      "original_speaker_id": "P20",
+      "parent_uuid": "2db69edb",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "admissions",
+      "languages": [
+        "Gujarati"
+      ],
+      "split_group_id": "GRP_P20_P20_64",
+      "audio_path": "model/data/audio/2db69edb.wav",
+      "text_path": "model/data/text/2db69edb.txt"
+    },
+    {
+      "uuid": "43f59a85",
+      "original_clip_id": "P21_70",
+      "original_file_name": "WhatsApp Ptt 2026-11-06 at 11.06.30 AM.wav",
+      "original_speaker_id": "P21",
+      "parent_uuid": "43f59a85",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "Hindi"
+      ],
+      "split_group_id": "GRP_P21_P21_70",
+      "audio_path": "model/data/audio/43f59a85.wav",
+      "text_path": "model/data/text/43f59a85.txt"
+    },
+    {
+      "uuid": "6f3f920c",
+      "original_clip_id": "P19_138",
+      "original_file_name": "clip_10.wav",
+      "original_speaker_id": "P19",
+      "parent_uuid": "6f3f920c",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "it_support",
+      "languages": [
+        "Hindi"
+      ],
+      "split_group_id": "GRP_P19_P19_138",
+      "audio_path": "model/data/audio/6f3f920c.wav",
+      "text_path": "model/data/text/6f3f920c.txt"
+    },
+    {
+      "uuid": "504d281f",
+      "original_clip_id": "P20_65",
+      "original_file_name": "WhatsApp Ptt 2026-11-05 at 6.53.52 PM.wav",
+      "original_speaker_id": "P20",
+      "parent_uuid": "504d281f",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "admissions",
+      "languages": [
+        "Gujarati"
+      ],
+      "split_group_id": "GRP_P20_P20_65",
+      "audio_path": "model/data/audio/504d281f.wav",
+      "text_path": "model/data/text/504d281f.txt"
+    },
+    {
+      "uuid": "82ec9f2d",
+      "original_clip_id": "P16_99",
+      "original_file_name": "clip_01.wav",
+      "original_speaker_id": "P16",
+      "parent_uuid": "82ec9f2d",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "student_services",
+      "languages": [
+        "English"
+      ],
+      "split_group_id": "GRP_P16_P16_99",
+      "audio_path": "model/data/audio/82ec9f2d.wav",
+      "text_path": "model/data/text/82ec9f2d.txt"
+    },
+    {
+      "uuid": "939b462d",
+      "original_clip_id": "P13_69",
+      "original_file_name": "clip_04.wav",
+      "original_speaker_id": "P13",
+      "parent_uuid": "939b462d",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "admissions",
+      "languages": [
+        "Gujarati"
+      ],
+      "split_group_id": "GRP_P13_P13_69",
+      "audio_path": "model/data/audio/939b462d.wav",
+      "text_path": "model/data/text/939b462d.txt"
+    },
+    {
+      "uuid": "b572f3d0",
+      "original_clip_id": "P19_131",
+      "original_file_name": "clip_03.wav",
+      "original_speaker_id": "P19",
+      "parent_uuid": "b572f3d0",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "student_services",
+      "languages": [
+        "English"
+      ],
+      "split_group_id": "GRP_P19_P19_131",
+      "audio_path": "model/data/audio/b572f3d0.wav",
+      "text_path": "model/data/text/b572f3d0.txt"
+    },
+    {
+      "uuid": "ecf27e76",
+      "original_clip_id": "P18_123",
+      "original_file_name": "clip_11.wav",
+      "original_speaker_id": "P18",
+      "parent_uuid": "ecf27e76",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "student_services",
+      "languages": [
+        "Gujarati"
+      ],
+      "split_group_id": "GRP_P18_P18_123",
+      "audio_path": "model/data/audio/ecf27e76.wav",
+      "text_path": "model/data/text/ecf27e76.txt"
+    },
+    {
+      "uuid": "b82c9074",
+      "original_clip_id": "P21_71",
+      "original_file_name": "WhatsApp Ptt 2026-11-06 at 11.09.46 AM.wav",
+      "original_speaker_id": "P21",
+      "parent_uuid": "b82c9074",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "English"
+      ],
+      "split_group_id": "GRP_P21_P21_71",
+      "audio_path": "model/data/audio/b82c9074.wav",
+      "text_path": "model/data/text/b82c9074.txt"
+    },
+    {
+      "uuid": "abae4f43",
+      "original_clip_id": "P5_18",
+      "original_file_name": "PTT-20261018-WA0013.wav",
+      "original_speaker_id": "P5",
+      "parent_uuid": "abae4f43",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "admissions",
+      "languages": [
+        "Hindi"
+      ],
+      "split_group_id": "GRP_P5_P5_18",
+      "audio_path": "model/data/audio/abae4f43.wav",
+      "text_path": "model/data/text/abae4f43.txt"
+    },
+    {
+      "uuid": "11e9cdaa",
+      "original_clip_id": "P16_103",
+      "original_file_name": "clip_05.wav",
+      "original_speaker_id": "P16",
+      "parent_uuid": "11e9cdaa",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "it_support",
+      "languages": [
+        "English"
+      ],
+      "split_group_id": "GRP_P16_P16_103",
+      "audio_path": "model/data/audio/11e9cdaa.wav",
+      "text_path": "model/data/text/11e9cdaa.txt"
+    },
+    {
+      "uuid": "5487fd4f",
+      "original_clip_id": "P9_42",
+      "original_file_name": "PTT-20261019-WA0010.wav",
+      "original_speaker_id": "P9",
+      "parent_uuid": "5487fd4f",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "it_support",
+      "languages": [
+        "English"
+      ],
+      "split_group_id": "GRP_P9_P9_42",
+      "audio_path": "model/data/audio/5487fd4f.wav",
+      "text_path": "model/data/text/5487fd4f.txt"
+    },
+    {
+      "uuid": "d9178793",
+      "original_clip_id": "P16_102",
+      "original_file_name": "clip_04.wav",
+      "original_speaker_id": "P16",
+      "parent_uuid": "d9178793",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "it_support",
+      "languages": [
+        "English"
+      ],
+      "split_group_id": "GRP_P16_P16_102",
+      "audio_path": "model/data/audio/d9178793.wav",
+      "text_path": "model/data/text/d9178793.txt"
+    },
+    {
+      "uuid": "4ce1eb90",
+      "original_clip_id": "P4_11",
+      "original_file_name": "PTT-20261018-WA0011.wav",
+      "original_speaker_id": "P4",
+      "parent_uuid": "4ce1eb90",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "admissions",
+      "languages": [
+        "Hindi"
+      ],
+      "split_group_id": "GRP_P4_P4_11",
+      "audio_path": "model/data/audio/4ce1eb90.wav",
+      "text_path": "model/data/text/4ce1eb90.txt"
+    },
+    {
+      "uuid": "688c7015",
+      "original_clip_id": "P10_51",
+      "original_file_name": "PTT-20261019-WA0014.wav",
+      "original_speaker_id": "P10",
+      "parent_uuid": "688c7015",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "English"
+      ],
+      "split_group_id": "GRP_P10_P10_51",
+      "audio_path": "model/data/audio/688c7015.wav",
+      "text_path": "model/data/text/688c7015.txt"
+    },
+    {
+      "uuid": "4bb00f20",
+      "original_clip_id": "P14_90",
+      "original_file_name": "clip_03.wav",
+      "original_speaker_id": "P14",
+      "parent_uuid": "4bb00f20",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "Hindi"
+      ],
+      "split_group_id": "GRP_P14_P14_90",
+      "audio_path": "model/data/audio/4bb00f20.wav",
+      "text_path": "model/data/text/4bb00f20.txt"
+    },
+    {
+      "uuid": "6ba25efe",
+      "original_clip_id": "P21_83",
+      "original_file_name": "WhatsApp Ptt 2026-11-06 at 2.35.34 PM.wav",
+      "original_speaker_id": "P21",
+      "parent_uuid": "6ba25efe",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "student_services",
+      "languages": [
+        "Hindi"
+      ],
+      "split_group_id": "GRP_P21_P21_83",
+      "audio_path": "model/data/audio/6ba25efe.wav",
+      "text_path": "model/data/text/6ba25efe.txt"
+    },
+    {
+      "uuid": "ad64b56c",
+      "original_clip_id": "P22_96",
+      "original_file_name": "WhatsApp Ptt 2026-11-06 at 2.40.32 PM.wav",
+      "original_speaker_id": "P22",
+      "parent_uuid": "ad64b56c",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "it_support",
+      "languages": [
+        "English"
+      ],
+      "split_group_id": "GRP_P22_P22_96",
+      "audio_path": "model/data/audio/ad64b56c.wav",
+      "text_path": "model/data/text/ad64b56c.txt"
+    },
+    {
+      "uuid": "9d9262af",
+      "original_clip_id": "P7_25",
+      "original_file_name": "WhatsApp Audio 2026-10-19 at 2.37.56 PM (1).wav",
+      "original_speaker_id": "P7",
+      "parent_uuid": "9d9262af",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "admissions",
+      "languages": [
+        "Hindi"
+      ],
+      "split_group_id": "GRP_P7_P7_25",
+      "audio_path": "model/data/audio/9d9262af.wav",
+      "text_path": "model/data/text/9d9262af.txt"
+    },
+    {
+      "uuid": "8c459ce2",
+      "original_clip_id": "P21_72",
+      "original_file_name": "WhatsApp Ptt 2026-11-06 at 11.10.10 AM.wav",
+      "original_speaker_id": "P21",
+      "parent_uuid": "8c459ce2",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "English",
+        "Hindi"
+      ],
+      "split_group_id": "GRP_P21_P21_72",
+      "audio_path": "model/data/audio/8c459ce2.wav",
+      "text_path": "model/data/text/8c459ce2.txt"
+    },
+    {
+      "uuid": "49732d6c",
+      "original_clip_id": "P13_81",
+      "original_file_name": "clip_16.wav",
+      "original_speaker_id": "P13",
+      "parent_uuid": "49732d6c",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "Gujarati"
+      ],
+      "split_group_id": "GRP_P13_P13_81",
+      "audio_path": "model/data/audio/49732d6c.wav",
+      "text_path": "model/data/text/49732d6c.txt"
+    },
+    {
+      "uuid": "9479e1e6",
+      "original_clip_id": "P2_9",
+      "original_file_name": "WhatsApp Ptt 2026-11-06 at 12.06.40 PM.wav",
+      "original_speaker_id": "P2",
+      "parent_uuid": "9479e1e6",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "English"
+      ],
+      "split_group_id": "GRP_P2_P2_9",
+      "audio_path": "model/data/audio/9479e1e6.wav",
+      "text_path": "model/data/text/9479e1e6.txt"
+    },
+    {
+      "uuid": "77097749",
+      "original_clip_id": "P7_30",
+      "original_file_name": "WhatsApp Audio 2026-10-19 at 2.37.57 PM.wav",
+      "original_speaker_id": "P7",
+      "parent_uuid": "77097749",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "admissions",
+      "languages": [
+        "English"
+      ],
+      "split_group_id": "GRP_P7_P7_30",
+      "audio_path": "model/data/audio/77097749.wav",
+      "text_path": "model/data/text/77097749.txt"
+    },
+    {
+      "uuid": "36b5229a",
+      "original_clip_id": "P13_87",
+      "original_file_name": "clip_22.wav",
+      "original_speaker_id": "P13",
+      "parent_uuid": "36b5229a",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "Gujarati"
+      ],
+      "split_group_id": "GRP_P13_P13_87",
+      "audio_path": "model/data/audio/36b5229a.wav",
+      "text_path": "model/data/text/36b5229a.txt"
+    },
+    {
+      "uuid": "e6b3c944",
+      "original_clip_id": "P9_44",
+      "original_file_name": "PTT-20261019-WA0021.wav",
+      "original_speaker_id": "P9",
+      "parent_uuid": "e6b3c944",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "it_support",
+      "languages": [
+        "English"
+      ],
+      "split_group_id": "GRP_P9_P9_44",
+      "audio_path": "model/data/audio/e6b3c944.wav",
+      "text_path": "model/data/text/e6b3c944.txt"
+    },
+    {
+      "uuid": "2b70e525",
+      "original_clip_id": "P18_117",
+      "original_file_name": "clip_05.wav",
+      "original_speaker_id": "P18",
+      "parent_uuid": "2b70e525",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "it_support",
+      "languages": [
+        "Hindi",
+        "Gujarati"
+      ],
+      "split_group_id": "GRP_P18_P18_117",
+      "audio_path": "model/data/audio/2b70e525.wav",
+      "text_path": "model/data/text/2b70e525.txt"
+    },
+    {
+      "uuid": "83f4a9a9",
+      "original_clip_id": "P4_12",
+      "original_file_name": "PTT-20261018-WA0017.wav",
+      "original_speaker_id": "P4",
+      "parent_uuid": "83f4a9a9",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "student_services",
+      "languages": [
+        "Hindi"
+      ],
+      "split_group_id": "GRP_P4_P4_12",
+      "audio_path": "model/data/audio/83f4a9a9.wav",
+      "text_path": "model/data/text/83f4a9a9.txt"
+    },
+    {
+      "uuid": "55cee5db",
+      "original_clip_id": "P22_94",
+      "original_file_name": "WhatsApp Ptt 2026-11-06 at 2.38.25 PM.wav",
+      "original_speaker_id": "P22",
+      "parent_uuid": "55cee5db",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "it_support",
+      "languages": [
+        "English"
+      ],
+      "split_group_id": "GRP_P22_P22_94",
+      "audio_path": "model/data/audio/55cee5db.wav",
+      "text_path": "model/data/text/55cee5db.txt"
+    },
+    {
+      "uuid": "c04a96c4",
+      "original_clip_id": "P13_77",
+      "original_file_name": "clip_12.wav",
+      "original_speaker_id": "P13",
+      "parent_uuid": "c04a96c4",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "Gujarati"
+      ],
+      "split_group_id": "GRP_P13_P13_77",
+      "audio_path": "model/data/audio/c04a96c4.wav",
+      "text_path": "model/data/text/c04a96c4.txt"
+    },
+    {
+      "uuid": "39820cff",
+      "original_clip_id": "P13_80",
+      "original_file_name": "clip_15.wav",
+      "original_speaker_id": "P13",
+      "parent_uuid": "39820cff",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "Gujarati"
+      ],
+      "split_group_id": "GRP_P13_P13_80",
+      "audio_path": "model/data/audio/39820cff.wav",
+      "text_path": "model/data/text/39820cff.txt"
+    },
+    {
+      "uuid": "0640be0f",
+      "original_clip_id": "P8_37",
+      "original_file_name": "PTT-20261019-WA0040.wav",
+      "original_speaker_id": "P8",
+      "parent_uuid": "0640be0f",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "Hindi"
+      ],
+      "split_group_id": "GRP_P8_P8_37",
+      "audio_path": "model/data/audio/0640be0f.wav",
+      "text_path": "model/data/text/0640be0f.txt"
+    },
+    {
+      "uuid": "79a28903",
+      "original_clip_id": "P14_88",
+      "original_file_name": "clip_01.wav",
+      "original_speaker_id": "P14",
+      "parent_uuid": "79a28903",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "admissions",
+      "languages": [
+        "English",
+        "Gujarati"
+      ],
+      "split_group_id": "GRP_P14_P14_88",
+      "audio_path": "model/data/audio/79a28903.wav",
+      "text_path": "model/data/text/79a28903.txt"
+    },
+    {
+      "uuid": "12a4def0",
+      "original_clip_id": "P22_88",
+      "original_file_name": "WhatsApp Ptt 2026-11-06 at 2.32.06 PM.wav",
+      "original_speaker_id": "P22",
+      "parent_uuid": "12a4def0",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "student_services",
+      "languages": [
+        "English"
+      ],
+      "split_group_id": "GRP_P22_P22_88",
+      "audio_path": "model/data/audio/12a4def0.wav",
+      "text_path": "model/data/text/12a4def0.txt"
+    },
+    {
+      "uuid": "a1384ddc",
+      "original_clip_id": "P20_63",
+      "original_file_name": "WhatsApp Ptt 2026-11-05 at 6.50.45 PM.wav",
+      "original_speaker_id": "P20",
+      "parent_uuid": "a1384ddc",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "Gujarati"
+      ],
+      "split_group_id": "GRP_P20_P20_63",
+      "audio_path": "model/data/audio/a1384ddc.wav",
+      "text_path": "model/data/text/a1384ddc.txt"
+    },
+    {
+      "uuid": "b24445a7",
+      "original_clip_id": "P13_75",
+      "original_file_name": "clip_10.wav",
+      "original_speaker_id": "P13",
+      "parent_uuid": "b24445a7",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "admissions",
+      "languages": [
+        "Gujarati"
+      ],
+      "split_group_id": "GRP_P13_P13_75",
+      "audio_path": "model/data/audio/b24445a7.wav",
+      "text_path": "model/data/text/b24445a7.txt"
+    },
+    {
+      "uuid": "3e75c3b4",
+      "original_clip_id": "P13_68",
+      "original_file_name": "clip_03.wav",
+      "original_speaker_id": "P13",
+      "parent_uuid": "3e75c3b4",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "it_support",
+      "languages": [
+        "Hindi"
+      ],
+      "split_group_id": "GRP_P13_P13_68",
+      "audio_path": "model/data/audio/3e75c3b4.wav",
+      "text_path": "model/data/text/3e75c3b4.txt"
+    },
+    {
+      "uuid": "016b6287",
+      "original_clip_id": "P11_53",
+      "original_file_name": "PTT-20261019-WA0015.wav",
+      "original_speaker_id": "P11",
+      "parent_uuid": "016b6287",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "it_support",
+      "languages": [
+        "English"
+      ],
+      "split_group_id": "GRP_P11_P11_53",
+      "audio_path": "model/data/audio/016b6287.wav",
+      "text_path": "model/data/text/016b6287.txt"
+    },
+    {
+      "uuid": "c521bf2d",
+      "original_clip_id": "P18_113",
+      "original_file_name": "clip_01.wav",
+      "original_speaker_id": "P18",
+      "parent_uuid": "c521bf2d",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "it_support",
+      "languages": [
+        "Hindi"
+      ],
+      "split_group_id": "GRP_P18_P18_113",
+      "audio_path": "model/data/audio/c521bf2d.wav",
+      "text_path": "model/data/text/c521bf2d.txt"
+    },
+    {
+      "uuid": "6cd66193",
+      "original_clip_id": "P13_76",
+      "original_file_name": "clip_11.wav",
+      "original_speaker_id": "P13",
+      "parent_uuid": "6cd66193",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "admissions",
+      "languages": [
+        "Gujarati"
+      ],
+      "split_group_id": "GRP_P13_P13_76",
+      "audio_path": "model/data/audio/6cd66193.wav",
+      "text_path": "model/data/text/6cd66193.txt"
+    },
+    {
+      "uuid": "f53d4330",
+      "original_clip_id": "P21_69",
+      "original_file_name": "WhatsApp Ptt 2026-11-06 at 11.06.08 AM.wav",
+      "original_speaker_id": "P21",
+      "parent_uuid": "f53d4330",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "Hindi"
+      ],
+      "split_group_id": "GRP_P21_P21_69",
+      "audio_path": "model/data/audio/f53d4330.wav",
+      "text_path": "model/data/text/f53d4330.txt"
+    },
+    {
+      "uuid": "0cdb1ca4",
+      "original_clip_id": "P11_56",
+      "original_file_name": "PTT-20261019-WA0019.wav",
+      "original_speaker_id": "P11",
+      "parent_uuid": "0cdb1ca4",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "student_services",
+      "languages": [
+        "English"
+      ],
+      "split_group_id": "GRP_P11_P11_56",
+      "audio_path": "model/data/audio/0cdb1ca4.wav",
+      "text_path": "model/data/text/0cdb1ca4.txt"
+    },
+    {
+      "uuid": "d92c9227",
+      "original_clip_id": "P1_2",
+      "original_file_name": "2.wav",
+      "original_speaker_id": "P1",
+      "parent_uuid": "d92c9227",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "student_services",
+      "languages": [
+        "Hindi"
+      ],
+      "split_group_id": "GRP_P1_P1_2",
+      "audio_path": "model/data/audio/d92c9227.wav",
+      "text_path": "model/data/text/d92c9227.txt"
+    },
+    {
+      "uuid": "cd29a36f",
+      "original_clip_id": "P22_100",
+      "original_file_name": "WhatsApp Ptt 2026-11-06 at 2.44.29 PM.wav",
+      "original_speaker_id": "P22",
+      "parent_uuid": "cd29a36f",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "English"
+      ],
+      "split_group_id": "GRP_P22_P22_100",
+      "audio_path": "model/data/audio/cd29a36f.wav",
+      "text_path": "model/data/text/cd29a36f.txt"
+    },
+    {
+      "uuid": "fce68504",
+      "original_clip_id": "P5_17",
+      "original_file_name": "PTT-20261018-WA0012.wav",
+      "original_speaker_id": "P5",
+      "parent_uuid": "fce68504",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "student_services",
+      "languages": [
+        "Hindi"
+      ],
+      "split_group_id": "GRP_P5_P5_17",
+      "audio_path": "model/data/audio/fce68504.wav",
+      "text_path": "model/data/text/fce68504.txt"
+    },
+    {
+      "uuid": "f335cba3",
+      "original_clip_id": "P16_112",
+      "original_file_name": "clip_14.wav",
+      "original_speaker_id": "P16",
+      "parent_uuid": "f335cba3",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "student_services",
+      "languages": [
+        "English"
+      ],
+      "split_group_id": "GRP_P16_P16_112",
+      "audio_path": "model/data/audio/f335cba3.wav",
+      "text_path": "model/data/text/f335cba3.txt"
+    },
+    {
+      "uuid": "9cd6c852",
+      "original_clip_id": "P21_80",
+      "original_file_name": "WhatsApp Ptt 2026-11-06 at 11.20.07 AM.wav",
+      "original_speaker_id": "P21",
+      "parent_uuid": "9cd6c852",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "student_services",
+      "languages": [
+        "Hindi"
+      ],
+      "split_group_id": "GRP_P21_P21_80",
+      "audio_path": "model/data/audio/9cd6c852.wav",
+      "text_path": "model/data/text/9cd6c852.txt"
+    },
+    {
+      "uuid": "81392443",
+      "original_clip_id": "P16_100",
+      "original_file_name": "clip_02.wav",
+      "original_speaker_id": "P16",
+      "parent_uuid": "81392443",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "English"
+      ],
+      "split_group_id": "GRP_P16_P16_100",
+      "audio_path": "model/data/audio/81392443.wav",
+      "text_path": "model/data/text/81392443.txt"
+    },
+    {
+      "uuid": "8c41561b",
+      "original_clip_id": "P20_68",
+      "original_file_name": "WhatsApp Ptt 2026-11-05 at 6.57.26 PM.wav",
+      "original_speaker_id": "P20",
+      "parent_uuid": "8c41561b",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "student_services",
+      "languages": [
+        "Gujarati"
+      ],
+      "split_group_id": "GRP_P20_P20_68",
+      "audio_path": "model/data/audio/8c41561b.wav",
+      "text_path": "model/data/text/8c41561b.txt"
+    },
+    {
+      "uuid": "be6033f7",
+      "original_clip_id": "P21_73",
+      "original_file_name": "WhatsApp Ptt 2026-11-06 at 11.10.36 AM.wav",
+      "original_speaker_id": "P21",
+      "parent_uuid": "be6033f7",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "Hindi"
+      ],
+      "split_group_id": "GRP_P21_P21_73",
+      "audio_path": "model/data/audio/be6033f7.wav",
+      "text_path": "model/data/text/be6033f7.txt"
+    },
+    {
+      "uuid": "425a609f",
+      "original_clip_id": "P14_89",
+      "original_file_name": "clip_02.wav",
+      "original_speaker_id": "P14",
+      "parent_uuid": "425a609f",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "admissions",
+      "languages": [
+        "Hindi"
+      ],
+      "split_group_id": "GRP_P14_P14_89",
+      "audio_path": "model/data/audio/425a609f.wav",
+      "text_path": "model/data/text/425a609f.txt"
+    },
+    {
+      "uuid": "a33dc7af",
+      "original_clip_id": "P7_24",
+      "original_file_name": "WhatsApp Audio 2026-10-19 at 2.37.55 PM.wav",
+      "original_speaker_id": "P7",
+      "parent_uuid": "a33dc7af",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "English"
+      ],
+      "split_group_id": "GRP_P7_P7_24",
+      "audio_path": "model/data/audio/a33dc7af.wav",
+      "text_path": "model/data/text/a33dc7af.txt"
+    },
+    {
+      "uuid": "8573e793",
+      "original_clip_id": "P5_19",
+      "original_file_name": "PTT-20261018-WA0014.wav",
+      "original_speaker_id": "P5",
+      "parent_uuid": "8573e793",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "Hindi"
+      ],
+      "split_group_id": "GRP_P5_P5_19",
+      "audio_path": "model/data/audio/8573e793.wav",
+      "text_path": "model/data/text/8573e793.txt"
+    },
+    {
+      "uuid": "464c04af",
+      "original_clip_id": "P19_133",
+      "original_file_name": "clip_05.wav",
+      "original_speaker_id": "P19",
+      "parent_uuid": "464c04af",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "English"
+      ],
+      "split_group_id": "GRP_P19_P19_133",
+      "audio_path": "model/data/audio/464c04af.wav",
+      "text_path": "model/data/text/464c04af.txt"
+    },
+    {
+      "uuid": "49257af1",
+      "original_clip_id": "P21_84",
+      "original_file_name": "WhatsApp Ptt 2026-11-06 at 2.36.04 PM.wav",
+      "original_speaker_id": "P21",
+      "parent_uuid": "49257af1",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "Hindi"
+      ],
+      "split_group_id": "GRP_P21_P21_84",
+      "audio_path": "model/data/audio/49257af1.wav",
+      "text_path": "model/data/text/49257af1.txt"
+    },
+    {
+      "uuid": "51d87c64",
+      "original_clip_id": "P21_79",
+      "original_file_name": "WhatsApp Ptt 2026-11-06 at 11.18.25 AM.wav",
+      "original_speaker_id": "P21",
+      "parent_uuid": "51d87c64",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "student_services",
+      "languages": [
+        "Hindi"
+      ],
+      "split_group_id": "GRP_P21_P21_79",
+      "audio_path": "model/data/audio/51d87c64.wav",
+      "text_path": "model/data/text/51d87c64.txt"
+    },
+    {
+      "uuid": "236c7b87",
+      "original_clip_id": "P8_35",
+      "original_file_name": "PTT-20261019-WA0038.wav",
+      "original_speaker_id": "P8",
+      "parent_uuid": "236c7b87",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "admissions",
+      "languages": [
+        "Hindi"
+      ],
+      "split_group_id": "GRP_P8_P8_35",
+      "audio_path": "model/data/audio/236c7b87.wav",
+      "text_path": "model/data/text/236c7b87.txt"
+    },
+    {
+      "uuid": "b1a6b1f1",
+      "original_clip_id": "P3_8",
+      "original_file_name": "2.wav",
+      "original_speaker_id": "P3",
+      "parent_uuid": "b1a6b1f1",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "Hindi"
+      ],
+      "split_group_id": "GRP_P3_P3_8",
+      "audio_path": "model/data/audio/b1a6b1f1.wav",
+      "text_path": "model/data/text/b1a6b1f1.txt"
+    },
+    {
+      "uuid": "10714d51",
+      "original_clip_id": "P3_9",
+      "original_file_name": "3.wav",
+      "original_speaker_id": "P3",
+      "parent_uuid": "10714d51",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "Hindi"
+      ],
+      "split_group_id": "GRP_P3_P3_9",
+      "audio_path": "model/data/audio/10714d51.wav",
+      "text_path": "model/data/text/10714d51.txt"
+    },
+    {
+      "uuid": "8ae8905b",
+      "original_clip_id": "P16_101",
+      "original_file_name": "clip_03.wav",
+      "original_speaker_id": "P16",
+      "parent_uuid": "8ae8905b",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "student_services",
+      "languages": [
+        "English"
+      ],
+      "split_group_id": "GRP_P16_P16_101",
+      "audio_path": "model/data/audio/8ae8905b.wav",
+      "text_path": "model/data/text/8ae8905b.txt"
+    },
+    {
+      "uuid": "34f3193c",
+      "original_clip_id": "P19_135",
+      "original_file_name": "clip_07.wav",
+      "original_speaker_id": "P19",
+      "parent_uuid": "34f3193c",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "English"
+      ],
+      "split_group_id": "GRP_P19_P19_135",
+      "audio_path": "model/data/audio/34f3193c.wav",
+      "text_path": "model/data/text/34f3193c.txt"
+    },
+    {
+      "uuid": "e7a37e81",
+      "original_clip_id": "P8_34",
+      "original_file_name": "PTT-20261019-WA0037.wav",
+      "original_speaker_id": "P8",
+      "parent_uuid": "e7a37e81",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "admissions",
+      "languages": [
+        "Hindi"
+      ],
+      "split_group_id": "GRP_P8_P8_34",
+      "audio_path": "model/data/audio/e7a37e81.wav",
+      "text_path": "model/data/text/e7a37e81.txt"
+    },
+    {
+      "uuid": "b20dcb6e",
+      "original_clip_id": "P14_95",
+      "original_file_name": "clip_08.wav",
+      "original_speaker_id": "P14",
+      "parent_uuid": "b20dcb6e",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "admissions",
+      "languages": [
+        "Hindi"
+      ],
+      "split_group_id": "GRP_P14_P14_95",
+      "audio_path": "model/data/audio/b20dcb6e.wav",
+      "text_path": "model/data/text/b20dcb6e.txt"
+    },
+    {
+      "uuid": "c3fe0183",
+      "original_clip_id": "P8_33",
+      "original_file_name": "PTT-20261019-WA0008.wav",
+      "original_speaker_id": "P8",
+      "parent_uuid": "c3fe0183",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "student_services",
+      "languages": [
+        "Hindi"
+      ],
+      "split_group_id": "GRP_P8_P8_33",
+      "audio_path": "model/data/audio/c3fe0183.wav",
+      "text_path": "model/data/text/c3fe0183.txt"
+    },
+    {
+      "uuid": "018267c4",
+      "original_clip_id": "P8_39",
+      "original_file_name": "PTT-20261019-WA0042.wav",
+      "original_speaker_id": "P8",
+      "parent_uuid": "018267c4",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "Hindi"
+      ],
+      "split_group_id": "GRP_P8_P8_39",
+      "audio_path": "model/data/audio/018267c4.wav",
+      "text_path": "model/data/text/018267c4.txt"
+    },
+    {
+      "uuid": "c0e3befd",
+      "original_clip_id": "P9_49",
+      "original_file_name": "PTT-20261019-WA0026.wav",
+      "original_speaker_id": "P9",
+      "parent_uuid": "c0e3befd",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "student_services",
+      "languages": [
+        "English",
+        "Hindi"
+      ],
+      "split_group_id": "GRP_P9_P9_49",
+      "audio_path": "model/data/audio/c0e3befd.wav",
+      "text_path": "model/data/text/c0e3befd.txt"
+    },
+    {
+      "uuid": "f41402b1",
+      "original_clip_id": "P21_82",
+      "original_file_name": "WhatsApp Ptt 2026-11-06 at 11.21.15 AM.wav",
+      "original_speaker_id": "P21",
+      "parent_uuid": "f41402b1",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "student_services",
+      "languages": [
+        "Hindi"
+      ],
+      "split_group_id": "GRP_P21_P21_82",
+      "audio_path": "model/data/audio/f41402b1.wav",
+      "text_path": "model/data/text/f41402b1.txt"
+    },
+    {
+      "uuid": "bf5d2fdf",
+      "original_clip_id": "P22_89",
+      "original_file_name": "WhatsApp Ptt 2026-11-06 at 2.33.17 PM.wav",
+      "original_speaker_id": "P22",
+      "parent_uuid": "bf5d2fdf",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "student_services",
+      "languages": [
+        "English"
+      ],
+      "split_group_id": "GRP_P22_P22_89",
+      "audio_path": "model/data/audio/bf5d2fdf.wav",
+      "text_path": "model/data/text/bf5d2fdf.txt"
+    },
+    {
+      "uuid": "9a6ec2f5",
+      "original_clip_id": "P22_98",
+      "original_file_name": "WhatsApp Ptt 2026-11-06 at 2.42.28 PM.wav",
+      "original_speaker_id": "P22",
+      "parent_uuid": "9a6ec2f5",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "English"
+      ],
+      "split_group_id": "GRP_P22_P22_98",
+      "audio_path": "model/data/audio/9a6ec2f5.wav",
+      "text_path": "model/data/text/9a6ec2f5.txt"
+    },
+    {
+      "uuid": "382c043f",
+      "original_clip_id": "P3_7",
+      "original_file_name": "1.wav",
+      "original_speaker_id": "P3",
+      "parent_uuid": "382c043f",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "Hindi"
+      ],
+      "split_group_id": "GRP_P3_P3_7",
+      "audio_path": "model/data/audio/382c043f.wav",
+      "text_path": "model/data/text/382c043f.txt"
+    },
+    {
+      "uuid": "076e2bba",
+      "original_clip_id": "P9_41",
+      "original_file_name": "PTT-20261019-WA0009.wav",
+      "original_speaker_id": "P9",
+      "parent_uuid": "076e2bba",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "English"
+      ],
+      "split_group_id": "GRP_P9_P9_41",
+      "audio_path": "model/data/audio/076e2bba.wav",
+      "text_path": "model/data/text/076e2bba.txt"
+    },
+    {
+      "uuid": "addc3e13",
+      "original_clip_id": "P16_107",
+      "original_file_name": "clip_09.wav",
+      "original_speaker_id": "P16",
+      "parent_uuid": "addc3e13",
+      "is_augmented": false,
+      "augmentation_type": "original",
+      "gold_intent": "student_services",
+      "languages": [
+        "English"
+      ],
+      "split_group_id": "GRP_P16_P16_107",
+      "audio_path": "model/data/audio/addc3e13.wav",
+      "text_path": "model/data/text/addc3e13.txt"
+    }
+  ]
+}

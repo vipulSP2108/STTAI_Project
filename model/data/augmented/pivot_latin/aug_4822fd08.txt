@@ -1,0 +1,7 @@
+UUID: aug_4822fd08
+Parent_UUID: 12a4def0
+Augmentation_Type: pivot_latin
+Similarity_Score: 0.9158
+Transcript: Could you please share the Third Party Administrator contact number for candidate medical insurance cashless claims?
+Target_Label: student_services
+Spoken_Languages: ['English']

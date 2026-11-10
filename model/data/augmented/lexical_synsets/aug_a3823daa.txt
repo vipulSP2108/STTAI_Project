@@ -1,0 +1,7 @@
+UUID: aug_a3823daa
+Parent_UUID: ee0caeb5
+Augmentation_Type: lexical_synsets
+Similarity_Score: 0.942
+Transcript: પ ે લ ે ક ્ ચર છ ે ( Ref: campus query 094 ).
+Target_Label: admissions
+Spoken_Languages: ['Hindi', 'Gujarati']

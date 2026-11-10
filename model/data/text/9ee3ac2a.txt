@@ -1,0 +1,4 @@
+UUID: 9ee3ac2a
+Transcript: Hello, IITG in Helpdesk. I need access to a general article that is behind a publisher paywall. Does the Institute Library provide remote access?
+Target_Label: it_support
+Spoken_Languages: English

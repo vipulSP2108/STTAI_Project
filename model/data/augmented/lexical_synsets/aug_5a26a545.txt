@@ -1,0 +1,7 @@
+UUID: aug_5a26a545
+Parent_UUID: 20a04502
+Augmentation_Type: lexical_synsets
+Similarity_Score: 0.9139
+Transcript: હ ો સ ્ ટ ે લ ક ા વ ે ર ી બ ્ લ ો ક ર ૂ મ 166 મ ા ટ ે ન ા ઇટ ક ે ન ્ ટ ી ન પરમ િ શન બ ા બત ે ફર િ ય ા દ ન ો ં ધ ા વવ ી છ ે, ક ે રટ ે કરન ો ન ં બર આપ ી શકશ ો?
+Target_Label: hostel_mess
+Spoken_Languages: ['Gujarati']

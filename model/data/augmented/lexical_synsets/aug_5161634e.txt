@@ -1,0 +1,7 @@
+UUID: aug_5161634e
+Parent_UUID: 9e8fc965
+Augmentation_Type: lexical_synsets
+Similarity_Score: 0.9017
+Transcript: મ ે સ ર િ બ ે ટ ફ ો ર ્ મ સબમ િ ટ કર ્ ય ુ ં હત ુ ં પણ મ ં થલ ી બ િ લમ ા ં ડ િ ડક ્ શન ર િ ફ ્ લ ે ક ્ ટ નથ ી થય ુ ં, ક ૃ પ ા કર ી ન ે તપ ા સ કરશ ો?
+Target_Label: hostel_mess
+Spoken_Languages: ['Gujarati']

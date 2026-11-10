@@ -1,0 +1,7 @@
+UUID: aug_938f96f2
+Parent_UUID: 4bb00f20
+Augmentation_Type: pivot_latin
+Similarity_Score: 0.9833
+Transcript: Hello ITGN Help Desk, ACMICS Water Leak Horae 2-3 Nose Electrician Coop Arrange Kharwaanemi Ketne Dine Lakh Cryptia Facilitation Apo.
+Target_Label: hostel_mess
+Spoken_Languages: ['Hindi']

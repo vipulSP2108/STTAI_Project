@@ -1,0 +1,4 @@
+UUID: 1bac27a7
+Transcript: Hi, I'm calling because my institute email ID seems to be blocked or suspended. When I try to login through Gmail, it says that the account has been disabled by the administrator. I suspect that it might be because I recently sent out a mass email for a club event to all student mailing list, which might have triggered a spam filter. I urgently need access to my email as I am expecting some internship interview links today. Could you please check my ID and restore my access? I won't send my emails directly again. So please, if you could do that, that would be really helpful.
+Target_Label: it_support
+Spoken_Languages: English

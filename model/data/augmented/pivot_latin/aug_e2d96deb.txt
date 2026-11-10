@@ -1,0 +1,7 @@
+UUID: aug_e2d96deb
+Parent_UUID: 9479e1e6
+Augmentation_Type: pivot_latin
+Similarity_Score: 0.9476
+Transcript: Are Jain nutritional meals alternatives readily provided in the central mess or is a prior subscription required?
+Target_Label: hostel_mess
+Spoken_Languages: ['English']

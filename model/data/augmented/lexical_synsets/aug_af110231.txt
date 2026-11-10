@@ -1,0 +1,7 @@
+UUID: aug_af110231
+Parent_UUID: 8cbfedb0
+Augmentation_Type: lexical_synsets
+Similarity_Score: 0.9678
+Transcript: Namaste sir, mujhe aapke college mein admission admissions karwana tha To document document checking ke vagtham ek kone, chikoncee document saat le na chaye Aur vuh fi stuqchar jo hai, uske i saap se jo hame loon le na hai Vuh vuh fi kis saat le na hai yaa ھاں ھاں ھا ھاں ھاں ھا.
+Target_Label: admissions
+Spoken_Languages: ['Hindi']

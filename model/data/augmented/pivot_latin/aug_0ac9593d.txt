@@ -1,0 +1,7 @@
+UUID: aug_0ac9593d
+Parent_UUID: 0f02bad0
+Augmentation_Type: pivot_latin
+Similarity_Score: 0.9584
+Transcript: I wanted to report an impediment with my VPN session ID needed for logging into the institute computational cluster from outside campus.
+Target_Label: it_support
+Spoken_Languages: ['English']

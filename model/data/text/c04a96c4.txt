@@ -1,0 +1,4 @@
+UUID: c04a96c4
+Transcript: નમસ્કાર ફોર્મ કયું હતું રિફ્લેક્ટ.
+Target_Label: hostel_mess
+Spoken_Languages: Gujarati

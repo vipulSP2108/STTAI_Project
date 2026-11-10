@@ -1,0 +1,4 @@
+UUID: f26b4776
+Transcript: એમાં વાહન પરમિશન ઓનલાઇન લેવી પડે કે સિક્યુરિટી ગેટ પર રજિસ્ટર કરાવવું પડશે?
+Target_Label: student_services
+Spoken_Languages: Gujarati

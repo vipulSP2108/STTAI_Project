@@ -1,0 +1,7 @@
+UUID: aug_81aa1278
+Parent_UUID: 958ca9ba
+Augmentation_Type: pivot_latin
+Similarity_Score: 0.9804
+Transcript: Hello IITG in help desk can undergraduate scholars apply for summer research internships with IIT Gandhi Nagar faculty.
+Target_Label: student_services
+Spoken_Languages: ['English']

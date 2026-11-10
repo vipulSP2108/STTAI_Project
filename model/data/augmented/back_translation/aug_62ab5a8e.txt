@@ -1,0 +1,7 @@
+UUID: aug_62ab5a8e
+Parent_UUID: 11e9cdaa
+Augmentation_Type: back_translation
+Similarity_Score: 0.9638
+Transcript: Hello IITGN help desk. My laptop is unable to connect to the campus VPN after a recent operating system update. Kripya help troubleshoot.
+Target_Label: it_support
+Spoken_Languages: ['English']

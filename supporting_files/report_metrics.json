@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "git_commit": "17ace7b40c7fc5161082392218a569d78e33b617",
-    "generated_at": "2026-11-06T05:07:47.056877+00:00",
+    "git_commit": "9fa6327f152788afba615165a01a72b77e9a80a7",
+    "generated_at": "2026-11-08T00:55:15.970051+00:00",
     "gold_sha256": "64b7647b5d0d35733063c77caab122a1a7c24ac6c70b7d476ffbabd9a2448ca9"
   },
   "corpus_stats": {
@@ -27,6 +27,47 @@
     "consensus_kappa": 1.0,
     "consensus_agreement_pct": 100.0,
     "sample_size": 120
+  },
+  "double_annotation_full": {
+    "sample_size": 182,
+    "raw_agreement_count": 135,
+    "raw_agreement_pct": 74.18,
+    "chance_agreement_pe": 0.2492,
+    "cohens_kappa": 0.6561,
+    "standard_error": 0.0432,
+    "ci_95": [0.5714, 0.7407],
+    "pabak": 0.4835,
+    "per_class_binary_kappa": {
+      "hostel_mess": 0.7473,
+      "it_support": 0.7026,
+      "admissions": 0.6515,
+      "student_services": 0.53
+    },
+    "language_agreement": {
+      "mean_jaccard": 0.7949,
+      "gujarati_pct": 93.0,
+      "hindi_pct": 76.8,
+      "english_pct": 61.1
+    },
+    "disagreement_cases": 47,
+    "adjudication_platform": "annotator_expert (Port 8083)",
+    "expert_adjudication": {
+      "total_tasks_completed": 55,
+      "unique_disputes_resolved": 47,
+      "test_retest_repeat_pairs": 8,
+      "test_retest_concordance_pct": 75.0,
+      "intra_rater_cohens_kappa": 0.6522,
+      "mean_deliberation_seconds": 153.77,
+      "median_deliberation_seconds": 79.18,
+      "rushing_alerts_count": 0,
+      "gold_reference_corpus_size": 182,
+      "gold_class_distribution": {
+        "student_services": 58,
+        "hostel_mess": 54,
+        "it_support": 35,
+        "admissions": 35
+      }
+    }
   },
   "part_a": [
     {
@@ -287,10 +328,10 @@
     "target_platform": "linux/amd64",
     "base_image": "python:3.10-slim@sha256:d9bba76dc77e0965d93e1577fe0d01b1b9e599e09d57a3e7a0864ac362c3f8f1",
     "peak_ram_mb": 782.73,
-    "rtf": 0.165,
+    "rtf": 0.0,
     "p50_latency_ms": 2855.2,
     "p95_latency_ms": 13441.5,
-    "mean_latency_ms": 2986.38,
+    "mean_latency_ms": 0.17,
     "throughput_qps": 0.23,
     "offline_network_isolated_host": false,
     "offline_network_isolated_container": true

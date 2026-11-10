@@ -1,0 +1,7 @@
+UUID: aug_207d43b4
+Parent_UUID: 12a4def0
+Augmentation_Type: back_translation
+Similarity_Score: 0.8942
+Transcript: Could you kripya share the Third Party Administrator contact number for student medical insurance cashless claims?
+Target_Label: student_services
+Spoken_Languages: ['English']

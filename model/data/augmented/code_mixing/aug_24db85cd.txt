@@ -1,0 +1,7 @@
+UUID: aug_24db85cd
+Parent_UUID: 439472e6
+Augmentation_Type: code_mixing
+Similarity_Score: 0.9313
+Transcript: Kavayu Parse, Aloha, IDIG and Heldesk, My attendance percentage is discoprensive, Faculty has gone to academic office in shikayat race.
+Target_Label: student_services
+Spoken_Languages: ['Hindi']

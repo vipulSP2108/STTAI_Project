@@ -1,0 +1,7 @@
+UUID: aug_ca71f0f8
+Parent_UUID: 34f3193c
+Augmentation_Type: pivot_latin
+Similarity_Score: 0.9301
+Transcript: I applied for mess rebate on the candidate portal, will the deduction reflect in next month's mess bill?
+Target_Label: hostel_mess
+Spoken_Languages: ['English']

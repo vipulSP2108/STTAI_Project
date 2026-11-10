@@ -1,0 +1,7 @@
+UUID: aug_7995ce06
+Parent_UUID: 3e75c3b4
+Augmentation_Type: pivot_latin
+Similarity_Score: 0.9609
+Transcript: Namaskar, IIT Gandhi Nagar voice help desk. VTEC, CTE acceptance, remittance fee payment portal open na di dhathu. Payment link send kaisha kocho. Kupya pressing support.
+Target_Label: it_support
+Spoken_Languages: ['Hindi']

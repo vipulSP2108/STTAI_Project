@@ -1,0 +1,56 @@
+{
+  "total_folds_audited": 5,
+  "all_folds_passed": true,
+  "fold_audits": [
+    {
+      "fold_index": 1,
+      "train_samples": 246,
+      "val_samples": 60,
+      "group_overlap_count": 0,
+      "parent_overlap_count": 0,
+      "text_hash_collisions": 0,
+      "test_set_contamination": 0,
+      "status": "PASS"
+    },
+    {
+      "fold_index": 2,
+      "train_samples": 248,
+      "val_samples": 58,
+      "group_overlap_count": 0,
+      "parent_overlap_count": 0,
+      "text_hash_collisions": 0,
+      "test_set_contamination": 0,
+      "status": "PASS"
+    },
+    {
+      "fold_index": 3,
+      "train_samples": 255,
+      "val_samples": 51,
+      "group_overlap_count": 0,
+      "parent_overlap_count": 0,
+      "text_hash_collisions": 0,
+      "test_set_contamination": 0,
+      "status": "PASS"
+    },
+    {
+      "fold_index": 4,
+      "train_samples": 236,
+      "val_samples": 70,
+      "group_overlap_count": 0,
+      "parent_overlap_count": 0,
+      "text_hash_collisions": 0,
+      "test_set_contamination": 0,
+      "status": "PASS"
+    },
+    {
+      "fold_index": 5,
+      "train_samples": 239,
+      "val_samples": 67,
+      "group_overlap_count": 0,
+      "parent_overlap_count": 0,
+      "text_hash_collisions": 0,
+      "test_set_contamination": 0,
+      "status": "PASS"
+    }
+  ]
+}

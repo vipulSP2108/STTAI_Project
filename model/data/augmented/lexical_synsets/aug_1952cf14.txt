@@ -1,0 +1,7 @@
+UUID: aug_1952cf14
+Parent_UUID: eeea163e
+Augmentation_Type: lexical_synsets
+Similarity_Score: 0.8724
+Transcript: હ ે લ ો હ ે લ ્ પડ ે સ ્ ક, ક ે મ ્ પસ શટલ બસન ો ગ ા ં ધ ી નગર ર ે લવ ે સ ્ ટ ે શન જવ ા ન ો સમયપત ્ રક આપશ ો?
+Target_Label: student_services
+Spoken_Languages: ['English', 'Hindi']
