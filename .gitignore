@@ -28,7 +28,14 @@ Records.zip
 data/raw/audio/
 model/data/audio/
 final_annotation/records/
-data/processed/augmented/**/*.wav
+data/processed/augmented/
+*.wav
+*.mp3
+*.m4a
+*.ogg
+*.flac
+*.aac
+*.wma
 temp_*.wav
 
 # Local DVC remotes & MLflow
