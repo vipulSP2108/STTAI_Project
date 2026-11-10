@@ -43,6 +43,7 @@ dump.md
 scratch/
 prompts/
 code/prompts/
+code/scripts/
 *.log
 *.pid
 *.tmp
