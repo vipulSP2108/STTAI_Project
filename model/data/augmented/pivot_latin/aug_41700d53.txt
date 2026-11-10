@@ -1,7 +1,0 @@
-UUID: aug_41700d53
-Parent_UUID: d9178793
-Augmentation_Type: pivot_latin
-Similarity_Score: 0.8785
-Transcript: breaks. Hello IITGN help disc my scholar portal keeps logging me out every few minutes. Even after clearing the browser cache, can IIT investigate.
-Target_Label: it_support
-Spoken_Languages: ['English']

@@ -73,7 +73,7 @@ def run_unseen_speaker_benchmark():
     X_train = [s["transcript"] for s in train_samples]
     y_train = [INTENT2ID[s["gold_intent"]] for s in train_samples]
 
-    clf = CalibratedMultilingualClassifier(c_reg=1.0, seed=42)
+    clf = CalibratedMultilingualClassifier(c_reg=2.0, seed=42)
     clf.fit(X_train, y_train)
 
     # Evaluate overall test set

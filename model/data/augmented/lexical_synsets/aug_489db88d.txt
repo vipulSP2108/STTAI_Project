@@ -1,7 +1,0 @@
-UUID: aug_489db88d
-Parent_UUID: 20de435d
-Augmentation_Type: lexical_synsets
-Similarity_Score: 0.9147
-Transcript: Hello, IITGN Helpdesk. My scholarship candidature submission shows document document checking pending for two weeks. Could you please check the status?
-Target_Label: student_services
-Spoken_Languages: ['English']

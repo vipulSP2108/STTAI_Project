@@ -1,0 +1,7 @@
+UUID: aug_398b7610
+Parent_UUID: 12a4def0
+Augmentation_Type: cross_lingual_translation
+Similarity_Score: 0.5068
+Transcript: Hi, Lacam. I'm talking to you. My daughter has been welcome to this coming July. I've got a bother with Mr. lend and pay. But I'm applying a loan for four years and for a bank.
+Target_Label: student_services
+Spoken_Languages: ['English']

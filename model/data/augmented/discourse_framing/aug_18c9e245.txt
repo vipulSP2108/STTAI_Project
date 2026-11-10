@@ -1,0 +1,7 @@
+UUID: aug_18c9e245
+Parent_UUID: 1eb0e38a
+Augmentation_Type: discourse_framing
+Similarity_Score: 0.9689
+Transcript: હેલ્પડેસ્ક પર જણાવશો કે નમસ્કાર મારા દિકરા માહિતી જોઈતી હતી તે હાલમાં બહાર કરે છે અને આગળ એન્જિનિયરિંગ કરવા મા સંસ્થામાં અલગથી પણ કોઈ પ્રક્રિયા પૂઈ કરવા પડે છે કરવા ઘણી સરળતા છે
+Target_Label: admissions
+Spoken_Languages: ['Gujarati']

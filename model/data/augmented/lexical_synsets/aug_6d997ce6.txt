@@ -1,7 +1,0 @@
-UUID: aug_6d997ce6
-Parent_UUID: 944528c0
-Augmentation_Type: lexical_synsets
-Similarity_Score: 0.8992
-Transcript: Hello, IITGN HelpDisc. Internship Company is asking for a enrollment certificate letter and NOC. Are both documents available through the students?
-Target_Label: student_services
-Spoken_Languages: ['English']

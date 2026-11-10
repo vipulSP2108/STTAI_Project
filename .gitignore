@@ -44,14 +44,20 @@ scratch/
 prompts/
 code/prompts/
 code/scripts/
+report/figures_v2/
 *.log
 *.pid
 *.tmp
 *.scratch
 references/refrance_*
+references/Assignment*.pdf
+references/OurTopic.pdf
+references/Proposal.pdf
+references/project_proposal.pdf
 
 # Model binaries & checkpoints (managed via local caches / scripts)
 model/models/
+model/data/cache/
 final_annotation/annotator_*/data/
 final_annotation/annotator_*/records/
 supporting_files/*.mp4

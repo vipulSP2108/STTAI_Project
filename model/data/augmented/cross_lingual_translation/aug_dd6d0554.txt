@@ -1,0 +1,7 @@
+UUID: aug_dd6d0554
+Parent_UUID: 6651529e
+Augmentation_Type: cross_lingual_translation
+Similarity_Score: 0.6283
+Transcript: हाय, क्या बॉटॉट्स के विद्यार्थी शाखा दफ्तर को बदलने का अवसर पाते हैं और न्यूनतम PI क्या होना चाहिए?
+Target_Label: student_services
+Spoken_Languages: ['English', 'Hindi']

@@ -1,7 +1,0 @@
-UUID: aug_d1be4408
-Parent_UUID: dc570131
-Augmentation_Type: pivot_latin
-Similarity_Score: 0.9353
-Transcript: Hello sir. So I want to raise an impediment regarding the water supply in the domiciliary residence. So since past 3-4 days, there is continuous red body color water. It has been continuously coming from the tap with small particles and contaminants visible in the water. So we are unable to use this water for bathing or the daily activities. So this is creating serious, hygienic and safety concerns for the residents. official inquiry to kindly look into this issue and resolve it as soon as possible because it is related to the safety of the individual. So please look into this. Thank you.
-Target_Label: hostel_mess
-Spoken_Languages: ['English']

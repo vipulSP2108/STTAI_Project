@@ -1,7 +1,0 @@
-UUID: aug_12505704
-Parent_UUID: 944528c0
-Augmentation_Type: lexical_synsets
-Similarity_Score: 0.9046
-Transcript: Hello, IITGN HelpDisc. Internship Company is asking for a student status certificate letter and NOC. Are both documents available through the students?
-Target_Label: student_services
-Spoken_Languages: ['English']

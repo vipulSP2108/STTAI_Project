@@ -1,0 +1,7 @@
+UUID: aug_75584944
+Parent_UUID: 30beb45f
+Augmentation_Type: cross_lingual_translation
+Similarity_Score: 0.6832
+Transcript: Hello, I wanted to contact student matters because my boyfriend's not working at home in the morning.
+Target_Label: hostel_mess
+Spoken_Languages: ['English']

@@ -1,0 +1,7 @@
+UUID: aug_7f0f27c7
+Parent_UUID: 49257af1
+Augmentation_Type: cross_lingual_translation
+Similarity_Score: 0.6952
+Transcript: नमस्कार, हत्ज़ेल, मेरे कमरे के पूले को तोड़ दिया गया है, कृपया उसे तुरन्त भेज दो.
+Target_Label: hostel_mess
+Spoken_Languages: ['Hindi']

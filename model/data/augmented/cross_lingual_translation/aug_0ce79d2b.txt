@@ -1,0 +1,7 @@
+UUID: aug_0ce79d2b
+Parent_UUID: ed2662e9
+Augmentation_Type: cross_lingual_translation
+Similarity_Score: 0.5585
+Transcript: હેલો આઈટી સપોર્ટ, આઈએમએસ પોર્ટલ પર લૉગિન કરતે સમય લગાતાર ઑથરાઇજેશન એરર આ રહા છે, કૃપા કરીને મારું અકાઉંટ સ્ટેટસ રીસેટ કર દીજિએ૤
+Target_Label: it_support
+Spoken_Languages: ['Hindi']

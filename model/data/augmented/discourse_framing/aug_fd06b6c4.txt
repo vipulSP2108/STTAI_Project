@@ -1,7 +1,0 @@
-UUID: aug_fd06b6c4
-Parent_UUID: f05db76e
-Augmentation_Type: discourse_framing
-Similarity_Score: 0.9634
-Transcript: मेरा सवाल यह है कि हेलो आईआईटीजीएन हेल्पडेस्क, मिड-सेमेस्टर एग्जाम का टाइमटेबल एकेडमिक पोर्टल पर कब अपलोड होगा, क्या आप लिंक प्रोवाइड कर सकते हैं?
-Target_Label: it_support
-Spoken_Languages: ['Hindi']

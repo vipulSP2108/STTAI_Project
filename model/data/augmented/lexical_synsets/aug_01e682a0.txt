@@ -1,7 +1,0 @@
-UUID: aug_01e682a0
-Parent_UUID: 0cf35b58
-Augmentation_Type: lexical_synsets
-Similarity_Score: 0.9622
-Transcript: Hello Adi Jain, Helpdesk. Miri ko mesk ka qr change sarvanin ka tha Kiyon ki mesk ka khana meri ko aagapasad ni aara Posak ki to moani moani mesk Sahi rei ka. Gupal mesk ka food baad haga haga Utsme kuch bhi banai aare darmi darmi baspaniin Utsme kuch bhi banai aare darmi darmi baspaniin पन े ल ी ल ी.
-Target_Label: hostel_mess
-Spoken_Languages: ['Hindi']

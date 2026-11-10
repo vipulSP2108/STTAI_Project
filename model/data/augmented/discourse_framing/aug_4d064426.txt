@@ -1,7 +1,0 @@
-UUID: aug_4d064426
-Parent_UUID: 49732d6c
-Augmentation_Type: discourse_framing
-Similarity_Score: 0.8294
-Transcript: કૃપા કરીને મદદ કરો, નમસ્કાર આઈઆરટી ગાંધીનગ વોઇસ હેલ્પડેસ્ક હોસ્ટ્રાલૂમ ચેન્જ એપ્લિકેશન ફોર્મ કિયા ઓફિસ
-Target_Label: hostel_mess
-Spoken_Languages: ['Gujarati']

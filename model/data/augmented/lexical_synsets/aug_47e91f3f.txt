@@ -1,7 +1,0 @@
-UUID: aug_47e91f3f
-Parent_UUID: 11e9cdaa
-Augmentation_Type: lexical_synsets
-Similarity_Score: 0.9393
-Transcript: Hello IITGN help desk. My device is unable to connect to the campus VPN after a recent operating system update. Please help troubleshoot.
-Target_Label: it_support
-Spoken_Languages: ['English']

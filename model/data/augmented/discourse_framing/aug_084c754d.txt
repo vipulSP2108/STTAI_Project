@@ -1,7 +1,0 @@
-UUID: aug_084c754d
-Parent_UUID: 341ef40b
-Augmentation_Type: discourse_framing
-Similarity_Score: 0.9738
-Transcript: नमस्ते, कृपया बताइए कि नमस्ते, मुझे हॉस्टल चेंज करने के लिए वार्डन ऑफिस में एप्लीकेशन कैसे देनी होगी?
-Target_Label: student_services
-Spoken_Languages: ['Hindi']

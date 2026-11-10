@@ -1,0 +1,7 @@
+UUID: aug_7c557ea9
+Parent_UUID: 38602ab6
+Augmentation_Type: pivot_latin
+Similarity_Score: 0.9364
+Transcript: Hello, this is the second time I am complaining about the same thing. The washroom tap in our domiciliary residence floor has been continuously leaking for two days. Please send plumbing maintenance immediately.
+Target_Label: hostel_mess
+Spoken_Languages: ['English', 'Hindi']

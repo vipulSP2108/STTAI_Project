@@ -1,7 +1,0 @@
-UUID: aug_bd7c8c21
-Parent_UUID: 0279b6a6
-Augmentation_Type: discourse_framing
-Similarity_Score: 0.928
-Transcript: હેલ્પડેસ્ક પર જણાવશો કે અર્જન સપોર્ટ આવો નમસ્કાર હોય ગેસ્ટ હાઇનિંગ કન્ફર્મેશન મેલ નથી પાર્ટિંગ કુપિયા અર્જન સપ
-Target_Label: hostel_mess
-Spoken_Languages: ['Gujarati']

@@ -1,7 +1,0 @@
-UUID: aug_643829df
-Parent_UUID: 1a50aec3
-Augmentation_Type: lexical_synsets
-Similarity_Score: 0.8864
-Transcript: હ ે લ ો આઇઆઇટ ી જ ી એન હ ે લ ્ પડ ે સ ્ ક, પ ્ ર ો ફ ે સર ે અસ ા ઇનમ ે ન ્ ટન ી ડ ે ડલ ા ઇન એક ્ સટ ે ન ્ ડ કર ી છ ે પણ મ ૂ ડલ પર જ ૂ ન ી ડ ે ડલ ા ઇન દ ે ખ ા ય છ ે, શ ુ ં કરવ ુ ં?
-Target_Label: student_services
-Spoken_Languages: ['Gujarati']

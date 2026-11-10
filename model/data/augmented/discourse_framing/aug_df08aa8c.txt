@@ -1,7 +1,0 @@
-UUID: aug_df08aa8c
-Parent_UUID: b572f3d0
-Augmentation_Type: discourse_framing
-Similarity_Score: 0.9364
-Transcript: Please help, I am inquiring about hello IITGN Helpdesk, I have a request regarding student services
-Target_Label: student_services
-Spoken_Languages: ['English']

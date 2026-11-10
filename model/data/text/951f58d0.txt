@@ -1,4 +1,4 @@
 UUID: 951f58d0
 Transcript: હેલો હેલ્પડેસ્ક, નવા સેમેસ્ટરનું ટાઇમટેબલ અને ક્લાસરૂમ અલોટમેન્ટ યાદી ક્યાં જોઈ શકાશે?
-Target_Label: hostel_mess
+Target_Label: student_services
 Spoken_Languages: English, Hindi

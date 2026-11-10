@@ -1,7 +1,0 @@
-UUID: aug_87b2eee1
-Parent_UUID: 20de435d
-Augmentation_Type: lexical_synsets
-Similarity_Score: 0.9153
-Transcript: Hello, IITGN help desk. My merit scholarship admission form shows document physical verification pending for three weeks. whom should I contact for an update?
-Target_Label: student_services
-Spoken_Languages: ['English']

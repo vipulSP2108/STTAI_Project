@@ -1,7 +1,0 @@
-UUID: aug_1b3e0426
-Parent_UUID: acdabacc
-Augmentation_Type: lexical_synsets
-Similarity_Score: 0.8643
-Transcript: હ ે લ ો આઈઆઈટ ી ગ ા ં ધ ી નગર, મ ે ડ િ કલ હ ે લ ્ થ ઇન ્ શ ્ ય ો રન ્ સ ક ે શલ ે સ ક ા ર ્ ડ મ ા ટ ે ક ્ લ ે મ ફ ો ર ્ મ ક ્ ય ા ં સબમ િ ટ કરવ ા ન ુ ં રહ ે શ ે?
-Target_Label: student_services
-Spoken_Languages: ['Gujarati']

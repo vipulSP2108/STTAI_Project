@@ -1,0 +1,7 @@
+UUID: aug_dc6a0c41
+Parent_UUID: ee49f329
+Augmentation_Type: cross_lingual_translation
+Similarity_Score: 0.8661
+Transcript: Hi, Img in disk. My lab shared project has lost access to drive data. Research is near the dead line. Who should I contact?
+Target_Label: it_support
+Spoken_Languages: ['English']

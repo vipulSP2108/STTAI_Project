@@ -1,0 +1,7 @@
+UUID: aug_54220033
+Parent_UUID: acdabacc
+Augmentation_Type: cross_lingual_translation
+Similarity_Score: 0.6262
+Transcript: हेलो आईआईटी गांधीनगर, मेडिकल हेल्थ इन्श्योरन्स केशलेस कार्ड के लिए क्लेम फोर्म कहाँ सबमिट करवानुं रहेशे?
+Target_Label: student_services
+Spoken_Languages: ['Gujarati']

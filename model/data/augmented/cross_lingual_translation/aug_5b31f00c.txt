@@ -1,0 +1,7 @@
+UUID: aug_5b31f00c
+Parent_UUID: 969b6662
+Augmentation_Type: cross_lingual_translation
+Similarity_Score: 0.5447
+Transcript: नमस्ते हेल्पडेस्क, समर सेमेस्टरमां बेकलोग कोर्स ओफर होगा के नहीं ते बाबते माहिती जोईती थी.
+Target_Label: student_services
+Spoken_Languages: ['Gujarati']

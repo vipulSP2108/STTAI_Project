@@ -1,7 +1,0 @@
-UUID: aug_1e92d7b1
-Parent_UUID: 6f3f920c
-Augmentation_Type: lexical_synsets
-Similarity_Score: 0.8918
-Transcript: Hello IT Gen. Helbless, GitHub Student Developer Pack, for Instudent Credential Inspection Reject, official Student Status Official Document, where will we get the attested certificate?
-Target_Label: it_support
-Spoken_Languages: ['Hindi']

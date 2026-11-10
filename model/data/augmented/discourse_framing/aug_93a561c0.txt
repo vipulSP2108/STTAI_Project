@@ -1,7 +1,0 @@
-UUID: aug_93a561c0
-Parent_UUID: df57c59a
-Augmentation_Type: discourse_framing
-Similarity_Score: 0.9766
-Transcript: Hello helpdesk, could you please clarify hello IITGN Helpdesk, my parents will stay on campus for two nights. How can I confirm guest accommodation booking?
-Target_Label: student_services
-Spoken_Languages: ['English']

@@ -1,7 +1,0 @@
-UUID: aug_ca1d1554
-Parent_UUID: c3fe0183
-Augmentation_Type: discourse_framing
-Similarity_Score: 0.9358
-Transcript: हेल्पडेस्क से सहायता चाहिए, हेलो, हॉस्टल ग्राउंड फ्लोर पर वाशिंग मशीन का ड्रेनेज पाइप ब्लॉक हो गया है, कृपया तुरंत साफ करवाएं।
-Target_Label: student_services
-Spoken_Languages: ['Hindi']

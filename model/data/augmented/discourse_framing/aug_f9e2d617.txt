@@ -1,7 +1,0 @@
-UUID: aug_f9e2d617
-Parent_UUID: da4bd9ca
-Augmentation_Type: discourse_framing
-Similarity_Score: 0.9821
-Transcript: Greetings, I wanted to confirm whether excuse me, I would like to report a concern about the campus shuttle service schedule during late evening hours from the academic complex
-Target_Label: student_services
-Spoken_Languages: ['English', 'Hindi']

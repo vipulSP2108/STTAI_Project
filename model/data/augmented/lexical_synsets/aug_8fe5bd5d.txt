@@ -1,7 +1,0 @@
-UUID: aug_8fe5bd5d
-Parent_UUID: 1a50aec3
-Augmentation_Type: lexical_synsets
-Similarity_Score: 0.8578
-Transcript: હ ે લ ો આઇડ ી જ ી પ ્ ર ો ફ ે સર ઇ અસ ા ઇનમ ે ન ્ ટ નહ ી ં નહ ી ં ડ ે ટલ ા ઇન એક ્ સચ ે ન ્ ટ કર ી છ ે મ ો ડલ પર ડ ે ટલ ા ઇન જ �.
-Target_Label: student_services
-Spoken_Languages: ['Gujarati']

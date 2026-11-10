@@ -1,7 +1,0 @@
-UUID: aug_a37c9b96
-Parent_UUID: 9ad620ab
-Augmentation_Type: lexical_synsets
-Similarity_Score: 0.934
-Transcript: Can international and NRI candidates apply through the regular admissions intranet page or is there a separate admission form channel?
-Target_Label: admissions
-Spoken_Languages: ['English']

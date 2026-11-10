@@ -1,0 +1,7 @@
+UUID: aug_9256b7aa
+Parent_UUID: 3fa7f104
+Augmentation_Type: cross_lingual_translation
+Similarity_Score: 0.5475
+Transcript: Good morning, I'm abt engineering student for another year.
+Target_Label: it_support
+Spoken_Languages: ['English']

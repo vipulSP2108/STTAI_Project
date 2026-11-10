@@ -1,7 +1,0 @@
-UUID: aug_df5ce94f
-Parent_UUID: c8b8d9c6
-Augmentation_Type: lexical_synsets
-Similarity_Score: 0.8442
-Transcript: નમસ ્ ક ા ર, ઈન ્ ટરન ે શનલ સ ્ ટ ુ ડન ્ ટ ્ સ મ ા ટ ે એડમ િ શન એપ ્ લ િ ક ે શન ફ ો ર ્ મ અન ે સ ્ ક ો લરશ િ પન ી વ િ ગત ો ક ્ ય ા ં થ ી મળશ ે?
-Target_Label: admissions
-Spoken_Languages: ['Gujarati']

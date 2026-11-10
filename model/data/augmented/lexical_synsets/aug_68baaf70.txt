@@ -1,7 +1,0 @@
-UUID: aug_68baaf70
-Parent_UUID: 2db69edb
-Augmentation_Type: lexical_synsets
-Similarity_Score: 0.9117
-Transcript: નમસ ્ ત ે સર, એમટ ે ક કમ ્ પ ્ ય ુ ટર સ ા યન ્ સ એડમ િ શન મ ા ટ ે ગ ે ટ સ ્ ક ો ર કટ ો ફ ક ે ટલ ો છ ે અન ે એપ ્ લ િ ક ે શન ડ ે ડલ ા ઇન ક ્ ય ા ર ે છ ે?
-Target_Label: admissions
-Spoken_Languages: ['Gujarati']

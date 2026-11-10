@@ -1,7 +1,0 @@
-UUID: aug_3d1ac88c
-Parent_UUID: 9479e1e6
-Augmentation_Type: lexical_synsets
-Similarity_Score: 0.9054
-Transcript: Are Jain food alternatives readily provided in the central bhojanalaya or is a prior subscription required?
-Target_Label: hostel_mess
-Spoken_Languages: ['English']

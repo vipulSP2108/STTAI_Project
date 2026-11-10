@@ -1,7 +1,0 @@
-UUID: aug_41bfc61d
-Parent_UUID: ff002d4d
-Augmentation_Type: discourse_framing
-Similarity_Score: 0.9047
-Transcript: મારો પ્રશ્ન એવો છે કે નમસ્કાર ક્લિટર નથી કઈ થી ચા દિવસથી ટોકન નંબર આપો
-Target_Label: student_services
-Spoken_Languages: ['Gujarati']

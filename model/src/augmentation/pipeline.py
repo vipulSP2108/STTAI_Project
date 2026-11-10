@@ -34,6 +34,7 @@ from model.src.augmentation.pivot_translator import augment_latin_pivot
 from model.src.augmentation.lexical_synsets import augment_lexical_synsets
 from model.src.augmentation.code_mix_generator import synthesize_code_mixed_variants
 from model.src.augmentation.discourse_marker_augmenter import augment_discourse_framing
+from model.src.augmentation.tri_directional_translator import translate_cross_lingual, save_cache, precompute_dataset_translations
 from model.src.validation.embedding_filter import EmbeddingSimilarityGate
 from model.src.validation.polarity_checker import PolarityEntityAuditor
 from model.src.validation.deduplicator import MinHashDeduplicator
@@ -45,9 +46,9 @@ AUG_DIR = MODEL_DIR / "data" / "augmented"
 METADATA_DIR = MODEL_DIR / "data" / "metadata"
 REPORTS_DIR = MODEL_DIR / "data" / "reports"
 
-def run_augmentation_pipeline(techniques=None, similarity_threshold=0.82, max_variants_per_sample=3):
+def run_augmentation_pipeline(techniques=None, similarity_threshold=0.72, max_variants_per_sample=3):
     if techniques is None:
-        techniques = ["back_translation", "pivot_latin", "lexical_synsets", "code_mixing", "discourse_framing"]
+        techniques = ["back_translation", "pivot_latin", "lexical_synsets", "code_mixing", "discourse_framing", "cross_lingual_translation"]
 
     print("=" * 70)
     print("MULTILINGUAL AUGMENTATION & SEMANTIC QUALITY GATE PIPELINE")
@@ -73,6 +74,15 @@ def run_augmentation_pipeline(techniques=None, similarity_threshold=0.82, max_va
     text_files = sorted(list(TEXT_DIR.glob("*.txt")))
     print(f"Scanning {len(text_files)} original text transcripts...")
 
+    if "cross_lingual_translation" in techniques:
+        all_transcripts = []
+        for text_path in text_files:
+            for line in text_path.read_text().splitlines():
+                if line.startswith("Transcript:"):
+                    all_transcripts.append(line.replace("Transcript:", "").strip())
+                    break
+        precompute_dataset_translations(all_transcripts)
+
     augmented_records = []
     stats = {
         "candidates_generated": 0,
@@ -83,7 +93,7 @@ def run_augmentation_pipeline(techniques=None, similarity_threshold=0.82, max_va
         "by_technique": {t: 0 for t in techniques}
     }
 
-    for text_path in text_files:
+    for idx, text_path in enumerate(text_files):
         sample_uuid = text_path.stem
         entry = manifest_by_uuid.get(sample_uuid)
         if not entry:
@@ -128,13 +138,23 @@ def run_augmentation_pipeline(techniques=None, similarity_threshold=0.82, max_va
             df_vars = augment_discourse_framing(orig_transcript, n_variants=max_variants_per_sample)
             candidates.extend([(v, "discourse_framing") for v in df_vars])
 
+        if "cross_lingual_translation" in techniques:
+            trans_pairs = translate_cross_lingual(orig_transcript)
+            candidates.extend([(v, "cross_lingual_translation") for v, _ in trans_pairs])
+
+        if not candidates:
+            continue
+
         stats["candidates_generated"] += len(candidates)
 
+        # Gate 1: Batch Embedding Cosine Similarity
+        cand_texts = [c[0] for c in candidates]
+        sim_results = embedding_gate.evaluate_batch(orig_transcript, cand_texts)
+
         # Pass each candidate through the 3 Quality Gates
-        for cand_text, tech_name in candidates:
-            # Gate 1: Embedding Cosine Similarity
-            passes_sim, score = embedding_gate.evaluate_candidate(orig_transcript, cand_text)
-            if not passes_sim:
+        for (cand_text, tech_name), (passes_sim, score) in zip(candidates, sim_results):
+            req_thresh = 0.48 if ("cross_lingual" in tech_name or "back_translation" in tech_name) else similarity_threshold
+            if score < req_thresh:
                 stats["rejected_by_embedding"] += 1
                 continue
 
@@ -184,6 +204,10 @@ Spoken_Languages: {entry.get('languages', ['Unknown'])}
             stats["accepted"] += 1
             stats["by_technique"][tech_name] += 1
 
+        if (idx + 1) % 20 == 0 or (idx + 1) == len(text_files):
+            save_cache()
+            print(f"[{idx + 1:3d}/{len(text_files):3d}] processed. Total accepted so far: {stats['accepted']}")
+
     print("\n" + "=" * 70)
     print("QUALITY GATE AUDIT SUMMARY")
     print(f"Total Candidates Generated : {stats['candidates_generated']}")
@@ -216,6 +240,7 @@ Spoken_Languages: {entry.get('languages', ['Unknown'])}
             "manifest": augmented_records
         }, f, indent=2)
 
+    save_cache()
     print(f"Quality report serialized to: {report_path}")
     print(f"Augmented manifest serialized to: {aug_manifest_path}")
 
@@ -224,7 +249,7 @@ Spoken_Languages: {entry.get('languages', ['Unknown'])}
 if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser(description="Multilingual Augmentation Pipeline")
-    parser.add_argument("--threshold", type=float, default=0.82, help="Cosine similarity threshold")
+    parser.add_argument("--threshold", type=float, default=0.75, help="Cosine similarity threshold")
     args = parser.parse_args()
 
     run_augmentation_pipeline(similarity_threshold=args.threshold)

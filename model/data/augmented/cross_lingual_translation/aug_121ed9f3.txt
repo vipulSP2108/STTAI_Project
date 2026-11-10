@@ -1,0 +1,7 @@
+UUID: aug_121ed9f3
+Parent_UUID: 0f02bad0
+Augmentation_Type: cross_lingual_translation
+Similarity_Score: 0.8371
+Transcript: मैं अपने VPN सत्र आईडी के साथ एक मुद्दा रिपोर्ट करना चाहता था... ... बाहर के वर्ग में लॉगिंग के लिए.
+Target_Label: it_support
+Spoken_Languages: ['English']

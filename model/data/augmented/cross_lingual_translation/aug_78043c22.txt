@@ -1,0 +1,7 @@
+UUID: aug_78043c22
+Parent_UUID: 21df306f
+Augmentation_Type: cross_lingual_translation
+Similarity_Score: 0.7112
+Transcript: हैलो हेडिस, मैं पुस्तकालय में पुस्तक वापस आया, लेकिन मैं इसे अपनी कुर्सी पर कैसे बाहर बनाया, अभी भी अंतिम तल देख?
+Target_Label: student_services
+Spoken_Languages: ['Hindi']

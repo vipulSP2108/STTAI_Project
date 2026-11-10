@@ -1,7 +1,0 @@
-UUID: aug_b6d5a1b2
-Parent_UUID: f26b4776
-Augmentation_Type: lexical_synsets
-Similarity_Score: 0.9106
-Transcript: એમ ા ં વ ા હન પરમ િ શન ઓનલ ા ઇન લ ે વ ી પડ ે ક ે સ િ ક ્ ય ુ ર િ ટ ી ગ ે ટ પર રજ િ સ ્ ટર કર ા વવ ુ ં પડશ ે?
-Target_Label: student_services
-Spoken_Languages: ['Gujarati']

@@ -1,0 +1,7 @@
+UUID: aug_7e7cc104
+Parent_UUID: 0f02bad0
+Augmentation_Type: cross_lingual_translation
+Similarity_Score: 0.708
+Transcript: I wanted to report a point with my VPN session ID to logging into the square out.
+Target_Label: it_support
+Spoken_Languages: ['English']

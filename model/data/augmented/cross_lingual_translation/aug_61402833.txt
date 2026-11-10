@@ -1,0 +1,7 @@
+UUID: aug_61402833
+Parent_UUID: 4ce1eb90
+Augmentation_Type: cross_lingual_translation
+Similarity_Score: 0.8424
+Transcript: हाय, मेरा कार्ड वाँइन डाउनलोड नहीं किया जा रहा है और सर्वर Errrs है, कृपया जटिल पोर्टल की जाँच करें.
+Target_Label: admissions
+Spoken_Languages: ['Hindi']

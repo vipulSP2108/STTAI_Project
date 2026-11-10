@@ -1,0 +1,7 @@
+UUID: aug_e7e51679
+Parent_UUID: 36386821
+Augmentation_Type: discourse_framing
+Similarity_Score: 0.9753
+Transcript: नमस्ते सर, इस बारे में बताएं कि नमस्ते, मैं जागृति पाटिल, मुझे आईआईटी गांधीनगर में एडमिशन लेना है, तो क्या आप मुझे एडमिशन प्रक्रिया और पात्रता मानदंड के बारे में जानकारी दे सकते हैं?
+Target_Label: admissions
+Spoken_Languages: ['Hindi']

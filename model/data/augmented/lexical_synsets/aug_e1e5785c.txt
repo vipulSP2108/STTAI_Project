@@ -1,7 +1,0 @@
-UUID: aug_e1e5785c
-Parent_UUID: fcbb4e59
-Augmentation_Type: lexical_synsets
-Similarity_Score: 0.8997
-Transcript: Hello Addigen Helpdesk i have been doing assignments so i had to check the playlist i have got the library but i haven ' t got the resource centre for a day so what is the process of the next week? and it will come in a few days because the deadline is coming.
-Target_Label: it_support
-Spoken_Languages: ['Hindi']

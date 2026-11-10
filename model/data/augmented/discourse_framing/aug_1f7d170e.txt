@@ -1,7 +1,0 @@
-UUID: aug_1f7d170e
-Parent_UUID: 4774bc58
-Augmentation_Type: discourse_framing
-Similarity_Score: 0.8294
-Transcript: કૃપા કરીને મદદ કરો, નમસ્કાર મેટર્મ ફાર્મ કર્યું હતું પણ માનથી બિલમાં નથી થયું કે
-Target_Label: hostel_mess
-Spoken_Languages: ['Gujarati']

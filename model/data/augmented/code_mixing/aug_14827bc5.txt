@@ -1,7 +1,0 @@
-UUID: aug_14827bc5
-Parent_UUID: c2b6d2c5
-Augmentation_Type: code_mixing
-Similarity_Score: 0.8458
-Transcript: Hello sir, good morning. I would like to know about the admission process for the engineering program and the yogyata criteria.
-Target_Label: admissions
-Spoken_Languages: ['English']

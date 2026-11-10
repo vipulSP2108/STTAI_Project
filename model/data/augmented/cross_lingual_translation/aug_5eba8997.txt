@@ -1,0 +1,7 @@
+UUID: aug_5eba8997
+Parent_UUID: 5487fd4f
+Augmentation_Type: cross_lingual_translation
+Similarity_Score: 0.6292
+Transcript: The name is accepted, I'm calling to ask about a problem in my course. I've made a choice through the student part Portal but the course is not implemented in my registered subject list.
+Target_Label: it_support
+Spoken_Languages: ['English']

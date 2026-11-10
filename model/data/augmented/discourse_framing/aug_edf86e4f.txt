@@ -1,7 +1,0 @@
-UUID: aug_edf86e4f
-Parent_UUID: 36b82481
-Augmentation_Type: discourse_framing
-Similarity_Score: 0.9648
-Transcript: कृपया मार्गदर्शन करें, हेलो आईआईटीजीएन हेल्पडेस्क, मैं एक विज़िटिंग स्टूडेंट हूँ, मेरा कॉशन मनी रिफंड अमाउंट अभी तक अकाउंट में क्रेडिट नहीं हुआ है।
-Target_Label: student_services
-Spoken_Languages: ['Hindi']

@@ -1,0 +1,7 @@
+UUID: aug_0c6c1cd5
+Parent_UUID: 956b8c0c
+Augmentation_Type: cross_lingual_translation
+Similarity_Score: 0.8594
+Transcript: During the year I enter the information for the graduates, they are like 2027, but I wrote down unjustly. I didn't know this mistake and suddenly my information I could read, information. Now it's reference to the website and ran in one time and I can't edit.
+Target_Label: it_support
+Spoken_Languages: ['English']

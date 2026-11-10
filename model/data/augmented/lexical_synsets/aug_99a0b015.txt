@@ -1,7 +1,0 @@
-UUID: aug_99a0b015
-Parent_UUID: 425a609f
-Augmentation_Type: lexical_synsets
-Similarity_Score: 0.9741
-Transcript: support appo. Hello IITGN and help desk. PSD admissions oral evaluation call letter cup released Google website for update kripeer azine support.
-Target_Label: admissions
-Spoken_Languages: ['Hindi']

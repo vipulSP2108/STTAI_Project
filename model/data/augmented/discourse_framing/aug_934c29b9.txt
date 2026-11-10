@@ -1,0 +1,7 @@
+UUID: aug_934c29b9
+Parent_UUID: e7c99b26
+Augmentation_Type: discourse_framing
+Similarity_Score: 0.8631
+Transcript: नमस्ते, कृपया बताइए कि हेलो हेल्पडेस्क, मेरी अटेंडेंस शॉर्टेज दिखा रही है, मेडिकल लीव अप्रूव कराने के लिए मुझे क्या करना होगा?
+Target_Label: student_services
+Spoken_Languages: ['Hindi']

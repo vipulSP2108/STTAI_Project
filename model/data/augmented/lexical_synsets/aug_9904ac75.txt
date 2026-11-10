@@ -1,7 +1,0 @@
-UUID: aug_9904ac75
-Parent_UUID: 12a4def0
-Augmentation_Type: lexical_synsets
-Similarity_Score: 0.952
-Transcript: Could you please share the Third Party Administrator contact number for student health centre insurance cashless claims?
-Target_Label: student_services
-Spoken_Languages: ['English']

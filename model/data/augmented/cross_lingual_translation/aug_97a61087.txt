@@ -1,0 +1,7 @@
+UUID: aug_97a61087
+Parent_UUID: 655238a6
+Augmentation_Type: cross_lingual_translation
+Similarity_Score: 0.7389
+Transcript: Hi, my name is Sugimo and I'm in Suanmo. Last year I was in Peanmo. I can check this place and I'll give you to stay in the same room.
+Target_Label: hostel_mess
+Spoken_Languages: ['English', 'Hindi']

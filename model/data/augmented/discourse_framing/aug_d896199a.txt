@@ -1,7 +1,0 @@
-UUID: aug_d896199a
-Parent_UUID: e1a47e10
-Augmentation_Type: discourse_framing
-Similarity_Score: 0.9493
-Transcript: Please help, I am inquiring about hello IIT Gen. Helidas. Can I audit an additional elective course without it affecting my and stick to the 8 point average
-Target_Label: student_services
-Spoken_Languages: ['English']

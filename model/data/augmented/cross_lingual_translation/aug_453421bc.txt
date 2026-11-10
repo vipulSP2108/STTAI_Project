@@ -1,0 +1,7 @@
+UUID: aug_453421bc
+Parent_UUID: eeea163e
+Augmentation_Type: cross_lingual_translation
+Similarity_Score: 0.6082
+Transcript: હૈલો હેમુલ્સ, તમે ટાઇમર કર રહે છે Buphp રેલવે સ્ટેશન ના કમ્પ બસ સ્ટેશન ની સરાહના કરને ના લિએ?
+Target_Label: student_services
+Spoken_Languages: ['English', 'Hindi']

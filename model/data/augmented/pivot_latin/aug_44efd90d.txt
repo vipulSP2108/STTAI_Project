@@ -1,7 +1,0 @@
-UUID: aug_44efd90d
-Parent_UUID: 0200b1f0
-Augmentation_Type: pivot_latin
-Similarity_Score: 0.9841
-Transcript: Namaskal, IITGN voice inquiry office MTAC computer science eligibility criteria shows Can non gate candidates apply for hidden test?
-Target_Label: admissions
-Spoken_Languages: ['English', 'Hindi']

@@ -1,7 +1,0 @@
-UUID: aug_c666f205
-Parent_UUID: 36b82481
-Augmentation_Type: pivot_latin
-Similarity_Score: 0.9644
-Transcript: Hello IT, GN Inquiry Office I am a visiting student but my Fika Refundable Amount I have not done Refund yet How many days will you be in? Please, audience.
-Target_Label: student_services
-Spoken_Languages: ['Hindi']

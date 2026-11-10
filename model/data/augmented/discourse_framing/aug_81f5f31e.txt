@@ -1,0 +1,7 @@
+UUID: aug_81f5f31e
+Parent_UUID: 939b462d
+Augmentation_Type: discourse_framing
+Similarity_Score: 0.9293
+Transcript: હેલ્પડેસ્ક પર જણાવશો કે નમસ્કાર ડોક્યુમેન્ટ મેન્ડેટર છે કે ઓનલાઇન અપલોડ કરી શકાય
+Target_Label: admissions
+Spoken_Languages: ['Gujarati']

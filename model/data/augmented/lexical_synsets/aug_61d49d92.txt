@@ -1,7 +1,0 @@
-UUID: aug_61d49d92
-Parent_UUID: 464c04af
-Augmentation_Type: lexical_synsets
-Similarity_Score: 0.9232
-Transcript: Hello, Adizyan Hildes. My student housing room has a water leakage problem near the study table. again someone is expected today.
-Target_Label: hostel_mess
-Spoken_Languages: ['English']

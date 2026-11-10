@@ -1,7 +1,0 @@
-UUID: aug_8fdf8933
-Parent_UUID: b572f3d0
-Augmentation_Type: pivot_latin
-Similarity_Score: 0.9076
-Transcript: Hello IITGN Helpdesk, I have a formal solicit regarding student services.
-Target_Label: student_services
-Spoken_Languages: ['English']

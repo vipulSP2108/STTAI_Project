@@ -1,7 +1,0 @@
-UUID: aug_1f3ea4a9
-Parent_UUID: 81392443
-Augmentation_Type: lexical_synsets
-Similarity_Score: 0.8933
-Transcript: After applying for a late entry gate pass on the hostel system, where will the hostel warden approval be displayed?
-Target_Label: hostel_mess
-Spoken_Languages: ['English']

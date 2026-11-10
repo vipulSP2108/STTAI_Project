@@ -1,0 +1,7 @@
+UUID: aug_d634d2e1
+Parent_UUID: 8d3aed99
+Augmentation_Type: cross_lingual_translation
+Similarity_Score: 0.7791
+Transcript: हैलो इमोट्‌स ओमोस्क, मेरा कोर्स पूरा हुआ है लेकिन मैं निश्चित कोर्स पोर्टल पर नहीं किया गया है.
+Target_Label: it_support
+Spoken_Languages: ['Hindi']

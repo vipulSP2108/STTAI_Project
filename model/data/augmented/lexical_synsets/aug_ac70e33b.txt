@@ -1,7 +1,0 @@
-UUID: aug_ac70e33b
-Parent_UUID: 8573e793
-Augmentation_Type: lexical_synsets
-Similarity_Score: 0.9426
-Transcript: Namaste sir, my dear kids, before this, if you are not outside, then in your college campus, is it good to have a good morning or what for girls? Because now if you see outside, then it is not good for girls. And even in hostels, there is also a ragging, so in your campus, that is all right in the hostel. & mace the dietary options is good because it is a salad with a menden & for children, one is a child in the hostel room & the one who is the shadow of his mace अप ् वववव क े स ा ह ै? Grupeya, you tell us and for the kids, if there is a ladies fellowship, then tell us in your college.
-Target_Label: hostel_mess
-Spoken_Languages: ['Hindi']

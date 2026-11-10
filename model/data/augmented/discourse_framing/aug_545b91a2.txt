@@ -1,7 +1,0 @@
-UUID: aug_545b91a2
-Parent_UUID: 89456f27
-Augmentation_Type: discourse_framing
-Similarity_Score: 0.9791
-Transcript: कृपया मार्गदर्शन करें, हेलो हेल्पडेस्क, क्या मैं अपना सेमेस्टर ब्रेक एक्सटेंड करने के लिए डीन एकेडमिक्स को एप्लीकेशन ईमेल कर सकता हूँ?
-Target_Label: it_support
-Spoken_Languages: ['Hindi']

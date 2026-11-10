@@ -1,0 +1,7 @@
+UUID: aug_2f472f6a
+Parent_UUID: 956b8c0c
+Augmentation_Type: cross_lingual_translation
+Similarity_Score: 0.8365
+Transcript: इस बारे में जानकारी भरने के दौरान मैं स्नातक के लिए साल में प्रवेश करता हूँ, वे 2027 की तरह हैं, लेकिन मैं गलत रूप से नीचे नीचे लिखा था. मैं इस गलती को नहीं जानता था और अचानक मेरी जानकारी मैं पढ़ सकता था, जानकारी. अब वेबसाइट का उल्लेख है और एक ही बार में भाग लिया और मैं संपादित नहीं कर सकता.
+Target_Label: it_support
+Spoken_Languages: ['English']

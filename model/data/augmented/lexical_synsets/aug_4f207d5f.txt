@@ -1,7 +1,0 @@
-UUID: aug_4f207d5f
-Parent_UUID: 076e2bba
-Augmentation_Type: lexical_synsets
-Similarity_Score: 0.9294
-Transcript: The washing machine on the second floor of Kaveri student housing block has a severe water drainage blockage.
-Target_Label: hostel_mess
-Spoken_Languages: ['English']

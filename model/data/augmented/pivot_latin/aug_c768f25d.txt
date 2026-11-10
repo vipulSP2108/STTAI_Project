@@ -1,7 +1,0 @@
-UUID: aug_c768f25d
-Parent_UUID: 439472e6
-Augmentation_Type: pivot_latin
-Similarity_Score: 0.9661
-Transcript: Kavayu Parse, Aloha, IDIG and Heldesk, My attendance percentage is discoprensive, Faculty has gone to academic office in grievance notice race.
-Target_Label: student_services
-Spoken_Languages: ['Hindi']

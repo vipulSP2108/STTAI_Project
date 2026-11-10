@@ -1,7 +1,0 @@
-UUID: aug_3995583a
-Parent_UUID: a18ff6b6
-Augmentation_Type: code_mixing
-Similarity_Score: 0.865
-Transcript: I dropped my student identity card near the central pustakalaya, where is the official lost and found register located?
-Target_Label: student_services
-Spoken_Languages: ['English']

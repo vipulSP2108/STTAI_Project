@@ -1,7 +1,0 @@
-UUID: aug_7f3d7f5c
-Parent_UUID: 20de435d
-Augmentation_Type: pivot_latin
-Similarity_Score: 0.9435
-Transcript: Hello scholar services desk, what is the procedure to obtain an official bonafide certificate for passport renewal?
-Target_Label: student_services
-Spoken_Languages: ['English']

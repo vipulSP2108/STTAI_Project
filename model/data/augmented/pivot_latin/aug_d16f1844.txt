@@ -1,7 +1,0 @@
-UUID: aug_d16f1844
-Parent_UUID: cd29a36f
-Augmentation_Type: pivot_latin
-Similarity_Score: 0.9082
-Transcript: Could additional drying racks be installed in the laundry drying area of the domiciliary residence wing?
-Target_Label: hostel_mess
-Spoken_Languages: ['English']

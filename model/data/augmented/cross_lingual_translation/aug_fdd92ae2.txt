@@ -1,0 +1,7 @@
+UUID: aug_fdd92ae2
+Parent_UUID: ef48e8d5
+Augmentation_Type: cross_lingual_translation
+Similarity_Score: 0.7768
+Transcript: नमस्ते हेल्पडेस्क, आईआईटी गांधीनगर केम्पसमां it support अंगे सपोर्ट जोईतो था.
+Target_Label: it_support
+Spoken_Languages: ['Gujarati']

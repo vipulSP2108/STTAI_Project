@@ -1,7 +1,0 @@
-UUID: aug_3e32e595
-Parent_UUID: 77097749
-Augmentation_Type: pivot_latin
-Similarity_Score: 0.9022
-Transcript: I have submitted the application institutional tuition dues for MTech admissions but the transaction status is still showing pending on the dashboard.
-Target_Label: admissions
-Spoken_Languages: ['English']

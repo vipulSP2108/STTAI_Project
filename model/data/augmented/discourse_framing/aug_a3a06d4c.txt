@@ -1,7 +1,0 @@
-UUID: aug_a3a06d4c
-Parent_UUID: 49257af1
-Augmentation_Type: discourse_framing
-Similarity_Score: 0.9762
-Transcript: कृपया मार्गदर्शन करें, हेलो हेल्पडेस्क, मेरे रूम के दरवाजे की कुंडी टूट गई है, कृपया कारपेंटर को तुरंत भेजकर इसे ठीक करवाएं।
-Target_Label: hostel_mess
-Spoken_Languages: ['Hindi']

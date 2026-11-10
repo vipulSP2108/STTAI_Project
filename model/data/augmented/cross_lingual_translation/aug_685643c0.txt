@@ -1,0 +1,7 @@
+UUID: aug_685643c0
+Parent_UUID: 3e75c3b4
+Augmentation_Type: cross_lingual_translation
+Similarity_Score: 0.6491
+Transcript: Hello, the IVEP city Haopsk, is not running login even after reseting the password to the Btakry Portel, can you check?
+Target_Label: it_support
+Spoken_Languages: ['Hindi']

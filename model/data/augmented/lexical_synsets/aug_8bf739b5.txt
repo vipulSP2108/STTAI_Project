@@ -1,0 +1,7 @@
+UUID: aug_8bf739b5
+Parent_UUID: d10bd1d0
+Augmentation_Type: lexical_synsets
+Similarity_Score: 0.9686
+Transcript: Hello IIT General Desk, I missed my end semester exam due to medical emergency, supplementary exam for candidature submission.
+Target_Label: student_services
+Spoken_Languages: ['English']

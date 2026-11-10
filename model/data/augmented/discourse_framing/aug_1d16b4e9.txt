@@ -1,7 +1,0 @@
-UUID: aug_1d16b4e9
-Parent_UUID: a65e688e
-Augmentation_Type: discourse_framing
-Similarity_Score: 0.9821
-Transcript: Hi, I need official assistance with hello Sir, I needed some information about admission in IIT Gandhinagar because my son wants to apply for the BTech curriculum
-Target_Label: admissions
-Spoken_Languages: ['English']

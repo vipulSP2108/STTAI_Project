@@ -1,0 +1,7 @@
+UUID: aug_5a880fd2
+Parent_UUID: 81392443
+Augmentation_Type: pivot_latin
+Similarity_Score: 0.9562
+Transcript: Hello, IITGN inquiry office. My residential hall hostel room has a water leakage problem near the study table.
+Target_Label: hostel_mess
+Spoken_Languages: ['English']

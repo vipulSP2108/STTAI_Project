@@ -1,7 +1,0 @@
-UUID: aug_78528699
-Parent_UUID: 1d8cbbac
-Augmentation_Type: pivot_latin
-Similarity_Score: 0.9623
-Transcript: What documents are required to open a zero-balance candidate savings account at the campus State Bank branch?
-Target_Label: student_services
-Spoken_Languages: ['English']

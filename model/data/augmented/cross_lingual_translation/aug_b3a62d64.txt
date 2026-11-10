@@ -1,0 +1,7 @@
+UUID: aug_b3a62d64
+Parent_UUID: 8d3aed99
+Augmentation_Type: cross_lingual_translation
+Similarity_Score: 0.7005
+Transcript: Hello Imots Ospadsk, my course has been completed but the Ijetive course has not been unplugged on Portal.
+Target_Label: it_support
+Spoken_Languages: ['Hindi']

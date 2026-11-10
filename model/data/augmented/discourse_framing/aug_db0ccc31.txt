@@ -1,7 +1,0 @@
-UUID: aug_db0ccc31
-Parent_UUID: ed2662e9
-Augmentation_Type: discourse_framing
-Similarity_Score: 0.9779
-Transcript: नमस्ते, कृपया बताइए कि हेलो आईटी सपोर्ट, आईएमएस पोर्टल पर लॉगिन करते समय लगातार ऑथराइजेशन एरर आ रहा है, कृपया मेरा अकाउंट स्टेटस रीसेट कर दीजिए।
-Target_Label: it_support
-Spoken_Languages: ['Hindi']

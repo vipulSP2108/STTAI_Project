@@ -1,0 +1,7 @@
+UUID: aug_3f076659
+Parent_UUID: 474ebc19
+Augmentation_Type: discourse_framing
+Similarity_Score: 0.9593
+Transcript: मेरा सवाल यह है कि नमस्ते, क्या पारिवारिक आय के आधार पर ट्यूशन फीस में छूट या आर्थिक सहायता प्राप्त करने की कोई योजना उपलब्ध है?
+Target_Label: student_services
+Spoken_Languages: ['Hindi']

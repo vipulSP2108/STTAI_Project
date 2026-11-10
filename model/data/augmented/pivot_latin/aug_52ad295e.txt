@@ -1,7 +1,0 @@
-UUID: aug_52ad295e
-Parent_UUID: 464c04af
-Augmentation_Type: pivot_latin
-Similarity_Score: 0.9666
-Transcript: Hello, Adizyan Hildes. My hostel assigned quarters has a water leakage problem near the study table. again someone is expected today.
-Target_Label: hostel_mess
-Spoken_Languages: ['English']

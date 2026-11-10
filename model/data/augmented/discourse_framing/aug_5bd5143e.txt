@@ -1,7 +1,0 @@
-UUID: aug_5bd5143e
-Parent_UUID: 72d8567d
-Augmentation_Type: discourse_framing
-Similarity_Score: 0.9706
-Transcript: Greetings, I wanted to confirm whether hello, I am calling regarding the upcoming convocation ceremony. My son has completed his degree and I wanted to ask about guest passes
-Target_Label: student_services
-Spoken_Languages: ['English']

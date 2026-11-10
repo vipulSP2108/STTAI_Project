@@ -1,0 +1,7 @@
+UUID: aug_32d6a2d1
+Parent_UUID: f05db76e
+Augmentation_Type: cross_lingual_translation
+Similarity_Score: 0.4987
+Transcript: नमस्कारआईटीजी हॉलस्क, MD-Sovorme Emon एक जटिल पोर्टल के लिए अपलोड करेगा, क्या आप लिंक तैयार कर सकते हैं?
+Target_Label: student_services
+Spoken_Languages: ['Hindi']

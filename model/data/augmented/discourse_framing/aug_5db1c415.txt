@@ -1,7 +1,0 @@
-UUID: aug_5db1c415
-Parent_UUID: 46d483f3
-Augmentation_Type: discourse_framing
-Similarity_Score: 0.975
-Transcript: नमस्ते, कृपया बताइए कि नमस्कार आईआईटी गांधीनगर हेल्पडेस्क, क्या डायरेक्ट पीएचडी एडमिशन के लिए गेट स्कोर के बिना भी आवेदन किया जा सकता है?
-Target_Label: admissions
-Spoken_Languages: ['Hindi']

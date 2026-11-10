@@ -1,0 +1,7 @@
+UUID: aug_af65de8d
+Parent_UUID: 49257af1
+Augmentation_Type: cross_lingual_translation
+Similarity_Score: 0.6331
+Transcript: Hello, Haidepsk, the pool of my room is broken down; please send and repair it immediately.
+Target_Label: hostel_mess
+Spoken_Languages: ['Hindi']

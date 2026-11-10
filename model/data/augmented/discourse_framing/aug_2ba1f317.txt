@@ -1,7 +1,0 @@
-UUID: aug_2ba1f317
-Parent_UUID: 2a935d62
-Augmentation_Type: discourse_framing
-Similarity_Score: 0.9565
-Transcript: Please help, I am inquiring about hello, IITGN Helpdesk. My laboratory access card stopped working even though my project tenure is valid until next semester
-Target_Label: student_services
-Spoken_Languages: ['English']

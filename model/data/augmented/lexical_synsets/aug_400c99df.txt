@@ -1,7 +1,0 @@
-UUID: aug_400c99df
-Parent_UUID: a65e688e
-Augmentation_Type: lexical_synsets
-Similarity_Score: 0.9379
-Transcript: Hello Sir, I needed some information about application process in IIT Gandhinagar because my son wants to apply for the BTech curriculum.
-Target_Label: admissions
-Spoken_Languages: ['English']

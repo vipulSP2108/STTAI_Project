@@ -1,0 +1,7 @@
+UUID: aug_1f4fb7fc
+Parent_UUID: 3fa7f104
+Augmentation_Type: lexical_synsets
+Similarity_Score: 0.9605
+Transcript: Hello, good morning. I am a second year BTech mechanical engineering student. I am facing an issue logging into the MATLAB campus license intranet page.
+Target_Label: it_support
+Spoken_Languages: ['English']

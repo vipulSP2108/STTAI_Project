@@ -1,0 +1,7 @@
+UUID: aug_2d650c4c
+Parent_UUID: 46d483f3
+Augmentation_Type: cross_lingual_translation
+Similarity_Score: 0.4884
+Transcript: Hello IVEP city city Haoptedsk, can you be applied without the gate score for the X-Eye Adams?
+Target_Label: admissions
+Spoken_Languages: ['Hindi']

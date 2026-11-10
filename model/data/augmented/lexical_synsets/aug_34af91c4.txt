@@ -1,7 +1,0 @@
-UUID: aug_34af91c4
-Parent_UUID: 474ebc19
-Augmentation_Type: lexical_synsets
-Similarity_Score: 0.876
-Transcript: अपन े पर ा शत े पर ा शत े पर पर ھا چک آیا کہ آدھر پر ٹیوشن پی میں چھوٹ یا آرٹیک سائیتا دی جا سکتی ہے ھئی اس لیے آئی پر مان پتر آور انہیں کوئی دستا بے جو کی آوشکتا ہے ھئیہ ستر رتی کے لیے چشورتی کے لیے آبیدن آدمیشن کے طورنگ بات کرنا ہوتا ہے یا اس کے لیے الگ سمائی نیرداریت ہوتی ہے म ै ं یہ بھی ज ा न न े न ा न ा च ा त ा ह ु क े आरत ि च ा य े त ा म ि ल े क पर अचटल य ा म े ं स क े अचर ् च ो म े ं चप ी मद ँ त म ि ल सकत ी ह ै य ा नह ी ं प ् र ु प ा समद ि त व ि व ा ँ चव ् र ू त व ि व ा ँ चव ् र ू त व ि व ा ँ च ा ँ क ी ज ा न क ा र ी हम े ं द े Taki, hum patra aur amedan ki viy prakiriyaa se sayi dang se samadle, hiske baare mein aap rukaya kaaya mein margudarshan ki jee.
-Target_Label: student_services
-Spoken_Languages: ['Hindi']

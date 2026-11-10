@@ -1,7 +1,0 @@
-UUID: aug_1cae3538
-Parent_UUID: 12a4def0
-Augmentation_Type: lexical_synsets
-Similarity_Score: 0.9244
-Transcript: Could you please share the Third Party Administrator contact number for student campus dispensary insurance cashless claims?
-Target_Label: student_services
-Spoken_Languages: ['English']

@@ -1,7 +1,0 @@
-UUID: aug_9c1bb0d1
-Parent_UUID: fc3d3348
-Augmentation_Type: pivot_latin
-Similarity_Score: 0.9826
-Transcript: Hello ITGN Health Desk Institute Open House Session Cup Organize Over for newly admitted students and parents. Kurupeya, Pressing, facilitation, APO.
-Target_Label: student_services
-Spoken_Languages: ['Hindi']

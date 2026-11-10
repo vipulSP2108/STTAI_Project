@@ -1,7 +1,0 @@
-UUID: aug_2f10d27e
-Parent_UUID: 81392443
-Augmentation_Type: code_mixing
-Similarity_Score: 0.9771
-Transcript: After applying for a late entry gate pass on the hostel website login, where will the caretaker approval be displayed?
-Target_Label: hostel_mess
-Spoken_Languages: ['English']

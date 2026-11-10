@@ -1,0 +1,7 @@
+UUID: aug_efb85cd1
+Parent_UUID: f9e8a369
+Augmentation_Type: discourse_framing
+Similarity_Score: 0.971
+Transcript: Hi, I need official assistance with portal. Hello, IIT June Helpdesk. I need an official medium of instruction certificate from my master's application abroad. How can I request one?
+Target_Label: student_services
+Spoken_Languages: ['English']

@@ -1,7 +1,0 @@
-UUID: aug_cd2a1f57
-Parent_UUID: f53d4330
-Augmentation_Type: lexical_synsets
-Similarity_Score: 0.9569
-Transcript: Hello, iDGN help desk i had to go to know how to do hostel development and i had to go to single room, double dorm room, triple kamra i had to choose the roommates ok.
-Target_Label: hostel_mess
-Spoken_Languages: ['Hindi']

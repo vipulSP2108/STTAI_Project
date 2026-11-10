@@ -1,7 +1,0 @@
-UUID: aug_00e1bff0
-Parent_UUID: 0cdb1ca4
-Augmentation_Type: lexical_synsets
-Similarity_Score: 0.9001
-Transcript: For how many consecutive days can reference books from the resource centre reserve section be issued?
-Target_Label: student_services
-Spoken_Languages: ['English']

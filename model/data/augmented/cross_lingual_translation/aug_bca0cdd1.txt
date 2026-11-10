@@ -1,0 +1,7 @@
+UUID: aug_bca0cdd1
+Parent_UUID: 8c459ce2
+Augmentation_Type: cross_lingual_translation
+Similarity_Score: 0.8786
+Transcript: नमस्कार Adananan, यह वह बिस्तर है जो मैं मिल गया है और उसके बहुत छोटा है, मैं एक बड़ा बिस्तर मिल सकता है.
+Target_Label: hostel_mess
+Spoken_Languages: ['English', 'Hindi']

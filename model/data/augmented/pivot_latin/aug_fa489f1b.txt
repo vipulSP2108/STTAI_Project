@@ -1,7 +1,0 @@
-UUID: aug_fa489f1b
-Parent_UUID: 49257af1
-Augmentation_Type: pivot_latin
-Similarity_Score: 0.9645
-Transcript: Hello, I am Dijan, my room's kundi, the tourney of the tourney has been out for a while so I had to go to school and the same operational complication is being issued in the cover so you can take the next two to three days.
-Target_Label: hostel_mess
-Spoken_Languages: ['Hindi']

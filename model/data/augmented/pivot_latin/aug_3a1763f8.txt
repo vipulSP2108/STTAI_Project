@@ -1,7 +1,0 @@
-UUID: aug_3a1763f8
-Parent_UUID: d9178793
-Augmentation_Type: pivot_latin
-Similarity_Score: 0.9081
-Transcript: breaks. Hello IITGN help disc my candidate portal keeps logging me out every few minutes. Even after clearing the browser cache, can IIT investigate.
-Target_Label: it_support
-Spoken_Languages: ['English']

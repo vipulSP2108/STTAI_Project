@@ -1,0 +1,7 @@
+UUID: aug_e66fac2f
+Parent_UUID: 75523327
+Augmentation_Type: cross_lingual_translation
+Similarity_Score: 0.6228
+Transcript: નમસ્તે, હોસ્ટેલ કૉરિડોર માં એગ્જૉસ્ટ ફૈન નથી ચલ રહા છે જિસસે બહુત ગર્મી હો રહી છે, ઇલેક્ટ્રીશિયન કો ચેક કરવાએં૤
+Target_Label: it_support
+Spoken_Languages: ['English', 'Hindi']

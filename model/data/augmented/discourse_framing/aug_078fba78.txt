@@ -1,0 +1,7 @@
+UUID: aug_078fba78
+Parent_UUID: c04a96c4
+Augmentation_Type: discourse_framing
+Similarity_Score: 0.9275
+Transcript: નમસ્તે, મારે જાણવું છે કે નમસ્કાર ફોર્મ કયું હતું રિફ્લેક્ટ
+Target_Label: hostel_mess
+Spoken_Languages: ['Gujarati']

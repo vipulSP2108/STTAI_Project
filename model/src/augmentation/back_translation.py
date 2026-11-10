@@ -16,12 +16,17 @@ from typing import List, Dict
 
 # Syntactic clause patterns for back-translation simulation
 SYNTACTIC_REORDER_RULES = [
-    # Question inversion
-    (r"^(kya|shu)\s+(.+)\?$", r"\2 \1?", 0.7),
-    (r"^is there any (.+)\?$", r"can I get information regarding \1?", 0.6),
-    (r"^i want to know (.+)$", r"could you please clarify \1", 0.7),
-    (r"^mujhe (.+) ke baare mein jaankari chahiye$", r"kripya \1 ke baare mein bataiye", 0.8),
-    (r"^mane (.+) ange mahiti aapo$", r"krupya \1 vishe mahiti aapi shaksho", 0.8),
+    # Question inversion & clause restructuring
+    (r"\b(kya|shu)\s+([^?.!,]+)\?", r"\2 \1?", 0.7),
+    (r"\bis there any ([^?.!,]+)\?", r"can I get information regarding \1?", 0.7),
+    (r"\bi want to know ([^?.!,]+)", r"could you please clarify \1", 0.7),
+    (r"\bmujhe ([^?.!,]+) ke baare mein jaankari chahiye\b", r"kripya \1 ke baare mein bataiye", 0.8),
+    (r"\bmane ([^?.!,]+) ange mahiti aapo\b", r"krupya \1 vishe mahiti aapi shaksho", 0.8),
+    (r"\bcan i get ([^?.!,]+)\b", r"is it possible to receive \1", 0.7),
+    (r"\bhow can i ([^?.!,]+)\b", r"what is the procedure to \1", 0.7),
+    (r"\bwho should i contact for ([^?.!,]+)\b", r"which office handles \1", 0.7),
+    (r"\bmujhe ([^?.!,]+) chahiye\b", r"\1 ki aavashyakta hai", 0.7),
+    (r"\bmane ([^?.!,]+) joiye chhe\b", r"\1 ni jarur chhe", 0.7)
 ]
 
 # Honorific & verb inflection shifts common in translation loops

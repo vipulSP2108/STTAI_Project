@@ -1,7 +1,0 @@
-UUID: aug_5981fa98
-Parent_UUID: 1d8cbbac
-Augmentation_Type: pivot_latin
-Similarity_Score: 0.9457
-Transcript: What documents are required to open a zero-balance scholar savings account at the campus State Bank branch?
-Target_Label: student_services
-Spoken_Languages: ['English']

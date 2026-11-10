@@ -1,0 +1,7 @@
+UUID: aug_c0eeea11
+Parent_UUID: a1384ddc
+Augmentation_Type: cross_lingual_translation
+Similarity_Score: 0.6618
+Transcript: नमस्कार मारे संस्थाना होस्ता के लिए मंजूरी लई पडे हैं मातापी ते समये समय होय हैं तो ते सुर दिकरीने मळवा आवे त्यारे कोई नक्की करेली मुलाकातनी प्रक्रिया होय हैं हम बीजा शहेरमांथ करी.
+Target_Label: hostel_mess
+Spoken_Languages: ['Gujarati']

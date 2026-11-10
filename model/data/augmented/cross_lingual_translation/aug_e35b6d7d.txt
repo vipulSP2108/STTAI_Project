@@ -1,0 +1,7 @@
+UUID: aug_e35b6d7d
+Parent_UUID: a65e688e
+Augmentation_Type: cross_lingual_translation
+Similarity_Score: 0.5365
+Transcript: Hello, I need some information about entering into the Eyyneang because my son wants to apply for a Bat-way course.
+Target_Label: admissions
+Spoken_Languages: ['English']

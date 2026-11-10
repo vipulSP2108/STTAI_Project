@@ -1,0 +1,7 @@
+UUID: aug_b6a0b88b
+Parent_UUID: 474ebc19
+Augmentation_Type: lexical_synsets
+Similarity_Score: 0.7109
+Transcript: नमस ् त े, क ् य ा प ा र ि व ा र ि क आय क े आध ा र पर ट ् य ू शन फ ी स म े ं छ ू ट य ा आर ् थ ि क सह ा यत ा प ् र ा प ् त करन े क ी क ो ई य ो जन ा उपलब ् ध ह ै?
+Target_Label: student_services
+Spoken_Languages: ['Hindi']

@@ -1,7 +1,0 @@
-UUID: aug_b3c35609
-Parent_UUID: 7c69dee1
-Augmentation_Type: discourse_framing
-Similarity_Score: 0.9302
-Transcript: Sir, I have a quick inquiry regarding hello Helpdesk, I need assistance with updating my emergency contact details and resetting my Wi-Fi access credentials on the institute portal
-Target_Label: it_support
-Spoken_Languages: ['English', 'Hindi']

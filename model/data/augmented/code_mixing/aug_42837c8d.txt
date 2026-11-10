@@ -1,7 +1,0 @@
-UUID: aug_42837c8d
-Parent_UUID: 36386821
-Augmentation_Type: code_mixing
-Similarity_Score: 0.9357
-Transcript: Hello, Hello Assnesh, I am Jagurudhi Patil, I am aayatee Gandhina, I am an Archive department, I have to take pravesh. ھa ھa ھاں میں ہوڑھاں میں ہوڑھاں میں ہوڑھاں میں ہوڑھاں میں ہوڑھاں میں ہوڑھاں میں ہوڑھاں میں ہوڑھاں میں ہوڑھاں میں ہوڑھاں میں ہوڑھاں میں ہوڑھاں میں ہوڑھاں میں ہوڑھاں میں ہوڑھاں میں ہوڑھاں میں ہوڑھاں میں ہوڑھاں میں ہوڑھاں میں ہوڑھاں میں ہوڑھاں میں ہوڑھاں میں ہوڑھاں میں ہوڑھاں میں ہوڑھاں میں ہوڑھاں میں ہوڑھاں میں ہو.
-Target_Label: admissions
-Spoken_Languages: ['Hindi']

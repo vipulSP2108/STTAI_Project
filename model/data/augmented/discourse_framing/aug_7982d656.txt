@@ -1,7 +1,0 @@
-UUID: aug_7982d656
-Parent_UUID: c521bf2d
-Augmentation_Type: discourse_framing
-Similarity_Score: 0.9595
-Transcript: मेरा सवाल यह है कि हेलो आईआईटीजीएन हेल्पडेस्क, मिड-सेमेस्टर एग्जाम के लिए कंप्यूटर लैब सिस्टम में पायथन और आर सॉफ्टवेयर पैकेज इंस्टॉल करवाने हैं।
-Target_Label: it_support
-Spoken_Languages: ['Hindi']

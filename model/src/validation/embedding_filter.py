@@ -14,7 +14,7 @@ import torch
 from sentence_transformers import SentenceTransformer, util
 
 class EmbeddingSimilarityGate:
-    def __init__(self, model_name: str = "all-MiniLM-L6-v2", threshold: float = 0.82, device: str = None):
+    def __init__(self, model_name: str = "paraphrase-multilingual-MiniLM-L12-v2", threshold: float = 0.75, device: str = None):
         self.threshold = threshold
         if device is None:
             self.device = "mps" if torch.backends.mps.is_available() else "cpu"
@@ -35,6 +35,21 @@ class EmbeddingSimilarityGate:
         
         passes = bool(similarity >= self.threshold)
         return passes, round(similarity, 4)
+
+    def evaluate_batch(self, original_text: str, candidates: List[str]) -> List[Tuple[bool, float]]:
+        """Batch evaluates cosine similarities for multiple candidates against the original text in ONE forward pass."""
+        if not candidates:
+            return []
+        
+        orig_emb = self.model.encode([original_text], convert_to_tensor=True, show_progress_bar=False)
+        cand_embs = self.model.encode(candidates, convert_to_tensor=True, show_progress_bar=False)
+        sims = util.cos_sim(orig_emb, cand_embs)[0].cpu().tolist()
+        
+        results = []
+        for s in sims:
+            passes = bool(s >= self.threshold)
+            results.append((passes, round(s, 4)))
+        return results
 
     def filter_candidates(self, original_text: str, candidates: List[str]) -> List[Tuple[str, float]]:
         """Filters a list of candidate strings, returning only those passing threshold."""

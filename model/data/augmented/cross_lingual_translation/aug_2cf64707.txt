@@ -1,0 +1,7 @@
+UUID: aug_2cf64707
+Parent_UUID: 778eedb3
+Augmentation_Type: cross_lingual_translation
+Similarity_Score: 0.757
+Transcript: नमस्कार IILENTCogak, मेरे मेजबान कक्ष गर्म पानी आपूर्ति पिछले दो दिनों के लिए उपलब्ध नहीं है. कृपया रखदा टीम इस में देखो.
+Target_Label: hostel_mess
+Spoken_Languages: ['English', 'Hindi']

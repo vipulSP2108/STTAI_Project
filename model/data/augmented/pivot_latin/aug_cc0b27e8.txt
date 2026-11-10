@@ -1,7 +1,0 @@
-UUID: aug_cc0b27e8
-Parent_UUID: 30beb45f
-Augmentation_Type: pivot_latin
-Similarity_Score: 0.9248
-Transcript: Hello, I wanted to contact student affairs because currently in my domiciliary residence wing the hot water supply is not working in the morning.
-Target_Label: hostel_mess
-Spoken_Languages: ['English']

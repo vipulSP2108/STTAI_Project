@@ -1,0 +1,7 @@
+UUID: aug_23ad9c6f
+Parent_UUID: c0e3befd
+Augmentation_Type: discourse_framing
+Similarity_Score: 0.9514
+Transcript: हेल्पडेस्क से सहायता चाहिए, नमस्ते, मेस बिल में एक्स्ट्रा डाइट का चार्ज गलत जुड़ गया है, इसे रेक्टिफाई कराने के लिए किससे संपर्क करें?
+Target_Label: student_services
+Spoken_Languages: ['English', 'Hindi']

@@ -1,7 +1,0 @@
-UUID: aug_174ad9d8
-Parent_UUID: 72d8567d
-Augmentation_Type: code_mixing
-Similarity_Score: 0.9294
-Transcript: When is the student affairs office open for countersigning the Indian Railway student concession aavedan patra?
-Target_Label: student_services
-Spoken_Languages: ['English']

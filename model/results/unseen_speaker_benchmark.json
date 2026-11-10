@@ -1,62 +1,62 @@
 {
-  "timestamp": "2026-11-10T09:23:55.285127",
+  "timestamp": "2026-11-10T11:02:37.997427",
   "total_test_samples": 36,
   "overall_metrics": {
-    "accuracy": 0.6111,
-    "macro_precision": 0.6813,
-    "macro_recall": 0.6293,
-    "macro_f1": 0.6347,
-    "weighted_f1": 0.6078,
+    "accuracy": 0.75,
+    "macro_precision": 0.7604,
+    "macro_recall": 0.7699,
+    "macro_f1": 0.7599,
+    "weighted_f1": 0.745,
     "per_class": {
       "admissions": {
-        "precision": 0.625,
+        "precision": 0.7143,
         "recall": 0.625,
-        "f1_score": 0.625,
+        "f1_score": 0.6667,
         "support": 8
       },
       "hostel_mess": {
-        "precision": 0.8,
-        "recall": 0.4,
-        "f1_score": 0.5333,
-        "support": 10
+        "precision": 0.6923,
+        "recall": 0.8182,
+        "f1_score": 0.75,
+        "support": 11
       },
       "it_support": {
-        "precision": 0.8,
-        "recall": 0.8,
-        "f1_score": 0.8,
-        "support": 5
+        "precision": 0.8571,
+        "recall": 1.0,
+        "f1_score": 0.9231,
+        "support": 6
       },
       "student_services": {
-        "precision": 0.5,
-        "recall": 0.6923,
-        "f1_score": 0.5806,
-        "support": 13
+        "precision": 0.7778,
+        "recall": 0.6364,
+        "f1_score": 0.7,
+        "support": 11
       }
     },
     "confusion_matrix": [
       [
         5,
-        0,
-        0,
-        3
-      ],
-      [
+        2,
         1,
-        4,
+        0
+      ],
+      [
         0,
-        5
+        9,
+        0,
+        2
       ],
       [
         0,
         0,
-        4,
-        1
+        6,
+        0
       ],
       [
         2,
-        1,
-        1,
-        9
+        2,
+        0,
+        7
       ]
     ],
     "labels": [
@@ -67,25 +67,20 @@
     ]
   },
   "language_slices": {
-    "Pure Hindi": {
-      "sample_count": 13,
-      "accuracy": 0.6154,
-      "macro_f1": 0.6486
-    },
-    "Code-Mixed": {
-      "sample_count": 5,
-      "accuracy": 0.6,
-      "macro_f1": 0.4167
-    },
     "Pure English": {
-      "sample_count": 14,
-      "accuracy": 0.6429,
-      "macro_f1": 0.3842
+      "sample_count": 16,
+      "accuracy": 0.75,
+      "macro_f1": 0.7165
     },
     "Pure Gujarati": {
-      "sample_count": 4,
-      "accuracy": 0.5,
-      "macro_f1": 0.3889
+      "sample_count": 8,
+      "accuracy": 0.625,
+      "macro_f1": 0.6349
+    },
+    "Pure Hindi": {
+      "sample_count": 12,
+      "accuracy": 0.8333,
+      "macro_f1": 0.8667
     }
   }
 }

@@ -1,7 +1,0 @@
-UUID: aug_d3761b9a
-Parent_UUID: 688c7015
-Augmentation_Type: lexical_synsets
-Similarity_Score: 0.8272
-Transcript: I need to submit a room change candidature submission on health centre grounds, please share the approval protocol.
-Target_Label: hostel_mess
-Spoken_Languages: ['English']

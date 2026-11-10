@@ -1,0 +1,7 @@
+UUID: aug_9037eefb
+Parent_UUID: dc815fe7
+Augmentation_Type: cross_lingual_translation
+Similarity_Score: 0.5073
+Transcript: હાય, મારું ભુગતાની કો IVACTCK ના લિએ મહીને હોના જોઈએ, છે હોસ્ટા અધ્યયન ટેબલ અને ઇંટરનેટ પહુઁચ ની સ્નાન વસ્તુ છે?
+Target_Label: admissions
+Spoken_Languages: ['Gujarati']

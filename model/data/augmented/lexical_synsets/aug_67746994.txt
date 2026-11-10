@@ -1,7 +1,0 @@
-UUID: aug_67746994
-Parent_UUID: a1384ddc
-Augmentation_Type: lexical_synsets
-Similarity_Score: 0.9317
-Transcript: નમસ ્ ક ા ર મ ા ર ે સ ં સ ્ થ ા ન ા હ ો સ ્ ત ા મ ા ટ ે મ ં જ ૂ ર ી લઈ પડ ે છ ે મ ા ત ા પ ી ત ે સમય ે સમય હ ો ય છ ે ત ો ત ે સ ુ ર દ િ કર ી ન ે મળવ ા આવ ે ત ્ ય ા ર ે ક ો ઈ નક ્ ક ી કર ે લ ી મ ુ લ ા ક ા તન ી પ ્ રક ્ ર િ ય ા હ ો ય છ ે અમ ે બ ી જ ા શહ ે રમ ા ં થ કર ી.
-Target_Label: hostel_mess
-Spoken_Languages: ['Gujarati']

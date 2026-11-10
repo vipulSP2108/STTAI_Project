@@ -1,7 +1,0 @@
-UUID: aug_b5728e27
-Parent_UUID: b82c9074
-Augmentation_Type: discourse_framing
-Similarity_Score: 0.9851
-Transcript: Hello helpdesk, could you please clarify hello, IITGN Helpdesk. I will have to change my room partner and you both have to change the look partner. Hello, IITGN Helpdesk. My table is broken. My table is broken
-Target_Label: hostel_mess
-Spoken_Languages: ['English']

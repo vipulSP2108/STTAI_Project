@@ -1,7 +1,0 @@
-UUID: aug_47127f0d
-Parent_UUID: 4fcca39a
-Augmentation_Type: discourse_framing
-Similarity_Score: 0.9783
-Transcript: Hi, I need official assistance with hello, I am a research scholar from the biological engineering department. I am calling to report an issue with the high-performance computing cluster connection
-Target_Label: it_support
-Spoken_Languages: ['English']

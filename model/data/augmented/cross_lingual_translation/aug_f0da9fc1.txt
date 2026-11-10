@@ -1,0 +1,7 @@
+UUID: aug_f0da9fc1
+Parent_UUID: fce68504
+Augmentation_Type: cross_lingual_translation
+Similarity_Score: 0.6376
+Transcript: Hi, Hallel Balney's door is bad, put it to the bottomless floor today.
+Target_Label: student_services
+Spoken_Languages: ['Hindi']

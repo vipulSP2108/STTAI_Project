@@ -1,0 +1,7 @@
+UUID: aug_9ddfc962
+Parent_UUID: 8babce3b
+Augmentation_Type: cross_lingual_translation
+Similarity_Score: 0.9946
+Transcript: અપ્રેભી બાર ભી ભી ભ 7% Simular 7% So, in order to reduce the risk of getting a job I can do whatever I want to do And I have no problem in this mission I have no idea what to do.
+Target_Label: student_services
+Spoken_Languages: ['Hindi']

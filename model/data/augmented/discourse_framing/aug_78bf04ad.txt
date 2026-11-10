@@ -1,0 +1,7 @@
+UUID: aug_78bf04ad
+Parent_UUID: 6ba25efe
+Augmentation_Type: discourse_framing
+Similarity_Score: 0.9752
+Transcript: हेल्पडेस्क से सहायता चाहिए, हेलो आईआईटीजीएन हेल्पडेस्क, हमने कैंपस क्लीन-अप ड्राइव आयोजित की है, वेस्ट सेग्रीगेशन बिन्स के लिए एडमिनिस्ट्रेशन से परमिशन कैसे लें?
+Target_Label: student_services
+Spoken_Languages: ['Hindi']

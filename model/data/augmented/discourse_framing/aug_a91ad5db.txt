@@ -1,7 +1,0 @@
-UUID: aug_a91ad5db
-Parent_UUID: 504d281f
-Augmentation_Type: discourse_framing
-Similarity_Score: 0.9443
-Transcript: મારો પ્રશ્ન એવો છે કે નમસ્કાર હુમારી દીકરીના એન્ડમિશન અને સીટ કન્ફર્મ કરવાની પ્રક્રિયા સમજવા માંગો છો એન્જિ પછી સંસ્થાની ફીમા સમાયેશની સત્તાવાર માહિતી કેઠાથી મેળવી તે સમજાવશો
-Target_Label: admissions
-Spoken_Languages: ['Gujarati']

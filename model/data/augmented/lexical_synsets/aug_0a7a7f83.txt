@@ -1,7 +1,0 @@
-UUID: aug_0a7a7f83
-Parent_UUID: ef48e8d5
-Augmentation_Type: lexical_synsets
-Similarity_Score: 0.8679
-Transcript: આઇટ ી હ ે લ ્ પડ ે સ ્ ક નમ ્ ર વ િ ન ં ત ી છ ે ક ે એચપ ી સ ી ડ ે ટ ા સ ે ન ્ ટરમ ા ં ક ્ લસ ્ ટર એક ્ સ ે સ ક ્ વ ો ટ ા સ ો લ ્ વ કરવ ા મ ા ટ ે ટ િ ક િ ટ અપડ ે ટ કર ો.
-Target_Label: it_support
-Spoken_Languages: ['Gujarati']

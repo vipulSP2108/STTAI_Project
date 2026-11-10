@@ -1,7 +1,0 @@
-UUID: aug_feb26a8f
-Parent_UUID: 8d3aed99
-Augmentation_Type: lexical_synsets
-Similarity_Score: 0.9177
-Transcript: Hello IDGN Hilbes, my course registration has gone but the ERP intranet page is not showing the subject. Please check.
-Target_Label: it_support
-Spoken_Languages: ['Hindi']

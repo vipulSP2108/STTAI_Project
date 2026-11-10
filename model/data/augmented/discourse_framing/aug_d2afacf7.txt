@@ -1,7 +1,0 @@
-UUID: aug_d2afacf7
-Parent_UUID: fed4057d
-Augmentation_Type: discourse_framing
-Similarity_Score: 0.9599
-Transcript: નમસ્તે, મારે જાણવું છે કે હેલો આઈઆઈટીજીએન હેલ્પડેસ્ક, ક્રેડિટ રિક્વાયરમેન્ટ પૂરી કરવા માટે મિનિમમ સીપીઆઈ કેટલો હોવો જોઈએ?
-Target_Label: student_services
-Spoken_Languages: ['Gujarati']

@@ -1,0 +1,7 @@
+UUID: aug_e955a429
+Parent_UUID: b41b3143
+Augmentation_Type: discourse_framing
+Similarity_Score: 0.8531
+Transcript: હેલ્પડેસ્ક પર જણાવશો કે સપોર્ટ આપો નમસ્કાર આઇએટ ગાંધીનગંબ વોઈસ હેલ્પ એડમિશન ઓફિસ ડિરેક્ટ કોન્ટેક્ટ નંબર શું
+Target_Label: admissions
+Spoken_Languages: ['Gujarati']

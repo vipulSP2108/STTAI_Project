@@ -1,7 +1,0 @@
-UUID: aug_c27a1776
-Parent_UUID: 944528c0
-Augmentation_Type: lexical_synsets
-Similarity_Score: 0.9416
-Transcript: Has the registration deadline for the inter-college annual athletic ground meet been extended till next Monday?
-Target_Label: student_services
-Spoken_Languages: ['English']

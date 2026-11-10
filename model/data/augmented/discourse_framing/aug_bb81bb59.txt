@@ -1,0 +1,7 @@
+UUID: aug_bb81bb59
+Parent_UUID: fcbb4e59
+Augmentation_Type: discourse_framing
+Similarity_Score: 0.9747
+Transcript: हेल्पडेस्क से सहायता चाहिए, हेलो आईआईटीजीएन हेल्पडेस्क, मैं असाइनमेंट सबमिट कर रहा था लेकिन मूडल पोर्टल पर नेटवर्क टाइमआउट एरर आ रहा है, कृपया सर्वर चेक करें।
+Target_Label: it_support
+Spoken_Languages: ['Hindi']

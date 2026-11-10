@@ -1,7 +1,0 @@
-UUID: aug_faf8d202
-Parent_UUID: a33dc7af
-Augmentation_Type: lexical_synsets
-Similarity_Score: 0.9585
-Transcript: Hello sir, I want to ask something about my son ' s hostel and dietary options arrangements If he gets application process in the IITIk on the nether He will study away from home for the first time So it is important for us to know that the Bagan kids of students living in the hostel. How was the facility and how was the arrangement? So please give me about About the information about this.
-Target_Label: hostel_mess
-Spoken_Languages: ['English']

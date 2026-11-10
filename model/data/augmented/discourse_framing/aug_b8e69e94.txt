@@ -1,0 +1,7 @@
+UUID: aug_b8e69e94
+Parent_UUID: 9d9262af
+Augmentation_Type: discourse_framing
+Similarity_Score: 0.9695
+Transcript: नमस्ते सर, इस बारे में बताएं कि नमस्ते सर, मुझे एडमिशन के समय जमा किए जाने वाले माइग्रेशन सर्टिफिकेट और कैरेक्टर सर्टिफिकेट के बारे में जानकारी चाहिए।
+Target_Label: admissions
+Spoken_Languages: ['Hindi']

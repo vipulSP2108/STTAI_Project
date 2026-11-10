@@ -1,7 +1,0 @@
-UUID: aug_0f6484e6
-Parent_UUID: b82c9074
-Augmentation_Type: pivot_latin
-Similarity_Score: 0.8479
-Transcript: What are the evening visiting hours to meet the residential hall warden regarding room allotment issues?
-Target_Label: hostel_mess
-Spoken_Languages: ['English']

@@ -1,7 +1,0 @@
-UUID: aug_53ae80e0
-Parent_UUID: 21df306f
-Augmentation_Type: discourse_framing
-Similarity_Score: 0.9752
-Transcript: नमस्ते, कृपया बताइए कि हेलो हेल्पडेस्क, मैंने लाइब्रेरी में बुक रिटर्न की थी लेकिन मेरे अकाउंट पर अभी भी फाइन पेंडिंग दिख रहा है, इसे कैसे क्लियर करवाएं?
-Target_Label: student_services
-Spoken_Languages: ['Hindi']

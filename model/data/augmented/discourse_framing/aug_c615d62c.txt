@@ -1,0 +1,7 @@
+UUID: aug_c615d62c
+Parent_UUID: 4fcca39a
+Augmentation_Type: discourse_framing
+Similarity_Score: 0.9654
+Transcript: Excuse me, could you guide me on hello, I am a research scholar from the biological engineering department. I am calling to report an issue with the high-performance computing cluster connection
+Target_Label: it_support
+Spoken_Languages: ['English']

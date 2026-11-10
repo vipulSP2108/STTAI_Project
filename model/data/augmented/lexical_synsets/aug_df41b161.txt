@@ -1,7 +1,0 @@
-UUID: aug_df41b161
-Parent_UUID: 20de435d
-Augmentation_Type: lexical_synsets
-Similarity_Score: 0.9325
-Transcript: Hello student services desk, what is the procedure to obtain an official student status certificate certificate for passport renewal?
-Target_Label: student_services
-Spoken_Languages: ['English']

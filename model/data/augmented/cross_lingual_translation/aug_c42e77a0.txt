@@ -1,0 +1,7 @@
+UUID: aug_c42e77a0
+Parent_UUID: 8c41561b
+Augmentation_Type: cross_lingual_translation
+Similarity_Score: 0.5889
+Transcript: नमस्कार्जी हुं मेरे दीकराना आइटी गांधीनगरमां एडमिशन अंगे माहिती मेळव्यो छुं पहेलीवा सुंदा रहेता विद्धर्तिओने मेडिकल इमरजन्सी के लिए कोई संपर्क नमवार कोई सहाय आपवामां आवे होस्टेलनी सुरक्षा समर्थित नियम विशे माहिती आपशो.
+Target_Label: student_services
+Spoken_Languages: ['Gujarati']

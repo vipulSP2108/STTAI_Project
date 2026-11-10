@@ -1,0 +1,7 @@
+UUID: aug_1c2596f4
+Parent_UUID: fc3d3348
+Augmentation_Type: discourse_framing
+Similarity_Score: 0.9064
+Transcript: मेरा सवाल यह है कि नमस्ते हेल्पडेस्क, नए छात्रों के लिए इंस्टीट्यूट ओपन हाउस और ओरिएंटेशन सेशन कब आयोजित किया जाएगा?
+Target_Label: student_services
+Spoken_Languages: ['Hindi']

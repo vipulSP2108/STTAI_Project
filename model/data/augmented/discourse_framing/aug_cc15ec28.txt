@@ -1,0 +1,7 @@
+UUID: aug_cc15ec28
+Parent_UUID: d10bd1d0
+Augmentation_Type: discourse_framing
+Similarity_Score: 0.9485
+Transcript: Please help, I am inquiring about hello IIT General Desk, I missed my end semester exam due to medical emergency, supplementary exam for application
+Target_Label: student_services
+Spoken_Languages: ['English']

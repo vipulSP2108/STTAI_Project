@@ -1,7 +1,0 @@
-UUID: aug_02845429
-Parent_UUID: 8d3aed99
-Augmentation_Type: discourse_framing
-Similarity_Score: 0.9341
-Transcript: हेल्पडेस्क से सहायता चाहिए, हेलो आईआईटीजीएन हेल्पडेस्क, मेरा कोर्स रजिस्ट्रेशन पूरा हो गया है लेकिन इलेक्टिव कोर्स पोर्टल पर एक्टिवेट नहीं हुआ है।
-Target_Label: it_support
-Spoken_Languages: ['Hindi']

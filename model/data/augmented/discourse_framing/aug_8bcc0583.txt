@@ -1,0 +1,7 @@
+UUID: aug_8bcc0583
+Parent_UUID: b24445a7
+Augmentation_Type: discourse_framing
+Similarity_Score: 0.9207
+Transcript: હેલ્પડેસ્ક પર જણાવશો કે કુપિયા અર્જન્ટ સપોર્ટ આપો નમસ્કાર સ્પોર્ટ એડમિશન વિલીઝ થયો છે કે નહીં
+Target_Label: admissions
+Spoken_Languages: ['Gujarati']

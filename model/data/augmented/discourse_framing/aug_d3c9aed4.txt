@@ -1,7 +1,0 @@
-UUID: aug_d3c9aed4
-Parent_UUID: 34f3193c
-Augmentation_Type: discourse_framing
-Similarity_Score: 0.9305
-Transcript: Hi, I need official assistance with hello, I am Dijinal, this is a separate facility for storing luggage during semester
-Target_Label: hostel_mess
-Spoken_Languages: ['English']

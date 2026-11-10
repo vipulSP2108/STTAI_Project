@@ -1,7 +1,0 @@
-UUID: aug_0d5e56f7
-Parent_UUID: ee49f329
-Augmentation_Type: discourse_framing
-Similarity_Score: 0.9748
-Transcript: Please help, I am inquiring about hello, IITG in HelpDisc. My lab computer has lost access to the shared data set drive. The research deadline is approaching. Whom should I contact?
-Target_Label: it_support
-Spoken_Languages: ['English']

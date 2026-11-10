@@ -1,7 +1,0 @@
-UUID: aug_698c46fd
-Parent_UUID: 79a28903
-Augmentation_Type: lexical_synsets
-Similarity_Score: 0.9272
-Transcript: હ ે લ ો, નમસ ્ ત ે હ ે લ ્ પડ ે સ ્ ક, આઈઆઈટ ી ગ ા ં ધ ી નગર ક ે મ ્ પસમ ા ં admissions અ ં ગ ે સપ ો ર ્ ટ જ ો ઈત ો હત ો.
-Target_Label: admissions
-Spoken_Languages: ['English', 'Gujarati']

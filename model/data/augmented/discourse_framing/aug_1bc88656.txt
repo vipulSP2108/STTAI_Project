@@ -1,0 +1,7 @@
+UUID: aug_1bc88656
+Parent_UUID: ff002d4d
+Augmentation_Type: discourse_framing
+Similarity_Score: 0.8457
+Transcript: કૃપા કરીને મદદ કરો, નમસ્કાર ક્લિટર નથી કઈ થી ચા દિવસથી ટોકન નંબર આપો
+Target_Label: student_services
+Spoken_Languages: ['Gujarati']

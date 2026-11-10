@@ -1,7 +1,0 @@
-UUID: aug_290a7cb7
-Parent_UUID: 3f07f814
-Augmentation_Type: pivot_latin
-Similarity_Score: 0.8544
-Transcript: My scholar webmail quota is 95% full and incoming emails are bouncing back, how do I request a storage extension?
-Target_Label: it_support
-Spoken_Languages: ['English']

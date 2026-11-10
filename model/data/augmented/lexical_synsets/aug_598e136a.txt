@@ -1,7 +1,0 @@
-UUID: aug_598e136a
-Parent_UUID: ff002d4d
-Augmentation_Type: lexical_synsets
-Similarity_Score: 0.8446
-Transcript: નમસ ્ ક ા ર ક ્ લ િ ટર નથ ી કઈ થ ી ચ ા દ િ વસથ ી ટ ો કન ન ં બર આપ ો.
-Target_Label: student_services
-Spoken_Languages: ['Gujarati']

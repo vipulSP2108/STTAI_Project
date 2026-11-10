@@ -12,34 +12,44 @@ Capabilities:
 import re
 from typing import Tuple, Dict, Set
 
-# Multilingual negation markers
+# Multilingual negation markers (English, Latin, Devanagari, Gujarati)
 NEGATION_MARKERS = {
-    "not", "no", "never", "none", "neither", "nor", "cannot", "can't", "won't",
+    "not", "no", "never", "none", "neither", "nor", "cannot", "can't", "won't", "without",
     "nahi", "nahin", "nhi", "na", "mat",
-    "nathi", "nathiye", "nahotu"
+    "nathi", "nathiye", "nahotu", "vinano", "vina",
+    "नहीं", "नही", "ना", "न", "मत", "बिना", "गैर",
+    "નથી", "ન", "ના", "વિના"
 }
 
-# Key topic indicators per intent domain
+# Key topic indicators per intent domain (English, Hindi, Gujarati)
 DOMAIN_KEYWORDS: Dict[str, Set[str]] = {
     "hostel_mess": {
         "hostel", "mess", "dining", "room", "food", "khana", "bhojan",
         "geyser", "caretaker", "warden", "laundry", "canteen", "rebate",
-        "cleaning", "bed", "washroom", "plumbing", "maintenance"
+        "cleaning", "bed", "washroom", "plumbing", "maintenance", "water",
+        "हॉस्टल", "छात्रावास", "मेस", "कमरा", "कक्ष", "खाना", "भोजन", "पानी", "सफाई",
+        "હોસ્ટેલ", "છાત્રાલય", "મેસ", "રૂમ", "ખોરાક", "ખાવાનું", "પાણી", "સફાઈ"
     },
     "it_support": {
         "wifi", "wi-fi", "internet", "portal", "login", "password", "network",
         "laptop", "system", "speed", "disconnected", "erp", "it", "technical",
-        "ip", "mac", "server", "email", "credentials"
+        "ip", "mac", "server", "email", "credentials", "inbox", "quota", "moodle",
+        "इंटरनेट", "वाईफाई", "नेटवर्क", "पोर्टल", "पासवर्ड", "ईमेल", "लॉगिन", "सर्वर",
+        "ઇન્ટરનેટ", "વાઇફાઇ", "નેટવર્ક", "પોર્ટલ", "પાસવર્ડ", "ઇમેઇલ", "લોગિન", "સર્વર"
     },
     "admissions": {
         "admission", "admissions", "eligibility", "gate", "cutoff", "cut-off",
         "interview", "call letter", "application", "shortlist", "btech",
-        "mtech", "phd", "msc", "selection", "seat", "pravesh"
+        "mtech", "phd", "msc", "selection", "seat", "pravesh", "enrolment",
+        "प्रवेश", "दाखिला", "एडमिशन", "पात्रता", "कटऑफ", "साक्षात्कार", "आवेदन",
+        "પ્રવેશ", "દાખલો", "એડમિશન", "અરજી", "પાત્રતા", "ઇન્ટરવ્યુ"
     },
     "student_services": {
         "scholarship", "bonafide", "transcript", "grade card", "marksheet",
         "medical", "dispensary", "health", "library", "gym", "sports",
-        "railway concession", "id card", "certificate", "fellowship"
+        "railway concession", "id card", "certificate", "fellowship", "cpi", "loan",
+        "छात्रवृत्ति", "स्कॉलरशिप", "पुस्तकालय", "लाइब्रेरी", "प्रमाणपत्र", "पहचान पत्र",
+        "શિષ્યવૃત્તિ", "સ્કોલરશિપ", "પુસ્તકાલય", "લાઇબ્રેરી", "પ્રમાણપત્ર", "ઓળખપત્ર"
     }
 }
 

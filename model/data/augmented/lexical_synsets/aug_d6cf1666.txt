@@ -1,0 +1,7 @@
+UUID: aug_d6cf1666
+Parent_UUID: 49732d6c
+Augmentation_Type: lexical_synsets
+Similarity_Score: 0.7975
+Transcript: નમસ ્ ક ા ર આઈઆરટ ી ગ ા ં ધ ી નગ વ ો ઇસ હ ે લ ્ પડ ે સ ્ ક હ ો સ ્ ટ ્ ર ા લ ૂ મ ચ ે ન ્ જ એપ ્ લ િ ક ે શન ફ ો ર ્ મ ક િ ય ા ઓફ િ સ.
+Target_Label: hostel_mess
+Spoken_Languages: ['Gujarati']

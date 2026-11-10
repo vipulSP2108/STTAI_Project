@@ -1,0 +1,7 @@
+UUID: aug_82413371
+Parent_UUID: 382c043f
+Augmentation_Type: discourse_framing
+Similarity_Score: 0.9478
+Transcript: नमस्ते, कृपया बताइए कि हेलो हेल्पडेस्क, रेलवे कंसेशन फॉर्म पर ऑथराइज्ड सिग्नेचर कराने के लिए स्टूडेंट वेलफेयर ऑफिस में किससे मिलना होगा?
+Target_Label: student_services
+Spoken_Languages: ['Hindi']

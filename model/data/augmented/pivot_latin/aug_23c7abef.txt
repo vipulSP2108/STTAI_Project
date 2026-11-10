@@ -1,7 +1,0 @@
-UUID: aug_23c7abef
-Parent_UUID: c8dcd19f
-Augmentation_Type: pivot_latin
-Similarity_Score: 0.9493
-Transcript: Hello IT assistance, I wanted to contact the computer centre office regarding server access permissions for our project.
-Target_Label: it_support
-Spoken_Languages: ['English']

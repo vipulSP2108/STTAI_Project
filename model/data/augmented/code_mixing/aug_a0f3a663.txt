@@ -1,7 +1,0 @@
-UUID: aug_a0f3a663
-Parent_UUID: 6f3f920c
-Augmentation_Type: code_mixing
-Similarity_Score: 0.9673
-Transcript: Hello IT Gen. Helbless, GitHub Student Developer Pack, for Instudent Verification Reject, official Student Status praman patra, where will we get the certificate?
-Target_Label: it_support
-Spoken_Languages: ['Hindi']

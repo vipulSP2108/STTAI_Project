@@ -1,0 +1,7 @@
+UUID: aug_0eb560e6
+Parent_UUID: 39820cff
+Augmentation_Type: cross_lingual_translation
+Similarity_Score: 0.6558
+Transcript: नमस्कार गांधीनगर वोइस हेल्प डेस्क होस्टेल्प फाइन वोस्टमां गीझ काम नहीं कही आयुं इन्स्.
+Target_Label: hostel_mess
+Spoken_Languages: ['Gujarati']

@@ -1,7 +1,0 @@
-UUID: aug_eb473f8b
-Parent_UUID: 9ad620ab
-Augmentation_Type: code_mixing
-Similarity_Score: 0.9226
-Transcript: Can international and NRI candidates apply through the regular praveshs portal or is there a separate application channel?
-Target_Label: admissions
-Spoken_Languages: ['English']

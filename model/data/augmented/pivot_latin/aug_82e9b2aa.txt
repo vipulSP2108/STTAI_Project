@@ -1,7 +1,0 @@
-UUID: aug_82e9b2aa
-Parent_UUID: cd29a36f
-Augmentation_Type: pivot_latin
-Similarity_Score: 0.9049
-Transcript: Could additional drying racks be installed in the laundry drying area of the residential hall wing?
-Target_Label: hostel_mess
-Spoken_Languages: ['English']

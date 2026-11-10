@@ -1,7 +1,0 @@
-UUID: aug_d60d7b10
-Parent_UUID: fed4057d
-Augmentation_Type: lexical_synsets
-Similarity_Score: 0.8226
-Transcript: હ ે લ ો આઈઆઈટ ી જ ી એન હ ે લ ્ પડ ે સ ્ ક, ક ્ ર ે ડ િ ટ ર િ ક ્ વ ા યરમ ે ન ્ ટ પ ૂ ર ી કરવ ા મ ા ટ ે મ િ ન િ મમ સ ી પ ી આઈ ક ે ટલ ો હ ો વ ો જ ો ઈએ?
-Target_Label: student_services
-Spoken_Languages: ['Gujarati']

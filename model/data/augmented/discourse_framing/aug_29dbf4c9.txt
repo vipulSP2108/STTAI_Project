@@ -1,7 +1,0 @@
-UUID: aug_29dbf4c9
-Parent_UUID: d10bd1d0
-Augmentation_Type: discourse_framing
-Similarity_Score: 0.9228
-Transcript: Greetings, I wanted to confirm whether hello IIT General Desk, I missed my end semester exam due to medical emergency, supplementary exam for application
-Target_Label: student_services
-Spoken_Languages: ['English']

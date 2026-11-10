@@ -1,7 +1,0 @@
-UUID: aug_941325f1
-Parent_UUID: 1d870966
-Augmentation_Type: lexical_synsets
-Similarity_Score: 0.9498
-Transcript: Is the written application process test conducted offline at the Palaj campus or will there be an online proctored examination?
-Target_Label: admissions
-Spoken_Languages: ['English']

@@ -1,7 +1,0 @@
-UUID: aug_30b80331
-Parent_UUID: 3f07f814
-Augmentation_Type: pivot_latin
-Similarity_Score: 0.9275
-Transcript: Hello, ITGN, inquiry office my student portal keeps logging me out every few minutes even after clearing the browser cache. Can IT investigate?
-Target_Label: it_support
-Spoken_Languages: ['English']

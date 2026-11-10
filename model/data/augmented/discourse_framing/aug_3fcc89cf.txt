@@ -1,0 +1,7 @@
+UUID: aug_3fcc89cf
+Parent_UUID: 72d8567d
+Augmentation_Type: discourse_framing
+Similarity_Score: 0.9488
+Transcript: Sir, I have a quick inquiry regarding hello, I am calling regarding the upcoming convocation ceremony. My son has completed his degree and I wanted to ask about guest passes
+Target_Label: student_services
+Spoken_Languages: ['English']

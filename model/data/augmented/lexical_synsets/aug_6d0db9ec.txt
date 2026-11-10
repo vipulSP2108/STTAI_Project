@@ -1,7 +1,0 @@
-UUID: aug_6d0db9ec
-Parent_UUID: 72d8567d
-Augmentation_Type: lexical_synsets
-Similarity_Score: 0.9868
-Transcript: When is the student affairs office open for countersigning the Indian Railway student concession admission form form?
-Target_Label: student_services
-Spoken_Languages: ['English']

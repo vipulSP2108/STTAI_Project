@@ -1,7 +1,0 @@
-UUID: aug_adf7ea19
-Parent_UUID: e7a37e81
-Augmentation_Type: discourse_framing
-Similarity_Score: 0.9504
-Transcript: मेरा सवाल यह है कि आलो में पने पेटी के ले एाटी नवने नवने न आगग अग अग आप्वाशाशाशिता जब पश्विचिर के बप्विटी को बिलने बिलने बिलन
-Target_Label: admissions
-Spoken_Languages: ['Hindi']

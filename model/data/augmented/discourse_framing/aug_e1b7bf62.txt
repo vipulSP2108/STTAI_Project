@@ -1,7 +1,0 @@
-UUID: aug_e1b7bf62
-Parent_UUID: 474ebc19
-Augmentation_Type: discourse_framing
-Similarity_Score: 0.9537
-Transcript: हेल्पडेस्क से सहायता चाहिए, नमस्ते, क्या पारिवारिक आय के आधार पर ट्यूशन फीस में छूट या आर्थिक सहायता प्राप्त करने की कोई योजना उपलब्ध है?
-Target_Label: student_services
-Spoken_Languages: ['Hindi']

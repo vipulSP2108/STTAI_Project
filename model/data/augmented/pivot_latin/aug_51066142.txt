@@ -1,0 +1,7 @@
+UUID: aug_51066142
+Parent_UUID: ec5b227c
+Augmentation_Type: pivot_latin
+Similarity_Score: 0.8474
+Transcript: Hello sir, I want to ask about the domiciliary residence facility for my son who is preparing to join the BTech program this semester.
+Target_Label: hostel_mess
+Spoken_Languages: ['English']

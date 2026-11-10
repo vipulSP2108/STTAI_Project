@@ -1,7 +1,0 @@
-UUID: aug_5bb459cc
-Parent_UUID: 46d483f3
-Augmentation_Type: pivot_latin
-Similarity_Score: 0.9922
-Transcript: Namaskar, iIT Gandhi Nagar voice help desk Can institute direct phd agnation offer kata hai? For meetag graduate with high CPI, kupia pressing facilitation.
-Target_Label: admissions
-Spoken_Languages: ['Hindi']

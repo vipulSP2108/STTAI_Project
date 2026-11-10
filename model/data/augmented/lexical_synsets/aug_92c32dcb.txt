@@ -1,7 +1,0 @@
-UUID: aug_92c32dcb
-Parent_UUID: 439472e6
-Augmentation_Type: lexical_synsets
-Similarity_Score: 0.9726
-Transcript: Kavayu Parse, Aloha, IDIG and Heldesk, My attendance percentage is discoprensive, Faculty has gone to academic office in issue report race.
-Target_Label: student_services
-Spoken_Languages: ['Hindi']

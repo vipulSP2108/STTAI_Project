@@ -1,7 +1,0 @@
-UUID: aug_1dbef6c7
-Parent_UUID: 55cee5db
-Augmentation_Type: pivot_latin
-Similarity_Score: 0.9615
-Transcript: The network license server for MATLAB and Ansys is throwing an unreachable connectivity link error.
-Target_Label: it_support
-Spoken_Languages: ['English']

@@ -49,7 +49,7 @@ CONFIGURATIONS = {
     "C-03": {
         "name": "Original + Cross-Lingual Paraphrase",
         "description": "Evaluates direct syntactic transfer across campus languages.",
-        "allowed_types": ["original", "cross_lingual"]
+        "allowed_types": ["original", "cross_lingual", "cross_lingual_translation"]
     },
     "C-04": {
         "name": "Original + Pivot Translation (Latin)",
@@ -84,7 +84,7 @@ CONFIGURATIONS = {
     "C-10": {
         "name": "Complete Optimized Pipeline (All Gates)",
         "description": "Full dataset combining all techniques passed through semantic similarity & deduplication gates.",
-        "allowed_types": ["original", "back_translation", "pivot_latin", "lexical_synsets", "code_mixing", "audio_perturbed", "contextual_mlm", "cross_lingual", "discourse_framing"]
+        "allowed_types": ["original", "back_translation", "pivot_latin", "lexical_synsets", "code_mixing", "audio_perturbed", "contextual_mlm", "cross_lingual", "cross_lingual_translation", "discourse_framing"]
     },
     "C-11": {
         "name": "Original + Indic Discourse Framing",

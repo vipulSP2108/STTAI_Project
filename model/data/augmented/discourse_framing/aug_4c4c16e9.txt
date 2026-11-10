@@ -1,7 +1,0 @@
-UUID: aug_4c4c16e9
-Parent_UUID: 6c4a37ea
-Augmentation_Type: discourse_framing
-Similarity_Score: 0.9525
-Transcript: कृपया मार्गदर्शन करें, नमस्ते सर, हॉस्टल रूम में ट्यूबलाइट खराब हो गई है, इलेक्ट्रिशियन को कंप्लेंट भेज दीजिए।
-Target_Label: hostel_mess
-Spoken_Languages: ['Hindi']

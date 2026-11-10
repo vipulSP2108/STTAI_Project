@@ -1,0 +1,7 @@
+UUID: aug_39daba2f
+Parent_UUID: b7e99aca
+Augmentation_Type: lexical_synsets
+Similarity_Score: 0.9765
+Transcript: Hello Helpdesk, I need assistance with updating my student identity card chip for the new RFID resource centre turnstiles.
+Target_Label: student_services
+Spoken_Languages: ['English', 'Hindi']

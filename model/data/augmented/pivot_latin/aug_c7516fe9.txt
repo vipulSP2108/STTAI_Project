@@ -1,7 +1,0 @@
-UUID: aug_c7516fe9
-Parent_UUID: 1223b513
-Augmentation_Type: pivot_latin
-Similarity_Score: 0.8891
-Transcript: Hello, IITGN, Helpdesk, Online institutional tuition dues payment Karthewakt, Brawzal crash and a Portal transaction pending Dekharaa, Payment Dwarakanna Safe.
-Target_Label: it_support
-Spoken_Languages: ['Hindi']

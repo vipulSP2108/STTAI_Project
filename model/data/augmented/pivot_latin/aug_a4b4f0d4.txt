@@ -1,7 +1,0 @@
-UUID: aug_a4b4f0d4
-Parent_UUID: 9a6ec2f5
-Augmentation_Type: pivot_latin
-Similarity_Score: 0.9639
-Transcript: Please send the AC maintenance technician to assigned quarters 304 in Aravalli hostel, the cooling is not working at all.
-Target_Label: hostel_mess
-Spoken_Languages: ['English']

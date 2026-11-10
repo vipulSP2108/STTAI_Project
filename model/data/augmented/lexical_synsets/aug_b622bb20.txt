@@ -1,7 +1,0 @@
-UUID: aug_b622bb20
-Parent_UUID: f53d4330
-Augmentation_Type: lexical_synsets
-Similarity_Score: 0.891
-Transcript: Hello, iDGN help desk i had to go to know how to do hall of residence development and i had to go to single room, double room, triple room i had to choose the roommates ok.
-Target_Label: hostel_mess
-Spoken_Languages: ['Hindi']

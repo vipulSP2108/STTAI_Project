@@ -1,7 +1,0 @@
-UUID: aug_74b16426
-Parent_UUID: eeea163e
-Augmentation_Type: discourse_framing
-Similarity_Score: 0.973
-Transcript: હેલ્પડેસ્ક પર જણાવશો કે હેલો હેલ્પડેસ્ક, કેમ્પસ શટલ બસનો ગાંધીનગર રેલવે સ્ટેશન જવાનો સમયપત્રક આપશો?
-Target_Label: student_services
-Spoken_Languages: ['English', 'Hindi']

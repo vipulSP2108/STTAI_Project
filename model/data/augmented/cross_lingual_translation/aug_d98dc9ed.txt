@@ -1,0 +1,7 @@
+UUID: aug_d98dc9ed
+Parent_UUID: e7c421c7
+Augmentation_Type: cross_lingual_translation
+Similarity_Score: 0.6706
+Transcript: Hi. I'm a graduate student finally. I need some formal retaliation for my graduation school program in America. I've already applied through Portal and needed a digital copy to have five hard-reading per tomorrow.
+Target_Label: it_support
+Spoken_Languages: ['English']

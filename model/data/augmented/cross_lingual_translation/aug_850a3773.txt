@@ -1,0 +1,7 @@
+UUID: aug_850a3773
+Parent_UUID: 56dc8907
+Augmentation_Type: cross_lingual_translation
+Similarity_Score: 0.5507
+Transcript: हेलो आईआईटीजीएन हेल्पडेस्क, में मेस रीबेट फोर्म सबमिट कर्युं हतुं परंतु मेरे बिलमां डिडक्शन रिफ्लेक्ट नहीं थयुं, कृपा करीने चेक करशो.
+Target_Label: hostel_mess
+Spoken_Languages: ['Gujarati']

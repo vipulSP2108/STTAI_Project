@@ -1,7 +1,0 @@
-UUID: aug_8463ba44
-Parent_UUID: c8b8d9c6
-Augmentation_Type: lexical_synsets
-Similarity_Score: 0.8202
-Transcript: સપ ો ર ્ ટ આપ ો નમસ ્ ક ા ર હ ો ય સ ્ ટ ુ ડન ્ ટ મ ા ટ ે એડમ િ શન એપ ્ લ િ ક ે શન ફ ો ર ્ મ અન ે સ ્ ક ો લરશ િ પ શ ુ ં છ ે.
-Target_Label: admissions
-Spoken_Languages: ['Gujarati']

@@ -1,7 +1,0 @@
-UUID: aug_ab5e9adc
-Parent_UUID: 72d8567d
-Augmentation_Type: pivot_latin
-Similarity_Score: 0.9699
-Transcript: When is the candidate affairs office open for countersigning the Indian Railway student concession application form?
-Target_Label: student_services
-Spoken_Languages: ['English']

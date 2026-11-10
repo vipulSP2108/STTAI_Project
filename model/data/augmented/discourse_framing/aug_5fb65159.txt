@@ -1,0 +1,7 @@
+UUID: aug_5fb65159
+Parent_UUID: ee0caeb5
+Augmentation_Type: discourse_framing
+Similarity_Score: 0.817
+Transcript: સાહેબ, થોડી માહિતી જોઈતી હતી કે નમસ્તે હેલ્પડેસ્ક, આઈઆઈટી ગાંધીનગર કેમ્પસમાં admissions અંગે સપોર્ટ જોઈતો હતો
+Target_Label: admissions
+Spoken_Languages: ['Hindi', 'Gujarati']

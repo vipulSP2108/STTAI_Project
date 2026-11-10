@@ -1,7 +1,0 @@
-UUID: aug_c4102f89
-Parent_UUID: 17a0df49
-Augmentation_Type: lexical_synsets
-Similarity_Score: 0.8533
-Transcript: પ ્ ર ો વ િ ઝનલ ડ િ ગ ્ ર ી સર ્ ટ િ ફ િ ક ે ટ વ ે ર િ ફ િ ક ે શન વખત ે ચ ા લશ ે ક ે ઓર િ જ િ નલ સર ્ ટ િ ફ િ ક ે ટ જમ ા કર ા વવ ુ ં પડશ ે?
-Target_Label: admissions
-Spoken_Languages: ['Hindi', 'Gujarati']

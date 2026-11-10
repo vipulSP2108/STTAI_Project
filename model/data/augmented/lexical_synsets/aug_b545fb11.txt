@@ -1,7 +1,0 @@
-UUID: aug_b545fb11
-Parent_UUID: ac619e63
-Augmentation_Type: lexical_synsets
-Similarity_Score: 0.9729
-Transcript: Hello, is it IT cell? I am a newly admitted PhD student and I just got my hostel room. How do I configure my computer for campus LAN and Wifi access?
-Target_Label: it_support
-Spoken_Languages: ['English']

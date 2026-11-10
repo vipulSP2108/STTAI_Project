@@ -1,7 +1,0 @@
-UUID: aug_f9396779
-Parent_UUID: 20de435d
-Augmentation_Type: pivot_latin
-Similarity_Score: 0.8395
-Transcript: Hello, IITGN Helpdesk. My fellowship grant application shows document verification pending for two weeks. Could you please check the status?
-Target_Label: student_services
-Spoken_Languages: ['English']

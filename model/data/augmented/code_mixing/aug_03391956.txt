@@ -1,7 +1,0 @@
-UUID: aug_03391956
-Parent_UUID: a65e688e
-Augmentation_Type: code_mixing
-Similarity_Score: 0.9384
-Transcript: Could you please confirm when the PhD interview shortlist and interview call letters will be released on the website login?
-Target_Label: admissions
-Spoken_Languages: ['English']

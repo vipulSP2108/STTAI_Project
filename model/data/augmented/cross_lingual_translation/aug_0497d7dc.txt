@@ -1,0 +1,7 @@
+UUID: aug_0497d7dc
+Parent_UUID: 4fcca39a
+Augmentation_Type: cross_lingual_translation
+Similarity_Score: 0.5834
+Transcript: Hello, I'm a research scholar from the biological engineering department.
+Target_Label: it_support
+Spoken_Languages: ['English']

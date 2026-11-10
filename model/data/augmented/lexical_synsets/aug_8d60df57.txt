@@ -1,7 +1,0 @@
-UUID: aug_8d60df57
-Parent_UUID: f9e8a369
-Augmentation_Type: lexical_synsets
-Similarity_Score: 0.8383
-Transcript: portal. Hello, IIT June Helpdesk. I need an official medium of instruction verification letter from my master ' s admission form abroad. How can I request one?
-Target_Label: student_services
-Spoken_Languages: ['English']

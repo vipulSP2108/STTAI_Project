@@ -1,7 +1,0 @@
-UUID: aug_b20c5e6c
-Parent_UUID: 504d281f
-Augmentation_Type: lexical_synsets
-Similarity_Score: 0.8664
-Transcript: નમસ ્ ક ા ર હ ુ મ ા ર ી દ ી કર ી ન ા એન ્ ડમ િ શન અન ે સ ી ટ કન ્ ફર ્ મ કરવ ા ન ી પ ્ રક ્ ર િ ય ા સમજવ ા મ ા ં ગ ો છ ો એન ્ જ િ પછ ી સ ં સ ્ થ ા ન ી ફ ી મ ા સમ ા ય ે શન ી સત ્ ત ા વ ા ર મ ા હ િ ત ી ક ે ઠ ા થ ી મ ે ળવ ી ત ે સમજ ા વશ ો.
-Target_Label: admissions
-Spoken_Languages: ['Gujarati']

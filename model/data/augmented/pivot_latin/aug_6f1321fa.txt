@@ -1,7 +1,0 @@
-UUID: aug_6f1321fa
-Parent_UUID: b20dcb6e
-Augmentation_Type: pivot_latin
-Similarity_Score: 0.9562
-Transcript: Hello IT Gene, assistance bureau, OBCNCAL certificate validity date cutoff date patching in itch ۔.
-Target_Label: admissions
-Spoken_Languages: ['Hindi']

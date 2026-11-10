@@ -1,7 +1,0 @@
-UUID: aug_43d39150
-Parent_UUID: fc3d3348
-Augmentation_Type: discourse_framing
-Similarity_Score: 0.9666
-Transcript: कृपया मार्गदर्शन करें, नमस्ते हेल्पडेस्क, नए छात्रों के लिए इंस्टीट्यूट ओपन हाउस और ओरिएंटेशन सेशन कब आयोजित किया जाएगा?
-Target_Label: student_services
-Spoken_Languages: ['Hindi']

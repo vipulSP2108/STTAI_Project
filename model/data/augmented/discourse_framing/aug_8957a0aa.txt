@@ -1,7 +1,0 @@
-UUID: aug_8957a0aa
-Parent_UUID: 8c459ce2
-Augmentation_Type: discourse_framing
-Similarity_Score: 0.9233
-Transcript: Excuse me, could you guide me on hello Adinyan, this is the bed which i got is broken and its too small, i can get a big bed
-Target_Label: hostel_mess
-Spoken_Languages: ['English', 'Hindi']

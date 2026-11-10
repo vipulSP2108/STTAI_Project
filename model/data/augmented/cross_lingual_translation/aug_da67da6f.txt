@@ -1,0 +1,7 @@
+UUID: aug_da67da6f
+Parent_UUID: 9a6ec2f5
+Augmentation_Type: cross_lingual_translation
+Similarity_Score: 0.4999
+Transcript: I'm a sysco student to ask about the process to stay in Pharaoh Hall. I'm just in a three-part room but I'm in my room but my room and my room are completely different. He talks too late at my sleep and my health.
+Target_Label: hostel_mess
+Spoken_Languages: ['English']

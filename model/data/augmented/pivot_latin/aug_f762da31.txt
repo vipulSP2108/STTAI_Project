@@ -1,7 +1,0 @@
-UUID: aug_f762da31
-Parent_UUID: c2b6d2c5
-Augmentation_Type: pivot_latin
-Similarity_Score: 0.9128
-Transcript: Hello sir, good morning. I would like to know about the enrollment process for the engineering program and the eligibility criteria.
-Target_Label: admissions
-Spoken_Languages: ['English']

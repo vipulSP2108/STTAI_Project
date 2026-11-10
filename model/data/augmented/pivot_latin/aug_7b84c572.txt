@@ -1,0 +1,7 @@
+UUID: aug_7b84c572
+Parent_UUID: 3f07f814
+Augmentation_Type: pivot_latin
+Similarity_Score: 0.9443
+Transcript: Hello, ITGN, help desk my scholar portal keeps logging me out every few minutes even after clearing the browser cache. Can IT investigate?
+Target_Label: it_support
+Spoken_Languages: ['English']

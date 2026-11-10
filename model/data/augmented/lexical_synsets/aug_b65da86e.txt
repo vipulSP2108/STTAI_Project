@@ -1,7 +1,0 @@
-UUID: aug_b65da86e
-Parent_UUID: ab4220a7
-Augmentation_Type: lexical_synsets
-Similarity_Score: 0.8734
-Transcript: નમસ ્ ક ા ર, મ ા ર ા દ ી કર ા ન ે આઈઆઈટ ી ગ ા ં ધ ી નગરમ ા ં એડમ િ શન મળવ ા ન ી શક ્ યત ા છ ે, જ ો હ ો સ ્ ટ ે લ ર ૂ મ ફ ા ળવ ા ઈ જ ા ય ત ો શ ુ ં વ િ દ ્ ય ા ર ્ થ ી નક ્ ક ી કર ે લ ી ર િ પ ો ર ્ ટ િ ં ગ ત ા ર ી ખ પહ ે લ ા હ ો સ ્ ટ ે લમ ા ં આવ ી શક ે છ ે?
-Target_Label: hostel_mess
-Spoken_Languages: ['Gujarati']

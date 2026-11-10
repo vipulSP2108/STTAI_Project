@@ -1,0 +1,7 @@
+UUID: aug_827c6eea
+Parent_UUID: b82c9074
+Augmentation_Type: cross_lingual_translation
+Similarity_Score: 0.6152
+Transcript: Hello, I'm a flockaug. I'll change my room partner and see you both together.
+Target_Label: hostel_mess
+Spoken_Languages: ['English']

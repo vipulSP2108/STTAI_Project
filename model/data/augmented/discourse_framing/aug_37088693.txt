@@ -1,7 +1,0 @@
-UUID: aug_37088693
-Parent_UUID: 0f02bad0
-Augmentation_Type: discourse_framing
-Similarity_Score: 0.9801
-Transcript: Please help, I am inquiring about i wanted to report an issue with my VPN session ID needed for logging into the institute computational cluster from outside campus
-Target_Label: it_support
-Spoken_Languages: ['English']

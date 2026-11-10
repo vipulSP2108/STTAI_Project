@@ -1,0 +1,7 @@
+UUID: aug_4ddf8937
+Parent_UUID: b41b3143
+Augmentation_Type: cross_lingual_translation
+Similarity_Score: 0.5305
+Transcript: सपोर्ट आपो नमस्कार आइएट गांधीनगंब वोईस हेल्प एडमिशन ओफिस डिरेक्ट कोन्टेक्ट नंबर क्या .
+Target_Label: admissions
+Spoken_Languages: ['Gujarati']

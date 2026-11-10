@@ -1,0 +1,7 @@
+UUID: aug_29665003
+Parent_UUID: f9e8a369
+Augmentation_Type: cross_lingual_translation
+Similarity_Score: 0.6202
+Transcript: Portal. Hello, Imanle June Degar. I need an official media from the application of my master. How can I appeal to one?
+Target_Label: student_services
+Spoken_Languages: ['English']

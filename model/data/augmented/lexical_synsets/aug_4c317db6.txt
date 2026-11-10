@@ -1,7 +1,0 @@
-UUID: aug_4c317db6
-Parent_UUID: 1eb0e38a
-Augmentation_Type: lexical_synsets
-Similarity_Score: 0.8731
-Transcript: પ ી એચડ ી એડમ િ શન ઇન ્ ટરવ ્ ય ુ મ ા ટ ે શ ો ર ્ ટલ િ સ ્ ટ ક ્ ય ા ર ે જ ા હ ે ર થશ ે અન ે ક ે મ ્ પસમ ા ં ર િ પ ો ર ્ ટ િ ં ગ કઈ ત ા ર ી ખ ે કરવ ા ન ુ ં છ ે?
-Target_Label: admissions
-Spoken_Languages: ['Gujarati']

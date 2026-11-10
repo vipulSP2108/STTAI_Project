@@ -1,7 +1,0 @@
-UUID: aug_693d2ba0
-Parent_UUID: 425a609f
-Augmentation_Type: code_mixing
-Similarity_Score: 0.9031
-Transcript: support appo. Hello IITGN and help desk. PSD admissions interview bulava patra cup released Google website for update kripeer azine support.
-Target_Label: admissions
-Spoken_Languages: ['Hindi']

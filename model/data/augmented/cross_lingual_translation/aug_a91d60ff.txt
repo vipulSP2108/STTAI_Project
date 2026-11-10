@@ -1,0 +1,7 @@
+UUID: aug_a91d60ff
+Parent_UUID: 382c043f
+Augmentation_Type: cross_lingual_translation
+Similarity_Score: 0.5435
+Transcript: હેલો હેલ્પડેસ્ક, રેલવે કંસેશન ફૉર્મ પર ઑથરાઇજ્ડ સિગ્નેચર કરાને ના લિએ સ્ટૂડેંટ વેલફેયર ઑફિસ માં કિસસે મિલના થશે?
+Target_Label: student_services
+Spoken_Languages: ['Hindi']

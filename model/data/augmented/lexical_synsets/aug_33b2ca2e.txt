@@ -1,7 +1,0 @@
-UUID: aug_33b2ca2e
-Parent_UUID: 2b70e525
-Augmentation_Type: lexical_synsets
-Similarity_Score: 0.893
-Transcript: હ ા ઇટ ી જ ે નલ બસ મ ી ર ા ગ ્ ર ે ટ ક ા ર ્ ડન ે એક સબ ્ જ ે ક ્ ટ ર િ ઝલ ટ ે પ ્ શન શ ો કર ી છ ે જ ે આર ે એક ્ ઝ ા મ આપ ો હત.
-Target_Label: it_support
-Spoken_Languages: ['Hindi', 'Gujarati']

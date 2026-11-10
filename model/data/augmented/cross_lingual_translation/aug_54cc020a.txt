@@ -1,0 +1,7 @@
+UUID: aug_54cc020a
+Parent_UUID: 9ee3ac2a
+Augmentation_Type: cross_lingual_translation
+Similarity_Score: 0.5116
+Transcript: Hello, I came to help. I need a common article that is with a publisher behind the Waldo.
+Target_Label: it_support
+Spoken_Languages: ['English']

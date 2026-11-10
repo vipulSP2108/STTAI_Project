@@ -1,7 +1,0 @@
-UUID: aug_b9e12f72
-Parent_UUID: 81392443
-Augmentation_Type: discourse_framing
-Similarity_Score: 0.9741
-Transcript: Please help, I am inquiring about hello, IITGN help desk. My hostel room has a water leakage problem near the study table
-Target_Label: hostel_mess
-Spoken_Languages: ['English']

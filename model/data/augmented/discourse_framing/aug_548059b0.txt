@@ -1,0 +1,7 @@
+UUID: aug_548059b0
+Parent_UUID: f5f59b22
+Augmentation_Type: discourse_framing
+Similarity_Score: 0.975
+Transcript: Sir, I have a quick inquiry regarding hello IITGN Helpdesk, my hostel room has a water leakage problem near the window sill. Could maintenance send someone to fix it?
+Target_Label: hostel_mess
+Spoken_Languages: ['English']

@@ -1,7 +1,0 @@
-UUID: aug_32cddbaa
-Parent_UUID: 11e9cdaa
-Augmentation_Type: pivot_latin
-Similarity_Score: 0.9892
-Transcript: Hello IITGN inquiry office. My laptop is unable to connect to the campus VPN after a recent operating system update. Please help troubleshoot.
-Target_Label: it_support
-Spoken_Languages: ['English']

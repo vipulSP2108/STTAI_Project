@@ -1,7 +1,0 @@
-UUID: aug_8a3dd58a
-Parent_UUID: 9479e1e6
-Augmentation_Type: pivot_latin
-Similarity_Score: 0.9447
-Transcript: Are Jain sustenance alternatives readily provided in the central mess or is a prior subscription required?
-Target_Label: hostel_mess
-Spoken_Languages: ['English']

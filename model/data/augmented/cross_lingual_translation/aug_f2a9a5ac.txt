@@ -1,0 +1,7 @@
+UUID: aug_f2a9a5ac
+Parent_UUID: 4bb00f20
+Augmentation_Type: cross_lingual_translation
+Similarity_Score: 0.8044
+Transcript: हैलो MVITOGHHS. पानी SMMMOCH कक्ष से गिर रहा है, कृपया विद्युत इंटरल टीम भेजें.
+Target_Label: hostel_mess
+Spoken_Languages: ['Hindi']

@@ -1,7 +1,0 @@
-UUID: aug_0b867129
-Parent_UUID: 8c41561b
-Augmentation_Type: lexical_synsets
-Similarity_Score: 0.8725
-Transcript: ક ે મ ્ પસ પ ્ લ ે સમ ે ન ્ ટ પ ્ ર ો સ ે સ મ ા ટ ે ફ ા ઇનલ યર સ ્ ટ ુ ડન ્ ટ ્ સ અપકમ િ ં ગ ક ં પન ી ડ ્ ર ા ઇવ મ ા ટ ે રજ ી સ ્ ટ ્ ર ે શન કઈ ત ા ર ી ખ સ ુ ધ ી કર ા વ ી શક ે?
-Target_Label: student_services
-Spoken_Languages: ['Gujarati']

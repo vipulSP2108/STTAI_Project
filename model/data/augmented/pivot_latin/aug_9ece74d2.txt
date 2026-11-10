@@ -1,7 +1,0 @@
-UUID: aug_9ece74d2
-Parent_UUID: 12a4def0
-Augmentation_Type: pivot_latin
-Similarity_Score: 0.8869
-Transcript: Could you please share the Third Party Administrator contact number for scholar medical insurance cashless claims?
-Target_Label: student_services
-Spoken_Languages: ['English']

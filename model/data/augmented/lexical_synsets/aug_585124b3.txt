@@ -1,7 +1,0 @@
-UUID: aug_585124b3
-Parent_UUID: 6c4a37ea
-Augmentation_Type: lexical_synsets
-Similarity_Score: 0.9294
-Transcript: Hello Sir Hostel ke regaling baat kar na ta O my allotted room me to la light ka problema ra ta Actually o ke aur ae sir ज ो ल ा ी ग द े न ा ब ि ज ज म े ं बन ज ़ ा ह ै त ो म े ं स ा अच ि र ा त ो क ी ल ा ी ग क ो श परशन े ज ो ल ा ी ग प े ज ़ ा नप े تو کچھ ہوگa تو ایک support ke leke aapne support system me ke yoga tekne ke liya aadar keo ii تو آپ support ke je naplijme re liye aam substudent ko problema raiz sir ivings se amlok subht abhi problema raiz sir amko aur abhiddaas din ke baad ek zambi aar aa raiz to uske liye please sir support ke je sir thank you thank you sir.
-Target_Label: hostel_mess
-Spoken_Languages: ['Hindi']

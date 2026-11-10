@@ -1,0 +1,7 @@
+UUID: aug_54e345fb
+Parent_UUID: 3985c3cf
+Augmentation_Type: discourse_framing
+Similarity_Score: 0.9596
+Transcript: हेल्पडेस्क से सहायता चाहिए, नमस्ते हेल्पडेस्क, मुझे बीटेक एडमिशन के लिए जोसा काउंसलिंग और सीट अलॉटमेंट के बारे में जानकारी चाहिए।
+Target_Label: admissions
+Spoken_Languages: ['Hindi']

@@ -1,0 +1,7 @@
+UUID: aug_a5d18efb
+Parent_UUID: c07a30f2
+Augmentation_Type: cross_lingual_translation
+Similarity_Score: 0.6099
+Transcript: नमस्कार होस्टल कोयडो लाइट फ्लीकरिंग थई रही हैं इलेक्टेशियन ने मोकली.
+Target_Label: hostel_mess
+Spoken_Languages: ['Gujarati']

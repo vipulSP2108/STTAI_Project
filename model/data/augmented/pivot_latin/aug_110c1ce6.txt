@@ -1,7 +1,0 @@
-UUID: aug_110c1ce6
-Parent_UUID: 81392443
-Augmentation_Type: pivot_latin
-Similarity_Score: 0.8654
-Transcript: After applying for a late entry gate pass on the domiciliary residence portal, where will the caretaker approval be displayed?
-Target_Label: hostel_mess
-Spoken_Languages: ['English']

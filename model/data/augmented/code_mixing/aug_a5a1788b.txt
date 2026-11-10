@@ -1,7 +1,0 @@
-UUID: aug_a5a1788b
-Parent_UUID: 1bac27a7
-Augmentation_Type: code_mixing
-Similarity_Score: 0.9302
-Transcript: Hello IT helpdesk, Eduroam internet network repeatedly connects and disconnects on my Android phone across campus.
-Target_Label: it_support
-Spoken_Languages: ['English']

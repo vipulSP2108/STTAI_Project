@@ -1,7 +1,0 @@
-UUID: aug_6ce6ce6a
-Parent_UUID: 39820cff
-Augmentation_Type: lexical_synsets
-Similarity_Score: 0.867
-Transcript: હ ો સ ્ ટ ે લમ ા ં ચ ે ક-ઇન કરત ી વખત ે કય ા દસ ્ ત ા વ ે જ ો બત ા વવ ા પડ ે છ ે અન ે ર ૂ મન ી ચ ા વ ી ક ્ ય ા ં થ ી મ ે ળવવ ા ન ી હ ો ય છ ે?
-Target_Label: hostel_mess
-Spoken_Languages: ['Gujarati']

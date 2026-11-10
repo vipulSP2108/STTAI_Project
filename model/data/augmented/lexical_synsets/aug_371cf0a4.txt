@@ -1,7 +1,0 @@
-UUID: aug_371cf0a4
-Parent_UUID: 36b5229a
-Augmentation_Type: lexical_synsets
-Similarity_Score: 0.8382
-Transcript: એજન ્ ટ સપ ો ર ્ ટ આપ ો એપ ્ ર ે ડ કરવ ા મ ા ટ ે કમ િ ટ િ ં ગ ક ્ ય ા ં થય ે લ ી છ ે ક ુ પ િ ય ા એજન ્ ટ સપ ો ર ્ ટ આપ ો.
-Target_Label: hostel_mess
-Spoken_Languages: ['Gujarati']
