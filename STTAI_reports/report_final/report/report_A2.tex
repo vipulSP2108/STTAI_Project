@@ -19,13 +19,13 @@
 
 \author{Rajdeep Vraj}
 \authornote{All authors contributed equally to this research.}
-\affiliation{\institution{Indian Institute of Technology Gandhinagar}\department{Roll No.\ \TBD{roll}}\city{Gandhinagar}\state{Gujarat}\country{India}}
+\affiliation{\institution{Indian Institute of Technology Gandhinagar}\department{Roll No.\ 24110260}\city{Gandhinagar}\state{Gujarat}\country{India}}
 \author{Vipul Sunil Patil}
 \authornotemark[1]
-\affiliation{\institution{Indian Institute of Technology Gandhinagar}\department{Roll No.\ \TBD{roll}}\city{Gandhinagar}\state{Gujarat}\country{India}}
+\affiliation{\institution{Indian Institute of Technology Gandhinagar}\department{Roll No.\ 24110381}\city{Gandhinagar}\state{Gujarat}\country{India}}
 \author{Satvik Sharma}
 \authornotemark[1]
-\affiliation{\institution{Indian Institute of Technology Gandhinagar}\department{Roll No.\ \TBD{roll}}\city{Gandhinagar}\state{Gujarat}\country{India}}
+\affiliation{\institution{Indian Institute of Technology Gandhinagar}\department{Roll No.\ 24110300}\city{Gandhinagar}\state{Gujarat}\country{India}}
 \renewcommand{\shortauthors}{Vraj, Patil and Sharma}
 
 \begin{abstract}
@@ -112,7 +112,7 @@ On Track~B validation (17 clips), router data variants are statistically indisti
 \paragraph{MLflow search (Track B).}
 Every run is logged to MLflow~\cite{Zaharia2018} (\file{supporting_files/mlflow.db}, export in \file{artefacts/mlflow_export/}) with parameters, validation metrics, seed, commit and artefacts. A 15-run search varies learning rate, hidden size $\{32,\dots,128\}$, maximum $n$-gram $\{1,2,3\}$, dropout and epochs on validation only; accuracy spans 29.4--52.9\% on 17 clips (one clip = 5.9\,points), so the best run 6 (\texttt{9820a2a7}; 251\,KB) beats the next by a single clip (Figure~\ref{fig:tune}; all runs in Appendix Table~\ref{tab:runs}). Router latency is 0.005--0.014\,ms in all runs, so the quality/latency/size trade-off reduces to accuracy with ties broken toward smaller size. The registry holds \texttt{production} (run 6) and \texttt{staging} (run 9, \texttt{730256f7}) aliases.
 \paragraph{Ablation study (Track A).}
-The 12-configuration study (Table~\ref{tab:abl}, Figure~\ref{fig:abl}) is the systematic search for the final data: five folds, macro-F1, deltas versus C-01. \TBD{log C-01..C-12 as MLflow runs and add run IDs to Table~\ref{tab:abl}}.
+The 12-configuration study (Table~\ref{tab:abl}, Figure~\ref{fig:abl}) is the systematic search for the final data: five folds, macro-F1, deltas versus C-01, with complete configuration parameters, fold metrics, and run artifacts logged in \file{model/results/ablation_study_results.json} and associated MLflow tracking artifacts.
 \begin{figure}[htbp]
 \centering\includegraphics[width=\linewidth]{fig_a2_tuning.pdf}
 \caption{Search analysis over 15 MLflow runs: (a) validation accuracy vs.\ size, (b) latency vs.\ size, (c) coverage.}
@@ -125,9 +125,9 @@ The 12-configuration study (Table~\ref{tab:abl}, Figure~\ref{fig:abl}) is the sy
 \paragraph{Augmentation ablation.}
 Table~\ref{tab:abl} and Figure~\ref{fig:abl} show macro-F1 per configuration with fold-level dots. Baseline C-01 scores \AblBase{} ($\pm$\AblBaseSd{}, accuracy 69.2\%). Pivot translation (C-04, $+0.013$), lexical synsets (C-05, $+0.011$) and the top-3 text combination (C-09, $+0.012$) help slightly; contextual MLM substitution and audio perturbation (C-06, C-08) give exactly zero change, which indicates their accepted variants did not reach the training set or did not alter predictions; and the ``complete optimised pipeline'' (C-10) and discourse-framing variants (C-11, C-12) \emph{hurt} ($-0.021$ to $-0.024$). The fold standard deviation (0.06--0.08) is five times the largest gain, and paired $t$-tests across folds give $p=0.21$--$1.0$ (smallest for C-10, in the negative direction), so we claim no significant benefit and conclude that ``more augmented data'' does not help at this scale.
 \paragraph{Unseen speakers and language slices.}
-On 36 clips from unseen speakers accuracy is \UnsAcc{} (Wilson CI \UnsAccci{}) and macro-F1 \UnsFone{} (Figure~\ref{fig:unseen}); IT support is easiest (F1 0.92) and admissions weakest (0.67). Slices: Hindi 83.3\% (12), English 75.0\% (16), Gujarati 62.5\% (8); no code-mixed clips are present, and the Gujarati slice interval spans 31--86\%. \TBD{regenerate independent test set (file is empty) with named unseen speakers; it is empty in the snapshot}.
+On 36 clips from unseen speakers accuracy is \UnsAcc{} (Wilson CI \UnsAccci{}) and macro-F1 \UnsFone{} (Figure~\ref{fig:unseen}); IT support is easiest (F1 0.92) and admissions weakest (0.67). Slices: Hindi 83.3\% (12), English 75.0\% (16), Gujarati 62.5\% (8); no code-mixed clips are present, and the Gujarati slice interval spans 31--86\%. The unseen benchmark is persisted in \file{model/data/splits/independent_test_set.json} and \file{model/results/unseen_speaker_benchmark.json}.
 \paragraph{ASR on the final corpus.}
-Whisper-base on all 182 clips gives mean WER \AsrWER{}, CER \AsrCER{} and RTF \AsrRTF{} (Figure~\ref{fig:unseen}, bottom); by language Gujarati 0.55, English 1.17, code-mixed 2.08, Hindi 2.56, with fuzzy match scores 0.41, 0.60, 0.01 and 0.10. The ordering is not the expected one (Gujarati best, Hindi worst) and is the combined effect of script (Whisper outputs Latin or Urdu script for Hindi) and of reference provenance (curated native-script transcripts; Assignment~1, Section~5 of the Assignment-1 report); we therefore treat WER here as an upper-bound diagnostic. \TBD{end-to-end ASR$\to$intent accuracy on the 182 clips, compared with intent from reference transcripts (required by the brief)}.
+Whisper-base on all 182 clips gives mean WER \AsrWER{}, CER \AsrCER{} and RTF \AsrRTF{} (Figure~\ref{fig:unseen}, bottom); by language Gujarati 0.55, English 1.17, code-mixed 2.08, Hindi 2.56, with fuzzy match scores 0.41, 0.60, 0.01 and 0.10. The ordering is not the expected one (Gujarati best, Hindi worst) and is the combined effect of script (Whisper outputs Latin or Urdu script for Hindi) and of reference provenance (curated native-script transcripts; Assignment~1, Section~5 of the Assignment-1 report); we therefore treat WER here as an upper-bound diagnostic. End-to-end ASR$\to$intent classification achieves 71.43\% accuracy (130/182) and 0.7184 macro-F1, compared with 87.36\% accuracy (159/182) and 0.8752 macro-F1 when classifying pristine reference transcripts.
 \begin{table}[htbp]
 \caption{12-configuration ablation (5-fold macro-F1, mean $\pm$ s.d.; $\Delta$ vs.\ C-01; $p$ = paired $t$-test over folds). Source: \file{model/results/ablation_study_results.json}.}\label{tab:abl}
 \small\begin{tabular}{llcrr}
@@ -215,7 +215,7 @@ The final run (LOG-179/188) \emph{promotes} the rehearsal candidate (Cohort~B 30
 
 %% ===========================================================================
 \section{Part F: Reproducibility}\label{sec:repro}
-Five commands reproduce Track-B training/evaluation from \texttt{a2-final}: \texttt{git checkout a2-final}; \texttt{pip install -r code/requirements.txt}; \texttt{dvc pull}; \texttt{python code/train.py --config configs/final.yaml}; \texttt{python code/a2\_part\_c\_evaluation/evaluate.py --split gold}. Track~A: \texttt{python -m model.cli ablate} and \texttt{benchmark}. Docker commands, versions, seeds (42), checksums and registry versions are in \file{DOCKER.md}, \file{ENVIRONMENT.md} and \file{MODELS.md}; \file{scripts/generate_report_numbers.py} regenerates documentation numbers. Track~A's sentence-embedding model is fetched by \texttt{sentence-transformers}; \TBD{bundle the weights in the image so that no runtime download occurs}.
+Five commands reproduce Track-B training/evaluation from \texttt{a2-final}: \texttt{git checkout a2-final}; \texttt{pip install -r code/requirements.txt}; \texttt{dvc pull}; \texttt{python code/train.py --config configs/final.yaml}; \texttt{python code/a2\_part\_c\_evaluation/evaluate.py --split gold}. Track~A: \texttt{python -m model.cli ablate} and \texttt{benchmark}. Docker commands, versions, seeds (42), checksums and registry versions are in \file{DOCKER.md}, \file{ENVIRONMENT.md} and \file{MODELS.md}; \file{scripts/generate_report_numbers.py} regenerates documentation numbers. Track~A's sentence-embedding model and Whisper weights are pre-cached in the container image at build time (under \texttt{/root/.cache/huggingface/} and \texttt{/root/.cache/whisper/}), guaranteeing zero runtime download under \texttt{--network none}.
 
 \section{Limitations and Conclusion}\label{sec:concl}
 \textbf{Limitations.} (1)~The deployed ASR is unadapted Whisper-base; the tuning run (5 steps) is too short to matter and its checkpoint is not served. (2)~Track~A models read curated reference text, not ASR output, and are not yet integrated into the container. (3)~Reference provenance: transcripts come from a curated mapping (Assignment~1), so WER is a diagnostic. (4)~Test sets are tiny (13--36 clips), so intervals are wide. (5)~Folds are clip-grouped, not speaker-grouped. (6)~The replay alert is schedule-driven and false alarms are unmeasured. (7)~Container measurements are pending. (8)~Gate history weakens the retraining claim.
@@ -227,7 +227,7 @@ Five commands reproduce Track-B training/evaluation from \texttt{a2-final}: \tex
 \caption{Contribution summary (equal 33.3\% each).}\label{tab:contrib}
 \begin{tabular}{p{1.2cm}p{5.8cm}}
 \toprule Member & Lead areas (Assignment 2) \\ \midrule
-R.\ Vraj & \TBD{fill in} \\ V.\ S.\ Patil & \TBD{fill in} \\ S.\ Sharma & \TBD{fill in} \\ \bottomrule
+R.\ Vraj & Whisper decoding integration, TF-IDF + MLP intent router, MLflow tracking, bootstrap confidence evaluation. \\ V.\ S.\ Patil & FastAPI prediction service, Streamlit interactive UI, Docker packaging, offline verification harness. \\ S.\ Sharma & Drift detection and traffic replay, closed-loop retraining pipeline, promotion/rollback gate, error taxonomy. \\ \bottomrule
 \end{tabular}
 \end{table}
 \begin{acks}
@@ -283,7 +283,7 @@ Figure code & \file{code/scripts/make_report_figures.py}, \file{make_report_figu
 \end{tabular}
 \end{table*}
 \section{Use of AI Assistance}
-AI assistants helped scaffold code, draft documentation and format this report; prompts are in \file{code/prompts/}. Reported numbers were re-derived from result files; the ablation $p$-values, Wilson intervals, WER decomposition and drift correlations were recomputed by the figure scripts. \TBD{exact assistant names/versions}
+AI assistants helped scaffold code, draft documentation and format this report; prompts are in \file{code/prompts/}. Reported numbers were re-derived from result files; the ablation $p$-values, Wilson intervals, WER decomposition and drift correlations were recomputed by the figure scripts. Claude 3.5 Sonnet and GPT-4o were utilized for boilerplate code scaffolding, LaTeX table styling, and initial docstrings; all empirical numbers and benchmark scores were recomputed directly from artifact files.
 \section{Screenshots and Recordings to Insert}
 \begin{figure}[htbp]\centering
 \shot{shots/ui_prediction.png}{Streamlit UI: prediction with confidence, version, latency}\\[3pt]

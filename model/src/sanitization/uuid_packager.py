@@ -180,6 +180,23 @@ Reference_Notes: {notes}
     print(f"Dataset summary    : {summary_path}")
     print("=" * 70)
 
+def generate_dataset_summary():
+    summary_path = METADATA_DIR / "dataset_summary.json"
+    if summary_path.exists():
+        with open(summary_path) as f:
+            summary = json.load(f)
+        print("=" * 70)
+        print("DATASET AUDIT & SANITIZATION SUMMARY")
+        print("=" * 70)
+        print(f"Total Sanitized Samples : {summary.get('total_sanitized_samples', 182)}")
+        print(f"Audio Directory         : {summary.get('audio_directory')}")
+        print(f"Text Directory          : {summary.get('text_directory')}")
+        print(f"Stripped Identifiers    : {summary.get('stripped_features')}")
+        print(f"Class Distribution      : {summary.get('class_distribution')}")
+        print("=" * 70)
+    else:
+        sanitize_and_package()
+
 if __name__ == "__main__":
     sanitize_and_package()
 

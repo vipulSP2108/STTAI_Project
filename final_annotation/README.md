@@ -32,8 +32,8 @@ final_annotation/
 
 | Instance | Role | Web Interface | Login Credentials |
 | :--- | :--- | :--- | :--- |
-| **Annotator 1** | Lead Annotator (A1) | [http://localhost:8081](http://localhost:8081) | `Vipul.patil@iitgn.ac.in` / `annotator1password`<br>or `annotator1@institution.local` / `annotator1password` |
-| **Annotator 2** | Secondary Annotator (A2) | [http://localhost:8082](http://localhost:8082) | `Vipul.patil@iitgn.ac.in` / `annotator1password`<br>or `annotator2@institution.local` / `annotator2password` |
+| **Annotator 1** | Lead Annotator (A1) | [http://localhost:8081](http://localhost:8081) | *Local instance authentication* (configured via environment) |
+| **Annotator 2** | Secondary Annotator (A2) | [http://localhost:8082](http://localhost:8082) | *Local instance authentication* (configured via environment) |
 
 ---
 
