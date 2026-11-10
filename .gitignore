@@ -51,7 +51,14 @@ scratch/
 prompts/
 code/prompts/
 code/scripts/
+report/*.pdf
+report/fig_*.pdf
+report/figures/
 report/figures_v2/
+report/final_reports/STTAI_reports/report/*.pdf
+report/final_reports/STTAI_reports/report/fig_*.pdf
+report/final_reports/STTAI_reports/report/figures_v2/
+report/final_reports/STTAI_reports/code/scripts/
 *.log
 *.pid
 *.tmp
