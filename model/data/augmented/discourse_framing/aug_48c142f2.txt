@@ -1,0 +1,7 @@
+UUID: aug_48c142f2
+Parent_UUID: 8cbfedb0
+Augmentation_Type: discourse_framing
+Similarity_Score: 0.9733
+Transcript: कृपया मार्गदर्शन करें, नमस्ते सर, मुझे आपके कॉलेज में एडमिशन करवाना था, तो डॉक्यूमेंट वेरिफिकेशन के समय मुझे कौन-कौन से दस्तावेज़ साथ लाने चाहिए?
+Target_Label: admissions
+Spoken_Languages: ['Hindi']

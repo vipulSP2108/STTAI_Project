@@ -1,0 +1,7 @@
+UUID: aug_2ab010a1
+Parent_UUID: 778eedb3
+Augmentation_Type: lexical_synsets
+Similarity_Score: 0.911
+Transcript: Hello IITGN Helpdesk, my student housing room hot water supply has not been available for the past two days. Please have the maintenance team look into this.
+Target_Label: hostel_mess
+Spoken_Languages: ['English', 'Hindi']

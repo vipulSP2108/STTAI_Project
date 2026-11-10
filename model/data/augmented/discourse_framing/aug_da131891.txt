@@ -1,0 +1,7 @@
+UUID: aug_da131891
+Parent_UUID: b24445a7
+Augmentation_Type: discourse_framing
+Similarity_Score: 0.9151
+Transcript: મારો પ્રશ્ન એવો છે કે કુપિયા અર્જન્ટ સપોર્ટ આપો નમસ્કાર સ્પોર્ટ એડમિશન વિલીઝ થયો છે કે નહીં
+Target_Label: admissions
+Spoken_Languages: ['Gujarati']

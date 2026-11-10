@@ -1,0 +1,7 @@
+UUID: aug_a010e979
+Parent_UUID: 2b70e525
+Augmentation_Type: discourse_framing
+Similarity_Score: 0.8258
+Transcript: સર, એક પૂછપરછ છે કે હાઇટીજેનલ બસ મીરા ગ્રેટ કાર્ડને એક સબ્જેક્ટ રિઝલ ટેપ્શન શો કરી છે જે આરે એક્ઝામ આપો હત
+Target_Label: it_support
+Spoken_Languages: ['Hindi', 'Gujarati']

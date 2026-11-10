@@ -1,0 +1,7 @@
+UUID: aug_69186de1
+Parent_UUID: 79a28903
+Augmentation_Type: discourse_framing
+Similarity_Score: 0.9587
+Transcript: મારો પ્રશ્ન એવો છે કે હેલો, નમસ્તે હેલ્પડેસ્ક, આઈઆઈટી ગાંધીનગર કેમ્પસમાં admissions અંગે સપોર્ટ જોઈતો હતો
+Target_Label: admissions
+Spoken_Languages: ['English', 'Gujarati']

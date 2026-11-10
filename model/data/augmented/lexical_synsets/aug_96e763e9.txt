@@ -1,0 +1,7 @@
+UUID: aug_96e763e9
+Parent_UUID: d9178793
+Augmentation_Type: lexical_synsets
+Similarity_Score: 0.942
+Transcript: breaks. Hello IITGN help disc my student intranet page keeps logging me out every few minutes. Even after clearing the browser cache, can IIT investigate.
+Target_Label: it_support
+Spoken_Languages: ['English']

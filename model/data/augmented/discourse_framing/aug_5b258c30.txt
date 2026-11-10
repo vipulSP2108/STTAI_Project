@@ -1,0 +1,7 @@
+UUID: aug_5b258c30
+Parent_UUID: acdabacc
+Augmentation_Type: discourse_framing
+Similarity_Score: 0.965
+Transcript: નમસ્તે, મારે જાણવું છે કે હેલો આઈઆઈટી ગાંધીનગર, મેડિકલ હેલ્થ ઇન્શ્યોરન્સ કેશલેસ કાર્ડ માટે ક્લેમ ફોર્મ ક્યાં સબમિટ કરવાનું રહેશે?
+Target_Label: student_services
+Spoken_Languages: ['Gujarati']

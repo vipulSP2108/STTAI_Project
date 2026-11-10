@@ -1,0 +1,28 @@
+%% common.tex -- shared packages / macros for both reports
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{xcolor}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,shapes.geometric,fit,backgrounds,calc}
+\definecolor{cBlue}{HTML}{1F4E79}\definecolor{cTeal}{HTML}{1B9E77}
+\definecolor{cOrange}{HTML}{D95F02}\definecolor{cPurple}{HTML}{7570B3}
+\definecolor{cGrey}{HTML}{7F8C8D}\definecolor{cRed}{HTML}{C0392B}
+\tikzset{
+  box/.style={draw=cBlue,fill=cBlue!8,rounded corners=2pt,align=center,font=\scriptsize,inner sep=3pt,minimum height=0.9cm,text width=2.1cm},
+  boxT/.style={box,draw=cTeal,fill=cTeal!10},
+  boxO/.style={box,draw=cOrange,fill=cOrange!10},
+  boxP/.style={box,draw=cPurple,fill=cPurple!10},
+  boxR/.style={box,draw=cRed,fill=cRed!8},
+  arr/.style={-{Stealth[length=4pt]},thick,color=cGrey},
+  lab/.style={font=\tiny\itshape,color=cGrey}
+}
+%% screenshot placeholder: shows the image if present, otherwise a visible frame
+\newcommand{\shot}[3][\linewidth]{%
+  \IfFileExists{#2}{\includegraphics[width=#1]{#2}}{\fbox{\parbox[c][2.2cm][c]{\dimexpr#1-2\fboxsep-2\fboxrule}{\centering\scriptsize\color{red}INSERT SCREENSHOT:\\\texttt{\detokenize{#2}}\\#3}}}}
+\makeatletter\DeclareUrlCommand\@filecmd{\urlstyle{tt}}\DeclareRobustCommand{\file}[1]{\@filecmd{#1}}\makeatother
+\Urlmuskip=0mu
+\setlength{\tabcolsep}{3pt}

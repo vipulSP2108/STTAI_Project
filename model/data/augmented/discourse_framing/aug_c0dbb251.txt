@@ -1,0 +1,7 @@
+UUID: aug_c0dbb251
+Parent_UUID: 3170f437
+Augmentation_Type: discourse_framing
+Similarity_Score: 0.8307
+Transcript: કૃપા કરીને મદદ કરો, સપોર્ટ આપો નમસ્કાર ગાંધીનગર વોઈસ હેલ્પ એડવાન્સ એન્ક ઇલેક્ટિકલ એન્સીઇનિયા ઇંગ ડિપાર્
+Target_Label: admissions
+Spoken_Languages: ['Gujarati']

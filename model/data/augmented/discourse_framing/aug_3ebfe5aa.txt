@@ -1,0 +1,7 @@
+UUID: aug_3ebfe5aa
+Parent_UUID: 958ca9ba
+Augmentation_Type: discourse_framing
+Similarity_Score: 0.953
+Transcript: Greetings, I wanted to confirm whether hello IITGN Helpdesk, can undergraduate students apply for summer research internships under faculty members across departments?
+Target_Label: student_services
+Spoken_Languages: ['English']

@@ -1,0 +1,7 @@
+UUID: aug_16713bd2
+Parent_UUID: d605e770
+Augmentation_Type: discourse_framing
+Similarity_Score: 0.9605
+Transcript: हेल्पडेस्क से सहायता चाहिए, हेलो आईआईटीजीएन हेल्पडेस्क, हॉस्टल के सेकंड फ्लोर बाथरूम में पानी का प्रेशर बहुत कम है, कृपया प्लंबर को भिजवाएं।
+Target_Label: hostel_mess
+Spoken_Languages: ['Hindi']

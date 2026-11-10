@@ -1,18 +1,19 @@
 {
-  "timestamp": "2026-11-10T07:52:46.701852",
+  "timestamp": "2026-11-10T09:21:35.097373",
   "threshold": 0.82,
   "statistics": {
-    "candidates_generated": 461,
-    "rejected_by_embedding": 95,
-    "rejected_by_polarity": 34,
-    "rejected_by_dedup": 208,
-    "accepted": 124,
+    "candidates_generated": 1007,
+    "rejected_by_embedding": 132,
+    "rejected_by_polarity": 49,
+    "rejected_by_dedup": 322,
+    "accepted": 504,
     "by_technique": {
       "back_translation": 2,
       "pivot_latin": 51,
       "lexical_synsets": 60,
-      "code_mixing": 11
+      "code_mixing": 11,
+      "discourse_framing": 380
     }
   },
-  "total_augmented_samples": 124
+  "total_augmented_samples": 504
 }

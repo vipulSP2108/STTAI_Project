@@ -1,0 +1,7 @@
+UUID: aug_3117d3b0
+Parent_UUID: c2b6d2c5
+Augmentation_Type: lexical_synsets
+Similarity_Score: 0.9067
+Transcript: Hello sir, good morning. I would like to know about the application process process for the engineering program and the eligibility criteria.
+Target_Label: admissions
+Spoken_Languages: ['English']

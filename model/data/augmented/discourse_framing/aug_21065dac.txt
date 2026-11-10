@@ -1,0 +1,7 @@
+UUID: aug_21065dac
+Parent_UUID: 464c04af
+Augmentation_Type: discourse_framing
+Similarity_Score: 0.9381
+Transcript: Greetings, I wanted to confirm whether hello, Adizyan Hildes. My hostel room has a water leakage problem near the study table. again someone is expected today
+Target_Label: hostel_mess
+Spoken_Languages: ['English']

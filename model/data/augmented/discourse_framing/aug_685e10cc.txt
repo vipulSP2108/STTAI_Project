@@ -1,0 +1,7 @@
+UUID: aug_685e10cc
+Parent_UUID: 969b6662
+Augmentation_Type: discourse_framing
+Similarity_Score: 0.9211
+Transcript: સર, એક પૂછપરછ છે કે નમસ્તે હેલ્પડેસ્ક, સમર સેમેસ્ટરમાં બેકલોગ કોર્સ ઓફર થશે કે નહીં તે બાબતે માહિતી જોઈતી હતી
+Target_Label: student_services
+Spoken_Languages: ['Gujarati']

@@ -1,0 +1,7 @@
+UUID: aug_6e7b519b
+Parent_UUID: 847fd9b4
+Augmentation_Type: discourse_framing
+Similarity_Score: 0.9654
+Transcript: Hi, I need official assistance with good afternoon. I need information about banking and ATM facilities on campus for students
+Target_Label: student_services
+Spoken_Languages: ['English']

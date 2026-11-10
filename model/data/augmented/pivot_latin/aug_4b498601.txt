@@ -1,0 +1,7 @@
+UUID: aug_4b498601
+Parent_UUID: f5f59b22
+Augmentation_Type: pivot_latin
+Similarity_Score: 0.9268
+Transcript: Hello IITGN Helpdesk, my residential hall room has a water leakage problem near the window sill. Could maintenance send someone to fix it?
+Target_Label: hostel_mess
+Spoken_Languages: ['English']

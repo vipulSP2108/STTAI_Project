@@ -1,0 +1,7 @@
+UUID: aug_04d10c95
+Parent_UUID: abae4f43
+Augmentation_Type: discourse_framing
+Similarity_Score: 0.9393
+Transcript: सर, मुझे एक जानकारी चाहिए कि नमस्ते सर, मुझे आईआईटी गांधीनगर में एमटेक एडमिशन के लिए सीट अलॉटमेंट लेटर और ऑनलाइन फीस रसीद डाउनलोड करने में मदद चाहिए।
+Target_Label: admissions
+Spoken_Languages: ['Hindi']

@@ -1,0 +1,7 @@
+UUID: aug_4725ccc4
+Parent_UUID: 018267c4
+Augmentation_Type: discourse_framing
+Similarity_Score: 0.9805
+Transcript: नमस्ते, कृपया बताइए कि हेलो हेल्पडेस्क, हॉस्टल रूम में स्टडी टेबल की दराज टूटी हुई है, कारपेंटर को मेंटेनेंस रिक्वेस्ट भेज दीजिए।
+Target_Label: hostel_mess
+Spoken_Languages: ['Hindi']

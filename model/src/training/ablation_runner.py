@@ -84,7 +84,17 @@ CONFIGURATIONS = {
     "C-10": {
         "name": "Complete Optimized Pipeline (All Gates)",
         "description": "Full dataset combining all techniques passed through semantic similarity & deduplication gates.",
-        "allowed_types": ["original", "back_translation", "pivot_latin", "lexical_synsets", "code_mixing", "audio_perturbed", "contextual_mlm", "cross_lingual"]
+        "allowed_types": ["original", "back_translation", "pivot_latin", "lexical_synsets", "code_mixing", "audio_perturbed", "contextual_mlm", "cross_lingual", "discourse_framing"]
+    },
+    "C-11": {
+        "name": "Original + Indic Discourse Framing",
+        "description": "Evaluates colloquial student conversational helpdesk frames across Gujarati, Hindi, and English.",
+        "allowed_types": ["original", "discourse_framing"]
+    },
+    "C-12": {
+        "name": "Synergistic Ensemble (Latin Pivot + Indic Discourse)",
+        "description": "Combines morphological Latinate pivot abstraction with conversational Indic discourse frames.",
+        "allowed_types": ["original", "pivot_latin", "discourse_framing"]
     }
 }
 

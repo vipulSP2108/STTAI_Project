@@ -1,0 +1,20 @@
+ERR-01 & hostel\_mess$\to$it\_support & 1.19 & Phonetic \& Lexical Substitution & Add Hinglish/Gujlish vocabulary expansion in tokenizer and train intent head on character-n-gra\ldots \\
+ERR-02 & it\_support$\to$hostel\_mess & 1.00 & ASR Decoder Hallucination (Script Shift) & Set condition\_on\_previous\_text=False and compression\_ratio\_threshold=2.0 in Whisper decoding op\ldots \\
+ERR-03 & student\_services$\to$hostel\_mess & 1.00 & Acoustic Silence / Non-Speech Collapse & Prepend energy-based voice activity detection (VAD) filter to reject low-energy frames before W\ldots \\
+ERR-04 & admissions$\to$hostel\_mess & 1.00 & ASR Decoder Hallucination (Script Shift) & Force Whisper language='en' decoding task with Latin script constraint to prevent unprompted Hi\ldots \\
+ERR-05 & student\_services$\to$it\_support & 1.64 & Lexical Cross-Talk \& Hallucination & Use contextual embeddings (e.g. MiniLM / IndicBERT) that score entire query semantics rather th\ldots \\
+ERR-06 & student\_services$\to$it\_support & 1.58 & Semantic Hallucination Overwrite & Fine-tune Whisper acoustic decoder on target speaker acoustics to prevent severe phantom halluc\ldots \\
+ERR-07 & admissions$\to$hostel\_mess & 2.12 & Semantic Hallucination Overwrite & Incorporate audio-level intent classification directly from Whisper encoder embeddings (end-to-\ldots \\
+ERR-08 & hostel\_mess$\to$it\_support & 1.61 & Semantic Keyword Hijack & Apply cross-attention acoustic adaptation on speaker cohort to ensure domain-specific hostel vo\ldots \\
+ERR-09 & it\_support$\to$student\_services & 1.00 & Cross-Domain Semantic Misalignment & Add domain-specific lexicon biasing during Whisper beam search decoding using campus vocabulary\ldots \\
+ERR-10 & admissions$\to$it\_support & 2.12 & Lexical Confusion \& Peripheral Tokens & Train joint ASR-Intent loss where acoustic encoder explicitly weights intent discriminative pho\ldots \\
+ERR-11 & it\_support$\to$admissions & 1.00 & Cross-Intent Academic Overlap & Disambiguate academic deadline queries from administrative admissions via fine-grained multi-la\ldots \\
+ERR-12 & hostel\_mess$\to$it\_support & 1.22 & Acoustic Bleed \& Academic Hallucination & Normalize Whisper prompt conditioning to bias toward residential and campus administration term\ldots \\
+ERR-13 & it\_support$\to$student\_services & 1.00 & Cross-Intent Academic Overlap & Weight domain-specific technical IT terms ('email forwarding', 'hpc', 'server') higher using we\ldots \\
+ERR-14 & student\_services$\to$it\_support & 1.38 & Acoustic Substitution \& Technical Drift & Expand medical/counselling training samples in student\_services intent class to increase semant\ldots \\
+ERR-15 & admissions$\to$hostel\_mess & 1.40 & Severe Semantic Hallucination (Hostel Bias) & Fine-tune Whisper base decoder cross-attention layers on domain recordings to suppress random r\ldots \\
+ERR-16 & hostel\_mess$\to$student\_services & 1.25 & Composite Intent Ambiguity & Introduce composite intent schema or fallback routing to human agent when classification entrop\ldots \\
+ERR-17 & it\_support$\to$admissions & 0.97 & Hallucinated Guest Accommodation Query & Fine-tune acoustic encoder on noisy lab acoustic environments with server room background rumbl\ldots \\
+ERR-18 & student\_services$\to$hostel\_mess & 1.56 & Academic Schedule Confusion & Calibrate probability thresholds per intent class to avoid majority class collapse on uncertain\ldots \\
+ERR-19 & admissions$\to$student\_services & 1.21 & Multilingual Script Infiltration (Urdu/Hinglish) & Enforce strict Unicode Latin/Devanagari script filtering in ASR post-processing pipeline before\ldots \\
+ERR-20 & admissions$\to$student\_services & 1.06 & Acoustic Mismatch \& Keyword Ambiguity & Implement multi-task loss weighting and negative sample penalty on cross-domain vocabulary.\ldots \\

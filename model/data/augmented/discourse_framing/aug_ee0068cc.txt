@@ -1,0 +1,7 @@
+UUID: aug_ee0068cc
+Parent_UUID: 39820cff
+Augmentation_Type: discourse_framing
+Similarity_Score: 0.9219
+Transcript: મારો પ્રશ્ન એવો છે કે નમસ્કાર ગાંધીનગર વોઇસ હેલ્પ ડેસ્ક હોસ્ટેલ્પ ફાઇન વોસ્ટમાં ગીઝ કામ નથી કહી આયું ઇન્સ્
+Target_Label: hostel_mess
+Spoken_Languages: ['Gujarati']

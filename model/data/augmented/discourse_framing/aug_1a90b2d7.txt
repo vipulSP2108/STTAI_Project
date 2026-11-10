@@ -1,0 +1,7 @@
+UUID: aug_1a90b2d7
+Parent_UUID: 20a04502
+Augmentation_Type: discourse_framing
+Similarity_Score: 0.8307
+Transcript: કૃપા કરીને મદદ કરો, માર્ચે હોસ્ટલમાં હોટ વોટર સપ્લાય સવારે આવતી નથી ઈસ્મા ઇન્ટેનન્સ કમ્પ્લેન કારજિસ્ટર
+Target_Label: hostel_mess
+Spoken_Languages: ['Gujarati']

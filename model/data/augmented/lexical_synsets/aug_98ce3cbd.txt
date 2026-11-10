@@ -1,0 +1,7 @@
+UUID: aug_98ce3cbd
+Parent_UUID: dc815fe7
+Augmentation_Type: lexical_synsets
+Similarity_Score: 0.9136
+Transcript: નમસ ્ ત ે, મ ા ર ી દ ી કર ી ન ે આઈઆઈટ ી ગ ા ં ધ ી નગરમ ા ં એડમ િ શન મ ા ટ ે મ ા હ િ ત ી જ ો ઈએ છ ે, હ ો સ ્ ટ ે લમ ા ં સ ્ ટડ ી ટ ે બલ અન ે ઇન ્ ટરન ે ટ સ ુ વ િ ધ ા ઓ મળ ે છ ે ક ે ક ે ટલ ી ક વસ ્ ત ુ ઓ ઘર ે થ ી લ ા વવ ી પડ ે છ ે?
+Target_Label: admissions
+Spoken_Languages: ['Gujarati']

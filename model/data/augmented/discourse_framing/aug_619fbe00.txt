@@ -1,0 +1,7 @@
+UUID: aug_619fbe00
+Parent_UUID: a1384ddc
+Augmentation_Type: discourse_framing
+Similarity_Score: 0.8714
+Transcript: સાહેબ, થોડી માહિતી જોઈતી હતી કે નમસ્કાર મારે સંસ્થાના હોસ્તા માટે મંજૂરી લઈ પડે છે માતાપી તે સમયે સમય હોય છે તો તે સુર દિકરીને મળવા આવે ત્યારે કોઈ નક્કી કરેલી મુલાકાતની પ્રક્રિયા હોય છે અમે બીજા શહેરમાંથ કરી
+Target_Label: hostel_mess
+Spoken_Languages: ['Gujarati']

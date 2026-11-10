@@ -1,0 +1,7 @@
+UUID: aug_0de91943
+Parent_UUID: a18ff6b6
+Augmentation_Type: discourse_framing
+Similarity_Score: 0.9671
+Transcript: Greetings, I wanted to confirm whether hello IITGN Helpdesk, can I audit an additional elective course without it affecting my semester CPI?
+Target_Label: student_services
+Spoken_Languages: ['English']

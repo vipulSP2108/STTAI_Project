@@ -1,0 +1,7 @@
+UUID: aug_7bd9decf
+Parent_UUID: 8c41561b
+Augmentation_Type: lexical_synsets
+Similarity_Score: 0.8981
+Transcript: નમસ ્ ક ા ર ્ જ ી હ ુ ં મ ા ર ા દ ી કર ા ન ા આઇટ ી ગ ા ં ધ ી નગરમ ા ં એડમ િ શન અ ં ગ ે મ ા હ િ ત ી મ ે ળવ ્ ય ો છ ુ ં પહ ે લ ી વ ા સ ુ ં દ ા રહ ે ત ા વ િ દ ્ ધર ્ ત િ ઓન ે મ ે ડ િ કલ ઇમરજન ્ સ ી મ ા ટ ે ક ો ઈ સ ં પર ્ ક નમવ ા ર ક ો ઈ સહ ા ય આપવ ા મ ા ં આવ ે હ ો સ ્ ટ ે લન ી સ ુ રક ્ ષ ા સમર ્ થ િ ત ન િ યમ વ િ શ ે મ ા હ િ ત ી આપશ ો.
+Target_Label: student_services
+Spoken_Languages: ['Gujarati']

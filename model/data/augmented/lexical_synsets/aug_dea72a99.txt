@@ -1,0 +1,7 @@
+UUID: aug_dea72a99
+Parent_UUID: 0279b6a6
+Augmentation_Type: lexical_synsets
+Similarity_Score: 0.8254
+Transcript: અર ્ જન સપ ો ર ્ ટ આવ ો નમસ ્ ક ા ર હ ો ય ગ ે સ ્ ટ હ ા ઇન િ ં ગ કન ્ ફર ્ મ ે શન મ ે લ નથ ી પ ા ર ્ ટ િ ં ગ ક ુ પ િ ય ા અર ્ જન સપ.
+Target_Label: hostel_mess
+Spoken_Languages: ['Gujarati']

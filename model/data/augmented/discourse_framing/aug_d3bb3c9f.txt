@@ -1,0 +1,7 @@
+UUID: aug_d3bb3c9f
+Parent_UUID: e256a6dc
+Augmentation_Type: discourse_framing
+Similarity_Score: 0.9629
+Transcript: હેલ્પડેસ્ક પર જણાવશો કે નમસ્તે મહારા દીકરો આઈટી ગાંધીનગરમાં મેળવે તો તેના હશીલમાં કેવી સુવિધાઓ મળશે તે જાણવુ જરૂર પડે ત્યારે વિદ્યાર્થીઓને મદદ કરી શકે છે હું પણ જાણવા માંગુ છું કે જો મારા દીકરાન
+Target_Label: hostel_mess
+Spoken_Languages: ['Gujarati']

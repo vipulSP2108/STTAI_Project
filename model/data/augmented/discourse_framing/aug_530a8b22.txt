@@ -1,0 +1,7 @@
+UUID: aug_530a8b22
+Parent_UUID: bf7b539b
+Augmentation_Type: discourse_framing
+Similarity_Score: 0.9579
+Transcript: Sir, I have a quick inquiry regarding hello IITGN Helpdesk, my parents will stay on campus for two nights. Could you guide me on the guest house booking charges and reservation form?
+Target_Label: student_services
+Spoken_Languages: ['English', 'Hindi']

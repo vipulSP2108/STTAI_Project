@@ -1,0 +1,7 @@
+UUID: aug_8cecd10c
+Parent_UUID: 951f58d0
+Augmentation_Type: discourse_framing
+Similarity_Score: 0.9554
+Transcript: સર, એક પૂછપરછ છે કે હેલો હેલ્પડેસ્ક, નવા સેમેસ્ટરનું ટાઇમટેબલ અને ક્લાસરૂમ અલોટમેન્ટ યાદી ક્યાં જોઈ શકાશે?
+Target_Label: hostel_mess
+Spoken_Languages: ['English', 'Hindi']

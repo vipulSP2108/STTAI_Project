@@ -1,0 +1,7 @@
+UUID: aug_a24a7028
+Parent_UUID: 10714d51
+Augmentation_Type: discourse_framing
+Similarity_Score: 0.9709
+Transcript: मेरा सवाल यह है कि हेलो आईटी हेल्पडेस्क, कैंपस फोर्टिनेट फायरवॉल पर मेरा लैपटॉप रजिस्टर नहीं हो रहा है, कृपया मैक एड्रेस ऑथेंटिकेशन चेक करें।
+Target_Label: hostel_mess
+Spoken_Languages: ['Hindi']

@@ -1,0 +1,7 @@
+UUID: aug_fdc8f1d8
+Parent_UUID: 1a50aec3
+Augmentation_Type: discourse_framing
+Similarity_Score: 0.9548
+Transcript: કૃપા કરીને મદદ કરો, હેલો, મૂડલ પોર્ટલ પર એસાઈનમેન્ટ સબમિશન ડેડલાઈન એક્સટેન્ડ થઈ છે કે નહીં તે કન્ફર્મ કરશો?
+Target_Label: student_services
+Spoken_Languages: ['Gujarati']

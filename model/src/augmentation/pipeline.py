@@ -33,6 +33,7 @@ from model.src.augmentation.back_translation import back_translate
 from model.src.augmentation.pivot_translator import augment_latin_pivot
 from model.src.augmentation.lexical_synsets import augment_lexical_synsets
 from model.src.augmentation.code_mix_generator import synthesize_code_mixed_variants
+from model.src.augmentation.discourse_marker_augmenter import augment_discourse_framing
 from model.src.validation.embedding_filter import EmbeddingSimilarityGate
 from model.src.validation.polarity_checker import PolarityEntityAuditor
 from model.src.validation.deduplicator import MinHashDeduplicator
@@ -46,7 +47,7 @@ REPORTS_DIR = MODEL_DIR / "data" / "reports"
 
 def run_augmentation_pipeline(techniques=None, similarity_threshold=0.82, max_variants_per_sample=3):
     if techniques is None:
-        techniques = ["back_translation", "pivot_latin", "lexical_synsets", "code_mixing"]
+        techniques = ["back_translation", "pivot_latin", "lexical_synsets", "code_mixing", "discourse_framing"]
 
     print("=" * 70)
     print("MULTILINGUAL AUGMENTATION & SEMANTIC QUALITY GATE PIPELINE")
@@ -122,6 +123,10 @@ def run_augmentation_pipeline(techniques=None, similarity_threshold=0.82, max_va
         if "code_mixing" in techniques:
             cm_vars = synthesize_code_mixed_variants(orig_transcript, detected_lang=detected_lang, n_variants=max_variants_per_sample)
             candidates.extend([(v, "code_mixing") for v in cm_vars])
+
+        if "discourse_framing" in techniques:
+            df_vars = augment_discourse_framing(orig_transcript, n_variants=max_variants_per_sample)
+            candidates.extend([(v, "discourse_framing") for v in df_vars])
 
         stats["candidates_generated"] += len(candidates)
 

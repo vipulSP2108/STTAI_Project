@@ -1,0 +1,7 @@
+UUID: aug_82d30003
+Parent_UUID: c04a96c4
+Augmentation_Type: discourse_framing
+Similarity_Score: 0.8238
+Transcript: મારો પ્રશ્ન એવો છે કે નમસ્કાર ફોર્મ કયું હતું રિફ્લેક્ટ
+Target_Label: hostel_mess
+Spoken_Languages: ['Gujarati']

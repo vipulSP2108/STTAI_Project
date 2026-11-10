@@ -1,0 +1,7 @@
+UUID: aug_e5e28427
+Parent_UUID: 1223b513
+Augmentation_Type: discourse_framing
+Similarity_Score: 0.9643
+Transcript: नमस्ते सर, इस बारे में बताएं कि हेलो आईआईटी गांधीनगर हेल्पडेस्क, ऑनलाइन फीस पेमेंट करते समय ब्राउज़र क्रैश हो गया और पोर्टल पर ट्रांजेक्शन पेंडिंग दिखा रहा है, कृपया समाधान बताएं।
+Target_Label: it_support
+Spoken_Languages: ['Hindi']

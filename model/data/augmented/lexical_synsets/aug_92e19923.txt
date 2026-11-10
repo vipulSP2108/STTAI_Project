@@ -1,0 +1,7 @@
+UUID: aug_92e19923
+Parent_UUID: 83f4a9a9
+Augmentation_Type: lexical_synsets
+Similarity_Score: 0.8313
+Transcript: Hello Namaskar Sir, I am speaking in Val make party in Nando Barchila. My pre-wab is now in PED, so I have now binding my final thesis. I have now completed the pre-wab and I have already completed the entire procedure. I have also submitted the final viva and thesis. च ि ग े प ि ट े प ि ट े.
+Target_Label: student_services
+Spoken_Languages: ['Hindi']

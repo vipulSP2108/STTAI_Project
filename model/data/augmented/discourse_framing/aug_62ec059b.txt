@@ -1,0 +1,7 @@
+UUID: aug_62ec059b
+Parent_UUID: 17a0df49
+Augmentation_Type: discourse_framing
+Similarity_Score: 0.9047
+Transcript: મારો પ્રશ્ન એવો છે કે પ્યા અર્જન્ટ સપોર્ટ આપો નમસ્કાર હેલ્થ ઇન્ટરવ્યૂ હોગા વેબસાઇટ નહીં
+Target_Label: admissions
+Spoken_Languages: ['Hindi', 'Gujarati']

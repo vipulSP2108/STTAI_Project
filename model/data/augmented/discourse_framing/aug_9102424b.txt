@@ -1,0 +1,7 @@
+UUID: aug_9102424b
+Parent_UUID: 439472e6
+Augmentation_Type: discourse_framing
+Similarity_Score: 0.957
+Transcript: हेल्पडेस्क से सहायता चाहिए, हेलो हेल्पडेस्क, मेरी अटेंडेंस परसेंटेज अस्सी प्रतिशत से कम दिखा रही है, मेडिकल सर्टिफिकेट सबमिट करने की प्रक्रिया क्या है?
+Target_Label: student_services
+Spoken_Languages: ['Hindi']

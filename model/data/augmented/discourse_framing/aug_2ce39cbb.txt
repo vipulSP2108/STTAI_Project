@@ -1,0 +1,7 @@
+UUID: aug_2ce39cbb
+Parent_UUID: 2f923996
+Augmentation_Type: discourse_framing
+Similarity_Score: 0.9553
+Transcript: Please help, I am inquiring about hello IIT Gandhinagar Helpdesk, I am calling to report a lost item. I left my blue scientific calculator in Academic Block 3 yesterday
+Target_Label: student_services
+Spoken_Languages: ['English']

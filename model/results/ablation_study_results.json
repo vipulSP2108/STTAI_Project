@@ -1,227 +1,271 @@
 {
-  "timestamp": "2026-11-10T08:47:34.056690",
+  "timestamp": "2026-11-10T09:23:16.933621",
   "evaluation_metric": "Macro-F1",
   "k_folds": 5,
-  "baseline_macro_f1": 0.5818800000000001,
+  "baseline_macro_f1": 0.5408000000000001,
   "results": {
     "C-01": {
       "name": "Baseline (Raw Transcripts Only)",
       "description": "Performance floor using solely the original unaugmented transcripts.",
-      "accuracy_mean": 0.5825,
-      "macro_f1_mean": 0.5819,
-      "macro_f1_std": 0.0469,
-      "weighted_f1_mean": 0.5819,
+      "accuracy_mean": 0.5557,
+      "macro_f1_mean": 0.5408,
+      "macro_f1_std": 0.0862,
+      "weighted_f1_mean": 0.5473,
       "delta_macro_f1": 0.0,
       "per_class_f1": {
-        "admissions": 0.4624,
-        "hostel_mess": 0.6038,
-        "it_support": 0.7264,
-        "student_services": 0.5349
+        "admissions": 0.3805,
+        "hostel_mess": 0.5856,
+        "it_support": 0.7031,
+        "student_services": 0.494
       },
       "fold_macro_f1s": [
-        0.4951,
-        0.6305,
-        0.5817,
-        0.6146,
-        0.5875
+        0.6669,
+        0.4126,
+        0.5217,
+        0.5054,
+        0.5974
       ]
     },
     "C-02": {
       "name": "Original + Back-Translation",
       "description": "Tests syntactic clause reordering via multilingual back-translation.",
-      "accuracy_mean": 0.5719,
-      "macro_f1_mean": 0.5653,
-      "macro_f1_std": 0.0594,
-      "weighted_f1_mean": 0.5708,
-      "delta_macro_f1": -0.0165,
+      "accuracy_mean": 0.5667,
+      "macro_f1_mean": 0.5486,
+      "macro_f1_std": 0.0795,
+      "weighted_f1_mean": 0.5563,
+      "delta_macro_f1": 0.0078,
       "per_class_f1": {
-        "admissions": 0.4866,
-        "hostel_mess": 0.6038,
-        "it_support": 0.6569,
-        "student_services": 0.5141
+        "admissions": 0.3866,
+        "hostel_mess": 0.6021,
+        "it_support": 0.7031,
+        "student_services": 0.5025
       },
       "fold_macro_f1s": [
-        0.4515,
-        0.6261,
-        0.5817,
-        0.5799,
-        0.5875
+        0.6669,
+        0.4303,
+        0.5229,
+        0.5253,
+        0.5974
       ]
     },
     "C-03": {
       "name": "Original + Cross-Lingual Paraphrase",
       "description": "Evaluates direct syntactic transfer across campus languages.",
-      "accuracy_mean": 0.5825,
-      "macro_f1_mean": 0.5819,
-      "macro_f1_std": 0.0469,
-      "weighted_f1_mean": 0.5819,
+      "accuracy_mean": 0.5557,
+      "macro_f1_mean": 0.5408,
+      "macro_f1_std": 0.0862,
+      "weighted_f1_mean": 0.5473,
       "delta_macro_f1": 0.0,
       "per_class_f1": {
-        "admissions": 0.4624,
-        "hostel_mess": 0.6038,
-        "it_support": 0.7264,
-        "student_services": 0.5349
+        "admissions": 0.3805,
+        "hostel_mess": 0.5856,
+        "it_support": 0.7031,
+        "student_services": 0.494
       },
       "fold_macro_f1s": [
-        0.4951,
-        0.6305,
-        0.5817,
-        0.6146,
-        0.5875
+        0.6669,
+        0.4126,
+        0.5217,
+        0.5054,
+        0.5974
       ]
     },
     "C-04": {
       "name": "Original + Pivot Translation (Latin)",
       "description": "Tests morphological abstraction via Romance/Latinate pivot transformation.",
-      "accuracy_mean": 0.6046,
-      "macro_f1_mean": 0.6038,
-      "macro_f1_std": 0.0519,
-      "weighted_f1_mean": 0.6073,
-      "delta_macro_f1": 0.0219,
+      "accuracy_mean": 0.5393,
+      "macro_f1_mean": 0.5254,
+      "macro_f1_std": 0.0861,
+      "weighted_f1_mean": 0.5391,
+      "delta_macro_f1": -0.0154,
       "per_class_f1": {
-        "admissions": 0.4836,
-        "hostel_mess": 0.6136,
-        "it_support": 0.7391,
-        "student_services": 0.5789
+        "admissions": 0.4208,
+        "hostel_mess": 0.5934,
+        "it_support": 0.6137,
+        "student_services": 0.4739
       },
       "fold_macro_f1s": [
-        0.5089,
-        0.6667,
-        0.6167,
-        0.6224,
-        0.6044
+        0.5997,
+        0.4162,
+        0.4631,
+        0.5,
+        0.6482
       ]
     },
     "C-05": {
       "name": "Original + Lexical Synonym Replacement",
       "description": "Evaluates domain synset expansion across administrative terms.",
-      "accuracy_mean": 0.5661,
-      "macro_f1_mean": 0.561,
-      "macro_f1_std": 0.0325,
-      "weighted_f1_mean": 0.564,
-      "delta_macro_f1": -0.0209,
+      "accuracy_mean": 0.5393,
+      "macro_f1_mean": 0.5221,
+      "macro_f1_std": 0.0873,
+      "weighted_f1_mean": 0.5357,
+      "delta_macro_f1": -0.0187,
       "per_class_f1": {
-        "admissions": 0.4381,
-        "hostel_mess": 0.5814,
-        "it_support": 0.7032,
-        "student_services": 0.5213
+        "admissions": 0.3931,
+        "hostel_mess": 0.597,
+        "it_support": 0.6175,
+        "student_services": 0.481
       },
       "fold_macro_f1s": [
-        0.5447,
-        0.55,
-        0.6167,
-        0.5203,
-        0.5731
+        0.638,
+        0.4136,
+        0.4448,
+        0.51,
+        0.6043
       ]
     },
     "C-06": {
       "name": "Original + Contextual MLM Substitution",
       "description": "Evaluates masked bidirectional contextual token replacement.",
-      "accuracy_mean": 0.5825,
-      "macro_f1_mean": 0.5819,
-      "macro_f1_std": 0.0469,
-      "weighted_f1_mean": 0.5819,
+      "accuracy_mean": 0.5557,
+      "macro_f1_mean": 0.5408,
+      "macro_f1_std": 0.0862,
+      "weighted_f1_mean": 0.5473,
       "delta_macro_f1": 0.0,
       "per_class_f1": {
-        "admissions": 0.4624,
-        "hostel_mess": 0.6038,
-        "it_support": 0.7264,
-        "student_services": 0.5349
+        "admissions": 0.3805,
+        "hostel_mess": 0.5856,
+        "it_support": 0.7031,
+        "student_services": 0.494
       },
       "fold_macro_f1s": [
-        0.4951,
-        0.6305,
-        0.5817,
-        0.6146,
-        0.5875
+        0.6669,
+        0.4126,
+        0.5217,
+        0.5054,
+        0.5974
       ]
     },
     "C-07": {
       "name": "Original + Campus Code-Switching",
       "description": "Tests robustness to intra-sentential Gujarati/Hindi-English code switching.",
-      "accuracy_mean": 0.5716,
-      "macro_f1_mean": 0.5694,
-      "macro_f1_std": 0.0393,
-      "weighted_f1_mean": 0.571,
-      "delta_macro_f1": -0.0125,
+      "accuracy_mean": 0.5612,
+      "macro_f1_mean": 0.5467,
+      "macro_f1_std": 0.0795,
+      "weighted_f1_mean": 0.5529,
+      "delta_macro_f1": 0.0059,
       "per_class_f1": {
-        "admissions": 0.4399,
-        "hostel_mess": 0.5823,
-        "it_support": 0.7264,
-        "student_services": 0.5291
+        "admissions": 0.425,
+        "hostel_mess": 0.5827,
+        "it_support": 0.6813,
+        "student_services": 0.4978
       },
       "fold_macro_f1s": [
-        0.4951,
-        0.6114,
-        0.584,
-        0.5721,
-        0.5844
+        0.6102,
+        0.4126,
+        0.5229,
+        0.5459,
+        0.6418
       ]
     },
     "C-08": {
       "name": "Original + Acoustic Audio Perturbations",
       "description": "Tests acoustic feature variation (speed, pitch, ambient noise).",
-      "accuracy_mean": 0.5825,
-      "macro_f1_mean": 0.5819,
-      "macro_f1_std": 0.0469,
-      "weighted_f1_mean": 0.5819,
+      "accuracy_mean": 0.5557,
+      "macro_f1_mean": 0.5408,
+      "macro_f1_std": 0.0862,
+      "weighted_f1_mean": 0.5473,
       "delta_macro_f1": 0.0,
       "per_class_f1": {
-        "admissions": 0.4624,
-        "hostel_mess": 0.6038,
-        "it_support": 0.7264,
-        "student_services": 0.5349
+        "admissions": 0.3805,
+        "hostel_mess": 0.5856,
+        "it_support": 0.7031,
+        "student_services": 0.494
       },
       "fold_macro_f1s": [
-        0.4951,
-        0.6305,
-        0.5817,
-        0.6146,
-        0.5875
+        0.6669,
+        0.4126,
+        0.5217,
+        0.5054,
+        0.5974
       ]
     },
     "C-09": {
       "name": "Original + Top-3 Text Techniques",
       "description": "Evaluates synergistic combination of Back-Translation + Lexical Synsets + Code-Mixing.",
-      "accuracy_mean": 0.5663,
-      "macro_f1_mean": 0.5599,
-      "macro_f1_std": 0.0476,
-      "weighted_f1_mean": 0.5662,
-      "delta_macro_f1": -0.022,
+      "accuracy_mean": 0.5393,
+      "macro_f1_mean": 0.5224,
+      "macro_f1_std": 0.0867,
+      "weighted_f1_mean": 0.5364,
+      "delta_macro_f1": -0.0184,
       "per_class_f1": {
-        "admissions": 0.4247,
-        "hostel_mess": 0.5907,
-        "it_support": 0.7,
-        "student_services": 0.5242
+        "admissions": 0.3879,
+        "hostel_mess": 0.5912,
+        "it_support": 0.6252,
+        "student_services": 0.4852
       },
       "fold_macro_f1s": [
-        0.48,
-        0.5924,
-        0.6167,
-        0.5374,
-        0.5731
+        0.636,
+        0.4136,
+        0.4448,
+        0.5132,
+        0.6043
       ]
     },
     "C-10": {
       "name": "Complete Optimized Pipeline (All Gates)",
       "description": "Full dataset combining all techniques passed through semantic similarity & deduplication gates.",
-      "accuracy_mean": 0.546,
-      "macro_f1_mean": 0.5531,
-      "macro_f1_std": 0.0822,
-      "weighted_f1_mean": 0.5522,
-      "delta_macro_f1": -0.0288,
+      "accuracy_mean": 0.5502,
+      "macro_f1_mean": 0.5401,
+      "macro_f1_std": 0.0677,
+      "weighted_f1_mean": 0.5463,
+      "delta_macro_f1": -0.0007,
       "per_class_f1": {
-        "admissions": 0.4356,
-        "hostel_mess": 0.5476,
-        "it_support": 0.7267,
-        "student_services": 0.5025
+        "admissions": 0.4404,
+        "hostel_mess": 0.6042,
+        "it_support": 0.6608,
+        "student_services": 0.4551
       },
       "fold_macro_f1s": [
-        0.4676,
-        0.6264,
-        0.6509,
-        0.4477,
-        0.5729
+        0.6347,
+        0.4484,
+        0.4957,
+        0.5239,
+        0.5978
+      ]
+    },
+    "C-11": {
+      "name": "Original + Indic Discourse Framing",
+      "description": "Evaluates colloquial student conversational helpdesk frames across Gujarati, Hindi, and English.",
+      "accuracy_mean": 0.5446,
+      "macro_f1_mean": 0.5359,
+      "macro_f1_std": 0.0602,
+      "weighted_f1_mean": 0.5406,
+      "delta_macro_f1": -0.0049,
+      "per_class_f1": {
+        "admissions": 0.4572,
+        "hostel_mess": 0.5892,
+        "it_support": 0.6463,
+        "student_services": 0.4509
+      },
+      "fold_macro_f1s": [
+        0.6047,
+        0.4484,
+        0.4957,
+        0.5307,
+        0.5999
+      ]
+    },
+    "C-12": {
+      "name": "Synergistic Ensemble (Latin Pivot + Indic Discourse)",
+      "description": "Combines morphological Latinate pivot abstraction with conversational Indic discourse frames.",
+      "accuracy_mean": 0.5557,
+      "macro_f1_mean": 0.5445,
+      "macro_f1_std": 0.0717,
+      "weighted_f1_mean": 0.5506,
+      "delta_macro_f1": 0.0037,
+      "per_class_f1": {
+        "admissions": 0.4481,
+        "hostel_mess": 0.6054,
+        "it_support": 0.6608,
+        "student_services": 0.4639
+      },
+      "fold_macro_f1s": [
+        0.6347,
+        0.4484,
+        0.4957,
+        0.5247,
+        0.6191
       ]
     }
   }

@@ -1,0 +1,7 @@
+UUID: aug_91fb9204
+Parent_UUID: 30beb45f
+Augmentation_Type: pivot_latin
+Similarity_Score: 0.9029
+Transcript: Hello, I wanted to contact scholar affairs because currently in my hostel wing the hot water supply is not working in the morning.
+Target_Label: hostel_mess
+Spoken_Languages: ['English']

@@ -1,0 +1,7 @@
+UUID: aug_d0cfa691
+Parent_UUID: fce68504
+Augmentation_Type: discourse_framing
+Similarity_Score: 0.9298
+Transcript: सर, मुझे एक जानकारी चाहिए कि नमस्ते, हॉस्टल बालकनी के दरवाजे का लॉक खराब है, सिक्योरिटी की दृष्टि से इसे आज ही रिपेयर करवा दीजिए।
+Target_Label: student_services
+Spoken_Languages: ['Hindi']

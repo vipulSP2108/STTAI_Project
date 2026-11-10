@@ -1,0 +1,7 @@
+UUID: aug_82933ff5
+Parent_UUID: 35c7936c
+Augmentation_Type: discourse_framing
+Similarity_Score: 0.9645
+Transcript: नमस्ते सर, इस बारे में बताएं कि हेलो हेल्पडेस्क, मेरा कोर्स रजिस्ट्रेशन सबमिट हो गया है लेकिन मूडल पर लैब असाइनमेंट फोल्डर एक्सेस नहीं हो रहा है।
+Target_Label: it_support
+Spoken_Languages: ['Hindi']

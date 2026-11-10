@@ -1,0 +1,7 @@
+UUID: aug_dcac8bc2
+Parent_UUID: b7e99aca
+Augmentation_Type: pivot_latin
+Similarity_Score: 0.9424
+Transcript: Hello Helpdesk, I need assistance with updating my candidate identity card chip for the new RFID library turnstiles.
+Target_Label: student_services
+Spoken_Languages: ['English', 'Hindi']

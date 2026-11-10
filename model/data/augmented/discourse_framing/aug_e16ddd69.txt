@@ -1,0 +1,7 @@
+UUID: aug_e16ddd69
+Parent_UUID: 38602ab6
+Augmentation_Type: discourse_framing
+Similarity_Score: 0.9722
+Transcript: Hi, I need official assistance with hello, this is the second time I am complaining about the same thing. The washroom tap in our hostel floor has been continuously leaking for two days. Please send plumbing maintenance immediately
+Target_Label: hostel_mess
+Spoken_Languages: ['English', 'Hindi']

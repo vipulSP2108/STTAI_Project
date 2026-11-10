@@ -1,0 +1,7 @@
+UUID: aug_88ba3328
+Parent_UUID: ec5b227c
+Augmentation_Type: discourse_framing
+Similarity_Score: 0.9765
+Transcript: Hi, I need official assistance with hello sir, I want to ask about the hostel facility for my son who is preparing to join the BTech program this semester
+Target_Label: hostel_mess
+Spoken_Languages: ['English']

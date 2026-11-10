@@ -1,0 +1,7 @@
+UUID: aug_34288880
+Parent_UUID: 20de435d
+Augmentation_Type: discourse_framing
+Similarity_Score: 0.9637
+Transcript: Please help, I am inquiring about hello, IITGN Helpdesk. My scholarship application shows document verification pending for two weeks. Could you please check the status?
+Target_Label: student_services
+Spoken_Languages: ['English']
