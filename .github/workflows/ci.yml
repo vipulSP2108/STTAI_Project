@@ -1,63 +1,39 @@
-name: "CS203 Assignment 2 - Continuous Integration & Offline Verification"
+name: Revised Voice Helpdesk CI
 
-"on":
-  push:
-    branches: [ main, develop ]
-    tags: [ '*' ]
-  pull_request:
-    branches: [ main ]
-  workflow_dispatch:
+"on": [push, pull_request, workflow_dispatch]
+
+permissions:
+  contents: read
 
 jobs:
-  test_and_verify:
+  verify:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
-      - name: Checkout Code
-        uses: actions/checkout@v4
-
-      - name: Set up Python 3.10
-        uses: actions/setup-python@v5
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
-          python-version: "3.10"
-          cache: "pip"
+          python-version: '3.10'
 
-      - name: Install System Dependencies
+      - name: Verify data constraints and the original gold checksum
+        run: |
+          python -m unittest discover -s tests -p 'test_revised_release_data.py' -v
+          echo '64b7647b5d0d35733063c77caab122a1a7c24ac6c70b7d476ffbabd9a2448ca9  data/gold_test_set.csv' | sha256sum --check
+
+      - name: Generate a synthetic WAV for sample validation and prediction
         run: |
           sudo apt-get update
-          sudo apt-get install -y ffmpeg libsndfile1
+          sudo apt-get install -y --no-install-recommends espeak-ng ffmpeg
+          espeak-ng -w "$RUNNER_TEMP/query.wav" 'Hello, I need help connecting to the campus wireless network.'
+          ffmpeg -nostdin -loglevel error -i "$RUNNER_TEMP/query.wav" -ar 16000 -ac 1 -c:a pcm_s16le "$RUNNER_TEMP/smoke.wav"
 
-      - name: Install Pinned Dependencies
+      - name: Build the revised CPU runtime without private WAVs
         run: |
-          python -m pip install --upgrade pip "setuptools<70" wheel
-          pip install -r code/requirements.txt
+          docker build --platform linux/amd64 --target runtime -t voice-helpdesk-asr:ci \
+            --build-arg "GIT_COMMIT=$GITHUB_SHA" --build-arg SOURCE_TREE=clean -f code/Dockerfile .
 
-      - name: "Step 1: Run Unit Tests & Live REST API Verification"
+      - name: Validate the sample and make an offline REST prediction
         run: |
-          pytest tests/test_pipeline.py -v
-
-      - name: "Step 2: Verify Gold Test Set Checksum Protection"
-        run: |
-          python -c "
-          import hashlib
-          expected = '64b7647b5d0d35733063c77caab122a1a7c24ac6c70b7d476ffbabd9a2448ca9'
-          actual = hashlib.sha256(open('data/gold_test_set.csv', 'rb').read()).hexdigest()
-          assert actual == expected, f'Hash mismatch: {actual}'
-          print('Gold test set hash integrity verified!')
-          "
-
-      - name: "Step 3: Build Docker Image"
-        run: |
-          docker build -t voice-helpdesk-asr:ci -f code/Dockerfile .
-
-      - name: "Step 4: Offline Smoke Request & Gold Set Validation (--network none)"
-        run: |
-          docker run --rm --network none voice-helpdesk-asr:ci validate
-
-      - name: "Step 5: Offline REST API Smoke Test"
-        run: |
-          # Start background container and verify REST endpoint responsiveness
-          docker run -d --name smoke-api -p 8000:8000 voice-helpdesk-asr:ci python3 code/a2_part_d_deployment/app.py --port 8000
-          sleep 5
-          curl --fail --retry 3 http://localhost:8000/health || true
-          docker stop smoke-api || true
-          docker rm smoke-api || true
+          docker run --rm --pull never --network none \
+            --mount "type=bind,source=$RUNNER_TEMP/smoke.wav,target=/input.wav,readonly" \
+            voice-helpdesk-asr:ci smoke /input.wav

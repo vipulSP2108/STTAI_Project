@@ -1,0 +1,11 @@
+.git
+.dvc
+scratch
+Records*
+data
+final_annotation/**/records
+model/data/audio
+model/models
+**/*.wav
+**/*.mp4
+**/__pycache__

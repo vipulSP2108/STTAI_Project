@@ -1,0 +1,12 @@
+{
+  "status": "pass",
+  "audio_seconds": 3.698,
+  "version": {
+    "model_version": "revised-whisper-base-char-tfidf-v1",
+    "asr_revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+    "git_commit": "a4baf80aaab5d83290280d268720d9ddb1b29129",
+    "source_tree": "working-tree"
+  },
+  "intent": "it_support",
+  "latency_ms": 2489.83
+}

@@ -4,6 +4,8 @@
 Department of Computer Science and Engineering, Indian Institute of Technology Gandhinagar  
 **Repository**: [https://github.com/vipulSP2108/STTAI_Project.git](https://github.com/vipulSP2108/STTAI_Project.git)
 
+**Current Docker path** — The revised 182-clip corpus is the working dataset. See [Docker build and verification](DOCKER.md) and the [checkpoint plan](ASSIGNMENT_CHECKPOINT_PLAN.md). The pilot metrics, experiment commands and tags below describe historical work.
+
 ---
 
 ## Team & Equal Contribution Statement
@@ -92,32 +94,13 @@ python code/a2_part_e_monitoring/traffic_replay.py
 python code/a2_part_e_monitoring/retrain_pipeline.py --mode rehearsal
 python code/a2_part_e_monitoring/retrain_pipeline.py --mode no_rehearsal
 
-# Interactive Streamlit Web UI:
-streamlit run code/a2_part_d_deployment/app.py --server.port 8501
 ```
 
 ---
 
 ## Docker Deployment & Offline Verification
 
-The container is fully self-contained for `linux/amd64` CPU execution ($\le 4.2$ GB peak RAM vs. 16 GB ceiling) and verified with **zero network access** (`--network none`):
-
-```bash
-# 1. Build Docker image
-docker build -t voice-helpdesk-asr:a2-final -f code/Dockerfile .
-
-# 2. Offline Gold Set Validation (strict --network none):
-docker run --rm --network none voice-helpdesk-asr:a2-final validate
-
-# 3. Run Streamlit UI (port 8501) and FastAPI endpoints (port 8000):
-docker run --rm -p 8501:8501 -p 8000:8000 voice-helpdesk-asr:a2-final
-```
-
-- **Streamlit Web Dashboard**: Open [http://localhost:8501](http://localhost:8501) for interactive audio recording, file upload, preloaded sample queries, real-time code-mixed transcription, and Real-Time Factor (RTF) gauge.
-- **FastAPI Endpoints**:
-  - `POST /predict`: Ingests audio base64 or file and returns JSON transcript, intent, confidence, and latency.
-  - `GET /health`: Health probe returning system status, model version, and memory usage.
-  - `GET /version`: Returns git commit hash (`a2-final`) and registered model versions.
+Follow [DOCKER.md](DOCKER.md) to stage the revised WAVs outside Git, build the `linux/amd64` image, validate the 40-clip revised test split with `--network none`, and start Streamlit and FastAPI. The CI `runtime` target uses a synthetic WAV for its prediction test. The original frozen gold remains a separate benchmark.
 
 ---
 

@@ -1,0 +1,11 @@
+FROM python:3.10-slim@sha256:6ff506466f8b1e981719b468cc0023b8ef000b983cdec0eafe119d01f379e31d
+
+WORKDIR /app
+
+RUN python -m pip install --no-cache-dir faster-whisper==1.2.1
+ARG WHISPER_REVISION=ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66
+RUN HF_HUB_DISABLE_XET=1 python -c "from huggingface_hub import snapshot_download; snapshot_download('Systran/faster-whisper-base', revision='${WHISPER_REVISION}', local_dir='/opt/whisper-base', allow_patterns=['config.json', 'model.bin', 'tokenizer.json', 'vocabulary.txt'])"
+
+ENV HF_HUB_OFFLINE=1 PYTHONUNBUFFERED=1
+COPY smoke_asr.py /app/smoke_asr.py
+ENTRYPOINT ["python", "/app/smoke_asr.py"]

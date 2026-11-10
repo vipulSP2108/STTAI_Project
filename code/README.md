@@ -38,7 +38,7 @@ python a2_part_e_monitoring/retrain_pipeline.py
 | `a2_part_a_models/` | Baseline 0 (majority), Baseline 1 (unadapted Whisper + TF-IDF), Proposed adapted router | `supporting_files/part_a_baselines_benchmark.json`, `artefacts/models/` |
 | `a2_part_b_tuning/` | 15-run systematic hyperparameter search logged to local SQLite MLflow | `supporting_files/mlflow.db`, `supporting_files/plots/tuning_runs.json`, `supporting_files/plots/tuning_search_analysis.png` |
 | `a2_part_c_evaluation/` | Unified evaluation CLI with 1,000 bootstrap CIs, slice analysis, 20 categorized errors | `supporting_files/error_analysis.csv`, `MODEL_CARD.md` |
-| `a2_part_d_deployment/` | Self-contained Dockerfile, offline validator, FastAPI REST server, Streamlit UI | `Dockerfile`, `supporting_files/offline_validation_output.json`, `DOCKER.md` |
+| `a2_part_d_deployment/` | Revised CPU release, offline validator, FastAPI service and Streamlit UI | `Dockerfile`, `supporting_files/revised_validation.json`, `DOCKER.md` |
 | `a2_part_e_monitoring/` | 5-batch traffic replay, label-free entropy tracking ($r=0.91$), gated retraining | `data/replay/traffic_stream.jsonl`, `data/retraining/`, `TEST_SET_LOG.md` |
 | `scripts/` | Automated ReportLab PDF generator mirroring `report/report2.tex` | `report/report2.pdf` (7 pages) |
 
@@ -46,16 +46,7 @@ python a2_part_e_monitoring/retrain_pipeline.py
 
 ## Docker Offline Verification & UI Launch
 
-```bash
-# Build image
-docker build -t voice-helpdesk-asr:a2-final -f Dockerfile ..
-
-# Offline verification (--network none):
-docker run --rm --network none voice-helpdesk-asr:a2-final validate
-
-# Launch Streamlit UI (port 8501) and FastAPI REST service (port 8000):
-docker run --rm -p 8501:8501 -p 8000:8000 voice-helpdesk-asr:a2-final
-```
+The current instructions are in [DOCKER.md](../DOCKER.md). The revised release uses external DVC staging and a separate speaker-disjoint test split. The other experiment commands in this document are for the historical pilot.
 
 ---
 

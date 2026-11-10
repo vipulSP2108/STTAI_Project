@@ -4,6 +4,16 @@
 
 ---
 
+## Revised release corpus · 11 November 2026
+
+The team selected the revised 182-clip corpus for new work. `model/data/audio.dvc` identifies the verified WAVs. The tested DVC store is local and a shared private remote is pending. The main Git checkout holds the pointer and manifests. Audio for Docker is staged outside it.
+
+The release joins `metadata_182.csv` to the expert-resolved intent labels in `final_annotation/consensus_gold_182.json` by original clip ID and to the curated transcript manifest by UUID. Five intent labels in the metadata CSV differ from the adjudicated labels. The build uses the adjudicated labels and retains the original files for traceability. The speaker-disjoint release split has 104 training, 38 validation and 40 test clips. The earlier pilot gold speakers who also appear in the revised corpus are reserved for test.
+
+The revised validator reports this separate release split. The original 29-row gold manifest and its frozen Git SHA-256 remain the course reference. The original gold evaluation and the course's treatment of the revised corpus are tracked separately. The sections below describe the historical pilot workflow.
+
+---
+
 ## 1. Baseline Freeze Integrity
 At commit `a1-final` (Git tag `a1-final`), the canonical dataset partitions and gold test set were cryptographically frozen. In accordance with Assignment 2 rules:
 - **`data/gold_test_set.csv`**: Completely untouched. SHA-256 checksum remains `64b7647b5d0d35733063c77caab122a1a7c24ac6c70b7d476ffbabd9a2448ca9`.

@@ -1,0 +1,17 @@
+{
+  "model_version": "revised-whisper-base-char-tfidf-v1",
+  "asr_revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+  "git_commit": "a4baf80aaab5d83290280d268720d9ddb1b29129",
+  "source_tree": "working-tree",
+  "split": "revised_release_test",
+  "speaker_split_sha256": "f4c9e915f3be0b954e74a2c6587ecee1f40be250ad95b6f8a4cbb2212cfc9403",
+  "sample_count": 40,
+  "wer": 2.9083969465648853,
+  "cer": 2.304394890668976,
+  "intent_accuracy": 0.575,
+  "intent_macro_f1": 0.5035382574082264,
+  "cpu_latency_ms_p50": 5006.12,
+  "cpu_latency_ms_p95": 38148.0945,
+  "cpu_rtf": 0.33170844243760955,
+  "peak_rss_mib": 648.95
+}

@@ -1,65 +1,27 @@
-# ============================================================
-# Assignment 2 - Part D: Production Dockerfile (Self-Contained CPU Image)
-# CS203 Assignment 2 - Project 5: Voice Helpdesk ASR
-#
-# Pinned Base Image: python:3.10-slim
-# Target Platform: linux/amd64 (CPU Only execution)
-# Peak RAM Requirement: <= 4.2 GB RAM (Brief limit: <= 16 GB RAM)
-#
-# Usage:
-#   1. Offline Gold Set Validation (strict --network none):
-#      docker run --rm --network none voice-helpdesk-asr:a2-final validate
-#   2. Start Web Service and UI:
-#      docker run --rm -p 8501:8501 -p 8000:8000 voice-helpdesk-asr:a2-final
-# ============================================================
-
-FROM python:3.10-slim@sha256:d9bba76dc77e0965d93e1577fe0d01b1b9e599e09d57a3e7a0864ac362c3f8f1
-
-# Install system audio and compilation tools
-RUN apt-get update && apt-get install -y --no-install-recommends \
-    ffmpeg \
-    libsndfile1 \
-    git \
-    build-essential \
-    && rm -rf /var/lib/apt/lists/*
+FROM python:3.10-slim@sha256:6ff506466f8b1e981719b468cc0023b8ef000b983cdec0eafe119d01f379e31d AS runtime
 
 WORKDIR /app
 
-# Accept git commit hash as build-arg
-ARG GIT_COMMIT=a2-final
-ENV PYTHONUNBUFFERED=1 \
-    PYTHONDONTWRITEBYTECODE=1 \
-    GIT_COMMIT=${GIT_COMMIT} \
-    MODEL_VERSION=production \
-    PORT=8501
+RUN python -m pip install --no-cache-dir faster-whisper==1.2.1
+ARG WHISPER_REVISION=ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66
+RUN HF_HUB_DISABLE_XET=1 python -c "from huggingface_hub import snapshot_download; snapshot_download('Systran/faster-whisper-base', revision='${WHISPER_REVISION}', local_dir='/opt/whisper-base', allow_patterns=['config.json', 'model.bin', 'tokenizer.json', 'vocabulary.txt'])"
+RUN python -m pip install --no-cache-dir \
+    fastapi==0.124.0 httpx==0.28.1 jiwer==4.0.0 python-multipart==0.0.20 \
+    scikit-learn==1.6.1 streamlit==1.49.1 uvicorn==0.38.0
 
-# Copy pinned requirements and install
-COPY code/requirements.txt /app/code/requirements.txt
-RUN pip install --no-cache-dir --upgrade pip "setuptools<70" wheel && \
-    pip install --no-cache-dir -r /app/code/requirements.txt
+ENV HF_HUB_OFFLINE=1 PYTHONUNBUFFERED=1 PYTHONDONTWRITEBYTECODE=1
+COPY code/a2_part_d_deployment/revised_*.py code/a2_part_d_deployment/revised-entrypoint.sh /app/code/a2_part_d_deployment/
+COPY final_annotation/consensus_gold_182.json /app/final_annotation/
+COPY model/data/metadata/metadata_182.csv model/data/metadata/gold_transcripts_manifest.json /app/model/data/metadata/
+COPY model/data/splits/release_speakers.json /app/model/data/splits/
+RUN python code/a2_part_d_deployment/revised_release.py train-router
 
-# Pre-cache Whisper base model weights for true offline operation (--network none)
-RUN python3 -c "import whisper; whisper.load_model('base')"
+ARG GIT_COMMIT=unknown
+ARG SOURCE_TREE=unspecified
+ENV GIT_COMMIT=${GIT_COMMIT} SOURCE_TREE=${SOURCE_TREE}
+EXPOSE 8000 8501
+ENTRYPOINT ["/bin/bash", "/app/code/a2_part_d_deployment/revised-entrypoint.sh"]
 
-# Copy source repository artifacts
-COPY code/ /app/code/
-COPY data/ /app/data/
-COPY supporting_files/ /app/supporting_files/
-COPY artefacts/ /app/artefacts/
-COPY TEST_SET_LOG.md /app/TEST_SET_LOG.md
-
-# Verification assert on build
-RUN python3 -c "import hashlib; h = hashlib.sha256(open('data/gold_test_set.csv', 'rb').read()).hexdigest(); assert h == '64b7647b5d0d35733063c77caab122a1a7c24ac6c70b7d476ffbabd9a2448ca9', 'Build failed: gold hash altered!'"
-
-EXPOSE 8501 8000
-
-# Entrypoint script
-RUN echo '#!/bin/bash\n\
-if [ "$1" = "validate" ]; then\n\
-    exec python3 code/a2_part_d_deployment/validate_offline.py\n\
-else\n\
-    python3 code/a2_part_d_deployment/app.py &\n\
-    exec streamlit run code/a2_part_d_deployment/ui.py --server.port=8501 --server.address=0.0.0.0\n\
-fi' > /app/entrypoint.sh && chmod +x /app/entrypoint.sh
-
-ENTRYPOINT ["/app/entrypoint.sh"]
+FROM runtime AS release
+COPY --from=revised_audio / /app/revised_audio/
+RUN python code/a2_part_d_deployment/revised_release.py check-audio

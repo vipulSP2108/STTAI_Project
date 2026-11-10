@@ -1,0 +1,25 @@
+{
+  "timestamp_utc": "2026-11-10T20:28:14.3790442+00:00",
+  "corpus": "Revised 182",
+  "clip_uuid": "34f3193c",
+  "image": "voice-helpdesk-asr:revised-smoke",
+  "image_id": "sha256:641c7af9ad94b289632ed9f488d4a8aa13141f6f8f22d65bf8c21c3b7d3d4a11",
+  "image_platform": "linux/amd64",
+  "image_size_bytes": 1121491685,
+  "container": "sttai-revised-asr-smoke",
+  "network_mode": "none",
+  "exit_code": 0,
+  "wrong_sha256_exit_code": 2,
+  "wav_delivery": "Read-only bind mount from DVC staging outside Git",
+  "inference": {
+    "status": "pass",
+    "test": "cpu_asr_smoke",
+    "model": "Systran/faster-whisper-base",
+    "audio_sha256": "27cce9cf42122b114a2a750fb894a0e6aa582f67a1e9f32f4afedb7f4cc5230d",
+    "language": "en",
+    "audio_seconds": 8.0,
+    "decode_seconds": 2.425,
+    "real_time_factor": 0.303,
+    "transcript_characters": 92
+  }
+}

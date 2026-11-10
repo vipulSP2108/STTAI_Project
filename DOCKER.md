@@ -1,93 +1,50 @@
-# DOCKER.md
-# Deployment, Offline Execution & Verification Specification
-# CS203 Assignment 2 - Project 5: Voice Helpdesk ASR
+# Revised Voice Helpdesk Docker image
 
----
+The revised CPU image serves Faster Whisper base INT8 and a character TF-IDF intent router. The image build trains the router on 104 revised training references and their adjudicated labels. It packages the public ASR weights at build time. The release bundles 40 test WAVs and four validation examples from a separate DVC staging folder. The runtime target used in CI excludes the corpus WAVs.
 
-## 1. Container Specifications & Measured Hardware Footprint
+The revised speaker split is `model/data/splits/release_speakers.json`. Training, validation, and test have disjoint speaker IDs. The revised validator measures all 40 clips from that split against the curated references. It is separate from the original A1 frozen gold benchmark, which remains in `data/gold_test_set.csv`. The revised run measures a baseline on this release split. It does not establish that its speakers were unseen by historical experiments or satisfy the course's acoustic fine-tuning requirement.
 
-| Specification | Empirical Measurement / Target Parameter |
-|---------------|------------------------------------------|
-| **Target Architecture** | `linux/amd64` / `darwin/arm64` compatible |
-| **Execution Mode** | CPU only (Zero GPU requirement) |
-| **Peak Memory Footprint** | **782.73 MB RAM** (measured via `resource.getrusage` on Darwin arm64, ceiling $\le 16$ GB) |
-| **Real-Time Factor (RTF)** | **0.243** ($< 1.0$; runs 4.1x faster than real-time audio) |
-| **Throughput** | **0.23 queries/second** on standard multi-core CPU |
-| **p50 Latency** | **2,855.2 ms** (ASR: 2,854.0 ms, Intent Router: 0.34 ms) |
-| **p95 Latency** | **13,441.5 ms** (dominated by long audio clip decoding) |
-| **Container Base Image** | `python:3.10-slim@sha256:d9bba76dc77e0965d93e1577fe0d01b1b9e599e09d57a3e7a0864ac362c3f8f1` (Pinned by digest) |
-| **Self-Contained Bundling** | All model weights, code, gold test set, and Streamlit/FastAPI UI bundled directly |
-| **Outbound Network Policy** | **Strictly offline** (`--network none` verified; zero outbound HTTP/API calls) |
+## Build locally
 
----
+Use a disposable checkout for the DVC restore. The local Windows store is documented in `ASSIGNMENT_CHECKPOINT_PLAN.md`. In this example the verified full WAV folder is `$env:USERPROFILE\Downloads\STTAI_Project_Docker_Stage\model\data\audio`. Substitute the path from your disposable checkout when using the team remote.
 
-## 2. Execution & Offline Validation Commands
+Run from the project root in PowerShell.
 
-### A. Local Environment Offline Validation (Recommended)
-Per user and environment configuration, offline validation runs directly in the local Python environment without containerization:
-```bash
-python code/a2_part_d_deployment/validate_offline.py
-```
-
-### B. Docker Offline Gold Set Validation (`--network none`)
-To verify model performance in a containerized environment without internet access:
-```bash
-docker build -t voice-helpdesk-asr:a2-final -f code/Dockerfile .
-docker run --rm --network none voice-helpdesk-asr:a2-final validate
-```
-**Expected Terminal Output (Verified Offline Run):**
-```json
-{
-  "status": "SUCCESS",
-  "evaluation_split": "gold_test_set",
-  "evaluated_clips": 29,
-  "gold_set_sha256": "64b7647b5d0d35733063c77caab122a1a7c24ac6c70b7d476ffbabd9a2448ca9",
-  "gold_checksum_match": true,
-  "model_version": "production",
-  "git_commit": "a2-final",
-  "hardware": {
-    "system": "Darwin",
-    "machine": "arm64",
-    "cpu_execution": true,
-    "whisper_model": "base"
-  },
-  "metrics": {
-    "transcript_wer": 1.2774,
-    "transcript_cer": 0.9401,
-    "intent_accuracy": 0.3448,
-    "intent_macro_f1": 0.3472,
-    "evaluated_clips": 29,
-    "mean_inference_latency_ms": 2986.38,
-    "cpu_real_time_factor": 0.165,
-    "total_audio_duration_sec": 523.8
-  },
-  "offline_network_isolated": false,
-  "offline_verified": true
+```powershell
+$wavDir = Join-Path $env:USERPROFILE 'Downloads\STTAI_Project_Docker_Stage\model\data\audio'
+$bundle = Join-Path $env:USERPROFILE 'Downloads\STTAI_Project_Release_Audio'
+# Stage once into a new directory. The image build also verifies the bundled WAVs.
+if (-not (Test-Path -LiteralPath $bundle)) {
+    python code/a2_part_d_deployment/revised_data.py $wavDir $bundle
+    if ($LASTEXITCODE -ne 0) { throw 'Audio staging failed' }
 }
+$commit = git rev-parse HEAD
+docker build --platform linux/amd64 --target release `
+  --build-context "revised_audio=$bundle" `
+  --build-arg "GIT_COMMIT=$commit" --build-arg SOURCE_TREE=working-tree `
+  -t voice-helpdesk-asr:revised-release -f code/Dockerfile .
 ```
-*Note*: The validation script verifies the SHA-256 digest of `data/gold_test_set.csv` before running, asserts offline execution, and writes formatted JSON output to `supporting_files/offline_validation_output.json`.
-*Network Isolation Note*: When executed locally on the host machine (`python code/a2_part_d_deployment/validate_offline.py`), `offline_network_isolated` in `supporting_files/offline_validation_output.json` records `false` because host interface network routes are active (though zero external HTTP calls are dispatched by inference). Under containerized `--network none` execution, all network routing is disabled at the kernel boundary, yielding `offline_network_isolated: true`.
 
-### C. Launch Interactive Streamlit UI & REST API
-```bash
-# In local environment:
-streamlit run code/a2_part_d_deployment/app.py --server.port 8501
-# Or containerized:
-docker run --rm -p 8501:8501 -p 8000:8000 voice-helpdesk-asr:a2-final
+Use `SOURCE_TREE=clean` for a clean checkout of the identified commit. The base image is pinned by digest in the Dockerfile. The upstream model is `Systran/faster-whisper-base` at revision `ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66`. Build-time package and model downloads are required. The deployed processes read bundled weights and make local inference calls.
+
+## Offline validation and local UI
+
+```powershell
+$evidence = (Resolve-Path supporting_files).Path
+docker run --rm --pull never --network none `
+  --mount "type=bind,source=$evidence,target=/evidence" `
+  voice-helpdesk-asr:revised-release validate --output /evidence/revised_validation.json
+docker run --rm --pull never -p 127.0.0.1:8501:8501 `
+  --mount "type=bind,source=$evidence,target=/evidence,readonly" `
+  voice-helpdesk-asr:revised-release serve
 ```
-Open your browser at:
-- **Interactive Web UI**: `http://localhost:8501`
-- **REST API Endpoints**: `http://localhost:8000/docs`
-  - `POST /predict`: Audio file $\to$ `{transcript, intent, confidence, latency_ms}`
-  - `GET /health`: Health status, memory, CPU load
-  - `GET /version`: Model version and git commit hash
 
----
+Open `http://127.0.0.1:8501`. The UI supports bundled validation examples, WAV upload and microphone input. It shows the returned transcript, intent, confidence, latency and model version. It displays the measured validation JSON when its model and build identity match. Add `-p 127.0.0.1:8000:8000` before the image name to expose the REST API locally. Its endpoints are `GET /health`, `GET /version` and `POST /predict` (multipart field `file`, WAV up to 12 MiB). The API decodes WAV uploads to 16 kHz mono in memory. The benchmark and CI source fixture retain their strict format and integrity checks. CI also tests a 44.1 kHz stereo version of the fixture through `/predict`.
 
-## 3. Image Digest & Artifact Integrity
+The offline validator checks the WAV hashes and format before decoding and fails if any required WAV is absent or invalid. Its JSON includes the split checksum, counts, WER/CER, intent accuracy/macro-F1, CPU p50/p95, RTF and peak process RSS. The local run on Docker Engine 29.9.3 exited 0 with network mode `none`. The tested image was 1,971,418,582 bytes and the validator peaked at 648.95 MiB process RSS. See [validation JSON](supporting_files/revised_validation.json), [Docker Desktop screenshot](supporting_files/revised_validation.jpg), and [API and UI checks](supporting_files/revised_service_smoke.json). The earlier `docker_asr_smoke.jpg` shows the separate ASR-only image.
 
-| Artifact | Checksum (SHA-256) | Size / Notes |
-|----------|--------------------|--------------|
-| `code/Dockerfile` | `c65817ef5919f1259557fc6af96dc4258d7b872f4e17d2fe9b9d7abdd9a4795a` | 2.1 KB (Pinned build definition) |
-| Bundled `base.pt` weights | `ed3a0b6b1c0edf879ad9b11b1af5a0e6ab5db9205f891f668f8b0e6c6326e34e` | 139 MB (Downloaded & cached locally) |
-| Docker Container Archive | Reproducible build via `docker build` | Excluded from git repo due to 100 MB limit |
+## CI and image distribution
+
+The workflow builds `--target runtime` and exercises health/version/prediction with a synthetic WAV and `--network none`. Full release validation requires the privately restored WAVs. Record a remote Actions run after publishing the source changes.
+
+Package a team-approved release image outside Git after confirming permission to distribute its bundled clips. Use `docker save -o revised-release.tar voice-helpdesk-asr:revised-release`, hash the archive, and record its digest with the download location. On the grader machine use `docker load -i revised-release.tar` and repeat the offline validator. Record image size, architecture and the full JSON from that load test separately from this local evidence.
