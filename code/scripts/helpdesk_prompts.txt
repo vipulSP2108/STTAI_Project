@@ -1,10 +1,40 @@
-मेरे hostel room का allotment कब होगा?
-WiFi password reset karna hai please help
-Admission form ki last date kya hai?
-Library books return karne ki deadline batao
-IT lab mein printing kaise karte hain?
-मेस का schedule क्या है आज?
-मારો student ID card ક્યારે મળશે?
-Fee payment portal access nahi ho raha
-Hostel warden se milna hai kab time hai?
-Health center ka timing bata do
+[admissions] M.Tech data science program ka cutoff kitna gaya tha last year GATE score pe?
+[admissions] PhD interview call letter kab tak update hoga portal pe?
+[admissions] Sir NRI sponsored candidate ke liye alag se form bharna hoga ya common portal hai?
+[admissions] Can international students apply through the regular online portal or is there a separate office?
+[admissions] Written test offline campus me hoga ya online proctored test conduct kar rahe ho?
+[admissions] Application fee submit ho gayi par transaction status pending dikha raha hai.
+[admissions] Admission brochure me fee waiver eligibility criteria kya diya hua hai?
+[admissions] M.Tech early admit batch ka induction schedule kab announce hoga?
+[admissions] Is there any provision for part-time PhD admission for industry professionals?
+[admissions] Document verification ke time provisional certificate chalega ya original degree mandatory hai?
+[hostel_mess] Room key ghum ho gayi hai, duplicate key banwane ke liye kahan jana padega?
+[hostel_mess] Mess hall 2 me night dinner ka timing kya hai weekend pe?
+[hostel_mess] Mess rebate apply kiya tha portal pe, discount next month ke bill me adjust hoga?
+[hostel_mess] AC maintenance team ko room 304 me bhejo please cooling bilkul nahi ho rahi.
+[hostel_mess] Hostel block 7 ke washing machine floor 2 pe water drainage issue aa raha hai.
+[hostel_mess] Warden sir se evening me milne ka open hours timing kya hai?
+[hostel_mess] Room change request letter submit karna hai special medical grounds pe.
+[hostel_mess] Mess food menu me Jain food options available rehte hain ya request karni padti hai?
+[hostel_mess] Laundry clothes dry karne ke liye drying area me extra racks lagwa do.
+[hostel_mess] Late entry gate pass apply karne ke baad approval status kahan show karega?
+[it_support] Eduroam WiFi connection connect ho ke bar bar disconnect ho raha hai Android phone pe.
+[it_support] LDAP institute account password expire ho gaya, reset link personal email pe nahi aa rahi.
+[it_support] Academic block computer lab me printer paper jam ho gaya hai aur print stuck hai.
+[it_support] Campus network ke bahar se IEEE Xplore access karne ke liye VPN client kaise configure karein?
+[it_support] Lab PC me Ubuntu dual boot bootloader corrupt ho gaya hai boot nahi le raha.
+[it_support] Student webmail quota 95% full dikha raha hai, archiving kaise enable karein?
+[it_support] Hostel LAN port me ethernet cable lagane par no internet access show ho raha hai.
+[it_support] MATLAB license renewal server unreachable error throw kar raha hai.
+[it_support] PyTorch GPU cluster access ke liye Slurm account approval kahan se lena hoga?
+[it_support] Institute email ID par two factor authentication reset karwana hai phone lost ho gaya.
+[student_services] Passport renewal ke liye bonafide certificate issue karwane ka procedure kya hai?
+[student_services] Campus shuttle bus Chandkheda metro station ke liye kitne baje depart hoti hai?
+[student_services] Health center pharmacy me prescribed medicine out of stock hai kab tak refill hoga?
+[student_services] Student ID card library me drop ho gaya tha, lost and found register kahan hai?
+[student_services] Railway concession form countersign karwane ke liye student affairs office kab khula rehta hai?
+[student_services] Gymnasium trainer evening timing me available rehte hain kya?
+[student_services] Annual sports meet registration deadline kab tak extend hui hai?
+[student_services] Medical insurance card claim settlement ke liye TPA contact number share kar do.
+[student_services] Library me reserve section ki book kitne days ke liye issue karwa sakte hain?
+[student_services] Bank of India campus branch me new student savings account open karwana hai.

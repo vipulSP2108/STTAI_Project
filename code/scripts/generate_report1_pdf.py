@@ -555,6 +555,16 @@ def build_report1_pdf(output_path="report/report.pdf"):
         "registration receipts to <i>academic_affairs</i>. Re-annotation raised &kappa; to <b>0.8446</b> with 14 residual edge-cases adjudicated to <b>1.0000</b>.",
         body_style
     ))
+    story.append(Paragraph(
+        "<b>Scaled Double-Annotation &amp; Expert Adjudication:</b> Across the full 182-clip double-annotated corpus (1.82 hrs, 20 speakers), "
+        "dual-instance annotation yielded raw agreement <b>74.18%</b> (&kappa; = <b>0.6561</b>, 95% CI: [0.571, 0.741], PABAK = 0.4835; language Jaccard 79.5%). "
+        "Exactly <b>47 residual boundary cases</b> were routed to a dedicated expert adjudication instance (<code>annotator_expert</code>, Port 8083) "
+        "with 8 blind test-retest duplicates (&ge;35-item separation) and lead-time telemetry. "
+        "Adjudication reached <b>100% completion</b> with <b>75.0%</b> intra-rater test-retest concordance (&kappa;<sub>intra</sub> = <b>0.6522</b>, mean latency 153.8 s, 0 rushing alerts). "
+        "Multi-intent disputes were resolved by prioritizing opening topics (<i>'Per annotation guidelines prioritizing the initial query topic, hence ticket is categorized under Admissions'</i>). "
+        "Consolidating 135 concordant pairs and 47 expert decisions established the definitive 182-clip Gold Reference: 58 <i>student_services</i>, 54 <i>hostel_mess</i>, 35 <i>it_support</i>, and 35 <i>admissions</i>.",
+        body_style
+    ))
 
     # BREAK TO COLUMN 2 ON PAGE 3
     story.append(FrameBreak())
