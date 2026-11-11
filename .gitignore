@@ -42,7 +42,6 @@ temp_*.wav
 ../dvc-remote
 mlruns/
 *.db
-*.sqlite3
 
 # Scratch dumps, prompts, and temporary generator scripts
 dump/
@@ -83,9 +82,6 @@ supporting_files/screen_recording.mp4
 brain/
 
 modelprep.md
-# Round T local Label Studio databases and logins (raw exports go in exports/ and ARE committed)
-final_annotation/transcription_round/ls_data_*/
-
 docs/
 
 # Build outputs created by the Docker image / local runs (never commit)

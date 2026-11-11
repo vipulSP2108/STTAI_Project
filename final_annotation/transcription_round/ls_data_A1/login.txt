@@ -1,0 +1,3 @@
+email=a1@roundt.local
+password=sLvIfz2r_f5QQyVu
+token=657b8dca2ba8306959a56e2c4b66e18d09c9066d

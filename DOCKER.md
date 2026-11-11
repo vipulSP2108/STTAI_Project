@@ -1,3 +1,28 @@
+# indic-v2 image (current release)
+
+| Item | Value |
+|---|---|
+| Tag | `voice-helpdesk-asr:indic-v2` (`linux/amd64`, CPU only) |
+| Image ID (SHA-256 of the image config) | `sha256:c416f456f0e82ea4ed5d680f62e1276c4c013154f32ad2749632487c7265fb4e` |
+| Size | 2,965,160,317 bytes (2.97 GB); peak RAM during validation 2.0 GB |
+| Built from | `code/Dockerfile`, commit `82e2ce2` + working tree (see `supporting_files/docker_indic_v2/build.log`) |
+| Offline validation | `--network none`, 40 release-test clips: intent 60.0 %, macro-F1 0.602, routing 75 % (`indic_v2_validation.json`) |
+| Archive | `artefacts/docker_image.tar.gz` — SHA-256: *to be filled when the archive is created (`shasum -a 256`)* |
+
+```bash
+docker save voice-helpdesk-asr:indic-v2 | gzip > artefacts/docker_image.tar.gz
+shasum -a 256 artefacts/docker_image.tar.gz
+docker load -i artefacts/docker_image.tar.gz          # on the grader machine
+docker run --rm --network none voice-helpdesk-asr:indic-v2 validate
+docker run --rm -p 127.0.0.1:8501:8501 -p 127.0.0.1:8000:8000 voice-helpdesk-asr:indic-v2 serve
+```
+After `docker load`, `docker image inspect voice-helpdesk-asr:indic-v2 --format '{{.Id}}'` must print the image ID above.
+Expected `validate` output: intent accuracy 0.600 (tolerance ±1 clip = ±0.025), language_route_accuracy 0.75, `wer: null`.
+
+---
+
+# Earlier revised image (v1, kept for history)
+
 # Revised Voice Helpdesk Docker image
 
 The revised CPU image serves Faster Whisper base INT8 and a character TF-IDF intent router. The image build trains the router on 104 revised training references and their adjudicated labels. It packages the public ASR weights at build time. The release bundles 40 test WAVs and four validation examples from a separate DVC staging folder. The runtime target used in CI excludes the corpus WAVs.
