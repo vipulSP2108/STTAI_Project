@@ -91,8 +91,9 @@ docs/
 *.tar.gz
 # Colab fine-tuning outputs (weights are large; checksums go in MODELS.md)
 model/models/ft_*/
-# Round T: local Label Studio databases/logins stay on each annotator's PC (raw exports go in exports/)
-final_annotation/transcription_round/ls_data_*/
+# Round T: push each annotator's Label Studio database (the annotations); keep logins/logs/temp local
+final_annotation/transcription_round/ls_data_*/*
+!final_annotation/transcription_round/ls_data_*/label_studio.sqlite3
 # Audio bundles shared directly with helpers (never on GitHub)
 release_audio_for_friend.zip
 roundT_audio_A2.zip
