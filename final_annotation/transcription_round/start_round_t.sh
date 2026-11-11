@@ -80,8 +80,19 @@ config = open(f"{here}/label_studio_config_transcript.xml").read()
 p = call("POST", "/projects", {"title": f"Round T transcripts {aid}", "label_config": config,
                                "maximum_annotations": 1, "show_skip_button": False,
                                "show_collab_predictions": True, "model_version": "indic-asr-v2"})
-call("POST", "/storages/localfiles", {"project": p["id"], "title": "recordings",
-                                      "path": f"{root}/final_annotation/annotator_1/records", "use_blob_urls": False})
+storages_to_add = [
+    ("recordings", f"{root}/final_annotation/annotator_1/records"),
+    ("recordings_2", f"{root}/final_annotation/annotator_2/records"),
+    ("recordings_expert", f"{root}/final_annotation/annotator_expert/records"),
+    ("recordings_master", f"{root}/final_annotation/records"),
+    ("recordings_root", f"{root}")
+]
+for stitle, spath in storages_to_add:
+    try:
+        call("POST", "/storages/localfiles", {"project": p["id"], "title": stitle,
+                                              "path": spath, "use_blob_urls": False})
+    except Exception:
+        pass
 tasks = json.load(open(f"{here}/double_100.json")) + json.load(open(f"{here}/single_{aid}.json"))
 call("POST", f"/projects/{p['id']}/import", tasks)
 print(f"Project created with {len(tasks)} tasks (100 shared + {len(tasks) - 100} only yours).")

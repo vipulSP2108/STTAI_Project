@@ -102,14 +102,16 @@ def main():
     singles = {**{c: v for c, v in full1.items() if c not in shared}, **{c: v for c, v in full2.items() if c not in shared}}
     out = ROOT / "data" / "labels" / "human_transcripts.csv"
     with open(out, "w", newline="", encoding="utf-8") as f:
-        w = csv.writer(f); w.writerow(["uuid", "clip_id", "transcript", "source"])
+        w = csv.writer(f)
+        w.writerow(["uuid", "clip_id", "speaker", "intent", "languages", "transcript", "source"])
         for c in sorted(gold):
+            meta = [man[c], c, gold[c]["speaker_id"], gold[c]["gold_intent"], "+".join(gold[c]["languages"])]
             if c in adj:
-                w.writerow([man[c], c, adj[c], "adjudicated"])
+                w.writerow(meta + [adj[c], "adjudicated"])
             elif c in a1 and c in a2:
-                w.writerow([man[c], c, a1[c]["text"], "double_A1"])
+                w.writerow(meta + [a1[c]["text"], "double_A1"])
             elif c in singles:
-                w.writerow([man[c], c, singles[c]["text"], "single_asr_draft_corrected"])
+                w.writerow(meta + [singles[c]["text"], "single_asr_draft_corrected"])
     print(json.dumps({k: v for k, v in report.items() if k != "per_clip"}, indent=1))
     print("wrote", out.relative_to(ROOT))
 

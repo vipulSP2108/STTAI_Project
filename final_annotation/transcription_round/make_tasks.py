@@ -51,7 +51,8 @@ def main():
     asr = {r["uuid"]: r["transcription"] for r in json.loads((FA.parent / "model/data/reports/asr_indic_v2_confidence.json").read_text())["clips"]}
 
     def task(c, draft=False):  # what the annotator sees: audio, a neutral id, and (single clips only) an ASR draft
-        t = {"data": {"audio": c["audio"], "clip_id": c["clip_id"]}}
+        audio_url = c["audio"].replace("annotator_expert", "annotator_1")
+        t = {"data": {"audio": audio_url, "clip_id": c["clip_id"]}}
         if draft:
             t["predictions"] = [{"model_version": "indic-asr-v2", "result": [{
                 "from_name": "transcript", "to_name": "audio", "type": "textarea",
