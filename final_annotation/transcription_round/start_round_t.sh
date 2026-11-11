@@ -11,7 +11,14 @@
 set -euo pipefail
 HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 ROOT="$(cd "$HERE/../.." && pwd)"
-LS="$(command -v label-studio || echo /Library/Frameworks/Python.framework/Versions/3.13/bin/label-studio)"
+# Windows (Git Bash): Label Studio needs native C:/... paths
+ROOT_NATIVE="$(cd "$ROOT" && (pwd -W 2>/dev/null || pwd))"
+HERE_NATIVE="$(cd "$HERE" && (pwd -W 2>/dev/null || pwd))"
+PY="$(command -v python3 || command -v python || true)"
+LS="$(command -v label-studio || true)"
+if [ -z "$PY" ] || [ -z "$LS" ]; then
+  echo "Need Python 3 and Label Studio:  pip install label-studio==1.23.0"; exit 1
+fi
 
 if [ "${1:-}" = "stop" ]; then
   for id in A1 A2; do
@@ -23,18 +30,22 @@ fi
 ID="${1:?usage: start_round_t.sh A1|A2|stop}"
 case "$ID" in A1) PORT=8091 ;; A2) PORT=8092 ;; *) echo "use A1 or A2"; exit 2 ;; esac
 DATA="$HERE/ls_data_$ID"; mkdir -p "$DATA" "$HERE/exports"
+if [ ! -d "$ROOT/final_annotation/annotator_1/records" ]; then
+  echo "Audio missing: unzip the Round T audio zip in the STTAI_Project folder so that"
+  echo "  final_annotation/annotator_1/records/P1/... exists, then run this again."; exit 1
+fi
 
 # Local login for this machine only (not a real account). Created once, kept in ls_data_<ID>/login.txt.
 if [ ! -f "$DATA/login.txt" ]; then
   printf 'email=%s\npassword=%s\ntoken=%s\n' "$(echo "$ID" | tr A-Z a-z)@roundt.local" \
-    "$(python3 -c 'import secrets;print(secrets.token_urlsafe(12))')" \
-    "$(python3 -c 'import secrets;print(secrets.token_hex(20))')" > "$DATA/login.txt"
+    "$("$PY" -c 'import secrets;print(secrets.token_urlsafe(12))')" \
+    "$("$PY" -c 'import secrets;print(secrets.token_hex(20))')" > "$DATA/login.txt"
 fi
 EMAIL=$(grep ^email "$DATA/login.txt" | cut -d= -f2); PASS=$(grep ^password "$DATA/login.txt" | cut -d= -f2)
 TOKEN=$(grep ^token "$DATA/login.txt" | cut -d= -f2)
 
 export LABEL_STUDIO_LOCAL_FILES_SERVING_ENABLED=true
-export LABEL_STUDIO_LOCAL_FILES_DOCUMENT_ROOT="$ROOT"
+export LABEL_STUDIO_LOCAL_FILES_DOCUMENT_ROOT="$ROOT_NATIVE"
 export LABEL_STUDIO_DISABLE_SIGNUP_WITHOUT_LINK=true
 export LABEL_STUDIO_ENABLE_LEGACY_API_TOKEN=true
 export SESSION_COOKIE_NAME="sessionid_roundt_$ID"
@@ -43,13 +54,14 @@ if curl -s "http://localhost:$PORT/health" >/dev/null 2>&1; then
   echo "Label Studio $ID already running on http://localhost:$PORT"
 else
   echo "Starting Label Studio $ID on port $PORT (log: $DATA/server.log)"
-  nohup "$LS" start --data-dir "$DATA" -p "$PORT" --no-browser \
+  DATA_NATIVE="$(cd "$DATA" && (pwd -W 2>/dev/null || pwd))"
+  nohup "$LS" start --data-dir "$DATA_NATIVE" -p "$PORT" --no-browser \
     --username "$EMAIL" --password "$PASS" --user-token "$TOKEN" > "$DATA/server.log" 2>&1 &
   echo $! > "$DATA/server.pid"
-  for _ in $(seq 1 90); do curl -s "http://localhost:$PORT/health" >/dev/null 2>&1 && break; sleep 2; done
+  for _ in $(seq 1 180); do curl -s "http://localhost:$PORT/health" >/dev/null 2>&1 && break; sleep 2; done
 fi
 
-python3 - "$PORT" "$TOKEN" "$ID" "$HERE" "$ROOT" <<'PY'
+"$PY" - "$PORT" "$TOKEN" "$ID" "$HERE_NATIVE" "$ROOT_NATIVE" <<'PY'
 import json, sys, urllib.request
 port, token, aid, here, root = sys.argv[1:]
 base = f"http://localhost:{port}/api"
