@@ -1,0 +1,602 @@
+[
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P9/PTT-20261019-WA0009.wav",
+   "clip_id": "P9_41"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P21/WhatsApp Ptt 2026-11-06 at 11.10.36 AM.wav",
+   "clip_id": "P21_73"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P13/clip_15.wav",
+   "clip_id": "P13_80"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P16/clip_13.wav",
+   "clip_id": "P16_111"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P16/clip_12.wav",
+   "clip_id": "P16_110"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P13/clip_18.wav",
+   "clip_id": "P13_83"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P18/clip_02.wav",
+   "clip_id": "P18_114"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P7/WhatsApp Audio 2026-10-19 at 2.37.57 PM (2).wav",
+   "clip_id": "P7_29"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P20/WhatsApp Ptt 2026-11-05 at 6.57.26 PM.wav",
+   "clip_id": "P20_68"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P18/clip_10.wav",
+   "clip_id": "P18_122"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P16/clip_02.wav",
+   "clip_id": "P16_100"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P8/PTT-20261019-WA0007.wav",
+   "clip_id": "P8_32"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P9/PTT-20261019-WA0010.wav",
+   "clip_id": "P9_42"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P1/1.wav",
+   "clip_id": "P1_1"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P20/WhatsApp Ptt 2026-11-05 at 6.47.47 PM.wav",
+   "clip_id": "P20_61"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P19/clip_05.wav",
+   "clip_id": "P19_133"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P2/1.wav",
+   "clip_id": "P2_3"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P19/clip_10.wav",
+   "clip_id": "P19_138"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P18/clip_04.wav",
+   "clip_id": "P18_116"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P18/clip_03.wav",
+   "clip_id": "P18_115"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P19/clip_01.wav",
+   "clip_id": "P19_129"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P20/WhatsApp Ptt 2026-11-05 at 6.45.32 PM.wav",
+   "clip_id": "P20_60"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P4/PTT-20261018-WA0011.wav",
+   "clip_id": "P4_11"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P11/PTT-20261019-WA0018.wav",
+   "clip_id": "P11_55"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P13/clip_11.wav",
+   "clip_id": "P13_76"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P7/WhatsApp Audio 2026-10-19 at 2.37.57 PM (1).wav",
+   "clip_id": "P7_28"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P12/PTT-20261019-WA0028.wav",
+   "clip_id": "P12_57"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P1/2.wav",
+   "clip_id": "P1_2"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P14/clip_09.wav",
+   "clip_id": "P14_96"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P10/PTT-20261019-WA0014.wav",
+   "clip_id": "P10_51"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P20/WhatsApp Ptt 2026-11-05 at 6.50.45 PM.wav",
+   "clip_id": "P20_63"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P18/clip_14.wav",
+   "clip_id": "P18_126"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P13/clip_22.wav",
+   "clip_id": "P13_87"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P5/PTT-20261018-WA0014.wav",
+   "clip_id": "P5_19"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P14/clip_07.wav",
+   "clip_id": "P14_94"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P19/clip_08.wav",
+   "clip_id": "P19_136"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P14/clip_01.wav",
+   "clip_id": "P14_88"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P3/1.wav",
+   "clip_id": "P3_7"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P18/clip_08.wav",
+   "clip_id": "P18_120"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P19/clip_06.wav",
+   "clip_id": "P19_134"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P11/PTT-20261019-WA0015.wav",
+   "clip_id": "P11_53"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P22/WhatsApp Ptt 2026-11-06 at 2.32.06 PM.wav",
+   "clip_id": "P22_88"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P14/clip_03.wav",
+   "clip_id": "P14_90"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P22/WhatsApp Ptt 2026-11-06 at 2.36.05 PM.wav",
+   "clip_id": "P22_92"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P13/clip_20.wav",
+   "clip_id": "P13_85"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P18/clip_16.wav",
+   "clip_id": "P18_128"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P14/clip_06.wav",
+   "clip_id": "P14_93"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P11/PTT-20261019-WA0016.wav",
+   "clip_id": "P11_54"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P5/PTT-20261018-WA0005.wav",
+   "clip_id": "P5_16"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P12/PTT-20261019-WA0029.wav",
+   "clip_id": "P12_58"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P18/clip_01.wav",
+   "clip_id": "P18_113"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P7/WhatsApp Audio 2026-10-19 at 2.37.56 PM (1).wav",
+   "clip_id": "P7_25"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P19/clip_09.wav",
+   "clip_id": "P19_137"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P2/WhatsApp Ptt 2026-11-06 at 12.11.00 PM.wav",
+   "clip_id": "P2_13"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P7/PTT-20261018-WA0021.wav",
+   "clip_id": "P7_22"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P7/PTT-20261019-WA0017.wav",
+   "clip_id": "P7_23"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P5/PTT-20261018-WA0013.wav",
+   "clip_id": "P5_18"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P8/PTT-20261019-WA0038.wav",
+   "clip_id": "P8_35"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P8/PTT-20261019-WA0039.wav",
+   "clip_id": "P8_36"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P19/clip_07.wav",
+   "clip_id": "P19_135"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P13/clip_07.wav",
+   "clip_id": "P13_72"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P22/WhatsApp Ptt 2026-11-06 at 2.37.05 PM.wav",
+   "clip_id": "P22_93"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P9/PTT-20261019-WA0011.wav",
+   "clip_id": "P9_43"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P6/PTT-20261018-WA0016.wav",
+   "clip_id": "P6_21"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P18/clip_05.wav",
+   "clip_id": "P18_117"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P22/WhatsApp Ptt 2026-11-06 at 2.38.25 PM.wav",
+   "clip_id": "P22_94"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P2/WhatsApp Ptt 2026-11-06 at 12.03.53 PM.wav",
+   "clip_id": "P2_8"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P21/WhatsApp Ptt 2026-11-06 at 11.20.56 AM.wav",
+   "clip_id": "P21_81"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P9/PTT-20261019-WA0027.wav",
+   "clip_id": "P9_50"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P21/WhatsApp Ptt 2026-11-06 at 11.16.28 AM.wav",
+   "clip_id": "P21_78"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P10/PTT-20261019-WA0020.wav",
+   "clip_id": "P10_52"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P13/clip_17.wav",
+   "clip_id": "P13_82"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P14/clip_04.wav",
+   "clip_id": "P14_91"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P11/PTT-20261019-WA0019.wav",
+   "clip_id": "P11_56"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P13/clip_13.wav",
+   "clip_id": "P13_78"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P2/WhatsApp Ptt 2026-11-06 at 12.08.35 PM.wav",
+   "clip_id": "P2_11"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P18/clip_11.wav",
+   "clip_id": "P18_123"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P14/clip_10.wav",
+   "clip_id": "P14_97"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P2/2.wav",
+   "clip_id": "P2_4"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P7/WhatsApp Audio 2026-10-19 at 2.37.55 PM.wav",
+   "clip_id": "P7_24"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P4/PTT-20261018-WA0003.wav",
+   "clip_id": "P4_10"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P14/clip_11.wav",
+   "clip_id": "P14_98"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P21/WhatsApp Ptt 2026-11-06 at 11.09.46 AM.wav",
+   "clip_id": "P21_71"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P18/clip_15.wav",
+   "clip_id": "P18_127"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P13/clip_02.wav",
+   "clip_id": "P13_67"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P2/WhatsApp Ptt 2026-11-06 at 12.07.26 PM.wav",
+   "clip_id": "P2_10"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P18/clip_09.wav",
+   "clip_id": "P18_121"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P4/PTT-20261018-WA0018.wav",
+   "clip_id": "P4_13"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P16/clip_06.wav",
+   "clip_id": "P16_104"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P3/2.wav",
+   "clip_id": "P3_8"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P14/clip_05.wav",
+   "clip_id": "P14_92"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P19/clip_03.wav",
+   "clip_id": "P19_131"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P13/clip_03.wav",
+   "clip_id": "P13_68"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P18/clip_13.wav",
+   "clip_id": "P18_125"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P13/clip_08.wav",
+   "clip_id": "P13_73"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P3/3.wav",
+   "clip_id": "P3_9"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P20/WhatsApp Ptt 2026-11-05 at 6.53.52 PM.wav",
+   "clip_id": "P20_65"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P2/WhatsApp Ptt 2026-11-06 at 12.02.57 PM.wav",
+   "clip_id": "P2_7"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P21/WhatsApp Ptt 2026-11-06 at 11.20.07 AM.wav",
+   "clip_id": "P21_80"
+  }
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P19/clip_04.wav",
+   "clip_id": "P19_132"
+  }
+ }
+]

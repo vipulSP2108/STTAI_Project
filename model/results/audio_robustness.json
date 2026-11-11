@@ -1,0 +1,987 @@
+{
+ "seed": 42,
+ "n_clips": 32,
+ "asr": "Indic hybrid routing (language from annotator tag), greedy, VAD",
+ "summary": {
+  "babble_10dB": {
+   "median_drift_wer": 0.46448979591836737,
+   "mean_drift_wer": 0.5511589990865857,
+   "by_language": {
+    "Code-mixed": 0.3771929824561403,
+    "English": 0.44,
+    "Gujarati": 0.6333333333333333,
+    "Hindi": 0.44862772695285014
+   }
+  },
+  "reverb_rt60_0.5": {
+   "median_drift_wer": 0.7361111111111112,
+   "mean_drift_wer": 0.7320784621694929,
+   "by_language": {
+    "Code-mixed": 0.7171052631578947,
+    "English": 0.5380952380952381,
+    "Gujarati": 0.8583333333333334,
+    "Hindi": 0.7582386363636364
+   }
+  },
+  "speed_0.9": {
+   "median_drift_wer": 0.3509852216748769,
+   "mean_drift_wer": 0.6542427174913467,
+   "by_language": {
+    "Code-mixed": 0.5229591836734694,
+    "English": 0.19523809523809524,
+    "Gujarati": 0.7083333333333333,
+    "Hindi": 0.35608726249120337
+   }
+  },
+  "pitch_+2": {
+   "median_drift_wer": 0.8708333333333333,
+   "mean_drift_wer": 0.8212975274203227,
+   "by_language": {
+    "Code-mixed": 0.8611111111111112,
+    "English": 0.7878787878787878,
+    "Gujarati": 0.9583333333333333,
+    "Hindi": 0.6098814229249012
+   }
+  },
+  "codec_opus16k_8kHz": {
+   "median_drift_wer": 0.36629134412385644,
+   "mean_drift_wer": 0.5542737806053081,
+   "by_language": {
+    "Code-mixed": 0.27972709551656916,
+    "English": 0.19047619047619047,
+    "Gujarati": 0.6666666666666666,
+    "Hindi": 0.3390804597701149
+   }
+  }
+ },
+ "clips": [
+  {
+   "uuid": "2a935d62",
+   "speaker": "P16",
+   "language": "English",
+   "intent": "student_services",
+   "clean_hyp": "Hello, IITGN Helpdesk. My laboratory access card stopped working even though my project registration is active. Can access permissions be checked?",
+   "aug": {
+    "babble_10dB": {
+     "hyp": "access. Hello IITGN Health desk. My laboratory access card stopped working even though my My positive registration is active. Can access permissions be checked?",
+     "drift_wer": 0.2857142857142857
+    },
+    "reverb_rt60_0.5": {
+     "hyp": "access. If hello, IITG in help desk, my laboratory access card stopped working even though my process for registration is active. Can access permissions be checked?",
+     "drift_wer": 0.47619047619047616
+    },
+    "speed_0.9": {
+     "hyp": "Hello, IITG in help desk. My laboratory access card stopped working even though my project registration is active. Can access permissions be checked?",
+     "drift_wer": 0.19047619047619047
+    },
+    "pitch_+2": {
+     "hyp": "Hello, I'm Lee Jin-Headdisk. My laboratory access on stomp working even though my grocery and then the registration is active. In Access Abotions, we check...",
+     "drift_wer": 0.6666666666666666
+    },
+    "codec_opus16k_8kHz": {
+     "hyp": "Hello, IITGN HealthDisk. My laboratory access card stopped working even though my and process registration is active. Can Access Permissions be checked?",
+     "drift_wer": 0.23809523809523808
+    }
+   }
+  },
+  {
+   "uuid": "b82c9074",
+   "speaker": "P21",
+   "language": "English",
+   "intent": "hostel_mess",
+   "clean_hyp": "Hello, IITGN help this. I will have to change my room partner and you both have to change the look partner. Hello, IITGN help this. My table is broken. My table is broken.",
+   "aug": {
+    "babble_10dB": {
+     "hyp": "Hello, IITGN is at this. I would have put the chains in the room partner and use both of them to change the part up. Hello, IITGN is at this. My table is here. Table to the eye.",
+     "drift_wer": 0.6060606060606061
+    },
+    "reverb_rt60_0.5": {
+     "hyp": "Hello Adizyan Thalipdes I would have to change the room partner and the both of them will change in the room partner Hello Adizyan Thalipdes My table is ready I have to go to the table I have to go to the table",
+     "drift_wer": 0.9393939393939394
+    },
+    "speed_0.9": {
+     "hyp": "Hello, IITGN has this. I would have to change the room partner and we both have to change the room partner. Hello, IITGN has this. My table is broken. My table is broken.",
+     "drift_wer": 0.18181818181818182
+    },
+    "pitch_+2": {
+     "hyp": "Hello, I'm Lee Jian Hex. I worked in the room 895, so I'm going to check in in the room. Hello, I'm Lee Jian Hex. I'm going to give a little bit of that. Okay, okay, okay, okay, okay, okay, okay.",
+     "drift_wer": 1.1515151515151516
+    },
+    "codec_opus16k_8kHz": {
+     "hyp": "Hello, I had a giant help desk. I would have to change the room partner and you both helped me to change the room partner. Hello, I had a giant help desk. My table is broken. My table is broken.",
+     "drift_wer": 0.45454545454545453
+    }
+   }
+  },
+  {
+   "uuid": "df57c59a",
+   "speaker": "P18",
+   "language": "English",
+   "intent": "student_services",
+   "clean_hyp": "Hello IITG and Heldus, my parents will stay on campus for two nights, guest accommodation, availability and charges.",
+   "aug": {
+    "babble_10dB": {
+     "hyp": "Hello, Iadiryan Hildes, my parents will stay on campus for two nights. Guest accommodation, availability and a charges, check tori sakiye.",
+     "drift_wer": 0.6111111111111112
+    },
+    "reverb_rt60_0.5": {
+     "hyp": "Hello, I did you notice my parents reached beyond campus for two nights. Guest accommodation, availability and the charges. Check, check, carry, sakiye.",
+     "drift_wer": 0.8333333333333334
+    },
+    "speed_0.9": {
+     "hyp": "Hello, I, D.G. and Hildes. My parents will stay on campus for two nights. Guest accommodation, availability and charges. What? Check. Carry. Saki.",
+     "drift_wer": 0.6111111111111112
+    },
+    "pitch_+2": {
+     "hyp": "Hello, I did you notice my parents received on campus for two nights against the operation, the availability and the charges check the lease, sake",
+     "drift_wer": 1.0
+    },
+    "codec_opus16k_8kHz": {
+     "hyp": "Hello, Iadian Heldas, my parents will stay on campus for two nights. Guest accommodation, availability and charges, Check it out",
+     "drift_wer": 0.5555555555555556
+    }
+   }
+  },
+  {
+   "uuid": "a18ff6b6",
+   "speaker": "P18",
+   "language": "English",
+   "intent": "student_services",
+   "clean_hyp": "Hello I it is Angelidus, can I audit an additional elective without it affecting my semester grade point?",
+   "aug": {
+    "babble_10dB": {
+     "hyp": "Hello, I do you know this? Can I already tell? It is still elective without it affecting my semester grade 1.",
+     "drift_wer": 0.6666666666666666
+    },
+    "reverb_rt60_0.5": {
+     "hyp": "Hello, I am Indian with this. Can I already tell? It is still elective without it affecting my service to grade point?",
+     "drift_wer": 0.7222222222222222
+    },
+    "speed_0.9": {
+     "hyp": "Hello I it is in hell this can I audit and additional Elective without it affecting my semester grade point",
+     "drift_wer": 0.3333333333333333
+    },
+    "pitch_+2": {
+     "hyp": "I will write it in the list, or it can be written, it is still elective without it has been and this will be important.",
+     "drift_wer": 1.1111111111111112
+    },
+    "codec_opus16k_8kHz": {
+     "hyp": "Hello, I it is in hell this can I audit and additional elective without it affecting my semester grade point?",
+     "drift_wer": 0.2777777777777778
+    }
+   }
+  },
+  {
+   "uuid": "ee49f329",
+   "speaker": "P16",
+   "language": "English",
+   "intent": "it_support",
+   "clean_hyp": "Hello, IITG in HelpDisc. My lab computer has lost access to the shared data set drive. The research deadline is approaching. Whom should I contact?",
+   "aug": {
+    "babble_10dB": {
+     "hyp": "Hello, I will be doing health disc. My lab computer has lost access to the shared data drive, the recess deadline is approaching, whom should I contact?",
+     "drift_wer": 0.48
+    },
+    "reverb_rt60_0.5": {
+     "hyp": "Hello IT Gene Helpdesk, my lab computer has lost access to the shared data, data set dry. The research deadline is approaching. Who should I contact?",
+     "drift_wer": 0.32
+    },
+    "speed_0.9": {
+     "hyp": "Hello, IITG in HelpDisc. My lab computer has lost access to the shared data dataset drive. The research deadline is approaching. Whom should I contact?",
+     "drift_wer": 0.04
+    },
+    "pitch_+2": {
+     "hyp": "Hello, I'm Eugene Heldiske. My lab computer has lost access to shared data, data set drive. The research Jesus will enter the approaching, who should I contact?",
+     "drift_wer": 0.44
+    },
+    "codec_opus16k_8kHz": {
+     "hyp": "Hello, IITGN HelpDisc. My lab computer has lost access to the shared data set drive. The research deadline is approaching. Whom should I contact?",
+     "drift_wer": 0.08
+    }
+   }
+  },
+  {
+   "uuid": "944528c0",
+   "speaker": "P16",
+   "language": "English",
+   "intent": "student_services",
+   "clean_hyp": "Hello, IITGN HelpDisc. Internship Company is asking for a bonafide letter and NOC. Are both documents available through the students?",
+   "aug": {
+    "babble_10dB": {
+     "hyp": "Hello IITGN Helpdesk. Internship company is asking for a bonafide letter and an NLC. All board documents available through the student.",
+     "drift_wer": 0.4
+    },
+    "reverb_rt60_0.5": {
+     "hyp": "Hello, IIT GMHEDDISC. In Deutsche company is asking for a qualified letter and an ANOC. Our board documents are available through the store.",
+     "drift_wer": 0.6
+    },
+    "speed_0.9": {
+     "hyp": "Hello, IITGN HelpDisc. Internship Company is asking for a bonafide letter and NOC. Our board documents are available through the student.",
+     "drift_wer": 0.2
+    },
+    "pitch_+2": {
+     "hyp": "Hello, I am Eugene Helddisk. In Drumsha Company is asking for a modified letter and NC. Our board documents have legal through the student.",
+     "drift_wer": 0.65
+    },
+    "codec_opus16k_8kHz": {
+     "hyp": "Hello, IITGN HelpDisc. Internship company is asking for a bonafide letter and NOC. Are both documents available through the student?",
+     "drift_wer": 0.1
+    }
+   }
+  },
+  {
+   "uuid": "20de435d",
+   "speaker": "P16",
+   "language": "English",
+   "intent": "student_services",
+   "clean_hyp": "Hello, IIT Jane help desk. My scholarship application shows document verification pending for three weeks. whom should I contact for an update?",
+   "aug": {
+    "babble_10dB": {
+     "hyp": "Hello, I'm Tejian Helpdesk. My scholarship application shows document verification pending for 3 weeks. whom should I contact for an update?",
+     "drift_wer": 0.22727272727272727
+    },
+    "reverb_rt60_0.5": {
+     "hyp": "Hello, I'm Tejane, Head Disk. My scholarship application shows document verification pending for three weeks. Who wants your contact for an update?",
+     "drift_wer": 0.3181818181818182
+    },
+    "speed_0.9": {
+     "hyp": "Hello IITGN helpdesk. My scholarship application shows document verification pending for three weeks. whom should I contact for an update?",
+     "drift_wer": 0.22727272727272727
+    },
+    "pitch_+2": {
+     "hyp": "Hello I'm Gejim Heddesk. My soul is an application show's document application for the PUTRIRIX. I'm going to start the plan update.",
+     "drift_wer": 0.9090909090909091
+    },
+    "codec_opus16k_8kHz": {
+     "hyp": "Hello, IIT Jane help desk. My scholarship application shows document verification pending for three weeks. whom should I contact for an update?",
+     "drift_wer": 0.0
+    }
+   }
+  },
+  {
+   "uuid": "addc3e13",
+   "speaker": "P16",
+   "language": "English",
+   "intent": "student_services",
+   "clean_hyp": "Hello, IITGN help this. My name is spelled differently on different student ID and academic records. What is the correction procedure?",
+   "aug": {
+    "babble_10dB": {
+     "hyp": "Hello, ITGN, help us. My name is spelled differently on different student ID and a cadmium records. What is the correction procedure?",
+     "drift_wer": 0.19047619047619047
+    },
+    "reverb_rt60_0.5": {
+     "hyp": "Hello, I am Eugene Helpedeth. My name is spelled differently on different student ID and and a cabinet records. What is the correction procedure?",
+     "drift_wer": 0.3333333333333333
+    },
+    "speed_0.9": {
+     "hyp": "Hello, IITGN help this. My name is spelled differently on different student ID and academic records. What is the correction procedure?",
+     "drift_wer": 0.0
+    },
+    "pitch_+2": {
+     "hyp": "Hello, I am Eugene Heldus. My name is well-definitely on different student IE and I have been proposed. Also, correction procedure.",
+     "drift_wer": 0.6190476190476191
+    },
+    "codec_opus16k_8kHz": {
+     "hyp": "Hello IITGN help this. My name is spelled differently on different student ID and a cabinet records. What is the correction procedure?",
+     "drift_wer": 0.14285714285714285
+    }
+   }
+  },
+  {
+   "uuid": "f41402b1",
+   "speaker": "P21",
+   "language": "Hindi",
+   "intent": "student_services",
+   "clean_hyp": "हेलो है हमारे यहाँ सुसाइड रखिए एक बंदा गिर गए आप जल्दी से एंबुलेंस भेज सकते हो क्या",
+   "aug": {
+    "babble_10dB": {
+     "hyp": "हैलो हमारे यहाँ",
+     "drift_wer": 0.8888888888888888
+    },
+    "reverb_rt60_0.5": {
+     "hyp": "हमारे यहां",
+     "drift_wer": 0.9444444444444444
+    },
+    "speed_0.9": {
+     "hyp": "हेलो हेल्प डेस्क हमारे यहाँ सुसाइड रखिए एक बंदा गिर आप जल्दी से एंबुलेंस भेज सकते हो क्या",
+     "drift_wer": 0.16666666666666666
+    },
+    "pitch_+2": {
+     "hyp": "हमां यहां सुसग दे रहा है कि अंदर दे रहे हैं आज यदि एमडीएम दे सकते हैं",
+     "drift_wer": 0.9444444444444444
+    },
+    "codec_opus16k_8kHz": {
+     "hyp": "हेलो हमारे यहाँ सुसाइड रखिए बंदर गिर आप जल्दी से एंबुलेंस जीत सकते हो या",
+     "drift_wer": 0.3333333333333333
+    }
+   }
+  },
+  {
+   "uuid": "9cd6c852",
+   "speaker": "P21",
+   "language": "Hindi",
+   "intent": "student_services",
+   "clean_hyp": "हेलो आईटीजी एंड हेल्प डेस्क मेरे को देखते हैं कि मेरी दोस्त उसके साथ कुछ लोग रेसमेंट कर रहे तो मेरे को इसके रिकॉर्निंग कंप्लेंट करने की थी तो उसकी कहा कंप्लेंट करने की रहेगी और आगे फॉर द प्रोसेस किया होगी एंड लाइक इट्स �",
+   "aug": {
+    "babble_10dB": {
+     "hyp": "हैलो आईटीजी एन हेल्पडेस्ट मेरे को देखते हैं कि मेरी दोस्त उसके साथ कुछ लोग रेसमेंट कर रहे तो मेरे को इसके रिकार्डिंग कंपनी करने की तो इसके कहा कंपनी करने की रहेगी और आगे प्रोसेस किया होगी एंड लाइट वेरी सीवियर इंजीडेंट �",
+     "drift_wer": 0.32608695652173914
+    },
+    "reverb_rt60_0.5": {
+     "hyp": "मेरे को देखते हैं कि मेरी दोस्त कुछ लोगों का रेसमेंट कर रहे तो मेरे किसकी कंपनी की तो इसके कहा कंपनी की रहेगी और प्रोसेस किया होगी एंड लाइट से स्टेशन",
+     "drift_wer": 0.5217391304347826
+    },
+    "speed_0.9": {
+     "hyp": "हैलो आईटीजी एन हेल्प डेस्क मेरे को देखते हैं कि मेरी दोस्त उसके साथ कुछ लोग अरेस्टमेंट कर रहे तो मेरे को इसके लिए गार्डिंग कंप्लीबे करने की थी तो इसके कहां कंप्लीबे करने की रहेगी और आगे फॉर द प्रोसेस किया होगी एंड लाइक �",
+     "drift_wer": 0.21739130434782608
+    },
+    "pitch_+2": {
+     "hyp": "हैलो आईटीजेएम हैल्प दस मेरे को देखते हैं मेरे एक दोस्त उसके साथ कुछ लोग हरेसमेंट आ गए तो मेरे कृषि अधिकारी कंप्लेंट रहेगी तो इसके कहा कंप्लेंट रहेगी और आगे पर प्रोसेस किया होगी एंड लाइट इज सर्वे सीवियन इंजीनिं�",
+     "drift_wer": 0.5652173913043478
+    },
+    "codec_opus16k_8kHz": {
+     "hyp": "हैलो आईटीजी एन हेल्पडेस्ट मेरे को देखते हैं मैं आया कि मेरी दोस्त इसके साथ कुछ लोग रेसमेंट कर रहे तो मेरे को इसके रिकार्डिंग कंप्लेम करने थे तो इसके कहा कंप्लेम करने की रहेगी और आगे फॉर द प्रोसेस किया होगी एंड लाइक इट्स �",
+     "drift_wer": 0.2826086956521739
+    }
+   }
+  },
+  {
+   "uuid": "4ccc9bc2",
+   "speaker": "P2",
+   "language": "Hindi",
+   "intent": "hostel_mess",
+   "clean_hyp": "हेलो. एक सौ सत्तर तोड़ा कंपलेंट थामरा की वो टैप जो है वो टाइप नाम लीक हो रहा है और उसका उसके वजह से वो जो हमारा कमोड़ वाला वाथॉम है वो पूरा फूल हो चुका है वो ब्लॉक हो गया है तो उससे प्यरी था की वो एक रिजॉल्ट कर दो और दूसरा य",
+   "aug": {
+    "babble_10dB": {
+     "hyp": "हैलो. पैर का काम",
+     "drift_wer": 1.0
+    },
+    "reverb_rt60_0.5": {
+     "hyp": "हैलो. हमारा, जो है जो मौसम का क्या था न वो भी हो रहा है और उसका उसके हाजिर जो हमारा कमोड़ वाला माट्रो में वो रफूल हो चूका है वो लाक हो गया है",
+     "drift_wer": 0.6727272727272727
+    },
+    "speed_0.9": {
+     "hyp": "हेलो. तोड़ा कॉम्प्लेंट था हमारा, जो है मशरूम का जो मस व टएप है ना वोली हो रहा है और उसका उसके हैसे वो जो हमारा कमोड़ वाला बाथरूम है वो पूरा फुल हो चुका है वो ब्लॉक हो गया है तो उससे पकड़ा था कि वो एक रिसॉल कर दो और दूसरा ये था क पैर का काम",
+     "drift_wer": 0.509090909090909
+    },
+    "pitch_+2": {
+     "hyp": "जो है मौसम वाटर का टाइट है वो ये हो रहा है और उसका उसके वजह से वो जो हमारा बातें है वो बुरा फूल हो चुका है वो ब्लॉक हो गया है इस अवसर पर उन्होंने बताया कि प्रदेश में अब तक एक सौ छियासी लोगों की मौत हो चुकी है",
+     "drift_wer": 0.6545454545454545
+    },
+    "codec_opus16k_8kHz": {
+     "hyp": "हैलो. कंप्लेंट हमारा जो है वो उसके वजह से जो हमारा वाला बातरूम है वो पूरा फूल हो चूका है वो ब्लॉक हो गया है",
+     "drift_wer": 0.6363636363636364
+    }
+   }
+  },
+  {
+   "uuid": "49257af1",
+   "speaker": "P21",
+   "language": "Hindi",
+   "intent": "hostel_mess",
+   "clean_hyp": "हेलो आइडिजन हैद बेस्ट मेरे रूम का रूम की कुंडी टूट गई उसका स्क्रूब आ गया तो स्कूल लगाने का था एण्ड कवर्ड में भी सेम इशू आ रहे उसका हैण्डर बाहर आया जा रहा है तो आप किसी को बेचके टिक्कर मेक्स टूट डेस में टिक्कर आ सक",
+   "aug": {
+    "babble_10dB": {
+     "hyp": "हेलो आइडिजन हैदबेस मेरे रूम का रूम की गंभीर उसका स्कूल बाहर आ गया तो स्कूल लगाने का था एंड कवरों और कवरों में भी सेम इशू आ रहे उसका एंड बाहर आये जा रहा है तो आप किसी को भी टिक दे सकते हैं",
+     "drift_wer": 0.4489795918367347
+    },
+    "reverb_rt60_0.5": {
+     "hyp": "हैलो आई डी जन हैदवेस मेरे रूम का रूम की कुंडी तो उसका स्कूल बाहर आ गया तो स्कूल बाहर अकवर्ड में भी सेम इश्यू आ रहे उसका एंड बाहर आ जा रहा है तो आप किसको भी स्कूल फीडिटिटिटिटिटिटिटिटिटिटिटिटिटिटिटिटिटि�",
+     "drift_wer": 0.5714285714285714
+    },
+    "speed_0.9": {
+     "hyp": "हेलो आईडीजन है बेस मेरे रूम मेरे रूम का रूम की गुंडली टूट गई उसका स्क्रू बाहर आ गया तो स्कूल स्कूल लगाने का था एंड कवर्ड में भी सेम इशू आ रहे उसका हैंडर बाहर आया जा रहा है तो आप किसी को बेच के टिक टूट ट्रीडीज में ट",
+     "drift_wer": 0.3673469387755102
+    },
+    "pitch_+2": {
+     "hyp": "हेलो एडिजन हैदडेस मेरे रूम का रूम की गोंगी, अब अधूरी उसका स्कूब आ गया तो स्कूब लगाने का था एण्ड अपर्ड अपर्जन भी सेमिस आ रहे उसका एण्ड बाहर जा रहा है तो आप इस पर लेज के एटीएम एसपी फिल्म एसपी करा सकते हैं",
+     "drift_wer": 0.5102040816326531
+    },
+    "codec_opus16k_8kHz": {
+     "hyp": "हेलो आईडीजन हैबेस मेरे रूम का रूम की गुंडी टूर भी उसका स्क्रू बाहर आ गया तो स्कूल लगाने का था एंड कवर्ड में भी सेम इशू आ रहे उसका एंड बाहर आया जा रहा है तो आप किसी को भेजकर मैक्स टूर फ्रीडेज में टिक करा सकते हैं",
+     "drift_wer": 0.3877551020408163
+    }
+   }
+  },
+  {
+   "uuid": "35c7936c",
+   "speaker": "P18",
+   "language": "Hindi",
+   "intent": "it_support",
+   "clean_hyp": "हैलो आईडीजीएनएलड्स मेरा कोर्ट सजिस्ट्रेशन हो गया है लेकिन ईआरपी पोर्टल पर सब्जेक्ट शो नहीं हो रहा है प्लीज चेक करवा दो.",
+   "aug": {
+    "babble_10dB": {
+     "hyp": "हेलो आईडीजीएमएल10 मेरा कोर्ट सजिस्ट्रेशन हो गया है लेकिन ईआरपी पोर्टल पर सब्जेक्ट शो नहीं हो रहा है लिस्ट चेक करवा दो.",
+     "drift_wer": 0.13636363636363635
+    },
+    "reverb_rt60_0.5": {
+     "hyp": "होलो, आईजीजेएड एल्डिस्ट मेरा पोस्ट सजिस्ट्रेशन हो गया है लेकिन यह की पोर्टल पर सब्जेक्ट शोर नहीं हो रहा है प्लेस चेक करवा दो.",
+     "drift_wer": 0.36363636363636365
+    },
+    "speed_0.9": {
+     "hyp": "हैलो आई डी जी एन एल डिस्ट, मेरा कोर्ट सज़िस्ट्रेशन हो गया है, लेकिन ईआरपी पोर्टल पर सब्जेक्ट शो नहीं हो रहा है, प्लीज चेक करवा दो.",
+     "drift_wer": 0.4090909090909091
+    },
+    "pitch_+2": {
+     "hyp": "हेलो आई डी जे एल डेस्क, मेरा कोर्स सजीजिशन हो गया है लेकिन पीआरपी पोर्टल पर सब्जेक्ट शो नहीं हो रहा है इस चेक करवा दो.",
+     "drift_wer": 0.45454545454545453
+    },
+    "codec_opus16k_8kHz": {
+     "hyp": "हेलो आईडीजीएनएलएस मिराकोर्ट सजिस्ट्रेशन हो गया है लेकिन ईआरपी पोर्टल पर सब्जेक्ट शो नहीं हो रहा है पुलिस चेक करवा दो.",
+     "drift_wer": 0.22727272727272727
+    }
+   }
+  },
+  {
+   "uuid": "d605e770",
+   "speaker": "P21",
+   "language": "Hindi",
+   "intent": "hostel_mess",
+   "clean_hyp": "हेलो आईटीजीएन हेल्थ देस्ट मेरे को पूछना था कि अभी बाथरूम में पानी नहीं आ रहा था बहुत टाइम से तो कब हो जाएगा एंड कितना टाइम देगा एक बार बचा दो",
+   "aug": {
+    "babble_10dB": {
+     "hyp": "हेलो आईटीजीएन हेल्थ मेरे को पूछना था कि अभी बातचूप में पानी नहीं आ रहा था बहुत टाइम से तो कब हो जाएगा एंड कितना टाइम देगा एक बार बचा दो",
+     "drift_wer": 0.0625
+    },
+    "reverb_rt60_0.5": {
+     "hyp": "हेलो आईटीजी पानी नहीं आ जाएगा",
+     "drift_wer": 0.84375
+    },
+    "speed_0.9": {
+     "hyp": "हेलो आईटीजीएन हेल्थ दिस्ट मेरे को पूछता था कि अभी बाथरूम में पानी नहीं आ रहा था बहुत टाइम से तो कब हो जाएगा एंड कितना टाइम देगा एक बार बचा दो",
+     "drift_wer": 0.0625
+    },
+    "pitch_+2": {
+     "hyp": "हैलो आईटीजीएस एलिटेज मैं पूछना था कि अभी पानी नहीं आ जाता बहुत टाइम से तो वो जाएगा एड चिप्पर टाइम गए पर बजा दो",
+     "drift_wer": 0.5625
+    },
+    "codec_opus16k_8kHz": {
+     "hyp": "हेलो आईटीजी एन हेल्पडेस्ट मेरे को पूछना था कि अभी बाथरूम में पानी नहीं आ रहा था बहुत टाइम से तो कब हो जाएगा एंड कितना टाइम लगेगा एक बार बता दो",
+     "drift_wer": 0.15625
+    }
+   }
+  },
+  {
+   "uuid": "6ba25efe",
+   "speaker": "P21",
+   "language": "Hindi",
+   "intent": "student_services",
+   "clean_hyp": "हेलो आईडीजी एंड हेल्प डेस्क यहाँ पे साप रखा है हमने उसको बचे केंद्र में डाल रखा है आप जल्दी से किसी को बेच सकते हैं बेच सकते हैं",
+   "aug": {
+    "babble_10dB": {
+     "hyp": "हेलो आईडीजीएम बस यहाँ पे साफ रखा है हमने उसको बच्चे को डाल रखा है जल्दी से किसी को भेज सकते हैं और भेज सकते है",
+     "drift_wer": 0.4482758620689655
+    },
+    "reverb_rt60_0.5": {
+     "hyp": "यहाँ",
+     "drift_wer": 0.9655172413793104
+    },
+    "speed_0.9": {
+     "hyp": "हेलो आई डी जी एन हेल्प बेस्क यहाँ पे सांप रखा है हमने उसको बखेड़ के लाल रखा है आप जल्दी से किसी को बेच सकते हैं बेच सकते हैं",
+     "drift_wer": 0.3448275862068966
+    },
+    "pitch_+2": {
+     "hyp": "हैलो आईजीएमएड यहाँ पे रखा है हम उसको मजबूत बजाय रखा है जल्दी से किसी को गेट चपे है तो गेट चपे हो",
+     "drift_wer": 0.6551724137931034
+    },
+    "codec_opus16k_8kHz": {
+     "hyp": "हेलो आई डी जी एम हेल्प डेस्क यहाँ पे साप आ रखा है हमने उसको बचे के में डाल लगता है जल्दी से किसी को बेच सकते है बेच सकते है",
+     "drift_wer": 0.3448275862068966
+    }
+   }
+  },
+  {
+   "uuid": "3e75c3b4",
+   "speaker": "P13",
+   "language": "Hindi",
+   "intent": "it_support",
+   "clean_hyp": "उपराष्ट्रपति एम वेंकैया ने भी लोगों से अपने विचार और सुझाने के लिए प्रेरित करते हुए उन्होंने कहा कि वे प्रेरित करते हुए उन्हें प्रेरित करते हुए उन्हें प्रेरित करते हुए उन्हें प्रेरित करते हुए उन्हें प्रेरित करते हुए उ",
+   "aug": {
+    "babble_10dB": {
+     "hyp": "नमस्कार",
+     "drift_wer": 1.0
+    },
+    "reverb_rt60_0.5": {
+     "hyp": "नमस्कार",
+     "drift_wer": 1.0
+    },
+    "speed_0.9": {
+     "hyp": "इस अवसर पर प्रदेश के विभिन्न भागों में प्रदेश के विभिन्न भागों में प्रदेश के विभिन्न भागों में भाग ले रहे हैं",
+     "drift_wer": 0.975
+    },
+    "pitch_+2": {
+     "hyp": "नमस्कार",
+     "drift_wer": 1.0
+    },
+    "codec_opus16k_8kHz": {
+     "hyp": "उपायुक्त ने बताया कि प्रदेश में पिछले चौबिस घंटों में एक सौ चौवन नये मामले सामने आये हैं",
+     "drift_wer": 0.95
+    }
+   }
+  },
+  {
+   "uuid": "ecf27e76",
+   "speaker": "P18",
+   "language": "Gujarati",
+   "intent": "student_services",
+   "clean_hyp": "હૈલો ડેસ્ક રિસર્સ પ્રોજેક્ટ થી સિશન ફોર્મેટ અને લેગોરિઝમ લિમિટની ગાઇઇડલાઇન્સ કાય",
+   "aug": {
+    "babble_10dB": {
+     "hyp": "પ્રોજેક્ટ મિશન ફોર્મેટ અને લેગોરિઝમ લિમિટની ગાઇડલેંગ",
+     "drift_wer": 0.5833333333333334
+    },
+    "reverb_rt60_0.5": {
+     "hyp": "હાલો પ્રોજેક્ટમાં સમિશન",
+     "drift_wer": 1.0
+    },
+    "speed_0.9": {
+     "hyp": "હેલોદ પ્રોજેક્ટ માટે મિશન ફોર્મેટ અને પ્લેગરિઝમ લિમિટ",
+     "drift_wer": 0.75
+    },
+    "pitch_+2": {
+     "hyp": "ડિજિનલ ડિસર્સ પ્રોજેક્ટ માટે ફોરમ એગ્રાઇઝન યુમેટની કાઇઝેન્સ",
+     "drift_wer": 0.9166666666666666
+    },
+    "codec_opus16k_8kHz": {
+     "hyp": "હાલ પ્રોજેક્ટ માટે મિશન ફોર્મેટ અને ગાઇડલાઇન",
+     "drift_wer": 0.75
+    }
+   }
+  },
+  {
+   "uuid": "1a50aec3",
+   "speaker": "P18",
+   "language": "Gujarati",
+   "intent": "student_services",
+   "clean_hyp": "હેલો આઇડીજી પ્રોફેસર ઇ અસાઇનમેન્ટ નહીં નહીં ડેટલાઇન એક્સચેન્ટ કરી છે મોડલ પર ડેટલાઇન જ�",
+   "aug": {
+    "babble_10dB": {
+     "hyp": "હલો આઇડીજીનલ પ્રોફેસર ઇએસાઇનમેન્ટ નહીં ડેટલાઇન કરે છે મોડલ પર ડેટલાઇન જે દેખાયા છે",
+     "drift_wer": 0.6666666666666666
+    },
+    "reverb_rt60_0.5": {
+     "hyp": "હેલોઆઇડ જેનલ બ્યસ પ્રોફેસર નહીં ડેટલાઇન એસ્ટેલ કરે છે મોડલ પર લેટલાઇન જે દેખાયા છે",
+     "drift_wer": 0.8
+    },
+    "speed_0.9": {
+     "hyp": "હાઇટ પ્રોફેસર નહીં કરી છે મોડલ છે",
+     "drift_wer": 0.6666666666666666
+    },
+    "pitch_+2": {
+     "hyp": "હૈલો કહે છે મોડલ પર લાઇન દિવાયા છે",
+     "drift_wer": 0.8666666666666667
+    },
+    "codec_opus16k_8kHz": {
+     "hyp": "હલો પ્રોફેસર નહીં કરી છે જે દેખાયા છે",
+     "drift_wer": 0.7333333333333333
+    }
+   }
+  },
+  {
+   "uuid": "36b5229a",
+   "speaker": "P13",
+   "language": "Gujarati",
+   "intent": "hostel_mess",
+   "clean_hyp": "એજન્ટ સપોર્ટ આપો એપ્રેડ કરવા માટે કમિટિંગ ક્યાં થયેલી છે કુપિયા એજન્ટ સપોર્ટ આપો",
+   "aug": {
+    "babble_10dB": {
+     "hyp": "એજન્ટ સપોર્ટ આપો નથી મેનોપ્રેડ કરવા માટે મેસ કમિટિંગ ક્યાં થયેલી છે કે એજન્સપોર્ટ આપો",
+     "drift_wer": 0.42857142857142855
+    },
+    "reverb_rt60_0.5": {
+     "hyp": "માટે કુબિયાર",
+     "drift_wer": 0.9285714285714286
+    },
+    "speed_0.9": {
+     "hyp": "એજન્ટ સપોર્ટ આપો મસ્કાર એપોરેટ કવા માટે મીટિંગ ક્યાં થયેલી છે કે એજન્ટ સપોર્ટ આપો",
+     "drift_wer": 0.35714285714285715
+    },
+    "pitch_+2": {
+     "hyp": "પ્રધાન",
+     "drift_wer": 1.0
+    },
+    "codec_opus16k_8kHz": {
+     "hyp": "એજન્ટ સપોર્ટ આપો મસ્કાલ મેન્ટેલ મેન્ટિંગ થયેલી કે એજન્ટ સપોર્ટ આપો",
+     "drift_wer": 0.5
+    }
+   }
+  },
+  {
+   "uuid": "ff002d4d",
+   "speaker": "P13",
+   "language": "Gujarati",
+   "intent": "student_services",
+   "clean_hyp": "નમસ્કાર ક્લિટર નથી કઈ થી ચા દિવસથી ટોકન નંબર આપો",
+   "aug": {
+    "babble_10dB": {
+     "hyp": "નમસ્કાર નથી કઈ દિવસ છે કે એજન્ટ",
+     "drift_wer": 0.7
+    },
+    "reverb_rt60_0.5": {
+     "hyp": "નમસ્કાર નથી કરવા થી ચાર દિવસથી છે",
+     "drift_wer": 0.6
+    },
+    "speed_0.9": {
+     "hyp": "નમસ્કાર ક્લોટ કરાઈ દેશથી ચા દેવસથી યુપિયા ઓર્ગેન્ટ સપોર્ટ આપો",
+     "drift_wer": 0.8
+    },
+    "pitch_+2": {
+     "hyp": "નવસાર વાંગે સર્વી નથી કઈ થી પ્રાદેવસ્તી નાની છે",
+     "drift_wer": 0.8
+    },
+    "codec_opus16k_8kHz": {
+     "hyp": "નમસ્કાર ક્લિટર નથી કઈ થી ચા દિવસ થી ટોકન નંબર છે કે સપોર્ટ આખો",
+     "drift_wer": 0.6
+    }
+   }
+  },
+  {
+   "uuid": "939b462d",
+   "speaker": "P13",
+   "language": "Gujarati",
+   "intent": "admissions",
+   "clean_hyp": "નમસ્કાર ડોક્યુમેન્ટ મેન્ડેટર છે કે ઓનલાઇન અપલોડ કરી શકાય",
+   "aug": {
+    "babble_10dB": {
+     "hyp": "નમસ્કાર ડોક્યુમેન્ટર માટે ફિઝિકલ મેન્ડરી છે કે ઓનલાઇન કરી શકાય ત્યાં",
+     "drift_wer": 0.6666666666666666
+    },
+    "reverb_rt60_0.5": {
+     "hyp": "નમસ્કાર હોઇને ડોક્યુમેન્ટ ડોક્યુમેન્ટ ડોક્યુમેન્ટ ડોક્યુમેન્ટ છે કે ઓનલાઇન કરી શકાય �",
+     "drift_wer": 0.6666666666666666
+    },
+    "speed_0.9": {
+     "hyp": "નમસ્કાર ડોક્યુમેન્ટ માટે ફેઝિકલ મેન્ડરી છે કે ઓનલાઇન અપલોડ કરી શકાય",
+     "drift_wer": 0.3333333333333333
+    },
+    "pitch_+2": {
+     "hyp": "નવામલ",
+     "drift_wer": 1.0
+    },
+    "codec_opus16k_8kHz": {
+     "hyp": "નમસ્કાર ડોક્યુમેન્ટ માટે ફિઝિકલ રિપોર્ટિંગ મેન્ડરીટ છે કે ઓનલાઇન અપલોડ કરી શકાય",
+     "drift_wer": 0.4444444444444444
+    }
+   }
+  },
+  {
+   "uuid": "4ca415ea",
+   "speaker": "P14",
+   "language": "Gujarati",
+   "intent": "student_services",
+   "clean_hyp": "હેલોટ સર્વિસ રિટર્ન નથી કર્યા છે સપોર્ટ આપો",
+   "aug": {
+    "babble_10dB": {
+     "hyp": "હેલોઆઇટી નથી છે",
+     "drift_wer": 0.75
+    },
+    "reverb_rt60_0.5": {
+     "hyp": "હાથી કરી",
+     "drift_wer": 1.0
+    },
+    "speed_0.9": {
+     "hyp": "હલોપીજીને છે",
+     "drift_wer": 0.875
+    },
+    "pitch_+2": {
+     "hyp": "એવાપીજી છે",
+     "drift_wer": 0.875
+    },
+    "codec_opus16k_8kHz": {
+     "hyp": "હેલોઆઇટીજીન સપોર્ટ આપો",
+     "drift_wer": 0.75
+    }
+   }
+  },
+  {
+   "uuid": "e117dac3",
+   "speaker": "P13",
+   "language": "Gujarati",
+   "intent": "hostel_mess",
+   "clean_hyp": "એજન્ટ સપોર્ટ આપો નમસ્કાર ગાંધીનગર હેલ્પટ કરતો કે પ્લીઝ મેન્ટેનેન્ટ",
+   "aug": {
+    "babble_10dB": {
+     "hyp": "એજન્ટ સપોર્ટ નમસ્કાર ગાંધીનગર હેલ્પોરેસ નથી તો પ્લીઝ મેન્ટર સપોર્ટ",
+     "drift_wer": 0.6
+    },
+    "reverb_rt60_0.5": {
+     "hyp": "સપોર્ટ બ્રેક નથી કરતો",
+     "drift_wer": 0.8
+    },
+    "speed_0.9": {
+     "hyp": "ક્યા ક્યા સપોટ",
+     "drift_wer": 1.0
+    },
+    "pitch_+2": {
+     "hyp": "જણાખો",
+     "drift_wer": 1.0
+    },
+    "codec_opus16k_8kHz": {
+     "hyp": "એજન્ટ સપોર્ટ આપો નમસ્કાર આઇટી ગાંધીનગર હેલ્પટ કરતો",
+     "drift_wer": 0.4
+    }
+   }
+  },
+  {
+   "uuid": "20a04502",
+   "speaker": "P18",
+   "language": "Gujarati",
+   "intent": "hostel_mess",
+   "clean_hyp": "માર્ચે હોસ્ટલમાં હોટ વોટર સપ્લાય સવારે આવતી નથી ઈસ્મા ઇન્ટેનન્સ કમ્પ્લેન કારજિસ્ટર",
+   "aug": {
+    "babble_10dB": {
+     "hyp": "હાલો હિસ્ટલમાં વોટર સપ્લાય સવારે આવતી નથી કમ્પ્લેન કારજિસ્ટર",
+     "drift_wer": 0.4166666666666667
+    },
+    "reverb_rt60_0.5": {
+     "hyp": "હાલમાં સવારે આવે થી નાથી કાયલિસ",
+     "drift_wer": 0.9166666666666666
+    },
+    "speed_0.9": {
+     "hyp": "હલો આઇટીજન હિસ્ટ હોસ્ટલમાં હોટ વોટર સપ્લાઇ સવારે આવતી નાથી ઈસુમાં મીન્ટેન્સ કમ્પ્લેન",
+     "drift_wer": 0.6666666666666666
+    },
+    "pitch_+2": {
+     "hyp": "સાથે આ ઇસ્ટ્રોલ્સમાં ઇન્ડરન્સ કાર્ય",
+     "drift_wer": 1.0
+    },
+    "codec_opus16k_8kHz": {
+     "hyp": "મારે સવારે આવી નાથી કાર્યરિસ્ટર",
+     "drift_wer": 0.9166666666666666
+    }
+   }
+  },
+  {
+   "uuid": "17a0df49",
+   "speaker": "P13",
+   "language": "Code-mixed",
+   "intent": "admissions",
+   "clean_hyp": "अर्जेंट सपोर्ट आपो",
+   "aug": {
+    "babble_10dB": {
+     "hyp": "अर्जेंट सपोर्ट",
+     "drift_wer": 0.3333333333333333
+    },
+    "reverb_rt60_0.5": {
+     "hyp": "सपोर्ट",
+     "drift_wer": 0.6666666666666666
+    },
+    "speed_0.9": {
+     "hyp": "अर्जेंट सपोर्ट आपूर्ति एवं प्रदेश अध्यापक ने भी निधि दिवस पर जारी रखने के निर्देश दिए हैं",
+     "drift_wer": 5.0
+    },
+    "pitch_+2": {
+     "hyp": "सपोर्ट",
+     "drift_wer": 0.6666666666666666
+    },
+    "codec_opus16k_8kHz": {
+     "hyp": "अर्जेंट सपोर्ट आपूर्ति एवं प्रधानमंत्री नरेंद्र मोदी ने भाजपा पर विचार व्यक्त किया है",
+     "drift_wer": 4.0
+    }
+   }
+  },
+  {
+   "uuid": "2b70e525",
+   "speaker": "P18",
+   "language": "Code-mixed",
+   "intent": "it_support",
+   "clean_hyp": "हैलो आईटीजन हेल्पडेस्क. मेरा ग्रेड कार्ड में एक सब्जेक्ट नुर्ज़ल्ट एप्सनेंट शो करिया छह जयारे में एग्जाम अपयोह हाथों.",
+   "aug": {
+    "babble_10dB": {
+     "hyp": "हैलो आईडीजी एडब्लडेस्क, मेरा ग्रेड कार्ड में एक सब्जेक्ट में रिजल्ट एप्पशन शो करियार चेक जयारे में एग्जाम अपेओ हाथों.",
+     "drift_wer": 0.42105263157894735
+    },
+    "reverb_rt60_0.5": {
+     "hyp": "हेलो आईडी जेनेलिटेशन, मेरा क्रियाकार में एक सब्जेप्ट में रिजल्ट एप्सनेंट शोक या छेप जयारे में एग्जाम अपेब्ब आतोहातोहातोहातोहातोहातोहातोहातोहातोहातोहातोहातोहातोहातोहातोहातोहातोहातोहातोहातोहातोहातोहातोहातोहातोहातो",
+     "drift_wer": 0.6842105263157895
+    },
+    "speed_0.9": {
+     "hyp": "हैलो आईटीजन हेल्पडेस्क, मेरा ग्रेड कार्ड में एक सब्जेक्ट नुज़प एप्सएंट शो करिया छह जेआरए में एग्जाम अपयोह हाथों.",
+     "drift_wer": 0.21052631578947367
+    },
+    "pitch_+2": {
+     "hyp": "एरो आईडीजे एसड प्लेटर विएट कार्ड में एक सब्जेक्ट नुर्ज़ एप्सनेंट शो करियर छह जयारे में एग्जाम आप आप तो ज़प्प प्लेटर प्लेटर प्लेटर प्लेटर प्लेटर प्लेटर प्लेटर प्लेटर प्लेटर प्लेटर प्लेटर प्लेटर �",
+     "drift_wer": 1.263157894736842
+    },
+    "codec_opus16k_8kHz": {
+     "hyp": "हेलो, आईटीजन हेल्पडेस्ट, मेरा ग्रेड कार्ड में एक सब्जेक्ट नुज़अल्ट एप्सन शो करिया छह जयारे में एग्जाम अपयोग हाथों.",
+     "drift_wer": 0.2631578947368421
+    }
+   }
+  },
+  {
+   "uuid": "8c459ce2",
+   "speaker": "P21",
+   "language": "Code-mixed",
+   "intent": "hostel_mess",
+   "clean_hyp": "बड़ा मिल सकता है",
+   "aug": {
+    "babble_10dB": {
+     "hyp": "बड़ा मिल सकता है",
+     "drift_wer": 0.0
+    },
+    "reverb_rt60_0.5": {
+     "hyp": "बढ़ा सकता है.",
+     "drift_wer": 0.75
+    },
+    "speed_0.9": {
+     "hyp": "ग्रोप मिल सकता है",
+     "drift_wer": 0.25
+    },
+    "pitch_+2": {
+     "hyp": "इस ब्रोकन को भारत नहीं दे सकता है",
+     "drift_wer": 1.5
+    },
+    "codec_opus16k_8kHz": {
+     "hyp": "ब्रोकन मिल सकता है",
+     "drift_wer": 0.25
+    }
+   }
+  },
+  {
+   "uuid": "bc8f7d29",
+   "speaker": "P13",
+   "language": "Code-mixed",
+   "intent": "hostel_mess",
+   "clean_hyp": "नमस्कार",
+   "aug": {
+    "babble_10dB": {
+     "hyp": "नमस्कार",
+     "drift_wer": 0.0
+    },
+    "reverb_rt60_0.5": {
+     "hyp": "नमस्कार",
+     "drift_wer": 0.0
+    },
+    "speed_0.9": {
+     "hyp": "नमस्कार",
+     "drift_wer": 0.0
+    },
+    "pitch_+2": {
+     "hyp": "नमस्कार",
+     "drift_wer": 0.0
+    },
+    "codec_opus16k_8kHz": {
+     "hyp": "नमस्कार",
+     "drift_wer": 0.0
+    }
+   }
+  },
+  {
+   "uuid": "79a28903",
+   "speaker": "P14",
+   "language": "Code-mixed",
+   "intent": "admissions",
+   "clean_hyp": "હેલો",
+   "aug": {
+    "babble_10dB": {
+     "hyp": "હેલ્કો છે",
+     "drift_wer": 2.0
+    },
+    "reverb_rt60_0.5": {
+     "hyp": "સ્ટેક છે",
+     "drift_wer": 2.0
+    },
+    "speed_0.9": {
+     "hyp": "હલો કરો",
+     "drift_wer": 2.0
+    },
+    "pitch_+2": {
+     "hyp": "હલો",
+     "drift_wer": 1.0
+    },
+    "codec_opus16k_8kHz": {
+     "hyp": "હલો",
+     "drift_wer": 1.0
+    }
+   }
+  },
+  {
+   "uuid": "655238a6",
+   "speaker": "P21",
+   "language": "Code-mixed",
+   "intent": "hostel_mess",
+   "clean_hyp": "हैलो आईटीजी एंड टेस्ट मेरे को रूम अलॉट पेन में स्टोर रूम अलॉट हो चुका है ये लास्ट ऐर भी ऐसा हुआ था तो क्या आप इस पर चेक कर सकते हैं और ये जल से जल हो सके तो मेरे के सिंगल रूम दे दो क्योंकि काफी सारा सामान्य उसके रूम पर रहना",
+   "aug": {
+    "babble_10dB": {
+     "hyp": "हैलो आईटीजीएच मेरे को चुका है ये लास्ट ऐसा हुआ था तो कि आप इस पर चेक कर सकते है और ये जरे से जरे हो सके तो मैं भी एक सिंगल गूंग दे दो क्योंकि काफी ज्यादा सामान और उससे के रूम पर रहना है उसको भी दिक्कत हो रही है मेरे को भी दिक्कत ह",
+     "drift_wer": 0.7037037037037037
+    },
+    "reverb_rt60_0.5": {
+     "hyp": "हैलो आईटीजीएट जीएसटी मेरे को चुका है ये लास्ट ऐसा हुआ था तो इस पर चेक कर सकते हो ये जले से जले हो सके तो मेरे के लिए देखो क्योंकि काफी ज्यादा सामान और उससे रूम पर रहना है उसको भी दिक कर दौरी है मेरे को भी दिक कर दौरी है",
+     "drift_wer": 0.7592592592592593
+    },
+    "speed_0.9": {
+     "hyp": "हैलो आईटीजी एंड रिस्प मेरे को रूम अलर्ट पेन में रूम अलर्ट हो चुका है ये लास्ट ऐर भी ऐसा हुआ था तो आप इस पर चेक कर सकते हैं और ये जल्दी ऐसी जल्दी हो सके तो मेरे के सिंगल रूम दे दो क्योंकि काफी सारा सामान्य रूम पर रहना है उस थैंग यू",
+     "drift_wer": 0.24074074074074073
+    },
+    "pitch_+2": {
+     "hyp": "हैलो एडीजीएस मेरे बोर्ड अपने जुड़ाएं ये लास्ट जिले भी ऐसा हुआ था कि आज इसमें चेक कर सकते हैं और ये जल्दी जल्दी हो सकता है मैं भी असेंबल बूंदे दो क्योंकि काफी ज्यादा सामान्य और रज्ज अभी उसके अंगर एवं उसको इक्कत अ",
+     "drift_wer": 0.7222222222222222
+    },
+    "codec_opus16k_8kHz": {
+     "hyp": "हैलो आईटीजीएच एस एस मेरे को रूम अलॉट पेन में स्टोर रूम अलॉट हो चुका है ये लास्ट सिर भी ऐसा हुआ था तो आप इस पर चेक कर सकते है और ये जरूर से जरूर हो सके तो मेरे के एक सिंगल रूम दे दो क्योंकि काफी सारा सामान है और उससे के रूम �",
+     "drift_wer": 0.2962962962962963
+    }
+   }
+  },
+  {
+   "uuid": "ee0caeb5",
+   "speaker": "P14",
+   "language": "Code-mixed",
+   "intent": "admissions",
+   "clean_hyp": "प्रधानमंत्री नरेन्द्र मोदी ने आज जयपुर में एक बैठक में यह जानकारी दी",
+   "aug": {
+    "babble_10dB": {
+     "hyp": "उन्होंने बताया कि इस वर्ष पूरा होने के बाद उन्हें पूरा देश भर में पूरा देश भर चुका है",
+     "drift_wer": 1.3846153846153846
+    },
+    "reverb_rt60_0.5": {
+     "hyp": "पोर्ट कीजिए.",
+     "drift_wer": 1.0
+    },
+    "speed_0.9": {
+     "hyp": "पोर्ट कीजिए. हैलो आईटीजी एन हेल्प डेस्क जी एडवांस डायंग 35 एडवाइजेशन पर इलेक्ट्रिकल इंजीनियरिंग डिपार्टमेंट माँ एडमिशन वाली शाकेश्वे कृप्या ओर्जेन सपोर्ट ऑफ एडवाइजेशन पर इलेक्ट्रिकल इंजीनियरि",
+     "drift_wer": 2.1538461538461537
+    },
+    "pitch_+2": {
+     "hyp": "अपराधीश ने बताया कि इस प्रकार के दौरान प्रदेश के लोगों को प्रतिबंध रहने की जरूरत है",
+     "drift_wer": 1.3076923076923077
+    },
+    "codec_opus16k_8kHz": {
+     "hyp": "प्रधानमंत्री नरेन्द्र मोदी ने आज नई दिल्ली में प्रधानमंत्री नरेन्द्र मोदी की अध्यक्षता वाली शाखा को प्रधानमंत्री नरेन्द्र मोदी को भाग लेने की घोषणा की",
+     "drift_wer": 1.4615384615384615
+    }
+   }
+  },
+  {
+   "uuid": "778eedb3",
+   "speaker": "P21",
+   "language": "Code-mixed",
+   "intent": "hostel_mess",
+   "clean_hyp": "हेलो आईटीजीएन हेलो आईटीजीएन हेल्प डेस्क. मेरे रूम की सफाई करने वाला दो तीन बीच से आया नहीं है. हमने बात की भैया से जो दूसरी जगह जाते हैं उन्होंने कहा कि उनका कोई इश्यू है बट हमने पूछा कि आप कर सकते है नहीं तो उन्होंने बता क",
+   "aug": {
+    "babble_10dB": {
+     "hyp": "हेलो आईटीजीएन हेलो आईटीजीएन हेल्प डेस्क मेरे रूम की सफाई सफाई करने वाला दो तीन बीच नहीं है हमने बात की भैया से जो दूसरी जगह जाते है उन्होंने कहा कि उनका कोई इशू है बट हमने पूछा कि आप कर सकते है नहीं तो उन्होंने मनाया था उ",
+     "drift_wer": 0.20408163265306123
+    },
+    "reverb_rt60_0.5": {
+     "hyp": "हैलो आईटीचीएन एलो आईटीचीएन रिपोर्ट मेरे रूम की सफाई पर सफाई पर लेने वाला दो दिन बीच से नहीं है. हमने बात की वजह से जो दूसरी जगह जाते हैं उन्होंने कहा कि उनका कोई इशू है बट उनका पूछा कि आप पर सिख या नहीं तो उन्हों",
+     "drift_wer": 0.42857142857142855
+    },
+    "speed_0.9": {
+     "hyp": "हेलो आईटीजी एन डेस्क मेरे रूम की सफाई सफाई करने वाला दो तीन विषय नहीं है",
+     "drift_wer": 0.7959183673469388
+    },
+    "pitch_+2": {
+     "hyp": "हैलो आईटीजीएन, हैलो आईटीजीएन, हेल्प डेस्क, मेरे उनकी सफाई करने वाला दो दिन बीच सायानी बात हैं. हमने बात की वजह से जो दूसरी जगह जाते हैं उन्होंने कहा कि उनका कोई इशू है बट हमने पूछा कि आपका सत्य नहीं उनको बनाया उनका कि आ�",
+     "drift_wer": 0.46938775510204084
+    },
+    "codec_opus16k_8kHz": {
+     "hyp": "हेलो आईटीजी एन हेलो आईटीजी एन हेल्प डेस्क मेरे रूम की सफाई सफाई करने वाला दो तीन बीच आया नहीं है. हमने बात की भैया से जो दूसरी जगह जाते है उन्होंने कहा कि उनका कोई इश्यू है बट हमने पूछा कि आप कर सकते है नहीं तो उन्होंने बत",
+     "drift_wer": 0.20408163265306123
+    }
+   }
+  }
+ ]
+}

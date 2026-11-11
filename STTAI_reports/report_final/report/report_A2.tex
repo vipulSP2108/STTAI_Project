@@ -29,10 +29,10 @@
 \renewcommand{\shortauthors}{Vraj, Patil and Sharma}
 
 \begin{abstract}
-We evaluate and deploy a voice-helpdesk pipeline on two complementary tracks.
-\textbf{Track~A} (final 182-clip consensus corpus) compares 12 data configurations for a calibrated multilingual intent classifier under 5-fold group-stratified cross-validation: the raw-transcript baseline reaches macro-F1 \AblBase{} $\pm$ \AblBaseSd{}, the best augmented configuration gains only $+0.013$, and no configuration differs significantly (paired $p\ge0.21$); the full ``all gates active'' pipeline is \emph{worse} ($-0.021$). On unseen speakers (36 clips) accuracy is \UnsAcc{} (95\% Wilson CI \UnsAccci{}); off-the-shelf Whisper-base on all 182 clips gives WER \AsrWER{} and CER \AsrCER{}, with Gujarati best (0.55) and Hindi and code-mixed speech worst (2.56, 2.08).
-\textbf{Track~B} (deployed Whisper-base + TF-IDF/MLP router, frozen pilot gold) provides MLflow tracking over 15 runs, a FastAPI/Streamlit service with offline Docker packaging, a drift-replay monitor and a gated retraining loop; on its 29 gold clips WER is \GoldWER{} and intent accuracy \GoldAcc{}, within chance, and proposed and baseline ASR are identical.
-We report effects with 95\% intervals and paired tests, disclose where the evidence does not support a claim (the replay alert is schedule-driven, the retraining gate decides on one clip, container measurements are pending), and list the fixes each finding requires.
+We build and deploy a voice-helpdesk pipeline (language routing $\to$ Indic Whisper ASR $\to$ intent router) on a 182-clip, 20-speaker code-mixed corpus with double-annotated intents.
+An audit of our own evidence changed the picture: the hand-curated ``gold'' transcripts do not match the audio (median \RefWps{} words/s; two independent ASR systems agree with each other, CER \RefCerXasr{}, far more than with the curated text, CER $\approx$\RefCerCur{}), so we withdraw every WER computed against them; and the earlier ``unseen-speaker'' folds shared all speakers with training, while speaker identity alone predicts intent at \SpkShortcut{} (Cram\'er's $V=\SpkV{}$).
+Under speaker-disjoint 5-fold cross-validation the intent router on ASR text reaches \SpkBase{} accuracy (majority \SpkMaj{}); guideline-driven features (opening-topic embedding, whole-query chunking) are added, and the router is trained on the expert-final labels. On a held-out release split of four unseen speakers it scores \RelVtwo{} (macro-F1 \RelVtwoFone{}) versus \RelVone{} for the previous router and \RelMaj{} for the majority class (McNemar $p=\RelMcN{}$).
+A learned language router lifts Gujarati routing from \LidGuBase{} to \LidGuLearned{}. We report label, speaker, language and ASR biases, the remaining gaps (human transcripts, fine-tuned ASR, container measurements of the new image) and what each needs.
 \end{abstract}
 
 \begin{CCSXML}
@@ -80,8 +80,8 @@ Assignment~2 turns our data into a deployable, monitored system. Because the dat
 \toprule & Track A (final data) & Track B (deployed) \\ \midrule
 Data & 182 consensus clips, 20 speakers & pilot 171/17/29 + Cohort B 32 \\
 Model & calibrated multilingual intent classifier on text & Whisper-base + TF-IDF/MLP router \\
-Evidence & 12-config ablation, unseen speakers, ASR on 182 & MLflow, gold eval, Docker, drift, gate \\
-Gap & end-to-end ASR$\to$intent not run & trained on pilot labels \\ \bottomrule
+Evidence & speaker-disjoint CV, release split, bias \& reference audits & MLflow, gold eval, drift, gate \\
+Gap & no human transcripts yet & pilot references template-derived \\ \bottomrule
 \end{tabular}
 \end{table}
 
@@ -122,12 +122,34 @@ The 12-configuration study (Table~\ref{tab:abl}, Figure~\ref{fig:abl}) is the sy
 %% ===========================================================================
 \section{Part C: Evaluation and Error Analysis}\label{sec:eval}
 \subsection{Track A: final corpus}
-\paragraph{Augmentation ablation.}
+\paragraph{Augmentation ablation.} These folds group by clip, not speaker, and train on the withdrawn curated text, so absolute levels are optimistic; we keep the study only for the relative comparison of augmentation sources.
 Table~\ref{tab:abl} and Figure~\ref{fig:abl} show macro-F1 per configuration with fold-level dots. Baseline C-01 scores \AblBase{} ($\pm$\AblBaseSd{}, accuracy 69.2\%). Pivot translation (C-04, $+0.013$), lexical synsets (C-05, $+0.011$) and the top-3 text combination (C-09, $+0.012$) help slightly; contextual MLM substitution and audio perturbation (C-06, C-08) give exactly zero change, which indicates their accepted variants did not reach the training set or did not alter predictions; and the ``complete optimised pipeline'' (C-10) and discourse-framing variants (C-11, C-12) \emph{hurt} ($-0.021$ to $-0.024$). The fold standard deviation (0.06--0.08) is five times the largest gain, and paired $t$-tests across folds give $p=0.21$--$1.0$ (smallest for C-10, in the negative direction), so we claim no significant benefit and conclude that ``more augmented data'' does not help at this scale.
-\paragraph{Unseen speakers and language slices.}
-On 36 clips from unseen speakers accuracy is \UnsAcc{} (Wilson CI \UnsAccci{}) and macro-F1 \UnsFone{} (Figure~\ref{fig:unseen}); IT support is easiest (F1 0.92) and admissions weakest (0.67). Slices: Hindi 83.3\% (12), English 75.0\% (16), Gujarati 62.5\% (8); no code-mixed clips are present, and the Gujarati slice interval spans 31--86\%. The unseen benchmark is persisted in \file{model/data/splits/independent_test_set.json} and \file{model/results/unseen_speaker_benchmark.json}.
-\paragraph{ASR on the final corpus.}
-Whisper-base on all 182 clips gives mean WER \AsrWER{}, CER \AsrCER{} and RTF \AsrRTF{} (Figure~\ref{fig:unseen}, bottom); by language Gujarati 0.55, English 1.17, code-mixed 2.08, Hindi 2.56, with fuzzy match scores 0.41, 0.60, 0.01 and 0.10. The ordering is not the expected one (Gujarati best, Hindi worst) and is the combined effect of script (Whisper outputs Latin or Urdu script for Hindi) and of reference provenance (curated native-script transcripts; Assignment~1, Section~5 of the Assignment-1 report); we therefore treat WER here as an upper-bound diagnostic. End-to-end ASR$\to$intent classification achieves 71.43\% accuracy (130/182) and 0.7184 macro-F1, compared with 87.36\% accuracy (159/182) and 0.8752 macro-F1 when classifying pristine reference transcripts.
+\paragraph{Speaker-disjoint evaluation (replaces the earlier ``unseen speaker'' claim).}
+The earlier 75\% came from fold~1 of clip-grouped folds, in which all 15 validation speakers also appear in training; because speakers record mostly one or two intents ($V=\SpkV{}$), a classifier that only recognises the speaker already scores \SpkShortcut{} under clip-grouped CV (\file{bias_audit.json}). We therefore re-evaluate with \texttt{StratifiedGroupKFold} grouped by \emph{speaker}, five folds $\times$ five seeds, with $C$ chosen by an inner speaker-grouped loop (\file{speaker_cv.py}; a leakage assertion checks every fold). On ASR text the char-n-gram + multilingual-embedding router reaches \SpkBase{} $\pm$ \SpkBaseSd{} (pooled 95\% speaker-bootstrap CI \SpkBaseCI{}), majority \SpkMaj{}; the same model on the curated text reaches only \SpkCurated{}, so the curated text is not what limits accuracy.
+\paragraph{Where the errors come from.}
+Admissions recall is lowest (29\%): parents open with admission and then ask about hostel or fees, and a bag-of-words router mixes these. Guideline rule~5.1 says the \emph{opening} topic decides, so we add an embedding of the first 40 words and embed the whole query in 40-word windows (MiniLM otherwise truncates at 128 word-pieces); admissions recall rises to 43\%. Training on both annotators' labels at weight 0.5 (soft labels) gives the best cross-validated variant, \SpkBest{} (Table~\ref{tab:v2}; \file{intent_v2_ablation_asr_hybrid*.json}); the deployed router nevertheless uses the expert-final labels (B3 features), because on borderline clips the adjudicated label is the one the service must reproduce. Gains are within one fold standard deviation; a similarity-to-guideline-definitions prior alone reaches 52\%, which suggests the 182 noisy labels (inter-annotator agreement 74\%) rather than the classifier cap accuracy. Short clips ($<15$\,s, 48\%), Gujarati (46\%) and code-mixed speech (48\%) are the weak slices.
+\begin{table}[htbp]
+\caption{Router ablation, speaker-disjoint CV on ASR text (25 folds; mean accuracy and macro-F1).}\label{tab:v2}
+\small\begin{tabular}{lcc}
+\toprule Variant & Acc.\ (\%) & Macro-F1 \\ \midrule
+Majority & 24.4 & 0.104 \\
+B0 char + embedding (raw text) & 55.2 & 0.519 \\
+B1 + loop/greeting cleaning & 52.0 & 0.484 \\
+B2 + whole-query chunk embedding & 52.6 & 0.485 \\
+B3 + opening-topic embedding & 53.6 & 0.502 \\
+B4 + guideline-definition prior & 55.4 & 0.515 \\
+B5 prior only (8 features) & 52.1 & 0.487 \\
+\textbf{B7 = B3 + soft labels} & \textbf{57.1} & \textbf{0.537} \\ \bottomrule
+\end{tabular}
+\end{table}
+\paragraph{Held-out release split.}
+Speakers P12/P14/P20/P22 (validation) and P3/P8/P18/P19 (test) never train. $C$ is chosen on validation macro-F1 (expert-label v2 0.558, soft-label 0.574, v1 0.413). The test clips were scored twice, both logged in \file{TEST_SET_LOG.md}: first with the soft-label router (\RelSoft{}, F1 \RelSoftFone{}), then, after the team decided that the expert's label must be the training target, with the expert-label router, which is the one deployed: majority \RelMaj{}, v1 char router \RelVone{} (F1 \RelVoneFone{}), v2 \RelVtwo{} (F1 \RelVtwoFone{}, CI \RelVtwoCI{}); v2 is right on 6 clips v1 misses and wrong on 1 it gets (McNemar $p=\RelMcN{}$). We report both runs because the second test access followed the first. English 89\%, Hindi 65\%, Gujarati 29\% (2/7), code-mixed 25\%. Confidence is higher when right than wrong (0.46 vs 0.36) but still too close for a reject option (\file{release_eval.json}, \file{release_eval_soft_labels_run1.json}).
+\paragraph{Reference transcripts and ASR quality.}
+The 182 curated strings (\file{curate_gold_transcripts.py}) were written to replace ASR output: on English clips they are lightly edited Whisper-base output, on Hindi/Gujarati clips they often describe another request (clip \texttt{018267c4}: the speaker asks about hostel leave rules; the ``gold'' reports a broken drawer). \RefLow{} clips have under 0.6 words/s against $\approx$2.5 for natural speech (\file{reference_audit.json}). We withdraw WER/CER on this corpus until the human transcription round (\file{final_annotation/transcription_round/}) is complete. Off-the-shelf Whisper-small is no alternative on CPU: its real-time factor on Hindi/Gujarati is 2--16 because of hallucination loops (\file{asr_crosscheck_whisper_small.json}).
+\paragraph{Robustness on augmented audio.}
+On the Assignment-1 augmentations of 32 final-corpus clips, the deployed ASR changes a median 35--37\% of words under speed and codec perturbation, 46\% under babble, 74\% under reverberation and 87\% under pitch shift; Gujarati changes most under every transform (\file{audio_robustness.json}; Assignment-1 report, Part~D). Reverberant rooms and Gujarati speakers are therefore the main robustness risks for deployment.
+\paragraph{Language routing.}
+Whisper-base language ID restricted to \{en, hi, gu\} routes 24\% of Gujarati clips correctly (it answers hi, mr or bn). A logistic regression on the full 99-language probability vector, trained speaker-disjoint, raises overall routing from \LidBase{} to \LidLearned{} and Gujarati to \LidGuLearned{} (\file{lid_router.json}); on the four test speakers both reach 75\%.
 \begin{table}[htbp]
 \caption{12-configuration ablation (5-fold macro-F1, mean $\pm$ s.d.; $\Delta$ vs.\ C-01; $p$ = paired $t$-test over folds). Source: \file{model/results/ablation_study_results.json}.}\label{tab:abl}
 \small\begin{tabular}{llcrr}
@@ -141,10 +163,9 @@ Whisper-base on all 182 clips gives mean WER \AsrWER{}, CER \AsrCER{} and RTF \A
 \Description{Bar chart of macro-F1 per configuration.}\label{fig:abl}
 \end{figure*}
 \begin{figure*}[t]
-\centering\includegraphics[width=\textwidth]{fig_f_unseen.pdf}\\[2pt]
-\includegraphics[width=\textwidth]{fig_f_asr.pdf}
-\caption{Top: unseen-speaker benchmark (36 clips): confusion matrix, per-class F1, language slices with Wilson intervals. Bottom: Whisper-base on 182 clips by language (WER, CER, fuzzy match).}
-\Description{Unseen-speaker confusion, F1, slices, and ASR by language.}\label{fig:unseen}
+\centering\includegraphics[width=\textwidth]{fig_f_speaker.pdf}
+\caption{Speaker-disjoint evidence. (a) Router ablation, mean $\pm$ s.d.\ over 25 speaker-grouped folds (B7 = opening + chunk embeddings + soft labels). (b) Accuracy by language, B0 vs B7: B7 helps English, Hindi and code-mixed but \emph{loses} on Gujarati (46$\to$38\%). (c) Language routing accuracy, restricted argmax vs learned router. (d) Leave-one-speaker-out accuracy against clips contributed: the largest speaker (P13, 22 clips) is among the worst. Sources: \file{intent_v2_ablation_*.json}, \file{lid_router.json}, \file{bias_audit.json}.}
+\Description{Four panels: ablation bars, language bars, routing bars, speaker scatter.}\label{fig:unseen}
 \end{figure*}
 
 \subsection{Track B: deployed pipeline on pilot gold}
@@ -180,12 +201,12 @@ On gold, \texttt{campus\_outdoor} (6 clips, 16.7\%) and Gujarati--English (13 cl
 
 %% ===========================================================================
 \section{Part D: Deployment and Interface}\label{sec:deploy}
-\paragraph{Service.}
-FastAPI exposes \texttt{POST /predict}, \texttt{GET /health} and \texttt{GET /version} (commit and model version); the Streamlit UI offers upload/microphone input, bundled consented examples, confidence, version, latency, a monitoring panel and a validation panel comparing reported and measured values. Requests are logged without audio or personal data (\file{supporting_files/api_access.log}); eight pytest tests cover normalisation, the gold hash, gate logic and the endpoints.
+\paragraph{Service (indic-v2).}
+FastAPI exposes \texttt{POST /predict}, \texttt{GET /health} and \texttt{GET /version} (commit, model version and every pinned model revision); the Streamlit UI offers upload/microphone input, bundled consented examples, transcript, intent, confidence, routed language, latency, version and the validation JSON beside the reported values. A request runs the learned language router, the matching ASR model (Hindi: \texttt{vasista22/whisper-hindi-small}, Gujarati: \texttt{vasista22/whisper-gujarati-base}, both CTranslate2 int8; English: \texttt{faster-whisper-base}; greedy, VAD, no prompt) and the expert-label router. Requests are logged without audio or personal data.
 \paragraph{Image and CI.}
-\file{code/Dockerfile} builds from a digest-pinned \texttt{python:3.10-slim}, upgrades \texttt{pip}/\texttt{setuptools<70}, installs pinned requirements, caches Whisper-base weights at build time, bundles code, data, artefacts and the gold set, and records the commit as a build argument. Start: \texttt{docker run --rm -p 8501:8501 -p 8000:8000 <image>}; validate: \texttt{docker run --rm --network none <image> validate}. CI (\file{.github/workflows/ci.yml}) runs tests, sample validation, an image build and an offline smoke request.
+\file{code/Dockerfile} has two stages from a digest-pinned \texttt{python:3.10-slim}: the first downloads pinned revisions and converts the Indic checkpoints (writing the tokenizer so nothing is fetched at run time); the second installs pinned CPU packages, copies \texttt{/opt/models}, and trains both routers inside the build on training and validation speakers only. \texttt{HF\_HUB\_OFFLINE=1} is set at run time. Start: \texttt{docker run -p 127.0.0.1:8501:8501 <image> serve}; validate: \texttt{docker run --network none <image> validate}. The validator decodes the 40 test WAVs, checks their SHA-256, and reports intent accuracy/macro-F1, routing accuracy, p50/p95 latency, RTF and peak RSS; it reports WER only against human transcripts. CI (\file{.github/workflows/ci.yml}) runs the data tests, builds the runtime target and sends an offline REST request.
 \paragraph{Performance and offline evidence.}
-Measured on Apple arm64 over the 29 gold clips (523.8\,s audio): p50 \LatP\,s, p90 \LatPn\,s, p95 \LatPf\,s, mean \LatMean\,s; RTF \RTF{}; throughput \Thr{}/s; peak memory \PeakMB\,MB (Figure~\ref{fig:lat}). \file{TEST_SET_LOG.md} (LOG-016) records an offline validation with matching gold checksum (WER 1.358, CER 0.918, accuracy 24.1\%, macro-F1 0.221), but its JSON lists a macOS host and \texttt{offline\_network\_isolated: false}, so it is a host-side validation, not proof of a \texttt{--network none} container run. Tolerance for the validator against Table~\ref{tab:main}: $\pm0.10$ WER, $\pm1$ clip. \textbf{Still to record from an actual \texttt{linux/amd64} container:} image size \ImgSize{}, p50/p95 \ContP{}, peak RAM \ContRAM{}, archive SHA-256 \ImgSHA{} and the verbatim output of the \texttt{--network none validate} run.
+The previous image (\texttt{revised-whisper-base-char-tfidf-v1}) was built and validated with \texttt{--network none} on Windows/Docker~29.9.3: \ImgSize{}, p50/p95 \ContP{}, peak \ContRAM{}, intent accuracy 57.5\% on the same 40 test clips (\file{supporting_files/revised_validation.json}). The indic-v2 image (\VtwoImg{}) was built from \file{code/Dockerfile} and validated with \texttt{--network none} on the 40 test clips, end to end from audio: intent accuracy \VtwoAcc{} (macro-F1 \VtwoFone{}), identical to the text-level test, and language routing \VtwoRoute{}; peak memory \VtwoRAM{} (\file{supporting_files/docker_indic_v2/indic_v2_validation.json}, \file{build.log}, \file{validate.log}). Latency on that host (p50 \VtwoPfifty{}, p95 \VtwoPninefive{}, RTF \VtwoRTF{}) is dominated by \texttt{linux/amd64} emulation on an Apple M1 in a 4\,GB Docker VM; the native host decode of all 182 clips ran at RTF 0.23. Tolerance for re-running \texttt{validate}: $\pm$1 clip (2.5 points) on intent accuracy. The image archive SHA-256 is \ImgSHA{}.
 \begin{figure}[htbp]
 \centering\includegraphics[width=\linewidth]{fig_a2_latency.pdf}
 \caption{(a) Whisper-base decode time vs.\ audio duration (78 clips). (b) End-to-end latency percentiles on 29 gold clips.}
@@ -194,33 +215,26 @@ Measured on Apple arm64 over the 29 gold clips (523.8\,s audio): p50 \LatP\,s, p
 
 %% ===========================================================================
 \section{Part E: Monitoring, Drift and Retraining}\label{sec:monitor}
-\paragraph{Replay.}
-\file{traffic_replay.py} (seed 42) streams 100 queries in five batches of 20 whose Cohort-B share rises 0, 25, 50, 75, 100\%. Two label-free signals (router entropy, decoder average log-prob), SNR, and one labelled metric (intent accuracy) are tracked; the entropy threshold is the 95th percentile of validation entropy (1.662 bits).
-\paragraph{Result: no usable detection.}
-Batch entropy never exceeds the threshold (1.21--1.35), accuracy does not fall with drift (35, 35, 15, 25, 45\%) and correlations with accuracy over five batches are 0.41 (entropy), 0.20 (log-prob) and 0.20 (SNR)---none significant (Figure~\ref{fig:drift}). The log reports an alert at batch~5, but the batch-alert expression contains an unconditional clause for batch~$\ge5$, so that alert reflects the schedule, not a signal; we do not count it as detection, and the logged false-alarm rate (0/17) is a constant in the script. A valid design needs many seeded in-domain replays, a sequential test such as CUSUM or Page--Hinkley~\cite{Gama2014}, and shift-sensitive signals (non-Latin-script fraction, hypothesis-length ratio)~\cite{Rabanser2019}.
+\paragraph{Gate frozen first.}
+The pilot replay alert was driven by the schedule and the pilot gate tolerance had been widened after results were seen (LOG-418 vs LOG-179), so we rebuilt Part~E on the release split. \file{configs/gate_release.yaml} (v3.0.0) fixes Cohort~B (P4, P13, the Assignment-1 shifted region group; a seeded half is the adaptation pool, 13 clips, the other half held out, 14 clips), the promotion rule (held-out Cohort~B accuracy $+5$ points, release-test drop $\le$1 of 40 clips), the selection rule (10 clips with the lowest decoder log-probability), the replay schedule and the alert rule (two consecutive batches outside the validation 1st--99th percentile band of either label-free signal). Each run writes the gate file's SHA-256 to \file{TEST_SET_LOG.md} before scoring; all runs show the same hash.
+\paragraph{Replay and detection.}
+\file{release_drift_loop.py} (seed 42) replays six batches of 20 whose Cohort-B share is 0, 0, 25, 50, 75, 100\%. Label-free signals: batch mean decoder log-probability and share of clips routed to Hindi; labelled metric: intent accuracy. Bands from 1\,000 bootstrap batches of validation clips: log-prob $[-0.225, -0.094]$, Hindi share $[0, 0.35]$; false alarms on 500 further in-distribution batches: 1.2\% per batch, $\approx$0.01\% for the two-batch rule. The log-prob rises monotonically with the shift ($-0.176\to-0.062$; Figure~\ref{fig:drift}) because Cohort-B clips are routed to the over-confident Gujarati model, but only batch~6 leaves the band, so the pre-declared two-batch rule never fires: \textbf{no alert, detection delay undefined}. The labelled metric does fall with the shift (intent accuracy 0.65, 0.75, 0.70, 0.50, 0.45, 0.50) and the log-prob tracks it inversely ($r=-0.77$ over the six batches), so the signal reflects quality but the band was too wide to alarm in time. Our first run checked only the lower log-prob bound, contrary to the gate text; we kept that output (\file{*_run1_one_sided_bug.json}) and report the corrected two-sided run without changing any threshold.
 \begin{figure}[htbp]
-\centering\includegraphics[width=\linewidth]{fig_a2_drift.pdf}
-\caption{Replay under shift: (a) entropy with the validation threshold, (b) decoder log-prob, (c) accuracy per batch of 20.}
-\Description{Three line plots.}\label{fig:drift}
+\centering\includegraphics[width=\linewidth]{fig_f_drift.pdf}
+\caption{Release-split replay: decoder log-prob and Hindi-route share with validation bands (grey), and labelled intent accuracy. Vertical grey line: shift onset. Source: \file{supporting_files/release_drift/replay.json}.}
+\Description{Three line plots over six batches.}\label{fig:drift}
 \end{figure}
-\paragraph{Retraining pipeline and gate.}
-One command (\texttt{retrain\_pipeline.py --mode rehearsal|no\_rehearsal}) selects the 12 highest-entropy clips from the P4 adaptation pool, reveals their labels (simulated annotator), validates, retrains (rehearsal: 171+12; no-rehearsal: 12 only, a forgetting control~\cite{Kirkpatrick2017,Robins1995}) and evaluates on held-out P13 (13 clips) and gold. \file{configs/gate.yaml}: promote only if Cohort-B accuracy rises by $\ge5$ points and gold falls by $\le4$ points; every gold evaluation is appended to the test log.
-\paragraph{Outcomes.}
-The final run (LOG-179/188) \emph{promotes} the rehearsal candidate (Cohort~B 30.8\%$\to$38.5\%, 4$\to$5 of 13; gold 24.1\%$\to$20.7\%, 7$\to$6 of 29) and \emph{rejects} the no-rehearsal candidate (no gain), with rollback (Figure~\ref{fig:gate}). The decision hinges on one clip each side; an earlier run at the same commit (LOG-418) rejected the same candidate, and the gold tolerance was widened from 2 to 4 points during development. The gate therefore demonstrates the mechanism---promote, reject, roll back, log---and is not evidence that retraining helps; it should be frozen in a committed file before evaluation and judged with a paired interval.
-\begin{figure}[htbp]
-\centering\includegraphics[width=\linewidth]{fig_a2_gate.pdf}
-\caption{Promotion gate: (a) held-out Cohort-B accuracy, (b) gold accuracy for production, rehearsal and no-rehearsal candidates.}
-\Description{Two bar charts with threshold lines.}\label{fig:gate}
-\end{figure}
+\paragraph{Retraining and gate (mechanism run).}
+Because no alert fired, we ran the same pipeline with \texttt{--force-retrain}, labelled as a forced demonstration in every log row: it selects the 10 lowest-confidence clips of the adaptation pool, reveals their consensus labels (simulated annotator), validates them (Cohort-B speakers only, no overlap with held-out, validation or test, valid labels), retrains a \emph{rehearsal} candidate (77 base + 10) and a \emph{no-rehearsal} candidate (10 only), and applies the gate. Rehearsal: held-out Cohort~B 42.9\%$\to$42.9\%, release test 62.5\%$\to$50.0\% --- \textbf{rejected}. No-rehearsal: Cohort~B 42.9\%$\to$57.1\% ($+14$ points) but release test 62.5\%$\to$30.0\% (catastrophic forgetting) --- \textbf{rejected}. (With the earlier soft-label router both candidates were also rejected; \file{*_soft_labels.json}.) Production is unchanged. Promotion and rollback are therefore shown by unit tests of the registry logic (\file{tests/test_gate_logic.py}), not by a real candidate; with 13 adaptation clips and 14 held-out clips, a $+5$-point gain is one clip, so a genuine promotion needs more Cohort-B data.
 
 %% ===========================================================================
 \section{Part F: Reproducibility}\label{sec:repro}
 Five commands reproduce Track-B training/evaluation from \texttt{a2-final}: \texttt{git checkout a2-final}; \texttt{pip install -r code/requirements.txt}; \texttt{dvc pull}; \texttt{python code/train.py --config configs/final.yaml}; \texttt{python code/a2\_part\_c\_evaluation/evaluate.py --split gold}. Track~A: \texttt{python -m model.cli ablate} and \texttt{benchmark}. Docker commands, versions, seeds (42), checksums and registry versions are in \file{DOCKER.md}, \file{ENVIRONMENT.md} and \file{MODELS.md}; \file{scripts/generate_report_numbers.py} regenerates documentation numbers. Track~A's sentence-embedding model and Whisper weights are pre-cached in the container image at build time (under \texttt{/root/.cache/huggingface/} and \texttt{/root/.cache/whisper/}), guaranteeing zero runtime download under \texttt{--network none}.
 
 \section{Limitations and Conclusion}\label{sec:concl}
-\textbf{Limitations.} (1)~The deployed ASR is unadapted Whisper-base; the tuning run (5 steps) is too short to matter and its checkpoint is not served. (2)~Track~A models read curated reference text, not ASR output, and are not yet integrated into the container. (3)~Reference provenance: transcripts come from a curated mapping (Assignment~1), so WER is a diagnostic. (4)~Test sets are tiny (13--36 clips), so intervals are wide. (5)~Folds are clip-grouped, not speaker-grouped. (6)~The replay alert is schedule-driven and false alarms are unmeasured. (7)~Container measurements are pending. (8)~Gate history weakens the retraining claim.
-\textbf{Next steps.} Fine-tune the Whisper decoder for hundreds of steps and serve it; train the router on ASR text of the final corpus and report end-to-end intent accuracy; rebuild speaker-disjoint folds; replace the drift rule with a validation-calibrated sequential test and a measured false-alarm rate; freeze the gate before evaluation; record container measurements.
-\textbf{Conclusion.} The tracking, evaluation, serving, monitoring and gating infrastructure is complete and auditable, and the evidence is reported honestly: augmentation does not significantly help at this scale, the intent classifier generalises to unseen speakers at 75\%, and the deployed ASR does not yet beat trivial baselines.
+\textbf{Limitations.} (1)~No human transcripts yet: WER on the final corpus is withdrawn and Whisper has not been fine-tuned (the script and grid are ready, \file{finetune_whisper.py}). (2)~182 clips with 74\% inter-annotator agreement cap intent accuracy; the release test set has 40 clips from four speakers, so intervals are wide and v2 vs v1 is not significant. (3)~The router's ASR training text came from routing by the annotators' language tags, while the service routes automatically (75--81\% correct). (4)~Gujarati remains the weakest language for routing, ASR and intent. (5)~On the release split the pre-declared alert rule did not fire and both retraining candidates were rejected; promotion/rollback are shown only by unit tests. (6)~Router confidence is poorly separated, so no reject option.
+\textbf{Next steps.} Human transcription round, then Whisper fine-tuning on training speakers and true WER; blind re-listen of the 25 clips in the label-noise queue; collect more Cohort-B clips so a retraining gain can exceed one clip.
+\textbf{Conclusion.} Auditing our own evidence removed two inflated results (curated references, clip-grouped ``unseen'' speakers). On honest speaker-disjoint evaluation the router reaches 60\% on unseen test speakers (chance 25\%), language routing for Gujarati improves threefold, and the remaining error is traced to label noise, short Gujarati clips and missing human transcripts, each with a concrete fix.
 
 \paragraph{Member contributions.}
 \begin{table}[htbp]
@@ -242,8 +256,12 @@ We thank Dr.\ Yogesh K.\ Meena and the TAs. Libraries: PyTorch, Whisper, scikit-
 \caption{Evidence index (paths from repository root).}\begin{tabular}{p{3.0cm}p{4.3cm}}
 \toprule Result & Supporting file / run \\ \midrule
 Ablation (Table~\ref{tab:abl}), $p$-values & \file{model/results/ablation_study_results.json} (fold F1s) \\
-Unseen speakers & \file{model/results/unseen_speaker_benchmark.json} \\
-ASR on 182 clips & \file{model/data/reports/asr_evaluation_report.json} \\
+Speaker-disjoint CV, ablation & \file{model/results/speaker_cv_intent_*.json}, \file{intent_v2_ablation_*.json} \\
+Release split (val selection, test) & \file{model/results/release_eval.json}; \file{TEST_SET_LOG.md} \\
+Language routing & \file{model/results/lid_router.json} \\
+Bias audit, label-noise queue & \file{model/results/bias_audit.json} \\
+Reference audit & \file{model/results/reference_audit.json} \\
+ASR on 182 clips (WER withdrawn) & \file{model/data/reports/offline_asr_predictions.json}, \file{asr_indic_v2_confidence.json} \\
 Track-B metrics (Table~\ref{tab:main}) & \file{supporting_files/evaluation_results.json} \\
 Gold per-clip WER, 14/838 & \file{supporting_files/predictions/production_gold.csv} \\
 Data ablation (B) & \file{supporting_files/part_a_baselines_benchmark.csv}; runs \texttt{4874f30b}, \texttt{4cb2e4e9}, \texttt{351cc3e8} \\
@@ -251,10 +269,11 @@ Data ablation (B) & \file{supporting_files/part_a_baselines_benchmark.csv}; runs
 20 errors & \file{supporting_files/error_analysis.csv} \\
 Latency, RTF, memory & \file{supporting_files/loadtest/latency_profile.json} \\
 Offline validation & \file{supporting_files/offline_validation_output.json}; \file{TEST_SET_LOG.md} LOG-016 \\
-Replay, correlations & \file{supporting_files/traffic_replay_log.json} \\
-Gate outcomes & \file{TEST_SET_LOG.md} (LOG-179, 188, 418); \file{configs/gate.yaml} \\
+Replay, correlations & \file{supporting_files/release_drift/replay.json} (pilot: \file{traffic_replay_log.json}) \\
+Gate (release) & \file{configs/gate_release.yaml}; \file{supporting_files/release_drift/}; \file{TEST_SET_LOG.md} (GATE-*) \\
+Pilot gate history & \file{TEST_SET_LOG.md} (LOG-179, 188, 418); \file{configs/gate.yaml} \\
 Gold corrections & \file{data/gold_corrections.csv} \\
-Figure code & \file{code/scripts/make_report_figures.py}, \file{make_report_figures_final.py} \\ \bottomrule
+Figure code & \file{code/report_figures/make_figures_v2.py}; older: \file{code/scripts/make_report_figures*.py} \\ \bottomrule
 \end{tabular}\end{table}
 \begin{table*}[t]
 \caption{All 15 MLflow search runs (validation only); full IDs in \file{supporting_files/plots/tuning_runs.json}.}\label{tab:runs}

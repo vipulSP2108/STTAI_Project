@@ -101,7 +101,8 @@ def validate_offline(fast_cached=False):
                 beam_size=1
             )
             tx = res.get("text", "").strip()
-        pred_transcripts.append(normalise_text(tx if tx else "institute support desk query"))
+        # An empty hypothesis stays empty (WER 1.0); no placeholder text is injected.
+        pred_transcripts.append(normalise_text(tx) if tx else "")
         durations.append(dur)
 
     infer_elapsed = time.time() - t_start
@@ -164,19 +165,19 @@ def validate_offline(fast_cached=False):
     timestamp = time.strftime("%Y-%m-%dT%H:%M:%SZ")
     git_commit = os.environ.get("GIT_COMMIT", "a2-final")
 
-    # Check outbound network isolation
+    # Network isolation is inferred from the interfaces present, without making any
+    # outbound connection: under `docker run --network none` only the loopback exists.
     import socket
     def is_offline():
         try:
-            s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-            s.settimeout(0.4)
-            s.connect(("8.8.8.8", 53))
-            s.close()
+            names = [n for _, n in socket.if_nameindex()]
+        except OSError:
             return False
-        except Exception:
-            return True
+        return all(n.startswith("lo") for n in names)
 
     network_offline = is_offline()
+    in_container = Path("/.dockerenv").exists()
+    mode = "cached transcripts" if fast_cached else "live Whisper-base inference"
 
     payload = {
         "status": "SUCCESS",
@@ -193,8 +194,10 @@ def validate_offline(fast_cached=False):
             "whisper_model": "base"
         },
         "metrics": metrics,
+        "inference_mode": mode,
+        "in_container": in_container,
         "offline_network_isolated": network_offline,
-        "offline_verified": True
+        "offline_verified": bool(network_offline and in_container),
     }
 
     with open(OUT_JSON, "w") as f:
@@ -205,14 +208,19 @@ def validate_offline(fast_cached=False):
 
     # Append audit trail record to TEST_SET_LOG.md
     if TEST_SET_LOG.exists():
-        log_line = f"| `LOG-{int(time.time())%1000:03d}` | {timestamp} | `{git_commit}` | `production` | Docker offline validation (`--network none`) | `64b7647b...` (MATCH) | {mean_wer:.3f} | {acc:.3f} | **OFFLINE_VERIFIED** |\n"
+        n_prev = sum(1 for ln in TEST_SET_LOG.read_text().splitlines() if ln.startswith("| `LOG-"))
+        where = "container" if in_container else f"host {platform.system()}"
+        net = "--network none" if network_offline else "network available"
+        status = "OFFLINE_VERIFIED" if payload["offline_verified"] else "HOST_RUN"
+        log_line = (f"| `LOG-V{n_prev + 1:03d}` | {timestamp} | `{git_commit}` | `production` | "
+                    f"Gold validation ({where}, {net}, {mode}) | `{actual_hash[:8]}...` (MATCH) | "
+                    f"{mean_wer:.3f} | {acc:.3f} | **{status}** |\n")
         with open(TEST_SET_LOG, "a") as f:
             f.write(log_line)
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--cached", action="store_true", help="Use cache instead of live model transcription")
-    parser.add_argument("--live", action="store_true", help="Force live transcription (default behavior)")
+    parser.add_argument("--cached", action="store_true",
+                        help="Use cached transcripts instead of live Whisper inference (default: live)")
     args = parser.parse_args()
     validate_offline(fast_cached=args.cached)
-    validate_offline(fast_cached=not args.live)

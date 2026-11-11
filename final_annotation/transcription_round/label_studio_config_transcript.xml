@@ -1,0 +1,12 @@
+<!-- Label Studio config - Round T (transcripts only). Intent labels are already final (Round I +
+     expert adjudication), so this round has a single level: the verbatim transcript.
+     Shared 100 clips: empty box, typed from the audio only (no ASR draft, no peer labels).
+     Single clips: the box is pre-filled with the Indic ASR draft (prediction "indic-asr-v2"),
+     which the annotator corrects word by word against the audio. -->
+<View>
+  <Header value="Round T - type exactly what is said (GUIDELINES.md section 3)"/>
+  <Audio name="audio" value="$audio" zoom="true" hotkey="space" speed="true"/>
+  <TextArea name="transcript" toName="audio" rows="6" editable="true" maxSubmissions="1"
+            required="true" requiredMessage="Type (or correct) the transcript"
+            placeholder="Hindi in Devanagari, Gujarati in Gujarati script, English words in Latin. No fillers. Use [UNK] for unclear words."/>
+</View>

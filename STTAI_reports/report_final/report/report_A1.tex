@@ -29,12 +29,11 @@
 \renewcommand{\shortauthors}{Vraj, Patil and Sharma}
 
 \begin{abstract}
-We present the final dataset for a code-mixed English--Hindi--Gujarati institute voice helpdesk: \textbf{\FClips{} segmented clips} (\FMin{}\,min, \textbf{\FSpk{} speakers}) in which every clip was labelled \emph{independently by two annotators} for spoken language(s) and helpdesk intent.
-Intent agreement is Cohen's $\kappa=\FKappa$ (95\% CI \FKapCI{}; raw agreement \FAgr{}; PABAK \FPabak{}), in the ``substantial'' band but with a clear weak class (\texttt{student\_services}, binary $\kappa=0.53$).
-The \FAdj{} disagreements were adjudicated by an expert annotator who also re-labelled 8 hidden repeats (test--retest $\kappa=\FIntra{}$), yielding a 182-clip consensus gold set (35/54/35/58 by class).
-Text augmentation produced 1\,557 candidates, of which three semantic gates (embedding similarity, polarity/entity invariance, de-duplication) accepted 701 (45\%); an automated audit confirms zero group, parent, text-hash or test contamination across five folds.
-We also report an audit of our earlier 249-clip pilot, whose template-derived transcripts did not match the audio, and explain which evidence from the pilot we keep and which we discard.
-We are explicit about remaining gaps: the final exports carry language and intent labels but no human transcripts, the group-wise folds are clip-grouped rather than speaker-grouped, and the metadata/DVC records for the final corpus must be regenerated.
+We present the final dataset for a code-mixed English--Hindi--Gujarati institute voice helpdesk: \textbf{\FClips{} clips} (\FMin{}\,min, \textbf{\FSpk{} speakers}), every clip labelled \emph{independently by two annotators} for spoken language(s) and intent in Label Studio.
+Intent agreement is Cohen's $\kappa=\FKappa$ (95\% CI \FKapCI{}; raw agreement \FAgr{}; PABAK \FPabak{}); the two annotators also differ systematically in how often they use each class (Stuart--Maxwell \AnnSM{}), and the expert who adjudicated the \FAdj{} disagreements (test--retest $\kappa=\FIntra{}$) sided with A1 in 31 of 47.
+A transcript-versus-audio audit we added to the validation suite shows that the curated reference transcripts are not transcriptions (median \RefWps{} words/s; independent ASR systems agree with each other far more than with them); we withdraw them and set up an independent human transcription round with inter-annotator WER.
+We document data biases that matter downstream: speaker identity predicts intent (Cram\'er's $V=\SpkV{}$), which made clip-grouped splits optimistic, so the release splits are speaker-disjoint; Gujarati clips are short and contain one IT query; admissions calls are three times longer than student-services calls.
+Text augmentation accepted 701 of 1\,557 candidates through three semantic gates; audio augmentation and decoder-confidence active learning are evaluated on the final corpus. The earlier 249-clip pilot and its script-generated exports are disclosed and not used as evidence.
 \end{abstract}
 
 \begin{CCSXML}
@@ -82,10 +81,10 @@ Table~\ref{tab:cover} maps each rubric part to its evidence and flags the remain
 \begin{tabular}{p{1.35cm}p{4.15cm}p{1.2cm}}
 \toprule Part & Headline evidence & Status \\ \midrule
 A Collection & 182 clips, 20 speakers, 109.3\,min; \file{sync_records.py}; consent register & complete (\file{metadata_182.csv}) \\
-B Validation & pilot suite 3 fails$\to$0, 12/12 corruptions; leakage audit 5/5 folds pass & audited (0/0/0/0 pass) \\
-C Labelling & $\kappa=\FKappa$ on 182 double-labelled clips; expert adjudication; intra-rater $\kappa=\FIntra$ & verified (\S\ref{sec:label}) \\
+B Validation & pilot suite 3 fails$\to$0, 12/12 corruptions; leakage audit; transcript--audio audit & curated references fail \\
+C Labelling & intent $\kappa=\FKappa$ on 182 clips; adjudication; annotator-bias test; transcript round & intent verified; transcripts pending \\
 D Augment.\ / AL & 701 accepted text variants; pilot audio and AL & ok (see \S\ref{sec:aug}) \\
-E Splits/DVC & 5-fold group-stratified, 0 leakage & audited (\S\ref{sec:split}) \\
+E Splits/DVC & speaker-disjoint release split + speaker-grouped CV; \file{audio.dvc} & audited (\S\ref{sec:split}) \\
 F Reproducibility & seeds, protocol, 5-command rebuild & pinned (seed 42, HF hash \texttt{e8f8c21}) \\ \bottomrule
 \end{tabular}
 \end{table}
@@ -114,8 +113,8 @@ All speakers gave informed consent; speakers appear as \texttt{P1}--\texttt{P22}
 The 14-check suite (Pandera~\cite{Bantilan2020} + pytest: sample rate, channels, duration, clipping, silence ratio, SNR, duplicate hashes, script/character set, characters-per-second, language-ID, schema, missing values, label validity, split leakage) found \textbf{3 failures on raw pilot data}---clipping (2 clips, peaks 0.9994/0.9981), silence ratio (2 clips, 0.58/0.54) and characters-per-second (2 clips)---and passed 14/14 after fixes; it flagged 12/12 injected corruptions (\file{validation_outputs/before.json}, \file{after.json}, \file{corruption_test.log}).
 \paragraph{Final-corpus checks.}
 For the final pipeline, \file{leakage_auditor.py} verifies each of five folds for group overlap, parent-clip overlap, SHA-256 text collisions and test contamination; all five folds report \textbf{0/0/0/0} and status PASS (\file{leakage_verification_report.json}). \file{uuid_packager.py} strips speaker, file and clip identifiers and verifies that no ID appears in any text file (182 audio and 182 text files, \file{sanitization_report.json}). Augmentation outputs pass three semantic gates (Section~\ref{sec:aug}). Automated sanitisation and audio formatting checks report 100\% compliance across all 182 clips.
-\paragraph{The blind spot.}
-None of the format checks compares a transcript with its audio, which let template-derived pilot references pass every test (Section~\ref{sec:pilot}). We add an alignment check: Whisper output versus reference must reach a minimum fuzzy match, otherwise the clip fails; the ASR evaluation of the final corpus (\file{asr_evaluation_report.json}) provides the per-clip match scores it needs.
+\paragraph{Transcript--audio check (new).}
+None of the format checks compared a transcript with its audio, which let template-derived pilot references pass every test. \file{reference_audit.py} adds two checks that need no human transcript: (i) words per second of audio, and (ii) agreement between the reference and two independent ASR systems (archived Indic hybrid; Whisper-small without prompt). The curated references of the final corpus fail both: median \RefWps{} words/s (natural speech $\approx$2.5), \RefLow{} clips below 0.6 words/s, and the two ASR systems agree with each other (median CER \RefCerXasr{}) far more than with the reference (CER $\approx$\RefCerCur{}). Clip \texttt{018267c4}: the speaker asks about hostel leave rules for their son; the reference says a study-table drawer is broken. The check is now part of the suite and the curated references are withdrawn (\file{model/results/reference_audit.json}).
 
 %% ===========================================================================
 \section{Part C: Labelling and Agreement}\label{sec:label}
@@ -133,23 +132,39 @@ The consensus set (\file{consensus_gold_182.json}) records both annotators' labe
 \caption{Agreement on 182 double-labelled clips. (a) A1 vs.\ A2 confusion matrix with Cohen's $\kappa$. (b) Per-class binary $\kappa$. (c) Language-tag agreement. (d) $\kappa$ by quartile of task order. Source: \file{consensus_agreement_report.json}.}
 \Description{Confusion matrix and three agreement panels.}\label{fig:agree}
 \end{figure*}
-\paragraph{Transcripts: an honest gap.}
-The brief asks for transcripts with WER between annotators. The final Label Studio exports contain language and intent labels; the 182 reference transcripts used downstream were curated by listening to each 16\,kHz recording verbatim, followed by an independent acoustic verification pass across 100+ clips in \file{curate_gold_transcripts.py}. Inter-annotator transcript disagreements on orthographic variations (e.g., Devanagari vs.\ Romanised Hindi) were normalised prior to computing downstream evaluation metrics. Until then, all WER results in Assignment~2 are reported against these curated references and must be read with that caveat.
+\paragraph{Annotator bias.}
+A1 and A2 differ in how they use the classes (A1: 32/59/32/59 for admissions/hostel/IT/services; A2: 48/46/44/44; Stuart--Maxwell \AnnSM{}), and A3 sided with A1 in 31 of the 47 adjudications, so the consensus inherits A1's preference for hostel and student services. We keep both raw labels next to the consensus so later models can train on both (Assignment~2 uses them as soft labels), and we queue 25 clips where the model and one annotator agree against the consensus for a blind re-listen (\file{bias_audit.json}).
+\paragraph{Transcripts.}
+The Round I interface had an optional transcript box that was left empty, so the final corpus has no human transcripts yet, and the 182 strings in \file{curate_gold_transcripts.py} were written rather than transcribed (Section~\ref{sec:valid}). Round T (\file{final_annotation/transcription_round/}) fixes the order of levels (transcript first, then intent re-check and a multi-topic flag), assigns 100 clips stratified by language (34 En, 33 Hi, 20 Gu, 13 mixed; all 20 speakers) to both annotators without ASR drafts, shuffles them with seed 2026, and computes corpus WER/CER between annotators with a speaker-bootstrap interval (\file{transcript_agreement.py}). Until its exports exist we report no transcript agreement.
 
 %% ===========================================================================
 \section{The Pilot Corpus and Why We Superseded It}\label{sec:pilot}
 The pilot (249 clips, 19 speakers, 75.3\,min; speaker-disjoint splits 171/17/29 plus Cohort~B 32) was labelled with transcripts that contained sequential ticket numbers (``\ldots ref 1384\ldots''), and Whisper-base recovered only 14 of 838 reference words (1.7\%) on its 29 gold clips (WER 1.27); fluent hypotheses were often about different topics (``damaged footpath'', ``misplaced wallet''). Pilot annotators reached 0.002 inter-annotator WER, which is what verifying a shared template, rather than transcribing, would produce.
 We therefore (i)~froze the pilot gold file unchanged and documented corrections separately, (ii)~re-segmented and re-labelled the recordings as the final corpus, and (iii)~keep from the pilot only what does not depend on transcript validity: the validation-suite behaviour, the corruption tests, the audio augmentation checks and the deployed-pipeline measurements in Assignment~2.
-The pilot v1$\to$v2 guideline rounds (120 clips, $\kappa$ 0.723$\to$0.845) are archived in \file{LABELLING_PROTOCOL.md} but are \emph{not} used as evidence here, because their transcripts are unreliable and the final corpus is annotated afresh. In the final corpus, revised guideline rules were systematically re-applied during expert adjudication on the 47 disputed clips, achieving full consensus resolution with an intra-rater consistency of $\kappa=\FIntra$.
+The pilot ``Round 1/Round 2'' exports (120 clips, $\kappa$ 0.723$\to$0.845) were generated by a script, not exported by annotators (placeholder accounts, dates before the recordings existed); they are kept unchanged with a disclosure note (\file{supporting_files/label_studio_exports/README_SYNTHETIC_DISCLOSURE.md}) and their $\kappa$ values are withdrawn. In the final corpus, revised guideline rules were systematically re-applied during expert adjudication on the 47 disputed clips, achieving full consensus resolution with an intra-rater consistency of $\kappa=\FIntra$.
 
 %% ===========================================================================
 \section{Part D: Augmentation and Active Learning}\label{sec:aug}
 \paragraph{Text augmentation (final).}
 Six techniques generate variants of each consensus transcript: back-translation, cross-lingual translation, Latin-pivot translation, lexical synset replacement, code-mixing and Indic discourse framing. Each candidate must pass three gates~\cite{Reimers2019}: (1)~embedding similarity to its parent (cosine $\ge$ threshold; the run used 0.70, the README states 0.82), (2)~negation/entity-polarity invariance, (3)~MinHash de-duplication. Of 1\,557 candidates, 351 fail the embedding gate, 170 the polarity gate and 335 de-duplication, leaving \textbf{701 accepted} (45\%): 384 discourse framing, 193 cross-lingual, 55 pivot, 51 synsets, 14 code-mixing, 4 back-translation (Figure~\ref{fig:aug}). Label preservation is enforced by the polarity/entity gate and by inheriting the parent's intent; a human spot check of a stratified sample across all four intent classes and augmentation methods confirmed 100\% (30/30) intent fidelity with zero polarity inversions. Discourse framing dominates acceptance but adds mostly prefixes, so Assignment~2 tests whether it helps.
+\paragraph{Audio augmentation (final corpus).}
+\file{audio_robustness.py} applies five label-preserving transforms in memory (seed 42) to 32 clips (8 per language, $\le$40\,s): babble from three \emph{other} speakers at 10\,dB SNR (MUSAN is not available offline), synthetic room reverberation (RT60 0.5\,s), speed 0.9$\times$, pitch $+2$ semitones and an 8\,kHz/16\,kbit/s Opus round trip. Each version is decoded by the deployed Indic ASR. Until human transcripts exist we report \emph{drift WER} (augmented vs.\ clean hypothesis): median codec 0.37, speed 0.35, babble 0.46, reverb 0.74, pitch 0.87; Gujarati is the most fragile under every transform (0.63--0.96), English the least for codec and speed (0.19--0.20) (Figure~\ref{fig:robust}; \file{model/results/audio_robustness.json}). Intent labels are preserved by construction (the words spoken do not change); listening samples are in \file{supporting_files/augmentation_samples/final_corpus/} for the human spot check. True WER is filled in automatically once Round T transcripts exist.
+\begin{figure}[htbp]
+\centering\includegraphics[width=0.95\linewidth]{fig_f_robust.pdf}
+\caption{ASR drift WER per augmentation and language (median over 8 clips each).}
+\Description{Grouped bars.}\label{fig:robust}
+\end{figure}
 \paragraph{Audio augmentation (pilot).}
 Six audio transformations (noise at 12\,dB, room reverberation~\cite{Ko2017,Snyder2015}, speed $0.9/1.1\times$, pitch $+2$, MP3 codec) were applied to 10 pilot clips; 59/60 outputs passed the rule checks. Off-the-shelf Whisper-tiny on five clips gives WER 1.68 clean and 1.05--1.65 augmented, which we do not interpret as robustness ($n=5$, WER $>1$). The \file{audio_perturbed} branch of the final pipeline uses speed/pitch/ambient-noise perturbation; its evaluation is in Assignment~2 (C-08).
-\paragraph{Active learning (pilot).}
-Entropy-based selection~\cite{Settles2009,Lewis1994} led random selection at 8 of 9 budgets by 4--9 points (budget 25: 84.7\% vs.\ 77.2\%) but with paired $t$-test $p\ge0.08$ over 5 folds (\file{active_learning_results.json}); we report the effect as consistent but not significant. Decoder-confidence selection, as the brief prescribes for ASR, is implemented in the Assignment-2 retraining pipeline.
+\paragraph{Active learning by decoder confidence (final corpus).}
+As the brief prescribes for ASR, \file{active_learning_confidence.py} ranks the clips of the training speakers by duration-weighted decoder log-probability of the deployed Indic ASR and labels the least confident first; controls are random order, most-confident-first and model-entropy uncertainty sampling. Speaker-disjoint 5-fold $\times$ 5-seed evaluation of the intent router (macro-F1 on unseen speakers; Figure~\ref{fig:alconf}): random 0.31/0.40/0.45/0.48 at budgets 20/40/60/80 and 0.52 with all clips; low-confidence 0.28/0.37/0.45/0.50 (no budget significantly different from random, Wilcoxon $p\ge0.22$); most-confident-first is clearly worst (0.24/0.27/0.35/0.42), so confidence carries information, but at this pool size random sampling, which keeps the class mix, is as good. The Gujarati model is the most confident and the least accurate (median log-prob $-0.03$), which blunts confidence-based selection.
+\begin{figure}[htbp]
+\centering\includegraphics[width=0.95\linewidth]{fig_f_al_conf.pdf}
+\caption{Label-efficiency curves, speaker-disjoint (mean $\pm$ s.e., 25 runs). Source: \file{model/results/active_learning_confidence.json}.}
+\Description{Four learning curves.}\label{fig:alconf}
+\end{figure}
+\paragraph{Active learning (pilot, intent entropy).}
+Entropy-based selection~\cite{Settles2009,Lewis1994} led random selection at 8 of 9 budgets by 4--9 points (budget 25: 84.7\% vs.\ 77.2\%) but with paired $t$-test $p\ge0.08$ over 5 folds (\file{active_learning_results.json}); we report the effect as consistent but not significant. The pilot study used intent entropy, not decoder confidence; the final-corpus study above replaces it.
 \begin{figure*}[t]
 \centering\includegraphics[width=0.96\textwidth]{fig_f_aug.pdf}
 \caption{Text-augmentation quality gates. (a) Candidates, rejections per gate and accepted variants. (b) Accepted variants by technique. Source: \file{augmentation_quality_report.json}.}
@@ -160,10 +175,10 @@ Entropy-based selection~\cite{Settles2009,Lewis1994} led random selection at 8 o
 \section{Part E: Versioning and Splits}\label{sec:split}
 \paragraph{Final splits.}
 \file{group_splitter.py} builds five \texttt{StratifiedGroupKFold} folds (seed 42); every augmented variant inherits the \texttt{split\_group\_id} of its parent clip, so a parent and its derivatives never straddle train/validation. The leakage audit passes all five folds (Section~\ref{sec:valid}).
-\paragraph{Gaps we report.}
-(i)~The group id is \texttt{GRP\_<speaker>\_<clip>}, i.e.\ per parent clip, ensuring all augmented variants remain co-located in the same fold; (ii)~\file{independent_test_set.json} isolates 36 clips from held-out speakers for rigorous out-of-domain benchmarking; (iii)~fold files contain verified training and validation samples with 0/0/0/0 leakage. The pilot splits are speaker-disjoint (Table~\ref{tab:split}) and remain valid for the deployed pipeline.
+\paragraph{Speaker-disjoint splits.}
+Clip-grouped folds let the same speaker appear on both sides, and because speaker identity predicts intent (a speaker-only classifier scores \SpkShortcut{} under clip-grouped CV against 32\% majority), they overstate generalisation. The release split (\file{release_speakers.json}) is speaker-disjoint: 104 train clips (12 speakers), 38 validation (P12, P14, P20, P22), 40 test (P3, P8, P18, P19); all model selection in Assignment~2 uses speaker-grouped CV or the validation speakers. \file{speaker_cv.py} asserts zero speaker overlap in every fold. Cohort~B for drift remains the pilot's held-out accent group (Table~\ref{tab:split}).
 \paragraph{Versioning.}
-Raw audio, processed data and labels of the pilot are DVC-tracked and tagged \texttt{a1-final}, while final annotation tables and manifests are tracked under git and DVC release hashes.
+Pilot audio, processed data and labels are DVC-tracked at \texttt{a1-final}. The 182 final WAVs are versioned by \file{model/data/audio.dvc} (directory hash \texttt{6ea06a62\ldots}); the shared DVC remote is still local to one machine.
 \begin{table}[htbp]
 \caption{Pilot speaker-disjoint splits (frozen; used by the deployed pipeline).}\label{tab:split}
 \begin{tabular}{lrrl}
@@ -179,11 +194,11 @@ Final corpus: \texttt{python final\_annotation/sync\_records.py}; \texttt{python
 \paragraph{Models and seeds.}
 Whisper-base (OpenAI weights) for transcription; \texttt{paraphrase-multilingual-MiniLM-L12-v2} sentence embeddings~\cite{Reimers2019} for the similarity gate and classifier (Hugging Face revision \texttt{e8f8c211226b894fcb81acc59f3b34ba3efd5f42}). Seeds: splits 42, classifier 42, replay 42.
 \paragraph{Dataset card.}
-Sources: self-recorded helpdesk queries by consenting students; 182 clips, 109.3\,min, 20 speakers; intents 35/54/35/58; languages En 62/Hi 60/Gu 37/mixed 23. Known biases: student speakers only, uneven speaker contribution (up to 22 clips), few code-mixed clips (23), WhatsApp-style lossy compression upstream of the 16\,kHz conversion, and single-adjudicator labels on 25.8\% of clips.
+Sources: self-recorded helpdesk queries by consenting students; 182 clips, 109.3\,min, 20 speakers; intents 35/54/35/58; languages En 62/Hi 60/Gu 37/mixed 23. Known biases (\file{bias_audit.json}): student speakers only; uneven contribution (top five speakers give 47\% of clips, Gini 0.36); speaker--intent association $V=\SpkV{}$; language--intent association (Gujarati: 1 IT clip of 37); duration confound (median admissions call 60\,s vs 18\,s for student services; Gujarati clips 11\,s); annotator bias toward A1's class usage; few code-mixed clips (23); lossy messaging-app compression before the 16\,kHz conversion; single-adjudicator labels on 25.8\% of clips. Region, device and noise fields of the pilot metadata were placeholders and are being replaced by a speaker questionnaire.
 
 %% ===========================================================================
 \section{Limitations and Conclusion}\label{sec:concl}
-Agreement is substantial but not high, and the student-services boundary needs sharper guidelines; transcripts for the final corpus lack independent human double transcription; folds are not yet speaker-disjoint; the unseen-speaker test set is empty; and metadata/DVC records for the final corpus remain to be regenerated.
+Agreement is substantial but not high and the student-services boundary needs sharper guidelines; human transcripts and their agreement are pending (Round T is ready); the shared DVC remote and real speaker metadata are pending.
 The strengths are a fully double-labelled corpus with a reported confidence interval, an adjudication step with an intra-rater check, gated augmentation with a verified leakage audit, and a candid audit that retired a flawed pilot.
 
 \paragraph{Member contributions.}
@@ -215,9 +230,12 @@ Sanitisation & \file{model/data/reports/sanitization_report.json} \\
 Augmentation funnel & \file{model/data/reports/augmentation_quality_report.json} \\
 Pilot validation & \file{supporting_files/validation_outputs/} \\
 Pilot audit (14/838) & \file{supporting_files/predictions/production_gold.csv} \\
+Transcript--audio audit & \file{model/results/reference_audit.json} \\
+Annotator/data bias & \file{model/results/bias_audit.json} \\
+Round T design & \file{final_annotation/transcription_round/order_manifest.json} \\
 Pilot AL, audio augmentation & \file{supporting_files/plots/active_learning_results.json}; \file{data/processed/augmented/} \\
 Splits, hashes & \file{data/splits/}; \file{model/data/splits/}; \file{code/HANDOFF_A2.md} \\
-Figure code & \file{code/scripts/make_report_figures_final.py} \\ \bottomrule
+Figure code & \file{code/report_figures/make_figures_v2.py} (new figures); \file{code/scripts/make_report_figures_final.py} (older) \\ \bottomrule
 \end{tabular}\end{table}
 
 \section{Use of AI Assistance}

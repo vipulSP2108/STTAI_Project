@@ -2,7 +2,8 @@
 .dvc
 scratch
 Records*
-data
+data/*
+!data/labels
 final_annotation/**/records
 model/data/audio
 model/models

@@ -1,0 +1,28 @@
+# Release-split promotion gate (indic-v2). Written and committed BEFORE any candidate is scored.
+# It supersedes configs/gate.yaml (pilot), whose gold tolerance was widened 2 -> 4 points after
+# results had been seen; that history is kept in TEST_SET_LOG.md and is not repeated here.
+gate_version: "3.0.0"
+date_fixed: "2026-11-11"
+fixed_by: "written before the first run of code/a2_part_e_monitoring/release_drift_loop.py"
+
+shifted_cohort:
+  speakers: ["P4", "P13"]          # A1 shifted split (Cohort B, held-out region group)
+  adapt_fraction: 0.5              # seeded split of Cohort B clips: half adaptation pool, half held out
+  seed: 42
+
+criteria:
+  min_cohort_b_heldout_accuracy_gain: 0.05     # candidate must gain >= 5 points on held-out Cohort B
+  max_release_test_accuracy_drop: 0.025        # and lose at most 1 of 40 release-test clips
+  selection_budget: 10                         # clips revealed from the adaptation pool per retrain
+  selection_rule: "lowest duration-weighted decoder avg_logprob"
+
+drift_detection:
+  batch_size: 20
+  schedule_cohort_b_share: [0.0, 0.0, 0.25, 0.5, 0.75, 1.0]
+  thresholds_from: "validation speakers only (1000 bootstrap batches), 1st/99th percentile"
+  alert_rule: "two consecutive batches beyond threshold on either label-free signal"
+
+policies:
+  on_pass: promote candidate to alias 'production', previous production -> 'rollback'
+  on_fail: keep 'production', record candidate as 'rejected'
+  log: TEST_SET_LOG.md

@@ -1,0 +1,2718 @@
+{
+ "generated_at": "2026-11-11T04:55:08",
+ "source": "curated",
+ "n_clips": 182,
+ "n_speakers": 20,
+ "class_counts": {
+  "hostel_mess": 54,
+  "student_services": 58,
+  "it_support": 35,
+  "admissions": 35
+ },
+ "protocol": "StratifiedGroupKFold(5, groups=speaker) x seeds [42, 43, 44, 45, 46]; inner GroupKFold(3) on training speakers selects C from [0.1, 1.0, 10.0]",
+ "embedding_model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2@e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
+ "runtime_sec": 259.7,
+ "summary": {
+  "majority": {
+   "fold_acc_mean": 0.24368961447490878,
+   "fold_acc_sd": 0.08207170092187788,
+   "fold_f1_mean": 0.10375519430410388,
+   "fold_f1_sd": 0.03795354546570543,
+   "pooled_seed42_acc": 0.2967032967032967,
+   "pooled_seed42_acc_ci95_speaker_bootstrap": [
+    0.190462889066241,
+    0.40839481199428834
+   ],
+   "pooled_seed42_macro_f1": 0.183300395256917,
+   "pooled_seed42_macro_f1_ci95_speaker_bootstrap": [
+    0.110020676541924,
+    0.2455785578910416
+   ],
+   "per_language_seed42": {
+    "Code-mixed": {
+     "n": 23,
+     "acc": 0.2608695652173913
+    },
+    "English": {
+     "n": 62,
+     "acc": 0.3387096774193548
+    },
+    "Gujarati": {
+     "n": 37,
+     "acc": 0.24324324324324326
+    },
+    "Hindi": {
+     "n": 60,
+     "acc": 0.3
+    }
+   },
+   "chosen_C_counts": null
+  },
+  "char": {
+   "fold_acc_mean": 0.5174069172280003,
+   "fold_acc_sd": 0.10340320587604165,
+   "fold_f1_mean": 0.4881762065403113,
+   "fold_f1_sd": 0.10144459191896876,
+   "pooled_seed42_acc": 0.510989010989011,
+   "pooled_seed42_acc_ci95_speaker_bootstrap": [
+    0.41463098698344497,
+    0.6051360544217687
+   ],
+   "pooled_seed42_macro_f1": 0.515435174994497,
+   "pooled_seed42_macro_f1_ci95_speaker_bootstrap": [
+    0.41701984667290753,
+    0.6042955920224178
+   ],
+   "per_language_seed42": {
+    "Code-mixed": {
+     "n": 23,
+     "acc": 0.34782608695652173
+    },
+    "English": {
+     "n": 62,
+     "acc": 0.6451612903225806
+    },
+    "Gujarati": {
+     "n": 37,
+     "acc": 0.35135135135135137
+    },
+    "Hindi": {
+     "n": 60,
+     "acc": 0.5333333333333333
+    }
+   },
+   "chosen_C_counts": {
+    "10.0": 24,
+    "1.0": 1
+   }
+  },
+  "emb": {
+   "fold_acc_mean": 0.5785599870218491,
+   "fold_acc_sd": 0.0915751532426791,
+   "fold_f1_mean": 0.5442116954118184,
+   "fold_f1_sd": 0.07632683612529356,
+   "pooled_seed42_acc": 0.5659340659340659,
+   "pooled_seed42_acc_ci95_speaker_bootstrap": [
+    0.4817073170731707,
+    0.6482472970915182
+   ],
+   "pooled_seed42_macro_f1": 0.5765542328042328,
+   "pooled_seed42_macro_f1_ci95_speaker_bootstrap": [
+    0.49209932418835023,
+    0.6407360242613472
+   ],
+   "per_language_seed42": {
+    "Code-mixed": {
+     "n": 23,
+     "acc": 0.5652173913043478
+    },
+    "English": {
+     "n": 62,
+     "acc": 0.6774193548387096
+    },
+    "Gujarati": {
+     "n": 37,
+     "acc": 0.3783783783783784
+    },
+    "Hindi": {
+     "n": 60,
+     "acc": 0.5666666666666667
+    }
+   },
+   "chosen_C_counts": {
+    "10.0": 5,
+    "1.0": 14,
+    "0.1": 6
+   }
+  },
+  "char+emb": {
+   "fold_acc_mean": 0.5846004237823625,
+   "fold_acc_sd": 0.0886453031028173,
+   "fold_f1_mean": 0.5494548009199901,
+   "fold_f1_sd": 0.09459667184838247,
+   "pooled_seed42_acc": 0.5879120879120879,
+   "pooled_seed42_acc_ci95_speaker_bootstrap": [
+    0.5,
+    0.6806363749688357
+   ],
+   "pooled_seed42_macro_f1": 0.5869629651957238,
+   "pooled_seed42_macro_f1_ci95_speaker_bootstrap": [
+    0.4943041714886655,
+    0.6799608488038795
+   ],
+   "per_language_seed42": {
+    "Code-mixed": {
+     "n": 23,
+     "acc": 0.5217391304347826
+    },
+    "English": {
+     "n": 62,
+     "acc": 0.6935483870967742
+    },
+    "Gujarati": {
+     "n": 37,
+     "acc": 0.40540540540540543
+    },
+    "Hindi": {
+     "n": 60,
+     "acc": 0.6166666666666667
+    }
+   },
+   "chosen_C_counts": {
+    "1.0": 8,
+    "10.0": 17
+   }
+  }
+ },
+ "paired_tests": {
+  "majority_vs_char": {
+   "mean_fold_f1_delta": -0.38442101223620745,
+   "wilcoxon_p_25_folds": 5.960464477539063e-08,
+   "mcnemar_exact_p_seed42": 2.1806574627155318e-05,
+   "discordant": [
+    22,
+    61
+   ]
+  },
+  "emb_vs_char": {
+   "mean_fold_f1_delta": 0.05603548887150708,
+   "wilcoxon_p_25_folds": 0.023649930953979492,
+   "mcnemar_exact_p_seed42": 0.21160856876151612,
+   "discordant": [
+    31,
+    21
+   ]
+  },
+  "char+emb_vs_char": {
+   "mean_fold_f1_delta": 0.061278594379678794,
+   "wilcoxon_p_25_folds": 0.0023620057144196423,
+   "mcnemar_exact_p_seed42": 0.03847730828420026,
+   "discordant": [
+    27,
+    13
+   ]
+  },
+  "char_vs_majority": {
+   "mean_fold_f1_delta": 0.38442101223620745,
+   "wilcoxon_p_25_folds": 5.960464477539063e-08,
+   "mcnemar_exact_p_seed42": 2.1806574627155318e-05,
+   "discordant": [
+    61,
+    22
+   ]
+  },
+  "emb_vs_majority": {
+   "mean_fold_f1_delta": 0.4404565011077146,
+   "wilcoxon_p_25_folds": 5.960464477539063e-08,
+   "mcnemar_exact_p_seed42": 2.509086976240059e-07,
+   "discordant": [
+    70,
+    21
+   ]
+  },
+  "char+emb_vs_majority": {
+   "mean_fold_f1_delta": 0.44569960661588626,
+   "wilcoxon_p_25_folds": 5.960464477539063e-08,
+   "mcnemar_exact_p_seed42": 1.9671283608760123e-08,
+   "discordant": [
+    72,
+    19
+   ]
+  }
+ },
+ "loso_model": "char+emb",
+ "loso_accuracy": 0.5714285714285714,
+ "loso_macro_f1": 0.567321914016344,
+ "loso_per_speaker": {
+  "P1": {
+   "n": 2,
+   "acc": 0.5,
+   "languages": {
+    "Hindi": 2
+   }
+  },
+  "P2": {
+   "n": 11,
+   "acc": 0.7272727272727273,
+   "languages": {
+    "Code-mixed": 3,
+    "Hindi": 2,
+    "English": 6
+   }
+  },
+  "P3": {
+   "n": 3,
+   "acc": 0.3333333333333333,
+   "languages": {
+    "Hindi": 3
+   }
+  },
+  "P4": {
+   "n": 5,
+   "acc": 0.2,
+   "languages": {
+    "Hindi": 5
+   }
+  },
+  "P5": {
+   "n": 6,
+   "acc": 0.8333333333333334,
+   "languages": {
+    "Hindi": 6
+   }
+  },
+  "P6": {
+   "n": 1,
+   "acc": 0.0,
+   "languages": {
+    "Hindi": 1
+   }
+  },
+  "P7": {
+   "n": 9,
+   "acc": 0.5555555555555556,
+   "languages": {
+    "English": 7,
+    "Code-mixed": 1,
+    "Hindi": 1
+   }
+  },
+  "P8": {
+   "n": 10,
+   "acc": 0.5,
+   "languages": {
+    "Hindi": 9,
+    "Code-mixed": 1
+   }
+  },
+  "P9": {
+   "n": 10,
+   "acc": 0.9,
+   "languages": {
+    "English": 4,
+    "Code-mixed": 6
+   }
+  },
+  "P10": {
+   "n": 2,
+   "acc": 0.5,
+   "languages": {
+    "English": 2
+   }
+  },
+  "P11": {
+   "n": 4,
+   "acc": 0.25,
+   "languages": {
+    "English": 3,
+    "Code-mixed": 1
+   }
+  },
+  "P12": {
+   "n": 2,
+   "acc": 0.5,
+   "languages": {
+    "English": 1,
+    "Hindi": 1
+   }
+  },
+  "P13": {
+   "n": 22,
+   "acc": 0.4090909090909091,
+   "languages": {
+    "Code-mixed": 3,
+    "Gujarati": 16,
+    "Hindi": 3
+   }
+  },
+  "P14": {
+   "n": 11,
+   "acc": 0.5454545454545454,
+   "languages": {
+    "Code-mixed": 2,
+    "Hindi": 5,
+    "Gujarati": 4
+   }
+  },
+  "P16": {
+   "n": 14,
+   "acc": 0.6428571428571429,
+   "languages": {
+    "English": 14
+   }
+  },
+  "P18": {
+   "n": 16,
+   "acc": 0.6875,
+   "languages": {
+    "Hindi": 3,
+    "English": 5,
+    "Code-mixed": 1,
+    "Gujarati": 7
+   }
+  },
+  "P19": {
+   "n": 11,
+   "acc": 0.5454545454545454,
+   "languages": {
+    "Hindi": 5,
+    "English": 4,
+    "Code-mixed": 2
+   }
+  },
+  "P20": {
+   "n": 10,
+   "acc": 0.5,
+   "languages": {
+    "Gujarati": 10
+   }
+  },
+  "P21": {
+   "n": 18,
+   "acc": 0.6111111111111112,
+   "languages": {
+    "Hindi": 14,
+    "English": 1,
+    "Code-mixed": 3
+   }
+  },
+  "P22": {
+   "n": 15,
+   "acc": 0.6,
+   "languages": {
+    "English": 15
+   }
+  }
+ },
+ "fold_audit": [
+  {
+   "seed": 42,
+   "fold": 0,
+   "n_train": 124,
+   "n_test": 58,
+   "test_speakers": [
+    "P13",
+    "P14",
+    "P16",
+    "P2"
+   ],
+   "speaker_overlap": 0
+  },
+  {
+   "seed": 42,
+   "fold": 1,
+   "n_train": 169,
+   "n_test": 13,
+   "test_speakers": [
+    "P12",
+    "P4",
+    "P5"
+   ],
+   "speaker_overlap": 0
+  },
+  {
+   "seed": 42,
+   "fold": 2,
+   "n_train": 168,
+   "n_test": 14,
+   "test_speakers": [
+    "P11",
+    "P6",
+    "P7"
+   ],
+   "speaker_overlap": 0
+  },
+  {
+   "seed": 42,
+   "fold": 3,
+   "n_train": 126,
+   "n_test": 56,
+   "test_speakers": [
+    "P10",
+    "P18",
+    "P20",
+    "P21",
+    "P9"
+   ],
+   "speaker_overlap": 0
+  },
+  {
+   "seed": 42,
+   "fold": 4,
+   "n_train": 141,
+   "n_test": 41,
+   "test_speakers": [
+    "P1",
+    "P19",
+    "P22",
+    "P3",
+    "P8"
+   ],
+   "speaker_overlap": 0
+  },
+  {
+   "seed": 43,
+   "fold": 0,
+   "n_train": 144,
+   "n_test": 38,
+   "test_speakers": [
+    "P12",
+    "P13",
+    "P14",
+    "P3"
+   ],
+   "speaker_overlap": 0
+  },
+  {
+   "seed": 43,
+   "fold": 1,
+   "n_train": 158,
+   "n_test": 24,
+   "test_speakers": [
+    "P16",
+    "P9"
+   ],
+   "speaker_overlap": 0
+  },
+  {
+   "seed": 43,
+   "fold": 2,
+   "n_train": 145,
+   "n_test": 37,
+   "test_speakers": [
+    "P18",
+    "P19",
+    "P20"
+   ],
+   "speaker_overlap": 0
+  },
+  {
+   "seed": 43,
+   "fold": 3,
+   "n_train": 131,
+   "n_test": 51,
+   "test_speakers": [
+    "P10",
+    "P21",
+    "P22",
+    "P5",
+    "P6",
+    "P7"
+   ],
+   "speaker_overlap": 0
+  },
+  {
+   "seed": 43,
+   "fold": 4,
+   "n_train": 150,
+   "n_test": 32,
+   "test_speakers": [
+    "P1",
+    "P11",
+    "P2",
+    "P4",
+    "P8"
+   ],
+   "speaker_overlap": 0
+  },
+  {
+   "seed": 44,
+   "fold": 0,
+   "n_train": 129,
+   "n_test": 53,
+   "test_speakers": [
+    "P10",
+    "P13",
+    "P14",
+    "P21"
+   ],
+   "speaker_overlap": 0
+  },
+  {
+   "seed": 44,
+   "fold": 1,
+   "n_train": 166,
+   "n_test": 16,
+   "test_speakers": [
+    "P2",
+    "P4"
+   ],
+   "speaker_overlap": 0
+  },
+  {
+   "seed": 44,
+   "fold": 2,
+   "n_train": 155,
+   "n_test": 27,
+   "test_speakers": [
+    "P1",
+    "P20",
+    "P22"
+   ],
+   "speaker_overlap": 0
+  },
+  {
+   "seed": 44,
+   "fold": 3,
+   "n_train": 137,
+   "n_test": 45,
+   "test_speakers": [
+    "P12",
+    "P19",
+    "P3",
+    "P7",
+    "P8",
+    "P9"
+   ],
+   "speaker_overlap": 0
+  },
+  {
+   "seed": 44,
+   "fold": 4,
+   "n_train": 141,
+   "n_test": 41,
+   "test_speakers": [
+    "P11",
+    "P16",
+    "P18",
+    "P5",
+    "P6"
+   ],
+   "speaker_overlap": 0
+  },
+  {
+   "seed": 45,
+   "fold": 0,
+   "n_train": 135,
+   "n_test": 47,
+   "test_speakers": [
+    "P10",
+    "P13",
+    "P20",
+    "P3",
+    "P9"
+   ],
+   "speaker_overlap": 0
+  },
+  {
+   "seed": 45,
+   "fold": 1,
+   "n_train": 174,
+   "n_test": 8,
+   "test_speakers": [
+    "P1",
+    "P5"
+   ],
+   "speaker_overlap": 0
+  },
+  {
+   "seed": 45,
+   "fold": 2,
+   "n_train": 134,
+   "n_test": 48,
+   "test_speakers": [
+    "P16",
+    "P18",
+    "P21"
+   ],
+   "speaker_overlap": 0
+  },
+  {
+   "seed": 45,
+   "fold": 3,
+   "n_train": 137,
+   "n_test": 45,
+   "test_speakers": [
+    "P12",
+    "P14",
+    "P19",
+    "P2",
+    "P8"
+   ],
+   "speaker_overlap": 0
+  },
+  {
+   "seed": 45,
+   "fold": 4,
+   "n_train": 148,
+   "n_test": 34,
+   "test_speakers": [
+    "P11",
+    "P22",
+    "P4",
+    "P6",
+    "P7"
+   ],
+   "speaker_overlap": 0
+  },
+  {
+   "seed": 46,
+   "fold": 0,
+   "n_train": 137,
+   "n_test": 45,
+   "test_speakers": [
+    "P16",
+    "P2",
+    "P6",
+    "P7",
+    "P8"
+   ],
+   "speaker_overlap": 0
+  },
+  {
+   "seed": 46,
+   "fold": 1,
+   "n_train": 167,
+   "n_test": 15,
+   "test_speakers": [
+    "P11",
+    "P14"
+   ],
+   "speaker_overlap": 0
+  },
+  {
+   "seed": 46,
+   "fold": 2,
+   "n_train": 152,
+   "n_test": 30,
+   "test_speakers": [
+    "P12",
+    "P21",
+    "P9"
+   ],
+   "speaker_overlap": 0
+  },
+  {
+   "seed": 46,
+   "fold": 3,
+   "n_train": 143,
+   "n_test": 39,
+   "test_speakers": [
+    "P10",
+    "P18",
+    "P20",
+    "P4",
+    "P5"
+   ],
+   "speaker_overlap": 0
+  },
+  {
+   "seed": 46,
+   "fold": 4,
+   "n_train": 129,
+   "n_test": 53,
+   "test_speakers": [
+    "P1",
+    "P13",
+    "P19",
+    "P22",
+    "P3"
+   ],
+   "speaker_overlap": 0
+  }
+ ],
+ "oof_predictions_seed42": [
+  {
+   "uuid": "6c4a37ea",
+   "speaker": "P1",
+   "language": "Hindi",
+   "true": "hostel_mess",
+   "majority": "student_services",
+   "char": "student_services",
+   "emb": "hostel_mess",
+   "char+emb": "hostel_mess",
+   "loso_char+emb": "hostel_mess"
+  },
+  {
+   "uuid": "d92c9227",
+   "speaker": "P1",
+   "language": "Hindi",
+   "true": "student_services",
+   "majority": "student_services",
+   "char": "hostel_mess",
+   "emb": "student_services",
+   "char+emb": "student_services",
+   "loso_char+emb": "hostel_mess"
+  },
+  {
+   "uuid": "38602ab6",
+   "speaker": "P2",
+   "language": "Code-mixed",
+   "true": "hostel_mess",
+   "majority": "student_services",
+   "char": "hostel_mess",
+   "emb": "hostel_mess",
+   "char+emb": "hostel_mess",
+   "loso_char+emb": "hostel_mess"
+  },
+  {
+   "uuid": "4ccc9bc2",
+   "speaker": "P2",
+   "language": "Hindi",
+   "true": "hostel_mess",
+   "majority": "student_services",
+   "char": "hostel_mess",
+   "emb": "hostel_mess",
+   "char+emb": "hostel_mess",
+   "loso_char+emb": "hostel_mess"
+  },
+  {
+   "uuid": "951f58d0",
+   "speaker": "P2",
+   "language": "Code-mixed",
+   "true": "hostel_mess",
+   "majority": "student_services",
+   "char": "student_services",
+   "emb": "student_services",
+   "char+emb": "student_services",
+   "loso_char+emb": "student_services"
+  },
+  {
+   "uuid": "75523327",
+   "speaker": "P2",
+   "language": "Code-mixed",
+   "true": "it_support",
+   "majority": "student_services",
+   "char": "hostel_mess",
+   "emb": "hostel_mess",
+   "char+emb": "hostel_mess",
+   "loso_char+emb": "hostel_mess"
+  },
+  {
+   "uuid": "382c043f",
+   "speaker": "P3",
+   "language": "Hindi",
+   "true": "hostel_mess",
+   "majority": "student_services",
+   "char": "student_services",
+   "emb": "admissions",
+   "char+emb": "student_services",
+   "loso_char+emb": "student_services"
+  },
+  {
+   "uuid": "b1a6b1f1",
+   "speaker": "P3",
+   "language": "Hindi",
+   "true": "hostel_mess",
+   "majority": "student_services",
+   "char": "hostel_mess",
+   "emb": "hostel_mess",
+   "char+emb": "hostel_mess",
+   "loso_char+emb": "hostel_mess"
+  },
+  {
+   "uuid": "10714d51",
+   "speaker": "P3",
+   "language": "Hindi",
+   "true": "hostel_mess",
+   "majority": "student_services",
+   "char": "it_support",
+   "emb": "it_support",
+   "char+emb": "it_support",
+   "loso_char+emb": "it_support"
+  },
+  {
+   "uuid": "3a43b2ba",
+   "speaker": "P4",
+   "language": "Hindi",
+   "true": "admissions",
+   "majority": "student_services",
+   "char": "admissions",
+   "emb": "hostel_mess",
+   "char+emb": "hostel_mess",
+   "loso_char+emb": "hostel_mess"
+  },
+  {
+   "uuid": "4ce1eb90",
+   "speaker": "P4",
+   "language": "Hindi",
+   "true": "admissions",
+   "majority": "student_services",
+   "char": "it_support",
+   "emb": "it_support",
+   "char+emb": "it_support",
+   "loso_char+emb": "it_support"
+  },
+  {
+   "uuid": "83f4a9a9",
+   "speaker": "P4",
+   "language": "Hindi",
+   "true": "student_services",
+   "majority": "student_services",
+   "char": "hostel_mess",
+   "emb": "student_services",
+   "char+emb": "hostel_mess",
+   "loso_char+emb": "hostel_mess"
+  },
+  {
+   "uuid": "abae4f43",
+   "speaker": "P5",
+   "language": "Hindi",
+   "true": "admissions",
+   "majority": "student_services",
+   "char": "admissions",
+   "emb": "admissions",
+   "char+emb": "admissions",
+   "loso_char+emb": "admissions"
+  },
+  {
+   "uuid": "8cbfedb0",
+   "speaker": "P5",
+   "language": "Hindi",
+   "true": "admissions",
+   "majority": "student_services",
+   "char": "admissions",
+   "emb": "student_services",
+   "char+emb": "admissions",
+   "loso_char+emb": "admissions"
+  },
+  {
+   "uuid": "3985c3cf",
+   "speaker": "P6",
+   "language": "Hindi",
+   "true": "admissions",
+   "majority": "student_services",
+   "char": "admissions",
+   "emb": "student_services",
+   "char+emb": "student_services",
+   "loso_char+emb": "student_services"
+  },
+  {
+   "uuid": "c2b6d2c5",
+   "speaker": "P7",
+   "language": "English",
+   "true": "admissions",
+   "majority": "student_services",
+   "char": "it_support",
+   "emb": "student_services",
+   "char+emb": "student_services",
+   "loso_char+emb": "student_services"
+  },
+  {
+   "uuid": "b7e99aca",
+   "speaker": "P7",
+   "language": "Code-mixed",
+   "true": "student_services",
+   "majority": "student_services",
+   "char": "it_support",
+   "emb": "it_support",
+   "char+emb": "it_support",
+   "loso_char+emb": "it_support"
+  },
+  {
+   "uuid": "9d9262af",
+   "speaker": "P7",
+   "language": "Hindi",
+   "true": "admissions",
+   "majority": "student_services",
+   "char": "admissions",
+   "emb": "admissions",
+   "char+emb": "admissions",
+   "loso_char+emb": "admissions"
+  },
+  {
+   "uuid": "9ad620ab",
+   "speaker": "P7",
+   "language": "English",
+   "true": "admissions",
+   "majority": "student_services",
+   "char": "student_services",
+   "emb": "student_services",
+   "char+emb": "student_services",
+   "loso_char+emb": "student_services"
+  },
+  {
+   "uuid": "a65e688e",
+   "speaker": "P7",
+   "language": "English",
+   "true": "admissions",
+   "majority": "student_services",
+   "char": "student_services",
+   "emb": "admissions",
+   "char+emb": "student_services",
+   "loso_char+emb": "admissions"
+  },
+  {
+   "uuid": "77097749",
+   "speaker": "P7",
+   "language": "English",
+   "true": "admissions",
+   "majority": "student_services",
+   "char": "student_services",
+   "emb": "student_services",
+   "char+emb": "student_services",
+   "loso_char+emb": "student_services"
+  },
+  {
+   "uuid": "dbccc477",
+   "speaker": "P8",
+   "language": "Hindi",
+   "true": "admissions",
+   "majority": "student_services",
+   "char": "admissions",
+   "emb": "admissions",
+   "char+emb": "admissions",
+   "loso_char+emb": "admissions"
+  },
+  {
+   "uuid": "e7a37e81",
+   "speaker": "P8",
+   "language": "Hindi",
+   "true": "admissions",
+   "majority": "student_services",
+   "char": "student_services",
+   "emb": "hostel_mess",
+   "char+emb": "student_services",
+   "loso_char+emb": "student_services"
+  },
+  {
+   "uuid": "236c7b87",
+   "speaker": "P8",
+   "language": "Hindi",
+   "true": "admissions",
+   "majority": "student_services",
+   "char": "admissions",
+   "emb": "admissions",
+   "char+emb": "admissions",
+   "loso_char+emb": "admissions"
+  },
+  {
+   "uuid": "0640be0f",
+   "speaker": "P8",
+   "language": "Hindi",
+   "true": "hostel_mess",
+   "majority": "student_services",
+   "char": "student_services",
+   "emb": "admissions",
+   "char+emb": "admissions",
+   "loso_char+emb": "student_services"
+  },
+  {
+   "uuid": "6e595ed3",
+   "speaker": "P8",
+   "language": "Hindi",
+   "true": "admissions",
+   "majority": "student_services",
+   "char": "student_services",
+   "emb": "student_services",
+   "char+emb": "student_services",
+   "loso_char+emb": "student_services"
+  },
+  {
+   "uuid": "018267c4",
+   "speaker": "P8",
+   "language": "Hindi",
+   "true": "hostel_mess",
+   "majority": "student_services",
+   "char": "hostel_mess",
+   "emb": "hostel_mess",
+   "char+emb": "hostel_mess",
+   "loso_char+emb": "hostel_mess"
+  },
+  {
+   "uuid": "430f801d",
+   "speaker": "P8",
+   "language": "Hindi",
+   "true": "admissions",
+   "majority": "student_services",
+   "char": "admissions",
+   "emb": "admissions",
+   "char+emb": "admissions",
+   "loso_char+emb": "admissions"
+  },
+  {
+   "uuid": "076e2bba",
+   "speaker": "P9",
+   "language": "English",
+   "true": "hostel_mess",
+   "majority": "hostel_mess",
+   "char": "student_services",
+   "emb": "hostel_mess",
+   "char+emb": "hostel_mess",
+   "loso_char+emb": "hostel_mess"
+  },
+  {
+   "uuid": "5487fd4f",
+   "speaker": "P9",
+   "language": "English",
+   "true": "it_support",
+   "majority": "hostel_mess",
+   "char": "it_support",
+   "emb": "student_services",
+   "char+emb": "student_services",
+   "loso_char+emb": "student_services"
+  },
+  {
+   "uuid": "847fd9b4",
+   "speaker": "P9",
+   "language": "English",
+   "true": "student_services",
+   "majority": "hostel_mess",
+   "char": "hostel_mess",
+   "emb": "student_services",
+   "char+emb": "hostel_mess",
+   "loso_char+emb": "student_services"
+  },
+  {
+   "uuid": "e6b3c944",
+   "speaker": "P9",
+   "language": "English",
+   "true": "it_support",
+   "majority": "hostel_mess",
+   "char": "it_support",
+   "emb": "it_support",
+   "char+emb": "it_support",
+   "loso_char+emb": "it_support"
+  },
+  {
+   "uuid": "369147eb",
+   "speaker": "P9",
+   "language": "Code-mixed",
+   "true": "student_services",
+   "majority": "hostel_mess",
+   "char": "student_services",
+   "emb": "student_services",
+   "char+emb": "student_services",
+   "loso_char+emb": "student_services"
+  },
+  {
+   "uuid": "8da01097",
+   "speaker": "P9",
+   "language": "Code-mixed",
+   "true": "it_support",
+   "majority": "hostel_mess",
+   "char": "it_support",
+   "emb": "it_support",
+   "char+emb": "it_support",
+   "loso_char+emb": "it_support"
+  },
+  {
+   "uuid": "6651529e",
+   "speaker": "P9",
+   "language": "Code-mixed",
+   "true": "student_services",
+   "majority": "hostel_mess",
+   "char": "admissions",
+   "emb": "student_services",
+   "char+emb": "student_services",
+   "loso_char+emb": "student_services"
+  },
+  {
+   "uuid": "c0e3befd",
+   "speaker": "P9",
+   "language": "Code-mixed",
+   "true": "student_services",
+   "majority": "hostel_mess",
+   "char": "admissions",
+   "emb": "hostel_mess",
+   "char+emb": "student_services",
+   "loso_char+emb": "student_services"
+  },
+  {
+   "uuid": "7c69dee1",
+   "speaker": "P9",
+   "language": "Code-mixed",
+   "true": "it_support",
+   "majority": "hostel_mess",
+   "char": "it_support",
+   "emb": "it_support",
+   "char+emb": "it_support",
+   "loso_char+emb": "it_support"
+  },
+  {
+   "uuid": "688c7015",
+   "speaker": "P10",
+   "language": "English",
+   "true": "hostel_mess",
+   "majority": "hostel_mess",
+   "char": "it_support",
+   "emb": "hostel_mess",
+   "char+emb": "hostel_mess",
+   "loso_char+emb": "it_support"
+  },
+  {
+   "uuid": "2f923996",
+   "speaker": "P10",
+   "language": "English",
+   "true": "student_services",
+   "majority": "hostel_mess",
+   "char": "it_support",
+   "emb": "admissions",
+   "char+emb": "it_support",
+   "loso_char+emb": "student_services"
+  },
+  {
+   "uuid": "016b6287",
+   "speaker": "P11",
+   "language": "English",
+   "true": "it_support",
+   "majority": "student_services",
+   "char": "it_support",
+   "emb": "it_support",
+   "char+emb": "it_support",
+   "loso_char+emb": "it_support"
+  },
+  {
+   "uuid": "0cdb1ca4",
+   "speaker": "P11",
+   "language": "English",
+   "true": "student_services",
+   "majority": "student_services",
+   "char": "it_support",
+   "emb": "student_services",
+   "char+emb": "student_services",
+   "loso_char+emb": "it_support"
+  },
+  {
+   "uuid": "dc570131",
+   "speaker": "P12",
+   "language": "English",
+   "true": "hostel_mess",
+   "majority": "student_services",
+   "char": "hostel_mess",
+   "emb": "hostel_mess",
+   "char+emb": "hostel_mess",
+   "loso_char+emb": "hostel_mess"
+  },
+  {
+   "uuid": "1931e9ee",
+   "speaker": "P12",
+   "language": "Hindi",
+   "true": "hostel_mess",
+   "majority": "student_services",
+   "char": "hostel_mess",
+   "emb": "student_services",
+   "char+emb": "student_services",
+   "loso_char+emb": "student_services"
+  },
+  {
+   "uuid": "1eb0e38a",
+   "speaker": "P20",
+   "language": "Gujarati",
+   "true": "admissions",
+   "majority": "hostel_mess",
+   "char": "hostel_mess",
+   "emb": "admissions",
+   "char+emb": "hostel_mess",
+   "loso_char+emb": "admissions"
+  },
+  {
+   "uuid": "dc815fe7",
+   "speaker": "P20",
+   "language": "Gujarati",
+   "true": "admissions",
+   "majority": "hostel_mess",
+   "char": "admissions",
+   "emb": "admissions",
+   "char+emb": "admissions",
+   "loso_char+emb": "admissions"
+  },
+  {
+   "uuid": "2db69edb",
+   "speaker": "P20",
+   "language": "Gujarati",
+   "true": "admissions",
+   "majority": "hostel_mess",
+   "char": "hostel_mess",
+   "emb": "hostel_mess",
+   "char+emb": "hostel_mess",
+   "loso_char+emb": "hostel_mess"
+  },
+  {
+   "uuid": "504d281f",
+   "speaker": "P20",
+   "language": "Gujarati",
+   "true": "admissions",
+   "majority": "hostel_mess",
+   "char": "admissions",
+   "emb": "hostel_mess",
+   "char+emb": "hostel_mess",
+   "loso_char+emb": "hostel_mess"
+  },
+  {
+   "uuid": "43f59a85",
+   "speaker": "P21",
+   "language": "Hindi",
+   "true": "hostel_mess",
+   "majority": "hostel_mess",
+   "char": "hostel_mess",
+   "emb": "hostel_mess",
+   "char+emb": "hostel_mess",
+   "loso_char+emb": "hostel_mess"
+  },
+  {
+   "uuid": "b82c9074",
+   "speaker": "P21",
+   "language": "English",
+   "true": "hostel_mess",
+   "majority": "hostel_mess",
+   "char": "student_services",
+   "emb": "hostel_mess",
+   "char+emb": "student_services",
+   "loso_char+emb": "hostel_mess"
+  },
+  {
+   "uuid": "8c459ce2",
+   "speaker": "P21",
+   "language": "Code-mixed",
+   "true": "hostel_mess",
+   "majority": "hostel_mess",
+   "char": "hostel_mess",
+   "emb": "hostel_mess",
+   "char+emb": "hostel_mess",
+   "loso_char+emb": "hostel_mess"
+  },
+  {
+   "uuid": "be6033f7",
+   "speaker": "P21",
+   "language": "Hindi",
+   "true": "hostel_mess",
+   "majority": "hostel_mess",
+   "char": "student_services",
+   "emb": "hostel_mess",
+   "char+emb": "hostel_mess",
+   "loso_char+emb": "hostel_mess"
+  },
+  {
+   "uuid": "e21342b0",
+   "speaker": "P21",
+   "language": "Hindi",
+   "true": "hostel_mess",
+   "majority": "hostel_mess",
+   "char": "hostel_mess",
+   "emb": "hostel_mess",
+   "char+emb": "hostel_mess",
+   "loso_char+emb": "hostel_mess"
+  },
+  {
+   "uuid": "d605e770",
+   "speaker": "P21",
+   "language": "Hindi",
+   "true": "hostel_mess",
+   "majority": "hostel_mess",
+   "char": "hostel_mess",
+   "emb": "hostel_mess",
+   "char+emb": "hostel_mess",
+   "loso_char+emb": "hostel_mess"
+  },
+  {
+   "uuid": "0cf35b58",
+   "speaker": "P21",
+   "language": "Hindi",
+   "true": "hostel_mess",
+   "majority": "hostel_mess",
+   "char": "admissions",
+   "emb": "it_support",
+   "char+emb": "it_support",
+   "loso_char+emb": "it_support"
+  },
+  {
+   "uuid": "fcbb4e59",
+   "speaker": "P21",
+   "language": "Hindi",
+   "true": "it_support",
+   "majority": "hostel_mess",
+   "char": "it_support",
+   "emb": "it_support",
+   "char+emb": "it_support",
+   "loso_char+emb": "it_support"
+  },
+  {
+   "uuid": "51d87c64",
+   "speaker": "P21",
+   "language": "Hindi",
+   "true": "student_services",
+   "majority": "hostel_mess",
+   "char": "hostel_mess",
+   "emb": "hostel_mess",
+   "char+emb": "hostel_mess",
+   "loso_char+emb": "hostel_mess"
+  },
+  {
+   "uuid": "9cd6c852",
+   "speaker": "P21",
+   "language": "Hindi",
+   "true": "student_services",
+   "majority": "hostel_mess",
+   "char": "hostel_mess",
+   "emb": "it_support",
+   "char+emb": "it_support",
+   "loso_char+emb": "it_support"
+  },
+  {
+   "uuid": "f41402b1",
+   "speaker": "P21",
+   "language": "Hindi",
+   "true": "student_services",
+   "majority": "hostel_mess",
+   "char": "hostel_mess",
+   "emb": "hostel_mess",
+   "char+emb": "hostel_mess",
+   "loso_char+emb": "hostel_mess"
+  },
+  {
+   "uuid": "6ba25efe",
+   "speaker": "P21",
+   "language": "Hindi",
+   "true": "student_services",
+   "majority": "hostel_mess",
+   "char": "it_support",
+   "emb": "hostel_mess",
+   "char+emb": "admissions",
+   "loso_char+emb": "student_services"
+  },
+  {
+   "uuid": "49257af1",
+   "speaker": "P21",
+   "language": "Hindi",
+   "true": "hostel_mess",
+   "majority": "hostel_mess",
+   "char": "hostel_mess",
+   "emb": "hostel_mess",
+   "char+emb": "hostel_mess",
+   "loso_char+emb": "hostel_mess"
+  },
+  {
+   "uuid": "778eedb3",
+   "speaker": "P21",
+   "language": "Code-mixed",
+   "true": "hostel_mess",
+   "majority": "hostel_mess",
+   "char": "hostel_mess",
+   "emb": "hostel_mess",
+   "char+emb": "hostel_mess",
+   "loso_char+emb": "hostel_mess"
+  },
+  {
+   "uuid": "3fa7f104",
+   "speaker": "P22",
+   "language": "English",
+   "true": "it_support",
+   "majority": "student_services",
+   "char": "it_support",
+   "emb": "it_support",
+   "char+emb": "it_support",
+   "loso_char+emb": "it_support"
+  },
+  {
+   "uuid": "bf5d2fdf",
+   "speaker": "P22",
+   "language": "English",
+   "true": "student_services",
+   "majority": "student_services",
+   "char": "student_services",
+   "emb": "student_services",
+   "char+emb": "student_services",
+   "loso_char+emb": "student_services"
+  },
+  {
+   "uuid": "e7c421c7",
+   "speaker": "P22",
+   "language": "English",
+   "true": "it_support",
+   "majority": "student_services",
+   "char": "student_services",
+   "emb": "student_services",
+   "char+emb": "student_services",
+   "loso_char+emb": "student_services"
+  },
+  {
+   "uuid": "72d8567d",
+   "speaker": "P22",
+   "language": "English",
+   "true": "student_services",
+   "majority": "student_services",
+   "char": "student_services",
+   "emb": "admissions",
+   "char+emb": "student_services",
+   "loso_char+emb": "student_services"
+  },
+  {
+   "uuid": "ac619e63",
+   "speaker": "P22",
+   "language": "English",
+   "true": "it_support",
+   "majority": "student_services",
+   "char": "student_services",
+   "emb": "it_support",
+   "char+emb": "it_support",
+   "loso_char+emb": "student_services"
+  },
+  {
+   "uuid": "4fcca39a",
+   "speaker": "P22",
+   "language": "English",
+   "true": "it_support",
+   "majority": "student_services",
+   "char": "it_support",
+   "emb": "it_support",
+   "char+emb": "it_support",
+   "loso_char+emb": "it_support"
+  },
+  {
+   "uuid": "55cee5db",
+   "speaker": "P22",
+   "language": "English",
+   "true": "it_support",
+   "majority": "student_services",
+   "char": "it_support",
+   "emb": "it_support",
+   "char+emb": "it_support",
+   "loso_char+emb": "it_support"
+  },
+  {
+   "uuid": "1bac27a7",
+   "speaker": "P22",
+   "language": "English",
+   "true": "it_support",
+   "majority": "student_services",
+   "char": "it_support",
+   "emb": "it_support",
+   "char+emb": "it_support",
+   "loso_char+emb": "it_support"
+  },
+  {
+   "uuid": "4bf50b52",
+   "speaker": "P22",
+   "language": "English",
+   "true": "hostel_mess",
+   "majority": "student_services",
+   "char": "student_services",
+   "emb": "admissions",
+   "char+emb": "student_services",
+   "loso_char+emb": "student_services"
+  },
+  {
+   "uuid": "9a6ec2f5",
+   "speaker": "P22",
+   "language": "English",
+   "true": "hostel_mess",
+   "majority": "student_services",
+   "char": "hostel_mess",
+   "emb": "hostel_mess",
+   "char+emb": "hostel_mess",
+   "loso_char+emb": "hostel_mess"
+  },
+  {
+   "uuid": "cd29a36f",
+   "speaker": "P22",
+   "language": "English",
+   "true": "hostel_mess",
+   "majority": "student_services",
+   "char": "student_services",
+   "emb": "student_services",
+   "char+emb": "student_services",
+   "loso_char+emb": "student_services"
+  },
+  {
+   "uuid": "c56811cd",
+   "speaker": "P22",
+   "language": "English",
+   "true": "student_services",
+   "majority": "student_services",
+   "char": "student_services",
+   "emb": "student_services",
+   "char+emb": "student_services",
+   "loso_char+emb": "student_services"
+  },
+  {
+   "uuid": "ed2662e9",
+   "speaker": "P2",
+   "language": "Hindi",
+   "true": "it_support",
+   "majority": "student_services",
+   "char": "it_support",
+   "emb": "it_support",
+   "char+emb": "it_support",
+   "loso_char+emb": "it_support"
+  },
+  {
+   "uuid": "30beb45f",
+   "speaker": "P2",
+   "language": "English",
+   "true": "hostel_mess",
+   "majority": "student_services",
+   "char": "hostel_mess",
+   "emb": "hostel_mess",
+   "char+emb": "hostel_mess",
+   "loso_char+emb": "hostel_mess"
+  },
+  {
+   "uuid": "9479e1e6",
+   "speaker": "P2",
+   "language": "English",
+   "true": "hostel_mess",
+   "majority": "student_services",
+   "char": "hostel_mess",
+   "emb": "hostel_mess",
+   "char+emb": "hostel_mess",
+   "loso_char+emb": "hostel_mess"
+  },
+  {
+   "uuid": "0f02bad0",
+   "speaker": "P2",
+   "language": "English",
+   "true": "it_support",
+   "majority": "student_services",
+   "char": "it_support",
+   "emb": "it_support",
+   "char+emb": "it_support",
+   "loso_char+emb": "it_support"
+  },
+  {
+   "uuid": "4e20fd1a",
+   "speaker": "P2",
+   "language": "English",
+   "true": "it_support",
+   "majority": "student_services",
+   "char": "it_support",
+   "emb": "it_support",
+   "char+emb": "it_support",
+   "loso_char+emb": "it_support"
+  },
+  {
+   "uuid": "956b8c0c",
+   "speaker": "P2",
+   "language": "English",
+   "true": "it_support",
+   "majority": "student_services",
+   "char": "student_services",
+   "emb": "student_services",
+   "char+emb": "it_support",
+   "loso_char+emb": "student_services"
+  },
+  {
+   "uuid": "0200b1f0",
+   "speaker": "P13",
+   "language": "Code-mixed",
+   "true": "admissions",
+   "majority": "student_services",
+   "char": "student_services",
+   "emb": "hostel_mess",
+   "char+emb": "student_services",
+   "loso_char+emb": "student_services"
+  },
+  {
+   "uuid": "17a0df49",
+   "speaker": "P13",
+   "language": "Code-mixed",
+   "true": "admissions",
+   "majority": "student_services",
+   "char": "student_services",
+   "emb": "admissions",
+   "char+emb": "hostel_mess",
+   "loso_char+emb": "hostel_mess"
+  },
+  {
+   "uuid": "939b462d",
+   "speaker": "P13",
+   "language": "Gujarati",
+   "true": "admissions",
+   "majority": "student_services",
+   "char": "student_services",
+   "emb": "admissions",
+   "char+emb": "student_services",
+   "loso_char+emb": "hostel_mess"
+  },
+  {
+   "uuid": "3170f437",
+   "speaker": "P13",
+   "language": "Gujarati",
+   "true": "admissions",
+   "majority": "student_services",
+   "char": "student_services",
+   "emb": "student_services",
+   "char+emb": "student_services",
+   "loso_char+emb": "student_services"
+  },
+  {
+   "uuid": "b41b3143",
+   "speaker": "P13",
+   "language": "Gujarati",
+   "true": "admissions",
+   "majority": "student_services",
+   "char": "student_services",
+   "emb": "admissions",
+   "char+emb": "student_services",
+   "loso_char+emb": "student_services"
+  },
+  {
+   "uuid": "46d483f3",
+   "speaker": "P13",
+   "language": "Hindi",
+   "true": "admissions",
+   "majority": "student_services",
+   "char": "admissions",
+   "emb": "admissions",
+   "char+emb": "admissions",
+   "loso_char+emb": "admissions"
+  },
+  {
+   "uuid": "89456f27",
+   "speaker": "P13",
+   "language": "Hindi",
+   "true": "it_support",
+   "majority": "student_services",
+   "char": "student_services",
+   "emb": "student_services",
+   "char+emb": "it_support",
+   "loso_char+emb": "it_support"
+  },
+  {
+   "uuid": "b24445a7",
+   "speaker": "P13",
+   "language": "Gujarati",
+   "true": "admissions",
+   "majority": "student_services",
+   "char": "student_services",
+   "emb": "admissions",
+   "char+emb": "student_services",
+   "loso_char+emb": "student_services"
+  },
+  {
+   "uuid": "6cd66193",
+   "speaker": "P13",
+   "language": "Gujarati",
+   "true": "admissions",
+   "majority": "student_services",
+   "char": "student_services",
+   "emb": "student_services",
+   "char+emb": "student_services",
+   "loso_char+emb": "student_services"
+  },
+  {
+   "uuid": "c04a96c4",
+   "speaker": "P13",
+   "language": "Gujarati",
+   "true": "hostel_mess",
+   "majority": "student_services",
+   "char": "student_services",
+   "emb": "admissions",
+   "char+emb": "student_services",
+   "loso_char+emb": "hostel_mess"
+  },
+  {
+   "uuid": "4774bc58",
+   "speaker": "P13",
+   "language": "Gujarati",
+   "true": "hostel_mess",
+   "majority": "student_services",
+   "char": "hostel_mess",
+   "emb": "admissions",
+   "char+emb": "admissions",
+   "loso_char+emb": "hostel_mess"
+  },
+  {
+   "uuid": "e117dac3",
+   "speaker": "P13",
+   "language": "Gujarati",
+   "true": "hostel_mess",
+   "majority": "student_services",
+   "char": "student_services",
+   "emb": "student_services",
+   "char+emb": "student_services",
+   "loso_char+emb": "student_services"
+  },
+  {
+   "uuid": "39820cff",
+   "speaker": "P13",
+   "language": "Gujarati",
+   "true": "hostel_mess",
+   "majority": "student_services",
+   "char": "hostel_mess",
+   "emb": "student_services",
+   "char+emb": "hostel_mess",
+   "loso_char+emb": "hostel_mess"
+  },
+  {
+   "uuid": "49732d6c",
+   "speaker": "P13",
+   "language": "Gujarati",
+   "true": "hostel_mess",
+   "majority": "student_services",
+   "char": "student_services",
+   "emb": "admissions",
+   "char+emb": "hostel_mess",
+   "loso_char+emb": "hostel_mess"
+  },
+  {
+   "uuid": "444d610b",
+   "speaker": "P13",
+   "language": "Gujarati",
+   "true": "hostel_mess",
+   "majority": "student_services",
+   "char": "admissions",
+   "emb": "student_services",
+   "char+emb": "hostel_mess",
+   "loso_char+emb": "hostel_mess"
+  },
+  {
+   "uuid": "0279b6a6",
+   "speaker": "P13",
+   "language": "Gujarati",
+   "true": "hostel_mess",
+   "majority": "student_services",
+   "char": "hostel_mess",
+   "emb": "student_services",
+   "char+emb": "hostel_mess",
+   "loso_char+emb": "student_services"
+  },
+  {
+   "uuid": "c07a30f2",
+   "speaker": "P13",
+   "language": "Gujarati",
+   "true": "hostel_mess",
+   "majority": "student_services",
+   "char": "hostel_mess",
+   "emb": "hostel_mess",
+   "char+emb": "hostel_mess",
+   "loso_char+emb": "hostel_mess"
+  },
+  {
+   "uuid": "36b5229a",
+   "speaker": "P13",
+   "language": "Gujarati",
+   "true": "hostel_mess",
+   "majority": "student_services",
+   "char": "student_services",
+   "emb": "student_services",
+   "char+emb": "student_services",
+   "loso_char+emb": "it_support"
+  },
+  {
+   "uuid": "79a28903",
+   "speaker": "P14",
+   "language": "Code-mixed",
+   "true": "admissions",
+   "majority": "student_services",
+   "char": "student_services",
+   "emb": "admissions",
+   "char+emb": "admissions",
+   "loso_char+emb": "admissions"
+  },
+  {
+   "uuid": "4bb00f20",
+   "speaker": "P14",
+   "language": "Hindi",
+   "true": "hostel_mess",
+   "majority": "student_services",
+   "char": "hostel_mess",
+   "emb": "hostel_mess",
+   "char+emb": "hostel_mess",
+   "loso_char+emb": "hostel_mess"
+  },
+  {
+   "uuid": "56dc8907",
+   "speaker": "P14",
+   "language": "Gujarati",
+   "true": "hostel_mess",
+   "majority": "student_services",
+   "char": "student_services",
+   "emb": "student_services",
+   "char+emb": "student_services",
+   "loso_char+emb": "student_services"
+  },
+  {
+   "uuid": "4ca415ea",
+   "speaker": "P14",
+   "language": "Gujarati",
+   "true": "student_services",
+   "majority": "student_services",
+   "char": "student_services",
+   "emb": "student_services",
+   "char+emb": "student_services",
+   "loso_char+emb": "student_services"
+  },
+  {
+   "uuid": "36b82481",
+   "speaker": "P14",
+   "language": "Hindi",
+   "true": "student_services",
+   "majority": "student_services",
+   "char": "hostel_mess",
+   "emb": "student_services",
+   "char+emb": "student_services",
+   "loso_char+emb": "student_services"
+  },
+  {
+   "uuid": "ee0caeb5",
+   "speaker": "P14",
+   "language": "Code-mixed",
+   "true": "admissions",
+   "majority": "student_services",
+   "char": "student_services",
+   "emb": "admissions",
+   "char+emb": "admissions",
+   "loso_char+emb": "admissions"
+  },
+  {
+   "uuid": "acdabacc",
+   "speaker": "P14",
+   "language": "Gujarati",
+   "true": "student_services",
+   "majority": "student_services",
+   "char": "student_services",
+   "emb": "student_services",
+   "char+emb": "student_services",
+   "loso_char+emb": "hostel_mess"
+  },
+  {
+   "uuid": "ef48e8d5",
+   "speaker": "P14",
+   "language": "Gujarati",
+   "true": "it_support",
+   "majority": "student_services",
+   "char": "student_services",
+   "emb": "student_services",
+   "char+emb": "student_services",
+   "loso_char+emb": "hostel_mess"
+  },
+  {
+   "uuid": "fc3d3348",
+   "speaker": "P14",
+   "language": "Hindi",
+   "true": "student_services",
+   "majority": "student_services",
+   "char": "admissions",
+   "emb": "hostel_mess",
+   "char+emb": "hostel_mess",
+   "loso_char+emb": "hostel_mess"
+  },
+  {
+   "uuid": "82ec9f2d",
+   "speaker": "P16",
+   "language": "English",
+   "true": "student_services",
+   "majority": "student_services",
+   "char": "student_services",
+   "emb": "student_services",
+   "char+emb": "student_services",
+   "loso_char+emb": "student_services"
+  },
+  {
+   "uuid": "81392443",
+   "speaker": "P16",
+   "language": "English",
+   "true": "hostel_mess",
+   "majority": "student_services",
+   "char": "hostel_mess",
+   "emb": "hostel_mess",
+   "char+emb": "hostel_mess",
+   "loso_char+emb": "hostel_mess"
+  },
+  {
+   "uuid": "8ae8905b",
+   "speaker": "P16",
+   "language": "English",
+   "true": "student_services",
+   "majority": "student_services",
+   "char": "hostel_mess",
+   "emb": "hostel_mess",
+   "char+emb": "hostel_mess",
+   "loso_char+emb": "hostel_mess"
+  },
+  {
+   "uuid": "d9178793",
+   "speaker": "P16",
+   "language": "English",
+   "true": "it_support",
+   "majority": "student_services",
+   "char": "it_support",
+   "emb": "it_support",
+   "char+emb": "it_support",
+   "loso_char+emb": "it_support"
+  },
+  {
+   "uuid": "11e9cdaa",
+   "speaker": "P16",
+   "language": "English",
+   "true": "it_support",
+   "majority": "student_services",
+   "char": "it_support",
+   "emb": "it_support",
+   "char+emb": "it_support",
+   "loso_char+emb": "it_support"
+  },
+  {
+   "uuid": "20de435d",
+   "speaker": "P16",
+   "language": "English",
+   "true": "student_services",
+   "majority": "student_services",
+   "char": "student_services",
+   "emb": "student_services",
+   "char+emb": "student_services",
+   "loso_char+emb": "student_services"
+  },
+  {
+   "uuid": "958ca9ba",
+   "speaker": "P16",
+   "language": "English",
+   "true": "student_services",
+   "majority": "student_services",
+   "char": "student_services",
+   "emb": "it_support",
+   "char+emb": "it_support",
+   "loso_char+emb": "it_support"
+  },
+  {
+   "uuid": "ee49f329",
+   "speaker": "P16",
+   "language": "English",
+   "true": "it_support",
+   "majority": "student_services",
+   "char": "it_support",
+   "emb": "it_support",
+   "char+emb": "it_support",
+   "loso_char+emb": "it_support"
+  },
+  {
+   "uuid": "f335cba3",
+   "speaker": "P16",
+   "language": "English",
+   "true": "student_services",
+   "majority": "student_services",
+   "char": "it_support",
+   "emb": "student_services",
+   "char+emb": "student_services",
+   "loso_char+emb": "student_services"
+  },
+  {
+   "uuid": "35c7936c",
+   "speaker": "P18",
+   "language": "Hindi",
+   "true": "it_support",
+   "majority": "hostel_mess",
+   "char": "it_support",
+   "emb": "it_support",
+   "char+emb": "it_support",
+   "loso_char+emb": "it_support"
+  },
+  {
+   "uuid": "d10bd1d0",
+   "speaker": "P18",
+   "language": "English",
+   "true": "student_services",
+   "majority": "hostel_mess",
+   "char": "student_services",
+   "emb": "student_services",
+   "char+emb": "student_services",
+   "loso_char+emb": "student_services"
+  },
+  {
+   "uuid": "2b70e525",
+   "speaker": "P18",
+   "language": "Code-mixed",
+   "true": "it_support",
+   "majority": "hostel_mess",
+   "char": "hostel_mess",
+   "emb": "hostel_mess",
+   "char+emb": "hostel_mess",
+   "loso_char+emb": "admissions"
+  },
+  {
+   "uuid": "fed4057d",
+   "speaker": "P18",
+   "language": "Gujarati",
+   "true": "student_services",
+   "majority": "hostel_mess",
+   "char": "hostel_mess",
+   "emb": "admissions",
+   "char+emb": "student_services",
+   "loso_char+emb": "student_services"
+  },
+  {
+   "uuid": "e1a47e10",
+   "speaker": "P18",
+   "language": "English",
+   "true": "student_services",
+   "majority": "hostel_mess",
+   "char": "student_services",
+   "emb": "student_services",
+   "char+emb": "student_services",
+   "loso_char+emb": "student_services"
+  },
+  {
+   "uuid": "a18ff6b6",
+   "speaker": "P18",
+   "language": "English",
+   "true": "student_services",
+   "majority": "hostel_mess",
+   "char": "student_services",
+   "emb": "student_services",
+   "char+emb": "student_services",
+   "loso_char+emb": "student_services"
+  },
+  {
+   "uuid": "969b6662",
+   "speaker": "P18",
+   "language": "Gujarati",
+   "true": "student_services",
+   "majority": "hostel_mess",
+   "char": "hostel_mess",
+   "emb": "hostel_mess",
+   "char+emb": "hostel_mess",
+   "loso_char+emb": "student_services"
+  },
+  {
+   "uuid": "20a04502",
+   "speaker": "P18",
+   "language": "Gujarati",
+   "true": "hostel_mess",
+   "majority": "hostel_mess",
+   "char": "hostel_mess",
+   "emb": "hostel_mess",
+   "char+emb": "hostel_mess",
+   "loso_char+emb": "hostel_mess"
+  },
+  {
+   "uuid": "f5f59b22",
+   "speaker": "P18",
+   "language": "English",
+   "true": "hostel_mess",
+   "majority": "hostel_mess",
+   "char": "hostel_mess",
+   "emb": "hostel_mess",
+   "char+emb": "hostel_mess",
+   "loso_char+emb": "hostel_mess"
+  },
+  {
+   "uuid": "9e8fc965",
+   "speaker": "P18",
+   "language": "Gujarati",
+   "true": "hostel_mess",
+   "majority": "hostel_mess",
+   "char": "hostel_mess",
+   "emb": "hostel_mess",
+   "char+emb": "hostel_mess",
+   "loso_char+emb": "hostel_mess"
+  },
+  {
+   "uuid": "df57c59a",
+   "speaker": "P18",
+   "language": "English",
+   "true": "student_services",
+   "majority": "hostel_mess",
+   "char": "student_services",
+   "emb": "student_services",
+   "char+emb": "student_services",
+   "loso_char+emb": "student_services"
+  },
+  {
+   "uuid": "f05db76e",
+   "speaker": "P19",
+   "language": "Hindi",
+   "true": "it_support",
+   "majority": "student_services",
+   "char": "it_support",
+   "emb": "it_support",
+   "char+emb": "it_support",
+   "loso_char+emb": "it_support"
+  },
+  {
+   "uuid": "b572f3d0",
+   "speaker": "P19",
+   "language": "English",
+   "true": "student_services",
+   "majority": "student_services",
+   "char": "student_services",
+   "emb": "student_services",
+   "char+emb": "student_services",
+   "loso_char+emb": "student_services"
+  },
+  {
+   "uuid": "e7c99b26",
+   "speaker": "P19",
+   "language": "Hindi",
+   "true": "student_services",
+   "majority": "student_services",
+   "char": "student_services",
+   "emb": "hostel_mess",
+   "char+emb": "student_services",
+   "loso_char+emb": "hostel_mess"
+  },
+  {
+   "uuid": "464c04af",
+   "speaker": "P19",
+   "language": "English",
+   "true": "hostel_mess",
+   "majority": "student_services",
+   "char": "hostel_mess",
+   "emb": "hostel_mess",
+   "char+emb": "hostel_mess",
+   "loso_char+emb": "hostel_mess"
+  },
+  {
+   "uuid": "bf7b539b",
+   "speaker": "P19",
+   "language": "Code-mixed",
+   "true": "student_services",
+   "majority": "student_services",
+   "char": "student_services",
+   "emb": "student_services",
+   "char+emb": "student_services",
+   "loso_char+emb": "student_services"
+  },
+  {
+   "uuid": "badcc32a",
+   "speaker": "P19",
+   "language": "Code-mixed",
+   "true": "it_support",
+   "majority": "student_services",
+   "char": "student_services",
+   "emb": "student_services",
+   "char+emb": "student_services",
+   "loso_char+emb": "student_services"
+  },
+  {
+   "uuid": "3f07f814",
+   "speaker": "P19",
+   "language": "English",
+   "true": "it_support",
+   "majority": "student_services",
+   "char": "it_support",
+   "emb": "it_support",
+   "char+emb": "it_support",
+   "loso_char+emb": "it_support"
+  },
+  {
+   "uuid": "6f3f920c",
+   "speaker": "P19",
+   "language": "Hindi",
+   "true": "it_support",
+   "majority": "student_services",
+   "char": "student_services",
+   "emb": "it_support",
+   "char+emb": "it_support",
+   "loso_char+emb": "admissions"
+  },
+  {
+   "uuid": "1223b513",
+   "speaker": "P19",
+   "language": "Hindi",
+   "true": "it_support",
+   "majority": "student_services",
+   "char": "it_support",
+   "emb": "it_support",
+   "char+emb": "it_support",
+   "loso_char+emb": "admissions"
+  },
+  {
+   "uuid": "dd334cc7",
+   "speaker": "P21",
+   "language": "Hindi",
+   "true": "student_services",
+   "majority": "hostel_mess",
+   "char": "admissions",
+   "emb": "hostel_mess",
+   "char+emb": "hostel_mess",
+   "loso_char+emb": "hostel_mess"
+  },
+  {
+   "uuid": "341ef40b",
+   "speaker": "P4",
+   "language": "Hindi",
+   "true": "student_services",
+   "majority": "student_services",
+   "char": "student_services",
+   "emb": "hostel_mess",
+   "char+emb": "hostel_mess",
+   "loso_char+emb": "hostel_mess"
+  },
+  {
+   "uuid": "ad64b56c",
+   "speaker": "P22",
+   "language": "English",
+   "true": "it_support",
+   "majority": "student_services",
+   "char": "it_support",
+   "emb": "it_support",
+   "char+emb": "it_support",
+   "loso_char+emb": "student_services"
+  },
+  {
+   "uuid": "ec5b227c",
+   "speaker": "P7",
+   "language": "English",
+   "true": "hostel_mess",
+   "majority": "student_services",
+   "char": "hostel_mess",
+   "emb": "hostel_mess",
+   "char+emb": "hostel_mess",
+   "loso_char+emb": "hostel_mess"
+  },
+  {
+   "uuid": "b20dcb6e",
+   "speaker": "P14",
+   "language": "Hindi",
+   "true": "admissions",
+   "majority": "student_services",
+   "char": "student_services",
+   "emb": "admissions",
+   "char+emb": "admissions",
+   "loso_char+emb": "student_services"
+  },
+  {
+   "uuid": "eeea163e",
+   "speaker": "P11",
+   "language": "Code-mixed",
+   "true": "student_services",
+   "majority": "student_services",
+   "char": "hostel_mess",
+   "emb": "hostel_mess",
+   "char+emb": "hostel_mess",
+   "loso_char+emb": "hostel_mess"
+  },
+  {
+   "uuid": "da4bd9ca",
+   "speaker": "P9",
+   "language": "Code-mixed",
+   "true": "student_services",
+   "majority": "hostel_mess",
+   "char": "it_support",
+   "emb": "student_services",
+   "char+emb": "it_support",
+   "loso_char+emb": "student_services"
+  },
+  {
+   "uuid": "c8dcd19f",
+   "speaker": "P2",
+   "language": "English",
+   "true": "it_support",
+   "majority": "student_services",
+   "char": "student_services",
+   "emb": "it_support",
+   "char+emb": "it_support",
+   "loso_char+emb": "it_support"
+  },
+  {
+   "uuid": "425a609f",
+   "speaker": "P14",
+   "language": "Hindi",
+   "true": "admissions",
+   "majority": "student_services",
+   "char": "hostel_mess",
+   "emb": "admissions",
+   "char+emb": "admissions",
+   "loso_char+emb": "admissions"
+  },
+  {
+   "uuid": "1d870966",
+   "speaker": "P11",
+   "language": "English",
+   "true": "admissions",
+   "majority": "student_services",
+   "char": "it_support",
+   "emb": "it_support",
+   "char+emb": "it_support",
+   "loso_char+emb": "it_support"
+  },
+  {
+   "uuid": "944528c0",
+   "speaker": "P16",
+   "language": "English",
+   "true": "student_services",
+   "majority": "student_services",
+   "char": "student_services",
+   "emb": "it_support",
+   "char+emb": "it_support",
+   "loso_char+emb": "it_support"
+  },
+  {
+   "uuid": "655238a6",
+   "speaker": "P21",
+   "language": "Code-mixed",
+   "true": "hostel_mess",
+   "majority": "hostel_mess",
+   "char": "hostel_mess",
+   "emb": "hostel_mess",
+   "char+emb": "hostel_mess",
+   "loso_char+emb": "hostel_mess"
+  },
+  {
+   "uuid": "2a935d62",
+   "speaker": "P16",
+   "language": "English",
+   "true": "student_services",
+   "majority": "student_services",
+   "char": "student_services",
+   "emb": "it_support",
+   "char+emb": "it_support",
+   "loso_char+emb": "it_support"
+  },
+  {
+   "uuid": "e256a6dc",
+   "speaker": "P20",
+   "language": "Gujarati",
+   "true": "hostel_mess",
+   "majority": "hostel_mess",
+   "char": "admissions",
+   "emb": "admissions",
+   "char+emb": "admissions",
+   "loso_char+emb": "admissions"
+  },
+  {
+   "uuid": "dd463c09",
+   "speaker": "P8",
+   "language": "Code-mixed",
+   "true": "admissions",
+   "majority": "student_services",
+   "char": "it_support",
+   "emb": "it_support",
+   "char+emb": "it_support",
+   "loso_char+emb": "it_support"
+  },
+  {
+   "uuid": "fce68504",
+   "speaker": "P5",
+   "language": "Hindi",
+   "true": "student_services",
+   "majority": "student_services",
+   "char": "hostel_mess",
+   "emb": "hostel_mess",
+   "char+emb": "hostel_mess",
+   "loso_char+emb": "hostel_mess"
+  },
+  {
+   "uuid": "34f3193c",
+   "speaker": "P19",
+   "language": "English",
+   "true": "hostel_mess",
+   "majority": "student_services",
+   "char": "student_services",
+   "emb": "student_services",
+   "char+emb": "student_services",
+   "loso_char+emb": "student_services"
+  },
+  {
+   "uuid": "f26b4776",
+   "speaker": "P18",
+   "language": "Gujarati",
+   "true": "student_services",
+   "majority": "hostel_mess",
+   "char": "admissions",
+   "emb": "hostel_mess",
+   "char+emb": "hostel_mess",
+   "loso_char+emb": "admissions"
+  },
+  {
+   "uuid": "c521bf2d",
+   "speaker": "P18",
+   "language": "Hindi",
+   "true": "it_support",
+   "majority": "hostel_mess",
+   "char": "it_support",
+   "emb": "it_support",
+   "char+emb": "it_support",
+   "loso_char+emb": "hostel_mess"
+  },
+  {
+   "uuid": "8573e793",
+   "speaker": "P5",
+   "language": "Hindi",
+   "true": "hostel_mess",
+   "majority": "student_services",
+   "char": "hostel_mess",
+   "emb": "hostel_mess",
+   "char+emb": "hostel_mess",
+   "loso_char+emb": "hostel_mess"
+  },
+  {
+   "uuid": "286218b8",
+   "speaker": "P20",
+   "language": "Gujarati",
+   "true": "student_services",
+   "majority": "hostel_mess",
+   "char": "hostel_mess",
+   "emb": "student_services",
+   "char+emb": "student_services",
+   "loso_char+emb": "student_services"
+  },
+  {
+   "uuid": "c8b8d9c6",
+   "speaker": "P13",
+   "language": "Gujarati",
+   "true": "admissions",
+   "majority": "student_services",
+   "char": "student_services",
+   "emb": "admissions",
+   "char+emb": "admissions",
+   "loso_char+emb": "admissions"
+  },
+  {
+   "uuid": "b758588d",
+   "speaker": "P20",
+   "language": "Gujarati",
+   "true": "hostel_mess",
+   "majority": "hostel_mess",
+   "char": "hostel_mess",
+   "emb": "hostel_mess",
+   "char+emb": "hostel_mess",
+   "loso_char+emb": "hostel_mess"
+  },
+  {
+   "uuid": "9ee3ac2a",
+   "speaker": "P16",
+   "language": "English",
+   "true": "it_support",
+   "majority": "student_services",
+   "char": "student_services",
+   "emb": "it_support",
+   "char+emb": "it_support",
+   "loso_char+emb": "it_support"
+  },
+  {
+   "uuid": "439472e6",
+   "speaker": "P18",
+   "language": "Hindi",
+   "true": "student_services",
+   "majority": "hostel_mess",
+   "char": "student_services",
+   "emb": "student_services",
+   "char+emb": "student_services",
+   "loso_char+emb": "student_services"
+  },
+  {
+   "uuid": "474ebc19",
+   "speaker": "P8",
+   "language": "Hindi",
+   "true": "student_services",
+   "majority": "student_services",
+   "char": "student_services",
+   "emb": "admissions",
+   "char+emb": "student_services",
+   "loso_char+emb": "student_services"
+  },
+  {
+   "uuid": "ab4220a7",
+   "speaker": "P20",
+   "language": "Gujarati",
+   "true": "hostel_mess",
+   "majority": "hostel_mess",
+   "char": "hostel_mess",
+   "emb": "admissions",
+   "char+emb": "admissions",
+   "loso_char+emb": "admissions"
+  },
+  {
+   "uuid": "f9e8a369",
+   "speaker": "P16",
+   "language": "English",
+   "true": "student_services",
+   "majority": "student_services",
+   "char": "student_services",
+   "emb": "admissions",
+   "char+emb": "it_support",
+   "loso_char+emb": "it_support"
+  },
+  {
+   "uuid": "addc3e13",
+   "speaker": "P16",
+   "language": "English",
+   "true": "student_services",
+   "majority": "student_services",
+   "char": "student_services",
+   "emb": "student_services",
+   "char+emb": "student_services",
+   "loso_char+emb": "student_services"
+  },
+  {
+   "uuid": "bc8f7d29",
+   "speaker": "P13",
+   "language": "Code-mixed",
+   "true": "hostel_mess",
+   "majority": "student_services",
+   "char": "student_services",
+   "emb": "student_services",
+   "char+emb": "student_services",
+   "loso_char+emb": "student_services"
+  },
+  {
+   "uuid": "3e75c3b4",
+   "speaker": "P13",
+   "language": "Hindi",
+   "true": "it_support",
+   "majority": "student_services",
+   "char": "admissions",
+   "emb": "admissions",
+   "char+emb": "admissions",
+   "loso_char+emb": "admissions"
+  },
+  {
+   "uuid": "12a4def0",
+   "speaker": "P22",
+   "language": "English",
+   "true": "student_services",
+   "majority": "student_services",
+   "char": "student_services",
+   "emb": "student_services",
+   "char+emb": "student_services",
+   "loso_char+emb": "student_services"
+  },
+  {
+   "uuid": "e623a689",
+   "speaker": "P22",
+   "language": "English",
+   "true": "student_services",
+   "majority": "student_services",
+   "char": "hostel_mess",
+   "emb": "admissions",
+   "char+emb": "hostel_mess",
+   "loso_char+emb": "hostel_mess"
+  },
+  {
+   "uuid": "8d3aed99",
+   "speaker": "P19",
+   "language": "Hindi",
+   "true": "it_support",
+   "majority": "student_services",
+   "char": "it_support",
+   "emb": "it_support",
+   "char+emb": "it_support",
+   "loso_char+emb": "it_support"
+  },
+  {
+   "uuid": "f53d4330",
+   "speaker": "P21",
+   "language": "Hindi",
+   "true": "hostel_mess",
+   "majority": "hostel_mess",
+   "char": "admissions",
+   "emb": "student_services",
+   "char+emb": "admissions",
+   "loso_char+emb": "student_services"
+  },
+  {
+   "uuid": "8babce3b",
+   "speaker": "P4",
+   "language": "Hindi",
+   "true": "student_services",
+   "majority": "student_services",
+   "char": "hostel_mess",
+   "emb": "student_services",
+   "char+emb": "student_services",
+   "loso_char+emb": "student_services"
+  },
+  {
+   "uuid": "21df306f",
+   "speaker": "P21",
+   "language": "Hindi",
+   "true": "student_services",
+   "majority": "hostel_mess",
+   "char": "student_services",
+   "emb": "it_support",
+   "char+emb": "it_support",
+   "loso_char+emb": "it_support"
+  },
+  {
+   "uuid": "8c41561b",
+   "speaker": "P20",
+   "language": "Gujarati",
+   "true": "student_services",
+   "majority": "hostel_mess",
+   "char": "admissions",
+   "emb": "admissions",
+   "char+emb": "admissions",
+   "loso_char+emb": "admissions"
+  },
+  {
+   "uuid": "c3fe0183",
+   "speaker": "P8",
+   "language": "Hindi",
+   "true": "student_services",
+   "majority": "student_services",
+   "char": "hostel_mess",
+   "emb": "hostel_mess",
+   "char+emb": "hostel_mess",
+   "loso_char+emb": "hostel_mess"
+  },
+  {
+   "uuid": "a1384ddc",
+   "speaker": "P20",
+   "language": "Gujarati",
+   "true": "hostel_mess",
+   "majority": "hostel_mess",
+   "char": "hostel_mess",
+   "emb": "hostel_mess",
+   "char+emb": "hostel_mess",
+   "loso_char+emb": "hostel_mess"
+  },
+  {
+   "uuid": "ecf27e76",
+   "speaker": "P18",
+   "language": "Gujarati",
+   "true": "student_services",
+   "majority": "hostel_mess",
+   "char": "hostel_mess",
+   "emb": "admissions",
+   "char+emb": "admissions",
+   "loso_char+emb": "admissions"
+  },
+  {
+   "uuid": "922fe15a",
+   "speaker": "P5",
+   "language": "Hindi",
+   "true": "student_services",
+   "majority": "student_services",
+   "char": "hostel_mess",
+   "emb": "student_services",
+   "char+emb": "student_services",
+   "loso_char+emb": "student_services"
+  },
+  {
+   "uuid": "36386821",
+   "speaker": "P5",
+   "language": "Hindi",
+   "true": "admissions",
+   "majority": "student_services",
+   "char": "admissions",
+   "emb": "admissions",
+   "char+emb": "admissions",
+   "loso_char+emb": "admissions"
+  },
+  {
+   "uuid": "ff002d4d",
+   "speaker": "P13",
+   "language": "Gujarati",
+   "true": "student_services",
+   "majority": "student_services",
+   "char": "hostel_mess",
+   "emb": "hostel_mess",
+   "char+emb": "hostel_mess",
+   "loso_char+emb": "hostel_mess"
+  },
+  {
+   "uuid": "a33dc7af",
+   "speaker": "P7",
+   "language": "English",
+   "true": "hostel_mess",
+   "majority": "student_services",
+   "char": "hostel_mess",
+   "emb": "student_services",
+   "char+emb": "hostel_mess",
+   "loso_char+emb": "hostel_mess"
+  },
+  {
+   "uuid": "1a50aec3",
+   "speaker": "P18",
+   "language": "Gujarati",
+   "true": "student_services",
+   "majority": "hostel_mess",
+   "char": "admissions",
+   "emb": "hostel_mess",
+   "char+emb": "hostel_mess",
+   "loso_char+emb": "admissions"
+  },
+  {
+   "uuid": "1d8cbbac",
+   "speaker": "P7",
+   "language": "English",
+   "true": "student_services",
+   "majority": "student_services",
+   "char": "student_services",
+   "emb": "admissions",
+   "char+emb": "student_services",
+   "loso_char+emb": "student_services"
+  }
+ ]
+}

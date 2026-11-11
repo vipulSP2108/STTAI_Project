@@ -1,0 +1,945 @@
+[
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P13/clip_19.wav",
+   "clip_id": "P13_84"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "નમસ્કાર ટેનિંગ અને કેપિયા"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P22/WhatsApp Ptt 2026-11-06 at 2.40.32 PM.wav",
+   "clip_id": "P22_96"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "Hello, I'm a parent of a first-year student. My son lost his mobile phone yesterday somewhere in the academic block. The phone has all his authentication apps and all the two-factor authentication for IITG and portals. Because of this, he cannot log into his student portal to check his timetable or submit assignments. Is there a way the IT cell can temporarily disable the two-factor authentication for his account? Or maybe if you could generate some bypass back code or something like a temporary password so that he can use it on his laptop till we arrange a new phone for him? He is quite stressed about missing his academic updates. Please let me know what verifying details you need from him."
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P20/WhatsApp Ptt 2026-11-05 at 6.44.09 PM.wav",
+   "clip_id": "P20_59"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "નમસ્કાર મારા દિકરા માહિતી જોઈતી હતી તે હાલમાં બહાર કરે છે અને આગળ એન્જિનિયરિંગ કરવા મા સંસ્થામાં અલગથી પણ કોઈ પ્રક્રિયા પૂઈ કરવા પડે છે કરવા ઘણી સરળતા છે"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P2/WhatsApp Ptt 2026-11-06 at 12.09.45 PM.wav",
+   "clip_id": "P2_12"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "During my registration to the company there are a lot of bugs that I found out on to the portal of CDS. Especially when I am logging into the portal it logouts directly without even making clicking the button. I don't know what is happening here. Next book which I found out was related to the email query that has been coming. So if I registered for any particular company and then the email comes. So, the email for the reminder of the company, the issue is that the reminder is coming like 15 minutes early. So I personally think that this should not happen and the query or the reminder should come at least 1 hour to 6 hour before the data registration closed. 15 minutes is quite less and even it is coming through the mail so most probably the 15 minutes watch time is quite less I think so so kindly consider increasing that."
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P8/PTT-20261019-WA0037.wav",
+   "clip_id": "P8_34"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "हैलो मैं अपनी बेटी के लिए आईआईटी अन्दीनगर में एडमिशन की जानकारी लेना चाहता हूँ वह इंजीनियरिंग में पढ़ाई करना चाहती है और हम चाहते है कि उसकी पढ़ाई के साथ सुरक्षा तथा अच्छा रहने के वातावरण मिले मुझे विशेष रू इसके अलावा वार्डन या कोई जिम्मेदार अधिकारी उपलब्ध रहते हैं जिनकी जरूरत पड़ने पर हम उनको संपर्क कर सकते हैं हम यह भी जानना चाहते हैं कि वार्डन या कोई जिम्मेदार अधिकारी उपलब्ध रहते हैं जिनकी जरूरत पड़ने पर हम उनको सं इस बार प्रदेश में पिछले चौबिस घंटों में तेज बारिश की गई है"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P9/PTT-20261019-WA0022.wav",
+   "clip_id": "P9_45"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "नमस्कार आई वुड लाइट टू आर्ट अबार्ड मुकिंग ऑफ एज फॉर एस स्टूडेंट ऑपरेट इवेंट वर्क ग्रुप प्लेनिंग स्मॉल टेक्निकल वर्कशॉप नेक्स्ट मंत्र एवेन वी नीडा रूम विद सीटिंग अप लॉजेक्टर एवेन आर्ट इव एड हाउ अर्ली वी शोड सेमिन्ट रिक्वेस्ट आई वॉल्स लाइक टू नो वेदर वी नीडे फ्रॉम फैकल्टी कोऑर्डिनेटर और स्टूडेंट प्लब रिप्रेजेंटेटिव अगर इवेंट के लिए कोई परमिशन फॉर्म भरना जरूरी है तो पुलिस उसके बा"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P19/clip_02.wav",
+   "clip_id": "P19_130"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "हेलो आईडीजी मेरा कोर्ट रजिस्ट्रेशन हो गया लेकिन आरपी पोर्टल पर सब्जेक्ट नहीं हो रहा है प्लीज चेक कर"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P5/PTT-20261018-WA0004.wav",
+   "clip_id": "P5_15"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "नमस्ते सर मैं जलगाव जिले से अम्मल नेरतालु के से जाड़ी घाव से बात कर रही हूँ हमारे गाँव में लगभग पंद्रह से बीस दिनों से पानी नहीं आ रहा है हमने नगर पालिके में बहुत सारे कंप्लेंट भी दर्ज करी है लेकिन कहीं से भी पानी उपलब्ध न उसे नोटिस जमा कर लिए उन लोगों को बोला है कि हमें हमारे कोल में पानी नहीं आ रहा है बहुत सारे तकलीफ है हमें उठाने पड़ रही है तो आप जल्द से जल्द हमें पानी भेजे वो बार बार एक बार बता रहे कि हम लोग कोशिश कर रहे वो पाइप लाइन टू� हमारी सहायता करें हमारी जो तकनीक है उसका निकाले"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P13/clip_06.wav",
+   "clip_id": "P13_71"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "સપોર્ટ આપો નમસ્કાર આઇએટ ગાંધીનગંબ વોઈસ હેલ્પ એડમિશન ઓફિસ ડિરેક્ટ કોન્ટેક્ટ નંબર શું �"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P16/clip_10.wav",
+   "clip_id": "P16_108"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "Hello, IITG in Helpdesk. I need access to a general article that is behind a publisher paywall. Does the Institute Library provide remote access?"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P8/PTT-20261019-WA0008.wav",
+   "clip_id": "P8_33"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "नमस्कार, मैं अपने बेटे के संभावित एडमिशन और पढ़ाई की खुल खर्च के बारे में जान लेना चाहता हूँ. हम एक मध्यम परिवार से है इसलिए मेरे बेटे का एडमिशन अपने आईआईटी गांधीनगर में हुआ अगर हुआ तो उसके लिए कितनी फीस लग स ऑस्टल की और खाने पीने का खर्च समझने के लिए शिशुरुति के अत्र विद्यार्थी है विद्यार्थी के लिए कोई आवेदन करना पड़ता है तो क्या शुरुआत में ही वो आवेदन करना चाहिए हमें यह भी जानना चाहता है फीस जमा करने की अंतिम तारीख से कहा है भुगतान किस पर अध्यम से किया जाता है यदि फी कृपया करके इसके बारे में हमें मार्गदर्शन करें"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P8/PTT-20261019-WA0042.wav",
+   "clip_id": "P8_39"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "नमस्ते मुझे वोट के नियम के बारे में नियमों के बारे में जानकारी चाहिए क्योंकि मेरा बेटा अपने आईआईटी गांधी नगर में एडमिशन के बाद घर से दूर जा रहा है मैं जानना चाहता हूं कि आईआईटी गांधी नगर में वोट में रहने वाले विद्या विद्यार्थियों को सप्ताह में जाना होता है या कुछ दिनों के लिए घर लौटना हो तो क्या उसे पहले ही अनुमति लेनी पड़ती है क्या इसके लिए कोई ऑनलाइन छुट्टी का आवेदन करना होता है या होस्टल वार्ड को सूचना देने का पर्याप्त देना पर्य इस दौरान उन्होंने बताया कि प्रदेश में पिछले चौबिस घंटों में एक सौ बासठ लोगों की मौत हो चुकी है जबकि एक सौ बासठ लोगों की मौत हो चुकी है"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P21/WhatsApp Ptt 2026-11-06 at 2.36.31 PM.wav",
+   "clip_id": "P21_85"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "हेलो आईटीजन हेल्प डेस्क मैने लॉन्द्री के रिगार्डिंग कंप्लेंट डाली थी. मेरे दो तीन कपड़े गाया वो गाया वो वेतन को मिलने रहते हैं. मैने काफी बार उधर जाकर क्वारी की लेकिन उनका रिस्पॉन्स यही आ रहा है कि नेक्स ट्रे में आ जाए�"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P2/PTT-20261019-WA0004.wav",
+   "clip_id": "P2_6"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "हैलो वॉन्ट टू रिसेट माय स्टूडेंट पोर्टल पासवर्ड ट्राइंग लॉग मॉर्निंग वेबसाइट पासवर्ड इनकरेक्ट टाइम नॉट टाइम थ्री टू फाइव टाइम आई रिसेट एक बट स्टील एव नॉट गेटिंग द दिलिंग टू रिसेट एट एव एव एसो मैने स्पैम वगैरह बीच एक तो मैने स्पैम वगैरह बीच एक किया है स्पैम वगैरह मैं कुछ दिख नहीं रहा है मैने का� फास्ट वर्ड रिसेट करके एटलिस्ट में भेज देना ताकि मैं एटलिस्ट पोर्टल को लॉग इन कर पाए"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P16/clip_11.wav",
+   "clip_id": "P16_109"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "Hello, IITGN Helpdesk. My laboratory access card stopped working even though my project registration is active. Can access permissions be checked?"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P14/clip_02.wav",
+   "clip_id": "P14_89"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "सपोर्ट आपको."
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P16/clip_07.wav",
+   "clip_id": "P16_105"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "Hello, IITGN HelpDisc. Internship Company is asking for a bonafide letter and NOC. Are both documents available through the students?"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P16/clip_14.wav",
+   "clip_id": "P16_112"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "Hello, IITGN Helpdesk. I left my backpack in the campus shirt really yesterday evening. Is there a loss in found disk I can contact?"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P7/WhatsApp Audio 2026-10-19 at 2.37.56 PM.wav",
+   "clip_id": "P7_27"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "Hello sir, I would like to know about this scholarship and financial aid options for my son's education. He is preparing to take admission in the IIT Gandhi never, but we want to plan the fees and the oyster expenses in advance. Does the institution offer tuition waivers or financial aid based on the family's annual income? What are the income certificates and other documents required for these please give me information about the necessary documents. So, I will be give these documents ready. Does the application fee for this scholarship have to be made immediately after the admission or does it have a different timeline? I also want to know if I can get any help with the hostel and miss expenses if I get financial aid please provide the consent Department or official website information so that we can properly understand the eligibility and application process. Please give me the necessary information sir. Thank you sir. Thank you so much."
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P16/clip_01.wav",
+   "clip_id": "P16_99"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "Hello, IITGN helpdesk. Can I order an additional elective without it affecting my semester great point average."
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P22/WhatsApp Ptt 2026-11-06 at 2.41.26 PM.wav",
+   "clip_id": "P22_97"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "Namaste, I am calling from Mumbai. My son is a second year student at IIT in Anandena, staying in Iwan hostel. He has been calling me for the past two days saying that the air conditioning in his room is completely ineffective. So, it is getting extremely hot during the afternoon. He mentioned that he has already registered a complaint on the hostel maintenance portal, but nobody has come to check it yet. ticket number he shared with me is 4452. Can you please escalate this issue to the electrical maintenance team? It is very difficult for him to study in the room in this heat."
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P21/WhatsApp Ptt 2026-11-06 at 2.35.34 PM.wav",
+   "clip_id": "P21_83"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "हेलो आईडीजी एंड हेल्प डेस्क यहाँ पे साप रखा है हमने उसको बचे केंद्र में डाल रखा है आप जल्दी से किसी को बेच सकते हैं बेच सकते हैं"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P13/clip_05.wav",
+   "clip_id": "P13_70"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "સપોર્ટ આપો નમસ્કાર ગાંધીનગર વોઈસ હેલ્પ એડવાન્સ એન્ક ઇલેક્ટિકલ એન્સીઇનિયા ઇંગ ડિપાર્�"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P19/clip_11.wav",
+   "clip_id": "P19_139"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "हेलो ऑनलाइन पेमेंट करते वक्त ब्राउजर क्रैश हो गया और अब पोर्टल ट्रांजैक्शन पेंडिंग दिखा रहा है पेमेंट दोबारा करना सेफ है"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P8/PTT-20261019-WA0043.wav",
+   "clip_id": "P8_40"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "नमस्कार मैं अपने बेटे के एडमिशन की अगली प्रक्रिया के बारे में जान लेना चाहता हूँ उसे आईआईटी गांधीनगर में प्रवेश मिलने की उम्मीद है और हम जानना चाहते है कि इस सीट के आवंटित होने के बाद आउट होने के बाद किन किन चरणों में चरणों में � उन्होंने बताया कि प्रदेश में अब तक एक लाख छियासी हजार छः सौ छियासी लोगों की मृत्यु के बाद अब तक एक लाख छः हजार छः सौ छः सौ छः सौ छः हैं और उसके बाद दस्तावेजों का सत्यापन होता है इस दौरान उन्होंने प्रदेश के लोगों को जागरूक करने के लिए प्रतिबद्ध है चरण छूट न जाए"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P2/PTT-20261019-WA0003.wav",
+   "clip_id": "P2_5"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "हैलो आई वोड लाइक टू रिक्वेस्ट मेंटेन शू एंड माई हॉस्टल्स मेकिंग लॉउड लॉउड नॉइस पास फ्यूडेज स्पेशल वेन आई यूज इट ऑन हाई यू स्पेट राइट राइट स्वीटिंग ऑफ इट बट लाइट स्वीटिंग ऑफ ऑगेन एं� नींद नहीं आ पा रही है अच्छे से और आपको तो पता ये कि उन्हें कितनी जरूरी होती है प्लीज़ टेल मी ले आउ टू समिट पर्टिकुलर फॉर्म मेंटेनेंस रिक्वेस्ट अल्सो एक डिसीजन अर्जेंट रिक्वेस्ट बिकॉज प्रीवियस ली आई ऑल्सो कॉन कॉन्टैक्ट कर सकता हूँ इसके बारे मेरे को जानना था"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P22/WhatsApp Ptt 2026-11-06 at 2.31.14 PM.wav",
+   "clip_id": "P22_87"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "Hello, good morning. I am a second year BTEC mechanical engineering student. I am calling regarding the course registration for the upcoming semester. I was trying to add an HSS elective, specifically introduction to psychology, but the IMS portal is showing a prerequisite error, even though there are no prerequisite listed in the course handout. Can you please check if there is a glitch in the system? Also, tomorrow is the last jet for Adro. So I am a bit worried about that I would miss out on this course. Do I need to get an email approval from the course instructor to get this sorted?"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P21/WhatsApp Ptt 2026-11-06 at 2.36.04 PM.wav",
+   "clip_id": "P21_84"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "हेलो आइडिजन हैद बेस्ट मेरे रूम का रूम की कुंडी टूट गई उसका स्क्रूब आ गया तो स्कूल लगाने का था एण्ड कवर्ड में भी सेम इशू आ रहे उसका हैण्डर बाहर आया जा रहा है तो आप किसी को बेचके टिक्कर मेक्स टूट डेस में टिक्कर आ सक"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P9/PTT-20261019-WA0021.wav",
+   "clip_id": "P9_44"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "Hi, I need help with an assignment submission issue. I completed my assignment and uploaded the file to the course portal before the deadline. But the website shows an error when I click the submit button. After refreshing the page, I could no longer see the loaded file. I uploaded the assignment before the deadline. Now I don't get any information. I have a screenshot of the error message and copy of the completed assignment. Please tell me how I should report this issue to make sure that my submission is considered on time. If I am a professor of male complaint, I will not be able to do so. Please let me know what evidence I should attach and whether there is an official process for technical problems during assignment submission."
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P22/WhatsApp Ptt 2026-11-06 at 2.42.28 PM.wav",
+   "clip_id": "P22_98"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "Good afternoon. I am a BTEC fresher student staying in Firpil hostel. I wanted to inquire about the procedure for changing rooms. Currently I am in a triple sharing room but my room mate and I have completely different schedules. He stays very late with the lights on which is severely affecting my sleep and my health. I have tried talking to him but it hasn't I spoke to my student guide and they advised me to contact the hostel office. Are there any vacant triple rooms or perhaps another room where someone is looking to change their roommates? Do I need to write a formal application to the warden or is there an online form for room reallocation request?"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P16/clip_08.wav",
+   "clip_id": "P16_106"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "portal. Hello, IIT June help this. I need an official medium of instruction certificate from my master's application abroad. How can I request one?"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P5/PTT-20261018-WA0012.wav",
+   "clip_id": "P5_17"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "सर मुझे एक ऐसी बात पूछनी थी कि मेरे आपके कॉलेज से मतलब आईआईटी गांधीनगर में से मेरा बीटेक हो चुका है मैंने ड्यूअल डिग्री करी है सीएस और तो मुझे अब ऐसा पूछना था कि मैं आगे एमएस करूँ या कैंपस थ्रू सिलेक्शन होकर मैं आ� और एमएस बाहर जाकर करे की इधर ही करे एमएस करने से कुछ फायदे होएंगे और लॉस होगे हमें ये बताए और एमएस करके आगे अपॉर्चूनिटी है भी या नहीं भी क्योंकि अगर सीनियर लोगों का अगर देखा जाए तो बहुत से लोग बीटेक करके कैंपस थ्र तो कैंपस भी मतलब बहुत सी कंपनी एमएस और एमटेक वालों को रेफर नहीं करती तो एमएस करना चाहिए या नहीं करना चाहिए"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P9/PTT-20261019-WA0024.wav",
+   "clip_id": "P9_47"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "गुड मॉर्निंग आई मीट गाइडेस्ट रिलॉयनिंग इंटरशिप वेरिफिकेशन लेटर कॉम इंस्टीट्यूट आई एवी न आई टू समिट ऑफिशियल डॉक्यूमेंट कॉम्फॉर्मिंग में स्टूडेंट स्टेटस एंड एकेडमिक एप्लीशन एज पार्ट ऑ� लेटेस्ट लाइट टू बैद रिक्वेस्ट करने में कुछ लगते हैं तो क्या मैं एप्लिकेशन की रिप्सेप या कोई टेम्परेरी कंफॉर्मेशन समिट कर सकता हूँ प्लीज एंड प्रोसेस आई कैन मीट द कंपनी स्ट्रेट लिंक"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P18/clip_07.wav",
+   "clip_id": "P18_119"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "Hello IIT Gen. Helidas. Can I audit an additional elective course without it affecting my and stick to the 8 point average."
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P14/clip_08.wav",
+   "clip_id": "P14_95"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "आपको हेलो आईटीजीएम हेल्प डेस्क. ओबीसीएनसीएल सर्टिफिकेट वैलिटीटी डेट कट ऑफ डेट पाचशी नहीं चलेगी ये रिन्यू करवाना पड़ेगा. प्रेपर ऑडियम सपोर्ट आपको."
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P20/WhatsApp Ptt 2026-11-05 at 6.49.35 PM.wav",
+   "clip_id": "P20_62"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "નમસ્તે મહારા દીકરો આઈટી ગાંધીનગરમાં મેળવે તો તેના હશીલમાં કેવી સુવિધાઓ મળશે તે જાણવુ જરૂર પડે ત્યારે વિદ્યાર્થીઓને મદદ કરી શકે છે હું પણ જાણવા માંગુ છું કે જો મારા દીકરાન�"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P13/clip_04.wav",
+   "clip_id": "P13_69"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "નમસ્કાર ડોક્યુમેન્ટ મેન્ડેટર છે કે ઓનલાઇન અપલોડ કરી શકાય"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P21/WhatsApp Ptt 2026-11-06 at 11.13.42 AM.wav",
+   "clip_id": "P21_75"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "हेलो आईटीजीएन हेल्थ देस्ट मेरे को पूछना था कि अभी बाथरूम में पानी नहीं आ रहा था बहुत टाइम से तो कब हो जाएगा एंड कितना टाइम देगा एक बार बचा दो"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P21/WhatsApp Ptt 2026-11-06 at 11.14.57 AM.wav",
+   "clip_id": "P21_76"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "हेलो आईटीजी देश मेरे को लोगो सिस्टम के बारे में जानने का था लेकिन वो कब आएगा मैंने एक दो हफ्ते से आ नहीं रहा पता नहीं कोई इसे लाइक बैग नहीं रखे हुए थे लेकिन बैग नहीं रहे तो आज को बता दे क्योंकि हमें हर बार वो स्मार्ट लोग"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P22/WhatsApp Ptt 2026-11-06 at 2.44.29 PM.wav",
+   "clip_id": "P22_100"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "Hi, I am a final year student from Hikom hostel. I am calling regarding the Masribet policy. I have been selected for an off campus internship and I will not be on campus for the entire month of February. I know we need to apply for a Masribet in advance. I have already filled out the form on the MS portal but the status is showing as pending approval. You will also need to submit a hard copy of my lever approval from faculty advisor to the hostel office. Or is the online approval sufficient to stop the mischarges?"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P16/clip_05.wav",
+   "clip_id": "P16_103"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "Hello IITGN help desk. My laptop is unable to connect to the campus VPN after a recent operating system update. Please help troubleshoot."
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ }
+]

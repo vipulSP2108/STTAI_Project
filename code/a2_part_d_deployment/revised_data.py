@@ -20,8 +20,15 @@ def load_json(relative_path, root=ROOT):
 def release_rows(root=ROOT):
     consensus = load_json("final_annotation/consensus_gold_182.json", root)["clips"]
     annotations = {row["clip_id"]: row for row in consensus}
-    curated = load_json("model/data/metadata/gold_transcripts_manifest.json", root)["manifest"]
-    references = {row["uuid"]: row for row in curated}
+    # Reference transcripts come ONLY from the human transcription round (Round T). The curated
+    # strings in gold_transcripts_manifest.json were withdrawn (model/results/reference_audit.json).
+    references = {}
+    human = root / "data/labels/human_transcripts.csv"
+    if human.exists():
+        with human.open(encoding="utf-8", newline="") as stream:
+            references = {row["uuid"]: row["transcript"] for row in csv.DictReader(stream)}
+    asr = {row["uuid"]: row["transcription"]
+           for row in load_json("model/data/reports/offline_asr_predictions.json", root)["predictions"]}
     splits = load_json("model/data/splits/release_speakers.json", root)
     validation, test = set(splits["validation"]), set(splits["test"])
     if validation & test or {"P15", "P17", "P18", "P19"} & validation:
@@ -30,7 +37,7 @@ def release_rows(root=ROOT):
     metadata = root / "model/data/metadata/metadata_182.csv"
     with metadata.open(encoding="utf-8-sig", newline="") as stream:
         rows = list(csv.DictReader(stream))
-    if len(rows) != len(annotations) or len(rows) != len(references):
+    if len(rows) != len(annotations) or len(rows) != len(asr):
         raise ValueError("Release metadata and annotation counts differ")
     for field in ("uuid", "original_clip_id", "sha256"):
         if len({row[field] for row in rows}) != len(rows):
@@ -41,11 +48,9 @@ def release_rows(root=ROOT):
         uuid, speaker, clip = (row[key] for key in ("uuid", "original_speaker_id", "original_clip_id"))
         if row["audio_path"] != f"model/data/audio/{uuid}.wav" or Path(uuid).name != uuid:
             raise ValueError(f"Unexpected audio path for {uuid}")
-        annotation, reference = annotations[clip], references[uuid]
-        if (annotation["speaker_id"], reference["original_speaker_id"], reference["original_clip_id"]) != (speaker, speaker, clip):
-            raise ValueError(f"Reference identity mismatch for {uuid}")
-        if annotation["gold_intent"] != reference["gold_intent"] or not reference["transcript"].strip():
-            raise ValueError(f"Reference label or transcript missing or inconsistent for {uuid}")
+        annotation = annotations[clip]
+        if annotation["speaker_id"] != speaker:
+            raise ValueError(f"Speaker mismatch for {uuid}")
         if speaker in test:
             partition = "test"
         elif speaker in validation:
@@ -54,7 +59,9 @@ def release_rows(root=ROOT):
             if speaker in {"P15", "P17", "P18", "P19"}:
                 raise ValueError(f"Pilot gold speaker {speaker} may not train the release router")
             partition = "train"
-        groups[partition].append({**row, "intent": annotation["gold_intent"], "reference": reference["transcript"]})
+        groups[partition].append({**row, "intent": annotation["gold_intent"], "a1": annotation["a1_intent"],
+                                  "a2": annotation["a2_intent"], "languages": annotation["languages"],
+                                  "text": asr[uuid], "reference": references.get(uuid)})
     for partition, items in groups.items():
         if {row["intent"] for row in items} != CLASSES:
             raise ValueError(f"Release {partition} does not cover the four intents")

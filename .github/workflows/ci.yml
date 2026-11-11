@@ -17,7 +17,8 @@ jobs:
 
       - name: Verify data constraints and the original gold checksum
         run: |
-          python -m unittest discover -s tests -p 'test_revised_release_data.py' -v
+          python -m pip install --quiet pyyaml==6.0.2 numpy==1.26.4 scipy==1.14.1 scikit-learn==1.6.1
+          python -m unittest discover -s tests -v
           echo '64b7647b5d0d35733063c77caab122a1a7c24ac6c70b7d476ffbabd9a2448ca9  data/gold_test_set.csv' | sha256sum --check
 
       - name: Generate a synthetic WAV for sample validation and prediction

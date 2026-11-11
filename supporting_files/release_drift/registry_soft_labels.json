@@ -1,0 +1,8 @@
+{
+ "production": {
+  "name": "router_b7_v1",
+  "train_clips": 77,
+  "C": 0.1
+ },
+ "rollback_demo": "no promotion, production unchanged"
+}

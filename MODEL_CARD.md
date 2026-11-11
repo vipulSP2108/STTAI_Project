@@ -1,65 +1,47 @@
-# Model Card — Project 5: Cross-Lingual Institute Voice Helpdesk ASR
+# Model card — Voice Helpdesk router `indic-v2-lid-router-b3-expert`
 
-## Model Details
-- **Model Name**: IITGN-VoiceHelpdesk-ASR-Intent-v1 (`production`)
-- **Model Type**: End-to-end Automatic Speech Recognition & 4-Way Intent Router
-- **Base Architecture**: OpenAI Whisper `base` (71.8M parameters, decoder adapted) + Joint MLP Intent Classification Head (64 hidden, ReLU, Dropout 0.2) with sublinear TF-IDF feature extraction
-- **Parameters**: 71.8M (Whisper backbone) + 64K (intent routing head)
-- **License**: MIT / Academic Open Research (CS203 IIT Gandhinagar)
-- **Primary Framework**: PyTorch (CPU-only execution, FP32 inference)
+Revised 11 Nov 2026. Replaces the earlier card, whose WER figures used withdrawn reference text.
 
-## Intended Use
-- **Primary Domain**: Administrative helpdesk voice queries in Indian academic institutions (IIT Gandhinagar).
-- **Supported Languages**: Code-mixed Hindi-English (Hinglish), Gujarati-English, and Indian English.
-- **Intent Classes**:
-  1. `admissions`: Eligibility, cut-offs, GATE/JEE registration, entrance counseling.
-  2. `hostel_mess`: Room allotment, caution deposits, dining rebates, hall maintenance.
-  3. `it_support`: Institute email/webmail, VPN configuration, Wi-Fi logins, password resets.
-  4. `student_services`: Academic transcripts, bonafide certificates, identity cards, semester fee clearances.
-- **Out-of-Scope Uses**: High-risk medical transcription, judicial court reporting, or continuous multi-party meeting transcription.
+## Intended use
+Route short spoken queries to one of four IIT Gandhinagar helpdesk queues (admissions,
+hostel/mess, IT support, student services) and show a transcript. Assistive only: a person
+handles the query, and low-confidence or unrouted queries should go to a general desk.
+Not for decisions about individuals, not for languages other than English/Hindi/Gujarati.
 
-## Training & Evaluation Data
-- **Training Partition**: 171 canonical clips across 10 speakers (`data/splits/train.csv`).
-- **Validation Partition**: 17 clips across 3 speakers (`data/splits/val.csv`).
-- **In-Domain Test Partition**: 29 clips across 4 speakers (`data/splits/test.csv`). Note: Matches the 29-clip held-out gold test split (`data/gold_test_set.csv`).
-- **Out-of-Distribution Shift Partition**: 32 clips across 2 speakers (`data/splits/cohort_b_shifted.csv` - Maharashtra accent).
-- **Augmented Audio Partition**: 60 multi-condition perturbation clips (MUSAN noise, RIR reverb, tempo/pitch shifts) from Assignment 1 Part D.
-- **Held-Out Gold Test Set**: 29 clips (`data/gold_test_set.csv`, frozen SHA-256 `64b7647b5d0d35733063c77caab122a1a7c24ac6c70b7d476ffbabd9a2448ca9`). Dual reporting provided on original references and `data/gold_corrections.csv`. Total dataset audio duration is 1.25 hours (4,516.5 s), which is below the 2.0 h target and is disclosed transparently.
+## System
+| Stage | Component | Version |
+|---|---|---|
+| Language routing | Logistic regression on Whisper-base 99-language log-probabilities → en/hi/gu | trained in image on train+val speakers |
+| ASR (hi) | `vasista22/whisper-hindi-small`, CTranslate2 int8 | `fb4a24afc20c42906deed31c3689e4be31da41fe` |
+| ASR (gu) | `vasista22/whisper-gujarati-base`, CTranslate2 int8 | `59c972a6f00f529efc7c9b631dff338157561ed9` |
+| ASR (en) + LID | `Systran/faster-whisper-base` int8 | `ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66` |
+| Intent | char 2–5-gram TF-IDF + MiniLM whole-query and opening-topic embeddings, trained on expert-final labels, LR (C=0.3 chosen on validation) | MiniLM `e8f8c211226b894fcb81acc59f3b34ba3efd5f42` |
 
-## Measured Performance Metrics & 95% Bootstrap Confidence Intervals
-Empirically measured via 1,000 bootstrap resamples on authentic audio clips using OpenAI Whisper `base` and the trained intent classifier under standardized text normalization (`code/normalisation.py`):
+Decoding: greedy, VAD, no prompt (the old domain prompt caused copy loops). CPU only.
 
-| Split Partition | Transcript WER (95% CI) | Transcript CER (95% CI) | Intent Accuracy (95% CI) | Macro-F1 (95% CI) | Note / Ground Truth Condition |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **Validation Set (17 clips)** | 1.4028 [1.2252, 1.6013] | 1.0497 [0.9680, 1.1428] | 0.5352 [0.2941, 0.7647] | 0.4513 [0.2262, 0.6365] | In-domain validation benchmark |
-| **Gold Test Set (29 clips, Original)** | **1.2719** [1.1557, 1.3933] | **0.9447** [0.8910, 1.0064] | **0.2398** [0.1026, 0.4138] | **0.2245** [0.0833, 0.3886] | Uncorrected template references |
-| **Gold Test Set (29 clips, Corrected)** | **1.2984** [1.0875, 1.5009] | **1.0082** [0.8549, 1.1503] | **0.3076** [0.1379, 0.4828] | **0.2611** [0.1269, 0.3927] | Verified audio transcriptions |
-| **Shifted Cohort B (32 clips)** | 1.1044 [1.0401, 1.1872] | 0.9473 [0.8998, 0.9943] | 0.2516 [0.1250, 0.4062] | 0.2185 [0.0893, 0.3586] | Out-of-domain dialect drift |
-| **Augmented Test Set (60 clips)** | 1.6839 [1.5898, 1.7864] | 1.0595 [1.0118, 1.1131] | 0.6350 [0.5167, 0.7500] | 0.6129 [0.4877, 0.7375] | Multi-condition acoustic stress test |
-| **Cohort B Held-Out (P13, 13 clips)** | 1.1044 [1.0401, 1.1872] | 0.9473 [0.8998, 0.9943] | 0.3077 [0.0769, 0.5385] | 0.2821 [0.0650, 0.5050] | Pre-retraining baseline (4/13) |
-| **Cohort B Retrained (P13, 13 clips)** | 1.1044 [1.0401, 1.1872] | 0.9473 [0.8998, 0.9943] | **0.3846** [0.1538, 0.6154] | **0.3650** [0.1300, 0.5900] | Post-retraining candidate (5/13, +7.7% gain) |
+## Data
+182 clips, 20 speakers, 109 min, intents double-annotated (κ = 0.656) with expert adjudication.
+Release split by speaker: 104 train / 38 validation / 40 test. Router training text is ASR output,
+not human transcripts (none exist yet). See `STTAI_reports/report_final/report/report_A1.tex`.
 
-### Key Scientific Findings & Transparent Disclosures
-1. **Audio vs. Template Reference Discrepancy & Keyword Leakage**:
-   - Reference transcripts in the dataset scaffold were seeded from synthetic prompt templates containing sequential numerical IDs (e.g. `ref 1384`, `inquiry 1493 dwara...`). Classifiers evaluated on human reference transcripts score high accuracy due to formulaic header leakage.
-   - However, in real acoustic recordings, student participants spoke natural conversational Hindi-English without reading template headers. Consequently, only 14 of 838 reference words appear in Whisper's output (1.7%), and 19 of 29 gold clips have WER > 1.0, yielding a gold WER of **1.2719 [1.1557, 1.3933]** on original references and **1.2984 [1.0875, 1.5009]** on corrected transcripts.
-2. **Paired Statistical Significance Testing**:
-   - Paired Wilcoxon signed-rank test on per-clip WER between Baseline 1 (unadapted Whisper) and the Proposed System: $W = 0.0, p = 1.0000$ (no statistically significant difference).
-   - Exact McNemar test on paired intent routing outcomes between Baseline 1 and Proposed: $\chi^2 = 0.10, p = 0.7518$ on original gold ($p = 0.5791$ on corrected gold). On the held-out gold set, Baseline 1 and Proposed demonstrate comparable performance.
-3. **Promotion Gate Calibration & Boundary Sensitivity**:
-   - Cohort B (32 clips) is partitioned strictly by speaker: **Speaker P4 (19 clips)** forms the active learning adaptation pool, while **Speaker P13 (13 clips)** is reserved for held-out evaluation (`data/retraining/cohort_b_heldout.csv`).
-   - The promotion gate in `configs/gate.yaml` enforces $\ge +5.0\%$ gain on Cohort B and $\le 4.0\%$ degradation on Gold. Rehearsal candidate passes by exactly one clip ($4/13 = 30.8\% \to 5/13 = 38.5\%$, $+7.7\% \ge 5.0\%$), while Gold drops by one clip ($7/29 = 24.1\% \to 6/29 = 20.7\%$, a $3.45\%$ drop $\le 4.0\%$). The 4.0% gate tolerance accommodates this discrete single-clip variance ($1/29 \approx 3.45\%$), illustrating the sensitivity of automated gating on small sample cohorts.
+## Metrics (all speaker-disjoint)
+| Evaluation | Result | File |
+|---|---|---|
+| 5-fold × 5-seed speaker CV, intent accuracy (B3, expert labels) | 53.6 % ± 9.1, macro-F1 0.502 (majority 24.4 %; soft-label B7 57.1 %) | `model/results/intent_v2_ablation_asr_hybrid*.json` |
+| Release test, 40 clips, 4 unseen speakers (text-level) | 60.0 % [52.5, 78.9], macro-F1 0.609; previous router 47.5 %; McNemar p = 0.125 (soft-label variant, first run: 57.5 %) | `model/results/release_eval.json` |
+| Language routing, speaker CV | 81.1 % (Gujarati 71 %) vs 74.4 % for restricted argmax | `model/results/lid_router.json` |
+| End-to-end in container, `--network none`, 40 test clips | intent 60.0 %, macro-F1 0.602, routing 75 %, peak RAM 2.0 GB (latency on emulated amd64/M1: p50 40 s, RTF 2.0) | `supporting_files/docker_indic_v2/indic_v2_validation.json` |
+| Transcript WER | **not reported** until human transcripts exist | — |
 
-## Slices & Subgroup Robustness (Gold Test Set)
-- **Acoustic Noise Condition**: Quiet Room (30.0% Acc, $n=10$, WER 1.180), Corridor Reverb (23.1% Acc, $n=13$, WER 1.169), Campus Outdoor (16.7% Acc, $n=6$, WER 1.639).
-- **Language Mixture**: Hindi-English mix (31.2% Acc, $n=16$, WER 1.196), Gujarati-English mix (15.4% Acc, $n=13$, WER 1.362).
-- **Speaker Origin Region**: Rajasthan (33.3% Acc, $n=6$), North India (30.0% Acc, $n=10$), Gujarat (15.4% Acc, $n=13$).
-- **Recording Device**: Xiaomi Redmi Note 11 (33.3%, $n=6$), Samsung Galaxy M52 (30.0%, $n=10$), OnePlus Nord 2 (16.7%, $n=6$), Realme Narzo 30 (14.3%, $n=7$).
+## Slices and weak groups
+Accuracy by language (B3, CV): English 68 %, Hindi 58 %, code-mixed 48 %, Gujarati 41 %; on the release test: English 89 %, Hindi 65 %, Gujarati 29 %, code-mixed 25 %.
+Clips under 15 s are weakest (≈48 %). Per-speaker leave-one-out accuracy ranges 0–100 %; the
+largest contributor (P13, 22 clips) is at 32 %. Lowest recall (CV): admissions 43 %, student services 47 %.
 
-## Real Measured Hardware Footprint & Latency Profile
-Measured empirically on Darwin arm64 (8 CPU cores, 0 GPU) across all 29 Gold test clips (`supporting_files/loadtest/latency_profile.json`):
-- **Peak RSS Memory**: **782.73 MB** (measured via `resource.getrusage`, well under 16 GB ceiling).
-- **Real-Time Factor (RTF)**: **0.165** (measured offline; runs 6.1x faster than real-time).
-- **Throughput**: **0.23 queries/second**.
-- **p50 Total Latency**: **2,855.2 ms** (ASR: 2,854.0 ms, Intent Classifier: 0.007 ms).
-- **p95 Total Latency**: **13,441.5 ms** (dominated by lengthy multi-sentence audio clips).
+## Limitations and risks
+- Labels: 74 % raw inter-annotator agreement; annotators differ in class usage (Stuart–Maxwell p < 0.001).
+- Tiny test set (40 clips, 4 speakers): wide intervals; v2 vs v1 not significant.
+- Gujarati is under-served at every stage (routing, ASR, intent) — a fairness risk for Gujarati speakers.
+- Confidence separates right from wrong only weakly (0.46 vs 0.36); do not use it to auto-close tickets.
+- Speakers are students; parents and staff are under-represented; accents outside the four regions are untested.
+- Audio of consenting volunteers only; no audio is stored by the service, requests are logged without content.

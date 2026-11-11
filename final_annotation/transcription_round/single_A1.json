@@ -1,0 +1,945 @@
+[
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P8/PTT-20261019-WA0041.wav",
+   "clip_id": "P8_38"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "हैलो मैं अपने बेटे के एडमिशन के बाद कैंपस पहुंचने और रिपोर्टिंग की प्रक्रिया के बारे में जान लेना चाहता हूं हम दूसरे राज्य से रहते हैं इसलिए अगर उसका चयन अपने यहां आईआईटी गांधी नगर में हुआ तो हमें यात्रा और रहने क इसके लिए बताइए कि एडमिशन कंफर्म होने के बाद विद्यार्थियों को कैम्पस में किस तारीख को रिपोर्टिंग करना होगा और क्या रिपोर्टिंग के लिए कोई नियमित समय निश्चित किया गया है क्या विद्यार्थी के साथ माता पिता भी आ सकते हैं अगर हम या उपाय करके उसके लिए सुझाव उपलब्ध है उपलब्ध कीजिए मैं यह भी जानना चाहता हूं कि रिपोर्टिंग के समय वोट का कमरा मिल सकता है या उसके लिए अलग सी प्रक्रिया करना पड़ती है उपाय करके अधिकाधिक रिपोर्टिंग निर्देशक कहा मिलें"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P20/WhatsApp Ptt 2026-11-05 at 6.55.01 PM.wav",
+   "clip_id": "P20_66"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "નમસ્કાર મારા દીકરાને આઇટી ગાંધીનગરમાં એડમિશન મળવાની શક્યતા છે એટલે હોસ્ટેલ ફાળવણી વિ જો રૂમ ફાળવાઈ જાય તો શું વિદ્યાર્થી નકી કરેલી રિપોટિંગ તારીખ પહેલા હોશલમાં આવી શકે છ�"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P22/WhatsApp Ptt 2026-11-06 at 2.45.48 PM.wav",
+   "clip_id": "P22_101"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "Hello. Good morning. I am a PhD scholar residing in the married scholars apartments. I have a query regarding keeping a personal two-wheeler on campus. My wife recently got a job in Andabha's city and she needs a scooty to commute daily from the IITian campus to her office. I understand that undergraduates are generally not allowed to keep vehicles, but I believe that there is an exception for married scholars and staff. Could you please entire detail the entire process to get a vehicle pass? What documents do I need to submit to the security and hostel office? Do we need to show the vehicles RC book, insurance and my wise driving license. Also, is there a designated parking spot allotted to us near our block or is it just a general parking? And also how much is the sticker fee and how long does it take for the security desk at the main gate to issue the permanent RFID tag for the vehicle?"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P2/WhatsApp Ptt 2026-11-06 at 12.06.40 PM.wav",
+   "clip_id": "P2_9"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "I wanted to contact with the student affairs because I have seen currently into the hostels that there is a lot of maze going on. I need to constantly shift from one hostel to the other hostel that has been creating some extra efforts and also the amount of material like the Merasama is like too much and I need to constantly shift that that is taking too much of effort. Either you can assign some people to us so that they will help us in shifting the places because in one semester this is the third time I am shifting my room and this is creating a lot of overhead and it's not seeming proper to me, particularly to me. So can you help me in guiding here so that the process is easy for this particular thing?"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P21/WhatsApp Ptt 2026-11-06 at 11.06.30 AM.wav",
+   "clip_id": "P21_70"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "हैलो आईडीजे डेस्क मेरे को मेंटीनेंस कराने का था इसी का इसी खराब हो चुका है और लेटिकल भी आ रहे आखिर के बाद चेक कर दोगे क्या"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P13/clip_09.wav",
+   "clip_id": "P13_74"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "સપોર્ટ આપો નમસ્કાર હોય સ્ટુડન્ટ માટે એડમિશન એપ્લિકેશન ફોર્મ અને સ્કોલરશિપ શું છે"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P13/clip_12.wav",
+   "clip_id": "P13_77"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "નમસ્કાર ફોર્મ કયું હતું રિફ્લેક્ટ"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P22/WhatsApp Ptt 2026-11-06 at 2.34.17 PM.wav",
+   "clip_id": "P22_90"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "Good afternoon. I am a finally a render graduate student. I urgently need some official transcripts for my graduation school applications in the US. I have already applied through the portal and paid the required fees for five hard copies and one digital copy yesterday. However, one of the universities has a strict deadline for this Friday. Is there any way the academic office could expedite the process for a digital copy and email it directly to the university's admission office? I can share the specific email address and my application reference number. It would be really helpful if you could do that."
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P21/WhatsApp Ptt 2026-11-06 at 11.06.08 AM.wav",
+   "clip_id": "P21_69"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "हेलो आईटीजी एंड हेल्प डेस्क"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P21/WhatsApp Ptt 2026-11-06 at 11.21.15 AM.wav",
+   "clip_id": "P21_82"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "हेलो है हमारे यहाँ सुसाइड रखिए एक बंदा गिर गए आप जल्दी से एंबुलेंस भेज सकते हो क्या"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P21/WhatsApp Ptt 2026-11-06 at 11.15.57 AM.wav",
+   "clip_id": "P21_77"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "हेलो एडीजीएन हेल्प डेस्क मेरे को मैच का क्यू आर चेन करवाने का था क्योंकि मैच का खाना मेरे को आगा पसंद नहीं आ रहा पोषक तो मोहनी मोहनी में सही रहेगा भोपाल में खाना बड़ा खराब है उसमें कुछ भी बनाये जा रहे दाल में बस पानी होता है और � चलेगा थैंक यू"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P9/PTT-20261019-WA0023.wav",
+   "clip_id": "P9_46"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "हैलो देयर एवं किसी व विद वाइल एक्सप्रेस द यूनिवर्सिटी डिजिटल्स लाइब्रेरी आई कैल लॉगिन टू द स्टूडेंट पोर्टल सक्सेसफुली बट वैन इन ऑनलाइन रिसर्च पेपर इन द वेबसाइट आक्स मी टू साइनियन इन आप्टे न्यूँ � डिजिटल एक्सेस अपाउंट एडिशन एक्टिवेशन प्रोजेक्ट प्रोजेक्ट क्या इसके लिए लाइब्रेरी स्टाफ से कॉन्टेक्ट करना होगा या आईटी सपोर्ट टीम मेरी सेटिंग सेक कर सकती है प्लीज़ गाइड मी आउट फॉलो टू डिस्टोर एक्सेस"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P16/clip_09.wav",
+   "clip_id": "P16_107"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "Hello, IITGN help this. My name is spelled differently on different student ID and academic records. What is the correction procedure?"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P16/clip_03.wav",
+   "clip_id": "P16_101"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "someone inspected today? Hello IITGN help desk. Is there a separate facility for storage luggage during semester?"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P7/WhatsApp Audio 2026-10-19 at 2.37.56 PM (2).wav",
+   "clip_id": "P7_26"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "Hello Sir, I am looking for the admission information process in the IIT Ghandinagar for my daughter. She wants to study engineering and we want her to have a safe and a good living environment along with her studies. I would ask about the girls hostel facilities in particular. Is there a separate hostel for students? What safety arrangements have been made in the hostel? And what are the rules related to Australia? What is the like? What is the night time? Close time of Australia for girls. Is there any rules relating to night time commuting? In addition, does the Australia have a world and a response to the officer? I will be well to contact if necessary. We also want to know if parents can come to campus to visit their child or if they have to get a permission first. order the process, please give me necessary information so that I will check it with and then decide. So please let us know these things so that we can properly guide our daughter for admission."
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P4/PTT-20261018-WA0017.wav",
+   "clip_id": "P4_12"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "हैलो नमस्कार सर मैं वाल्मिक पाटी नंदवा जिले से बोल रहा हूँ मेरा प्रिय वाहब हो गया पीडी का तो मुझे अब फाइनल मैंने बाइंडिंग कर लिए प्रिय वाहब ने सुझाई हुई सभी दुरुस्त या मैंने कर लिए और करेक्शन हो गया मैंने फाइनल वाह कितने दिन लगेंगे मुझे फाइनल वाईवा के लिए मेरा फाइनल वाईवा कम से कितने दिनों में होगा और उसके लिए मुझे क्या पीपीटी करनी पड़ेगी और क्या क्या प्रिपरेशन करना पड़ेगा कृपया करके हमें इसकी जानकारी दीजिएगा"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P13/clip_16.wav",
+   "clip_id": "P13_81"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "નમસ્કાર આઈઆરટી ગાંધીનગ વોઇસ હેલ્પડેસ્ક હોસ્ટ્રાલૂમ ચેન્જ એપ્લિકેશન ફોર્મ કિયા ઓફિસ�"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P16/clip_04.wav",
+   "clip_id": "P16_102"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "breaks. Hello IITGN help disc my student portal keeps logging me out every few minutes. Even after clearing the browser cache, can IIT investigate"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P22/WhatsApp Ptt 2026-11-06 at 2.35.11 PM.wav",
+   "clip_id": "P22_91"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "Hello, I am calling regarding the upcoming convocation ceremony. My son has completed his PhD in chemistry this year and we are very excited to attend. We received the invitation, but I have a few practical questions. Since we will be traveling with my elderly parents, I wanted to know how long the entire ceremony usually lasts. Also regarding the dress code, the email mentions traditional Indian attire, but is there a specific color code we need to adhere to for the PhD scholars and their families. Also do we need to RSVB for the number of guests attending the HIT after this ceremony? Or is it open to all family members accompanying the graduation student?"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P20/WhatsApp Ptt 2026-11-05 at 6.56.15 PM.wav",
+   "clip_id": "P20_67"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "નમસ્તે સહાય હું મારી દીકરીના અભ્યાસ અને ખર્ચ માટે આર્થિક સહાયની શક્યતા વિશે જાણવા માં� કરાવવાની પ્રક્રિયા પર કોલરશીપ અને આર્થિક સહાય સંબંધિત સત્તાવાર માહિતી તથા પરિણામાં � અરજી કરવાની છેલ્લી તારી ક્યાંથી જોઈ શકાય તે જણાવશો"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P9/PTT-20261019-WA0025.wav",
+   "clip_id": "P9_48"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "एक्स्यूज़ मी. आई वुल लाइक टू रिपोर्ट अबाउट द फर्स्ट रविज़ ड्यूरिंग द पास्ट फीट लाई यूज़ ली डेटिव इन द अकेडमिक एरिया इन द रेजिडेंशल एरिया इन द शेडल टाइम ऑन सेवरल ऑपरेशन्स. दिस हैज मेड डिफिक आई विल ऑल सो लाइट टू नो वेदर द शटल शटल हैजर डिसेंडली चेंज और एफ देर ए टू रिसीप अपडेट अवार्ड डिलियन क्या ट्रांसफर्ट ऑफिस को मेल करना सही रहेगा या कैंपस है ब्लैक्स पर कंप्लेंट रजिस्टर कर सकते हैं हाई होप देस इ�"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P21/WhatsApp Ptt 2026-11-06 at 11.10.10 AM.wav",
+   "clip_id": "P21_72"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "बड़ा मिल सकता है"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P21/WhatsApp Ptt 2026-11-06 at 2.37.16 PM.wav",
+   "clip_id": "P21_86"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "हेलो आईटीजीएन हेलो आईटीजीएन हेल्प डेस्क. मेरे रूम की सफाई करने वाला दो तीन बीच से आया नहीं है. हमने बात की भैया से जो दूसरी जगह जाते हैं उन्होंने कहा कि उनका कोई इश्यू है बट हमने पूछा कि आप कर सकते है नहीं तो उन्होंने बता क"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P18/clip_06.wav",
+   "clip_id": "P18_118"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "પ્લીસ હલ હૈલો આઈડીજી બેસ્ક કેલીટ રિક્વાયર્મેન્ટ્સ કમ્પ્લીટ કરવામાં તે મિનિમમ સીપી ક"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P21/WhatsApp Ptt 2026-11-06 at 11.18.25 AM.wav",
+   "clip_id": "P21_79"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "हैलो आईटीजेइन एमए को रूम बुक कराने के थे क्लासरूम के इवेंट के लिए आई गेस्ट मेरे को एबीएन वनों थ्री में दो दिन के लिए चाहे होगा वीकेंड वीकेंड के लिए ये इवेंट में हमारा हैकेथॉन होने वाला है जहाँ पे सारे लोग रहेंगे खाने वाने के खाने के लिए"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P18/clip_12.wav",
+   "clip_id": "P18_124"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "માર્ચે હોસ્ટલમાં હોટ વોટર સપ્લાય સવારે આવતી નથી ઈસ્મા ઇન્ટેનન્સ કમ્પ્લેન કારજિસ્ટર"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P21/WhatsApp Ptt 2026-11-06 at 11.11.07 AM.wav",
+   "clip_id": "P21_74"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "हैलो आईटीजीएम हैडबस्ट. मेरे यहाँ ये पंखा चल नहीं रहा एंड इसी में पानी टपकता या रहा है जो सीधा स्विटज बोर्ड पर आ रहा है जिससे आईएस रिलिटिकल इशूज हो सकते है तो क्या आप एक बार चेक कर लोगे एंड पंकियों में से बहुत रो"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P5/PTT-20261018-WA0015.wav",
+   "clip_id": "P5_20"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "नमस्ती सर, मुझे आपके कॉलेज में एडमिशन करवाना था, तो डॉक्यूमेंट डॉक्यूमेंट वेरीफिकेशन के वक्त हमें कौनसे-कौनसे डॉक्यूमेंट साथ लेना चाहिए और वो फीस्ट्रक्चर जो है उसके हिसाब से जो हमें लोन लेना है वो वो भी उसी के सा� हमारे फाइनेंशियल कंडीशन थोड़ी वीक है तो मुझे कौनसे कौनसे एजुकेशन लोन मिलेंगे और वो लोन जो है वो लोन हमें कॉलेज की कैंपस में से मिलेंगे या बाहर के प्राइवेट बैंकों में से लेना पड़ेगा यह बताइए और डॉक्यूमेंट वेरिफिके और कौन से कौन से डॉक्यूमेंट लगेंगे हमें कृपया बताइए"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P7/WhatsApp Audio 2026-10-19 at 2.37.57 PM.wav",
+   "clip_id": "P7_30"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "Hello sir. I would like to know about the admission process for my son and the total cost of study. Like what is the admission process and what are the things required. We come from because we come from a middle class family so it is important for us to understand what is the admission fees as well as hostel fees and food expenses so that we can arrange our current power convenience do fees in IIT, Ghandinagar, have to be submitted. Every semester or once a year means what is the process about that? Are who still rent, miss fees and other compensatory charges different from the tuition fees? If a student is eligible for financial aid or scholarship should they apply at the beginning or what is that process? We also need to know where to see the last date for submission of fees and through which experiment is made if the full details of the fees are given in official documents, please guide us about it. Thank you sir."
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P13/clip_01.wav",
+   "clip_id": "P13_66"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "नमस्कार आईआईटीजीएन वॉइस हेल्प डेस्क"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P22/WhatsApp Ptt 2026-11-06 at 2.33.17 PM.wav",
+   "clip_id": "P22_89"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "Hi, I'm an Mtech first year student at IIT Ghandi Naur. I am calling to inquire about the branch and specializations for policies. I am currently enrolled in the Civil Engineering Department under the structural engineering specialization. But after attending the first semester, I am highly interested in shifting my focus towards the water resources and environmental engineering specialization. I have maintained a CPA of 9.2 in my first semester. I have read the student manual, but it mostly talks about BTEC branch changes. I wanted to know if MTEX students are allowed to change their specialization within the same department. If yes, what is the exact procedure? Do I need to get a no objection certificate from my current faculty advisor and the HOD? Furthermore, if the changes are proved, will my fellowship be affected in any way and will the credits I earned in the first semester for my mandatory structural courses become as open electives please guide me on the paperwork required."
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P22/WhatsApp Ptt 2026-11-06 at 2.39.25 PM.wav",
+   "clip_id": "P22_95"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "Hi, I'm calling because my institute email ID seems to be blocked or suspended. When I try to login through Gmail, it says that the account has been disabled by the administrator. I suspect that it might be because I recently sent out a mass email for a club event to all student mailing list, which might have triggered a spam filter. I urgently need access to my email as I am expecting some internship interview links today. Could you please check my ID and restore my access? I won't send my emails directly again. So please, if you could do that, that would be really helpful."
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P9/PTT-20261019-WA0026.wav",
+   "clip_id": "P9_49"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "हैलो आई एम लुकिंग फॉर इन्फॉर्मेशन अबार्ड बोर्डिंग इक्विपमेंट्स फॉर एंड एकेडमिक प्रोजेक्ट में टीम इस वर्किंग ऑन ऑफ प्रोटोटेक बी नीड अफ यू बेसिक इलेक्ट्रॉनिक कंपोनेंट्स एंड टेस्टिंग टूल्स फॉर � क्यूमेंट अवेलेबल थ्रू लबलेटरी और टेक्निकल का क्लब और अदर कैपस फैसिलिटी. आई वुल्ड ऑलसो लाइक टू नू इफ इन इफ इन इफ यू प्रूबल फ्रॉव प्रॉब्लेट सुपरवाइजर बिफॉर बोवर्डिंग एनीथिक इक्यूमेंट इशू"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P8/PTT-20261019-WA0006.wav",
+   "clip_id": "P8_31"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "नमस्कार मुझे आईआईटी गांधी नगर में अपने बेटे के एडमिशन के बारे में कुछ जानकारी चाहिए थी मेरा बेटा अभी बारहवीं कक्षा में पड़ रहा है और वह आगे चलकर इंजीनियरिंग करना चाहता है हम जानना चाहते है कि यहाँ एडमिशन लेने के � एडवांस एडवांस की परीक्षा पास करनी पड़ती है इसके अलावा आवेदन की तार के और काउंसिलिंग की प्रक्रिया के बारे में भी बताइए हमें यह समझना है कि एडमिशन के लिए कौन कौन से दस्तावेज तैयार रखनी चाहिए अगर किसी एकाधिकारी वेबसा खुफा करके नाम बताइए ताकि हम पूरी प्रक्रिया पूरी कर सकते हैं"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P8/PTT-20261019-WA0040.wav",
+   "clip_id": "P8_37"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "नमस्ते मैं अपने बेटे के लिए वोट और खाने पीने की सुविधा के बारे में कुछ कुछ लेना चाहता हूं अगर उससे एडमिशन आईआईटी गांधी नगर में मिल जाता है तो वह पहली बार घर से दूर निकल रहा है पढ़ाई के लिए इसके इसलिए हमारे लिए य भोजन की व्यवस्था क्या है क्या मेश में नाश्ता दोपहर में खाना और रात को खाना नियमित रूप से मिलता है मिलता है क्या मेश का शुल्क वोस्टल फीस के साथ जमा करना पड़ता है या अलग से भुगतान करना पड़ता है मेरे बेटे को कुछ खाद्य पदार्थों होने पर संबंधित अधिकारियों से बात की जा सकती है रुपये करके उसके नंबर संपर्क नंबर बताइए इसके अलावा अगर विद्यार्थी छुट्टियों में घर आश्रयदाता है तो उसी दौरान मेज की शुल्क के नियम क्या है इसके बारे में रुपये करके हमें भ"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P22/WhatsApp Ptt 2026-11-06 at 2.43.41 PM.wav",
+   "clip_id": "P22_99"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "Hello, I am a father of newly admitted MSc student. We will be coming to IIT on the next week to drop her off and help her settle in the hostel. Since we are travelling all the way from Kerala, we will need a place to stay for two nights. I wanted to know if we can book a room in the college's guest house. Or if there are specific guest rooms available within the hostel premises for parents. If the institute accommodations are full, could you recommend some safe hotels nearby that usually cater to our ITG and parents? Also during our stay, our parents allow to eat in the student mess along with their children by paying some charge or do we have to eat outside only? Also what are the visiting hours if you want to help her arrange her room in the girls any information would be highly appreciated."
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P13/clip_21.wav",
+   "clip_id": "P13_86"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "નમસ્કાર હોસ્ટલ કોયડો લાઇટ ફ્લીકરિંગ થઈ રહી છે ઇલેક્ટેશિયન ને મોકલી"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P13/clip_10.wav",
+   "clip_id": "P13_75"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "કુપિયા અર્જન્ટ સપોર્ટ આપો નમસ્કાર સ્પોર્ટ એડમિશન વિલીઝ થયો છે કે નહીં"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P20/WhatsApp Ptt 2026-11-05 at 6.52.04 PM.wav",
+   "clip_id": "P20_64"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "નમસ્તે સહાય કયા દસ્તાવેજોની જરૂર પડે છે સાથે જો વિદ્યાર્થી પાસે હોય તો શું કરે કોણ કરીને સત્તા દસ્તાવેજોની ચેકલિસ્ટ ક્યાંથી મળશે તે પણ જણાવશો જેથી છેલ્લી ઘડીએ કોઈ મુશ્કેલી ન પડે"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_expert/records/P4/PTT-20261018-WA0019.wav",
+   "clip_id": "P4_14"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "नमस्तक जी मैं नितिन पटेल बोल रहा हूँ मेरा राज्य शास्त्र विषय में पूर्व ग्रैजू तो आये और मैं महाराष्ट्र विधि मंडल के विधुवड़ी पक्ष का अगदन सन दो हजार चौदह से चौबीस तक का मैं अगदन कर रहा हूँ पीडित संशोधन कर रहा सेवन परसेंट सिमिलर सेवन परसेंट आया तो उसमें कम करने के लिए मुझे कुछ उपाय सो जाए कि मैं क्या कर सकता हूँ जिस वजह से मेरे सिमिलरिटी कम हो और मुझे इसी समिशन में कोई दिक्कत न आए इसके लिए मुझे कुछ जानकरी है सहायता दे"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "data": {
+   "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P13/clip_14.wav",
+   "clip_id": "P13_79"
+  },
+  "predictions": [
+   {
+    "model_version": "indic-asr-v2",
+    "result": [
+     {
+      "from_name": "transcript",
+      "to_name": "audio",
+      "type": "textarea",
+      "value": {
+       "text": [
+        "એજન્ટ સપોર્ટ આપો નમસ્કાર ગાંધીનગર હેલ્પટ કરતો કે પ્લીઝ મેન્ટેનેન્ટ"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ }
+]

@@ -75,25 +75,26 @@ pip install -r code/requirements.txt
 # 3. Pull versioned data artifacts via DVC
 dvc pull
 
-# 4. Train production model from frozen configuration
-python code/train.py --config configs/final.yaml
+# 4. Speaker-disjoint evaluation: CV ablation, then the release split (selection on validation, test once)
+python model/src/training/intent_v2.py --ablation --sources asr_hybrid --only B0,B7 --tag soft
+python model/src/evaluation/release_eval.py
 
-# 5. Evaluate unified production model on held-out gold test set with 1,000 bootstrap CIs
-python code/a2_part_c_evaluation/evaluate.py --split gold
+# 5. Bias, reference and language-routing audits
+python model/src/evaluation/bias_audit.py && python model/src/asr/reference_audit.py && python model/src/asr/lid_router.py
 ```
 
-### Additional Automated Pipeline Commands
+### Additional pipeline commands (indic-v2)
 ```bash
-# Offline Gold Set Validation (Self-Contained Local Execution):
-python code/a2_part_d_deployment/validate_offline.py
-
-# Replay production traffic and verify label-free drift detection (Batch 5 alert, r=0.35):
-python code/a2_part_e_monitoring/traffic_replay.py
-
-# Closed-loop active retraining and 2-stage promotion gating:
-python code/a2_part_e_monitoring/retrain_pipeline.py --mode rehearsal
-python code/a2_part_e_monitoring/retrain_pipeline.py --mode no_rehearsal
-
+# Decoder confidence for all clips (active learning + monitoring input)
+python model/src/asr/decode_confidence.py
+# Active learning: decoder confidence vs random (A1 Part D)
+python model/src/training/active_learning_confidence.py
+# Audio augmentation robustness on the final corpus
+python model/src/augmentation/audio_robustness.py
+# Drift replay -> alert -> AL selection -> retrain -> frozen gate (A2 Part E)
+python code/a2_part_e_monitoring/release_drift_loop.py
+# Docker build / offline validation / UI: see docs/DOCKER_FRIEND_RUNBOOK.md and DOCKER.md
+# Pilot-era scripts (validate_offline.py, traffic_replay.py, retrain_pipeline.py) are historical only.
 ```
 
 ---
