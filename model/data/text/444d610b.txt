@@ -1,4 +1,0 @@
-UUID: 444d610b
-Transcript: નમસ્કાર ટેનિંગ અને કેપિયા.
-Target_Label: hostel_mess
-Spoken_Languages: Gujarati

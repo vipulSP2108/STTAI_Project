@@ -1,4 +1,0 @@
-UUID: 4bf50b52
-Transcript: Namaste, I am calling from Mumbai. My son is a second year student at IIT Gandhinagar and I wanted to enquire about the campus medical health centre.
-Target_Label: hostel_mess
-Spoken_Languages: English

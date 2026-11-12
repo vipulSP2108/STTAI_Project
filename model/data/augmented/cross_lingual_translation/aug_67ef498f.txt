@@ -1,7 +1,0 @@
-UUID: aug_67ef498f
-Parent_UUID: 6ba25efe
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.6699
-Transcript: હેલો આઈઆઈટીજીએન હેલ્પડેસ્ક, હમને કૈંપસ ક્લીન-અપ ડ્રાઇવ આયોજિત ની છે, વેસ્ટ સેગ્રીગેશન બિન્સ ના લિએ એડમિનિસ્ટ્રેશન થી પરમિશન કેવી રીતે લેં?
-Target_Label: student_services
-Spoken_Languages: ['Hindi']

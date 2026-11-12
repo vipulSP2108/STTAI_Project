@@ -1,7 +1,0 @@
-UUID: aug_b7728b62
-Parent_UUID: df57c59a
-Augmentation_Type: back_translation
-Similarity_Score: 0.9868
-Transcript: Hello IITGN Helpdesk, my parents will stay on campus for two nights. what is the procedure to confirm guest accommodation booking?
-Target_Label: student_services
-Spoken_Languages: ['English']

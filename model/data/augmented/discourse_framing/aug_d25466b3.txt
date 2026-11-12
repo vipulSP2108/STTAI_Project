@@ -1,7 +1,0 @@
-UUID: aug_d25466b3
-Parent_UUID: 778eedb3
-Augmentation_Type: discourse_framing
-Similarity_Score: 0.9545
-Transcript: Hello helpdesk, could you please clarify hello IITGN Helpdesk, my hostel room hot water supply has not been available for the past two days. Please have the maintenance team look into this
-Target_Label: hostel_mess
-Spoken_Languages: ['English', 'Hindi']

@@ -1,7 +1,0 @@
-UUID: aug_5ab03f55
-Parent_UUID: 82ec9f2d
-Augmentation_Type: discourse_framing
-Similarity_Score: 0.9178
-Transcript: Sir, I have a quick inquiry regarding hello, IITGN helpdesk. Can I order an additional elective without it affecting my semester great point average
-Target_Label: student_services
-Spoken_Languages: ['English']

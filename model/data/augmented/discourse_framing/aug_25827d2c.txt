@@ -1,7 +1,0 @@
-UUID: aug_25827d2c
-Parent_UUID: 34f3193c
-Augmentation_Type: discourse_framing
-Similarity_Score: 0.9048
-Transcript: Sir, I have a quick inquiry regarding hello, I am Dijinal, this is a separate facility for storing luggage during semester
-Target_Label: hostel_mess
-Spoken_Languages: ['English']

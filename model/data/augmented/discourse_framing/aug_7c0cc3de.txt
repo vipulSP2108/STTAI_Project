@@ -1,7 +1,0 @@
-UUID: aug_7c0cc3de
-Parent_UUID: 3f07f814
-Augmentation_Type: discourse_framing
-Similarity_Score: 0.9694
-Transcript: Hello helpdesk, could you please clarify hello, ITGN, help desk my student portal keeps logging me out every few minutes even after clearing the browser cache. Can IT investigate?
-Target_Label: it_support
-Spoken_Languages: ['English']

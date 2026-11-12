@@ -1,7 +1,0 @@
-UUID: aug_19ed0d4f
-Parent_UUID: 4ce1eb90
-Augmentation_Type: discourse_framing
-Similarity_Score: 0.9789
-Transcript: नमस्ते, कृपया बताइए कि हेलो, मेरा ग्रेड कार्ड डाउनलोड नहीं हो रहा है और सर्वर एरर दिखा रहा है, कृपया एकेडमिक पोर्टल चेक करें।
-Target_Label: admissions
-Spoken_Languages: ['Hindi']

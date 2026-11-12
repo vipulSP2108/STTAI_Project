@@ -1,7 +1,0 @@
-UUID: aug_70c608f8
-Parent_UUID: 922fe15a
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.5142
-Transcript: નમસ્તે હેલ્પડેસ્ક, હમારે બ્લૉક માં કાફી દિનોં થી પીને ના પાની ની સમસ્યા આ રહી છે, વાટર કૂલર મેંટેનેંસ ના લિએ કંપ્લેંટ દર્જ કરવાની છે।
-Target_Label: student_services
-Spoken_Languages: ['Hindi']

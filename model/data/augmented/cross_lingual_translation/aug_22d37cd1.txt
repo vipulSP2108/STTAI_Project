@@ -1,7 +1,0 @@
-UUID: aug_22d37cd1
-Parent_UUID: 6ba25efe
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.6443
-Transcript: Hello iTITOGHS SILDRAND, we've held camp-up drive, extremely complex for West Cgregation without the West?
-Target_Label: student_services
-Spoken_Languages: ['Hindi']

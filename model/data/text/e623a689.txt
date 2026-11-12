@@ -1,4 +1,0 @@
-UUID: e623a689
-Transcript: Hello, I am a father of newly admitted MSc student. We will be coming to IIT on the next week to drop her off and help her settle in the hostel. Since we are travelling all the way from Kerala, we will need a place to stay for two nights. I wanted to know if we can book a room in the college's guest house. Or if there are specific guest rooms available within the hostel premises for parents. If the institute accommodations are full, could you recommend some safe hotels nearby that usually cater to our IITGN and parents? Also during our stay, our parents allow to eat in the student mess along with their children by paying some charge or do we have to eat outside only? Also what are the visiting hours if you want to help her arrange her room in the girls any information would be highly appreciated.
-Target_Label: student_services
-Spoken_Languages: English

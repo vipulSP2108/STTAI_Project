@@ -1,1 +1,0 @@
-Place screenshots here: labelstudio_task.png consensus_report.png leakage_audit.png ui_prediction.png mlflow_runs.png docker_validate.png ci_green.png

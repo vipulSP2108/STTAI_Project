@@ -1,7 +1,0 @@
-UUID: aug_7705c8b6
-Parent_UUID: 3a43b2ba
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.9594
-Transcript: Namaskar sir, my nithin popat patil dhuliya i nikimar ast Rajjike dhuliya jile se bol raho muje apke aayati gandhinagar mein ademission chaayetha iskili muje ap krupaya sanjayenge ki tis tarasse isu university mein muje pravesh mil saktaay અપ્રે લિવાર હો સકે ચિવાર પે ચિવાર મને જન કરે મિલે કિ ચિવાર મને અસની હોટી હોટી તો દો લો લો .
-Target_Label: admissions
-Spoken_Languages: ['Hindi']

@@ -1,7 +1,0 @@
-UUID: aug_8b118fb9
-Parent_UUID: a33dc7af
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.6099
-Transcript: Hello, I want to ask about your son's host and food provision if she gets added to the i-cake she will get away from home for the first time so it's important for us that Balgon student that lives in the host's bed. How did I know this?
-Target_Label: hostel_mess
-Spoken_Languages: ['English']

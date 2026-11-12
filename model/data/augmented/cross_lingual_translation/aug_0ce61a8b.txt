@@ -1,7 +1,0 @@
-UUID: aug_0ce61a8b
-Parent_UUID: 016b6287
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.5918
-Transcript: Hi, I'm dealing with a serious Internet map issue on Gandhi's voice cell. KLink is successfully being loaded but sometimes when connection to a connection fails. It's going to be late tomorrow and I've started again.
-Target_Label: it_support
-Spoken_Languages: ['English']

@@ -1,7 +1,0 @@
-UUID: aug_b7c4a98d
-Parent_UUID: 944528c0
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.7106
-Transcript: Hello, Iggggggggggak.ar company is asking for a spacedadadadad student letter and NNN.
-Target_Label: student_services
-Spoken_Languages: ['English']

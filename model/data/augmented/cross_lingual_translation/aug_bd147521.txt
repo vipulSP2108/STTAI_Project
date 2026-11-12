@@ -1,7 +1,0 @@
-UUID: aug_bd147521
-Parent_UUID: be6033f7
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.7147
-Transcript: હેલો આઈઆઈટીજીએન હેલ્પડેસ્ક, હોસ્ટેલ રૂમ માં ગદ્દે અને તકિયે નો કવર ફટા હુઆ છે, હાઉસકીપિંગ થી નયા ઇશ્યૂ કરવાને નો શું નિયમ છે?
-Target_Label: hostel_mess
-Spoken_Languages: ['Hindi']

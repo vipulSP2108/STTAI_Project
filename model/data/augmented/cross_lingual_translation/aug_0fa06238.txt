@@ -1,7 +1,0 @@
-UUID: aug_0fa06238
-Parent_UUID: ecf27e76
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.5528
-Transcript: हैलो डेस्क रिसर्स प्रोजेक्ट से सिशन फोर्मेट और लेगोरिझम लिमिटनी गाइइडलाइन्स काय.
-Target_Label: student_services
-Spoken_Languages: ['Gujarati']

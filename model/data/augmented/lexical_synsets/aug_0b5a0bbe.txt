@@ -1,7 +1,0 @@
-UUID: aug_0b5a0bbe
-Parent_UUID: 951f58d0
-Augmentation_Type: lexical_synsets
-Similarity_Score: 0.8788
-Transcript: હ ે લ ો હ ે લ ્ પડ ે સ ્ ક, નવ ા સ ે મ ે સ ્ ટરન ુ ં ટ ા ઇમટ ે બલ અન ે ક ્ લ ા સર ૂ મ અલ ો ટમ ે ન ્ ટ ય ા દ ી ક ્ ય ા ં જ ો ઈ શક ા શ ે?
-Target_Label: student_services
-Spoken_Languages: ['English', 'Hindi']

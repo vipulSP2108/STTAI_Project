@@ -1,7 +1,0 @@
-UUID: aug_b848242a
-Parent_UUID: 9e8fc965
-Augmentation_Type: lexical_synsets
-Similarity_Score: 0.7855
-Transcript: હ ે લ ો આઈઆઈટ ી જ ી એન હ ે લ ્ પડ ે સ ્ ક, હ ો સ ્ ટ ે લ મ ે સમ ા ં ફ ૂ ડ ક ્ વ ો લ િ ટ ી છ ે લ ્ લ ા થ ો ડ ા દ િ વસ ો થ ી બર ા બર નથ ી, આ બ ા બત ે ફ ો ર ્ મલ ફ ી ડબ ે ક કઈ ર ી ત ે સબમ િ ટ કરવ ો?
-Target_Label: hostel_mess
-Spoken_Languages: ['Gujarati']

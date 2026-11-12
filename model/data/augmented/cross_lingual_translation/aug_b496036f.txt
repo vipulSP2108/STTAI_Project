@@ -1,7 +1,0 @@
-UUID: aug_b496036f
-Parent_UUID: 1223b513
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.5825
-Transcript: હેલો આઈઆઈટી ગાંધીનગર હેલ્પડેસ્ક, ઑનલાઇન ફી પેમેંટ કરતે સમય બ્રાઉજ઼ર ક્રૈશ હો ગયા અને પોર્ટલ પર ટ્રાંજેક્શન પેંડિંગ દિખા રહા છે, કૃપા કરીને સમાધાન બતાએં૤
-Target_Label: it_support
-Spoken_Languages: ['Hindi']

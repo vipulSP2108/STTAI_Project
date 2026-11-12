@@ -1,7 +1,0 @@
-UUID: aug_1f4d6d17
-Parent_UUID: 464c04af
-Augmentation_Type: discourse_framing
-Similarity_Score: 0.9324
-Transcript: Hi, I need official assistance with hello, Adizyan Hildes. My hostel room has a water leakage problem near the study table. again someone is expected today
-Target_Label: hostel_mess
-Spoken_Languages: ['English']

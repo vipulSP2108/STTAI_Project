@@ -1,7 +1,0 @@
-UUID: aug_0f9b7081
-Parent_UUID: b572f3d0
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.8652
-Transcript: हैलो मैं segagagak, मैं छात्र सेवाओं के बारे में एक अनुरोध है.
-Target_Label: student_services
-Spoken_Languages: ['English']

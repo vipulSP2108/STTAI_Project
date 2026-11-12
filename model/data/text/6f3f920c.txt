@@ -1,4 +1,0 @@
-UUID: 6f3f920c
-Transcript: हेलो आईटी हेल्पडेस्क, गिटहब स्टूडेंट डेवलपर पैक एक्टिवेट करने के लिए इंस्टीट्यूट ईमेल वेरिफिकेशन कैसे पूरा करें?
-Target_Label: it_support
-Spoken_Languages: Hindi

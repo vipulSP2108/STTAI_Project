@@ -1,7 +1,0 @@
-UUID: aug_c31ba2e9
-Parent_UUID: f5f59b22
-Augmentation_Type: lexical_synsets
-Similarity_Score: 0.918
-Transcript: Hello IITGN Helpdesk, my student housing room has a water leakage problem near the window sill. Could maintenance send someone to fix it?
-Target_Label: hostel_mess
-Spoken_Languages: ['English']

@@ -1,7 +1,0 @@
-UUID: aug_fa1bdeee
-Parent_UUID: bf7b539b
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.6353
-Transcript: Hello I'll help, my parents will stay on the market for two nights. Can you guide me at the guest home?
-Target_Label: student_services
-Spoken_Languages: ['English', 'Hindi']

@@ -1,7 +1,0 @@
-UUID: aug_32d60165
-Parent_UUID: c0e3befd
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.5575
-Transcript: નમસ્તે, મેસ બિલ માં એક્સ્ટ્રા ડાઇટ નો ચાર્જ ગલત જુડ઼ ગયા છે, ઇસે રેક્ટિફાઈ કરાને ના લિએ કિસસે સંપર્ક કરેં?
-Target_Label: student_services
-Spoken_Languages: ['English', 'Hindi']

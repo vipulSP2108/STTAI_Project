@@ -1,7 +1,0 @@
-UUID: aug_f7f3af37
-Parent_UUID: f335cba3
-Augmentation_Type: discourse_framing
-Similarity_Score: 0.9679
-Transcript: Greetings, I wanted to confirm whether hello, IITGN Helpdesk. I left my backpack in the campus shirt really yesterday evening. Is there a loss in found disk I can contact?
-Target_Label: student_services
-Spoken_Languages: ['English']

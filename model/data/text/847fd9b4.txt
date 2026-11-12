@@ -1,4 +1,0 @@
-UUID: 847fd9b4
-Transcript: Good afternoon. I need information about banking and ATM facilities on campus for students.
-Target_Label: student_services
-Spoken_Languages: English

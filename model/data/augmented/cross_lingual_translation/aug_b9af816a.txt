@@ -1,7 +1,0 @@
-UUID: aug_b9af816a
-Parent_UUID: e117dac3
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.7165
-Transcript: एजन्ट सपोर्ट आपो नमस्कार गांधीनगर हेल्पट करतो के प्लीझ मेन्टेनेन्ट.
-Target_Label: hostel_mess
-Spoken_Languages: ['Gujarati']

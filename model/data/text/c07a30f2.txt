@@ -1,4 +1,0 @@
-UUID: c07a30f2
-Transcript: નમસ્કાર હોસ્ટલ કોયડો લાઇટ ફ્લીકરિંગ થઈ રહી છે ઇલેક્ટેશિયન ને મોકલી.
-Target_Label: hostel_mess
-Spoken_Languages: Gujarati

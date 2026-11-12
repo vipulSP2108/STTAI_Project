@@ -1,7 +1,0 @@
-UUID: aug_271aa75d
-Parent_UUID: 6c4a37ea
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.5091
-Transcript: Hi sir, the tubelight in the Haus room is bad, send the Activist an investigation.
-Target_Label: hostel_mess
-Spoken_Languages: ['Hindi']

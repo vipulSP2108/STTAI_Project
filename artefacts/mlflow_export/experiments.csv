@@ -1,4 +1,0 @@
-experiment_id,name,artifact_location,lifecycle_stage
-2,cs203_voice_helpdesk_production,/Users/aai/Desktop/STTAI_Project/mlruns/2,active
-1,project5_voice_helpdesk_tuning,/Users/aai/Desktop/STTAI_Project/mlruns/1,active
-0,Default,/Users/aai/Desktop/STTAI_Project/mlruns/0,active

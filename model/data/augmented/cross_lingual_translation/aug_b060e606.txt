@@ -1,7 +1,0 @@
-UUID: aug_b060e606
-Parent_UUID: 38602ab6
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.7703
-Transcript: Hello, this second time I'm complaining about the same thing. The bathhouse in our yard has been leaked continuously for two days. Please re-enter immediately.
-Target_Label: hostel_mess
-Spoken_Languages: ['English', 'Hindi']

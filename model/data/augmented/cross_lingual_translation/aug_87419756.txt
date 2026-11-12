@@ -1,7 +1,0 @@
-UUID: aug_87419756
-Parent_UUID: d10bd1d0
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.7401
-Transcript: Hello General Dyck, I missed the basic test for the application at the end of my medical emergency test.
-Target_Label: student_services
-Spoken_Languages: ['English']

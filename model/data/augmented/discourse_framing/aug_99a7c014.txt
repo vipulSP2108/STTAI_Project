@@ -1,7 +1,0 @@
-UUID: aug_99a7c014
-Parent_UUID: 6f3f920c
-Augmentation_Type: discourse_framing
-Similarity_Score: 0.9779
-Transcript: कृपया मार्गदर्शन करें, हेलो आईटी हेल्पडेस्क, गिटहब स्टूडेंट डेवलपर पैक एक्टिवेट करने के लिए इंस्टीट्यूट ईमेल वेरिफिकेशन कैसे पूरा करें?
-Target_Label: it_support
-Spoken_Languages: ['Hindi']

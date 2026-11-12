@@ -1,4 +1,0 @@
-UUID: 89456f27
-Transcript: हेलो हेल्पडेस्क, क्या मैं अपना सेमेस्टर ब्रेक एक्सटेंड करने के लिए डीन एकेडमिक्स को एप्लीकेशन ईमेल कर सकता हूँ?
-Target_Label: it_support
-Spoken_Languages: Hindi

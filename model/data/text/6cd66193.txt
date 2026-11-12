@@ -1,4 +1,0 @@
-UUID: 6cd66193
-Transcript: નમસ્કાર ગાંધીનગર વોઇસ એડમિશન હતું પણ કન્ફર્મેશન લાવ્યો નથી કુપિયા પોર્ટ આપો.
-Target_Label: admissions
-Spoken_Languages: Gujarati

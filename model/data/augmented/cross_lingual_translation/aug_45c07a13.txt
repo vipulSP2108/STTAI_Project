@@ -1,7 +1,0 @@
-UUID: aug_45c07a13
-Parent_UUID: abae4f43
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.7945
-Transcript: Hi sir, I should help download a seat at the IVEEEEEEA city for the Etttttre Letre and online fee receipt.
-Target_Label: admissions
-Spoken_Languages: ['Hindi']

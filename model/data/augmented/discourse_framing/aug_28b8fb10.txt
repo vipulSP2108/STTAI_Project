@@ -1,7 +1,0 @@
-UUID: aug_28b8fb10
-Parent_UUID: 34f3193c
-Augmentation_Type: discourse_framing
-Similarity_Score: 0.9249
-Transcript: Greetings, I wanted to confirm whether hello, I am Dijinal, this is a separate facility for storing luggage during semester
-Target_Label: hostel_mess
-Spoken_Languages: ['English']

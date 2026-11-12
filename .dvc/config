@@ -1,0 +1,7 @@
+[core]
+    remote = snapshot
+['remote "snapshot"']
+    url = ../../dvc_remote
+[cache]
+    dir = ../../dvc_cache
+    type = copy

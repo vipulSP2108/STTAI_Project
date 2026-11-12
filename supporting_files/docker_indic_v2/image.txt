@@ -1,4 +1,0 @@
-sha256:c416f456f0e82ea4ed5d680f62e1276c4c013154f32ad2749632487c7265fb4e size=2965160317 arch=amd64 os=linux
-docker 29.6.2
-Apple M1
-host RAM 8 GB; Docker VM 4 GB; linux/amd64 emulated on Apple M1

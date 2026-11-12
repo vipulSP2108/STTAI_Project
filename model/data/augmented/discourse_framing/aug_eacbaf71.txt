@@ -1,7 +1,0 @@
-UUID: aug_eacbaf71
-Parent_UUID: 1931e9ee
-Augmentation_Type: discourse_framing
-Similarity_Score: 0.9873
-Transcript: कृपया मार्गदर्शन करें, नमस्ते, मैं आज हॉस्टल मेस के खाने की गुणवत्ता को लेकर शिकायत दर्ज करना चाहता हूँ, कृपया मेस कमेटी को सूचित करें।
-Target_Label: hostel_mess
-Spoken_Languages: ['Hindi']

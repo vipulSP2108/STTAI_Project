@@ -1,7 +1,0 @@
-UUID: aug_aefb2cb9
-Parent_UUID: dd463c09
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.7207
-Transcript: હેલો આઈટી હેલ્પડેસ્ક, મારું ઇંસ્ટીટ્યૂટ ઈમેલ પાસવર્ડ એક્સપાયર હો ગયા છે અને રીસેટ લિંક મોબાઇલ પર નથી આ રહા છે।
-Target_Label: it_support
-Spoken_Languages: ['English', 'Hindi']

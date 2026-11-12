@@ -1,7 +1,0 @@
-UUID: aug_7cdab77d
-Parent_UUID: 4bb00f20
-Augmentation_Type: discourse_framing
-Similarity_Score: 0.9399
-Transcript: हेल्पडेस्क से सहायता चाहिए, हेलो आईआईटीजीएन हेल्पडेस्क, हॉस्टल रूम के एसी से पानी टपक रहा है, कृपया इलेक्ट्रिकल मेंटेनेंस टीम को भेजें।
-Target_Label: hostel_mess
-Spoken_Languages: ['Hindi']

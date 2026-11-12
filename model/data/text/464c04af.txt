@@ -1,4 +1,0 @@
-UUID: 464c04af
-Transcript: Hello, Adizyan Hildes. My hostel room has a water leakage problem near the study table. again someone is expected today.
-Target_Label: hostel_mess
-Spoken_Languages: English

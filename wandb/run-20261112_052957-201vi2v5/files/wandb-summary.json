@@ -1,1 +1,0 @@
-{"_timestamp":1.794441599912695e+09,"val_macro_f1":0.2,"_wandb":{"runtime":1},"is_production":0,"val_accuracy":0.2941,"latency_ms":0.859,"best_val_macro_f1":0.2,"best_val_accuracy":0.2941,"model_size_kb":125.64,"_step":0,"_runtime":1,"is_staging":0}

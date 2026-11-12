@@ -1,7 +1,0 @@
-UUID: aug_dede8758
-Parent_UUID: 3f07f814
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.7589
-Transcript: Hello, this WGN, my student Portel still calculates me out after making clear the browser cache. Can it check?
-Target_Label: it_support
-Spoken_Languages: ['English']

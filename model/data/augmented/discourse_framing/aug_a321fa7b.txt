@@ -1,7 +1,0 @@
-UUID: aug_a321fa7b
-Parent_UUID: ab4220a7
-Augmentation_Type: discourse_framing
-Similarity_Score: 0.9356
-Transcript: હેલ્પડેસ્ક પર જણાવશો કે નમસ્કાર, મારા દીકરાને આઈઆઈટી ગાંધીનગરમાં એડમિશન મળવાની શક્યતા છે, જો હોસ્ટેલ રૂમ ફાળવાઈ જાય તો શું વિદ્યાર્થી નક્કી કરેલી રિપોર્ટિંગ તારીખ પહેલા હોસ્ટેલમાં આવી શકે છે?
-Target_Label: hostel_mess
-Spoken_Languages: ['Gujarati']

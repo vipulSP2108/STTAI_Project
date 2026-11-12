@@ -1,7 +1,0 @@
-UUID: aug_b0cb53f1
-Parent_UUID: 6c4a37ea
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.72
-Transcript: નમસ્તે સર, હોસ્ટેલ રૂમ માં ટ્યૂબલાઇટ ખરાબ હો ગઈ છે, ઇલેક્ટ્રિશિયન કો કંપ્લેંટ ભેજ દીજિએ૤
-Target_Label: hostel_mess
-Spoken_Languages: ['Hindi']

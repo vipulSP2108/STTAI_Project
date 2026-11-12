@@ -1,7 +1,0 @@
-UUID: aug_7df4e8f7
-Parent_UUID: 30beb45f
-Augmentation_Type: discourse_framing
-Similarity_Score: 0.9413
-Transcript: Hi, I need official assistance with hello, I wanted to contact student affairs because currently in my hostel wing the hot water supply is not working in the morning
-Target_Label: hostel_mess
-Spoken_Languages: ['English']

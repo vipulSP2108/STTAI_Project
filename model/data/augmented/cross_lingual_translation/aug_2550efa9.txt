@@ -1,7 +1,0 @@
-UUID: aug_2550efa9
-Parent_UUID: 444d610b
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.7492
-Transcript: नमस्कार टेनिंग और केपिया.
-Target_Label: hostel_mess
-Spoken_Languages: ['Gujarati']

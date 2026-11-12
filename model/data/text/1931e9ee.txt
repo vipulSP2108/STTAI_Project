@@ -1,4 +1,0 @@
-UUID: 1931e9ee
-Transcript: नमस्ते, मैं आज हॉस्टल मेस के खाने की गुणवत्ता को लेकर शिकायत दर्ज करना चाहता हूँ, कृपया मेस कमेटी को सूचित करें।
-Target_Label: hostel_mess
-Spoken_Languages: Hindi

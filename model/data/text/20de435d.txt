@@ -1,4 +1,0 @@
-UUID: 20de435d
-Transcript: Hello, IITGN Helpdesk. My scholarship application shows document verification pending for two weeks. Could you please check the status?
-Target_Label: student_services
-Spoken_Languages: English

@@ -1,7 +1,0 @@
-UUID: aug_bb4d7ff3
-Parent_UUID: fcbb4e59
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.8638
-Transcript: नमस्कारआईFHOGHD. मैं संलग्नक को हटा रहा था लेकिन नेटवर्क टाइम एमएमल पोर्टल पर नीचे आ रहा है, कृपया सर्वर की जाँच करें.
-Target_Label: it_support
-Spoken_Languages: ['Hindi']

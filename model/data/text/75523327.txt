@@ -1,4 +1,0 @@
-UUID: 75523327
-Transcript: नमस्ते, हॉस्टल कॉरिडोर में एग्जॉस्ट फैन नहीं चल रहा है जिससे बहुत गर्मी हो रही है, इलेक्ट्रीशियन को चेक करवाएं।
-Target_Label: it_support
-Spoken_Languages: English, Hindi

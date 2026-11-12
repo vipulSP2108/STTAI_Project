@@ -1,7 +1,0 @@
-UUID: aug_03f61d0c
-Parent_UUID: 1931e9ee
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.524
-Transcript: નમસ્તે, મૈં આજ હોસ્ટેલ મેસ ના ખાને ની ગુણવત્તા કો લેકર શિકાયત દર્જ કરવું ચાહતા હૂઁ, કૃપા કરીને મેસ કમેટી કો સૂચિત કરેં૤
-Target_Label: hostel_mess
-Spoken_Languages: ['Hindi']

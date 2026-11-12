@@ -1,4 +1,0 @@
-UUID: 430f801d
-Transcript: नमस्ते, क्या आईआईटी गांधीनगर में समर इंटर्नशिप के दौरान हॉस्टल और मेस की सुविधा मिल सकती है?
-Target_Label: admissions
-Spoken_Languages: Hindi

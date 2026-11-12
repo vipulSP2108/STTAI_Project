@@ -1,4 +1,0 @@
-UUID: bc8f7d29
-Transcript: નમસ્કાર હેલ્પડેસ્ટ એક્ઝામ માં થશે કે યુઝ્યુઅલ જાયેગા કુપિયા એર્જન્સપોર્ટ આપો.
-Target_Label: hostel_mess
-Spoken_Languages: Hindi, Gujarati

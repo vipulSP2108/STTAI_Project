@@ -1,4 +1,0 @@
-UUID: 4774bc58
-Transcript: નમસ્કાર મેટર્મ ફાર્મ કર્યું હતું પણ માનથી બિલમાં નથી થયું કે.
-Target_Label: hostel_mess
-Spoken_Languages: Gujarati

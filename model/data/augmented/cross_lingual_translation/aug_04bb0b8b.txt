@@ -1,7 +1,0 @@
-UUID: aug_04bb0b8b
-Parent_UUID: c3fe0183
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.7233
-Transcript: હેલો, હોસ્ટેલ ગ્રાઉંડ ફ્લોર પર વાશિંગ મશીન નો ડ્રેનેજ પાઇપ બ્લૉક હો ગયા છે, કૃપા કરીને તુરંત સાફ કરવાએં૤
-Target_Label: student_services
-Spoken_Languages: ['Hindi']

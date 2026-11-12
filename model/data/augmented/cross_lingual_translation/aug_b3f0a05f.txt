@@ -1,7 +1,0 @@
-UUID: aug_b3f0a05f
-Parent_UUID: 49732d6c
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.4958
-Transcript: હૈલો જીઆરટી ગાંધી વેનિએન-અંકર- ગ્‍ત- ગૉથિયો૤
-Target_Label: hostel_mess
-Spoken_Languages: ['Gujarati']

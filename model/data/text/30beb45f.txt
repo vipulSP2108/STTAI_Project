@@ -1,4 +1,0 @@
-UUID: 30beb45f
-Transcript: Hello, I wanted to contact student affairs because currently in my hostel wing the hot water supply is not working in the morning.
-Target_Label: hostel_mess
-Spoken_Languages: English

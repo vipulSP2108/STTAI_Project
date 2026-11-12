@@ -1,7 +1,0 @@
-UUID: aug_3eb3e8eb
-Parent_UUID: fcbb4e59
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.6659
-Transcript: હેલો આઈઆઈટીજીએન હેલ્પડેસ્ક, મૈં અસાઇનમેંટ સબમિટ કર રહા હતો લેકિન મૂડલ પોર્ટલ પર નેટવર્ક ટાઇમઆઉટ એરર આ રહા છે, કૃપા કરીને સર્વર ચેક કરેં૤
-Target_Label: it_support
-Spoken_Languages: ['Hindi']

@@ -1,7 +1,0 @@
-UUID: aug_0e1eaf2e
-Parent_UUID: c3fe0183
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.6942
-Transcript: हाय, हैल हॉलर फ्लॉर मशीन पर डीमैप पाइप ब्लॉक किया गया है, कृपया जल्दी से इसे बाहर करो.
-Target_Label: student_services
-Spoken_Languages: ['Hindi']

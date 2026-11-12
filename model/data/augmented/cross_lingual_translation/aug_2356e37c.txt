@@ -1,7 +1,0 @@
-UUID: aug_2356e37c
-Parent_UUID: e256a6dc
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.6431
-Transcript: नमस्ते महारा दीकरो आईटी गांधीनगरमां मेळवे तो तेना हशीलमां केवी सुविधाओ मळशे ते जाणवु जरूर पडे त्यारे विद्यार्थीओने मदद करी शके हैं हुं पण जाणवा मांगु छुं के जो मेरे दीकरान.
-Target_Label: hostel_mess
-Spoken_Languages: ['Gujarati']

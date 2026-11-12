@@ -1,7 +1,0 @@
-UUID: aug_45cf95e3
-Parent_UUID: c2b6d2c5
-Augmentation_Type: lexical_synsets
-Similarity_Score: 0.9854
-Transcript: Hello sir, good morning. I would like to know about the admission process for the engineering program and the admission requirements criteria.
-Target_Label: admissions
-Spoken_Languages: ['English']

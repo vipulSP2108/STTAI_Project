@@ -1,7 +1,0 @@
-UUID: aug_9f0e31da
-Parent_UUID: d9178793
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.666
-Transcript: नमस्कार. मैंगीग मदद मेरे छात्र पोर्टल मुझे हर कुछ मिनट बाहर लॉगिंग करता है. यहां तक कि ब्राउज़र कैश साफ करने के बाद भी, मैं जांच कर सकते हैं.
-Target_Label: it_support
-Spoken_Languages: ['English']

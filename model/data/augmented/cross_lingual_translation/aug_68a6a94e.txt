@@ -1,7 +1,0 @@
-UUID: aug_68a6a94e
-Parent_UUID: 8cbfedb0
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.6411
-Transcript: हाय सर, मैं अपने कॉलेज में आदम बनाने के लिए किया था, तो मुझे कौन से दस्तावेज़ को साथ लाना चाहिए संरक्षक विएर के समय में?
-Target_Label: admissions
-Spoken_Languages: ['Hindi']

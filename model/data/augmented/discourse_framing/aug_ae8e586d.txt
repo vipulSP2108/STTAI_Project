@@ -1,7 +1,0 @@
-UUID: aug_ae8e586d
-Parent_UUID: dbccc477
-Augmentation_Type: discourse_framing
-Similarity_Score: 0.9721
-Transcript: सर, मुझे एक जानकारी चाहिए कि नमस्ते, मुझे आईआईटी गांधीनगर में पीएचडी एडमिशन के लिए फेलोशिप और स्टाइपेंड के नियमों की जानकारी चाहिए।
-Target_Label: admissions
-Spoken_Languages: ['Hindi']

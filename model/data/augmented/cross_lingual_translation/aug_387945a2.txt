@@ -1,7 +1,0 @@
-UUID: aug_387945a2
-Parent_UUID: 8cbfedb0
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.6012
-Transcript: નમસ્તે સર, મને આપકે કૉલેજ માં એડમિશન કરવાના હતો, તો ડૉક્યૂમેંટ વેરિફિકેશન ના સમય મને કૌન-કૌન થી દસ્તાવેજ઼ સાથ લાને જોઈએ?
-Target_Label: admissions
-Spoken_Languages: ['Hindi']

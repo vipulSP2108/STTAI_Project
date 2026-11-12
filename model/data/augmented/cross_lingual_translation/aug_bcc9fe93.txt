@@ -1,7 +1,0 @@
-UUID: aug_bcc9fe93
-Parent_UUID: 4bb00f20
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.5217
-Transcript: હેલો આઈઆઈટીજીએન હેલ્પડેસ્ક, હોસ્ટેલ રૂમ ના એસી થી પાની ટપક રહા છે, કૃપા કરીને ઇલેક્ટ્રિકલ મેંટેનેંસ ટીમ કો ભેજેં૤
-Target_Label: hostel_mess
-Spoken_Languages: ['Hindi']

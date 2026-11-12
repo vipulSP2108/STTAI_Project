@@ -1,4 +1,0 @@
-UUID: 1a50aec3
-Transcript: હેલો, મૂડલ પોર્ટલ પર એસાઈનમેન્ટ સબમિશન ડેડલાઈન એક્સટેન્ડ થઈ છે કે નહીં તે કન્ફર્મ કરશો?
-Target_Label: student_services
-Spoken_Languages: Gujarati

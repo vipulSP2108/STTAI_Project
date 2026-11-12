@@ -1,7 +1,0 @@
-UUID: aug_e4d001e7
-Parent_UUID: 3985c3cf
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.5742
-Transcript: हैलो, मैं केसिंग और बॉटेट के लिए सीटिंग के बारे में जानना चाहता हूँ.
-Target_Label: admissions
-Spoken_Languages: ['Hindi']

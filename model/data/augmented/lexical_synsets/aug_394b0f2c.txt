@@ -1,7 +1,0 @@
-UUID: aug_394b0f2c
-Parent_UUID: 81392443
-Augmentation_Type: lexical_synsets
-Similarity_Score: 0.9452
-Transcript: Hello, IITGN help desk. My student housing room has a water leakage problem near the study table.
-Target_Label: hostel_mess
-Spoken_Languages: ['English']

@@ -1,4 +1,0 @@
-UUID: dd334cc7
-Transcript: हेलो आईआईटीजीएन हेल्पडेस्क, कैंपस लॉन्ड्री सर्विस के टोकन और वीकली वॉशिंग स्लॉट के बारे में जानकारी चाहिए।
-Target_Label: student_services
-Spoken_Languages: Hindi

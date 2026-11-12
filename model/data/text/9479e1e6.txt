@@ -1,4 +1,0 @@
-UUID: 9479e1e6
-Transcript: I wanted to contact with the student affairs because I have seen currently into the hostels that there is a lot of maze going on. I need to constantly shift from one hostel to the other hostel that has been creating some extra efforts and also the amount of material like the Merasama is like too much and I need to constantly shift that that is taking too much of effort. Either you can assign some people to us so that they will help us in shifting the places because in one semester this is the third time I am shifting my room and this is creating a lot of overhead and it's not seeming proper to me, particularly to me. So can you help me in guiding here so that the process is easy for this particular thing?
-Target_Label: hostel_mess
-Spoken_Languages: English

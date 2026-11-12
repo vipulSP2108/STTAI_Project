@@ -1,4 +1,0 @@
-UUID: 4fcca39a
-Transcript: Hello, I am a research scholar from the biological engineering department. I am calling to report an issue with the high-performance computing cluster connection.
-Target_Label: it_support
-Spoken_Languages: English

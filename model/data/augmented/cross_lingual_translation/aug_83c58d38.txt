@@ -1,7 +1,0 @@
-UUID: aug_83c58d38
-Parent_UUID: 778eedb3
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.7937
-Transcript: Hello IILGUGE, my host room is not available for the hot water supply for the last two days. Please check the space in this.
-Target_Label: hostel_mess
-Spoken_Languages: ['English', 'Hindi']

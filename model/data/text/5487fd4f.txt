@@ -1,4 +1,0 @@
-UUID: 5487fd4f
-Transcript: Namaste, I am calling to ask about a problem with my course registration. I selected a elective through the student part portal but the course is not upending in my registered subject list. The registration deadline is approaching so I want to resolve this as soon as possible. I have selected the course but confirmation message was seen but the portal does not see any code. Please tell me whether the registration has been completed successfully or if I need to submit the request again. I am also concerned that submitting it again might create a duplicate and TV. This way I should contact the KEDME office or call the instructor. Please explain the correct procedure. So that my course lecture is recorded before the deadline.
-Target_Label: it_support
-Spoken_Languages: English

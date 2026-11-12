@@ -1,7 +1,0 @@
-UUID: aug_f02e4dd7
-Parent_UUID: 6cd66193
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.5572
-Transcript: नमस्कार गांधीनगर वोइस एडमिशन हतुं पण कन्फर्मेशन लाव्यो नहीं कुपिया पोर्ट आपो.
-Target_Label: admissions
-Spoken_Languages: ['Gujarati']

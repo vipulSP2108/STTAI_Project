@@ -1,7 +1,0 @@
-UUID: aug_37f8a325
-Parent_UUID: 20de435d
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.6487
-Transcript: नमस्कार, IELEGEN Dadaka. मेरा जीम अनुप्रयोग दो सप्ताह के लिए दस्तावेज़ सत्यापन स्थगित दिखाता है. क्या आप स्थिति को चेक कर सकते हैं?
-Target_Label: student_services
-Spoken_Languages: ['English']

@@ -1,4 +1,0 @@
-UUID: 016b6287
-Transcript: Hello, IIT Gandhi Nagar voice cell desk. I am facing a serious internet connectivity issue on my laptop. The campus Wi-Fi connects successfully but website are loading very slowly and sometimes the connection gets disconnected automatically. This has been happening since yesterday evening and I restarted my laptop. I got the network before connecting again but nothing seems to have changed. My online lectures or assignment complete can be very difficult. I also tried using the Wi-Fi in another location on campus but the speed was still. Could you please check whether there is a network issue or if I need to update my settings on my device? Please let me know if I should visit the IT Support Office or Submit Online Complain. I need a stable connection for my academic work. So an early reservation would be very helpful. Than Nevad.
-Target_Label: it_support
-Spoken_Languages: English

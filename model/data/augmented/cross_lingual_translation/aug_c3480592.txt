@@ -1,7 +1,0 @@
-UUID: aug_c3480592
-Parent_UUID: 35c7936c
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.5391
-Transcript: हैलो, मेरा कोर्स हटाया गया है लेकिन Lbitly फ़ोल्डर नहीं है पर Marris पर पहुँचा जा रहा है.
-Target_Label: it_support
-Spoken_Languages: ['Hindi']

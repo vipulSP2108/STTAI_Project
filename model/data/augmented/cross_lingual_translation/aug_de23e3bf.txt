@@ -1,7 +1,0 @@
-UUID: aug_de23e3bf
-Parent_UUID: 3170f437
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.6713
-Transcript: सपोर्ट आपो नमस्कार गांधीनगर वोईस हेल्प एडवान्स एन्क इलेक्टिकल एन्सीइनिया इंग डिपार्.
-Target_Label: admissions
-Spoken_Languages: ['Gujarati']

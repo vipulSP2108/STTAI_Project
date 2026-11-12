@@ -1,7 +1,0 @@
-UUID: aug_9a7ba44b
-Parent_UUID: 6ba25efe
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.7735
-Transcript: हैलोआईआईआरआईएस एसआईआरआरडीओ, हम वेस्ट Cargagation के बिना कैम्प अप, बहुत जटिल ड्राइव आयोजित किया है?
-Target_Label: student_services
-Spoken_Languages: ['Hindi']

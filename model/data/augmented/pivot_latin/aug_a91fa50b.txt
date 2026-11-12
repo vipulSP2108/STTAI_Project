@@ -1,7 +1,0 @@
-UUID: aug_a91fa50b
-Parent_UUID: a65e688e
-Augmentation_Type: pivot_latin
-Similarity_Score: 0.9901
-Transcript: Hello Sir, I needed some information about enrollment in IIT Gandhinagar because my son wants to apply for the BTech curriculum.
-Target_Label: admissions
-Spoken_Languages: ['English']

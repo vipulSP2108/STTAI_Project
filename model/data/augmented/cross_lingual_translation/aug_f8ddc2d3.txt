@@ -1,7 +1,0 @@
-UUID: aug_f8ddc2d3
-Parent_UUID: 939b462d
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.514
-Transcript: नमस्कार डोक्युमेन्ट मेन्डेटर हैं के ओनलाइन अपलोड करी शकाय.
-Target_Label: admissions
-Spoken_Languages: ['Gujarati']

@@ -1,4 +1,0 @@
-UUID: 46d483f3
-Transcript: नमस्कार आईआईटी गांधीनगर हेल्पडेस्क, क्या डायरेक्ट पीएचडी एडमिशन के लिए गेट स्कोर के बिना भी आवेदन किया जा सकता है?
-Target_Label: admissions
-Spoken_Languages: Hindi

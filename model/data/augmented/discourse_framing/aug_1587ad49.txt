@@ -1,7 +1,0 @@
-UUID: aug_1587ad49
-Parent_UUID: ecf27e76
-Augmentation_Type: discourse_framing
-Similarity_Score: 0.9204
-Transcript: હેલ્પડેસ્ક પર જણાવશો કે હૈલો ડેસ્ક રિસર્સ પ્રોજેક્ટ થી સિશન ફોર્મેટ અને લેગોરિઝમ લિમિટની ગાઇઇડલાઇન્સ કાય
-Target_Label: student_services
-Spoken_Languages: ['Gujarati']

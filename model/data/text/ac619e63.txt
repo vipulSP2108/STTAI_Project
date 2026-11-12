@@ -1,4 +1,0 @@
-UUID: ac619e63
-Transcript: Hello, is it IT cell? I am a newly admitted PhD student and I just got my hostel room. How do I configure my laptop for campus LAN and Wi-Fi access?
-Target_Label: it_support
-Spoken_Languages: English

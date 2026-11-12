@@ -1,7 +1,0 @@
-UUID: aug_4aacf6a4
-Parent_UUID: e623a689
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.5639
-Transcript: Hello, I'm the father of the new-edic student. We're coming to IT next week to help her stay in the host. Because we're traveling all the way from Cale, we need a place for two nights.
-Target_Label: student_services
-Spoken_Languages: ['English']

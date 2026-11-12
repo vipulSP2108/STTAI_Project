@@ -1,7 +1,0 @@
-UUID: aug_adb94fb7
-Parent_UUID: 20a04502
-Augmentation_Type: lexical_synsets
-Similarity_Score: 0.9502
-Transcript: મ ા ર ્ ચ ે હ ો સ ્ ટલમ ા ં હ ો ટ વ ો ટર સપ ્ લ ા ય સવ ા ર ે આવત ી નથ ી ઈસ ્ મ ા ઇન ્ ટ ે નન ્ સ કમ ્ પ ્ લ ે ન ક ા રજ િ સ ્ ટર.
-Target_Label: hostel_mess
-Spoken_Languages: ['Gujarati']

@@ -1,4 +1,0 @@
-UUID: 38602ab6
-Transcript: Hello, this is the second time I am complaining about the same thing. The washroom tap in our hostel floor has been continuously leaking for two days. Please send plumbing maintenance immediately.
-Target_Label: hostel_mess
-Spoken_Languages: English, Hindi

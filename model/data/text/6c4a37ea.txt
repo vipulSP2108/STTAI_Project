@@ -1,4 +1,0 @@
-UUID: 6c4a37ea
-Transcript: नमस्ते सर, हॉस्टल रूम में ट्यूबलाइट खराब हो गई है, इलेक्ट्रिशियन को कंप्लेंट भेज दीजिए।
-Target_Label: hostel_mess
-Spoken_Languages: Hindi

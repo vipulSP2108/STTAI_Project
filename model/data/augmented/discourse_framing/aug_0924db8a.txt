@@ -1,7 +1,0 @@
-UUID: aug_0924db8a
-Parent_UUID: 9cd6c852
-Augmentation_Type: discourse_framing
-Similarity_Score: 0.9608
-Transcript: नमस्ते, कृपया बताइए कि हेलो आईआईटीजीएन हेल्पडेस्क, मेरे दोस्त का स्टूडेंट आईकार्ड खो गया है, लॉस्ट एंड फाउंड सेक्शन में कैसे कंप्लेंट रजिस्टर करें?
-Target_Label: student_services
-Spoken_Languages: ['Hindi']

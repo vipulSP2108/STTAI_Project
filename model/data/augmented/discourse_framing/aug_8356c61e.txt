@@ -1,7 +1,0 @@
-UUID: aug_8356c61e
-Parent_UUID: 51d87c64
-Augmentation_Type: discourse_framing
-Similarity_Score: 0.9546
-Transcript: नमस्ते सर, इस बारे में बताएं कि नमस्ते हेल्पडेस्क, हॉस्टल के कॉमन रूम में टेबल टेनिस टेबल की नेट टूटी हुई है, कृपया नई नेट लगवाएं।
-Target_Label: student_services
-Spoken_Languages: ['Hindi']

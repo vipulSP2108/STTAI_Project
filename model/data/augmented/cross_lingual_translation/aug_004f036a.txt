@@ -1,7 +1,0 @@
-UUID: aug_004f036a
-Parent_UUID: 8c459ce2
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.821
-Transcript: Hello, Adanan, it's the bed that I've got and her very small, I could find a big bed.
-Target_Label: hostel_mess
-Spoken_Languages: ['English', 'Hindi']

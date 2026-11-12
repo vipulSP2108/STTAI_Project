@@ -1,7 +1,0 @@
-UUID: aug_76a9a442
-Parent_UUID: 20de435d
-Augmentation_Type: pivot_latin
-Similarity_Score: 0.8839
-Transcript: Hello, IITGN Helpdesk. My endowment stipend application shows document verification pending for two weeks. Could you please check the status?
-Target_Label: student_services
-Spoken_Languages: ['English']

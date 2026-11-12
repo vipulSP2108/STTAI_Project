@@ -1,4 +1,0 @@
-UUID: 8da01097
-Transcript: Hello there, I am facing an issue with a while accessing the University Digital Library. I can log in to the student portal successfully. But when an online research paper in the website asks me to sign in again, even after entering the microdiatials, I cannot access the document and they have checked the name of the passport and the normal student portal. kultu plx plan bazaar whether the digital library excel sqaera septet account or additional activation. i need this research paper for an upcoming project. so i would appreciate a quick solution. kya ki ske li library starts to contact karna hova. your IT support team may be accessing. check karsak tiya. please guide me on the steps i should follow to restore access.
-Target_Label: it_support
-Spoken_Languages: English, Hindi

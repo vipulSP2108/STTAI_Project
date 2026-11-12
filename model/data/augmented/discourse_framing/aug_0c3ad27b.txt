@@ -1,7 +1,0 @@
-UUID: aug_0c3ad27b
-Parent_UUID: c8dcd19f
-Augmentation_Type: discourse_framing
-Similarity_Score: 0.9425
-Transcript: Hello helpdesk, could you please clarify hello IT support, I wanted to contact the computer centre office regarding server access permissions for our project
-Target_Label: it_support
-Spoken_Languages: ['English']

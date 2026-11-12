@@ -1,7 +1,0 @@
-UUID: aug_eab5c848
-Parent_UUID: 0640be0f
-Augmentation_Type: discourse_framing
-Similarity_Score: 0.9857
-Transcript: मेरा सवाल यह है कि नमस्ते, क्या एमएससी कॉग्निटिव साइंस प्रोग्राम के लिए रिटेन टेस्ट और इंटरव्यू ऑनलाइन होगा या ऑफलाइन?
-Target_Label: hostel_mess
-Spoken_Languages: ['Hindi']

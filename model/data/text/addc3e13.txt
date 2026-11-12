@@ -1,4 +1,0 @@
-UUID: addc3e13
-Transcript: Hello, IITGN Helpdesk. My name is spelled differently on different student ID and academic records. What is the correction procedure?
-Target_Label: student_services
-Spoken_Languages: English

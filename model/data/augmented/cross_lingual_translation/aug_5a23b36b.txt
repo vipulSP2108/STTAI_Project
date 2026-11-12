@@ -1,7 +1,0 @@
-UUID: aug_5a23b36b
-Parent_UUID: 1223b513
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.6414
-Transcript: हैलोओओएसओएचएचएचके, ऑनलाइन भुगतान के दौरान ब्राउज़र क्रैश था और पोर्टल पर डील लाइन लाइन शो शो शो शो, कृपया समाधान रिपोर्ट करें.
-Target_Label: it_support
-Spoken_Languages: ['Hindi']

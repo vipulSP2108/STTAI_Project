@@ -1,7 +1,0 @@
-UUID: aug_63d9de9e
-Parent_UUID: c3fe0183
-Augmentation_Type: discourse_framing
-Similarity_Score: 0.9692
-Transcript: कृपया मार्गदर्शन करें, हेलो, हॉस्टल ग्राउंड फ्लोर पर वाशिंग मशीन का ड्रेनेज पाइप ब्लॉक हो गया है, कृपया तुरंत साफ करवाएं।
-Target_Label: student_services
-Spoken_Languages: ['Hindi']

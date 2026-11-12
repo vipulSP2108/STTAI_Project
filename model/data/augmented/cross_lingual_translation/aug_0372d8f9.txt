@@ -1,7 +1,0 @@
-UUID: aug_0372d8f9
-Parent_UUID: 6c4a37ea
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.6651
-Transcript: हाय सर, हाउस कमरे में ट्यूबी, एक जांच.
-Target_Label: hostel_mess
-Spoken_Languages: ['Hindi']

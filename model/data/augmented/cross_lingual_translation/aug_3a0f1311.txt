@@ -1,7 +1,0 @@
-UUID: aug_3a0f1311
-Parent_UUID: a18ff6b6
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.5044
-Transcript: Hello IICN Dagaks, can I take an additional choice course without it?
-Target_Label: student_services
-Spoken_Languages: ['English']

@@ -1,4 +1,0 @@
-UUID: 4ca415ea
-Transcript: હેલોટ સર્વિસ રિટર્ન નથી કર્યા છે સપોર્ટ આપો.
-Target_Label: student_services
-Spoken_Languages: Gujarati

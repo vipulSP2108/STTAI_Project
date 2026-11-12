@@ -1,7 +1,0 @@
-UUID: aug_04e20d7a
-Parent_UUID: f53d4330
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.6235
-Transcript: હેલો હેલ્પડેસ્ક, મને હોસ્ટેલ ડ્યૂજ ક્લીયરેંસ અને નો-ડ્યૂજ સર્ટિફિકેટ લેને ની પ્રક્રિયા જાનની છે।
-Target_Label: hostel_mess
-Spoken_Languages: ['Hindi']

@@ -1,7 +1,0 @@
-UUID: aug_327fd3f0
-Parent_UUID: 464c04af
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.6919
-Transcript: Hello, Adinus. My host room has a problem with water table.
-Target_Label: hostel_mess
-Spoken_Languages: ['English']

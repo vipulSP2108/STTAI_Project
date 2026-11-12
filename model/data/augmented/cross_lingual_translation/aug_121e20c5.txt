@@ -1,7 +1,0 @@
-UUID: aug_121e20c5
-Parent_UUID: dc570131
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.5201
-Transcript: So I want to make a point about host supply. So from the past 34 days, there's been constant coming up with red water.
-Target_Label: hostel_mess
-Spoken_Languages: ['English']

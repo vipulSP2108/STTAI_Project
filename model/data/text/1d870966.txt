@@ -1,4 +1,0 @@
-UUID: 1d870966
-Transcript: Hello, I am calling to ask you about my status of my admission application. I submitted online application form a few days ago and received a confirmation message but the application portal is still showing that my documents are under verification. I have uploaded my academic transcript identification proof and all other required documents. I am not sure whether the verification process has been complete successfully. I am confused because the portal does not show my expected completion date. Could you please explain how long the verification process usually takes and whether I need to submit anything else? I do not want to miss anything important admission deadline because of an incomplete application. Please let me know if there is an specific email address or office where I can confirm this detail. App-key assistant merely a coffee helpful. Thank you.
-Target_Label: admissions
-Spoken_Languages: English

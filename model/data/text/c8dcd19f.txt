@@ -1,4 +1,0 @@
-UUID: c8dcd19f
-Transcript: Hello IT support, I wanted to contact the computer centre office regarding server access permissions for our project.
-Target_Label: it_support
-Spoken_Languages: English

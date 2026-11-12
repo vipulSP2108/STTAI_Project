@@ -1,7 +1,0 @@
-UUID: aug_4d26da40
-Parent_UUID: c04a96c4
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.6244
-Transcript: नमस्कार फोर्म कयुं हतुं रिफ्लेक्ट.
-Target_Label: hostel_mess
-Spoken_Languages: ['Gujarati']

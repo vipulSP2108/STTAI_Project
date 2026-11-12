@@ -1,4 +1,0 @@
-UUID: 12a4def0
-Transcript: Hello, Namaste. I am speaking from Jaipur. My daughter is joining the BTEC first year this upcoming July. I received the welcome email regarding the admission and fee payment. But I have a confusion regarding the education loan. We are applied for a loan through SBI and the bank is asking for detailed fee structure for all four years. Stamped and signed by the IT Ghandinavir academic office. The one provided on the website is just for the first semester. Could you please let me know the procedure to get this official document? Can it be emailed to us or do we have to collect it in person when we come for the orientation? Also, by when do we submit the demand draft?
-Target_Label: student_services
-Spoken_Languages: English

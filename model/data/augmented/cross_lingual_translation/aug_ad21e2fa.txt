@@ -1,7 +1,0 @@
-UUID: aug_ad21e2fa
-Parent_UUID: bc8f7d29
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.6765
-Transcript: नमस्कार हेल्पडेस्ट एक्झाम में होगा के युझ्युअल जायेगा कुपिया एर्जन्सपोर्ट आपो.
-Target_Label: hostel_mess
-Spoken_Languages: ['Hindi', 'Gujarati']

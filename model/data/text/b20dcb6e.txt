@@ -1,4 +1,0 @@
-UUID: b20dcb6e
-Transcript: हेलो आईआईटी गांधीनगर हेल्पडेस्क, मेरा मेस कार्ड ब्लॉक हो गया है, इसे अनब्लॉक कराने के लिए क्या प्रक्रिया है?
-Target_Label: hostel_mess
-Spoken_Languages: Hindi

@@ -1,7 +1,0 @@
-UUID: aug_ed048377
-Parent_UUID: dc815fe7
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.7016
-Transcript: नमस्ते, मेरी दीकरीने आईआईटी गांधीनगरमां एडमिशन के लिए माहिती चाहिए हैं, होस्टेलमां स्टडी टेबल और इन्टरनेट सुविधाओ मळे हैं के केटलीक वस्तुओ घरेथी लाववी पडे हैं?
-Target_Label: admissions
-Spoken_Languages: ['Gujarati']

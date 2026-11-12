@@ -1,7 +1,0 @@
-UUID: aug_fa3f892c
-Parent_UUID: c2b6d2c5
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.6574
-Transcript: I want to know about the engineering program and the accepting process for stability.
-Target_Label: admissions
-Spoken_Languages: ['English']

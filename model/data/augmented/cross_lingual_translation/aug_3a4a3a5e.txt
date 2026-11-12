@@ -1,7 +1,0 @@
-UUID: aug_3a4a3a5e
-Parent_UUID: 4ccc9bc2
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.5233
-Transcript: Hello iTIFHOGHOGHDHlS, Our Hydalroom in Alus Wing is not working properly, please send the Connel Team.
-Target_Label: hostel_mess
-Spoken_Languages: ['Hindi']

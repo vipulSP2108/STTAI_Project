@@ -1,7 +1,0 @@
-UUID: aug_e7cc019c
-Parent_UUID: 8d3aed99
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.5343
-Transcript: હેલો આઈઆઈટીજીએન હેલ્પડેસ્ક, મારું કોર્સ રજિસ્ટ્રેશન પૂરા હો ગયા છે લેકિન ઇલેક્ટિવ કોર્સ પોર્ટલ પર એક્ટિવેટ નથી હુઆ છે।
-Target_Label: it_support
-Spoken_Languages: ['Hindi']

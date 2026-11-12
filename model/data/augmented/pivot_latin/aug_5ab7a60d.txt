@@ -1,7 +1,0 @@
-UUID: aug_5ab7a60d
-Parent_UUID: 847fd9b4
-Augmentation_Type: pivot_latin
-Similarity_Score: 0.9386
-Transcript: Good afternoon. I need information about banking and ATM facilities on campus for candidates.
-Target_Label: student_services
-Spoken_Languages: ['English']

@@ -1,7 +1,0 @@
-UUID: aug_063326d0
-Parent_UUID: 36b5229a
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.5476
-Transcript: The Actant Support You are the very ones who are working on the appetizing support you have.
-Target_Label: hostel_mess
-Spoken_Languages: ['Gujarati']

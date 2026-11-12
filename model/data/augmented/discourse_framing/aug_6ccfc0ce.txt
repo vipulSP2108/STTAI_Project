@@ -1,7 +1,0 @@
-UUID: aug_6ccfc0ce
-Parent_UUID: 4ca415ea
-Augmentation_Type: discourse_framing
-Similarity_Score: 0.8176
-Transcript: મારો પ્રશ્ન એવો છે કે હેલોટ સર્વિસ રિટર્ન નથી કર્યા છે સપોર્ટ આપો
-Target_Label: student_services
-Spoken_Languages: ['Gujarati']

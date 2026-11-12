@@ -1,7 +1,0 @@
-UUID: aug_2497a499
-Parent_UUID: 939b462d
-Augmentation_Type: discourse_framing
-Similarity_Score: 0.9115
-Transcript: કૃપા કરીને મદદ કરો, નમસ્કાર ડોક્યુમેન્ટ મેન્ડેટર છે કે ઓનલાઇન અપલોડ કરી શકાય
-Target_Label: admissions
-Spoken_Languages: ['Gujarati']

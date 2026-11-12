@@ -1,7 +1,0 @@
-UUID: aug_4dce77e5
-Parent_UUID: 236c7b87
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.5789
-Transcript: નમસ્તે, મને આઈઆઈટી ગાંધીનગર માં એડમિશન ના સમય જમા કિએ જાને વાલે દસ્તાવેજ઼ોં ની જાનકારી જોઈએ। શું દસવીં અને બારહવીં ની માર્કશીટ, પહચાન પત્ર અને પ્રવેશ પરીક્ષા થી સંબંધિત દસ્તાવેજ઼ોં ની મૂલ પ્રતિ લાના અનિવાર્ય છે?
-Target_Label: admissions
-Spoken_Languages: ['Hindi']

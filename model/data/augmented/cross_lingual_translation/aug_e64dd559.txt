@@ -1,7 +1,0 @@
-UUID: aug_e64dd559
-Parent_UUID: e7a37e81
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.4842
-Transcript: नाटी नावांग्स अवेआ जब बिलिंग बॉन बिंग्सन का बैंगिन है.
-Target_Label: admissions
-Spoken_Languages: ['Hindi']

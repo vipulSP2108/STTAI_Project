@@ -1,4 +1,0 @@
-UUID: b572f3d0
-Transcript: Hello IITGN Helpdesk, I have a request regarding student services.
-Target_Label: student_services
-Spoken_Languages: English

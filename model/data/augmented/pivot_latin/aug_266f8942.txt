@@ -1,7 +1,0 @@
-UUID: aug_266f8942
-Parent_UUID: 4fcca39a
-Augmentation_Type: pivot_latin
-Similarity_Score: 0.9816
-Transcript: Hello, I am a research scholar from the biological engineering department. I am calling to report an operational complication with the high-performance computing cluster connection.
-Target_Label: it_support
-Spoken_Languages: ['English']

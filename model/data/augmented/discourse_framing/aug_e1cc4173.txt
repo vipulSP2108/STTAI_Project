@@ -1,7 +1,0 @@
-UUID: aug_e1cc4173
-Parent_UUID: c0e3befd
-Augmentation_Type: discourse_framing
-Similarity_Score: 0.952
-Transcript: सर, मुझे एक जानकारी चाहिए कि नमस्ते, मेस बिल में एक्स्ट्रा डाइट का चार्ज गलत जुड़ गया है, इसे रेक्टिफाई कराने के लिए किससे संपर्क करें?
-Target_Label: student_services
-Spoken_Languages: ['English', 'Hindi']

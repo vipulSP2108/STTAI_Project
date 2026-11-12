@@ -1,7 +1,0 @@
-UUID: aug_4be26e0d
-Parent_UUID: 2f923996
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.7774
-Transcript: Good evening, Lord Gerson, I'm calling to report a lost object. I left my blue scientist Calculator in the Asmibitenk 3 tomorrow.
-Target_Label: student_services
-Spoken_Languages: ['English']

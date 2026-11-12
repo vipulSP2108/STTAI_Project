@@ -1,7 +1,0 @@
-UUID: aug_68ecff9c
-Parent_UUID: e7c99b26
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.7405
-Transcript: હેલો હેલ્પડેસ્ક, મારી અટેંડેંસ શૉર્ટેજ દિખા રહી છે, મેડિકલ લીવ અપ્રૂવ કરાને ના લિએ મને શું કરવું થશે?
-Target_Label: student_services
-Spoken_Languages: ['Hindi']

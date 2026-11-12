@@ -1,7 +1,0 @@
-UUID: aug_350eb387
-Parent_UUID: 82ec9f2d
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.5593
-Transcript: हैलो, IEGN मदद. मैं बिना इसके मेरे सेमस्टर औसत पर प्रभाव डाल सकता हूँ.
-Target_Label: student_services
-Spoken_Languages: ['English']

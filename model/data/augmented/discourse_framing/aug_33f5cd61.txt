@@ -1,7 +1,0 @@
-UUID: aug_33f5cd61
-Parent_UUID: 0cf35b58
-Augmentation_Type: discourse_framing
-Similarity_Score: 0.9188
-Transcript: सर, मुझे एक जानकारी चाहिए कि हेलो आईआईटीजीएन हेल्पडेस्क, मुझे मेस क्यूआर कोड चेंज करवाना था क्योंकि मेस एंट्री में बार-बार एरर आ रहा है।
-Target_Label: hostel_mess
-Spoken_Languages: ['Hindi']

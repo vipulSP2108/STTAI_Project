@@ -1,7 +1,0 @@
-UUID: aug_6575bca3
-Parent_UUID: be6033f7
-Augmentation_Type: discourse_framing
-Similarity_Score: 0.964
-Transcript: मेरा सवाल यह है कि हेलो आईआईटीजीएन हेल्पडेस्क, हॉस्टल रूम में गद्दे और तकिये का कवर फटा हुआ है, हाउसकीपिंग से नया इश्यू करवाने का क्या नियम है?
-Target_Label: hostel_mess
-Spoken_Languages: ['Hindi']

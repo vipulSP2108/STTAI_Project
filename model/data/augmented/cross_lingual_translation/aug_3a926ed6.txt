@@ -1,7 +1,0 @@
-UUID: aug_3a926ed6
-Parent_UUID: abae4f43
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.773
-Transcript: हाय सर, मैं एक सीट डाउनलोड करने में मदद करना चाहिए AEEEEEEEEEEEEEEEEEA शहर में... ... Dtttttta और ऑनलाइन टिकट के लिए.
-Target_Label: admissions
-Spoken_Languages: ['Hindi']

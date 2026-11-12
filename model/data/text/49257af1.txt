@@ -1,4 +1,0 @@
-UUID: 49257af1
-Transcript: हेलो हेल्पडेस्क, मेरे रूम के दरवाजे की कुंडी टूट गई है, कृपया कारपेंटर को तुरंत भेजकर इसे ठीक करवाएं।
-Target_Label: hostel_mess
-Spoken_Languages: Hindi

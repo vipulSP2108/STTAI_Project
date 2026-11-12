@@ -1,7 +1,0 @@
-UUID: aug_df91c30a
-Parent_UUID: dd334cc7
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.5482
-Transcript: હેલો આઈઆઈટીજીએન હેલ્પડેસ્ક, કૈંપસ લૉન્ડ્રી સર્વિસ ના ટોકન અને વીકલી વૉશિંગ સ્લૉટ ના બારે માં જાનકારી જોઈએ।
-Target_Label: student_services
-Spoken_Languages: ['Hindi']

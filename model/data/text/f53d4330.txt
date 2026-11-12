@@ -1,4 +1,0 @@
-UUID: f53d4330
-Transcript: हेलो हेल्पडेस्क, मुझे हॉस्टल ड्यूज क्लीयरेंस और नो-ड्यूज सर्टिफिकेट लेने की प्रक्रिया जाननी है।
-Target_Label: hostel_mess
-Spoken_Languages: Hindi

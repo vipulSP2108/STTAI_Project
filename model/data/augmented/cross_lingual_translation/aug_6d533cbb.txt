@@ -1,7 +1,0 @@
-UUID: aug_6d533cbb
-Parent_UUID: 018267c4
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.6669
-Transcript: હેલો હેલ્પડેસ્ક, હોસ્ટેલ રૂમ માં સ્ટડી ટેબલ ની દરાજ ટૂટી હુઈ છે, કારપેંટર કો મેંટેનેંસ રિક્વેસ્ટ ભેજ દીજિએ૤
-Target_Label: hostel_mess
-Spoken_Languages: ['Hindi']

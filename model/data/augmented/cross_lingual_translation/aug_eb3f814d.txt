@@ -1,7 +1,0 @@
-UUID: aug_eb3f814d
-Parent_UUID: 1d8cbbac
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.5652
-Transcript: Hi, I want to know about this knowledge and financial help option for my son's education. He's never doing, but we're already looking for a loan and money to make plans.
-Target_Label: student_services
-Spoken_Languages: ['English']

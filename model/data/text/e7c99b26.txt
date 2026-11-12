@@ -1,4 +1,0 @@
-UUID: e7c99b26
-Transcript: हेलो हेल्पडेस्क, मेरी अटेंडेंस शॉर्टेज दिखा रही है, मेडिकल लीव अप्रूव कराने के लिए मुझे क्या करना होगा?
-Target_Label: student_services
-Spoken_Languages: Hindi

@@ -1,7 +1,0 @@
-UUID: aug_6b9f0961
-Parent_UUID: 3e75c3b4
-Augmentation_Type: discourse_framing
-Similarity_Score: 0.9884
-Transcript: कृपया मार्गदर्शन करें, नमस्कार आईआईटी गांधीनगर हेल्पडेस्क, बीटेक स्टूडेंट पोर्टल पर पासवर्ड रीसेट करने के बाद भी लॉगिन नहीं हो रहा है, क्या आप चेक कर सकते हैं?
-Target_Label: it_support
-Spoken_Languages: ['Hindi']

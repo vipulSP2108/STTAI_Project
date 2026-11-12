@@ -1,7 +1,0 @@
-UUID: aug_0f3a3537
-Parent_UUID: c8b8d9c6
-Augmentation_Type: discourse_framing
-Similarity_Score: 0.9564
-Transcript: સર, એક પૂછપરછ છે કે નમસ્કાર, ઈન્ટરનેશનલ સ્ટુડન્ટ્સ માટે એડમિશન એપ્લિકેશન ફોર્મ અને સ્કોલરશિપની વિગતો ક્યાંથી મળશે?
-Target_Label: admissions
-Spoken_Languages: ['Gujarati']

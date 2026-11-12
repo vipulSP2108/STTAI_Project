@@ -1,4 +1,0 @@
-UUID: da4bd9ca
-Transcript: Excuse me, I would like to report a concern about the campus shuttle service schedule during late evening hours from the academic complex.
-Target_Label: student_services
-Spoken_Languages: English, Hindi

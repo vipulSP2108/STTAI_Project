@@ -1,7 +1,0 @@
-UUID: aug_2aed6ecc
-Parent_UUID: 425a609f
-Augmentation_Type: discourse_framing
-Similarity_Score: 0.9702
-Transcript: नमस्ते, कृपया बताइए कि हेलो हेल्पडेस्क, पीएचडी एडमिशन इंटरव्यू के लिए शॉर्टलिस्टेड कैंडिडेट्स की लिस्ट डिपार्टमेंट वेबसाइट पर कब आएगी?
-Target_Label: admissions
-Spoken_Languages: ['Hindi']

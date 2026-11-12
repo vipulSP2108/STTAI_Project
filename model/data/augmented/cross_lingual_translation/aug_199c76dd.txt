@@ -1,7 +1,0 @@
-UUID: aug_199c76dd
-Parent_UUID: 0cf35b58
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.7068
-Transcript: हैलो आईटीएएचओआईएसीके, मुझे एक गैर-संकार कोड परिवर्तन होना था क्योंकि मेजर मे मे आ रहा है
-Target_Label: hostel_mess
-Spoken_Languages: ['Hindi']

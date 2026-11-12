@@ -1,7 +1,0 @@
-UUID: aug_540232c1
-Parent_UUID: 9ad620ab
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.4929
-Transcript: Hi, sir, I'm looking for the graduation information process for your daughter. She wants to study engineering and we want her to be safe and a good living environment with her study.
-Target_Label: admissions
-Spoken_Languages: ['English']

@@ -1,7 +1,0 @@
-UUID: aug_976b2a35
-Parent_UUID: 43f59a85
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.8497
-Transcript: હેલો આઈઆઈટીજીએન હેલ્પડેસ્ક, હમારે રૂમ માં ટેબલ ફૈન ની સ્પીડ રેગુલેટર ખરાબ છે, કૃપા કરીને ઇલેક્ટ્રીશિયન કો ભેજેં૤
-Target_Label: hostel_mess
-Spoken_Languages: ['Hindi']

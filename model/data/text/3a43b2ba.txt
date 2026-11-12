@@ -1,4 +1,0 @@
-UUID: 3a43b2ba
-Transcript: Namaskar sir, my nithin popat patil dhuliya i nikimar ast Rajjike dhuliya jile se bol raho muje apke aayati gandhinagar mein ademission chaayetha iskili muje ap krupaya sanjayenge ki tis tarasse isu university mein muje pravesh mil saktaay अप्रे लिवार हो सके चिवार पे चिवार मुझे जन करे मिले कि चिवार मुझे असनी होटी होटी तो दो लो लो .
-Target_Label: admissions
-Spoken_Languages: Hindi

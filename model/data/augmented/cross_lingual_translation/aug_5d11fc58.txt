@@ -1,7 +1,0 @@
-UUID: aug_5d11fc58
-Parent_UUID: 49732d6c
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.5791
-Transcript: नमस्कार आईआरटी गांधीनग वोइस हेल्पडेस्क होस्ट्रालूम चेन्ज एप्लिकेशन फोर्म किया ओफिस.
-Target_Label: hostel_mess
-Spoken_Languages: ['Gujarati']

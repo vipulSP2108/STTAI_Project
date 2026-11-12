@@ -1,7 +1,0 @@
-UUID: aug_2ad20406
-Parent_UUID: ef48e8d5
-Augmentation_Type: pivot_latin
-Similarity_Score: 0.9529
-Transcript: નમસ્તે હેલ્પડેસ્ક, આઈઆઈટી ગાંધીનગર કેમ્પસમાં it assistance અંગે સપોર્ટ જોઈતો હતો.
-Target_Label: it_support
-Spoken_Languages: ['Gujarati']

@@ -1,7 +1,0 @@
-UUID: aug_94834668
-Parent_UUID: 36b5229a
-Augmentation_Type: discourse_framing
-Similarity_Score: 0.8515
-Transcript: સાહેબ, થોડી માહિતી જોઈતી હતી કે એજન્ટ સપોર્ટ આપો એપ્રેડ કરવા માટે કમિટિંગ ક્યાં થયેલી છે કુપિયા એજન્ટ સપોર્ટ આપો
-Target_Label: hostel_mess
-Spoken_Languages: ['Gujarati']

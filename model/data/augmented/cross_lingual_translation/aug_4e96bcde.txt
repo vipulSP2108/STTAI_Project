@@ -1,7 +1,0 @@
-UUID: aug_4e96bcde
-Parent_UUID: a18ff6b6
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.4835
-Transcript: हैलो IINCN Dagaks, मैं बिना इसके मेरे Seeeeeeee Cueue Cueec पर प्रभाव कर सकते हैं एक अतिरिक्त चुनाव कोर्स कर सकते हैं?
-Target_Label: student_services
-Spoken_Languages: ['English']

@@ -1,4 +1,0 @@
-UUID: 9a6ec2f5
-Transcript: Good afternoon. I am a BTEC fresher student staying in Firpil hostel. I wanted to inquire about the procedure for changing rooms. Currently I am in a triple sharing room but my room mate and I have completely different schedules. He stays very late with the lights on which is severely affecting my sleep and my health. I have tried talking to him but it hasn't I spoke to my student guide and they advised me to contact the hostel office. Are there any vacant triple rooms or perhaps another room where someone is looking to change their roommates? Do I need to write a formal application to the warden or is there an online form for room reallocation request?
-Target_Label: hostel_mess
-Spoken_Languages: English

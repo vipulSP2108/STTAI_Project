@@ -1,4 +1,0 @@
-UUID: d605e770
-Transcript: हेलो आईआईटीजीएन हेल्पडेस्क, हॉस्टल के सेकंड फ्लोर बाथरूम में पानी का प्रेशर बहुत कम है, कृपया प्लंबर को भिजवाएं।
-Target_Label: hostel_mess
-Spoken_Languages: Hindi

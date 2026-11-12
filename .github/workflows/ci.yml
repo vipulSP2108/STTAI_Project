@@ -6,34 +6,65 @@ permissions:
   contents: read
 
 jobs:
-  verify:
+  public-checks:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.10'
-
-      - name: Verify data constraints and the original gold checksum
+      - name: Install code-test dependencies
+        run: python -m pip install --quiet pyyaml==6.0.2 numpy==1.26.4 scipy==1.14.1 scikit-learn==1.6.1
+      - name: Reject Git-tracked private data and credentials
+        run: python code/private_data.py check-git
+      - name: Test code and safe private-data restoration
         run: |
-          python -m pip install --quiet pyyaml==6.0.2 numpy==1.26.4 scipy==1.14.1 scikit-learn==1.6.1
-          python -m unittest discover -s tests -v
-          echo '64b7647b5d0d35733063c77caab122a1a7c24ac6c70b7d476ffbabd9a2448ca9  data/gold_test_set.csv' | sha256sum --check
+          python -m unittest discover -s tests -p 'test_private_data.py' -v
+          python -m unittest discover -s tests -p 'test_gate_logic.py' -v
+          python -m unittest discover -s tests -p 'test_revised_release_data.py' -v
+          bash -n final_annotation/transcription_round/start_round_t.sh
+          bash -n final_annotation/transcription_round/export_round_t.sh
+      - name: Explain private validation scope
+        run: echo 'Dataset/model-image checks require DVC data. They run locally or in private-release when explicitly configured; they are not claimed by public-only CI.'
 
-      - name: Generate a synthetic WAV for sample validation and prediction
+  private-release:
+    if: github.event_name != 'pull_request' && vars.RUN_PRIVATE_DATA_CI == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+      - name: Install DVC and test dependencies
+        run: python -m pip install --quiet 'dvc[s3]==3.67.1' pyyaml==6.0.2 numpy==1.26.4 scipy==1.14.1 scikit-learn==1.6.1
+      - name: Restore private data from configured remote
+        env:
+          STTAI_DVC_CONFIG: ${{ secrets.DVC_CONFIG }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        run: |
+          python -c "import os,pathlib; c=os.environ.get('STTAI_DVC_CONFIG',''); assert c, 'Set the DVC_CONFIG secret before enabling private CI'; pathlib.Path('.dvc/config.local').write_text(c)"
+          dvc pull private_project_data.dvc
+          python code/private_data.py restore
+      - name: Verify real data and frozen gold checksum
+        run: |
+          python code/private_data.py verify
+          python -m unittest discover -s tests -p 'test_gate_logic.py' -v
+          python -m unittest discover -s tests -p 'test_revised_release_data.py' -v
+          echo '64b7647b5d0d35733063c77caab122a1a7c24ac6c70b7d476ffbabd9a2448ca9  data/gold_test_set.csv' | sha256sum --check
+      - name: Generate a synthetic speech WAV
         run: |
           sudo apt-get update
           sudo apt-get install -y --no-install-recommends espeak-ng ffmpeg
           espeak-ng -w "$RUNNER_TEMP/query.wav" 'Hello, I need help connecting to the campus wireless network.'
           ffmpeg -nostdin -loglevel error -i "$RUNNER_TEMP/query.wav" -ar 16000 -ac 1 -c:a pcm_s16le "$RUNNER_TEMP/smoke.wav"
-
-      - name: Build the revised CPU runtime without private WAVs
+      - name: Build the self-contained CPU runtime
         run: |
           docker build --platform linux/amd64 --target runtime -t voice-helpdesk-asr:ci \
             --build-arg "GIT_COMMIT=$GITHUB_SHA" --build-arg SOURCE_TREE=clean -f code/Dockerfile .
-
-      - name: Validate the sample and make an offline REST prediction
+      - name: Exercise offline REST inference
         run: |
           docker run --rm --pull never --network none \
             --mount "type=bind,source=$RUNNER_TEMP/smoke.wav,target=/input.wav,readonly" \

@@ -1,7 +1,0 @@
-UUID: aug_954d7ee5
-Parent_UUID: 3f07f814
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.7541
-Transcript: हैलो, यह WGN, मेरे छात्र पोर्टल मुझे बाहर बंद करने के बाद भी ब्राउज़र कैश स्पष्ट करने के बाद भी मुझे बाहर गणना करता है. यह जांच कर सकते हैं?
-Target_Label: it_support
-Spoken_Languages: ['English']

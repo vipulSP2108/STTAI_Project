@@ -1,7 +1,0 @@
-UUID: aug_f872497b
-Parent_UUID: 430f801d
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.5683
-Transcript: નમસ્તે, શું આઈઆઈટી ગાંધીનગર માં સમર ઇંટર્નશિપ ના દૌરાન હોસ્ટેલ અને મેસ ની સુવિધા મિલ સકતી છે?
-Target_Label: admissions
-Spoken_Languages: ['Hindi']

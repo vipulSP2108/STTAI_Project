@@ -1,7 +1,0 @@
-UUID: aug_abfe44c9
-Parent_UUID: 1a50aec3
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.6603
-Transcript: हेलो, मूडल पोर्टल पर एसाईनमेन्ट सबमिशन डेडलाईन एक्सटेन्ड थई हैं के नहीं ते कन्फर्म करशो?
-Target_Label: student_services
-Spoken_Languages: ['Gujarati']

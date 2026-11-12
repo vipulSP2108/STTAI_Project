@@ -1,7 +1,0 @@
-UUID: aug_40db5f97
-Parent_UUID: 4ca415ea
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.8286
-Transcript: हेलोट सर्विस रिटर्न नहीं कर्या हैं सपोर्ट आपो.
-Target_Label: student_services
-Spoken_Languages: ['Gujarati']

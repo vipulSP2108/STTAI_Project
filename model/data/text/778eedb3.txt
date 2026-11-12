@@ -1,4 +1,0 @@
-UUID: 778eedb3
-Transcript: Hello IITGN Helpdesk, my hostel room hot water supply has not been available for the past two days. Please have the maintenance team look into this.
-Target_Label: hostel_mess
-Spoken_Languages: English, Hindi

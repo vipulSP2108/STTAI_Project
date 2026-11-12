@@ -1,7 +1,0 @@
-UUID: aug_69489d4b
-Parent_UUID: c07a30f2
-Augmentation_Type: discourse_framing
-Similarity_Score: 0.9023
-Transcript: સાહેબ, થોડી માહિતી જોઈતી હતી કે નમસ્કાર હોસ્ટલ કોયડો લાઇટ ફ્લીકરિંગ થઈ રહી છે ઇલેક્ટેશિયન ને મોકલી
-Target_Label: hostel_mess
-Spoken_Languages: ['Gujarati']

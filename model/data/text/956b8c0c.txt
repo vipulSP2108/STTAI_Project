@@ -1,4 +1,0 @@
-UUID: 956b8c0c
-Transcript: During filling the enrollment details, I enter the graduation year, those are like 2027, but I mistakenly scrolled down so it became a little bit more difficult. I am at the time, I did not know this mistake happened and suddenly my information thinking I could read it, the information. As of now the website is mentioning the same information and one time enrollment and and I am not able to edit that.
-Target_Label: it_support
-Spoken_Languages: English

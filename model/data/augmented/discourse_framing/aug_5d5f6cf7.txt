@@ -1,7 +1,0 @@
-UUID: aug_5d5f6cf7
-Parent_UUID: 1eb0e38a
-Augmentation_Type: discourse_framing
-Similarity_Score: 0.9796
-Transcript: નમસ્તે, મારે જાણવું છે કે નમસ્કાર મારા દિકરા માહિતી જોઈતી હતી તે હાલમાં બહાર કરે છે અને આગળ એન્જિનિયરિંગ કરવા મા સંસ્થામાં અલગથી પણ કોઈ પ્રક્રિયા પૂઈ કરવા પડે છે કરવા ઘણી સરળતા છે
-Target_Label: admissions
-Spoken_Languages: ['Gujarati']

@@ -1,7 +1,0 @@
-UUID: aug_1396be9c
-Parent_UUID: 6e595ed3
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.5558
-Transcript: हैलो हेस, शिविर का मार्ग क्या है और मेरे बेटे की हत्या के लिए समय सीमा क्या है?
-Target_Label: admissions
-Spoken_Languages: ['Hindi']

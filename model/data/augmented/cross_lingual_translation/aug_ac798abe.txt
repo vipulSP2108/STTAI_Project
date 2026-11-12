@@ -1,7 +1,0 @@
-UUID: aug_ac798abe
-Parent_UUID: f41402b1
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.7765
-Transcript: Hello Heides, we've created new robotic club in the camp, what's the procedure for clubta and ant-transgress room?
-Target_Label: student_services
-Spoken_Languages: ['Hindi']

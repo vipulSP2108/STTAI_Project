@@ -1,7 +1,0 @@
-UUID: aug_ab9ea94a
-Parent_UUID: 944528c0
-Augmentation_Type: code_mixing
-Similarity_Score: 0.9479
-Transcript: Hello, IITGN Helpdesk. The internship company is asking for a bonafide student letter and NOC. How do I request it through the student website login?
-Target_Label: student_services
-Spoken_Languages: ['English']

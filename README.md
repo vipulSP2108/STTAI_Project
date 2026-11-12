@@ -6,6 +6,8 @@ Department of Computer Science and Engineering, Indian Institute of Technology G
 
 **Current Docker path** — The revised 182-clip corpus is the working dataset. See [Docker build and verification](DOCKER.md) and the [checkpoint plan](ASSIGNMENT_CHECKPOINT_PLAN.md). The pilot metrics, experiment commands and tags below describe historical work.
 
+**Private data (13 November 2026):** annotations, datasets, transcript caches and model/run artifacts are now DVC-only. A plain Git clone contains no private dataset. Restore the private payload before dataset tests or Docker builds; see [private data and snapshot handoff](PRIVATE_DATA_HANDOFF.md). Public CI and optional private-data CI are documented separately there.
+
 ---
 
 ## Team & Equal Contribution Statement

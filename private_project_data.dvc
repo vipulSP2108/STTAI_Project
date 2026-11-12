@@ -1,0 +1,6 @@
+outs:
+- md5: cea47c7c55b342b7ca19e60d9f5b7eb9.dir
+  size: 393791866
+  nfiles: 1564
+  hash: md5
+  path: private_project_data

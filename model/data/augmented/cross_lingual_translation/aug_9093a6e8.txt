@@ -1,7 +1,0 @@
-UUID: aug_9093a6e8
-Parent_UUID: fed4057d
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.5923
-Transcript: हेलो आईआईटीजीएन हेल्पडेस्क, क्रेडिट रिक्वायरमेन्ट पूरी करवा के लिए मिनिमम सीपीआई केटलो होवो चाहिए?
-Target_Label: student_services
-Spoken_Languages: ['Gujarati']

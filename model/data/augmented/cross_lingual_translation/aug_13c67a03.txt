@@ -1,7 +1,0 @@
-UUID: aug_13c67a03
-Parent_UUID: badcc32a
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.7189
-Transcript: Hello IELGN, my list is completed and the important instructions are coming back. Can you increase my storage quota?
-Target_Label: it_support
-Spoken_Languages: ['English', 'Hindi']

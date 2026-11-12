@@ -1,7 +1,0 @@
-UUID: aug_f0a17d8b
-Parent_UUID: 9cd6c852
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.7674
-Transcript: Hello iTinh Heides, my friend's IDcard has lost, how can the platform register in the dealion of the quietly and Fult?
-Target_Label: student_services
-Spoken_Languages: ['Hindi']

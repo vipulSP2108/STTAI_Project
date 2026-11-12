@@ -1,7 +1,0 @@
-UUID: aug_a1180db3
-Parent_UUID: e117dac3
-Augmentation_Type: discourse_framing
-Similarity_Score: 0.9158
-Transcript: હેલ્પડેસ્ક પર જણાવશો કે એજન્ટ સપોર્ટ આપો નમસ્કાર ગાંધીનગર હેલ્પટ કરતો કે પ્લીઝ મેન્ટેનેન્ટ
-Target_Label: hostel_mess
-Spoken_Languages: ['Gujarati']

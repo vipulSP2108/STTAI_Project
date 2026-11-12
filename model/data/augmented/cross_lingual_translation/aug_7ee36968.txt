@@ -1,7 +1,0 @@
-UUID: aug_7ee36968
-Parent_UUID: eeea163e
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.6551
-Transcript: हेलो हेल्पडेस्क, केम्पस शटल बसनो गांधीनगर रेलवे स्टेशन जवानो समयपत्रक आपशो?
-Target_Label: student_services
-Spoken_Languages: ['English', 'Hindi']

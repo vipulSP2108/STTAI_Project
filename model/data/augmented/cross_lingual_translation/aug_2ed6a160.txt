@@ -1,7 +1,0 @@
-UUID: aug_2ed6a160
-Parent_UUID: 847fd9b4
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.744
-Transcript: I need to know about the banking and the Ammmeritine for the students.
-Target_Label: student_services
-Spoken_Languages: ['English']

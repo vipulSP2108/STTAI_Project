@@ -1,4 +1,0 @@
-UUID: 655238a6
-Transcript: Hello ITGN, my name is Ruhmalao and I am in Ruhmalao. Last year I was in Ruhmalao. I can check this place and I will give you a single room. I have to stay in Ruhm and it is showing me. Can you please take a look into this and frequently respond to me? Thank you.
-Target_Label: hostel_mess
-Spoken_Languages: English, Hindi

@@ -1,7 +1,0 @@
-UUID: aug_b569a112
-Parent_UUID: 4ca415ea
-Augmentation_Type: discourse_framing
-Similarity_Score: 0.7349
-Transcript: હેલ્પડેસ્ક પર જણાવશો કે હેલોટ સર્વિસ રિટર્ન નથી કર્યા છે સપોર્ટ આપો
-Target_Label: student_services
-Spoken_Languages: ['Gujarati']

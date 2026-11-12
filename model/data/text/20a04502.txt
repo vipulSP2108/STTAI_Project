@@ -1,4 +1,0 @@
-UUID: 20a04502
-Transcript: માર્ચે હોસ્ટલમાં હોટ વોટર સપ્લાય સવારે આવતી નથી ઈસ્મા ઇન્ટેનન્સ કમ્પ્લેન કારજિસ્ટર.
-Target_Label: hostel_mess
-Spoken_Languages: Gujarati

@@ -1,7 +1,0 @@
-UUID: aug_91c4bced
-Parent_UUID: b1a6b1f1
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.9858
-Transcript: Hello Sir, I want to give you a hug Our hostel room is about to start from the 11th of the day The door is closed No one is allowed to study Light is gone and our heart is getting scared. Our stomach is broken. We can feel the pain. આપાદિવોલાણિવિલ પાદિવોલાણિવિલ પાદિવોલાણિવિલ પાદિવોલાણિવોલાણિવોલાણિવોલાણિવોલાણિવોલાણિવોલાણિવોલાણિવોલાણિવોલાણિવોલાણિવોલાણિવોલાણિવો.
-Target_Label: hostel_mess
-Spoken_Languages: ['Hindi']

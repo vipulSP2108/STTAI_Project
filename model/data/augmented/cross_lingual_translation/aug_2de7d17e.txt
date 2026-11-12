@@ -1,7 +1,0 @@
-UUID: aug_2de7d17e
-Parent_UUID: 11e9cdaa
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.6895
-Transcript: नमस्कारआईजी मदद डेस्क. मेरा लैपटॉप हाल ही के ऑपरेटिंग सिस्टम के अद्यतन के बाद बैंक वपीएन से कनेक्ट करने में असमर्थ है. कृपया समस्याओं को कम करने में मदद करें.
-Target_Label: it_support
-Spoken_Languages: ['English']

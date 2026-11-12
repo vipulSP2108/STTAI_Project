@@ -1,7 +1,0 @@
-UUID: aug_c16ffe76
-Parent_UUID: 939b462d
-Augmentation_Type: discourse_framing
-Similarity_Score: 0.9274
-Transcript: નમસ્તે, મારે જાણવું છે કે નમસ્કાર ડોક્યુમેન્ટ મેન્ડેટર છે કે ઓનલાઇન અપલોડ કરી શકાય
-Target_Label: admissions
-Spoken_Languages: ['Gujarati']

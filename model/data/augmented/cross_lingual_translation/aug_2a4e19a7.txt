@@ -1,7 +1,0 @@
-UUID: aug_2a4e19a7
-Parent_UUID: 0200b1f0
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.5936
-Transcript: Noscasck, magjet sound on a table, helps check the desk-tat-tat-searchy computer science to see if non - gate arrests can be applied to secret tests?
-Target_Label: admissions
-Spoken_Languages: ['English', 'Hindi']

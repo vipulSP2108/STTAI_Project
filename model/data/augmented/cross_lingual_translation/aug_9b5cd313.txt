@@ -1,7 +1,0 @@
-UUID: aug_9b5cd313
-Parent_UUID: 21df306f
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.5613
-Transcript: હેલો હેલ્પડેસ્ક, મૈંને લાઇબ્રેરી માં બુક રિટર્ન ની હતી લેકિન મારા અકાઉંટ પર અભી ભી ફાઇન પેંડિંગ દિખ રહા છે, ઇસે કેવી રીતે ક્લિયર કરવાએં?
-Target_Label: student_services
-Spoken_Languages: ['Hindi']

@@ -1,7 +1,0 @@
-UUID: aug_450109b1
-Parent_UUID: badcc32a
-Augmentation_Type: discourse_framing
-Similarity_Score: 0.9799
-Transcript: Please help, I am inquiring about hello IITGN Helpdesk, my institute email inbox is full and important faculty emails are bouncing back. Can you please increase my storage quota?
-Target_Label: it_support
-Spoken_Languages: ['English', 'Hindi']

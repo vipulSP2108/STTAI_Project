@@ -1,7 +1,0 @@
-UUID: aug_78943a95
-Parent_UUID: ec5b227c
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.5339
-Transcript: Hello, I want to ask about host access to my son who is preparing to join this STTeeter program.
-Target_Label: hostel_mess
-Spoken_Languages: ['English']

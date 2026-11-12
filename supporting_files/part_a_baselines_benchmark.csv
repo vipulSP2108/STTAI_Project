@@ -1,4 +1,0 @@
-Training Configuration,Sample Count,Val WER,Val Intent Acc (95% CI),Val Macro-F1,MLflow Run ID
-Train Only (171 clips),171,1.398,"23.5% [5.9%, 47.1%]",0.217,4874f30b
-Train + Augmented (231 clips),231,1.398,"29.4% [11.6%, 52.9%]",0.220,4cb2e4e9
-Train + AL Selected (183 clips),183,1.398,"23.5% [5.9%, 47.1%]",0.220,351cc3e8

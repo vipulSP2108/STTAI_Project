@@ -1,7 +1,0 @@
-UUID: aug_ae1d87f2
-Parent_UUID: 7c69dee1
-Augmentation_Type: cross_lingual_translation
-Similarity_Score: 0.6295
-Transcript: Good evening, I need help to update your emergency contact details and attribute credit to the construction portal for my depreciency.
-Target_Label: it_support
-Spoken_Languages: ['English', 'Hindi']

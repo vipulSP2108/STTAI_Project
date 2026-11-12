@@ -1,7 +1,0 @@
-UUID: aug_e0ff5dc6
-Parent_UUID: b1a6b1f1
-Augmentation_Type: lexical_synsets
-Similarity_Score: 0.9353
-Transcript: Hello Sir, I want to give you a hug Our hostel allotted room is about to start from the 11th of the day The door is closed No one is allowed to study Light is gone and our heart is getting scared. Our stomach is broken. We can feel the pain. आप ा द ि व ो ल ा ण ि व ि ल प ा द ि व ो ल ा ण ि व ि ल प ा द ि व ो ल ा ण ि व ि ल प ा द ि व ो ल ा ण ि व ो ल ा ण ि व ो ल ा ण ि व ो ल ा ण ि व ो ल ा ण ि व ो ल ा ण ि व ो ल ा ण ि व ो ल ा ण ि व ो ल ा ण ि व ो ल ा ण ि व ो ल ा ण ि व ो ल ा ण ि व ो ल ा ण ि व ो.
-Target_Label: hostel_mess
-Spoken_Languages: ['Hindi']
