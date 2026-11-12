@@ -32,6 +32,7 @@
 | `LOG-418` | 2026-11-06T04:46:58Z | `17ace7b` | `candidate-retrained-v2` | Active Retraining Gate (rehearsal) | `64b7647b...` (MATCH) | 1.270 | 0.310 | **REJECTED_ROLLBACK** |
 | `LOG-179` | 2026-11-06T04:59:39Z | `17ace7b` | `candidate-retrained-v2` | Active Retraining Gate (rehearsal) | `64b7647b...` (MATCH) | 1.358 | 0.207 | **PROMOTED_TO_PRODUCTION** |
 | `LOG-188` | 2026-11-06T04:59:48Z | `17ace7b` | `candidate-no-rehearsal-v1` | Active Retraining Gate (no_rehearsal) | `64b7647b...` (MATCH) | 1.358 | 0.241 | **REJECTED_ROLLBACK** |
+| `LOG-473` | 2026-11-12T00:14:33Z | `7607e5f` | `candidate-retrained-v2` | Active Retraining Gate (rehearsal) | `64b7647b...` (MATCH) | 1.358 | 0.207 | **PROMOTED_TO_PRODUCTION** |
 
 ---
 
@@ -68,3 +69,4 @@ assert current_hash == EXPECTED_GOLD_HASH, f"CRITICAL SECURITY VIOLATION: Gold s
 | `GATE-20261111-0657-rehearsal` | 2026-11-11T06:57:10 | `82e2ce2`+working tree | router rehearsal [forced demo (no alert)] | gate v3.0.0 check: Cohort-B held-out 0.429->0.429, release test 0.625->0.500 | - | - | 0.500 | **REJECTED** |
 | `GATE-20261111-0657-no_rehearsal` | 2026-11-11T06:57:12 | `82e2ce2`+working tree | router no_rehearsal [forced demo (no alert)] | gate v3.0.0 check: Cohort-B held-out 0.429->0.571, release test 0.625->0.300 | - | - | 0.300 | **REJECTED** |
 | `DOCKER-20261111-0826` | 2026-11-11T08:26:49 | `82e2ce2`+working tree | voice-helpdesk-asr:indic-v2 (expert-label router) | container validate, --network none, release test 40 clips (end-to-end audio) | n/a (not the pilot gold) | - | 0.600 | **OFFLINE_VERIFIED** |
+| `LOG-106` | 2026-11-12T00:08:26Z | `7607e5fb` | `production` | Automated evaluation suite | `64b7647b...` (MATCH) | 1.361 | 0.240 | **EVALUATED** |
