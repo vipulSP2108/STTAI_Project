@@ -186,7 +186,7 @@ Whisper-base language ID restricted to \{en, hi, gu\} routes 24\% of Gujarati cl
 
 \subsection{Track B: deployed pipeline on pilot gold}
 \paragraph{Protocol.}
-\file{evaluate.py --model production --split <split>} reports WER, CER, intent accuracy and macro-F1 with 1\,000-resample bootstrap intervals~\cite{Efron1993} (seed 42). Paired tests: Wilcoxon~\cite{Wilcoxon1945} on per-clip WER and McNemar~\cite{McNemar1947} on intent. Test and gold are the same 29 clips.
+\file{code/a2_part_c_evaluation/evaluate.py} (invoked via \texttt{--model production --split <split>}) reports WER, CER, intent accuracy and macro-F1 with 1\,000-resample bootstrap intervals~\cite{Efron1993} (seed 42). Paired tests: Wilcoxon~\cite{Wilcoxon1945} on per-clip WER and McNemar~\cite{McNemar1947} on intent. Test and gold are the same 29 clips.
 \begin{table*}[t]
 \caption{Track~B: proposed system with 95\% bootstrap CIs (B1 = Baseline~1 intent accuracy; WER/CER equal for proposed and B1). Source: \file{supporting_files/evaluation_results.json}.}\label{tab:main}
 \begin{tabular}{lrcccccc}

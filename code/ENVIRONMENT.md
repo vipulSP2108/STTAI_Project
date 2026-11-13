@@ -29,7 +29,8 @@ Core Assignment 1 packages:
 - pytest-json-report==1.5.0
 
 Assignment 2 packages (Tracking, Serving, Offline Validation & Reporting):
-- mlflow==3.18.0             # Experiment tracking and artifact registry
+- mlflow==3.18.0             # Experiment tracking and artifact registry (local embedded)
+- wandb==0.20.1              # Dual-tool cloud experiment tracking and parameter sweeps
 - fastapi==0.124.0           # REST API endpoints (/predict, /health, /version)
 - uvicorn==0.38.0            # ASGI server for FastAPI
 - streamlit==1.56.0          # Interactive offline browser UI
