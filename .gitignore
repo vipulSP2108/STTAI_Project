@@ -38,9 +38,10 @@ data/processed/augmented/
 *.wma
 temp_*.wav
 
-# Local DVC remotes & MLflow
+# Local DVC remotes & MLflow & Weights and Biases
 ../dvc-remote
 mlruns/
+wandb/
 *.db
 
 # Scratch dumps and temporary generator scripts

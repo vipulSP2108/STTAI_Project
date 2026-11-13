@@ -48,3 +48,23 @@ for path_str, exp_hash in EXPECTED_HASHES.items():
     assert digest == exp_hash, f"Hash mismatch for {path_str}: got {digest}, expected {exp_hash}"
     print(f"✓ Verified: {path_str} matches expected SHA-256")
 ```
+
+---
+
+## 3. Dual-Platform Experiment Tracking: MLflow & Weights & Biases (W&B)
+
+In alignment with **CS203: Software Tools and Techniques in AI**, all 15 systematic hyperparameter tuning runs were concurrently tracked and cross-validated across **both industry-standard MLOps platforms**:
+
+1. **MLflow** (`supporting_files/mlflow.db`, exported to `artefacts/mlflow_export/`):
+   - Local, embedded, offline-first SQLite tracking server.
+   - Powers zero-network container builds and offline reproducible validation (`--network none`).
+   - Registers local model version aliases (`production`, `staging`).
+
+2. **Weights & Biases (W&B)** (Project `voice-helpdesk-asr` under IIT Gandhinagar organization):
+   - Synchronized via `code/a2_part_b_tuning/sync_wandb.py` using `WANDB_API_KEY`.
+   - Cloud dashboard for distributed team collaboration, interactive runs comparison table, and Pareto trade-off visualization.
+   - Logs identical hyperparameters (`lr`, `hidden_dim`, `ngram_max`, `dropout`, `epochs`), validation metrics (accuracy, macro-F1, latency), model size, and Git commit hashes.
+
+### Cross-Validation & Concordance:
+- **Identical Optimum**: Both MLflow and W&B independently identify **Run 6** as the Pareto-optimal production champion (`val_accuracy: 52.94%`, `macro-f1: 0.4705`, `size: 251.3 KB`, `latency: 0.007 ms`) and **Run 9** as the staging candidate (`val_accuracy: 47.06%`, `macro-f1: 0.3792`).
+- **Complementary Tool Roles**: Demonstrates hands-on proficiency with self-hosted embedded tooling (MLflow) for offline container compliance alongside enterprise managed cloud tooling (W&B) for team visibility.
