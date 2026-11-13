@@ -29,9 +29,7 @@ def should_exclude(rel_path_str: str) -> bool:
     _, ext = os.path.splitext(rel_path_str)
     if ext in EXCLUDE_EXTS:
         return True
-    # exclude large 1.4GB docker tarball from standard code zip if separately submitted or DVC tracked
-    if rel_path_str == "artefacts/docker_image.tar.gz":
-        return True
+    # Allow artefacts/docker_image.tar.gz to be bundled directly in submission zip as per requirement
     return False
 
 def package():

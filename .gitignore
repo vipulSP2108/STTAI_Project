@@ -48,8 +48,6 @@ wandb/
 dump/
 dump.md
 scratch/
-code/scripts/
-report/*.pdf
 report/fig_*.pdf
 report/figures/
 report/figures_v2/
@@ -72,8 +70,6 @@ model/models/
 model/data/cache/
 final_annotation/annotator_*/data/
 final_annotation/annotator_*/records/
-supporting_files/*.mp4
-supporting_files/screen_recording.mp4
 
 # Agent / Tooling footprints
 .gemini/
@@ -88,11 +84,19 @@ docs/
 /intent_router.joblib
 *.tar
 *.tar.gz
+!artefacts/docker_image.tar.gz
 # Colab fine-tuning outputs (weights are large; checksums go in MODELS.md)
 model/models/ft_*/
 # Round T: push each annotator's Label Studio database (the annotations); keep logins/logs/temp local
 final_annotation/transcription_round/ls_data_*/*
 !final_annotation/transcription_round/ls_data_*/label_studio.sqlite3
+!final_annotation/transcription_round/ls_data_A2/backups/
+!final_annotation/transcription_round/ls_data_A2/backups/*
 # Audio bundles shared directly with helpers (never on GitHub)
 release_audio_for_friend.zip
 roundT_audio_A2.zip
+
+# Submission packages (generated from git repository for upload)
+CS203_A2_Project5_*.zip
+CS203_A1_Project5_*.zip
+Assignment_*.zip

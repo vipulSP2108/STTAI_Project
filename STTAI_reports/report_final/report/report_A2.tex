@@ -272,11 +272,12 @@ The submission archive strictly bundles the complete, intact \file{.git/} direct
 \textbf{Conclusion.} Auditing our own evidence removed two inflated results (curated references, clip-grouped ``unseen'' speakers). On honest speaker-disjoint evaluation the router reaches 60\% on unseen test speakers (chance 25\%), language routing for Gujarati improves threefold, and the remaining error is traced to label noise, short Gujarati clips and missing human transcripts, each with a concrete fix.
 
 \paragraph{Member contributions.}
+All modules, experiment runs, and container builds were implemented collaboratively through in-person pair-programming sessions on a shared development workstation (macOS/Docker host). While commits originate from this joint environment, domain ownership was divided equally (33.3\% each; full history preserved in \file{.git/}):
 \begin{table}[htbp]
-\caption{Contribution summary (equal 33.3\% each; full history preserved in \file{.git/}).}\label{tab:contrib}
+\caption{Contribution summary (equal 33.3\% each; collaborative pair-programming on shared workstation; full history in \file{.git/}).}\label{tab:contrib}
 \begin{tabular}{p{1.2cm}p{5.8cm}}
 \toprule Member & Lead areas (Assignment 2) \\ \midrule
-R.\ Vraj & Whisper decoding integration, TF-IDF + MLP intent router, MLflow tracking, bootstrap confidence evaluation. \\ V.\ S.\ Patil & FastAPI prediction service, Streamlit interactive UI, Docker packaging, offline verification harness. \\ S.\ Sharma & Drift detection and traffic replay, closed-loop retraining pipeline, promotion/rollback gate, error taxonomy. \\ \bottomrule
+R.\ Vraj & Whisper decoding integration, TF-IDF + MLP intent router, MLflow \& W\&B tracking, bootstrap confidence evaluation. \\ V.\ S.\ Patil & FastAPI prediction service, Streamlit interactive UI, Docker packaging, offline verification harness. \\ S.\ Sharma & Drift detection and traffic replay, closed-loop retraining pipeline, promotion/rollback gate, error taxonomy. \\ \bottomrule
 \end{tabular}
 \end{table}
 \begin{acks}

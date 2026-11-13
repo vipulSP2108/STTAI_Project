@@ -154,6 +154,18 @@ STTAI_Project/
 
 ---
 
+## Team Contributions & Development Environment
+
+All pipeline modules, experimental runs, and Docker containerizations were implemented collaboratively through in-person pair-programming sessions conducted on a shared primary development workstation (macOS / Docker host). While Git commits originate from this joint workstation environment, functional domain ownership was strictly divided among all three team members with equal 33.3% contributions:
+
+| Member | Roll Number | Primary Functional Responsibilities |
+| :--- | :--- | :--- |
+| **Rajdeep Vraj** | `24110260` | Audio collection protocol, 14-check validation suite, VAD normalization, Docker containerization (`code/Dockerfile`), and offline image verification. |
+| **Vipul Sunil Patil** | `24110381` | Label Studio dual annotation, TF-IDF + MLP intent routing, 15-run MLflow & W&B experiment tracking, FastAPI service, and Streamlit UI. |
+| **Satvik Sharma** | `24110300` | Statistical evaluation, Wilson score & 1,000 bootstrap CIs, slice analysis, traffic replay drift detection, and automated retraining gates. |
+
+---
+
 ## Frozen Benchmarks & Git Releases
 
 - **Assignment 1 Release Tag**: `a1-final`

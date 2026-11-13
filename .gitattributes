@@ -1,3 +1,4 @@
 data/gold_test_set.csv -text
 data/gold_corrections.csv -text
 code/a2_part_d_deployment/revised-entrypoint.sh text eol=lf
+artefacts/docker_image.tar.gz filter=lfs diff=lfs merge=lfs -text
