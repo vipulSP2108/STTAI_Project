@@ -1,0 +1,22 @@
+services:
+  annotations-a2:
+    image: heartexlabs/label-studio:1.23.0@sha256:aa461572e8f9d86a1bf9520c1db620204e86160fd2f80dd7e9d40ac84a8828ea
+    user: "0"
+    init: true
+    working_dir: /project
+    ports:
+      - "127.0.0.1:8092:8092"
+    environment:
+      LABEL_STUDIO_BASE_DATA_DIR: /project/final_annotation/transcription_round/ls_data_A2
+    volumes:
+      - ./final_annotation/transcription_round:/project/final_annotation/transcription_round
+      - ../local_assets/corpus_records:/project/final_annotation/annotator_1/records:ro
+    entrypoint: /bin/bash
+    command:
+      - -c
+      - |
+        set -e
+        bash final_annotation/transcription_round/start_round_t.sh A2
+        trap 'bash final_annotation/transcription_round/start_round_t.sh stop; exit 0' TERM INT
+        tail -n 0 -F final_annotation/transcription_round/ls_data_A2/server.log &
+        wait $$!

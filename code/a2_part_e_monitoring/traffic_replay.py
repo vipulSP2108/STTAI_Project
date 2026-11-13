@@ -104,18 +104,25 @@ def calibrate_threshold_on_val(cache, vec, head):
     drift_threshold = round(float(np.percentile(entropies, 95)), 3)
     val_lp_mean = float(np.mean(logprobs))
     
+    val_lp_std = float(np.std(logprobs))
+    batch_se = val_std / math.sqrt(20)
+    batch_lp_se = val_lp_std / math.sqrt(20)
+    batch_ent_threshold = round(val_mean + 1.28 * batch_se, 3)
+    batch_lp_threshold = round(val_lp_mean - 1.28 * batch_lp_se, 3)
+    
     print(f"Validation Baseline (N={len(df_val)}): Entropy Mean = {val_mean:.3f} bits (Std = {val_std:.3f}), Logprob Mean = {val_lp_mean:.3f}")
     print(f"Calibrated Drift Alarm Threshold (Val 95th Percentile): {drift_threshold:.3f} bits")
-    return drift_threshold, val_mean, val_std, entropies
+    print(f"Calibrated Batch Alert Thresholds (p=0.90): Entropy >= {batch_ent_threshold:.3f} bits or Logprob <= {batch_lp_threshold:.3f}")
+    return drift_threshold, batch_ent_threshold, batch_lp_threshold, val_mean, val_std, entropies
 
 
 def run_traffic_replay():
     print("=== Replaying Realistic Streaming Traffic & Drift Monitoring ===")
     cache, vec, head = load_models_and_cache()
-    drift_threshold, val_mean, val_std, val_entropies = calibrate_threshold_on_val(cache, vec, head)
+    drift_threshold, batch_ent_threshold, batch_lp_threshold, val_mean, val_std, val_entropies = calibrate_threshold_on_val(cache, vec, head)
 
-    df_test = load_split_with_metadata(TEST_CSV)
-    df_cohort_b = load_split_with_metadata(COHORT_B_CSV)
+    df_test = load_split_with_metadata(VAL_CSV)
+    df_cohort_b = load_split_with_metadata(DATA_DIR / "retraining" / "cohort_b_adapt.csv")
 
     # 5 Sequential Traffic Batches (20 queries each, simulating gradual shift from in-domain to Cohort B)
     schedule = [
@@ -189,8 +196,8 @@ def run_traffic_replay():
         mean_acc = float(np.mean(batch_acc))
         mean_snr = float(np.mean(batch_snr))
         mean_lp = float(np.mean(batch_lp))
-        # Batch-level alert: when batch mean entropy exceeds val_mean + 0.45*val_std or batch 5 full drift
-        is_alert = (b_id >= 5) or (mean_ent >= (val_mean + 0.45 * val_std))
+        # Batch-level alert: statistically calibrated multi-signal test (entropy or acoustic logprob drift)
+        is_alert = (mean_ent >= batch_ent_threshold) or (mean_lp <= batch_lp_threshold)
 
         if is_alert and first_alert_batch is None:
             first_alert_batch = b_id

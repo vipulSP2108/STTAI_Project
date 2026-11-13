@@ -1,0 +1,378 @@
+{
+ "n_double": 49,
+ "wer_A2_vs_A1": 0.3313343328335832,
+ "wer_A1_vs_A2": 0.30745687256538673,
+ "cer_A2_vs_A1": 0.24438916840974617,
+ "wer_ci95_speaker_bootstrap": [
+  0.23800361904840925,
+  0.45910331145817845
+ ],
+ "per_language": {
+  "Code-mixed": {
+   "n": 7,
+   "wer": 0.34366925064599485,
+   "cer": 0.2468415937803693
+  },
+  "English": {
+   "n": 19,
+   "wer": 0.23533671252715424,
+   "cer": 0.17387375758358073
+  },
+  "Gujarati": {
+   "n": 7,
+   "wer": 0.889795918367347,
+   "cer": 0.7263374485596708
+  },
+  "Hindi": {
+   "n": 16,
+   "wer": 0.3245083207261725,
+   "cer": 0.21926548397136633
+  }
+ },
+ "note": "Round T has a single level (transcript); intents are final from Round I + expert adjudication.",
+ "per_clip": [
+  {
+   "clip_id": "P10_51",
+   "language": "English",
+   "wer": 0.48695652173913045,
+   "A1": "I have a query regarding the hostel mess timings. And the delivery. Recently I noticed that dinner service sometimes starts later. Then the displayed schedule. Students who have evening labs or project meetings are finding it difficult to reach the mess on time. I wanted to know whether the official dinner timings have changed or if this is only a temporary situation. Also, is there any online platform where students can check the daily menu in advance? It would be helpful if the menu and timings were updated regularly so that students could plan their meals accordingly. Could you please guide me to the appropriate mess management contact for complaints or concerns? Please do it.",
+   "A2": "Namaskar IIT GN Voice Helpdesk I have a query regarding the hostel and most timings and the delivery recently i know just that dinner service sometimes starts later then the display schedule students have evening labs or project meetings are finding it difficult to टू रिच दमने सौन के कल भी में अपनी लैप से लेकर निकला था और जब मैं इसको पहुंचा तो फूड कांटर्स अलमोस्ट wanted to know whether the official general timings have changed or if this is only temporary situation also is there any online platform where students can check the galley menu in advance it would be helpful if the menu and timings were updated regularly so that students could plan their meals accordingly. you please guide me to the appropriate mismanagement contact or complaint portal रुपया इस इशू के बारे में इंफॉर्मेशन शेयर करते हैं प्लीज डो इट\n"
+  },
+  {
+   "clip_id": "P11_53",
+   "language": "English",
+   "wer": 0.10884353741496598,
+   "A1": "Namaskar, IIT Gandhinagar voice help desk. I am facing a serious internet connectivity issue on my laptop. The campus Wi-Fi connects successfully, but websites are loading very slowly, and sometimes the connection gets disconnected automatically. This has been happening since yesterday evening, and I restarted my laptop and forgot the network before connecting again, but nothing seems to have changed. मेरे ऑनलाइन लेक्चर्स और असाइनमेंट कम्प्लीट करने में काफी दिक्कत आ रही है। I also tried using the Wi-Fi in another location on campus, but the speed was still Could you please check whether there is a network issue or if I need to update my settings on my device? Please let me know if I should visit the IT support office or submit an online complaint. I need a stable connection for my academic work, so an early resolution would be very helpful. धन्यवाद।",
+   "A2": "Namaskar IIT GN Voice Helpdesk I am facing a serious internet connectivity issue on my laptop the campus Wi-Fi connects successfully but website are loading very slowly and sometimes the connection get disconnected automatically this has been happening since yesterday evening and i restarted my laptop i forgot the network before connecting again but nothing seems to have changed Mary online lectures और assignment complete करने में काफी दिक्कत आ रही है, I also tried using the Wi-Fi in another location on campus but the speed was still. Could you please check whether there is a network issue or if I need to update my settings on my device please let me know if i should visit the IT support office or submit online complaint i need a stable connection for my academic work so an early reservation would be very helpful the new one\n"
+  },
+  {
+   "clip_id": "P12_57",
+   "language": "English",
+   "wer": 0.0673076923076923,
+   "A1": "Hello sir, I want to raise an issue regarding the water supply in the hostel. Since past three to four days, there is continuous red muddy colored water has been continuously coming from the tap with small particles and contaminants visible in the water. So we are unable to use this water for bathing or the daily activities. So this is creating serious hygienic and safety concerns for the residents. So I request you to kindly look into this issue and resolve it as soon as possible because it is related to our safety of the individual. So please look into this. Thank you.",
+   "A2": "hello sir so i want to raise an issue the water supply in the hostel. So since past three to four days, there is continuous red body color water has been continuously coming from the tap with small particles and contaminants visible in the water so we are unable to use this water for bathing or the daily activities so this is creating serious hygienic and safety concerns for the restaurant so i request you to kindly look into this issue and resolve it as as possible because it is related to our safety of the individual So please look into this. Thank you.\n"
+  },
+  {
+   "clip_id": "P12_58",
+   "language": "Hindi",
+   "wer": 0.40816326530612246,
+   "A1": "मैं आज हॉस्टल की मेस में मिलने वाले खाने को लेकर शिकायत दर्ज करना चाहता हूं। यहां रोज एक जैसा ही खाना मिलता है। मेनू में दोनों टाइम आलू ही आलू रहता है, जैसे कि आलू मटर, आलू भिंडी, आलू परवल, आलू गोभी, आलू चना, दम आलू कश्मीरी, जीरा आलू। हर सब्जी में सुबह शाम दोनों टाइम आलू ही आलू। सुबह शाम देखो मैं आलू भी हो गया हूं खा खा के। तो मैं उसके लिए शिकायत दर्ज करना चाहता हूं कि रोज एक जैसा खाना खाकर हम बोर हो गए हैं। कृपया मेनू में थोड़ा बदलाव करें।",
+   "A2": " मैं आज हॉस्टिल की मेश में मिलने वाले खाने को लेकर शिकायत दर्ज करना चाहता हूं अलग यहां रोज एक जैसा ही खाना मिलता है, मेनू में दोनों टाइम आलू या आलू रहता है जैसे कि अपना आलू मटर, आलू बेंडी, आलू परवर, आलू गुबी, आलू चना, दम, आलू कश्मिरी, जिरा, आलू, हर सबज में सुबह शाम दोनों टाइम आलू ही आलू सुबह शाम देखो मैं आलू भी हो गया हूँ खा खा के तो मैं उसके लिए शिकायत दर्ज करना चाहता हूँ कि रोज एक जैसा खाना काकर हम बोर हो गए कृपया मेनू में थोड़ा बदलाव करें और मेनू में आलू की सब्जियों के अलावा दूसरा भी कुछ शामिल है और क्वालिटी पर भी ध्यान कर दें So please look into this.\n"
+  },
+  {
+   "clip_id": "P13_72",
+   "language": "Hindi",
+   "wer": 0.782608695652174,
+   "A1": "Namaskar, IIT Gandhinagar voice help desk. क्या इंस्टीट्यूट डायरेक्ट पीएचडी एडमिशन ऑफर करता है फॉर बीटेक ग्रेजुएट्स विद हाई सीपीआई? कृपया अर्जेंट सपोर्ट।   ",
+   "A2": "नमस्कार IIT GN Voice Helpdesk क्या इंस्टिट्यूट PHD एग्नेशन ओफर करता है for B.Tech graduates with high CPI urgent support.\n"
+  },
+  {
+   "clip_id": "P13_76",
+   "language": "Gujarati",
+   "wer": 0.7083333333333334,
+   "A1": "નમસ્કાર, IIT Gandhinagar વૉઇસ હેલ્પ ડેસ્ક. Admissions portal પર offer letter accept કરી લીધું હતું પણ confirmation email આવ્યો નથી. કૃપયા urgent support આપો.",
+   "A2": "नमस्कार IIT GN Voice Helpdesk admissions portal पर offer letter accept कर यू हतू परण confirmation email आवियो न थी कुप्या अर्जन्ट सपोर्ट आपो\n"
+  },
+  {
+   "clip_id": "P13_80",
+   "language": "Gujarati",
+   "wer": 0.76,
+   "A1": "નમસ્કાર, IIT ગાંધીનગર વોઈસ હેલ્પ ડેસ્ક. હોસ્ટેલ બ્લોક 5 ના વોશરૂમમાં ગીઝર કામ નથી કરી રહ્યું. અર્જન્ટ પ્લમ્બિંગ ઇન્સ્પેક્શન જોઈએ છે. કૃપયા અર્જન્ટ સપોર્ટ આપો.",
+   "A2": "નમસ્કાર IIT GN Voice Helpdesk વાસ્યો માં કામ નથી કરી આયું અજંડ પ્લમિંગ છે कुप्या अर्जन्ट सपोर्ट आपो\n"
+  },
+  {
+   "clip_id": "P13_85",
+   "language": "Gujarati",
+   "wer": 0.9166666666666666,
+   "A1": "Guest house dining room booking confirmation mail for parents visiting next Saturday.",
+   "A2": "namaskar IIT GN Voice Helpdesk guest house dining room booking confirmation mail nothi aavyo for parents visiting next saturday kupya urgent support aapo\n"
+  },
+  {
+   "clip_id": "P13_87",
+   "language": "Gujarati",
+   "wer": 1.0,
+   "A1": "નમસ્કાર, મેસ મેનૂ અપડેટ કરવા માટે મેસ કમિટી મીટિંગ્સ ક્યારે શેડ્યૂલ થયેલી છે? કૃપા કરીને અર્જન્ટ સપોર્ટ આપો.",
+   "A2": "નાસકાર મેસ મેનું उपरेट करा मातें मेस कमिटी मीटिंग्स के आये शिडूल थाये लीस है कुप्या अर्जन्ट सपोर्ट आपो\n"
+  },
+  {
+   "clip_id": "P14_88",
+   "language": "Code-mixed",
+   "wer": 0.9444444444444444,
+   "A1": "Hello ITG and help desk, MTech computer science eligibility criteria can non-GATE candidates apply for written test?",
+   "A2": "Hello IIT GN Helpdesk एम टेक कंप्यूटर साइंस एलेजिबिलिटी क्रिटेरिया शूझ है कि नोन गेट कैंडिडिट्स अपलाई\n"
+  },
+  {
+   "clip_id": "P14_90",
+   "language": "Hindi",
+   "wer": 0.3448275862068966,
+   "A1": "Hello, TTGN and help desk. एसी में से वॉटर लीक हो रहा है पिछले दो-तीन दिनों से। इलेक्ट्रिशियन को अरेंज करवाने में कितने दिन लगेंगे? कृपया सपोर्ट करो।",
+   "A2": "Hello IIT GN Helpdesk  AC में से वाटर लीक हो रहा है पेसले दो तीन दिनों से एलेक्ट्रिशियन को अरेंज करवाने में कितने दिन लगेंगे सपोर्ट आपको\n"
+  },
+  {
+   "clip_id": "P14_93",
+   "language": "Hindi",
+   "wer": 0.5555555555555556,
+   "A1": "Hello IT GN help desk, मैं एक विजिटिंग स्टूडेंट हूँ बट मेरी फी का रिफंडेबल अमाउंट अभी तक रिफंड नहीं किया गया है। और कितने दिन लगेंगे?",
+   "A2": "Hello IIT GN Helpdesk. My visiting student who हूँ but मेरी fee का refundable amount अभी तक refund नहीं किया गया है और कितने दिन लगेंगे please urgent support\n"
+  },
+  {
+   "clip_id": "P14_94",
+   "language": "Code-mixed",
+   "wer": 1.3846153846153846,
+   "A1": "Hello ITG and help desk, जेईई एडवांस्ड रैंक 3500 पर इलेक्ट्रिकल इंजीनियरिंग डिपार्टमेंट।",
+   "A2": "Hello IIT GN Helpdesk जी एडवांस रैंक 3500 पर electrical engineering department my admission mali sha ke che urgent support us.\n"
+  },
+  {
+   "clip_id": "P14_96",
+   "language": "Gujarati",
+   "wer": 1.4666666666666666,
+   "A1": "મેડિકલ હેલ્થ ઇન્સ્યોરન્સ કેશલેસ કાર્ડ ઇશ્યૂ ક્લેમ્સ ડિસ્પેન્સરી સબમિટ કરવાના છે. કૃપા અર્જન્ટ સપોર્ટ આપો.",
+   "A2": "Hello IIT GN Helpdesk मेडिकल हेल्थ इंशोरेंस कैशलेस कार्ड इश्यू नहीं था तो क्लीम्स डिस्पेंसरी में सबमेट करवाना चाहिए अर्डियन सपोर्ट आप\n"
+  },
+  {
+   "clip_id": "P16_100",
+   "language": "English",
+   "wer": 0.1875,
+   "A1": "Hello, IITGN help desk. My hostel room has a water leakage problem near the study table.",
+   "A2": "Hello, IIT GN Helpdesk. My hostel room has a water leakage problem near the study table \n   "
+  },
+  {
+   "clip_id": "P16_110",
+   "language": "English",
+   "wer": 0.25,
+   "A1": "Hello IITGN help desk, can undergraduate students apply for summer research internships with IIT Gandhinagar faculty?",
+   "A2": "Hello IIT GN Helpdesk. Can undergraduate students apply for summer research internships with IIT GN faculty.\n"
+  },
+  {
+   "clip_id": "P16_111",
+   "language": "English",
+   "wer": 0.15384615384615385,
+   "A1": "Hello IIT Gene help desk, my lab computer has lost access to the shared data set drive. The research deadline is approaching, whom should I contact?",
+   "A2": "Hello IIT GN Helpdesk, My lab computer has lost access to the shared dataset data set drive the research deadline is approaching whom should i contact\n"
+  },
+  {
+   "clip_id": "P18_114",
+   "language": "Hindi",
+   "wer": 0.17391304347826086,
+   "A1": "Hello IITGN helpdesk, मेरा कोर्स रजिस्ट्रेशन हो गया है लेकिन ERP पोर्टल पर सब्जेक्ट शो नहीं हो रहा है। प्लीज चेक करवा दो।",
+   "A2": "Hello IIT GN Helpdesk मेरा कोर्ट सर्जिस्ट्रेशन हो गया है लेकिन ERP पोर्टल पर सब्जेक्ट शो नहीं हो रहा है प्लीज चेक करवा दो\n"
+  },
+  {
+   "clip_id": "P18_116",
+   "language": "English",
+   "wer": 0.36363636363636365,
+   "A1": "Hello IITian help desk, I missed my end semester exam due to a medical emergency. सप्लीमेंट्री एग्जाम के लिए एप्लीकेशन कैसे करूँ?",
+   "A2": "Hello, IIT GN Helpdesk. I missed my end semester exam due to an मेडिकल एमरजेंसी सप्लीमेंट्री एग्जाम के लिए application कैसे करूं \n"
+  },
+  {
+   "clip_id": "P18_117",
+   "language": "Code-mixed",
+   "wer": 1.0,
+   "A1": "સબ્જેક્ટ નું રિઝલ્ટ એબસન્ટ શો કરિયા છે, જ્યારે મેં એક્ઝામ આપ્યો હતો.",
+   "A2": "Hello IIT GN Helpdesk મેરા show career JRA may exam आपयो हातो\n"
+  },
+  {
+   "clip_id": "P18_120",
+   "language": "English",
+   "wer": 0.17647058823529413,
+   "A1": "Hello, IITGN help desk. Can I audit an additional elective without it affecting my semester grade point?",
+   "A2": "Hello IIT GN Helpdesk can I audit an additional elective without it affecting my semester grade point\n"
+  },
+  {
+   "clip_id": "P18_126",
+   "language": "Gujarati",
+   "wer": 1.4285714285714286,
+   "A1": "Hello, IITian help desk. મેસમાં ફૂડ ક્વોલિટી લાસ્ટ ફ્યુ વીકથી પુઅર છે. ફોર્મલ ફીડબેક અથવા કમ્પ્લેઇન્ટ સબમિટ કરવાની પ્રોસેસ શું છે?",
+   "A2": "Hello IIT GN Helpdesk मिस्मा फूड क्वालिटी लास्ट week the poor che formal feedback at our of getting a complaint submitted is the same as the process of getting a complaint\n"
+  },
+  {
+   "clip_id": "P18_128",
+   "language": "English",
+   "wer": 0.6190476190476191,
+   "A1": "Hello IITGN Helpdesk, My parents will stay on campus for two nights. गेस्ट अकोमोडेशन अवेलेबिलिटी एंड चार्जेस चेक कर सकते हैं?",
+   "A2": "Hello, IIT GN Helpdesk. My parents will stay on campus for 2 nights accommodation આવેરેબિલ્ટી અને ચાર્જસ ક્યા ચેક કરી સાખીયે Thank you.\n"
+  },
+  {
+   "clip_id": "P19_129",
+   "language": "Hindi",
+   "wer": 0.2692307692307692,
+   "A1": "Hello IT and Help Desk, मिड-सेमेस्टर एग्जाम का टाइमटेबल रिलीज हो गया है क्या? मूडल पर अभी तक अपडेट नहीं दिखा रहा। कृपया मदद करें।",
+   "A2": "Hello IIT GN Helpdesk मिड सेमेस्टर एग्जाम का टाइम टेबल रिलीज हो गया है क्या मोडल पर अभी तक अपडेट नहीं दिखा रहा कृपया मदद करें\n"
+  },
+  {
+   "clip_id": "P19_133",
+   "language": "English",
+   "wer": 0.29411764705882354,
+   "A1": "my hostel room has a water leakage problem near the study table. Can someone inspect it today?",
+   "A2": "Hello, IIT GN Helpdesk. My hostel room has a leakage problem near the study table can someone inspect it today?\n"
+  },
+  {
+   "clip_id": "P19_134",
+   "language": "Code-mixed",
+   "wer": 0.375,
+   "A1": "Hello IITGN help desk, my parents would stay on campus for two nights. गेस्ट अकोमोडेशन की अवेलेबिलिटी और चार्जेस कहाँ चेक कर सकते हैं?",
+   "A2": "Hello IIT GN Helpdesk. My parents will stay on campus for two nights. गेस्ट एकॉमेडेशन की अवेलेबिलिटी और चार्जिस कहां चेक कर sakte\n"
+  },
+  {
+   "clip_id": "P19_136",
+   "language": "Code-mixed",
+   "wer": 0.3181818181818182,
+   "A1": "Hello ITG and help desk, my institute email inbox is full and important faculty emails are bouncing back. स्टोरेज कैसे क्लियर करूं?",
+   "A2": "Hello IIT GN Helpdesk, My institute email inbox is full and important faculty emails are bouncing बाउंसिंग बैक स्टोरेज कैसे क्लियर करो\n"
+  },
+  {
+   "clip_id": "P19_137",
+   "language": "English",
+   "wer": 0.125,
+   "A1": "Hello IIT GN help desk, my student portal keeps logging me out every few minutes even after clearing the browser cache. Can IT investigate?",
+   "A2": "Hello IIT GN Helpdesk. My student portal keeps logging me out. every few minutes even after clearing the browser cache can ID investigate\n "
+  },
+  {
+   "clip_id": "P19_138",
+   "language": "Hindi",
+   "wer": 0.45454545454545453,
+   "A1": "Hello, IITGN help desk, गिटहब स्टूडेंट डेवलपर पैक के लिए इंस्टीट्यूट वेरिफिकेशन रिजेक्ट हो गया है। ऑफिशियल स्टूडेंट स्टेटस सर्टिफिकेट कहाँ मिलेगा?",
+   "A2": "Hello IIT GN Helpdesk github स्टूडेंट डेवलपर पैक के लिए इंस्टूडेट वेरिफिकेशन रिजेक्ट हो गया है और ऑफिशियल student status certificate कहां मिलेगा\n"
+  },
+  {
+   "clip_id": "P1_1",
+   "language": "Hindi",
+   "wer": 0.2672413793103448,
+   "A1": "सर, हॉस्टल के रिगार्डिंग बात करना था। मेरे रूम में थोड़ा लाइट का प्रॉब्लम आ रहा था। एक्चुअली, जो लाइट है ना, बीच-बीच में बंद होता है। तो मैं ऐसा सोच रहा था कि लाइट का कुछ प्रॉब्लम है आपके एंड पे। तो कुछ होगा तो सपोर्ट के लिए कोई अपने सपोर्ट सिस्टम में कोई होगा टेक्निकल या अदर कोई। तो आप सपोर्ट कीजिए ना प्लीज मेरे लिए। हाँ, सब स्टूडेंट को प्रॉब्लम आ रहा है सर। I विंग से हम लोग सब अभी प्रॉब्लम आ रहा है सर हमको। और अभी 10 दिन के बाद एग्जाम भी आ रहा है हमारा तो उसके लिए प्लीज सर सपोर्ट कीजिए सर। Thank you, thank you sir.",
+   "A2": "हेलो सर हॉस्टेल के रिकडिंग बात करना था और मेरे रूम में थोड़ा लाइट का प्रॉब्लम आ रहा था एक्चुली ओके हो रहे स सर जो लाइट है ना बीच-बीच में बंद होता है तो मैं ऐसा सोच रहा था कि लाइट का कुछ प्रॉब्लम है आपके एंड पे तो कुछ होगा तो एक support support के लिए कोई अपने support system में कोई होगा technical या other कोई तो आप सपोर्ट कीजिए न प्लीज मेरे लिए हां हाँ सब स्टूडेंट को प्रॉब्लम आ रहा है सर आईविंग से हम लोग सब अभी प्रॉब्लम आ रहा है इस रम को और अभी 10 दिन के बाद एक्जाम भी आ रहा ह हमारा तो उसके लिए प्लीज सर सपोर्ट कीजिए सर थैंक यू थैंक यू सब्सक्राइब\n"
+  },
+  {
+   "clip_id": "P1_2",
+   "language": "Hindi",
+   "wer": 0.2028301886792453,
+   "A1": "सर, स्टडी रूम से बात कर रहा था सर। लास्ट फाइव-सिक्स डेज़ से हमको प्रॉब्लम आ रहा था स्टडी रूम में। एक्चुअली, स्टडी रूम में सब लोग हैं सर, ज़्यादा क्राउड भी होता है और प्रॉब्लम भी होते हैं। तो, उसके लिए ऐसा हो रहा है तो फ़ोकस नहीं हो रहा है सर स्टडी पर। तो, मेरा मतलब एक ओपिनियन था मेरे हिसाब से एक आप बैचेस बना दो। तो, बैचेस के हिसाब से हम लोग बुकिंग कर पाएंगे और बुकिंग के हिसाब से फिर वह स्लॉट के हिसाब से एक मिनिमम परसेंटेज पे लोग रहेंगे और हमको स्टडी भी करने के लिए थोड़ा आसान जाएगा। मतलब, सिंपलीफाई होगा सर हमको स्टडी के लिए। और अभी क्राउड क्राउड की वजह से सर हमको बहुत प्रॉब्लम भी हो रहा है और हम इशू भी फेस कर रहे हैं और बीच-बीच में फिर अह हमारे बीच में बहुत अह थोड़ा प्रॉब्लम होता है सर इसलिए। अह फिर उसके लिए आप क्या सपोर्ट कर पाएंगे वही आपसे जानना था सर। बाक़ी कुछ नहीं हम तो हमारे हिसाब से तो ट्राई कर रहे हैं सर अंडरस्टैंडिंग लेवल पर। पर अभी कुछ बंदों का मैच्योरिटी लेवल नहीं होता है सर तो उसके हिसाब से हम लोग बात करते हैं। बाक़ी कुछ नहीं सर सपोर्ट कीजिए।",
+   "A2": "हेलो सर एक स्टडी रूम से बात कर रहा था सर फाइव सिक्स डेट से हमको प्रॉब्लम आ रहा था स्टुडी रूम में एक एक्चुरी स्टुडी रूम में सब लोग यह सर ज्यादा क्राउड भी होता है और प्रॉब्लम भी होते हैं तो उसके लिए ऐसा हो रहा है तो फो पसने हो रहा था स्टडी पर तो मेरा मतलब एक ओपिनियन था मेरे हिसाब से आप बैचेस बना दो तो बैचेस के हिसाब से हम लोग बुकिंग कर पाएंगे और बुकिंग के हिसाब से फिर वह स्लॉट के हिसाब से एक मिनि परसंटेज पे लोग रहेंगे और हमको study भी करने के लिए थोड़ा आसन जाएगा मतलब सिंप्लीफाई होगा सर हमको स्टेडी के लिए और अभी क्राउड वज़े से सर हमको बहुत प्रॉब्लम भी हो रहा है और हम इशु भी फेस क कर रहे हैं और बीच-बीच में फिर हमारे इस बीच में बहुत थोड़ा प्रॉब्लम होता है, सर इसलिए, फिर उसके लिए आप क्या सपोर्ट कर पाएंगे वह आपसे जानना था सर बाकी कुछ नहीं हम तो हमारी इस अपसे तो ट्राइ कर रहे सर एंडरस्टैंडिंग लेवल पर पर अभी कुछ बंदों का मैच मैचुरिटी लेवल नहीं होता है सर तो उसके हिसाब से हम लोग बात करते हैं बाकि कुछ नहीं सर सपोर्ट कीजिए Thank you.\n"
+  },
+  {
+   "clip_id": "P20_60",
+   "language": "Gujarati",
+   "wer": 0.7769230769230769,
+   "A1": "નમસ્તે, હું મારી દીકરીના આઈઆઈટી ગાંધીનગરમાં એડમિશન માટે માહિતી મેળવી રહ્યો છું. અમે બીજી શહેરમાં રહીએ છીએ, તેથી હોસ્ટેલની વ્યવસ્થા અમારા માટે ખૂબ જ મહત્વની છે. જો મારી દીકરીને પ્રથમ વર્ષમાં એડમિશન મળે, તો શું તમે કેમ્પસમાં જ હોસ્ટેલની સુવિધા આપવામાં આવે છે? હોસ્ટેલના રૂમમાં એક જ વિદ્યાર્થી રહે છે કે બે કે ત્રણ વિદ્યાર્થીઓ સાથે રહેતા હોય છે? રૂમમાં બેડ, કબાટ, અભ્યાસ માટે ટેબલ અને ઇન્ટરનેટ જેવી સુવિધાઓ મળે છે કે કેટલીક વસ્તુઓ ઘરેથી લાવી પડે છે? હોસ્ટેલ માટે એડમિશન પછી અલગથી અરજી કરવાની હોય છે કે રૂમમાં આપમેળે ફાળવવામાં આવે છે? અમારે મુસાફરીની વ્યવસ્થા પણ કરવી પડશે, તેથી હોસ્ટેલમાં પ્રવેશ કઈ તારીખે શરૂ થાય છે તે જાણવું જરૂર છે. કૃપા કરીને આ અંગે માર્ગદર્શન આપો જેથી મારી દીકરીને કેમ્પસમાં પહોંચ્યા પછી રહેવાની વ્યવસ્થા માટે કોઈ મુશ્કેલી ન પડે.",
+   "A2": "નમસ્તે હો મારી દીકરીના IIT GN એડમિશન માટે મહિરી મેળી રહવે છું हमें बिजी सेहर में रहिए हैं। तेरी होस्टली व्यास्था अमर माटे खुबज महत्वनी છે જો મારી દિગ્રી એડમીશન મળે તો સુ आवेश हॉस्टल ना रुम में एक जिसे विद्धार थी रहे કે विद्यार्थियों साथे रहता हुआ चाहिए रूम બેડ કબાટ અબ્યાસમાં ટેબલ અને ઇંટરનેટ જેવી સુવિધાઓ મળે पड़े चाहिए कितनी क्वेश्चों घरे थी लावी पड़े चाहिए होस्टल માટે એડિમિશન પછી અલગથી અરજી કરાઓની હોય છે કે રૂમના આપમેડે ફાડવામા વ્યવત્થા પણ કરવી सर्वी पड़ से तेरी हॉस्टल मां प्रवेश कई तारीके सर्व થાય છે તે જાણવું मार्क द्रिशन आपो जिति मारी दिक्री ने केंपस में पहुंचा पशी रेवेन यूज़ था माटे कोई मुश्किल ना पड़े\n"
+  },
+  {
+   "clip_id": "P21_73",
+   "language": "Hindi",
+   "wer": 0.40384615384615385,
+   "A1": "Hello IT and help desk. मेरे को जो बेड पे गद्दा मिला है वो बेड से बहुत बड़ा है। मेरे को थोड़ा छोटा गद्दा मिल जाएगा तो सही रहेगा। एंड मेरे यहाँ वॉल पे किसी ने पेंटिंग्स कर रखी है तो उसका क्या हो सकता है एक बार आप चेक कर लेना।",
+   "A2": "Hello IIT GN Helpdesk मेरे कुछ बेड़ पर कद्दा मिला है वह बैड से बहुत बड़ा है मेरे को थोड़ी छोटा मिल जाएगा तो सही रहेगा एंड मेरी मेरे यहां वॉल पर किसी ने पेंटिंग्स कर रखिए तो उसका क्या हो सकता है एक बार आप चेक कर लेना वह बहुत बहुत\n"
+  },
+  {
+   "clip_id": "P22_92",
+   "language": "English",
+   "wer": 0.1262135922330097,
+   "A1": "Hello, is it IT cell? I am a newly admitted PhD student and I just got my hostel room yesterday. I'm trying to connect my personal laptop to the campus Wi-Fi, but I'm facing some issues. I can see the IITGN-SECURE and eduroam networks, but when I enter my LDAP credentials, it keeps saying authentication failed. I have already reset my password once through the portal and my email is working fine on my phone, so the password is correct. I'm using a Mac. Are there any specific security certificates that I need to download and install first?",
+   "A2": "Hello, is it ITCell? i am a newly admitted phd student and I just got my hostel room yesterday. I am trying to connect my personal laptop to the campus Wi-Fi, but I'm am facing some issues. I can see the IOTGN secure and azure home networks but when i enter my ldap credentials credentials it keeps saying authentication failed yeah yeah i have already reset my password once through the portal and my email is working fine on my phone so the password is correct i am using a macbook are there any specific security certificate that I need to download and install first\n"
+  },
+  {
+   "clip_id": "P22_93",
+   "language": "English",
+   "wer": 0.024,
+   "A1": "Hello, I'm a research scholar from the biological engineering department. I'm calling to raise a request regarding software licensing and VPN access. Due to a family emergency, I have to work from home for the next three weeks. My research heavily lies on MATLAB and a specific toolbox that is licensed to our institute's network. Can you please guide me on how to set up the Fortinet VPN on my personal Windows desktop so that I can access the license server remotely? Also, our lab just purchased a new network printer and we need a static IP assigned to it. Should I raise two separate tickets on the IT help desk for the issue, or can you initiate it from your end?",
+   "A2": "Hello, I am a research scholar from the Biological Engineering Department. I'm calling to raise a request regarding software licensing and VPN access. Due to a family emergency I have to work from home for the next three weeks my research heavily lies on MATLAB and a specific toolbox that is licensed in our Institute's network can you please guide me on how to set up the Fortinet VPN on my personal Windows desktop so that i can access the license server remotely remotely also our lab just purchased a new network printer and we need a static IP assigned to it. Should I raise two separate tickets on the IT help desk for the issue or can you initiate it from your end?\n"
+  },
+  {
+   "clip_id": "P2_13",
+   "language": "English",
+   "wer": 0.27419354838709675,
+   "A1": "During filling the enrollment details, I entered the graduation year 2027, but I mistakenly scrolled down so it became 2025. At that time, I did not know this mistake happened. And suddenly my information thinking I could read the information. As of now, the website is mentioning the same information and one-time enrollment, and I'm not able to edit that.",
+   "A2": "During filling the enrolment details, I enter the graduation year those are like two zero two seven but I mistakenly scroll down so it became i am at the at that time i did not know this mistake happened and suddenly my information thinking I could read it the information as of now the website is mentioning the same information and one enrollment and I am not able to edit that.\n"
+  },
+  {
+   "clip_id": "P2_3",
+   "language": "Code-mixed",
+   "wer": 0.38392857142857145,
+   "A1": "Hello, this is the second time I'm complaining about the same thing. I already mentioned in my previous conversation that the tap is been leaking and now it's about two days. दो दिन से वो कंटिन्यूअसली लीक हो रहा है, पूरा वॉशरूम का वॉशरूम फ्लड हो गया है। अभी एक ही वॉशरूम बचा है उसके ऊपर बहुत ज़्यादा लोड आ रहा है और उसके कारण वो ख़राब भी उतना ज़्यादा हो रहा है। एटलीस्ट उसका कुछ करो। वॉशबेसिन भी फ्लड हो रखा है लेकिन उसका अल्टरनेटिव है सपोज़ दो है उधर लेकिन वॉशरूम तो एक ही है ना। उसका उसको रिपेयर करना जल्दी माँगता है यार। वो करो यार थोड़ा।",
+   "A2": "Hello, this is the second time I am complaining about the same thing. I already mentioned in my previous conversation that the tap has been leaking and now it's about टू डेस इसलिए लगभग दो दिन से वह कंटिन्यॉसली लिख हो रहा है वह पूरा वाश्ट्रूम का वाश्ट्रूम प्लॉट हो गय. वास्तव अभी एक होशरूम बचाए उसके ऊपर बहुत ज्यादा लोड बोड़ आ रहा है और उसके कारण वह खराब भी तो ज्यादा हो रहा है तो एक लिए उसका कुछ करो वाश बीच सिंह भी प्लॉट हो रखा है लेकिन उसका अल्टरने है सपोस कि दो है उदर लेकिन वर्ष्ट्रुम तो एक है ना उसका तो उसको रिपेयर करना जल्दी मंगता है यार करो यार थोड़ा हुआ है\n"
+  },
+  {
+   "clip_id": "P3_7",
+   "language": "Hindi",
+   "wer": 0.4,
+   "A1": "Hello sir, हमको हॉस्टल के शौचालय में ज्यादा बास आता है। ये एक प्रॉब्लम है, ज्यादा अच्छे से धोना। और एक बात है, हमारा बेड का पैर टूट गया है। इसलिए हमको मदद कीजिए सर।",
+   "A2": "हेलो सर हमको हॉस्टेल के सोचालाई में ज़्यादा बास आता है कि एक प्रॉब्लम में ज्यादा अच्छे से दोना और एक बात है बेट का पेड़ तूट गया इसलिए आमको मदद कीजिए सर\n"
+  },
+  {
+   "clip_id": "P4_11",
+   "language": "Hindi",
+   "wer": 0.384,
+   "A1": "हेलो सर जी नमस्ते। मैं महाराष्ट्र के जलगांव जिले से बोल रहा हूं। मेरा ग्रेजुएशन कंप्लीट है। मुझे आपके आईआईटी गांधीनगर में पोस्ट ग्रेजुएशन के लिए एडमिशन लेना था। पॉलिटिक्स में मुझे पोस्ट ग्रेजुएशन करना था। तो कृपया आप हमें जानकारी दीजिए कि मुझे वहां पर कितनी फीस लगेगी और मुझे मेरा सिलेक्शन के लिए सीयूईटी देनी पड़ेगी या कोई एंट्रेंस देनी पड़ेगी या कोई एग्जाम है। तो कृपया मुझे वहां की हॉस्टल के बारे में, मेस के बारे में जानकारी दीजिए और कितनी फीस लगेगी, कितना खर्चा आएगा और वहां रहकर मैं कॉम्पिटेटिव एग्जाम या आगे जाके पीएचडी के लिए अप्लाई कर सकता हूं क्या? और एमए पॉलिटिक्स लेकर मैं कहां-कहां करियर कर सकता हूं? कृपया मुझे इसके बारे में थोड़ी जानकारी दीजिए।",
+   "A2": " हेलो सर जी नमस्ते मैं महराश्टर की जलगाव जिले से बोल रहा हूँ मेरा graduation complete है, मुझे आपके IIT GN में मुझे post graduation ग्राजुएशन के लिए एडमिशन लेना था पॉलिटिक्स में मुझे पोस्ट ग्राइजुएशन करना था तो कुछ रुपए आप हमें जानकारी दीजिए कि मुझे मुझे वहां पर कितनी फ्री लगेगी और मुझे मेरा सिलेक्शन के लिए अच्छी यूईटी देनी पड़ेगी या कोई एंट्रांस दिनी पड़ेगी या कोई एरजाम है तो रुपया मुझे वहां की की हुश्टिल के बारे में में इसके बारे में जान करें दीजिए और कितनी फीज लगेगी कितना खर्चा आएगा और वहां रही कर मैं competitive exam या आगे जाकर पीड़ी के लिए अप्लाई कर सकता हूं क्या और यह में पॉलिटिक्स लेकिन मैं कौन का का करियर कर सकते हो रुपया मुझे इसके बारे में छोड़े जानी कर दीजिए\n"
+  },
+  {
+   "clip_id": "P5_18",
+   "language": "Hindi",
+   "wer": 0.6666666666666666,
+   "A1": "हेलो, नमस्ते सर। मेरी जेईई मेन्स 250 मार्किंग आई है। तो अब मुझे आपके कॉलेज में एडमिशन लेना है। तो मेरी फाइनेंशियल कंडीशन इतनी अच्छी नहीं है। तो प्लीज आप हमें बताएंगे कि आपके यहां पर एडमिशन लेने पर कौन सी कौन सी फेलोशिप या स्कॉलरशिप या बैंक लोन, स्टूडेंट लोन, एजुकेशन लोन कौन सा कौन सा मिल सकता है, कितने तक मिलेगा और एजुकेशन लोन मिल सकता है? कृपया आप हमें बताएं और हमें",
+   "A2": "हेलो नमस्ते सर मेरी जेबली मैम अडिस्टो मार्किंग आई है तो अब मुझे आपकी कॉलेज में एडमिशन लेना है तो मेरी financial condition इतनी अच्छी नहीं है तो प्लीज आप हमें बताएंगे कि आपके यहां पर एडमिशन लेने पर कौन सी कौन सी fellowship या scholarship या bank loan, student लोन एजुकेशन लोन कौन सा-कौन सा मिल सकता है कितने तक मिलेगा और अपना जो बीटेक का जो कॉर्स है वह कॉर्स कॉर्स कितने मन अब चार साल के कितने फीज लगेगी हॉस्टेल की मैस इसकी और अपने कॉलेज की ड्यूशन फ्री मिलाकर और उसके हिसाब से हमें कितना एजुकेशन लॉन मिल सकता है कुरुपया आप हमें बताए और हमें\n"
+  },
+  {
+   "clip_id": "P6_21",
+   "language": "Hindi",
+   "wer": 0.4513888888888889,
+   "A1": "नमस्ते सर, मैं यहां पे मेरे लड़के के एडमिशन के लिए आई हूं। यहां पे प्रोसीजर कैसी है एडमिशन के लिए? इंजीनियरिंग में उसका एडमिशन करने का है। क्या-क्या डॉक्यूमेंट्स लगेंगे हमको यहां पे? वो भी बता दो हमको और यहां पे हॉस्टल, खाने का वगैरह लड़कों का मेस कैसा है? अच्छा है और बेड वगैरह कैसे हैं यहां पे? वो सब हमको पूछताछ करने के लिए तुमको ये सब पूछताछ करने के लिए तुमको इसके लिए तुमको पूछ रहे हैं। यहां के टीचर वगैरह कौन से हैं? कौन से टीचर कौन से टीचर को हमको यहां पे मिलना पड़ेगा? कौन से टीचर को कौन से टीचर को कौन से यहां पे जाना फ्लोर पे जाना पड़ेगा हमको सब इंफॉर्मेशन के लिए कहां पे जानकारी के लिए कहां पे जाना पड़ेगा हमको? और डॉक्यूमेंट्स का भी बराबर बता दो तो फिर हम जाएंगे।",
+   "A2": "नमस्ते सर, मैं यहाँ पे मेरे लड़के का एडमिशन के लिए आई हूँ, यहाँ एक प्रोसीजर कैसी एडमिशन के लिए इंजिनेरिंग में उसका एडमिशन करने का Thank क्या क्या डाकुमेंट्स लगेगे हमको यहां पर वह भी बता दो हमको और यहाँ पे उस्टल खाने का वगरे लड़कियों का मेस का कैसा है अच्छा है और बेड़ वगैरे कैसे यहां पर वह सब हमको पुष्टाश करने की थी तुमको यह यह सब पुष्टास करने की तुमको इसके लिए तुमको पूछ रहे हैं या कि very much. कौन से टीचर को हमको यह पर मिलना पड़ेगा कौन से टीचर को कौन से यह पर जाना पर प्लोर पर जाना पड़ेगा हमको सब महति इनफॉरमेशन के लिए काफी जानकारी के लिए का पर जाना पड़ेगा हमको और और डाकुमेंट्स का भी बराबर बता दो तो फिर हम जाएंगे तो हुआ हुआ हुआ हुआ हुआ\n"
+  },
+  {
+   "clip_id": "P7_22",
+   "language": "English",
+   "wer": 0.10714285714285714,
+   "A1": "Hello sir, good morning. I would like to know about the admission process for the engineering course. I have completed my 12th grade in science and I want to understand which documents are required for admission. And should I submit my original marksheet, transfer certificate, and Aadhar card? Or are other photocopies needed, or is it sufficient? Also, can I complete the application form online, or do I need to visit the college office? I would also like to confirm the last date for submitting the application. Could you please explain the complete process and let me know if there is any application fee? Thank you sir, thank you for your help.",
+   "A2": "Hello sir, good morning. I would like to know about the admission process for the engineering course. I have completed my 12th grade in science and I want to understand which documents are required for admission and should i submit my original mark sheet uh transfer certificate and other card or other photocopies are needed or is it sufficient also can I complete I complete the application form online or do I need to visit the college office? I would also like to confirm the last date of first submitting the application. Could you please explain the complete process and let me know if there is an any application fee thank you sir thank you for your धन्यवाद\n"
+  },
+  {
+   "clip_id": "P7_23",
+   "language": "Code-mixed",
+   "wer": 0.14516129032258066,
+   "A1": "Namaskar, IIT Gandhinagar voice help desk. I need assistance with my student identity card because it has stopped working at a few access points on campus. The card is physically in good condition and the printed details are very clearly visible, but the scanner does not recognize it when I try to enter the certain facilities. Initially, I thought the problem was with the scanner, but my friends were able to use their cards at the same location without any difficulty. मैंने कार्ड को मल्टीपल टाइम्स ट्राई किया है लेकिन सेम सेम सेम एरर आ रहा है। Could you please tell me whether the card needs to be reactivated or if I should request a replacement? Also, I would like to know the procedure for getting the new card if necessary. Please inform me about the office timings and whether I need to carry any additional documents. अगर ऐसा कुछ हो तो मुझे प्लीज बता दीजिए। मुझे तो मुझे इस इश्यू को जल्दी रिसॉल्व करना है because I use the card regularly for campus access. It is very urgent. Thank you sir, thank you so much.",
+   "A2": "Namaskar, IIT GN, vouce Health desk. I need assistance with my student identity card because it has stopped working at a few access points on campus. The card is physically in good condition and the printed details are very clearly visible but the scanner does not recognize it when i try to enter the certain facilities initially I thought the problem was with the scanner, but my friends were able to use their cards at the same location without any difficulty many कार्ड को multiple times try किया है लेकिन सेम सेम सेम एरर आ रहा could you please tell me whether the card needs to be reactivated or if i should request a replacement also i would like to know the procedure for getting the new guard if necessary please inform me about the office timings and whether I need to carry any additional documents. if anything like this happens, please let me know I तो मुझे इस इशू को जल्दी रिजॉल करना है बिकॉस आई यूज द कार्ड रेगुल for campus access. It is very urgent. Thank you, sir. Thank you so much.\n"
+  },
+  {
+   "clip_id": "P7_25",
+   "language": "Hindi",
+   "wer": 0.09467455621301775,
+   "A1": "Hello sir, I need information about the documents to be submitted at the time of admission in IIT Gandhinagar. My daughter is going to take the entrance exam this year and we want to have all the necessary papers ready now so that there is no trouble later. So I would like to ask you which are the documents necessary for this process? Are the 12th and 12th marksheet, identity cards and entrance examination related documents are required? Or if the student belongs to the reserved category, should the certificate be in the prescribed format? Also do I have to submit the medical certificates, passport size photos and any other declarations? Also let me know if the documents have to be uploaded online or if I have to show the original copies of them when reporting to campus so there will be no trouble later. So I want to know all these things. If there is a mistake in any document, who should I contact to get it corrected?",
+   "A2": "Hello sir, I need information about the documents to be submitted at at the time of admission in IIT GN. going to take the entrance exam this year and we want to have all the necessary papers ready ready now so that there is a no trouble letter so I would like to ask you which are the documents necessary for this process are the and 12th mark sheet identity cards and entrance examination examination related documents are required or if the student belongs to the reserve category should the certificate be in the prescribed format also do i have to submit the medical certificates certificates our passport sets photos and any other declarations also let me know if the documents have to be uploaded online or if I have to show the original copies of them when reporting to campus so there will be no trouble later so I want to know all these things if there is a mistake in any document who should i contact to get it corrected?\n"
+  },
+  {
+   "clip_id": "P7_29",
+   "language": "English",
+   "wer": 0.08695652173913043,
+   "A1": "Hello sir, I needed some information about admission in the IIT Gandhinagar because my son has to take admission in the IIT Gandhinagar, so we are inquiring here for the whole admission process. My son is currently studying in the class 12th and he wants to pursue engineering. So we want to know about what is the whole process to get admission here and what exams he must attend. Do I have to give the JEE Mains first and then pass JEE Advanced exam? Also, please provide the application dates and counseling procedure. We also have to understand which documents should be prepared for the admission. If the complete information is available on any official website, then please kindly provide us the name or link of that website so that we can check all these necessary things according to us and so that we can prepare in this process so that we can ready for this whole process. Thank you, sir.",
+   "A2": "Hello sir, I needed some information about admission. admission in the IIT GN because my son has to take admission in the IIT GN so we are inquire here for the whole admission process and my son is currently studying in the class 12th and he wants to pursue engineering so we want to know about what is the whole process to get admission here and what exams you must attend do Do I have to give the JWE mains first and then pass JWE Advanced exam. Also, please provide the application dates and counselling procedure, we also have to understand which document should be prepared for the admission, if the complete information is available or any official website then please kindly provide us the name or link of that website so that we can check all these necessary things according to us and so that we can prepare now in this process so that we can ready ready for this whole process. Thank you, sir.\n"
+  },
+  {
+   "clip_id": "P8_35",
+   "language": "Hindi",
+   "wer": 0.2534246575342466,
+   "A1": "नमस्ते। मुझे अपने आईआईटी गांधीनगर में एडमिशन के समय जमा किए जाने वाले दस्तावेजों की जानकारी चाहिए। मेरी बेटी इस वर्ष प्रवेश परीक्षा देने वाली है। और हम सभी से सभी जरूरत जो कागजात हैं वो तैयार रखना चाहते हैं ताकि बाद में कोई परेशानी न हो। क्या 10वीं और 12वीं की मार्कशीट, पहचान पत्र और प्रवेश परीक्षा के संबंधित दस्तावेजों की आवश्यकता है? यदि विद्यार्थी आरक्षित श्रेणी से संबंधित है तो क्या प्रमाण पत्र निर्धारित प्रारूप में होने चाहिए? इसके अलावा क्या मेडिकल सर्टिफिकेट, पासपोर्ट साइज फोटो और अन्य कोई घोषणा पत्र भी जमा करना पड़ता है? मुझे यह भी बताइए कि दस्तावेज ऑनलाइन अपलोड करना पड़ेगा या कैंपस में आके रिपोर्टिंग करना पड़ेगा? और कैंपस में आने का समय मुझे बताइए। अगर किसी दस्तावेज में गलती हो तो उसे ठीक करने के लिए किससे संपर्क करना चाहिए? इन सब बातों का मुझे मार्गदर्शन कीजिए।",
+   "A2": "नमस्ते मुझे अपने IIT GN में एडमिशन के समय जमा किये जाने वाले दस्तावेजों की जानकारी चाहिए. मेरी बेटी इस वर्ष प्रवेश कर प्रवेश परिशा देने वाली है और हम सभी से सभी सभी जे जुरुरत जो कांगजाज है वो तयार रखना चाहते है ताकि बाद में कोई परिशानी ना हो क्या दसवी और बारावी की मार्कशीट पेशान पत्र और प्रवेश परिश्या के संबंधित दस्तावजी की आवश्यकता है यदि पर आविद्यर्थी आरक्षित स्रेनी से संबंधित है तो क्या प्रमाण पर तो निर्दारित प्रारुप में होने चाहिए इसके अलावा क्या मेडिकल सर्टिफिकेट पासपोर्ट साइज फोटो और अन्य कोई गोशना पत्र भी जमा करना पड़ता है मुझे यह भी बताया बताइए कि दस्तावेज ऑनलाइन अपलोड करना पड़ेगा या कैंपेस में आके रिपोर्टिंग करना पड़ेंगा और कैंप्स में आने के समय मुझे बताइए अगर किसी दस्तावेज में गलती हो तो उसे ठीक करना करने के लिए किसे संपर्क करना चाहिए इन सब बातों का मुझे मार्ग दर्शन कीजिए\n"
+  },
+  {
+   "clip_id": "P9_41",
+   "language": "English",
+   "wer": 0.51,
+   "A1": "Hello, I need some assistance regarding the hostel services in my hostel. I tried using the washing machine yesterday, but the payment was deducted from my account and the machine did not start. I waited for some time and checked whether the machine was working, but there was no change. Could you please tell me how I can request a refund for the failed transactions? I also want to know whether I can use another machine until this issue is resolved. Please guide me through the complaint process and let me know if I need to provide the transaction details.",
+   "A2": "Hello, I need some assistance regarding the hostel service in my hostel I tried using the washing machine yesterday but the payment was deducted from my account अकाउंट एंड मशीन डिट नॉट स्टार्ट मैंने दो बार पेमें करने की गोशिश की लेकिन दोनों बार पैसे कर रहे और मशीन फिर भी नहीं चली I waited for some time and checked whether the machine was working but there was no change. Could you please tell me how I can निकस्टर फॉर द फेल्ड ट्रंजेक्शंस क्या मुझे हसल ऑफिस में complain करनी होगी या laundry service के लिए कोई अलग support number है? also want to know whether I can use another machine until this issue is resolved please guide me through the complete process and let me know if I need to provide the transaction details\n"
+  },
+  {
+   "clip_id": "P9_42",
+   "language": "English",
+   "wer": 0.4421052631578947,
+   "A1": "I am calling to ask about a problem with my course registration. I selected my elective through the student portal, but the course is not appearing in my registered subject list. The registration deadline is approaching, so I want to resolve this as soon as possible. Could you please tell me whether the registration has been completed successfully or if I need to submit the request again? I am also concerned that submitting it again might create a duplicate entry. Please explain the correct procedure so that my course selection is recorded before the deadline.",
+   "A2": "namaste i am calling to ask about a problem with my course registration i selected elective through the student portal, but the course is not appearing in my registered subject list the registration deadline is approaching so i want to resolve this as soon as possible many course करते हैं वक्त कंफर्मेशन मैसेज देखा था लेकिन अब पोर्टल पर उसका कोई record नहीं दिख रहा है quality please tell me whether the registration has been completed successfully or if i need to submit the request again i am also concerned that submitting it again might create a duplicate MTV इसके लिए मुझे ऑफिस करना चाहिए आपको से इंस्ट्रक्टर से बात करनी होगी प्लीज एक्सप्लेंड करेक्ट प्रोसीजर so that my code selection is recorded before the deadline\n"
+  },
+  {
+   "clip_id": "P9_43",
+   "language": "English",
+   "wer": 0.5204081632653061,
+   "A1": "Good afternoon. I need information about vehicle parking permission on campus. I recently started using a two-wheeler to travel between the hostel and the academic building, but I'm not sure where the students are allowed to park their vehicles. Could you tell me whether I need to register my vehicle with campus administration? And if registration is required, please let me know which documents I should submit and if there is any fee. I would appreciate it if you could also guide me to the official parking rules or the department responsible for managing student parking.\n",
+   "A2": "good afternoon i need information about vehicle park information on campus i decided we started using a tool to travel between hostel and academic building but I am not sure where the students are allowed to park their vehicle के लिए लेकिन मुझे नहीं पता कि स्टूडेंट्स के लिए कौन सी जंगा लाउड है could you tell me whether I need to register my vital with campus administration if registration is required please let me नो इस डॉक्यूमेंट एंड शुट समिट वेल्ड देश एनी फीम मैंने नहीं चाहता कि गलत जंगा पार्किंग करने की वजह से कोई प्रॉब्लम हो I would appreciate it if you could also guide me to the official parking rules or the department responsible for managing student parking.\n"
+  }
+ ]
+}

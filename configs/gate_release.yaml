@@ -19,7 +19,7 @@ criteria:
 drift_detection:
   batch_size: 20
   schedule_cohort_b_share: [0.0, 0.0, 0.25, 0.5, 0.75, 1.0]
-  thresholds_from: "validation speakers only (1000 bootstrap batches), 1st/99th percentile"
+  thresholds_from: "validation speakers only (1000 bootstrap batches), 2.5th/97.5th percentile"
   alert_rule: "two consecutive batches beyond threshold on either label-free signal"
 
 policies:

@@ -1,0 +1,121 @@
+{
+  "description": "Fresh multilingual ASR drafts decoded from audio; not human-verified or submitted.",
+  "configuration": {
+    "model": {
+      "repository": "dropbox-dash/faster-whisper-large-v3-turbo",
+      "revision": "0a363e9161cbc7ed1431c9597a8ceaf0c4f78fcf"
+    },
+    "compute_type": "int8",
+    "options": {
+      "language": null,
+      "task": "transcribe",
+      "multilingual": true,
+      "beam_size": 5,
+      "temperature": 0.0,
+      "condition_on_previous_text": false,
+      "vad_filter": false,
+      "chunk_length": 12
+    },
+    "timestamp": "2026-11-12T02:48:33.504968+00:00"
+  },
+  "completed_count": 1,
+  "target_count": 141,
+  "transcripts": [
+    {
+      "number": 1,
+      "clip_id": "P9_41",
+      "uuid": "076e2bba",
+      "assignment_group": "shared_100",
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P9/PTT-20261019-WA0009.wav",
+      "transcript": "hello i need some assistance regarding the hostel service in my hostel i tried using the washing machine yesterday but the payment was detected from my account and the machine did not start I was trying to experiment but the machine didn't work for two times and I waited for some time to check whether the machine was working but there was no change. Could you please tell me how? I also want to know whether I can use another machine until this issue is resolved please guide me through the complete process and let me know if I need to provide the transaction details",
+      "status": "machine_draft",
+      "verified_against_audio_for_this_export": false,
+      "audio_sha256": "43f2549d6372c713be68019293b0dee0694a58b07c102cd8e951108ed2d8f14b",
+      "decode_seconds": 36.21,
+      "duration_seconds": 45.553,
+      "initial_detected_language": "en",
+      "script_counts": {
+        "latin_letters": 463,
+        "devanagari_characters": 0,
+        "gujarati_characters": 0
+      },
+      "review_flags": [
+        "user_reported_Hindi_but_no_Devanagari_returned"
+      ],
+      "segments": [
+        {
+          "start": 0.64,
+          "end": 5.68,
+          "text": " hello i need some assistance regarding the hostel service in my hostel i tried",
+          "avg_logprob": -0.2170197430998087,
+          "no_speech_prob": 8.551544888879548e-11,
+          "compression_ratio": 1.5365853658536586
+        },
+        {
+          "start": 5.68,
+          "end": 9.6,
+          "text": " using the washing machine yesterday but the payment was detected from my account",
+          "avg_logprob": -0.2170197430998087,
+          "no_speech_prob": 8.551544888879548e-11,
+          "compression_ratio": 1.5365853658536586
+        },
+        {
+          "start": 9.6,
+          "end": 11.84,
+          "text": " and the machine did not start",
+          "avg_logprob": -0.2170197430998087,
+          "no_speech_prob": 8.551544888879548e-11,
+          "compression_ratio": 1.5365853658536586
+        },
+        {
+          "start": 12.0,
+          "end": 17.7,
+          "text": " I was trying to experiment but the machine didn't work for two times and I waited for",
+          "avg_logprob": -0.8587522557441224,
+          "no_speech_prob": 2.336431492722113e-09,
+          "compression_ratio": 1.4360902255639099
+        },
+        {
+          "start": 17.7,
+          "end": 23.0,
+          "text": " some time to check whether the machine was working but there was no change.",
+          "avg_logprob": -0.8587522557441224,
+          "no_speech_prob": 2.336431492722113e-09,
+          "compression_ratio": 1.4360902255639099
+        },
+        {
+          "start": 23.0,
+          "end": 24.0,
+          "text": " Could you please tell me how?",
+          "avg_logprob": -0.8587522557441224,
+          "no_speech_prob": 2.336431492722113e-09,
+          "compression_ratio": 1.4360902255639099
+        },
+        {
+          "start": 24.0,
+          "end": 36.0,
+          "text": " I also want to know whether I can use",
+          "avg_logprob": -0.4039675096670787,
+          "no_speech_prob": 1.8212997776601014e-09,
+          "compression_ratio": 0.8222222222222222
+        },
+        {
+          "start": 36.0,
+          "end": 39.3,
+          "text": " another machine until this issue is resolved please guide me through the",
+          "avg_logprob": -0.232589413081446,
+          "no_speech_prob": 3.6081391780601324e-12,
+          "compression_ratio": 1.3761467889908257
+        },
+        {
+          "start": 39.3,
+          "end": 46.68,
+          "text": " complete process and let me know if I need to provide the transaction details",
+          "avg_logprob": -0.232589413081446,
+          "no_speech_prob": 3.6081391780601324e-12,
+          "compression_ratio": 1.3761467889908257
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+Whisper pass exit code: 0

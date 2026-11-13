@@ -1,7 +1,7 @@
 [
  {
   "candidate": "rehearsal",
-  "trigger": "forced demo (no alert)",
+  "trigger": "alert",
   "selected_uuids": [
    "46d483f3",
    "89456f27",
@@ -28,7 +28,7 @@
  },
  {
   "candidate": "no_rehearsal",
-  "trigger": "forced demo (no alert)",
+  "trigger": "alert",
   "selected_uuids": [
    "46d483f3",
    "89456f27",

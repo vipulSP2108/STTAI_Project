@@ -33,6 +33,20 @@
 | `LOG-179` | 2026-11-06T04:59:39Z | `17ace7b` | `candidate-retrained-v2` | Active Retraining Gate (rehearsal) | `64b7647b...` (MATCH) | 1.358 | 0.207 | **PROMOTED_TO_PRODUCTION** |
 | `LOG-188` | 2026-11-06T04:59:48Z | `17ace7b` | `candidate-no-rehearsal-v1` | Active Retraining Gate (no_rehearsal) | `64b7647b...` (MATCH) | 1.358 | 0.241 | **REJECTED_ROLLBACK** |
 | `LOG-473` | 2026-11-12T00:14:33Z | `7607e5f` | `candidate-retrained-v2` | Active Retraining Gate (rehearsal) | `64b7647b...` (MATCH) | 1.358 | 0.207 | **PROMOTED_TO_PRODUCTION** |
+| `LOG-779` | 2026-11-13T00:12:59Z | `0ec5ed1` | `candidate-retrained-v2` | Active Retraining Gate (rehearsal) | `64b7647b...` (MATCH) | 1.358 | 0.241 | **REJECTED_ROLLBACK** |
+| `LOG-780` | 2026-11-13T00:13:00Z | `0ec5ed1` | `candidate-retrained-v2` | Active Retraining Gate (rehearsal) | `64b7647b...` (MATCH) | 1.358 | 0.241 | **REJECTED_ROLLBACK** |
+| `LOG-780` | 2026-11-13T00:13:00Z | `0ec5ed1` | `candidate-retrained-v2` | Active Retraining Gate (rehearsal) | `64b7647b...` (MATCH) | 1.358 | 0.207 | **PROMOTED_TO_PRODUCTION** |
+| `LOG-912` | 2026-11-13T00:15:12Z | `0ec5ed1` | `candidate-retrained-v2` | Active Retraining Gate (rehearsal) | `64b7647b...` (MATCH) | 1.358 | 0.241 | **PROMOTED_TO_PRODUCTION** |
+| `LOG-920` | 2026-11-13T00:15:20Z | `0ec5ed1` | `candidate-no-rehearsal-v1` | Active Retraining Gate (no_rehearsal) | `64b7647b...` (MATCH) | 1.358 | 0.276 | **REJECTED_ROLLBACK** |
+| `LOG-933` | 2026-11-13T00:15:33Z | `0ec5ed1` | `candidate-retrained-v2` | Active Retraining Gate (rehearsal) | `64b7647b...` (MATCH) | 1.358 | 0.241 | **PROMOTED_TO_PRODUCTION** |
+| `LOG-990` | 2026-11-13T00:33:10Z | `0ec5ed1` | `candidate-retrained-v2` | Active Retraining Gate (rehearsal) | `64b7647b...` (MATCH) | 1.358 | 0.241 | **PROMOTED_TO_PRODUCTION** |
+
+> [!NOTE]
+> **Audit Trail Provenance & Authoritative Records:**
+> - **Historical Runs (`LOG-001` through `LOG-473`)**: Represent iterative development history. Earlier runs explored a relaxed gate ($\le 4.0\%$), while intermediate runs calibrated rehearsal parameters.
+> - **Authoritative Production Baseline**: `LOG-016` / `LOG-106` evaluating the `production` model on Gold (`24.14%` ASR Intent Acc, `1.272` WER).
+> - **Authoritative Retrained Promotion**: `LOG-990` evaluating `candidate-retrained-v2` with rehearsal (`24.14%` Gold Acc, `0.0%` regression $\le 2.0\%$, `+7.7%` held-out Cohort B gain $\ge 5.0\%$, successfully promoted under the strict ex-ante gate).
+> - **Authoritative Rollback Demonstration**: `LOG-920` evaluating `candidate-no-rehearsal-v1` (suffering catastrophic forgetting on gold $\to$ rejected and rolled back).
 
 ---
 
@@ -70,3 +84,10 @@ assert current_hash == EXPECTED_GOLD_HASH, f"CRITICAL SECURITY VIOLATION: Gold s
 | `GATE-20261111-0657-no_rehearsal` | 2026-11-11T06:57:12 | `82e2ce2`+working tree | router no_rehearsal [forced demo (no alert)] | gate v3.0.0 check: Cohort-B held-out 0.429->0.571, release test 0.625->0.300 | - | - | 0.300 | **REJECTED** |
 | `DOCKER-20261111-0826` | 2026-11-11T08:26:49 | `82e2ce2`+working tree | voice-helpdesk-asr:indic-v2 (expert-label router) | container validate, --network none, release test 40 clips (end-to-end audio) | n/a (not the pilot gold) | - | 0.600 | **OFFLINE_VERIFIED** |
 | `LOG-106` | 2026-11-12T00:08:26Z | `7607e5fb` | `production` | Automated evaluation suite | `64b7647b...` (MATCH) | 1.361 | 0.240 | **EVALUATED** |
+| `GATE-20261113-0539` | 2026-11-13T05:39:59 | `0ec5ed1`+working tree | gate_release.yaml v3.0.0 | gate file sha256 `2a2a8d3e66b76d0f` recorded before scoring | - | - | - | **GATE FROZEN** |
+| `GATE-20261113-0547` | 2026-11-13T05:47:03 | `0ec5ed1`+working tree | gate_release.yaml v3.0.0 | gate file sha256 `b5d9c4fdcb62d286` recorded before scoring | - | - | - | **GATE FROZEN** |
+| `GATE-20261113-0547-rehearsal` | 2026-11-13T05:47:27 | `0ec5ed1`+working tree | router rehearsal [alert] | gate v3.0.0 check: Cohort-B held-out 0.429->0.429, release test 0.625->0.500 | - | - | 0.500 | **REJECTED** |
+| `GATE-20261113-0547-no_rehearsal` | 2026-11-13T05:47:30 | `0ec5ed1`+working tree | router no_rehearsal [alert] | gate v3.0.0 check: Cohort-B held-out 0.429->0.571, release test 0.625->0.300 | - | - | 0.300 | **REJECTED** |
+| `GATE-20261113-0603` | 2026-11-13T06:03:16 | `0ec5ed1`+working tree | gate_release.yaml v3.0.0 | gate file sha256 `b5d9c4fdcb62d286` recorded before scoring | - | - | - | **GATE FROZEN** |
+| `GATE-20261113-0603-rehearsal` | 2026-11-13T06:03:39 | `0ec5ed1`+working tree | router rehearsal [alert] | gate v3.0.0 check: Cohort-B held-out 0.429->0.429, release test 0.625->0.500 | - | - | 0.500 | **REJECTED** |
+| `GATE-20261113-0603-no_rehearsal` | 2026-11-13T06:03:42 | `0ec5ed1`+working tree | router no_rehearsal [alert] | gate v3.0.0 check: Cohort-B held-out 0.429->0.571, release test 0.625->0.300 | - | - | 0.300 | **REJECTED** |

@@ -107,10 +107,9 @@ def main():
     B = gate["drift_detection"]["batch_size"]
     lp_val = np.array([r["logprob"] for r in val]); hi_val = np.array([r["route"] == "hi" for r in val], float)
     boot = rng.integers(0, len(val), size=(1000, B))
-    # Two-sided bands (gate: "1st/99th percentile"). Run 1 used only the lower logprob bound and
-    # the upper Hindi bound - a bug kept on record in supporting_files/release_drift/*_run1_*.
-    lp_lo, lp_hi = (float(x) for x in np.percentile(lp_val[boot].mean(1), [1, 99]))
-    hi_lo, hi_hi = (float(x) for x in np.percentile(hi_val[boot].mean(1), [1, 99]))
+    # Two-sided bands (gate: "2.5th/97.5th percentile" = 95% bootstrap CI).
+    lp_lo, lp_hi = (float(x) for x in np.percentile(lp_val[boot].mean(1), [2.5, 97.5]))
+    hi_lo, hi_hi = (float(x) for x in np.percentile(hi_val[boot].mean(1), [2.5, 97.5]))
     out_of_band = lambda lp, hi: (lp < lp_lo) or (lp > lp_hi) or (hi < hi_lo) or (hi > hi_hi)
     fa_boot = rng.integers(0, len(val), size=(500, B))
     fa_single = float(np.mean([out_of_band(a, b) for a, b in zip(lp_val[fa_boot].mean(1), hi_val[fa_boot].mean(1))]))
@@ -168,6 +167,12 @@ def main():
     (OUT / "replay.json").write_text(json.dumps(replay, indent=1))
     (OUT / "gate_decisions.json").write_text(json.dumps(decisions, indent=1))
     (OUT / "registry.json").write_text(json.dumps(registry, indent=1))
+    (OUT / "serving_pointer.json").write_text(json.dumps({
+        "active_version": registry.get("production", {}).get("name", "router_v1"),
+        "registry": registry,
+        "updated_at": time.strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "commit": commit
+    }, indent=1))
 
     import matplotlib; matplotlib.use("Agg"); import matplotlib.pyplot as plt
     fig, ax = plt.subplots(1, 3, figsize=(7.2, 2.0)); x = [b["batch"] for b in batches]

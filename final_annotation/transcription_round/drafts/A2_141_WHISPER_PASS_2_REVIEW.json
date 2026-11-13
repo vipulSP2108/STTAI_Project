@@ -1,0 +1,1968 @@
+{
+  "clip_count": 141,
+  "unique_ids_verified": true,
+  "task_mapping_verified": true,
+  "all_audio_hashes_verified": true,
+  "nonempty_transcripts": 141,
+  "audio_minutes": 82.76,
+  "decode_minutes": 60.67,
+  "clips_with_review_flags": 98,
+  "flag_counts": {
+    "Hindi_script_not_in_metadata_check_audio": 35,
+    "possible_English_phonetically_written_in_Devanagari": 1,
+    "English_script_not_in_metadata_check_audio": 44,
+    "possible_duplicate_at_window_boundary": 36,
+    "low_confidence_or_repetition": 18,
+    "metadata_Gujarati_script_absent_check_audio": 16,
+    "Gujarati_script_not_in_metadata_check_audio": 3,
+    "metadata_Hindi_script_absent_check_audio": 2
+  },
+  "human_verified": false,
+  "records": [
+    {
+      "number": 1,
+      "clip_id": "P9_41",
+      "flags": [
+        "Hindi_script_not_in_metadata_check_audio",
+        "possible_English_phonetically_written_in_Devanagari"
+      ],
+      "script_counts": {
+        "latin": 422,
+        "devanagari": 162,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 135
+    },
+    {
+      "number": 2,
+      "clip_id": "P21_73",
+      "flags": [],
+      "script_counts": {
+        "latin": 18,
+        "devanagari": 159,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 52
+    },
+    {
+      "number": 3,
+      "clip_id": "P13_80",
+      "flags": [
+        "Hindi_script_not_in_metadata_check_audio"
+      ],
+      "script_counts": {
+        "latin": 18,
+        "devanagari": 22,
+        "gujarati": 42,
+        "arabic": 0
+      },
+      "word_count": 18
+    },
+    {
+      "number": 4,
+      "clip_id": "P16_111",
+      "flags": [],
+      "script_counts": {
+        "latin": 124,
+        "devanagari": 0,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 26
+    },
+    {
+      "number": 5,
+      "clip_id": "P16_110",
+      "flags": [],
+      "script_counts": {
+        "latin": 91,
+        "devanagari": 0,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 16
+    },
+    {
+      "number": 6,
+      "clip_id": "P13_83",
+      "flags": [
+        "Hindi_script_not_in_metadata_check_audio"
+      ],
+      "script_counts": {
+        "latin": 12,
+        "devanagari": 45,
+        "gujarati": 23,
+        "arabic": 0
+      },
+      "word_count": 21
+    },
+    {
+      "number": 7,
+      "clip_id": "P18_114",
+      "flags": [
+        "English_script_not_in_metadata_check_audio"
+      ],
+      "script_counts": {
+        "latin": 21,
+        "devanagari": 77,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 24
+    },
+    {
+      "number": 8,
+      "clip_id": "P7_29",
+      "flags": [
+        "possible_duplicate_at_window_boundary"
+      ],
+      "script_counts": {
+        "latin": 727,
+        "devanagari": 0,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 166
+    },
+    {
+      "number": 9,
+      "clip_id": "P20_68",
+      "flags": [
+        "Hindi_script_not_in_metadata_check_audio"
+      ],
+      "script_counts": {
+        "latin": 12,
+        "devanagari": 417,
+        "gujarati": 172,
+        "arabic": 0
+      },
+      "word_count": 131
+    },
+    {
+      "number": 10,
+      "clip_id": "P18_122",
+      "flags": [
+        "English_script_not_in_metadata_check_audio"
+      ],
+      "script_counts": {
+        "latin": 40,
+        "devanagari": 73,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 21
+    },
+    {
+      "number": 11,
+      "clip_id": "P16_100",
+      "flags": [],
+      "script_counts": {
+        "latin": 73,
+        "devanagari": 0,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 17
+    },
+    {
+      "number": 12,
+      "clip_id": "P8_32",
+      "flags": [
+        "possible_duplicate_at_window_boundary"
+      ],
+      "script_counts": {
+        "latin": 14,
+        "devanagari": 567,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 149
+    },
+    {
+      "number": 13,
+      "clip_id": "P9_42",
+      "flags": [
+        "Hindi_script_not_in_metadata_check_audio"
+      ],
+      "script_counts": {
+        "latin": 448,
+        "devanagari": 148,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 126
+    },
+    {
+      "number": 14,
+      "clip_id": "P1_1",
+      "flags": [
+        "English_script_not_in_metadata_check_audio",
+        "possible_duplicate_at_window_boundary"
+      ],
+      "script_counts": {
+        "latin": 41,
+        "devanagari": 382,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 125
+    },
+    {
+      "number": 15,
+      "clip_id": "P20_61",
+      "flags": [
+        "English_script_not_in_metadata_check_audio",
+        "Hindi_script_not_in_metadata_check_audio",
+        "low_confidence_or_repetition"
+      ],
+      "script_counts": {
+        "latin": 26,
+        "devanagari": 157,
+        "gujarati": 275,
+        "arabic": 0
+      },
+      "word_count": 114
+    },
+    {
+      "number": 16,
+      "clip_id": "P19_133",
+      "flags": [],
+      "script_counts": {
+        "latin": 88,
+        "devanagari": 0,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 20
+    },
+    {
+      "number": 17,
+      "clip_id": "P2_3",
+      "flags": [],
+      "script_counts": {
+        "latin": 147,
+        "devanagari": 309,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 123
+    },
+    {
+      "number": 18,
+      "clip_id": "P19_138",
+      "flags": [
+        "English_script_not_in_metadata_check_audio"
+      ],
+      "script_counts": {
+        "latin": 42,
+        "devanagari": 79,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 23
+    },
+    {
+      "number": 19,
+      "clip_id": "P18_116",
+      "flags": [
+        "Hindi_script_not_in_metadata_check_audio",
+        "low_confidence_or_repetition"
+      ],
+      "script_counts": {
+        "latin": 60,
+        "devanagari": 81,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 34
+    },
+    {
+      "number": 20,
+      "clip_id": "P18_115",
+      "flags": [
+        "English_script_not_in_metadata_check_audio",
+        "Hindi_script_not_in_metadata_check_audio",
+        "metadata_Gujarati_script_absent_check_audio"
+      ],
+      "script_counts": {
+        "latin": 56,
+        "devanagari": 41,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 24
+    },
+    {
+      "number": 21,
+      "clip_id": "P19_129",
+      "flags": [],
+      "script_counts": {
+        "latin": 18,
+        "devanagari": 82,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 26
+    },
+    {
+      "number": 22,
+      "clip_id": "P20_60",
+      "flags": [
+        "Hindi_script_not_in_metadata_check_audio"
+      ],
+      "script_counts": {
+        "latin": 5,
+        "devanagari": 294,
+        "gujarati": 199,
+        "arabic": 0
+      },
+      "word_count": 117
+    },
+    {
+      "number": 23,
+      "clip_id": "P4_11",
+      "flags": [
+        "English_script_not_in_metadata_check_audio",
+        "possible_duplicate_at_window_boundary"
+      ],
+      "script_counts": {
+        "latin": 52,
+        "devanagari": 490,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 137
+    },
+    {
+      "number": 24,
+      "clip_id": "P11_55",
+      "flags": [],
+      "script_counts": {
+        "latin": 812,
+        "devanagari": 125,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 179
+    },
+    {
+      "number": 25,
+      "clip_id": "P13_76",
+      "flags": [
+        "English_script_not_in_metadata_check_audio",
+        "Hindi_script_not_in_metadata_check_audio",
+        "metadata_Gujarati_script_absent_check_audio"
+      ],
+      "script_counts": {
+        "latin": 68,
+        "devanagari": 61,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 27
+    },
+    {
+      "number": 26,
+      "clip_id": "P7_28",
+      "flags": [
+        "possible_duplicate_at_window_boundary"
+      ],
+      "script_counts": {
+        "latin": 689,
+        "devanagari": 0,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 161
+    },
+    {
+      "number": 27,
+      "clip_id": "P12_57",
+      "flags": [],
+      "script_counts": {
+        "latin": 454,
+        "devanagari": 0,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 104
+    },
+    {
+      "number": 28,
+      "clip_id": "P1_2",
+      "flags": [
+        "low_confidence_or_repetition"
+      ],
+      "script_counts": {
+        "latin": 13,
+        "devanagari": 708,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 210
+    },
+    {
+      "number": 29,
+      "clip_id": "P14_96",
+      "flags": [
+        "Hindi_script_not_in_metadata_check_audio",
+        "metadata_Gujarati_script_absent_check_audio"
+      ],
+      "script_counts": {
+        "latin": 18,
+        "devanagari": 94,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 22
+    },
+    {
+      "number": 30,
+      "clip_id": "P10_51",
+      "flags": [
+        "Hindi_script_not_in_metadata_check_audio"
+      ],
+      "script_counts": {
+        "latin": 548,
+        "devanagari": 126,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 144
+    },
+    {
+      "number": 31,
+      "clip_id": "P20_63",
+      "flags": [
+        "English_script_not_in_metadata_check_audio",
+        "Hindi_script_not_in_metadata_check_audio",
+        "low_confidence_or_repetition"
+      ],
+      "script_counts": {
+        "latin": 25,
+        "devanagari": 323,
+        "gujarati": 230,
+        "arabic": 0
+      },
+      "word_count": 130
+    },
+    {
+      "number": 32,
+      "clip_id": "P18_126",
+      "flags": [
+        "English_script_not_in_metadata_check_audio",
+        "Hindi_script_not_in_metadata_check_audio",
+        "low_confidence_or_repetition",
+        "metadata_Gujarati_script_absent_check_audio"
+      ],
+      "script_counts": {
+        "latin": 121,
+        "devanagari": 22,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 31
+    },
+    {
+      "number": 33,
+      "clip_id": "P13_87",
+      "flags": [
+        "Hindi_script_not_in_metadata_check_audio"
+      ],
+      "script_counts": {
+        "latin": 0,
+        "devanagari": 70,
+        "gujarati": 25,
+        "arabic": 0
+      },
+      "word_count": 22
+    },
+    {
+      "number": 34,
+      "clip_id": "P5_19",
+      "flags": [],
+      "script_counts": {
+        "latin": 0,
+        "devanagari": 428,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 118
+    },
+    {
+      "number": 35,
+      "clip_id": "P14_94",
+      "flags": [
+        "English_script_not_in_metadata_check_audio",
+        "metadata_Gujarati_script_absent_check_audio"
+      ],
+      "script_counts": {
+        "latin": 86,
+        "devanagari": 25,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 21
+    },
+    {
+      "number": 36,
+      "clip_id": "P19_136",
+      "flags": [],
+      "script_counts": {
+        "latin": 81,
+        "devanagari": 31,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 22
+    },
+    {
+      "number": 37,
+      "clip_id": "P14_88",
+      "flags": [
+        "Hindi_script_not_in_metadata_check_audio",
+        "metadata_Gujarati_script_absent_check_audio"
+      ],
+      "script_counts": {
+        "latin": 18,
+        "devanagari": 67,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 17
+    },
+    {
+      "number": 38,
+      "clip_id": "P3_7",
+      "flags": [],
+      "script_counts": {
+        "latin": 0,
+        "devanagari": 119,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 33
+    },
+    {
+      "number": 39,
+      "clip_id": "P18_120",
+      "flags": [
+        "possible_duplicate_at_window_boundary"
+      ],
+      "script_counts": {
+        "latin": 93,
+        "devanagari": 0,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 18
+    },
+    {
+      "number": 40,
+      "clip_id": "P19_134",
+      "flags": [],
+      "script_counts": {
+        "latin": 55,
+        "devanagari": 45,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 22
+    },
+    {
+      "number": 41,
+      "clip_id": "P11_53",
+      "flags": [
+        "Hindi_script_not_in_metadata_check_audio"
+      ],
+      "script_counts": {
+        "latin": 663,
+        "devanagari": 25,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 145
+    },
+    {
+      "number": 42,
+      "clip_id": "P22_88",
+      "flags": [
+        "possible_duplicate_at_window_boundary"
+      ],
+      "script_counts": {
+        "latin": 537,
+        "devanagari": 0,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 125
+    },
+    {
+      "number": 43,
+      "clip_id": "P14_90",
+      "flags": [],
+      "script_counts": {
+        "latin": 18,
+        "devanagari": 96,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 28
+    },
+    {
+      "number": 44,
+      "clip_id": "P22_92",
+      "flags": [
+        "possible_duplicate_at_window_boundary"
+      ],
+      "script_counts": {
+        "latin": 458,
+        "devanagari": 0,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 105
+    },
+    {
+      "number": 45,
+      "clip_id": "P13_85",
+      "flags": [
+        "English_script_not_in_metadata_check_audio",
+        "metadata_Gujarati_script_absent_check_audio"
+      ],
+      "script_counts": {
+        "latin": 145,
+        "devanagari": 0,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 26
+    },
+    {
+      "number": 46,
+      "clip_id": "P18_128",
+      "flags": [
+        "Gujarati_script_not_in_metadata_check_audio",
+        "possible_duplicate_at_window_boundary"
+      ],
+      "script_counts": {
+        "latin": 72,
+        "devanagari": 0,
+        "gujarati": 48,
+        "arabic": 0
+      },
+      "word_count": 25
+    },
+    {
+      "number": 47,
+      "clip_id": "P14_93",
+      "flags": [
+        "English_script_not_in_metadata_check_audio"
+      ],
+      "script_counts": {
+        "latin": 85,
+        "devanagari": 43,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 29
+    },
+    {
+      "number": 48,
+      "clip_id": "P11_54",
+      "flags": [
+        "Hindi_script_not_in_metadata_check_audio"
+      ],
+      "script_counts": {
+        "latin": 663,
+        "devanagari": 84,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 151
+    },
+    {
+      "number": 49,
+      "clip_id": "P5_16",
+      "flags": [
+        "English_script_not_in_metadata_check_audio",
+        "possible_duplicate_at_window_boundary"
+      ],
+      "script_counts": {
+        "latin": 27,
+        "devanagari": 492,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 146
+    },
+    {
+      "number": 50,
+      "clip_id": "P12_58",
+      "flags": [
+        "low_confidence_or_repetition"
+      ],
+      "script_counts": {
+        "latin": 20,
+        "devanagari": 408,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 125
+    },
+    {
+      "number": 51,
+      "clip_id": "P18_113",
+      "flags": [],
+      "script_counts": {
+        "latin": 18,
+        "devanagari": 86,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 28
+    },
+    {
+      "number": 52,
+      "clip_id": "P7_25",
+      "flags": [
+        "English_script_not_in_metadata_check_audio",
+        "metadata_Hindi_script_absent_check_audio",
+        "possible_duplicate_at_window_boundary"
+      ],
+      "script_counts": {
+        "latin": 757,
+        "devanagari": 0,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 172
+    },
+    {
+      "number": 53,
+      "clip_id": "P19_137",
+      "flags": [],
+      "script_counts": {
+        "latin": 113,
+        "devanagari": 0,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 23
+    },
+    {
+      "number": 54,
+      "clip_id": "P2_13",
+      "flags": [],
+      "script_counts": {
+        "latin": 308,
+        "devanagari": 0,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 71
+    },
+    {
+      "number": 55,
+      "clip_id": "P7_22",
+      "flags": [],
+      "script_counts": {
+        "latin": 533,
+        "devanagari": 7,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 118
+    },
+    {
+      "number": 56,
+      "clip_id": "P7_23",
+      "flags": [],
+      "script_counts": {
+        "latin": 716,
+        "devanagari": 84,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 185
+    },
+    {
+      "number": 57,
+      "clip_id": "P5_18",
+      "flags": [
+        "English_script_not_in_metadata_check_audio",
+        "low_confidence_or_repetition"
+      ],
+      "script_counts": {
+        "latin": 54,
+        "devanagari": 374,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 110
+    },
+    {
+      "number": 58,
+      "clip_id": "P8_35",
+      "flags": [],
+      "script_counts": {
+        "latin": 5,
+        "devanagari": 632,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 155
+    },
+    {
+      "number": 59,
+      "clip_id": "P8_36",
+      "flags": [
+        "possible_duplicate_at_window_boundary"
+      ],
+      "script_counts": {
+        "latin": 5,
+        "devanagari": 613,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 169
+    },
+    {
+      "number": 60,
+      "clip_id": "P19_135",
+      "flags": [],
+      "script_counts": {
+        "latin": 49,
+        "devanagari": 20,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 14
+    },
+    {
+      "number": 61,
+      "clip_id": "P13_72",
+      "flags": [
+        "English_script_not_in_metadata_check_audio"
+      ],
+      "script_counts": {
+        "latin": 68,
+        "devanagari": 54,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 25
+    },
+    {
+      "number": 62,
+      "clip_id": "P22_93",
+      "flags": [
+        "low_confidence_or_repetition",
+        "possible_duplicate_at_window_boundary"
+      ],
+      "script_counts": {
+        "latin": 543,
+        "devanagari": 0,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 124
+    },
+    {
+      "number": 63,
+      "clip_id": "P9_43",
+      "flags": [
+        "Hindi_script_not_in_metadata_check_audio"
+      ],
+      "script_counts": {
+        "latin": 403,
+        "devanagari": 146,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 122
+    },
+    {
+      "number": 64,
+      "clip_id": "P6_21",
+      "flags": [
+        "possible_duplicate_at_window_boundary"
+      ],
+      "script_counts": {
+        "latin": 13,
+        "devanagari": 486,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 141
+    },
+    {
+      "number": 65,
+      "clip_id": "P18_117",
+      "flags": [
+        "English_script_not_in_metadata_check_audio"
+      ],
+      "script_counts": {
+        "latin": 38,
+        "devanagari": 8,
+        "gujarati": 4,
+        "arabic": 0
+      },
+      "word_count": 12
+    },
+    {
+      "number": 66,
+      "clip_id": "P22_94",
+      "flags": [
+        "possible_duplicate_at_window_boundary"
+      ],
+      "script_counts": {
+        "latin": 749,
+        "devanagari": 0,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 167
+    },
+    {
+      "number": 67,
+      "clip_id": "P2_8",
+      "flags": [
+        "possible_duplicate_at_window_boundary"
+      ],
+      "script_counts": {
+        "latin": 522,
+        "devanagari": 0,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 119
+    },
+    {
+      "number": 68,
+      "clip_id": "P21_81",
+      "flags": [],
+      "script_counts": {
+        "latin": 73,
+        "devanagari": 219,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 92
+    },
+    {
+      "number": 69,
+      "clip_id": "P9_50",
+      "flags": [
+        "low_confidence_or_repetition"
+      ],
+      "script_counts": {
+        "latin": 498,
+        "devanagari": 154,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 139
+    },
+    {
+      "number": 70,
+      "clip_id": "P21_78",
+      "flags": [
+        "English_script_not_in_metadata_check_audio"
+      ],
+      "script_counts": {
+        "latin": 36,
+        "devanagari": 183,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 59
+    },
+    {
+      "number": 71,
+      "clip_id": "P10_52",
+      "flags": [
+        "Hindi_script_not_in_metadata_check_audio",
+        "low_confidence_or_repetition"
+      ],
+      "script_counts": {
+        "latin": 633,
+        "devanagari": 90,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 154
+    },
+    {
+      "number": 72,
+      "clip_id": "P13_82",
+      "flags": [
+        "English_script_not_in_metadata_check_audio",
+        "metadata_Gujarati_script_absent_check_audio"
+      ],
+      "script_counts": {
+        "latin": 30,
+        "devanagari": 88,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 25
+    },
+    {
+      "number": 73,
+      "clip_id": "P14_91",
+      "flags": [
+        "English_script_not_in_metadata_check_audio",
+        "Hindi_script_not_in_metadata_check_audio",
+        "metadata_Gujarati_script_absent_check_audio"
+      ],
+      "script_counts": {
+        "latin": 44,
+        "devanagari": 65,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 25
+    },
+    {
+      "number": 74,
+      "clip_id": "P11_56",
+      "flags": [
+        "Hindi_script_not_in_metadata_check_audio",
+        "possible_duplicate_at_window_boundary"
+      ],
+      "script_counts": {
+        "latin": 673,
+        "devanagari": 48,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 153
+    },
+    {
+      "number": 75,
+      "clip_id": "P13_78",
+      "flags": [
+        "Hindi_script_not_in_metadata_check_audio",
+        "metadata_Gujarati_script_absent_check_audio"
+      ],
+      "script_counts": {
+        "latin": 0,
+        "devanagari": 84,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 20
+    },
+    {
+      "number": 76,
+      "clip_id": "P2_11",
+      "flags": [
+        "possible_duplicate_at_window_boundary"
+      ],
+      "script_counts": {
+        "latin": 606,
+        "devanagari": 0,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 157
+    },
+    {
+      "number": 77,
+      "clip_id": "P18_123",
+      "flags": [
+        "English_script_not_in_metadata_check_audio"
+      ],
+      "script_counts": {
+        "latin": 59,
+        "devanagari": 0,
+        "gujarati": 14,
+        "arabic": 0
+      },
+      "word_count": 13
+    },
+    {
+      "number": 78,
+      "clip_id": "P14_97",
+      "flags": [
+        "English_script_not_in_metadata_check_audio",
+        "Hindi_script_not_in_metadata_check_audio",
+        "metadata_Gujarati_script_absent_check_audio"
+      ],
+      "script_counts": {
+        "latin": 73,
+        "devanagari": 41,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 23
+    },
+    {
+      "number": 79,
+      "clip_id": "P2_4",
+      "flags": [
+        "low_confidence_or_repetition"
+      ],
+      "script_counts": {
+        "latin": 18,
+        "devanagari": 234,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 81
+    },
+    {
+      "number": 80,
+      "clip_id": "P7_24",
+      "flags": [],
+      "script_counts": {
+        "latin": 277,
+        "devanagari": 0,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 68
+    },
+    {
+      "number": 81,
+      "clip_id": "P4_10",
+      "flags": [
+        "English_script_not_in_metadata_check_audio",
+        "possible_duplicate_at_window_boundary"
+      ],
+      "script_counts": {
+        "latin": 22,
+        "devanagari": 467,
+        "gujarati": 18,
+        "arabic": 0
+      },
+      "word_count": 125
+    },
+    {
+      "number": 82,
+      "clip_id": "P14_98",
+      "flags": [
+        "English_script_not_in_metadata_check_audio"
+      ],
+      "script_counts": {
+        "latin": 67,
+        "devanagari": 48,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 22
+    },
+    {
+      "number": 83,
+      "clip_id": "P21_71",
+      "flags": [
+        "Hindi_script_not_in_metadata_check_audio"
+      ],
+      "script_counts": {
+        "latin": 100,
+        "devanagari": 47,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 40
+    },
+    {
+      "number": 84,
+      "clip_id": "P18_127",
+      "flags": [
+        "Hindi_script_not_in_metadata_check_audio"
+      ],
+      "script_counts": {
+        "latin": 0,
+        "devanagari": 33,
+        "gujarati": 15,
+        "arabic": 0
+      },
+      "word_count": 11
+    },
+    {
+      "number": 85,
+      "clip_id": "P13_67",
+      "flags": [
+        "metadata_Gujarati_script_absent_check_audio"
+      ],
+      "script_counts": {
+        "latin": 18,
+        "devanagari": 112,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 27
+    },
+    {
+      "number": 86,
+      "clip_id": "P2_10",
+      "flags": [
+        "possible_duplicate_at_window_boundary"
+      ],
+      "script_counts": {
+        "latin": 415,
+        "devanagari": 0,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 107
+    },
+    {
+      "number": 87,
+      "clip_id": "P18_121",
+      "flags": [
+        "English_script_not_in_metadata_check_audio",
+        "Hindi_script_not_in_metadata_check_audio",
+        "metadata_Gujarati_script_absent_check_audio"
+      ],
+      "script_counts": {
+        "latin": 52,
+        "devanagari": 43,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 23
+    },
+    {
+      "number": 88,
+      "clip_id": "P4_13",
+      "flags": [
+        "Gujarati_script_not_in_metadata_check_audio",
+        "possible_duplicate_at_window_boundary"
+      ],
+      "script_counts": {
+        "latin": 10,
+        "devanagari": 440,
+        "gujarati": 40,
+        "arabic": 0
+      },
+      "word_count": 139
+    },
+    {
+      "number": 89,
+      "clip_id": "P16_104",
+      "flags": [],
+      "script_counts": {
+        "latin": 116,
+        "devanagari": 0,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 21
+    },
+    {
+      "number": 90,
+      "clip_id": "P3_8",
+      "flags": [],
+      "script_counts": {
+        "latin": 0,
+        "devanagari": 284,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 82
+    },
+    {
+      "number": 91,
+      "clip_id": "P14_92",
+      "flags": [
+        "English_script_not_in_metadata_check_audio",
+        "Hindi_script_not_in_metadata_check_audio",
+        "metadata_Gujarati_script_absent_check_audio"
+      ],
+      "script_counts": {
+        "latin": 21,
+        "devanagari": 68,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 24
+    },
+    {
+      "number": 92,
+      "clip_id": "P19_131",
+      "flags": [
+        "Hindi_script_not_in_metadata_check_audio",
+        "low_confidence_or_repetition"
+      ],
+      "script_counts": {
+        "latin": 59,
+        "devanagari": 106,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 37
+    },
+    {
+      "number": 93,
+      "clip_id": "P13_68",
+      "flags": [
+        "English_script_not_in_metadata_check_audio",
+        "Gujarati_script_not_in_metadata_check_audio"
+      ],
+      "script_counts": {
+        "latin": 40,
+        "devanagari": 7,
+        "gujarati": 28,
+        "arabic": 0
+      },
+      "word_count": 15
+    },
+    {
+      "number": 94,
+      "clip_id": "P18_125",
+      "flags": [
+        "possible_duplicate_at_window_boundary"
+      ],
+      "script_counts": {
+        "latin": 102,
+        "devanagari": 0,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 22
+    },
+    {
+      "number": 95,
+      "clip_id": "P13_73",
+      "flags": [
+        "English_script_not_in_metadata_check_audio"
+      ],
+      "script_counts": {
+        "latin": 30,
+        "devanagari": 78,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 24
+    },
+    {
+      "number": 96,
+      "clip_id": "P3_9",
+      "flags": [
+        "low_confidence_or_repetition"
+      ],
+      "script_counts": {
+        "latin": 13,
+        "devanagari": 513,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 133
+    },
+    {
+      "number": 97,
+      "clip_id": "P20_65",
+      "flags": [
+        "English_script_not_in_metadata_check_audio",
+        "Hindi_script_not_in_metadata_check_audio"
+      ],
+      "script_counts": {
+        "latin": 31,
+        "devanagari": 173,
+        "gujarati": 320,
+        "arabic": 0
+      },
+      "word_count": 120
+    },
+    {
+      "number": 98,
+      "clip_id": "P2_7",
+      "flags": [
+        "English_script_not_in_metadata_check_audio",
+        "metadata_Hindi_script_absent_check_audio",
+        "possible_duplicate_at_window_boundary"
+      ],
+      "script_counts": {
+        "latin": 527,
+        "devanagari": 0,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 130
+    },
+    {
+      "number": 99,
+      "clip_id": "P21_80",
+      "flags": [
+        "English_script_not_in_metadata_check_audio"
+      ],
+      "script_counts": {
+        "latin": 52,
+        "devanagari": 192,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 61
+    },
+    {
+      "number": 100,
+      "clip_id": "P19_132",
+      "flags": [
+        "English_script_not_in_metadata_check_audio"
+      ],
+      "script_counts": {
+        "latin": 45,
+        "devanagari": 62,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 22
+    },
+    {
+      "number": 101,
+      "clip_id": "P13_84",
+      "flags": [
+        "English_script_not_in_metadata_check_audio"
+      ],
+      "script_counts": {
+        "latin": 93,
+        "devanagari": 0,
+        "gujarati": 8,
+        "arabic": 0
+      },
+      "word_count": 20
+    },
+    {
+      "number": 102,
+      "clip_id": "P22_96",
+      "flags": [],
+      "script_counts": {
+        "latin": 564,
+        "devanagari": 0,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 124
+    },
+    {
+      "number": 103,
+      "clip_id": "P20_59",
+      "flags": [
+        "English_script_not_in_metadata_check_audio",
+        "Hindi_script_not_in_metadata_check_audio"
+      ],
+      "script_counts": {
+        "latin": 32,
+        "devanagari": 284,
+        "gujarati": 226,
+        "arabic": 0
+      },
+      "word_count": 128
+    },
+    {
+      "number": 104,
+      "clip_id": "P2_12",
+      "flags": [
+        "possible_duplicate_at_window_boundary"
+      ],
+      "script_counts": {
+        "latin": 711,
+        "devanagari": 0,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 171
+    },
+    {
+      "number": 105,
+      "clip_id": "P8_34",
+      "flags": [
+        "possible_duplicate_at_window_boundary"
+      ],
+      "script_counts": {
+        "latin": 14,
+        "devanagari": 614,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 164
+    },
+    {
+      "number": 106,
+      "clip_id": "P9_45",
+      "flags": [],
+      "script_counts": {
+        "latin": 400,
+        "devanagari": 216,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 142
+    },
+    {
+      "number": 107,
+      "clip_id": "P19_130",
+      "flags": [
+        "English_script_not_in_metadata_check_audio"
+      ],
+      "script_counts": {
+        "latin": 34,
+        "devanagari": 58,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 23
+    },
+    {
+      "number": 108,
+      "clip_id": "P5_15",
+      "flags": [
+        "low_confidence_or_repetition"
+      ],
+      "script_counts": {
+        "latin": 0,
+        "devanagari": 565,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 172
+    },
+    {
+      "number": 109,
+      "clip_id": "P13_71",
+      "flags": [],
+      "script_counts": {
+        "latin": 18,
+        "devanagari": 13,
+        "gujarati": 40,
+        "arabic": 0
+      },
+      "word_count": 13
+    },
+    {
+      "number": 110,
+      "clip_id": "P16_108",
+      "flags": [],
+      "script_counts": {
+        "latin": 117,
+        "devanagari": 0,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 24
+    },
+    {
+      "number": 111,
+      "clip_id": "P8_33",
+      "flags": [
+        "English_script_not_in_metadata_check_audio",
+        "possible_duplicate_at_window_boundary"
+      ],
+      "script_counts": {
+        "latin": 30,
+        "devanagari": 640,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 179
+    },
+    {
+      "number": 112,
+      "clip_id": "P8_39",
+      "flags": [
+        "low_confidence_or_repetition"
+      ],
+      "script_counts": {
+        "latin": 19,
+        "devanagari": 665,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 178
+    },
+    {
+      "number": 113,
+      "clip_id": "P21_85",
+      "flags": [],
+      "script_counts": {
+        "latin": 18,
+        "devanagari": 248,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 74
+    },
+    {
+      "number": 114,
+      "clip_id": "P2_6",
+      "flags": [
+        "low_confidence_or_repetition",
+        "possible_duplicate_at_window_boundary"
+      ],
+      "script_counts": {
+        "latin": 385,
+        "devanagari": 319,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 191
+    },
+    {
+      "number": 115,
+      "clip_id": "P16_109",
+      "flags": [],
+      "script_counts": {
+        "latin": 122,
+        "devanagari": 0,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 22
+    },
+    {
+      "number": 116,
+      "clip_id": "P14_89",
+      "flags": [
+        "English_script_not_in_metadata_check_audio"
+      ],
+      "script_counts": {
+        "latin": 24,
+        "devanagari": 82,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 22
+    },
+    {
+      "number": 117,
+      "clip_id": "P16_105",
+      "flags": [],
+      "script_counts": {
+        "latin": 109,
+        "devanagari": 0,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 21
+    },
+    {
+      "number": 118,
+      "clip_id": "P16_112",
+      "flags": [],
+      "script_counts": {
+        "latin": 102,
+        "devanagari": 0,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 24
+    },
+    {
+      "number": 119,
+      "clip_id": "P7_27",
+      "flags": [],
+      "script_counts": {
+        "latin": 767,
+        "devanagari": 0,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 161
+    },
+    {
+      "number": 120,
+      "clip_id": "P16_99",
+      "flags": [],
+      "script_counts": {
+        "latin": 92,
+        "devanagari": 0,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 18
+    },
+    {
+      "number": 121,
+      "clip_id": "P22_97",
+      "flags": [],
+      "script_counts": {
+        "latin": 456,
+        "devanagari": 0,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 106
+    },
+    {
+      "number": 122,
+      "clip_id": "P21_83",
+      "flags": [],
+      "script_counts": {
+        "latin": 18,
+        "devanagari": 78,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 30
+    },
+    {
+      "number": 123,
+      "clip_id": "P13_70",
+      "flags": [
+        "English_script_not_in_metadata_check_audio",
+        "Hindi_script_not_in_metadata_check_audio",
+        "metadata_Gujarati_script_absent_check_audio"
+      ],
+      "script_counts": {
+        "latin": 46,
+        "devanagari": 71,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 24
+    },
+    {
+      "number": 124,
+      "clip_id": "P19_139",
+      "flags": [
+        "possible_duplicate_at_window_boundary"
+      ],
+      "script_counts": {
+        "latin": 18,
+        "devanagari": 96,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 26
+    },
+    {
+      "number": 125,
+      "clip_id": "P8_40",
+      "flags": [
+        "English_script_not_in_metadata_check_audio",
+        "possible_duplicate_at_window_boundary"
+      ],
+      "script_counts": {
+        "latin": 46,
+        "devanagari": 651,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 174
+    },
+    {
+      "number": 126,
+      "clip_id": "P2_5",
+      "flags": [
+        "possible_duplicate_at_window_boundary"
+      ],
+      "script_counts": {
+        "latin": 373,
+        "devanagari": 276,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 158
+    },
+    {
+      "number": 127,
+      "clip_id": "P22_87",
+      "flags": [
+        "possible_duplicate_at_window_boundary"
+      ],
+      "script_counts": {
+        "latin": 490,
+        "devanagari": 0,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 108
+    },
+    {
+      "number": 128,
+      "clip_id": "P21_84",
+      "flags": [],
+      "script_counts": {
+        "latin": 18,
+        "devanagari": 176,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 60
+    },
+    {
+      "number": 129,
+      "clip_id": "P9_44",
+      "flags": [
+        "Hindi_script_not_in_metadata_check_audio"
+      ],
+      "script_counts": {
+        "latin": 529,
+        "devanagari": 57,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 124
+    },
+    {
+      "number": 130,
+      "clip_id": "P22_98",
+      "flags": [
+        "possible_duplicate_at_window_boundary"
+      ],
+      "script_counts": {
+        "latin": 563,
+        "devanagari": 0,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 126
+    },
+    {
+      "number": 131,
+      "clip_id": "P16_106",
+      "flags": [],
+      "script_counts": {
+        "latin": 109,
+        "devanagari": 0,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 22
+    },
+    {
+      "number": 132,
+      "clip_id": "P5_17",
+      "flags": [
+        "English_script_not_in_metadata_check_audio",
+        "low_confidence_or_repetition",
+        "possible_duplicate_at_window_boundary"
+      ],
+      "script_counts": {
+        "latin": 30,
+        "devanagari": 561,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 165
+    },
+    {
+      "number": 133,
+      "clip_id": "P9_47",
+      "flags": [
+        "possible_duplicate_at_window_boundary"
+      ],
+      "script_counts": {
+        "latin": 401,
+        "devanagari": 205,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 131
+    },
+    {
+      "number": 134,
+      "clip_id": "P18_119",
+      "flags": [],
+      "script_counts": {
+        "latin": 98,
+        "devanagari": 0,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 19
+    },
+    {
+      "number": 135,
+      "clip_id": "P14_95",
+      "flags": [
+        "English_script_not_in_metadata_check_audio",
+        "possible_duplicate_at_window_boundary"
+      ],
+      "script_counts": {
+        "latin": 48,
+        "devanagari": 74,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 25
+    },
+    {
+      "number": 136,
+      "clip_id": "P20_62",
+      "flags": [
+        "Hindi_script_not_in_metadata_check_audio"
+      ],
+      "script_counts": {
+        "latin": 11,
+        "devanagari": 180,
+        "gujarati": 346,
+        "arabic": 0
+      },
+      "word_count": 129
+    },
+    {
+      "number": 137,
+      "clip_id": "P13_69",
+      "flags": [
+        "English_script_not_in_metadata_check_audio",
+        "Hindi_script_not_in_metadata_check_audio",
+        "metadata_Gujarati_script_absent_check_audio",
+        "possible_duplicate_at_window_boundary"
+      ],
+      "script_counts": {
+        "latin": 38,
+        "devanagari": 55,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 17
+    },
+    {
+      "number": 138,
+      "clip_id": "P21_75",
+      "flags": [],
+      "script_counts": {
+        "latin": 18,
+        "devanagari": 105,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 38
+    },
+    {
+      "number": 139,
+      "clip_id": "P21_76",
+      "flags": [
+        "English_script_not_in_metadata_check_audio",
+        "low_confidence_or_repetition"
+      ],
+      "script_counts": {
+        "latin": 30,
+        "devanagari": 234,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 78
+    },
+    {
+      "number": 140,
+      "clip_id": "P22_100",
+      "flags": [],
+      "script_counts": {
+        "latin": 413,
+        "devanagari": 0,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 100
+    },
+    {
+      "number": 141,
+      "clip_id": "P16_103",
+      "flags": [],
+      "script_counts": {
+        "latin": 112,
+        "devanagari": 0,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "word_count": 23
+    }
+  ]
+}

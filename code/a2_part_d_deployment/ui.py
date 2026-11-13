@@ -40,7 +40,29 @@ REV_INTENT_MAP = {v: k for k, v in INTENT_MAP.items()}
 def load_system_models():
     import whisper
     w = whisper.load_model("base", device="cpu")
-    vec_path = MODELS_DIR / "proposed_vectorizer.pkl"
+
+    serving_ptr = MODELS_DIR / "serving_pointer.json"
+    if serving_ptr.exists():
+        try:
+            import json
+            with open(serving_ptr) as f:
+                ptr = json.load(f)
+            vec_path = MODELS_DIR / ptr.get("vectorizer", "proposed_vectorizer.pkl")
+            head_path = MODELS_DIR / ptr.get("checkpoint", "production_v1_head.pt")
+            version = ptr.get("active_version", MODEL_VERSION)
+            if not vec_path.exists():
+                vec_path = MODELS_DIR / "proposed_vectorizer.pkl"
+            if not head_path.exists():
+                head_path = MODELS_DIR / "production_v1_head.pt"
+        except Exception:
+            vec_path = MODELS_DIR / "proposed_vectorizer.pkl"
+            head_path = MODELS_DIR / "production_v1_head.pt"
+            version = MODEL_VERSION
+    else:
+        vec_path = MODELS_DIR / "proposed_vectorizer.pkl"
+        head_path = MODELS_DIR / "production_v1_head.pt"
+        version = MODEL_VERSION
+
     with open(vec_path, "rb") as f:
         vec = pickle.load(f)
     in_dim = len(vec.get_feature_names_out())
@@ -50,17 +72,18 @@ def load_system_models():
         nn.Dropout(0.2),
         nn.Linear(64, 4)
     )
-    head_path = MODELS_DIR / "production_v1_head.pt"
     if head_path.exists():
         sd = torch.load(head_path, weights_only=True)
         cleaned_sd = {k.replace("net.", ""): v for k, v in sd.items()}
         head.load_state_dict(cleaned_sd)
     head.eval()
-    return w, vec, head
+    return w, vec, head, version
+
+w, vec, head, active_version = load_system_models()
 
 # Header Banner
 st.title("🎙️ Cross-Lingual Institute Voice Helpdesk ASR")
-st.caption(f"CS203 Assignment 2 • Model: `{MODEL_VERSION}` • Commit: `{GIT_COMMIT}` • Tag: `a2-final`")
+st.caption(f"CS203 Assignment 2 • Model: `{active_version}` • Commit: `{GIT_COMMIT}` • Tag: `a2-final`")
 
 col1, col2 = st.columns([3, 2])
 
@@ -116,7 +139,7 @@ with col1:
     if st.button("🚀 Process Voice Query", type="primary") and target_audio_path:
         with st.spinner("Executing Whisper base transcription & neural intent routing..."):
             t0 = time.time()
-            w_model, vec, head = load_system_models()
+            w_model, vec, head, _ = load_system_models()
             res = w_model.transcribe(
                 target_audio_path,
                 fp16=False,

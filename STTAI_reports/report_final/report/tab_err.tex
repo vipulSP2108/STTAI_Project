@@ -1,20 +1,20 @@
-ERR-01 & hostel\_mess$	o & 1.52 & Acoustic Hallucination \& Script Shift & Expand Gujarati-English phonetic mapping in tokenizer and train intent head with character\ldots \
-ERR-02 & student\_services$	o & 1.42 & Acoustic Bleed \& Lexical Substitution & Incorporate Whisper encoder audio embeddings directly into routing classifier to bypass AS\ldots \
-ERR-03 & hostel\_mess$	o & 1.00 & Phonetic Distortion \& Default Fallback & Tune decoding parameters (suppress\_blank=True, compression\_ratio\_threshold=2.0) to elim\ldots \
-ERR-04 & it\_support$	o & 1.60 & Hallucinated Speech \& Semantic Drift & Apply acoustic fine-tuning on noisy lab environments to prevent generic hallucinated phras\ldots \
-ERR-05 & student\_services$	o & 1.58 & Hallucinated Phrase Overwrite & Use sentence embeddings (MiniLM) with soft-label training rather than unigram TF-IDF keywo\ldots \
-ERR-06 & admissions$	o & 2.03 & Cross-Domain Semantic Distortion & Train a joint ASR-Intent loss where cross-attention explicitly preserves query-opening int\ldots \
-ERR-07 & hostel\_mess$	o & 1.68 & Lost-and-Found Phrasal Confusion & Add domain-specific vocabulary biasing to Whisper beam search for administrative campus te\ldots \
-ERR-08 & it\_support$	o & 1.00 & Placement Vocabulary Hallucination & Implement multi-task acoustic penalty to discourage hallucination of frequent placement ph\ldots \
-ERR-09 & student\_services$	o & 1.33 & Placement Domain Substitution & Weight opening intent clauses higher in text classifier to prevent trailing noise dominati\ldots \
-ERR-10 & admissions$	o & 1.91 & Library Card Keyword Misclassification & Add campus-specific IT lexicon weighting to disambiguate library access vs admission queri\ldots \
-ERR-11 & hostel\_mess$	o & 1.55 & Exam Timetable Keyword Bleed & Calibrate per-class decision thresholds using validation ROC curves to avoid majority clas\ldots \
-ERR-12 & it\_support$	o & 1.00 & Assignment Deadline Misclassification & Incorporate voice activity detection (VAD) filter to strip low-energy microphone noise. \
-ERR-13 & admissions$	o & 1.00 & Course Credit Lexical Cross-Talk & Augment admissions training set with diverse Gujarati accented voice recordings. \
-ERR-14 & hostel\_mess$	o & 1.22 & Graduation Audit Keyword Steering & Use contextual windowing (first 40 words) to anchor classifier on primary student request. \
-ERR-15 & student\_services$	o & 1.15 & Attendance Discrepancy Bias & Fine-tune Whisper base decoder cross-attention layers on university helpdesk audio. \
-ERR-16 & admissions$	o & 1.27 & Hostel Hot Water Hallucination & Introduce fallback human-in-the-loop escalation when router entropy exceeds confidence thr\ldots \
-ERR-17 & hostel\_mess$	o & 1.46 & Mess Quality Keyword Bleed & Add composite intent schema allowing multi-label routing for overlapping facility/student \ldots \
-ERR-18 & it\_support$	o & 0.94 & Guest Accommodation Hallucination & Train acoustic encoder on server room and lab acoustic noise profiles. \
-ERR-19 & admissions$	o & 1.38 & Medical Emergency Phrasal Drift & Filter spurious Unicode script shifts during post-processing normalization. \
-ERR-20 & hostel\_mess$	o & 1.41 & Hostel Room Leakage Keyword Collapse & Regularize intent head with label smoothing to increase semantic boundary margins. \
+ERR-01 & hostel\_mess $\to$ admissions & 1.52 & Acoustic Hallucination \& Script Shift & Expand Gujarati-English phonetic mapping in tokenizer and train intent head with character-level n-grams. \\
+ERR-02 & student\_services $\to$ admissions & 1.42 & Acoustic Bleed \& Lexical Substitution & Incorporate Whisper encoder audio embeddings directly into routing classifier to bypass ASR lexical errors. \\
+ERR-03 & hostel\_mess $\to$ it\_support & 1.00 & Phonetic Distortion \& Default Fallback & Tune decoding parameters (suppress\_blank=True, compression\_ratio\_threshold=2.0) to eliminate non-speech repetitions. \\
+ERR-04 & it\_support $\to$ hostel\_mess & 1.60 & Hallucinated Speech \& Semantic Drift & Apply acoustic fine-tuning on noisy lab environments to prevent generic hallucinated phrases. \\
+ERR-05 & student\_services $\to$ hostel\_mess & 1.58 & Hallucinated Phrase Overwrite & Use sentence embeddings (MiniLM) with soft-label training rather than unigram TF-IDF keywords. \\
+ERR-06 & admissions $\to$ it\_support & 2.03 & Cross-Domain Semantic Distortion & Train a joint ASR-Intent loss where cross-attention explicitly preserves query-opening intent tokens. \\
+ERR-07 & hostel\_mess $\to$ admissions & 1.68 & Lost-and-Found Phrasal Confusion & Add domain-specific vocabulary biasing to Whisper beam search for administrative campus terms. \\
+ERR-08 & it\_support $\to$ admissions & 1.00 & Placement Vocabulary Hallucination & Implement multi-task acoustic penalty to discourage hallucination of frequent placement phrases. \\
+ERR-09 & student\_services $\to$ admissions & 1.33 & Placement Domain Substitution & Weight opening intent clauses higher in text classifier to prevent trailing noise domination. \\
+ERR-10 & admissions $\to$ it\_support & 1.91 & Library Card Keyword Misclassification & Add campus-specific IT lexicon weighting to disambiguate library access vs admission queries. \\
+ERR-11 & hostel\_mess $\to$ student\_services & 1.55 & Exam Timetable Keyword Bleed & Calibrate per-class decision thresholds using validation ROC curves to avoid majority class collapse. \\
+ERR-12 & it\_support $\to$ admissions & 1.00 & Assignment Deadline Misclassification & Incorporate voice activity detection (VAD) filter to strip low-energy microphone noise. \\
+ERR-13 & admissions $\to$ it\_support & 1.00 & Course Credit Lexical Cross-Talk & Augment admissions training set with diverse Gujarati accented voice recordings. \\
+ERR-14 & hostel\_mess $\to$ it\_support & 1.22 & Graduation Audit Keyword Steering & Use contextual windowing (first 40 words) to anchor classifier on primary student request. \\
+ERR-15 & student\_services $\to$ it\_support & 1.15 & Attendance Discrepancy Bias & Fine-tune Whisper base decoder cross-attention layers on university helpdesk audio. \\
+ERR-16 & admissions $\to$ it\_support & 1.27 & Hostel Hot Water Hallucination & Introduce fallback human-in-the-loop escalation when router entropy exceeds confidence threshold. \\
+ERR-17 & hostel\_mess $\to$ student\_services & 1.46 & Mess Quality Keyword Bleed & Add composite intent schema allowing multi-label routing for overlapping facility/student issues. \\
+ERR-18 & it\_support $\to$ hostel\_mess & 0.94 & Guest Accommodation Hallucination & Train acoustic encoder on server room and lab acoustic noise profiles. \\
+ERR-19 & admissions $\to$ student\_services & 1.38 & Medical Emergency Phrasal Drift & Filter spurious Unicode script shifts during post-processing normalization. \\
+ERR-20 & hostel\_mess $\to$ admissions & 1.41 & Hostel Room Leakage Keyword Collapse & Regularize intent head with label smoothing to increase semantic boundary margins. \\

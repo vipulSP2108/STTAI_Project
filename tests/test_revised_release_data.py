@@ -11,6 +11,8 @@ from revised_data import CLASSES, check_wav, examples, release_rows
 
 
 class RevisedReleaseDataTest(unittest.TestCase):
+    @unittest.skipUnless((Path(__file__).resolve().parents[1] / "final_annotation/consensus_gold_182.json").exists(),
+                         "Private dataset not restored; run DVC pull and code/private_data.py restore")
     def test_partitions_are_disjoint_and_cover_the_corpus(self):
         groups = release_rows()
         self.assertEqual({name: len(rows) for name, rows in groups.items()},

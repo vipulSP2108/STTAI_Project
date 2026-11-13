@@ -43,12 +43,10 @@ temp_*.wav
 mlruns/
 *.db
 
-# Scratch dumps, prompts, and temporary generator scripts
+# Scratch dumps and temporary generator scripts
 dump/
 dump.md
 scratch/
-prompts/
-code/prompts/
 code/scripts/
 report/*.pdf
 report/fig_*.pdf

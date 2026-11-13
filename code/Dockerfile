@@ -8,7 +8,7 @@
 FROM python:3.10-slim@sha256:6ff506466f8b1e981719b468cc0023b8ef000b983cdec0eafe119d01f379e31d AS models
 RUN python -m pip install --no-cache-dir pip==24.3.1 \
  && python -m pip install --no-cache-dir --extra-index-url https://download.pytorch.org/whl/cpu \
-    torch==2.6.0+cpu transformers==4.57.1 ctranslate2==4.8.1 huggingface_hub==0.35.3 sentencepiece==0.2.0
+    torch==2.5.1+cpu transformers==4.46.3 ctranslate2==4.8.1 huggingface_hub==0.35.3 sentencepiece==0.2.0
 ARG BASE_REV=ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66
 ARG HINDI_REV=fb4a24afc20c42906deed31c3689e4be31da41fe
 ARG GUJARATI_REV=59c972a6f00f529efc7c9b631dff338157561ed9

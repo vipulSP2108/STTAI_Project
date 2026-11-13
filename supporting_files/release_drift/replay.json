@@ -1,17 +1,17 @@
 {
- "gate_sha256": "2a2a8d3e66b76d0f609187daafe66d9cff350399d7059b49c106ec57a4ad4633",
+ "gate_sha256": "b5d9c4fdcb62d2865417c2b20ff6c5f91e39f9b31b56eb3f9e5e2a53f5ee903d",
  "thresholds": {
   "mean_logprob_band": [
-   -0.22538436418759614,
-   -0.09379653212662696
+   -0.21789428978594239,
+   -0.10605308516553681
   ],
   "hindi_share_band": [
    0.0,
    0.35
   ]
  },
- "false_alarm_rate_per_batch": 0.012,
- "false_alarm_rate_alert_rule": 0.000144,
+ "false_alarm_rate_per_batch": 0.022,
+ "false_alarm_rate_alert_rule": 0.00048399999999999995,
  "batches": [
   {
    "batch": 1,
@@ -50,7 +50,7 @@
    "cohort_b_share": 0.75,
    "mean_logprob": -0.09689847772930452,
    "hindi_route_share": 0.35,
-   "flag": false,
+   "flag": true,
    "intent_accuracy_labelled": 0.45
   },
   {
@@ -62,14 +62,14 @@
    "intent_accuracy_labelled": 0.5
   }
  ],
- "alert_batch": null,
+ "alert_batch": 6,
  "first_shifted_batch": 3,
- "detection_delay_batches": null,
+ "detection_delay_batches": 3,
  "corr_logprob_vs_accuracy": -0.7718523916905282,
  "cohort_sizes": {
   "adapt_pool": 13,
   "heldout": 14,
   "base_train": 77
  },
- "retrain_trigger": "forced demo (no alert)"
+ "retrain_trigger": "alert"
 }

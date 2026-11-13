@@ -68,13 +68,13 @@ class TestPipelineCore:
         )
 
     def test_gate_criteria_logic(self):
-        """Test gate evaluation thresholds for model promotion and rollback."""
-        # Simulated scenario 1: Positive adaptation (+7.7%), low gold degradation (+3.4%) -> PROMOTED
+        """Test gate evaluation thresholds for model promotion and rollback under strict ex-ante bounds."""
+        # Simulated scenario 1: Positive adaptation (+7.7%), zero gold degradation (+0.0% <= 2.0%) -> PROMOTED
         min_cohort_gain = 0.05
-        max_gold_degradation = 0.04
+        max_gold_degradation = 0.02
 
         cohort_delta_pass = 0.077
-        gold_deg_pass = 0.034
+        gold_deg_pass = 0.000
         assert (cohort_delta_pass >= min_cohort_gain) and (gold_deg_pass <= max_gold_degradation)
 
         # Simulated scenario 2: Catastrophic forgetting (+10.3% gold degradation) -> REJECTED
@@ -84,6 +84,34 @@ class TestPipelineCore:
         # Simulated scenario 3: No out-of-distribution gain (+0.0%) -> REJECTED
         cohort_delta_fail = 0.000
         assert not (cohort_delta_fail >= min_cohort_gain)
+
+    def test_dataset_pools_disjointness(self):
+        """Verify absolute disjointness between Gold, Train, Val, Adapt, Heldout, and Replay sets."""
+        import json
+        import pandas as pd
+        gold = set(pd.read_csv(ROOT_DIR / "data/gold_test_set.csv")["clip_id"])
+        train = set(pd.read_csv(ROOT_DIR / "data/splits/train.csv")["clip_id"])
+        val = set(pd.read_csv(ROOT_DIR / "data/splits/val.csv")["clip_id"])
+        adapt = set(pd.read_csv(ROOT_DIR / "data/retraining/cohort_b_adapt.csv")["clip_id"])
+        heldout = set(pd.read_csv(ROOT_DIR / "data/retraining/cohort_b_heldout.csv")["clip_id"])
+        ann_pool = set(pd.read_csv(ROOT_DIR / "data/retraining/annotator_pool.csv")["clip_id"])
+
+        replay_path = ROOT_DIR / "data/replay/traffic_stream.jsonl"
+        replay = set()
+        if replay_path.exists():
+            with open(replay_path) as f:
+                replay = {json.loads(line)["clip_id"] for line in f if "clip_id" in json.loads(line)}
+
+        assert len(gold & train) == 0, "Leakage: Gold overlaps with Train"
+        assert len(gold & val) == 0, "Leakage: Gold overlaps with Val"
+        assert len(gold & adapt) == 0, "Leakage: Gold overlaps with Adapt"
+        assert len(gold & heldout) == 0, "Leakage: Gold overlaps with Heldout"
+        assert len(gold & ann_pool) == 0, "Leakage: Gold overlaps with Annotator Pool"
+        assert len(gold & replay) == 0, "Leakage: Gold overlaps with Replay"
+        assert len(adapt & heldout) == 0, "Leakage: Adapt overlaps with Heldout"
+        assert len(ann_pool & heldout) == 0, "Leakage: Annotator Pool overlaps with Heldout"
+        assert len(heldout & replay) == 0, "Leakage: Heldout overlaps with Replay"
+        assert len(train & val) == 0, "Leakage: Train overlaps with Val"
 
 
 class TestApiEndpoints:

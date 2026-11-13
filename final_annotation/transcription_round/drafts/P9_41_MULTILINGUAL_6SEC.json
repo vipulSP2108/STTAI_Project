@@ -1,0 +1,72 @@
+{
+  "clip_id": "P9_41",
+  "status": "machine_draft_comparison_only",
+  "model": "large-v3-turbo",
+  "language_hint": null,
+  "multilingual": true,
+  "chunk_length": 6,
+  "decode_seconds": 63.85,
+  "transcript": "hello i need some assistance regarding the hostel services in my hostel i tried using washing machine yesterday but the payment was deducted from my account and the machine did not سٹارٹ میں نے دو بار پیمنٹ کرنے کی کوشش کی لیکن دونوں بار پیسے کر گئے اور مشین پھر بھی I waited for some time and checked whether the machine was working, but there was no change. Could you please tell me how I can request a refund for the failed transactions? I also want to know whether i can use another machine until this issue is resolved please guide me through the complete process and let me know if I need to provide the transaction details",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 7.12,
+      "text": " hello i need some assistance regarding the hostel services in my hostel i tried using",
+      "avg_logprob": -0.4356484529044893
+    },
+    {
+      "start": 6.0,
+      "end": 10.56,
+      "text": " washing machine yesterday but the payment was deducted from my account and the machine did not",
+      "avg_logprob": -0.26915453729175387
+    },
+    {
+      "start": 10.56,
+      "end": 14.8,
+      "text": " سٹارٹ میں نے دو بار پیمنٹ کرنے کی کوشش کی لیکن دونوں بار",
+      "avg_logprob": -0.1321481431231779
+    },
+    {
+      "start": 14.8,
+      "end": 16.4,
+      "text": " پیسے کر گئے اور مشین پھر بھی",
+      "avg_logprob": -0.1321481431231779
+    },
+    {
+      "start": 16.56,
+      "end": 22.32,
+      "text": " I waited for some time and checked whether the machine was working, but there was no change.",
+      "avg_logprob": -0.3206649395552548
+    },
+    {
+      "start": 22.56,
+      "end": 28.56,
+      "text": " Could you please tell me how I can request a refund for the failed transactions?",
+      "avg_logprob": -0.39395170776467575
+    },
+    {
+      "start": 28.560000000000002,
+      "end": 34.56,
+      "text": " I also want to",
+      "avg_logprob": -0.6233831303460258
+    },
+    {
+      "start": 34.56,
+      "end": 39.36,
+      "text": " know whether i can use another machine until this issue is resolved please guide me through the",
+      "avg_logprob": -0.2936368378309103
+    },
+    {
+      "start": 39.36,
+      "end": 40.56,
+      "text": " complete process and let",
+      "avg_logprob": -0.2936368378309103
+    },
+    {
+      "start": 40.56,
+      "end": 46.68,
+      "text": " me know if I need to provide the transaction details",
+      "avg_logprob": -0.29052617916694057
+    }
+  ]
+}

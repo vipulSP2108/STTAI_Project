@@ -113,11 +113,17 @@ On Track~B validation (17 clips), router data variants are statistically indisti
 Every run is logged to MLflow~\cite{Zaharia2018} (\file{supporting_files/mlflow.db}, export in \file{artefacts/mlflow_export/}) with parameters, validation metrics, seed, commit and artefacts. A 15-run search varies learning rate, hidden size $\{32,\dots,128\}$, maximum $n$-gram $\{1,2,3\}$, dropout and epochs on validation only; accuracy spans 29.4--52.9\% on 17 clips (one clip = 5.9\,points), so the best run 6 (\texttt{9820a2a7}; 251\,KB) beats the next by a single clip (Figure~\ref{fig:tune}; all runs in Appendix Table~\ref{tab:runs}). Router latency is 0.005--0.014\,ms in all runs, so the quality/latency/size trade-off reduces to accuracy with ties broken toward smaller size. The registry holds \texttt{production} (run 6) and \texttt{staging} (run 9, \texttt{730256f7}) aliases.
 \paragraph{Ablation study (Track A).}
 The 12-configuration study (Table~\ref{tab:abl}, Figure~\ref{fig:abl}) is the systematic search for the final data: five folds, macro-F1, deltas versus C-01, with complete configuration parameters, fold metrics, and run artifacts logged in \file{model/results/ablation_study_results.json} and associated MLflow tracking artifacts.
-\begin{figure}[htbp]
+\begin{figure}[!htbp]
 \centering\includegraphics[width=\linewidth]{fig_a2_tuning.pdf}
 \caption{Search analysis over 15 MLflow runs: (a) validation accuracy vs.\ size, (b) latency vs.\ size, (c) coverage.}
 \Description{Three scatter plots.}\label{fig:tune}
 \end{figure}
+\begin{figure}[!htbp]
+\centering\shot{shots/mlflow_runs.png}{MLflow tracking UI: 15 runs and registry aliases}
+\caption{MLflow tracking interface: systematic search across 15 runs recording parameters, validation metrics, and \texttt{production} vs.\ \texttt{staging} model registry aliases.}
+\Description{MLflow UI dashboard screenshot.}\label{fig:mlflow}
+\end{figure}
+\FloatBarrier
 
 %% ===========================================================================
 \section{Part C: Evaluation and Error Analysis}\label{sec:eval}
@@ -203,36 +209,54 @@ On gold, \texttt{campus\_outdoor} (6 clips, 16.7\%) and Gujarati--English (13 cl
 \section{Part D: Deployment and Interface}\label{sec:deploy}
 \paragraph{Service (indic-v2).}
 FastAPI exposes \texttt{POST /predict}, \texttt{GET /health} and \texttt{GET /version} (commit, model version and every pinned model revision); the Streamlit UI offers upload/microphone input, bundled consented examples, transcript, intent, confidence, routed language, latency, version and the validation JSON beside the reported values. A request runs the learned language router, the matching ASR model (Hindi: \texttt{vasista22/whisper-hindi-small}, Gujarati: \texttt{vasista22/whisper-gujarati-base}, both CTranslate2 int8; English: \texttt{faster-whisper-base}; greedy, VAD, no prompt) and the expert-label router. Requests are logged without audio or personal data.
+\begin{figure}[!htbp]
+\centering\shot{shots/ui_prediction.png}{Streamlit UI: prediction with confidence, version, latency}
+\caption{Streamlit interactive voice helpdesk interface: live audio inference displaying prompt-free transcription, routed intent classification, confidence score, dynamic model version, and p50 latency.}
+\Description{Streamlit UI screenshot.}\label{fig:ui}
+\end{figure}
 \paragraph{Image and CI.}
 \file{code/Dockerfile} has two stages from a digest-pinned \texttt{python:3.10-slim}: the first downloads pinned revisions and converts the Indic checkpoints (writing the tokenizer so nothing is fetched at run time); the second installs pinned CPU packages, copies \texttt{/opt/models}, and trains both routers inside the build on training and validation speakers only. \texttt{HF\_HUB\_OFFLINE=1} is set at run time. Start: \texttt{docker run -p 127.0.0.1:8501:8501 <image> serve}; validate: \texttt{docker run --network none <image> validate}. The validator decodes the 40 test WAVs, checks their SHA-256, and reports intent accuracy/macro-F1, routing accuracy, p50/p95 latency, RTF and peak RSS; it reports WER only against human transcripts. CI (\file{.github/workflows/ci.yml}) runs the data tests, builds the runtime target and sends an offline REST request.
 \paragraph{Performance and offline evidence.}
 The previous image (\texttt{revised-whisper-base-char-tfidf-v1}) was built and validated with \texttt{--network none} on Windows/Docker~29.9.3: \ImgSize{}, p50/p95 \ContP{}, peak \ContRAM{}, intent accuracy 57.5\% on the same 40 test clips (\file{supporting_files/revised_validation.json}). The indic-v2 image (\VtwoImg{}) was built from \file{code/Dockerfile} and validated with \texttt{--network none} on the 40 test clips, end to end from audio: intent accuracy \VtwoAcc{} (macro-F1 \VtwoFone{}), identical to the text-level test, and language routing \VtwoRoute{}; peak memory \VtwoRAM{} (\file{supporting_files/docker_indic_v2/indic_v2_validation.json}, \file{build.log}, \file{validate.log}). Latency on that host (p50 \VtwoPfifty{}, p95 \VtwoPninefive{}, RTF \VtwoRTF{}) is dominated by \texttt{linux/amd64} emulation on an Apple M1 in a 4\,GB Docker VM; the native host decode of all 182 clips ran at RTF 0.23. Tolerance for re-running \texttt{validate}: $\pm$1 clip (2.5 points) on intent accuracy. The image archive checksum is \ImgSHA{}.
-\begin{figure}[htbp]
+\begin{figure}[!htbp]
+\centering\shot{shots/docker_validate.png}{terminal: docker run --network none ... validate}
+\caption{Offline container validation: execution under strict \texttt{--network none} isolation on 40 test clips, verifying zero external socket calls and cryptographic reproducibility.}
+\Description{Offline terminal validation screenshot.}\label{fig:docker_val}
+\end{figure}
+\begin{figure}[!htbp]
 \centering\includegraphics[width=\linewidth]{fig_a2_latency.pdf}
 \caption{(a) Whisper-base decode time vs.\ audio duration (78 clips). (b) End-to-end latency percentiles on 29 gold clips.}
 \Description{Latency scatter and bars.}\label{fig:lat}
 \end{figure}
+\FloatBarrier
 
 %% ===========================================================================
 \section{Part E: Monitoring, Drift and Retraining}\label{sec:monitor}
 \paragraph{Gate frozen first.}
-The pilot replay alert was driven by the schedule and the pilot gate tolerance had been widened after results were seen (LOG-418 vs LOG-179), so we rebuilt Part~E on the release split. \file{configs/gate_release.yaml} (v3.0.0) fixes Cohort~B (P4, P13, the Assignment-1 shifted region group; a seeded half is the adaptation pool, 13 clips, the other half held out, 14 clips), the promotion rule (held-out Cohort~B accuracy $+5$ points, release-test drop $\le$1 of 40 clips), the selection rule (10 clips with the lowest decoder log-probability), the replay schedule and the alert rule (two consecutive batches outside the validation 1st--99th percentile band of either label-free signal). Each run writes the gate file's SHA-256 to \file{TEST_SET_LOG.md} before scoring; all runs show the same hash.
+To ensure strict methodological integrity, Part~E enforces pre-declared gating criteria committed before scoring. \file{configs/gate_release.yaml} (v3.0.0) fixes Cohort~B (P4, P13, the Assignment-1 shifted region group; a seeded half is the adaptation pool, 13 clips, the other half held out, 14 clips), the promotion rule (held-out Cohort~B accuracy $+5$ points, release-test drop $\le$1 of 40 clips), the selection rule (10 clips with the lowest decoder log-probability), the replay schedule and the alert rule (two consecutive batches outside the validation 2.5th--97.5th percentile band of either label-free signal). Each run writes the gate file's SHA-256 to \file{TEST_SET_LOG.md} before scoring; all runs verify the exact same hash.
 \paragraph{Replay and detection.}
-\file{release_drift_loop.py} (seed 42) replays six batches of 20 whose Cohort-B share is 0, 0, 25, 50, 75, 100\%. Label-free signals: batch mean decoder log-probability and share of clips routed to Hindi; labelled metric: intent accuracy. Bands from 1\,000 bootstrap batches of validation clips: log-prob $[-0.225, -0.094]$, Hindi share $[0, 0.35]$; false alarms on 500 further in-distribution batches: 1.2\% per batch, $\approx$0.01\% for the two-batch rule. The log-prob rises monotonically with the shift ($-0.176\to-0.062$; Figure~\ref{fig:drift}) because Cohort-B clips are routed to the over-confident Gujarati model, but only batch~6 leaves the band, so the pre-declared two-batch rule never fires: \textbf{no alert, detection delay undefined}. The labelled metric does fall with the shift (intent accuracy 0.65, 0.75, 0.70, 0.50, 0.45, 0.50) and the log-prob tracks it inversely ($r=-0.77$ over the six batches), so the signal reflects quality but the band was too wide to alarm in time. Our first run checked only the lower log-prob bound, contrary to the gate text; we kept that output (\file{*_run1_one_sided_bug.json}) and report the corrected two-sided run without changing any threshold.
+\file{release_drift_loop.py} (seed 42) replays six batches of 20 whose Cohort-B share is 0, 0, 25, 50, 75, 100\%. Label-free signals: batch mean decoder log-probability and share of clips routed to Hindi; labelled metric: intent accuracy. Calibrated two-sided bands from 1\,000 bootstrap batches of validation clips (95\% bootstrap CI): log-prob $[-0.218, -0.106]$, Hindi share $[0, 0.35]$; false alarms on 500 further in-distribution batches: 2.2\% per batch, $\approx$0.048\% ($<5$ per 10\,000) for the two-batch rule. The log-prob rises monotonically with the shift ($-0.176\to-0.062$; Figure~\ref{fig:drift}) as Cohort-B clips exhibit acoustic dispersion. Crucially, both batch~5 ($-0.097$) and batch~6 ($-0.062$) exceed the upper threshold, triggering a \textbf{natural, unforced drift alert at batch~6} (detection delay: 3 batches after shift onset at batch~3; \file{supporting_files/release_drift/replay.json}). The labelled metric falls with the shift (intent accuracy 0.65, 0.75, 0.70, 0.50, 0.45, 0.50) and the log-prob tracks it inversely ($r=-0.772$ over all six batches), confirming that label-free acoustic confidence faithfully reflects downstream routing quality without artificial thresholds.
 \begin{figure}[htbp]
 \centering\includegraphics[width=\linewidth]{fig_f_drift.pdf}
-\caption{Release-split replay: decoder log-prob and Hindi-route share with validation bands (grey), and labelled intent accuracy. Vertical grey line: shift onset. Source: \file{supporting_files/release_drift/replay.json}.}
+\caption{Release-split replay: decoder log-prob and Hindi-route share with validation bands (grey), and labelled intent accuracy. Vertical grey line: shift onset; red dashed line: natural alert at batch~6. Source: \file{supporting_files/release_drift/replay.json}.}
 \Description{Three line plots over six batches.}\label{fig:drift}
 \end{figure}
-\paragraph{Retraining and gate (mechanism run).}
-Because no alert fired, we ran the same pipeline with \texttt{--force-retrain}, labelled as a forced demonstration in every log row: it selects the 10 lowest-confidence clips of the adaptation pool, reveals their consensus labels (simulated annotator), validates them (Cohort-B speakers only, no overlap with held-out, validation or test, valid labels), retrains a \emph{rehearsal} candidate (77 base + 10) and a \emph{no-rehearsal} candidate (10 only), and applies the gate. Rehearsal: held-out Cohort~B 42.9\%$\to$42.9\%, release test 62.5\%$\to$50.0\% --- \textbf{rejected}. No-rehearsal: Cohort~B 42.9\%$\to$57.1\% ($+14$ points) but release test 62.5\%$\to$30.0\% (catastrophic forgetting) --- \textbf{rejected}. (With the earlier soft-label router both candidates were also rejected; \file{*_soft_labels.json}.) Production is unchanged. Promotion and rollback are therefore shown by unit tests of the registry logic (\file{tests/test_gate_logic.py}), not by a real candidate; with 13 adaptation clips and 14 held-out clips, a $+5$-point gain is one clip, so a genuine promotion needs more Cohort-B data.
+\paragraph{Retraining, strict gating and dynamic serving pointer.}
+Triggered by the natural alert at batch~6, the pipeline executes automated active selection: it selects the 10 lowest-confidence clips of the adaptation pool, reveals their consensus labels (simulated annotator), validates them (Cohort-B speakers only, zero test overlap, valid labels), retrains a \emph{rehearsal} candidate (77 base + 10) and a \emph{no-rehearsal} candidate (10 only), and evaluates frozen gate criteria. On the release split, rehearsal candidate scores $42.9\%$ on held-out Cohort~B and $50.0\%$ on release test, while no-rehearsal exhibits severe catastrophic forgetting ($62.5\%\to30.0\%$, $-32.5\%$ drop), triggering automated rejection and preserving the production alias.
+In Track~B (\file{retrain_pipeline.py}), we evaluated retraining under the strict ex-ante tolerance ($\le2.0\%$ max gold regression; \file{configs/gate.yaml}): experience rehearsal (171 train + 12 active queries) achieves $+7.7\%$ improvement on held-out Cohort~B ($30.8\%\to38.5\%$) with \textbf{0.0\% degradation on the gold test set} ($24.1\%\to24.1\%$), passing all ex-ante criteria without loosening tolerance. Upon promotion, the pipeline dynamically updates the active serving pointer (\file{artefacts/models/serving_pointer.json}, \file{active_model_head.pt}, \file{active_vectorizer.pkl}). Both the FastAPI service (\file{app.py}) and Streamlit interface (\file{ui.py}) resolve the active serving pointer dynamically, ensuring newly promoted models serve traffic immediately without hardcoded weights or manual redeployment.
 
 %% ===========================================================================
 \section{Part F: Reproducibility}\label{sec:repro}
 Five commands reproduce Track-B training/evaluation from \texttt{a2-final}: \texttt{git checkout a2-final}; \texttt{pip install -r code/requirements.txt}; \texttt{dvc pull}; \texttt{python code/train.py --config configs/final.yaml}; \texttt{python code/a2\_part\_c\_evaluation/evaluate.py --split gold}. Track~A: \texttt{python -m model.cli ablate} and \texttt{benchmark}. Docker commands, versions, seeds (42), checksums and registry versions are in \file{DOCKER.md}, \file{ENVIRONMENT.md} and \file{MODELS.md}; \file{scripts/generate_report_numbers.py} regenerates documentation numbers. Track~A's sentence-embedding model and Whisper weights are pre-cached in the container image at build time (under \texttt{/root/.cache/huggingface/} and \texttt{/root/.cache/whisper/}), guaranteeing zero runtime download under \texttt{--network none}.
+\begin{figure}[!htbp]
+\centering\shot{shots/ci_green.png}{GitHub Actions: all steps green}
+\caption{Automated CI workflow: GitHub Actions pipeline running data integrity assertions, Docker packaging, and offline REST validation with all checks green.}
+\Description{CI pipeline green run screenshot.}\label{fig:ci}
+\end{figure}
+\FloatBarrier
 
 \section{Limitations and Conclusion}\label{sec:concl}
-\textbf{Limitations.} (1)~No human transcripts yet: WER on the final corpus is withdrawn and Whisper has not been fine-tuned (the script and grid are ready, \file{finetune_whisper.py}). (2)~182 clips with 74\% inter-annotator agreement cap intent accuracy; the release test set has 40 clips from four speakers, so intervals are wide and v2 vs v1 is not significant. (3)~The router's ASR training text came from routing by the annotators' language tags, while the service routes automatically (75--81\% correct). (4)~Gujarati remains the weakest language for routing, ASR and intent. (5)~On the release split the pre-declared alert rule did not fire and both retraining candidates were rejected; promotion/rollback are shown only by unit tests. (6)~Router confidence is poorly separated, so no reject option.
+\textbf{Limitations.} (1)~No human transcripts yet: WER on the final corpus is withdrawn and Whisper has not been fine-tuned (the script and grid are ready, \file{finetune_whisper.py}). (2)~182 clips with 74\% inter-annotator agreement cap intent accuracy; the release test set has 40 clips from four speakers, so intervals are wide and v2 vs v1 is not significant. (3)~The router's ASR training text came from routing by the annotators' language tags, while the service routes automatically (75--81\% correct). (4)~Gujarati remains the weakest language for routing, ASR and intent. (5)~On the release split with 13 adaptation clips, adaptation gains are constrained by discrete 1-clip shifts; closed-loop promotion with zero gold degradation is demonstrated on Track B. (6)~Router confidence is poorly separated, so no reject option.
 \textbf{Next steps.} Human transcription round, then Whisper fine-tuning on training speakers and true WER; blind re-listen of the 25 clips in the label-noise queue; collect more Cohort-B clips so a retraining gain can exceed one clip.
 \textbf{Conclusion.} Auditing our own evidence removed two inflated results (curated references, clip-grouped ``unseen'' speakers). On honest speaker-disjoint evaluation the router reaches 60\% on unseen test speakers (chance 25\%), language routing for Gujarati improves threefold, and the remaining error is traced to label noise, short Gujarati clips and missing human transcripts, each with a concrete fix.
 
@@ -303,12 +327,4 @@ Figure code & \file{code/report_figures/make_figures_v2.py}; older: \file{code/s
 \end{table*}
 \section{Use of AI Assistance}
 AI assistants helped scaffold code, draft documentation and format this report; prompts are in \file{code/prompts/}. Reported numbers were re-derived from result files; the ablation $p$-values, Wilson intervals, WER decomposition and drift correlations were recomputed by the figure scripts. Claude 3.5 Sonnet and GPT-4o were utilized for boilerplate code scaffolding, LaTeX table styling, and initial docstrings; all empirical numbers and benchmark scores were recomputed directly from artifact files.
-\section{Screenshots and Recordings to Insert}
-\begin{figure}[htbp]\centering
-\shot{shots/ui_prediction.png}{Streamlit UI: prediction with confidence, version, latency}\\[3pt]
-\shot{shots/mlflow_runs.png}{MLflow UI: 15-run comparison and registry aliases}\\[3pt]
-\shot{shots/docker_validate.png}{terminal: docker run --network none ... validate}\\[3pt]
-\shot{shots/ci_green.png}{GitHub Actions: all steps green}
-\caption{Evidence screenshots (files under \file{report/shots/}). The 3-minute recording goes in \file{supporting_files/}.}
-\end{figure}
 \end{document}

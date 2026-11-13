@@ -1,0 +1,52 @@
+{
+  "clip_id": "P9_41",
+  "status": "machine_draft_comparison_only",
+  "model": "large-v3-turbo",
+  "language_hint": "hi",
+  "decode_seconds": 46.15,
+  "transcript": "hello i need some assistance regarding the hostel service in my hostel i tried using the washing machine yesterday but the payment was detected from my account and the machine did not start करने की कोशिच की लेकिन दोनों बार पैसे कर गए और मशीन फिर भी नहीं चली आई वेड़ एड़ सम टाइपने चैप वेडर था मशीन वस वर्किंग बद देर वस नो चेंग पूली प्ली प्लीज तेल मी क्या मुझा मुझा आफिस में कप्लेंग करनी होगी या लाउन्री सर्विस के लिए कोई अलग सपोर्ट नम्मर है आई अल्सो वांट तो नू वेदर आई के उस और अज़ अनल इस इस इस इस इस इस इस इस इस इस इस इस इस इस इस इस इस इस इस इस इस इस इस इस इस इस इस इस इस इस इस इस इस इस इस इस इस इस इस इस इस इस इस इस इस इस इस इस इस इस इस इस",
+  "segments": [
+    {
+      "start": 0.56,
+      "end": 5.32,
+      "text": " hello i need some assistance regarding the hostel service in my hostel i tried",
+      "avg_logprob": -0.23842973113059998
+    },
+    {
+      "start": 5.32,
+      "end": 9.22,
+      "text": " using the washing machine yesterday but the payment was detected from my account",
+      "avg_logprob": -0.23842973113059998
+    },
+    {
+      "start": 9.22,
+      "end": 10.92,
+      "text": " and the machine did not start",
+      "avg_logprob": -0.23842973113059998
+    },
+    {
+      "start": 12.0,
+      "end": 23.9,
+      "text": " करने की कोशिच की लेकिन दोनों बार पैसे कर गए और मशीन फिर भी नहीं चली आई वेड़ एड़ सम टाइपने चैप वेडर था मशीन वस वर्किंग बद देर वस नो चेंग पूली प्ली प्लीज तेल मी",
+      "avg_logprob": -0.38356338060179423
+    },
+    {
+      "start": 27.62,
+      "end": 32.8,
+      "text": " क्या मुझा मुझा आफिस में कप्लेंग करनी होगी या लाउन्री सर्विस के लिए कोई अलग सपोर्ट नम्मर है",
+      "avg_logprob": -0.2849251388633338
+    },
+    {
+      "start": 33.34,
+      "end": 35.92,
+      "text": " आई अल्सो वांट तो नू वेदर आई के उस",
+      "avg_logprob": -0.2849251388633338
+    },
+    {
+      "start": 36.0,
+      "end": 45.52,
+      "text": " और अज़ अनल इस इस इस इस इस इस इस इस इस इस इस इस इस इस इस इस इस इस इस इस इस इस इस इस इस इस इस इस इस इस इस इस इस इस इस इस इस इस इस इस इस इस इस इस इस इस इस इस इस इस इस इस",
+      "avg_logprob": -0.3290243298686736
+    }
+  ]
+}

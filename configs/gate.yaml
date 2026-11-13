@@ -13,9 +13,9 @@ criteria:
   min_cohort_b_accuracy_delta: 0.05       # Minimum +5.0% absolute accuracy improvement
 
   # Criterion 2: Gold Test Set Degradation Bounds (Zero Catastrophic Forgetting)
-  # Gold test performance must never regress beyond strictly bounded tolerances (<= 4.0%, allowing max 1-clip discrete variance on N=29)
-  max_gold_accuracy_regression: 0.04     # Maximum allowed accuracy drop <= 4.0%
-  max_gold_wer_regression: 0.04          # Maximum allowed WER degradation <= 4.0%
+  # Gold test performance must never regress beyond strictly bounded tolerances (<= 2.0% ex-ante gate)
+  max_gold_accuracy_regression: 0.02     # Maximum allowed accuracy drop <= 2.0% (strict ex-ante tolerance)
+  max_gold_wer_regression: 0.02          # Maximum allowed WER degradation <= 2.0%
 
   # Criterion 3: Cryptographic Integrity Assertions
   gold_set_manifest: "data/gold_test_set.csv"

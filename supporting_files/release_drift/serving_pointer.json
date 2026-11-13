@@ -1,0 +1,13 @@
+{
+ "active_version": "router_v1",
+ "registry": {
+  "production": {
+   "name": "router_v1",
+   "train_clips": 77,
+   "C": 0.1
+  },
+  "rollback_demo": "no promotion, production unchanged"
+ },
+ "updated_at": "2026-11-13T06:03:42Z",
+ "commit": "0ec5ed1"
+}

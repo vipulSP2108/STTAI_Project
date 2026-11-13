@@ -10,3 +10,8 @@
 [2026-11-06 10:33:50] model=production intent=admissions conf=0.513 lat_ms=4729.99
 [2026-11-06 10:38:18] model=production intent=admissions conf=0.513 lat_ms=4657.93
 [2026-11-08 06:40:51] model=production intent=admissions conf=0.513 lat_ms=5785.87
+[2026-11-13 05:53:14] model=candidate_retrained_v2 intent=it_support conf=0.325 lat_ms=5391.28
+[2026-11-13 06:01:42] model=candidate_retrained_v2 intent=it_support conf=0.325 lat_ms=2919.46
+[2026-11-13 06:06:09] model=candidate_retrained_v2 intent=it_support conf=0.325 lat_ms=2980.77
+[2026-11-13 06:09:20] model=candidate_retrained_v2 intent=it_support conf=0.325 lat_ms=3037.19
+[2026-11-13 06:34:24] model=candidate_retrained_v2 intent=it_support conf=0.325 lat_ms=5053.89

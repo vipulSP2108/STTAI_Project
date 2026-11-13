@@ -1,0 +1,52 @@
+{
+  "container": "sttai-a2-whisper-pass-2",
+  "image_id": "sha256:fb91b8c3477dec76170ab61b0f3dd6e7efbc5134e2f0fd486ab13e29d907d406",
+  "image_tag": "voice-helpdesk-asr:transcription-gpu",
+  "started_at": "2026-11-12T17:00:01.011424739Z",
+  "command": [
+    "/work/transcribe_codeswitch.py",
+    "--model",
+    "large-v3",
+    "--window",
+    "6",
+    "--overlap",
+    "2",
+    "--output-stem",
+    "A2_141_WHISPER_PASS_2"
+  ],
+  "network_mode": "none",
+  "gpu_requests": [
+    {
+      "Driver": "",
+      "Count": -1,
+      "DeviceIDs": null,
+      "Capabilities": [
+        [
+          "gpu"
+        ]
+      ],
+      "Options": {}
+    }
+  ],
+  "mounts": [
+    {
+      "Source": "C:\\Users\\Satvik Sharma\\Downloads\\STTAI_Project\\STTAI_Project\\final_annotation\\annotator_1\\records",
+      "Destination": "/audio",
+      "RW": false
+    },
+    {
+      "Source": "C:\\Users\\Satvik Sharma\\Downloads\\STTAI_Transcription_ModelCache",
+      "Destination": "/model-cache",
+      "RW": true
+    },
+    {
+      "Source": "C:\\programmes\\STTAI_Project\\final_annotation\\transcription_round\\drafts",
+      "Destination": "/work",
+      "RW": true
+    }
+  ],
+  "runner_sha256": "7582a94ceb81b332d30844918919c9ff31b1580b15db0047eb5b7b765dc69658",
+  "task_list_sha256": "5aa188a758be37d98abed6937a715566af3d290beb9eb44391ed7f1be211b4cc",
+  "finished_at": "2026-11-12T18:02:31.226361123Z",
+  "exit_code": 0
+}

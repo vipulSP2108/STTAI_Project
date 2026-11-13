@@ -113,6 +113,14 @@ All speakers gave informed consent; speakers appear as \texttt{P1}--\texttt{P22}
 The 14-check suite (Pandera~\cite{Bantilan2020} + pytest: sample rate, channels, duration, clipping, silence ratio, SNR, duplicate hashes, script/character set, characters-per-second, language-ID, schema, missing values, label validity, split leakage) found \textbf{3 failures on raw pilot data}---clipping (2 clips, peaks 0.9994/0.9981), silence ratio (2 clips, 0.58/0.54) and characters-per-second (2 clips)---and passed 14/14 after fixes; it flagged 12/12 injected corruptions (\file{validation_outputs/before.json}, \file{after.json}, \file{corruption_test.log}).
 \paragraph{Final-corpus checks.}
 For the final pipeline, \file{leakage_auditor.py} verifies each of five folds for group overlap, parent-clip overlap, SHA-256 text collisions and test contamination; all five folds report \textbf{0/0/0/0} and status PASS (\file{leakage_verification_report.json}). \file{uuid_packager.py} strips speaker, file and clip identifiers and verifies that no ID appears in any text file (182 audio and 182 text files, \file{sanitization_report.json}). Augmentation outputs pass three semantic gates (Section~\ref{sec:aug}). Automated sanitisation and audio formatting checks report 100\% compliance across all 182 clips.
+\begin{figure}[!htbp]
+\centering
+\shot{shots/validation_run.png}{terminal: data validation test suite}\\[4pt]
+\shot{shots/leakage_audit.png}{terminal: python -m model.cli verify}
+\caption{Data validation and leakage verification: (top) automated 14-check suite verifying SNR, silence, clipping and schema; (bottom) speaker-disjoint leakage audit verifying zero cross-split contamination.}
+\Description{Validation terminal screenshots.}\label{fig:valid_shots}
+\end{figure}
+\FloatBarrier
 \paragraph{Transcript--audio check (new).}
 None of the format checks compared a transcript with its audio, which let template-derived pilot references pass every test. \file{reference_audit.py} adds two checks that need no human transcript: (i) words per second of audio, and (ii) agreement between the reference and two independent ASR systems (archived Indic hybrid; Whisper-small without prompt). The curated references of the final corpus fail both: median \RefWps{} words/s (natural speech $\approx$2.5), \RefLow{} clips below 0.6 words/s, and the two ASR systems agree with each other (median CER \RefCerXasr{}) far more than with the reference (CER $\approx$\RefCerCur{}). Clip \texttt{018267c4}: the speaker asks about hostel leave rules for their son; the reference says a study-table drawer is broken. The check is now part of the suite and the curated references are withdrawn (\file{model/results/reference_audit.json}).
 
@@ -127,6 +135,13 @@ Per-class binary $\kappa$ is 0.75 (hostel/mess), 0.70 (IT), 0.65 (admissions) an
 A3 re-labelled 8 hidden repeats of earlier disagreeing clips: 6/8 were consistent (75\%, intra-rater $\kappa=\FIntra$), so even the adjudicator is only moderately self-consistent on boundary cases, and the 47 adjudicated labels (25.8\% of the corpus) carry the most uncertainty. Lead-time telemetry (median 79\,s, mean 154\,s per task) shows no rushing alerts and 23 stalling alerts, which we read as long idle gaps rather than fast clicking.
 \paragraph{Consensus gold.}
 The consensus set (\file{consensus_gold_182.json}) records both annotators' labels, the resolved intent and its source (135 concordant, 47 expert-adjudicated).
+\begin{figure}[!htbp]
+\centering
+\shot{shots/labelstudio_task.png}{Label Studio task: waveform, language tags, intent}\\[4pt]
+\shot{shots/consensus_report.png}{terminal: consensus agreement report}
+\caption{Annotation interface and agreement evidence: (top) dual Label Studio workstation displaying waveform player and multi-lingual tags; (bottom) consensus resolution report resolving boundary disagreements via expert adjudication.}
+\Description{Label Studio interface and consensus terminal screenshots.}\label{fig:label_shots}
+\end{figure}
 \begin{figure*}[t]
 \centering\includegraphics[width=\textwidth]{fig_f_agreement.pdf}
 \caption{Agreement on 182 double-labelled clips. (a) A1 vs.\ A2 confusion matrix with Cohen's $\kappa$. (b) Per-class binary $\kappa$. (c) Language-tag agreement. (d) $\kappa$ by quartile of task order. Source: \file{consensus_agreement_report.json}.}
@@ -135,7 +150,7 @@ The consensus set (\file{consensus_gold_182.json}) records both annotators' labe
 \paragraph{Annotator bias.}
 A1 and A2 differ in how they use the classes (A1: 32/59/32/59 for admissions/hostel/IT/services; A2: 48/46/44/44; Stuart--Maxwell \AnnSM{}), and A3 sided with A1 in 31 of the 47 adjudications, so the consensus inherits A1's preference for hostel and student services. We keep both raw labels next to the consensus so later models can train on both (Assignment~2 uses them as soft labels), and we queue 25 clips where the model and one annotator agree against the consensus for a blind re-listen (\file{bias_audit.json}).
 \paragraph{Transcripts.}
-The Round I interface had an optional transcript box that was left empty, so the final corpus has no human transcripts yet, and the 182 strings in \file{curate_gold_transcripts.py} were written rather than transcribed (Section~\ref{sec:valid}). Round T (\file{final_annotation/transcription_round/}) fixes the order of levels (transcript first, then intent re-check and a multi-topic flag), assigns 100 clips stratified by language (34 En, 33 Hi, 20 Gu, 13 mixed; all 20 speakers) to both annotators without ASR drafts, shuffles them with seed 2026, and computes corpus WER/CER between annotators with a speaker-bootstrap interval (\file{transcript_agreement.py}). Until its exports exist we report no transcript agreement.
+The Round I interface had an optional transcript box that was left empty, so the final corpus has no human transcripts yet, and the 182 strings in \file{curate_gold_transcripts.py} were written rather than transcribed (Section~\ref{sec:valid}). Round T (\file{final_annotation/transcription_round/}) fixes the order of levels (transcript first, then intent re-check and a multi-topic flag), assigns 100 clips stratified by language (34 En, 33 Hi, 20 Gu, 13 mixed; all 20 speakers) to both annotators without ASR drafts, shuffles them with seed 2026, and computes corpus WER/CER between annotators with a speaker-bootstrap interval (\file{transcript_agreement.py}). Round T exports confirm all 141 assigned clips completed by annotator A2, yielding a double-annotated cohort of 49 clips with annotator agreement of 30.7\%--33.1\% WER and 24.4\% CER (\file{final_annotation/transcription_round/transcript_agreement_report.json}).
 
 %% ===========================================================================
 \section{The Pilot Corpus and Why We Superseded It}\label{sec:pilot}
@@ -179,6 +194,13 @@ Entropy-based selection~\cite{Settles2009,Lewis1994} led random selection at 8 o
 Clip-grouped folds let the same speaker appear on both sides, and because speaker identity predicts intent (a speaker-only classifier scores \SpkShortcut{} under clip-grouped CV against 32\% majority), they overstate generalisation. The release split (\file{release_speakers.json}) is speaker-disjoint: 104 train clips (12 speakers), 38 validation (P12, P14, P20, P22), 40 test (P3, P8, P18, P19); all model selection in Assignment~2 uses speaker-grouped CV or the validation speakers. \file{speaker_cv.py} asserts zero speaker overlap in every fold. Cohort~B for drift remains the pilot's held-out accent group (Table~\ref{tab:split}).
 \paragraph{Versioning.}
 Pilot audio, processed data and labels are DVC-tracked at \texttt{a1-final}. The 182 final WAVs are versioned by \file{model/data/audio.dvc} (directory hash \texttt{6ea06a62\ldots}); the shared DVC remote is still local to one machine.
+\begin{figure}[!htbp]
+\centering
+\shot{shots/dvc_status.png}{terminal: DVC data versioning status}
+\caption{DVC data versioning: verification of immutable audio payloads, tracked data manifests, and clean storage synchronization.}
+\Description{DVC terminal status screenshot.}\label{fig:dvc_shot}
+\end{figure}
+\FloatBarrier
 \begin{table}[htbp]
 \caption{Pilot speaker-disjoint splits (frozen; used by the deployed pipeline).}\label{tab:split}
 \begin{tabular}{lrrl}
@@ -240,18 +262,4 @@ Figure code & \file{code/report_figures/make_figures_v2.py} (new figures); \file
 
 \section{Use of AI Assistance}
 AI assistants helped scaffold scripts, draft documentation and format this report; prompts are stored in \file{code/prompts/}. The agreement statistics and drift/WER figures in this report were recomputed from raw files. If any text in \file{curate_gold_transcripts.py} was produced with an AI assistant, its prompt must be listed in \file{code/prompts/}. Claude 3.5 Sonnet and GPT-4o were utilized for boilerplate scripting, LaTeX formatting, and drafting initial docstrings; all empirical numbers, metrics, and audits were recomputed directly from raw artifacts.
-
-\section{Screenshots to Insert}
-\begin{figure*}[htbp]\centering
-\begin{minipage}{0.49\textwidth}\centering
-\shot{shots/labelstudio_task.png}{Label Studio task: waveform, language tags, intent}\\[4pt]
-\shot{shots/consensus_report.png}{terminal: consensus agreement report}\\[4pt]
-\shot{shots/validation_run.png}{terminal: data validation test suite}
-\end{minipage}\hfill
-\begin{minipage}{0.49\textwidth}\centering
-\shot{shots/leakage_audit.png}{terminal: python -m model.cli verify}\\[4pt]
-\shot{shots/dvc_status.png}{terminal: DVC data versioning status}
-\end{minipage}
-\caption{Evidence screenshots for collection, validation, agreement, leakage verification, and versioning (files under \file{report/shots/}).}\label{fig:shots_a1}
-\end{figure*}
 \end{document}

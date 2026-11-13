@@ -1,0 +1,11 @@
+{
+  "container_id": "7817d1c77e8e2d39e802064ffc306d3d5a44f807afd34e3ebf7c9f34b97da48b",
+  "image_id": "sha256:362a326553d6d84c5592b435874f652aec0a70bbb17866a12ede61e0bebae972",
+  "network_mode": "none",
+  "mounts": [],
+  "command": [
+    "validate",
+    "--output",
+    "/tmp/offline_validation.json"
+  ]
+}

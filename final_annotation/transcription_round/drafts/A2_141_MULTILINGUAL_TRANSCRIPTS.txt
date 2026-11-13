@@ -1,0 +1,12 @@
+﻿A2 — FRESH MULTILINGUAL ASR DRAFTS
+
+Completed: 1/141. Machine drafts; audio review still required.
+English/Hindi/Gujarati may occur within the same recording. Original decoded scripts retained.
+No existing Label Studio submissions or methodology documents were changed.
+
+============================================================================
+001/141 | P9_41 | 076e2bba
+Audio: /data/local-files/?d=final_annotation/annotator_1/records/P9/PTT-20261019-WA0009.wav
+Review flags: user_reported_Hindi_but_no_Devanagari_returned
+
+hello i need some assistance regarding the hostel service in my hostel i tried using the washing machine yesterday but the payment was detected from my account and the machine did not start I was trying to experiment but the machine didn't work for two times and I waited for some time to check whether the machine was working but there was no change. Could you please tell me how? I also want to know whether I can use another machine until this issue is resolved please guide me through the complete process and let me know if I need to provide the transaction details

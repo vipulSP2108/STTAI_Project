@@ -1,0 +1,14 @@
+{
+  "tag": "voice-helpdesk-asr:indic-v2",
+  "image_id": "sha256:362a326553d6d84c5592b435874f652aec0a70bbb17866a12ede61e0bebae972",
+  "os": "linux",
+  "architecture": "amd64",
+  "archive": "docker_image.tar.gz",
+  "archive_bytes": 1466489118,
+  "archive_sha256": "4d174accc18db803e982ae05919d215792cb34d8905ef971ae08136ee1067ad4",
+  "git_commit": "0ec5ed1dca5b4e56dcde2585fdc9c95c43d57481",
+  "gzip_crc_verified": true,
+  "docker_manifest_verified": true,
+  "packaging_seconds": 83.06,
+  "docker_reload_verified": true
+}

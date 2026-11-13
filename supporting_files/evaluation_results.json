@@ -149,17 +149,17 @@
     "sample_count": 17,
     "metrics": {
       "wer": {
-        "mean": 1.4028,
+        "mean": 1.498,
         "ci95": [
-          1.2252,
-          1.6013
+          1.328,
+          1.6867
         ]
       },
       "b1_wer": {
-        "mean": 1.4028,
+        "mean": 1.498,
         "ci95": [
-          1.2252,
-          1.6013
+          1.328,
+          1.6867
         ]
       },
       "delta_wer": {
@@ -170,32 +170,32 @@
         ]
       },
       "cer": {
-        "mean": 1.0497,
+        "mean": 1.0289,
         "ci95": [
-          0.968,
-          1.1428
+          0.932,
+          1.1336
         ]
       },
       "intent_accuracy_asr": {
-        "mean": 0.5352,
+        "mean": 0.2386,
         "ci95": [
-          0.2941,
-          0.7647
+          0.0588,
+          0.4706
         ]
       },
       "b1_intent_accuracy": {
-        "mean": 0.2971,
+        "mean": 0.1774,
         "ci95": [
-          0.1176,
-          0.5294
+          0.0,
+          0.4118
         ]
       },
       "intent_accuracy_human": 0.29411764705882354,
       "intent_macro_f1": {
-        "mean": 0.4513,
+        "mean": 0.229,
         "ci95": [
-          0.2262,
-          0.6365
+          0.0417,
+          0.4167
         ]
       },
       "wer_wilcoxon": {
@@ -204,69 +204,69 @@
         "interpretation": "No statistically significant difference (p >= 0.05; performance comparable)"
       },
       "intent_mcnemar": {
-        "stat": 1.5,
-        "p_value": 0.2207,
+        "stat": 0.0,
+        "p_value": 1.0,
         "interpretation": "No statistically significant difference (p >= 0.05; performance comparable)"
       }
     },
     "slice_analysis": {
       "speech_style": {
         "scripted": {
-          "accuracy": 0.529,
-          "mean_wer": 1.398,
+          "accuracy": 0.235,
+          "mean_wer": 1.493,
           "count": 17
         }
       },
       "noise_condition": {
         "campus_outdoor": {
-          "accuracy": 0.75,
-          "mean_wer": 1.39,
+          "accuracy": 0.0,
+          "mean_wer": 1.541,
           "count": 4
         },
         "library_whisper": {
-          "accuracy": 0.462,
-          "mean_wer": 1.401,
+          "accuracy": 0.308,
+          "mean_wer": 1.478,
           "count": 13
         }
       },
       "lang_mix": {
         "en-hi": {
-          "accuracy": 0.286,
-          "mean_wer": 1.34,
+          "accuracy": 0.143,
+          "mean_wer": 1.334,
           "count": 7
         },
         "gu-en": {
-          "accuracy": 0.7,
-          "mean_wer": 1.439,
+          "accuracy": 0.3,
+          "mean_wer": 1.605,
           "count": 10
         }
       },
       "region": {
         "Gujarat": {
-          "accuracy": 0.7,
-          "mean_wer": 1.439,
+          "accuracy": 0.3,
+          "mean_wer": 1.605,
           "count": 10
         },
         "South India": {
-          "accuracy": 0.286,
-          "mean_wer": 1.34,
+          "accuracy": 0.143,
+          "mean_wer": 1.334,
           "count": 7
         }
       },
       "device": {
         "Motorola Edge 30": {
-          "accuracy": 0.667,
-          "mean_wer": 1.471,
+          "accuracy": 0.5,
+          "mean_wer": 1.647,
           "count": 6
         },
         "Oppo Reno 6": {
-          "accuracy": 0.286,
-          "mean_wer": 1.34,
+          "accuracy": 0.143,
+          "mean_wer": 1.334,
           "count": 7
         },
         "Samsung Galaxy S20 FE": {
-          "accuracy": 0.75,
-          "mean_wer": 1.39,
+          "accuracy": 0.0,
+          "mean_wer": 1.541,
           "count": 4
         }
       }
@@ -695,5 +695,134 @@
       }
     },
     "slice_analysis": {}
+  },
+  "staging_val": {
+    "model_version": "staging",
+    "split": "val",
+    "sample_count": 17,
+    "metrics": {
+      "wer": {
+        "mean": 1.498,
+        "ci95": [
+          1.328,
+          1.6867
+        ]
+      },
+      "b1_wer": {
+        "mean": 1.498,
+        "ci95": [
+          1.328,
+          1.6867
+        ]
+      },
+      "delta_wer": {
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "cer": {
+        "mean": 1.0289,
+        "ci95": [
+          0.932,
+          1.1336
+        ]
+      },
+      "intent_accuracy_asr": {
+        "mean": 0.2382,
+        "ci95": [
+          0.0588,
+          0.4706
+        ]
+      },
+      "b1_intent_accuracy": {
+        "mean": 0.1774,
+        "ci95": [
+          0.0,
+          0.4118
+        ]
+      },
+      "intent_accuracy_human": 1.0,
+      "intent_macro_f1": {
+        "mean": 0.2009,
+        "ci95": [
+          0.0455,
+          0.3453
+        ]
+      },
+      "wer_wilcoxon": {
+        "stat": 0.0,
+        "p_value": 1.0,
+        "interpretation": "No statistically significant difference (p >= 0.05; performance comparable)"
+      },
+      "intent_mcnemar": {
+        "stat": 0.0,
+        "p_value": 1.0,
+        "interpretation": "No statistically significant difference (p >= 0.05; performance comparable)"
+      }
+    },
+    "slice_analysis": {
+      "speech_style": {
+        "scripted": {
+          "accuracy": 0.235,
+          "mean_wer": 1.493,
+          "count": 17
+        }
+      },
+      "noise_condition": {
+        "campus_outdoor": {
+          "accuracy": 0.0,
+          "mean_wer": 1.541,
+          "count": 4
+        },
+        "library_whisper": {
+          "accuracy": 0.308,
+          "mean_wer": 1.478,
+          "count": 13
+        }
+      },
+      "lang_mix": {
+        "en-hi": {
+          "accuracy": 0.286,
+          "mean_wer": 1.334,
+          "count": 7
+        },
+        "gu-en": {
+          "accuracy": 0.2,
+          "mean_wer": 1.605,
+          "count": 10
+        }
+      },
+      "region": {
+        "Gujarat": {
+          "accuracy": 0.2,
+          "mean_wer": 1.605,
+          "count": 10
+        },
+        "South India": {
+          "accuracy": 0.286,
+          "mean_wer": 1.334,
+          "count": 7
+        }
+      },
+      "device": {
+        "Motorola Edge 30": {
+          "accuracy": 0.333,
+          "mean_wer": 1.647,
+          "count": 6
+        },
+        "Oppo Reno 6": {
+          "accuracy": 0.286,
+          "mean_wer": 1.334,
+          "count": 7
+        },
+        "Samsung Galaxy S20 FE": {
+          "accuracy": 0.0,
+          "mean_wer": 1.541,
+          "count": 4
+        }
+      }
+    }
   }
 }

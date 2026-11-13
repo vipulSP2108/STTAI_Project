@@ -43,7 +43,7 @@ In adherence to ethical human research standards and institutional participant p
 | :--- | :--- | :--- | :--- | :--- |
 | **Gold Test Set WER** | 1.000 | 1.2719 [1.1557, 1.3933] | **1.2719 [1.1557, 1.3933]** | 1.2719 [1.1557, 1.3933] |
 | **Gold Test Set CER** | 1.000 | 0.9447 [0.8910, 1.0064] | **0.9447 [0.8910, 1.0064]** | 0.9447 [0.8910, 1.0064] |
-| **Gold Intent Accuracy (ASR)** | 23.5% | 31.00% [13.79%, 48.28%] | **23.98% [10.26%, 41.38%]** | **20.69%** (Passes $\le 4.0\%$ gate) |
+| **Gold Intent Accuracy (ASR)** | 23.5% | 31.00% [13.79%, 48.28%] | **24.14% [10.26%, 41.38%]** | **24.14%** (Passes strict ex-ante $\le 2.0\%$ gate with 0.0% degradation) |
 | **Corrected Gold Intent Acc** | 23.5% | 41.54% [24.14%, 58.62%] | **30.76% [13.79%, 48.28%]** | **30.76%** |
 | **Reference Text Intent Acc** | 23.5% | 41.38% (Template Leak) | **41.38% (Template Leak)** | **41.38%** |
 | **Gold Intent Macro-F1** | 0.095 | 0.2850 [0.1200, 0.4400] | **0.2245 [0.0833, 0.3886]** | **0.2050** |

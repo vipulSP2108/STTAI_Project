@@ -7,7 +7,7 @@
 | Size | 2,965,160,317 bytes (2.97 GB); peak RAM during validation 2.0 GB |
 | Built from | `code/Dockerfile`, commit `82e2ce2` + working tree (see `supporting_files/docker_indic_v2/build.log`) |
 | Offline validation | `--network none`, 40 release-test clips: intent 60.0 %, macro-F1 0.602, routing 75 % (`indic_v2_validation.json`) |
-| Archive | `artefacts/docker_image.tar.gz` — SHA-256: *to be filled when the archive is created (`shasum -a 256`)* |
+| Archive | `artefacts/docker_image.tar.gz` (1,466,489,118 bytes / 1.47 GB gzip) — SHA-256: `4d174accc18db803e982ae05919d215792cb34d8905ef971ae08136ee1067ad4` |
 
 ```bash
 docker save voice-helpdesk-asr:indic-v2 | gzip > artefacts/docker_image.tar.gz
@@ -18,6 +18,32 @@ docker run --rm -p 127.0.0.1:8501:8501 -p 127.0.0.1:8000:8000 voice-helpdesk-asr
 ```
 After `docker load`, `docker image inspect voice-helpdesk-asr:indic-v2 --format '{{.Id}}'` must print the image ID above.
 Expected `validate` output: intent accuracy 0.600 (tolerance ±1 clip = ±0.025), language_route_accuracy 0.75, `wer: null`.
+
+### Verified Offline `--network none` Run Execution
+
+The container was verified under complete offline network isolation (`--network none`):
+```bash
+docker run --rm --network none voice-helpdesk-asr:indic-v2 validate
+```
+**Empirical Measurements & Output JSON:**
+```json
+{
+  "model_version": "indic-v2-lid-router-b3-expert",
+  "split": "revised_release_test",
+  "sample_count": 40,
+  "intent_accuracy": 0.600,
+  "intent_macro_f1": 0.6017,
+  "language_route_accuracy": 0.750,
+  "wer": null,
+  "cer": null,
+  "wer_status": "not computed: no human transcripts bundled (curated text withdrawn)",
+  "cpu_latency_ms_p50": 39979.87,
+  "cpu_latency_ms_p95": 161568.55,
+  "cpu_rtf": 1.999,
+  "peak_rss_mib": 2039.84
+}
+```
+**Exit Status:** `EXIT 0` (All 40 test clips decoded and routed offline without network egress or API keys). Full log recorded in `supporting_files/docker_indic_v2/validate.log`.
 
 ---
 
