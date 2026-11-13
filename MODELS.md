@@ -62,6 +62,10 @@ In alignment with **CS203: Software Tools and Techniques in AI**, all 15 systema
 
 2. **Weights & Biases (W&B)** (Project `voice-helpdesk-asr` under IIT Gandhinagar organization):
    - Synchronized via `code/a2_part_b_tuning/sync_wandb.py` using `WANDB_API_KEY`.
+   - Exported artifacts:
+     - Summary table: `artefacts/wandb_export/wandb_tuning_summary.csv` (mirroring `artefacts/mlflow_export/runs.csv`)
+     - Full runs metadata: `artefacts/wandb_export/wandb_runs_metadata.csv`
+     - Dashboard screenshots: `shots/wandb_runs.png` (runs table), `shots/wandb_charts.png` (learning curves & metrics), `shots/wandb_sweeps.png` (sweeps list)
    - Cloud dashboard for distributed team collaboration, interactive runs comparison table, and Pareto trade-off visualization.
    - Logs identical hyperparameters (`lr`, `hidden_dim`, `ngram_max`, `dropout`, `epochs`), validation metrics (accuracy, macro-F1, latency), model size, and Git commit hashes.
 
