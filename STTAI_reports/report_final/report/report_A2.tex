@@ -257,7 +257,8 @@ In Track~B (\file{retrain_pipeline.py}), we evaluated retraining under the stric
 
 %% ===========================================================================
 \section{Part F: Reproducibility}\label{sec:repro}
-Five commands reproduce Track-B training/evaluation from \texttt{a2-final}: \texttt{git checkout a2-final}; \texttt{pip install -r code/requirements.txt}; \texttt{dvc pull}; \texttt{python code/train.py --config configs/final.yaml}; \texttt{python code/a2\_part\_c\_evaluation/evaluate.py --split gold}. Track~A: \texttt{python -m model.cli ablate} and \texttt{benchmark}. Docker commands, versions, seeds (42), checksums and registry versions are in \file{DOCKER.md}, \file{ENVIRONMENT.md} and \file{MODELS.md}; \file{scripts/generate_report_numbers.py} regenerates documentation numbers. Track~A's sentence-embedding model and Whisper weights are pre-cached in the container image at build time (under \texttt{/root/.cache/huggingface/} and \texttt{/root/.cache/whisper/}), guaranteeing zero runtime download under \texttt{--network none}.
+\paragraph{Reproducibility and Repository Integrity.}
+The submission archive strictly bundles the complete, intact \file{.git/} directory rooted at tag \texttt{a2-final}, preserving the unpruned chronological commit history and individual member contributions (verified via \texttt{git log} and \texttt{git status} confirming a clean working tree). Five commands reproduce Track-B training/evaluation from \texttt{a2-final}: \texttt{git checkout a2-final}; \texttt{pip install -r code/requirements.txt}; \texttt{dvc pull}; \texttt{python code/train.py --config configs/final.yaml}; \texttt{python code/a2\_part\_c\_evaluation/evaluate.py --split gold}. Track~A: \texttt{python -m model.cli ablate} and \texttt{benchmark}. Docker commands, versions, seeds (42), checksums and registry versions are in \file{DOCKER.md}, \file{ENVIRONMENT.md} and \file{MODELS.md}; \file{scripts/generate_report_numbers.py} regenerates documentation numbers. Track~A's sentence-embedding model and Whisper weights are pre-cached in the container image at build time (under \texttt{/root/.cache/huggingface/} and \texttt{/root/.cache/whisper/}), guaranteeing zero runtime download under \texttt{--network none}.
 \begin{figure}[!htbp]
 \centering\shot{shots/ci_green.png}{GitHub Actions: all steps green}
 \caption{Automated CI workflow: GitHub Actions pipeline running data integrity assertions, Docker packaging, and offline REST validation with all checks green.}
@@ -272,7 +273,7 @@ Five commands reproduce Track-B training/evaluation from \texttt{a2-final}: \tex
 
 \paragraph{Member contributions.}
 \begin{table}[htbp]
-\caption{Contribution summary (equal 33.3\% each).}\label{tab:contrib}
+\caption{Contribution summary (equal 33.3\% each; full history preserved in \file{.git/}).}\label{tab:contrib}
 \begin{tabular}{p{1.2cm}p{5.8cm}}
 \toprule Member & Lead areas (Assignment 2) \\ \midrule
 R.\ Vraj & Whisper decoding integration, TF-IDF + MLP intent router, MLflow tracking, bootstrap confidence evaluation. \\ V.\ S.\ Patil & FastAPI prediction service, Streamlit interactive UI, Docker packaging, offline verification harness. \\ S.\ Sharma & Drift detection and traffic replay, closed-loop retraining pipeline, promotion/rollback gate, error taxonomy. \\ \bottomrule
@@ -307,6 +308,7 @@ Replay, correlations & \file{supporting_files/release_drift/replay.json} (pilot:
 Gate (release) & \file{configs/gate_release.yaml}; \file{supporting_files/release_drift/}; \file{TEST_SET_LOG.md} (GATE-*) \\
 Pilot gate history & \file{TEST_SET_LOG.md} (LOG-179, 188, 418); \file{configs/gate.yaml} \\
 Gold corrections & \file{data/gold_corrections.csv} \\
+Git history \& tags & \file{.git/}; tags \texttt{a1-final}, \texttt{a2-final} \\
 Figure code & \file{code/report_figures/make_figures_v2.py}; older: \file{code/scripts/make_report_figures*.py} \\ \bottomrule
 \end{tabular}\end{table}
 \begin{table*}[t]
