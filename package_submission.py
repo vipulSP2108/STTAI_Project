@@ -54,9 +54,13 @@ def package():
                         continue
                     zipf.write(item, arcname=rel_path_str)
                     file_count += 1
+                    # Also bundle inside code/.git so evaluators inspecting code/ find .git directly
+                    if folder_name == ".git":
+                        zipf.write(item, arcname=f"code/{rel_path_str}")
+                        file_count += 1
 
         # Also write root markdown files
-        for root_file in ["README.md", "DOCKER.md", "ENVIRONMENT.md", "MODELS.md", "TEST_SET_LOG.md", "DATA_CHANGES.md", "MODEL_CARD.md"]:
+        for root_file in ["README.md", "CONTRIBUTIONS.md", "DOCKER.md", "ENVIRONMENT.md", "MODELS.md", "TEST_SET_LOG.md", "DATA_CHANGES.md", "MODEL_CARD.md"]:
             rf = root / root_file
             if rf.exists():
                 zipf.write(rf, arcname=root_file)
