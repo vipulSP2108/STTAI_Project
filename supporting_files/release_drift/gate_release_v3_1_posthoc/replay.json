@@ -1,0 +1,76 @@
+{
+ "gate_sha256": "4d18821edc672ddb61f9d1f7a016b6c69be9efba703230264532471605a53e13",
+ "thresholds": {
+  "mean_logprob_band": [
+   -0.21789428978594239,
+   -0.10605308516553681
+  ],
+  "hindi_share_band": [
+   0.0,
+   0.35
+  ]
+ },
+ "false_alarm_rate_per_batch": 0.022,
+ "false_alarm_rate_alert_rule": 0.00048399999999999995,
+ "batches": [
+  {
+   "batch": 1,
+   "cohort_b_share": 0.0,
+   "mean_logprob": -0.17605363102855381,
+   "hindi_route_share": 0.2,
+   "flag": false,
+   "intent_accuracy_labelled": 0.65
+  },
+  {
+   "batch": 2,
+   "cohort_b_share": 0.0,
+   "mean_logprob": -0.1662601908791833,
+   "hindi_route_share": 0.2,
+   "flag": false,
+   "intent_accuracy_labelled": 0.75
+  },
+  {
+   "batch": 3,
+   "cohort_b_share": 0.25,
+   "mean_logprob": -0.14631080294293203,
+   "hindi_route_share": 0.2,
+   "flag": false,
+   "intent_accuracy_labelled": 0.7
+  },
+  {
+   "batch": 4,
+   "cohort_b_share": 0.5,
+   "mean_logprob": -0.1335469408848104,
+   "hindi_route_share": 0.2,
+   "flag": false,
+   "intent_accuracy_labelled": 0.5
+  },
+  {
+   "batch": 5,
+   "cohort_b_share": 0.75,
+   "mean_logprob": -0.09689847772930452,
+   "hindi_route_share": 0.35,
+   "flag": true,
+   "intent_accuracy_labelled": 0.45
+  },
+  {
+   "batch": 6,
+   "cohort_b_share": 1.0,
+   "mean_logprob": -0.062374597520349316,
+   "hindi_route_share": 0.35,
+   "flag": true,
+   "intent_accuracy_labelled": 0.5
+  }
+ ],
+ "alert_batch": 6,
+ "first_shifted_batch": 3,
+ "detection_delay_batches": 3,
+ "corr_logprob_vs_accuracy": -0.7718523916905282,
+ "cohort_sizes": {
+  "adapt_pool": 13,
+  "heldout": 14,
+  "base_train": 77
+ },
+ "retrain_trigger": "alert",
+ "candidates_file_sha256": "a5d851049437d87728983d50bbdd85e84489fabd450bba66dc254558d473cf4f"
+}

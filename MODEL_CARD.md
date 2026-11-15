@@ -31,7 +31,7 @@ not human transcripts (none exist yet). See `STTAI_reports/report_final/report/r
 | Release test, 40 clips, 4 unseen speakers (text-level) | 60.0 % [52.5, 78.9], macro-F1 0.609; previous router 47.5 %; McNemar p = 0.125 (soft-label variant, first run: 57.5 %) | `model/results/release_eval.json` |
 | Language routing, speaker CV | 81.1 % (Gujarati 71 %) vs 74.4 % for restricted argmax | `model/results/lid_router.json` |
 | End-to-end in container, `--network none`, 40 test clips | intent 60.0 %, macro-F1 0.602, routing 75 %, peak RAM 2.0 GB (latency on emulated amd64/M1: p50 40 s, RTF 2.0) | `supporting_files/docker_indic_v2/indic_v2_validation.json` |
-| Transcript WER | **not reported** until human transcripts exist | — |
+| Transcript WER/CER vs human Round T transcripts (100 draft-free shared clips) | WER 0.514, CER 0.438 (English 0.21, Hindi 0.58, code-mixed 0.85, Gujarati 0.90); earlier prompted decoder WER 0.566 | `model/results/asr_wer_human.json` |
 
 ## Slices and weak groups
 Accuracy by language (B3, CV): English 68 %, Hindi 58 %, code-mixed 48 %, Gujarati 41 %; on the release test: English 89 %, Hindi 65 %, Gujarati 29 %, code-mixed 25 %.

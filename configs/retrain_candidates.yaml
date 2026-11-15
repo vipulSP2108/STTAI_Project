@@ -1,0 +1,15 @@
+# Retraining candidates evaluated by release_drift_loop.py under the UNCHANGED gate criteria.
+# Written 2026-11-15 21:43 IST BEFORE the candidate below was ever trained or scored.
+# Motivation (from the 11 Nov runs): plain rehearsal gave no Cohort-B gain because 10 new clips are
+# outnumbered 77:10 by old clips; no-rehearsal gained on Cohort B but forgot the release test.
+# The new candidate keeps rehearsal but repeats the 10 newly labelled clips 3 times.
+candidates:
+  - name: rehearsal              # base training clips + selected clips (11 Nov)
+    base: true
+    new_clip_repeats: 1
+  - name: no_rehearsal           # selected clips only (11 Nov, forgetting control)
+    base: false
+    new_clip_repeats: 1
+  - name: rehearsal_new_x3       # NEW, registered 2026-11-15: base + selected clips repeated 3x
+    base: true
+    new_clip_repeats: 3

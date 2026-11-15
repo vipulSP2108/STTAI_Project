@@ -100,3 +100,7 @@ roundT_audio_A2.zip
 CS203_A2_Project5_*.zip
 CS203_A1_Project5_*.zip
 Assignment_*.zip
+
+# Secrets: never commit (W&B key lives in .env locally)
+.env
+**/.env

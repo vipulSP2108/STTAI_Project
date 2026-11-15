@@ -6,6 +6,8 @@
 
 gate_version: "2.0.0"
 date_fixed: "2026-11-05T00:00:00Z"
+# Edit history: max_gold_accuracy_regression was 0.04 until 2026-11-13, when it was set to 0.02 after
+# pilot results had been seen; see TEST_SET_LOG.md (LOG-418/179 and LOG-780/912/933/990).
 
 criteria:
   # Criterion 1: Shifted Data (Cohort B) Adaptation Requirement

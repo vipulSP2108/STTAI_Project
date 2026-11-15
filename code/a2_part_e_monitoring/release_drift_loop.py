@@ -19,6 +19,7 @@ Outputs: supporting_files/release_drift/{replay.json, gate_decisions.json, regis
 """
 import hashlib
 import json
+import re
 import subprocess
 import sys
 import time
@@ -74,15 +75,21 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--force-retrain", action="store_true",
                     help="mechanism demo: run selection/retrain/gate even without an alert (labelled as such in all logs)")
+    ap.add_argument("--gate", default="configs/gate_release.yaml",
+                    help="gate file; the frozen v3.0 gate is the default, v3.1 is a post-hoc sensitivity analysis")
     args = ap.parse_args()
+    gate_path = ROOT / args.gate
+    global OUT
+    if gate_path.name != "gate_release.yaml":
+        OUT = OUT / gate_path.stem          # e.g. supporting_files/release_drift/gate_release_v3_1_posthoc/
     OUT.mkdir(parents=True, exist_ok=True)
-    gate_path = ROOT / "configs/gate_release.yaml"
     gate_sha = hashlib.sha256(gate_path.read_bytes()).hexdigest()
     gate = yaml.safe_load(gate_path.read_text())
     commit = subprocess.run(["git", "rev-parse", "--short", "HEAD"], capture_output=True, text=True, cwd=ROOT).stdout.strip()
     stamp = time.strftime("%Y-%m-%dT%H:%M:%S")
-    log(f"| `GATE-{time.strftime('%Y%m%d-%H%M')}` | {stamp} | `{commit}`+working tree | gate_release.yaml v{gate['gate_version']} | "
-        f"gate file sha256 `{gate_sha[:16]}` recorded before scoring | - | - | - | **GATE FROZEN** |")
+    log(f"| `GATE-{time.strftime('%Y%m%d-%H%M')}` | {stamp} | `{commit}`+working tree | {gate_path.name} v{gate['gate_version']} | "
+        f"gate file sha256 `{gate_sha[:16]}`, candidates file sha256 "
+        f"`{hashlib.sha256((ROOT / 'configs/retrain_candidates.yaml').read_bytes()).hexdigest()[:16]}` recorded before scoring | - | - | - | **GATE FROZEN** |")
 
     conf = {r["uuid"]: r for r in json.loads((ROOT / "model/data/reports/asr_indic_v2_confidence.json").read_text())["clips"]}
     g = release_rows()
@@ -107,9 +114,10 @@ def main():
     B = gate["drift_detection"]["batch_size"]
     lp_val = np.array([r["logprob"] for r in val]); hi_val = np.array([r["route"] == "hi" for r in val], float)
     boot = rng.integers(0, len(val), size=(1000, B))
-    # Two-sided bands (gate: "2.5th/97.5th percentile" = 95% bootstrap CI).
-    lp_lo, lp_hi = (float(x) for x in np.percentile(lp_val[boot].mean(1), [2.5, 97.5]))
-    hi_lo, hi_hi = (float(x) for x in np.percentile(hi_val[boot].mean(1), [2.5, 97.5]))
+    # Two-sided band read from the gate text, e.g. "1st/99th percentile" (v3.0) or "2.5th/97.5th" (v3.1).
+    lo_pct, hi_pct = (float(x) for x in re.findall(r"([\d.]+)(?:st|nd|rd|th)", gate["drift_detection"]["thresholds_from"])[:2])
+    lp_lo, lp_hi = (float(x) for x in np.percentile(lp_val[boot].mean(1), [lo_pct, hi_pct]))
+    hi_lo, hi_hi = (float(x) for x in np.percentile(hi_val[boot].mean(1), [lo_pct, hi_pct]))
     out_of_band = lambda lp, hi: (lp < lp_lo) or (lp > lp_hi) or (hi < hi_lo) or (hi > hi_hi)
     fa_boot = rng.integers(0, len(val), size=(500, B))
     fa_single = float(np.mean([out_of_band(a, b) for a, b in zip(lp_val[fa_boot].mean(1), hi_val[fa_boot].mean(1))]))
@@ -148,7 +156,11 @@ def main():
         assert not {r["uuid"] for r in picked} & {r["uuid"] for r in held + test + val}
         assert all(r["intent"] in {"admissions", "hostel_mess", "it_support", "student_services"} for r in picked)
         before = {"heldout": acc(prod, held), "test": acc(prod, test)}
-        for name, train in (("rehearsal", base_train + picked), ("no_rehearsal", picked)):
+        cand_path = ROOT / "configs/retrain_candidates.yaml"
+        cand_cfg = yaml.safe_load(cand_path.read_text())["candidates"]
+        replay["candidates_file_sha256"] = hashlib.sha256(cand_path.read_bytes()).hexdigest()
+        plans = [(c["name"], (base_train if c["base"] else []) + picked * int(c["new_clip_repeats"])) for c in cand_cfg]
+        for name, train in plans:
             cand = IntentRouter(emb)
             if len({r["intent"] for r in train}) < 2:
                 decisions.append({"candidate": name, "decision": "rejected", "reason": "fewer than two classes"}); continue
@@ -184,7 +196,8 @@ def main():
         if alert_at:
             a.axvline(alert_at, c="r", lw=0.8)
     fig.tight_layout(); fig.savefig(OUT / "drift.png", dpi=150)
-    fig.savefig(ROOT / "STTAI_reports/report_final/report/fig_f_drift.pdf")
+    if gate_path.name == "gate_release.yaml":
+        fig.savefig(ROOT / "STTAI_reports/report_final/report/fig_f_drift.pdf")
     print(json.dumps({"replay": {k: v for k, v in replay.items() if k != "batches"}, "batches": batches,
                       "decisions": decisions, "registry": registry}, indent=1))
 
