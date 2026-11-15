@@ -66,7 +66,7 @@ references/Proposal.pdf
 references/project_proposal.pdf
 
 # Model binaries & checkpoints (managed via local caches / scripts)
-model/models/
+model/
 model/data/cache/
 final_annotation/annotator_*/data/
 final_annotation/annotator_*/records/

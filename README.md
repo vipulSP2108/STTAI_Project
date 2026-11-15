@@ -128,8 +128,7 @@ STTAI_Project/
 │   ├── part_b_validation/       # Assignment 1 14-check validation suite
 │   ├── part_c_labelling/        # Assignment 1 Label Studio annotation & agreement engine
 │   ├── part_d_augmentation/     # Assignment 1 audio augmentations & active learning
-│   ├── part_e_versioning/       # Assignment 1 speaker-disjoint splitting logic
-│   └── scripts/                 # PDF report generator & utility scripts
+│   └── part_e_versioning/       # Assignment 1 speaker-disjoint splitting logic
 ├── data/                        # Canonical dataset, labels, and replay batches
 │   ├── raw/audio/               # 249 canonical 16 kHz mono WAV clips (A1 frozen)
 │   ├── labels/                  # Authentic transcripts and 4-class intent labels (A1 frozen)
