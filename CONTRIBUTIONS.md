@@ -1,7 +1,7 @@
 # Team contributions — CS203 Project 5 (Voice Helpdesk ASR)
 
-**Team:** Rajdeep Vraj (24110260, GitHub `rajdeepvraj`), Vipul Sunil Patil (24110381, `vipulSP2108`),
-Satvik Sharma (24110300, `satvikboi`). Contribution: **equal, 33.3 % each**.
+**Team:** Rajdeep Vraj (22110215, GitHub `rajdeepvraj`), Vipul Sunil Patil (22110189, `vipulSP2108`),
+Satvik Sharma (26120008, `satvikboi`). Contribution: **equal, 33.3 % each**.
 
 ## Why the commit history does not show three equal authors
 

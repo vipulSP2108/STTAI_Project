@@ -12,9 +12,9 @@ Department of Computer Science and Engineering, Indian Institute of Technology G
 
 | Team Member | Roll Number | Academic Program | Role & Contribution |
 | :--- | :--- | :--- | :--- |
-| **Rajdeep Vraj** | 24110260 | B.Tech CSE and AI, IIT Gandhinagar | 33.3% Equal Technical Contribution |
-| **Vipul Sunil Patil** | 24110381 | B.Tech CSE and CE, IIT Gandhinagar | 33.3% Equal Technical Contribution |
-| **Satvik Sharma** | 24110300 | B.Tech CSE, IIT Gandhinagar | 33.3% Equal Technical Contribution |
+| **Rajdeep Vraj** | 22110215 | B.Tech Civil Engineering and AI, IIT Gandhinagar | 33.3% Equal Technical Contribution |
+| **Vipul Sunil Patil** | 22110189 | B.Tech CSE and CE, IIT Gandhinagar | 33.3% Equal Technical Contribution |
+| **Satvik Sharma** | 26120008 | B.Tech CSE, IIT Gandhinagar | 33.3% Equal Technical Contribution |
 
 > **Statement of Equal Contribution (1/3rd each across Assignments 1 & 2):**  
 > All three team members (**Rajdeep Vraj**, **Vipul Sunil Patil**, and **Satvik Sharma**) contributed equally (33.3% each) across all phases of this project:
@@ -159,9 +159,9 @@ All pipeline modules, experimental runs, and Docker containerizations were imple
 
 | Member | Roll Number | Primary Functional Responsibilities |
 | :--- | :--- | :--- |
-| **Rajdeep Vraj** | `24110260` | Audio collection protocol, 14-check validation suite, VAD normalization, Docker containerization (`code/Dockerfile`), and offline image verification. |
-| **Vipul Sunil Patil** | `24110381` | Label Studio dual annotation, TF-IDF + MLP intent routing, 15-run MLflow & W&B experiment tracking, FastAPI service, and Streamlit UI. |
-| **Satvik Sharma** | `24110300` | Statistical evaluation, Wilson score & 1,000 bootstrap CIs, slice analysis, traffic replay drift detection, and automated retraining gates. |
+| **Rajdeep Vraj** | `22110215` | Audio collection protocol, 14-check validation suite, VAD normalization, Docker containerization (`code/Dockerfile`), and offline image verification. |
+| **Vipul Sunil Patil** | `22110189` | Label Studio dual annotation, TF-IDF + MLP intent routing, 15-run MLflow & W&B experiment tracking, FastAPI service, and Streamlit UI. |
+| **Satvik Sharma** | `26120008` | Statistical evaluation, Wilson score & 1,000 bootstrap CIs, slice analysis, traffic replay drift detection, and automated retraining gates. |
 
 ---
 
