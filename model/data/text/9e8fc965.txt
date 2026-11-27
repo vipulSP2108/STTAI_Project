@@ -1,0 +1,4 @@
+UUID: 9e8fc965
+Transcript: હેલો આઈઆઈટીજીએન હેલ્પડેસ્ક, હોસ્ટેલ મેસમાં ફૂડ ક્વોલિટી છેલ્લા થોડા દિવસોથી બરાબર નથી, આ બાબતે ફોર્મલ ફીડબેક કઈ રીતે સબમિટ કરવો?
+Target_Label: hostel_mess
+Spoken_Languages: Gujarati

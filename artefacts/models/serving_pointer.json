@@ -1,0 +1,22 @@
+{
+  "active_version": "candidate_retrained_v2",
+  "checkpoint": "candidate_retrained_v2.pt",
+  "vectorizer": "candidate_retrained_vectorizer.pkl",
+  "active_head_file": "active_model_head.pt",
+  "active_vec_file": "active_vectorizer.pkl",
+  "promoted_at": "2026-11-13T00:33:10Z",
+  "git_commit": "0ec5ed1",
+  "gate_criteria": {
+    "min_cohort_b_accuracy_delta": 0.05,
+    "max_gold_accuracy_regression": 0.02
+  },
+  "measured_metrics": {
+    "baseline_heldout_acc": 0.3077,
+    "candidate_heldout_acc": 0.3846,
+    "cohort_b_gain": 0.0769,
+    "baseline_gold_acc": 0.2414,
+    "candidate_gold_acc": 0.2414,
+    "gold_degradation": 0.0
+  },
+  "status": "PROMOTED_TO_PRODUCTION"
+}

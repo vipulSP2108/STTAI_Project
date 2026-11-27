@@ -1,0 +1,4 @@
+UUID: e7a37e81
+Transcript: आलो में पने पेटी के ले एाटी नवने नवने न आगग अग अग आप्वाशाशाशिता जब पश्विचिर के बप्विटी को बिलने बिलने बिलन.
+Target_Label: admissions
+Spoken_Languages: Hindi

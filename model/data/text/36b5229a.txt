@@ -1,0 +1,4 @@
+UUID: 36b5229a
+Transcript: એજન્ટ સપોર્ટ આપો એપ્રેડ કરવા માટે કમિટિંગ ક્યાં થયેલી છે કુપિયા એજન્ટ સપોર્ટ આપો.
+Target_Label: hostel_mess
+Spoken_Languages: Gujarati

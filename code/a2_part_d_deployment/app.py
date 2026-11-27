@@ -68,16 +68,38 @@ START_TIME = time.time()
 whisper_model = None
 vectorizer = None
 intent_head = None
+current_model_version = MODEL_VERSION
+
+def resolve_active_model_info():
+    serving_ptr_path = MODELS_DIR / "serving_pointer.json"
+    if serving_ptr_path.exists():
+        try:
+            import json
+            with open(serving_ptr_path) as f:
+                ptr = json.load(f)
+            version = ptr.get("active_version", MODEL_VERSION)
+            head_file = MODELS_DIR / ptr.get("checkpoint", "production_v1_head.pt")
+            vec_file = MODELS_DIR / ptr.get("vectorizer", "proposed_vectorizer.pkl")
+            if not head_file.exists():
+                head_file = MODELS_DIR / "production_v1_head.pt"
+            if not vec_file.exists():
+                vec_file = MODELS_DIR / "proposed_vectorizer.pkl"
+            return version, head_file, vec_file
+        except Exception:
+            pass
+    return MODEL_VERSION, MODELS_DIR / "production_v1_head.pt", MODELS_DIR / "proposed_vectorizer.pkl"
 
 def get_models():
-    global whisper_model, vectorizer, intent_head
+    global whisper_model, vectorizer, intent_head, current_model_version
+    version, head_file, vec_file = resolve_active_model_info()
+    current_model_version = version
+
     if whisper_model is None:
         import whisper
         whisper_model = whisper.load_model("base", device="cpu")
 
     if vectorizer is None:
-        vec_path = MODELS_DIR / "proposed_vectorizer.pkl"
-        with open(vec_path, "rb") as f:
+        with open(vec_file, "rb") as f:
             vectorizer = pickle.load(f)
 
     if intent_head is None:
@@ -88,9 +110,8 @@ def get_models():
             nn.Dropout(0.2),
             nn.Linear(64, 4)
         )
-        head_path = MODELS_DIR / "production_v1_head.pt"
-        if head_path.exists():
-            sd = torch.load(head_path, weights_only=True)
+        if head_file.exists():
+            sd = torch.load(head_file, weights_only=True)
             cleaned_sd = {k.replace("net.", ""): v for k, v in sd.items()}
             head.load_state_dict(cleaned_sd)
         head.eval()
@@ -153,7 +174,8 @@ async def predict_audio(file: UploadFile = File(...)):
     latency_ms = (time.time() - t0) * 1000.0
 
     # Non-PII telemetry logging
-    log_entry = f"[{time.strftime('%Y-%m-%d %H:%M:%S')}] model={MODEL_VERSION} intent={intent} conf={confidence:.3f} lat_ms={latency_ms:.2f}\n"
+    active_ver = current_model_version or MODEL_VERSION
+    log_entry = f"[{time.strftime('%Y-%m-%d %H:%M:%S')}] model={active_ver} intent={intent} conf={confidence:.3f} lat_ms={latency_ms:.2f}\n"
     with open(LOG_PATH, "a") as f:
         f.write(log_entry)
 
@@ -162,7 +184,7 @@ async def predict_audio(file: UploadFile = File(...)):
         intent=intent,
         confidence=confidence,
         latency_ms=round(latency_ms, 2),
-        model_version=MODEL_VERSION,
+        model_version=active_ver,
         git_commit=GIT_COMMIT
     )
 
@@ -180,8 +202,9 @@ def health_check():
 
 @app.get("/version", response_model=VersionResponse)
 def get_version():
+    active_ver, _, _ = resolve_active_model_info()
     return VersionResponse(
-        model_version=MODEL_VERSION,
+        model_version=active_ver,
         git_commit=GIT_COMMIT,
         gold_set_sha256="64b7647b5d0d35733063c77caab122a1a7c24ac6c70b7d476ffbabd9a2448ca9",
         pipeline_stage="production"

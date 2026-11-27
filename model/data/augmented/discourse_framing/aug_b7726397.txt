@@ -1,0 +1,7 @@
+UUID: aug_b7726397
+Parent_UUID: 43f59a85
+Augmentation_Type: discourse_framing
+Similarity_Score: 0.9745
+Transcript: नमस्ते, कृपया बताइए कि हेलो आईआईटीजीएन हेल्पडेस्क, हमारे रूम में टेबल फैन की स्पीड रेगुलेटर खराब है, कृपया इलेक्ट्रीशियन को भेजें।
+Target_Label: hostel_mess
+Spoken_Languages: ['Hindi']

@@ -1,0 +1,2465 @@
+[
+  {
+    "number": 2,
+    "clip_id": "P21_73",
+    "edits": [
+      {
+        "kind": "audio_assisted_character_repair",
+        "word_index": 47,
+        "before": " आ�",
+        "after": "",
+        "evidence": [
+          {
+            "start": 13.9,
+            "end": 18.314,
+            "language_hint": "hi"
+          }
+        ]
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "हेलो आईटीजी एंड हेल्प डेस्ट",
+        "after": "Hello IIT GN Helpdesk",
+        "rule": "recognized_service_name_variant"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "कि ",
+        "after": "",
+        "rule": "greeting_decoder_prefix_cleanup"
+      }
+    ]
+  },
+  {
+    "number": 3,
+    "clip_id": "P13_80",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT ગાંધી નાકે",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT GN વોઈસ હેલ્પ",
+        "after": "IIT GN Voice Helpdesk",
+        "rule": "recognized_voice_helpdesk_native_rendering"
+      }
+    ]
+  },
+  {
+    "number": 4,
+    "clip_id": "P16_111",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT Jain",
+        "after": "IIT GN",
+        "rule": "acronym_misrecognition"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT GN Help Desk",
+        "after": "IIT GN Helpdesk",
+        "rule": "helpdesk_spacing_or_misrecognition"
+      }
+    ]
+  },
+  {
+    "number": 5,
+    "clip_id": "P16_110",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT Gandhinagar",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT Jain",
+        "after": "IIT GN",
+        "rule": "acronym_misrecognition"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT GN Help Desk",
+        "after": "IIT GN Helpdesk",
+        "rule": "helpdesk_spacing_or_misrecognition"
+      }
+    ]
+  },
+  {
+    "number": 7,
+    "clip_id": "P18_114",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "हेलो आईएटीजी एंड एलब्डस",
+        "after": "Hello IIT GN Helpdesk",
+        "rule": "recognized_service_name_variant"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "करूं ",
+        "after": "",
+        "rule": "greeting_decoder_prefix_cleanup"
+      }
+    ]
+  },
+  {
+    "number": 8,
+    "clip_id": "P7_29",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT Gandhinagar",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "iit kandinagar",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      }
+    ]
+  },
+  {
+    "number": 9,
+    "clip_id": "P20_68",
+    "edits": [
+      {
+        "kind": "audio_assisted_character_repair",
+        "word_index": 26,
+        "before": " �",
+        "after": "",
+        "evidence": [
+          {
+            "start": 12.7,
+            "end": 17.88,
+            "language_hint": "hi"
+          }
+        ]
+      },
+      {
+        "kind": "audio_assisted_character_repair",
+        "word_index": 61,
+        "before": " મળ�",
+        "after": "મળે છે? શું હોસ્ટેલમાં રહેતા વિદ્યાર્થીઓને medical",
+        "evidence": [
+          {
+            "start": 27.14,
+            "end": 37.28,
+            "language_hint": "gu"
+          }
+        ]
+      },
+      {
+        "kind": "audio_assisted_character_repair",
+        "word_index": 65,
+        "before": " �",
+        "after": "",
+        "evidence": [
+          {
+            "start": 27.14,
+            "end": 37.28,
+            "language_hint": "gu"
+          }
+        ]
+      },
+      {
+        "kind": "audio_assisted_character_repair",
+        "word_index": 93,
+        "before": " �",
+        "after": "",
+        "evidence": [
+          {
+            "start": 46.44,
+            "end": 52.16,
+            "language_hint": "hi"
+          }
+        ]
+      },
+      {
+        "kind": "audio_assisted_character_repair",
+        "word_index": 96,
+        "before": " �",
+        "after": "",
+        "evidence": [
+          {
+            "start": 46.44,
+            "end": 52.16,
+            "language_hint": "hi"
+          }
+        ]
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "आयाटी गहनिरगर",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      }
+    ]
+  },
+  {
+    "number": 10,
+    "clip_id": "P18_122",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "allow hydrogen help desk",
+        "after": "Hello IIT GN Helpdesk",
+        "rule": "recognized_service_name_variant"
+      }
+    ]
+  },
+  {
+    "number": 11,
+    "clip_id": "P16_100",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "Hello, I at Aegean Help Desk",
+        "after": "Hello, IIT GN Helpdesk",
+        "rule": "recognized_service_name_variant"
+      }
+    ]
+  },
+  {
+    "number": 12,
+    "clip_id": "P8_32",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT गांधी नगर",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      }
+    ]
+  },
+  {
+    "number": 14,
+    "clip_id": "P1_1",
+    "edits": [
+      {
+        "kind": "audio_assisted_character_repair",
+        "word_index": 124,
+        "before": " य�",
+        "after": "यू",
+        "evidence": [
+          {
+            "start": 33.96,
+            "end": 37.611,
+            "language_hint": "hi"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "number": 15,
+    "clip_id": "P20_61",
+    "edits": [
+      {
+        "kind": "audio_assisted_character_repair",
+        "word_index": 26,
+        "before": " જર�",
+        "after": "જરૂરી છે. IIT GNમાં હોસ્ટેલની",
+        "evidence": [
+          {
+            "start": 11.62,
+            "end": 26.08,
+            "language_hint": "gu"
+          }
+        ]
+      },
+      {
+        "kind": "audio_assisted_character_repair",
+        "word_index": 36,
+        "before": " �",
+        "after": "હોય છે",
+        "evidence": [
+          {
+            "start": 11.62,
+            "end": 26.08,
+            "language_hint": "gu"
+          }
+        ]
+      },
+      {
+        "kind": "audio_assisted_character_repair",
+        "word_index": 42,
+        "before": " મેશન�",
+        "after": "મેસનો",
+        "evidence": [
+          {
+            "start": 11.62,
+            "end": 26.08,
+            "language_hint": "gu"
+          }
+        ]
+      },
+      {
+        "kind": "audio_assisted_character_repair",
+        "word_index": 81,
+        "before": " �",
+        "after": "",
+        "evidence": [
+          {
+            "start": 40.9,
+            "end": 46.3,
+            "language_hint": "gu"
+          }
+        ]
+      },
+      {
+        "kind": "audio_assisted_character_repair",
+        "word_index": 90,
+        "before": " સાખા�",
+        "after": "શકાય? જો દર વર્ષે ફીમાં ફેરફાર થતો",
+        "evidence": [
+          {
+            "start": 47.2,
+            "end": 62.22,
+            "language_hint": "gu"
+          }
+        ]
+      },
+      {
+        "kind": "audio_assisted_character_repair",
+        "word_index": 98,
+        "before": " �",
+        "after": "",
+        "evidence": [
+          {
+            "start": 47.2,
+            "end": 62.22,
+            "language_hint": "gu"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "number": 16,
+    "clip_id": "P19_133",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "Hello, I am Dijan Haldas",
+        "after": "Hello, IIT GN Helpdesk",
+        "rule": "recognized_service_name_variant"
+      }
+    ]
+  },
+  {
+    "number": 17,
+    "clip_id": "P2_3",
+    "edits": [
+      {
+        "kind": "audio_assisted_character_repair",
+        "word_index": 64,
+        "before": " लो�",
+        "after": "लोड",
+        "evidence": [
+          {
+            "start": 21.82,
+            "end": 27.02,
+            "language_hint": "hi"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "number": 18,
+    "clip_id": "P19_138",
+    "edits": [
+      {
+        "kind": "audio_assisted_character_repair",
+        "word_index": 20,
+        "before": " स्टूडें�",
+        "after": "student status certificate",
+        "evidence": [
+          {
+            "start": 5.34,
+            "end": 10.0,
+            "language_hint": "hi"
+          }
+        ]
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "हेलो आर्टी जैन हेल्प लेस्ट",
+        "after": "Hello IIT GN Helpdesk",
+        "rule": "recognized_service_name_variant"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "कि ",
+        "after": "",
+        "rule": "greeting_decoder_prefix_cleanup"
+      }
+    ]
+  },
+  {
+    "number": 19,
+    "clip_id": "P18_116",
+    "edits": [
+      {
+        "kind": "audio_assisted_character_repair",
+        "word_index": 20,
+        "before": " एप्लीके�",
+        "after": "application",
+        "evidence": [
+          {
+            "start": 5.54,
+            "end": 10.0,
+            "language_hint": "hi"
+          }
+        ]
+      },
+      {
+        "kind": "audio_assisted_fragment_join",
+        "before": "application क्वेश्चन",
+        "after": "application"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT Jain",
+        "after": "IIT GN",
+        "rule": "acronym_misrecognition"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT GN Help Desk",
+        "after": "IIT GN Helpdesk",
+        "rule": "helpdesk_spacing_or_misrecognition"
+      }
+    ]
+  },
+  {
+    "number": 20,
+    "clip_id": "P18_115",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT Jain",
+        "after": "IIT GN",
+        "rule": "acronym_misrecognition"
+      }
+    ]
+  },
+  {
+    "number": 21,
+    "clip_id": "P19_129",
+    "edits": [
+      {
+        "kind": "audio_assisted_character_repair",
+        "word_index": 25,
+        "before": " म�",
+        "after": "मदद करें",
+        "evidence": [
+          {
+            "start": 6.94,
+            "end": 10.0,
+            "language_hint": "hi"
+          }
+        ]
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "हेलो आईडीजन हेल्पलेस",
+        "after": "Hello IIT GN Helpdesk",
+        "rule": "recognized_service_name_variant"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "हुआ है ",
+        "after": "",
+        "rule": "greeting_decoder_prefix_cleanup"
+      }
+    ]
+  },
+  {
+    "number": 22,
+    "clip_id": "P20_60",
+    "edits": [
+      {
+        "kind": "audio_assisted_character_repair",
+        "word_index": 5,
+        "before": " ગા�",
+        "after": "ગાંધીનગર",
+        "evidence": [
+          {
+            "start": 0,
+            "end": 5.84,
+            "language_hint": "gu"
+          }
+        ]
+      },
+      {
+        "kind": "audio_assisted_character_repair",
+        "word_index": 43,
+        "before": " �",
+        "after": "કે",
+        "evidence": [
+          {
+            "start": 22.14,
+            "end": 27.2,
+            "language_hint": "hi"
+          }
+        ]
+      },
+      {
+        "kind": "audio_assisted_character_repair",
+        "word_index": 53,
+        "before": " ટેબ�",
+        "after": "ટેબલ",
+        "evidence": [
+          {
+            "start": 28.56,
+            "end": 33.82,
+            "language_hint": "gu"
+          }
+        ]
+      },
+      {
+        "kind": "audio_assisted_character_repair",
+        "word_index": 73,
+        "before": " �",
+        "after": "અરજી",
+        "evidence": [
+          {
+            "start": 36.86,
+            "end": 41.98,
+            "language_hint": "gu"
+          }
+        ]
+      },
+      {
+        "kind": "audio_assisted_character_repair",
+        "word_index": 83,
+        "before": " ક�",
+        "after": "કરવી",
+        "evidence": [
+          {
+            "start": 43.6,
+            "end": 48.74,
+            "language_hint": "hi"
+          }
+        ]
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "આયટી ગાંધીનગર",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      }
+    ]
+  },
+  {
+    "number": 23,
+    "clip_id": "P4_11",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT गांधी नगर",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      }
+    ]
+  },
+  {
+    "number": 24,
+    "clip_id": "P11_55",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT Gandhinagar",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT GN voice help desk",
+        "after": "IIT GN Voice Helpdesk",
+        "rule": "voice_helpdesk_spacing"
+      }
+    ]
+  },
+  {
+    "number": 25,
+    "clip_id": "P13_76",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT गांधी नगर",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT GN वॉइस हेल्प डिस्क",
+        "after": "IIT GN Voice Helpdesk",
+        "rule": "recognized_voice_helpdesk_native_rendering"
+      }
+    ]
+  },
+  {
+    "number": 26,
+    "clip_id": "P7_28",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT Gandhinagar",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      }
+    ]
+  },
+  {
+    "number": 28,
+    "clip_id": "P1_2",
+    "edits": [
+      {
+        "kind": "audio_assisted_character_repair",
+        "word_index": 182,
+        "before": " �",
+        "after": "",
+        "evidence": [
+          {
+            "start": 53.9,
+            "end": 59.1,
+            "language_hint": "hi"
+          }
+        ]
+      },
+      {
+        "kind": "audio_assisted_character_repair",
+        "word_index": 210,
+        "before": " �",
+        "after": "",
+        "evidence": [
+          {
+            "start": 61.62,
+            "end": 65.259,
+            "language_hint": "hi"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "number": 29,
+    "clip_id": "P14_96",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "हेलो आईटीजन हेल्पडेस्क",
+        "after": "Hello IIT GN Helpdesk",
+        "rule": "recognized_service_name_variant"
+      }
+    ]
+  },
+  {
+    "number": 30,
+    "clip_id": "P10_51",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT Gandhianaga",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT GN voice over desk",
+        "after": "IIT GN Voice Helpdesk",
+        "rule": "recognized_voice_helpdesk_variant"
+      }
+    ]
+  },
+  {
+    "number": 31,
+    "clip_id": "P20_63",
+    "edits": [
+      {
+        "kind": "audio_assisted_character_repair",
+        "word_index": 37,
+        "before": " તે�",
+        "after": "તેને",
+        "evidence": [
+          {
+            "start": 16.26,
+            "end": 36.48,
+            "language_hint": "hi"
+          }
+        ]
+      },
+      {
+        "kind": "audio_assisted_character_repair",
+        "word_index": 54,
+        "before": " ले�",
+        "after": "લેવાના",
+        "evidence": [
+          {
+            "start": 16.26,
+            "end": 36.48,
+            "language_hint": "hi"
+          }
+        ]
+      },
+      {
+        "kind": "audio_assisted_character_repair",
+        "word_index": 64,
+        "before": " દ�",
+        "after": "દીકરીને મળવા આવે ત્યારે કોઈ નક્કી કરેલી",
+        "evidence": [
+          {
+            "start": 16.26,
+            "end": 36.48,
+            "language_hint": "hi"
+          }
+        ]
+      },
+      {
+        "kind": "audio_assisted_character_repair",
+        "word_index": 104,
+        "before": " રોખ�",
+        "after": "રોકાવાની સુવિધા મળે છે કે પછી બહાર",
+        "evidence": [
+          {
+            "start": 46.94,
+            "end": 61.273,
+            "language_hint": "gu"
+          }
+        ]
+      },
+      {
+        "kind": "audio_assisted_character_repair",
+        "word_index": 110,
+        "before": " ક્રૂપ�",
+        "after": "કૃપા",
+        "evidence": [
+          {
+            "start": 46.94,
+            "end": 61.273,
+            "language_hint": "gu"
+          }
+        ]
+      },
+      {
+        "kind": "audio_assisted_character_repair",
+        "word_index": 117,
+        "before": " અગ�",
+        "after": "અગાઉથી",
+        "evidence": [
+          {
+            "start": 46.94,
+            "end": 61.273,
+            "language_hint": "gu"
+          }
+        ]
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "आयोटी घंधी नगर",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      }
+    ]
+  },
+  {
+    "number": 32,
+    "clip_id": "P18_126",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "हेलो आईएटीजन हेल्पडस",
+        "after": "Hello IIT GN Helpdesk",
+        "rule": "recognized_service_name_variant"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "हुआ है ",
+        "after": "",
+        "rule": "greeting_decoder_prefix_cleanup"
+      }
+    ]
+  },
+  {
+    "number": 33,
+    "clip_id": "P13_87",
+    "edits": [
+      {
+        "kind": "audio_assisted_character_repair",
+        "word_index": 6,
+        "before": " �",
+        "after": "",
+        "evidence": [
+          {
+            "start": 0,
+            "end": 5.08,
+            "language_hint": "hi"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "number": 35,
+    "clip_id": "P14_94",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "हेलो आईटीजी एंड हेल्पडिस्क",
+        "after": "Hello IIT GN Helpdesk",
+        "rule": "recognized_service_name_variant"
+      }
+    ]
+  },
+  {
+    "number": 36,
+    "clip_id": "P19_136",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "ITGN",
+        "after": "IIT GN",
+        "rule": "acronym_misrecognition"
+      }
+    ]
+  },
+  {
+    "number": 37,
+    "clip_id": "P14_88",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "हेलो आईटीजी एंड हेल्प बेस्क",
+        "after": "Hello IIT GN Helpdesk",
+        "rule": "recognized_service_name_variant"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "कि ",
+        "after": "",
+        "rule": "greeting_decoder_prefix_cleanup"
+      }
+    ]
+  },
+  {
+    "number": 39,
+    "clip_id": "P18_120",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT Jain",
+        "after": "IIT GN",
+        "rule": "acronym_misrecognition"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT GN helpdesk",
+        "after": "IIT GN Helpdesk",
+        "rule": "helpdesk_spacing_or_misrecognition"
+      }
+    ]
+  },
+  {
+    "number": 40,
+    "clip_id": "P19_134",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "ITGN",
+        "after": "IIT GN",
+        "rule": "acronym_misrecognition"
+      }
+    ]
+  },
+  {
+    "number": 41,
+    "clip_id": "P11_53",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT Gandhinagar",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT GN voice helpdesk",
+        "after": "IIT GN Voice Helpdesk",
+        "rule": "voice_helpdesk_spacing"
+      }
+    ]
+  },
+  {
+    "number": 42,
+    "clip_id": "P22_88",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT Gandhinagar",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      }
+    ]
+  },
+  {
+    "number": 43,
+    "clip_id": "P14_90",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "हेलो आईटीजी एंड हेल्प डिस्क",
+        "after": "Hello IIT GN Helpdesk",
+        "rule": "recognized_service_name_variant"
+      }
+    ]
+  },
+  {
+    "number": 45,
+    "clip_id": "P13_85",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "iit kandinaga",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT GN voice help desk",
+        "after": "IIT GN Voice Helpdesk",
+        "rule": "voice_helpdesk_spacing"
+      }
+    ]
+  },
+  {
+    "number": 46,
+    "clip_id": "P18_128",
+    "edits": [
+      {
+        "kind": "audio_assisted_character_repair",
+        "word_index": 14,
+        "before": " અકોમાડ�",
+        "after": "accommodation",
+        "evidence": [
+          {
+            "start": 4.2,
+            "end": 9.62,
+            "language_hint": "gu"
+          }
+        ]
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT Jain",
+        "after": "IIT GN",
+        "rule": "acronym_misrecognition"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT GN helpdesk",
+        "after": "IIT GN Helpdesk",
+        "rule": "helpdesk_spacing_or_misrecognition"
+      }
+    ]
+  },
+  {
+    "number": 47,
+    "clip_id": "P14_93",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "ITGN",
+        "after": "IIT GN",
+        "rule": "acronym_misrecognition"
+      }
+    ]
+  },
+  {
+    "number": 48,
+    "clip_id": "P11_54",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT Gandhinagar",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT GN voice help desk",
+        "after": "IIT GN Voice Helpdesk",
+        "rule": "voice_helpdesk_spacing"
+      }
+    ]
+  },
+  {
+    "number": 49,
+    "clip_id": "P5_16",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "आईएटी गांधिनगर",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      }
+    ]
+  },
+  {
+    "number": 50,
+    "clip_id": "P12_58",
+    "edits": [
+      {
+        "kind": "audio_assisted_character_repair",
+        "word_index": 117,
+        "before": " �",
+        "after": "ध्यान कर दें",
+        "evidence": [
+          {
+            "start": 38.04,
+            "end": 43.04,
+            "language_hint": "hi"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "number": 51,
+    "clip_id": "P18_113",
+    "edits": [
+      {
+        "kind": "audio_assisted_character_repair",
+        "word_index": 22,
+        "before": " �",
+        "after": "",
+        "evidence": [
+          {
+            "start": 5.92,
+            "end": 10.0,
+            "language_hint": "hi"
+          }
+        ]
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "हेलो आईएटीजी एंड हेल्पडेस्ट",
+        "after": "Hello IIT GN Helpdesk",
+        "rule": "recognized_service_name_variant"
+      }
+    ]
+  },
+  {
+    "number": 52,
+    "clip_id": "P7_25",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT Gandhinagar",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      }
+    ]
+  },
+  {
+    "number": 53,
+    "clip_id": "P19_137",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "ITGN",
+        "after": "IIT GN",
+        "rule": "acronym_misrecognition"
+      }
+    ]
+  },
+  {
+    "number": 56,
+    "clip_id": "P7_23",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT Gandhinagar",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      }
+    ]
+  },
+  {
+    "number": 58,
+    "clip_id": "P8_35",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "आयाटी गांधी नगर",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      }
+    ]
+  },
+  {
+    "number": 59,
+    "clip_id": "P8_36",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "आयाटी गांधी नगर",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      }
+    ]
+  },
+  {
+    "number": 60,
+    "clip_id": "P19_135",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "हेलो आर्डिजिन हेल्पडस",
+        "after": "Hello IIT GN Helpdesk",
+        "rule": "recognized_service_name_variant"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "करें ",
+        "after": "",
+        "rule": "greeting_decoder_prefix_cleanup"
+      }
+    ]
+  },
+  {
+    "number": 61,
+    "clip_id": "P13_72",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT गांधी नगर",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT GN वॉइस हेल्प डिस्क",
+        "after": "IIT GN Voice Helpdesk",
+        "rule": "recognized_voice_helpdesk_native_rendering"
+      }
+    ]
+  },
+  {
+    "number": 63,
+    "clip_id": "P9_43",
+    "edits": [
+      {
+        "kind": "audio_assisted_character_repair",
+        "word_index": 99,
+        "before": " आइ�",
+        "after": "I would appreciate",
+        "evidence": [
+          {
+            "start": 29.46,
+            "end": 35.18,
+            "language_hint": "hi"
+          }
+        ]
+      },
+      {
+        "kind": "audio_assisted_fragment_join",
+        "before": "I would appreciate left it if you could also",
+        "after": "I would appreciate it if you could also"
+      }
+    ]
+  },
+  {
+    "number": 64,
+    "clip_id": "P6_21",
+    "edits": [
+      {
+        "kind": "audio_assisted_character_repair",
+        "word_index": 140,
+        "before": " हु�",
+        "after": "हुआ",
+        "evidence": [
+          {
+            "start": 50.88,
+            "end": 53.413,
+            "language_hint": "hi"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "number": 65,
+    "clip_id": "P18_117",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "હેલો આયેટી જેન હેલ્પ ડેસ્",
+        "after": "Hello IIT GN Helpdesk",
+        "rule": "recognized_service_name_variant"
+      }
+    ]
+  },
+  {
+    "number": 68,
+    "clip_id": "P21_81",
+    "edits": [
+      {
+        "kind": "audio_assisted_character_repair",
+        "word_index": 80,
+        "before": " प्ली�",
+        "after": "please",
+        "evidence": [
+          {
+            "start": 22.22,
+            "end": 27.38,
+            "language_hint": "hi"
+          }
+        ]
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "हेलो आईटी जी एंड हेल्पेस",
+        "after": "Hello IIT GN Helpdesk",
+        "rule": "recognized_service_name_variant"
+      }
+    ]
+  },
+  {
+    "number": 70,
+    "clip_id": "P21_78",
+    "edits": [
+      {
+        "kind": "audio_assisted_character_repair",
+        "word_index": 24,
+        "before": " �",
+        "after": "लेकिन",
+        "evidence": [
+          {
+            "start": 6.02,
+            "end": 11.06,
+            "language_hint": "hi"
+          }
+        ]
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "हेलो आईटी जैन हेल्प दिस्ट",
+        "after": "Hello IIT GN Helpdesk",
+        "rule": "recognized_service_name_variant"
+      }
+    ]
+  },
+  {
+    "number": 71,
+    "clip_id": "P10_52",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT Gandhinagar",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT GN voice, help desk",
+        "after": "IIT GN Voice Helpdesk",
+        "rule": "voice_helpdesk_spacing"
+      }
+    ]
+  },
+  {
+    "number": 72,
+    "clip_id": "P13_82",
+    "edits": [
+      {
+        "kind": "audio_assisted_character_repair",
+        "word_index": 13,
+        "before": " नाइ�",
+        "after": "night",
+        "evidence": [
+          {
+            "start": 1.84,
+            "end": 7.04,
+            "language_hint": "hi"
+          }
+        ]
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "आया तिगांति नगर वॉइस हेल्प डिस्क",
+        "after": "IIT GN Voice Helpdesk",
+        "rule": "recognized_service_name_variant"
+      }
+    ]
+  },
+  {
+    "number": 73,
+    "clip_id": "P14_91",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "ITG and",
+        "after": "IIT GN",
+        "rule": "acronym_misrecognition"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT GN Voice Help Desk",
+        "after": "IIT GN Voice Helpdesk",
+        "rule": "voice_helpdesk_spacing"
+      }
+    ]
+  },
+  {
+    "number": 76,
+    "clip_id": "P2_11",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "itg and",
+        "after": "IIT GN",
+        "rule": "acronym_misrecognition"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "itgn",
+        "after": "IIT GN",
+        "rule": "acronym_misrecognition"
+      }
+    ]
+  },
+  {
+    "number": 77,
+    "clip_id": "P18_123",
+    "edits": [
+      {
+        "kind": "audio_assisted_character_repair",
+        "word_index": 11,
+        "before": " લે�",
+        "after": "plagiarism limit",
+        "evidence": [
+          {
+            "start": 4.1,
+            "end": 9.7,
+            "language_hint": "gu"
+          }
+        ]
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT Jain",
+        "after": "IIT GN",
+        "rule": "acronym_misrecognition"
+      }
+    ]
+  },
+  {
+    "number": 78,
+    "clip_id": "P14_97",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "ITGN",
+        "after": "IIT GN",
+        "rule": "acronym_misrecognition"
+      }
+    ]
+  },
+  {
+    "number": 80,
+    "clip_id": "P7_24",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "iit Gandhinagar",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      }
+    ]
+  },
+  {
+    "number": 81,
+    "clip_id": "P4_10",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT गांधी नगर",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      }
+    ]
+  },
+  {
+    "number": 82,
+    "clip_id": "P14_98",
+    "edits": [
+      {
+        "kind": "audio_assisted_character_repair",
+        "word_index": 15,
+        "before": " स्टू�",
+        "after": "",
+        "evidence": [
+          {
+            "start": 4.72,
+            "end": 9.96,
+            "language_hint": "hi"
+          }
+        ]
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IT gen",
+        "after": "IIT GN",
+        "rule": "acronym_misrecognition"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT GN helpdesk",
+        "after": "IIT GN Helpdesk",
+        "rule": "helpdesk_spacing_or_misrecognition"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "hello",
+        "after": "Hello",
+        "rule": "greeting_capitalization"
+      }
+    ]
+  },
+  {
+    "number": 83,
+    "clip_id": "P21_71",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "hello atg and health test",
+        "after": "Hello IIT GN Helpdesk",
+        "rule": "recognized_service_name_variant"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT Jain",
+        "after": "IIT GN",
+        "rule": "acronym_misrecognition"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT GN Health Desk",
+        "after": "IIT GN Helpdesk",
+        "rule": "helpdesk_spacing_or_misrecognition"
+      }
+    ]
+  },
+  {
+    "number": 85,
+    "clip_id": "P13_67",
+    "edits": [
+      {
+        "kind": "audio_assisted_character_repair",
+        "word_index": 17,
+        "before": " �",
+        "after": "",
+        "evidence": [
+          {
+            "start": 6.46,
+            "end": 11.46,
+            "language_hint": "hi"
+          }
+        ]
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT गांधी नगर",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT GN वाइस हेल्प डेस्क",
+        "after": "IIT GN Voice Helpdesk",
+        "rule": "recognized_voice_helpdesk_native_rendering"
+      }
+    ]
+  },
+  {
+    "number": 87,
+    "clip_id": "P18_121",
+    "edits": [
+      {
+        "kind": "audio_assisted_character_repair",
+        "word_index": 23,
+        "before": " हु�",
+        "after": "हुआ",
+        "evidence": [
+          {
+            "start": 7.48,
+            "end": 10.0,
+            "language_hint": "hi"
+          }
+        ]
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "hello iot general best",
+        "after": "Hello IIT GN Helpdesk",
+        "rule": "recognized_service_name_variant"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "average ",
+        "after": "",
+        "rule": "greeting_decoder_prefix_cleanup"
+      }
+    ]
+  },
+  {
+    "number": 88,
+    "clip_id": "P4_13",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "आयाटी घांदी नगर",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "आयाटी गांधी नगर",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      }
+    ]
+  },
+  {
+    "number": 89,
+    "clip_id": "P16_104",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT Jain",
+        "after": "IIT GN",
+        "rule": "acronym_misrecognition"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT GN helpdesk",
+        "after": "IIT GN Helpdesk",
+        "rule": "helpdesk_spacing_or_misrecognition"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "hello",
+        "after": "Hello",
+        "rule": "greeting_capitalization"
+      }
+    ]
+  },
+  {
+    "number": 91,
+    "clip_id": "P14_92",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "हेलो आईटी जिन हेल्प डेस्क",
+        "after": "Hello IIT GN Helpdesk",
+        "rule": "recognized_service_name_variant"
+      }
+    ]
+  },
+  {
+    "number": 92,
+    "clip_id": "P19_131",
+    "edits": [
+      {
+        "kind": "audio_assisted_character_repair",
+        "word_index": 18,
+        "before": " �",
+        "after": "application कैसे करते हैं",
+        "evidence": [
+          {
+            "start": 6.4,
+            "end": 10.0,
+            "language_hint": "hi"
+          }
+        ]
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IRTGN",
+        "after": "IIT GN",
+        "rule": "acronym_misrecognition"
+      }
+    ]
+  },
+  {
+    "number": 93,
+    "clip_id": "P13_68",
+    "edits": [
+      {
+        "kind": "audio_assisted_character_repair",
+        "word_index": 15,
+        "before": " આજ�",
+        "after": "urgent",
+        "evidence": [
+          {
+            "start": 7.7,
+            "end": 11.0,
+            "language_hint": "gu"
+          }
+        ]
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT गांधी नगर",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT GN वॉइस हेल्प डिस्क",
+        "after": "IIT GN Voice Helpdesk",
+        "rule": "recognized_voice_helpdesk_native_rendering"
+      }
+    ]
+  },
+  {
+    "number": 94,
+    "clip_id": "P18_125",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IATG and",
+        "after": "IIT GN",
+        "rule": "acronym_misrecognition"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT GN help desk",
+        "after": "IIT GN Helpdesk",
+        "rule": "helpdesk_spacing_or_misrecognition"
+      }
+    ]
+  },
+  {
+    "number": 95,
+    "clip_id": "P13_73",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT गांधी नगर",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT GN वॉइस हेल्प डिस्क",
+        "after": "IIT GN Voice Helpdesk",
+        "rule": "recognized_voice_helpdesk_native_rendering"
+      }
+    ]
+  },
+  {
+    "number": 97,
+    "clip_id": "P20_65",
+    "edits": [
+      {
+        "kind": "audio_assisted_character_repair",
+        "word_index": 29,
+        "before": " બ્રાં�",
+        "after": "branch",
+        "evidence": [
+          {
+            "start": 14.82,
+            "end": 20.96,
+            "language_hint": "hi"
+          }
+        ]
+      },
+      {
+        "kind": "audio_assisted_character_repair",
+        "word_index": 61,
+        "before": " �",
+        "after": "fee",
+        "evidence": [
+          {
+            "start": 28.56,
+            "end": 33.66,
+            "language_hint": "gu"
+          }
+        ]
+      },
+      {
+        "kind": "audio_assisted_character_repair",
+        "word_index": 73,
+        "before": " અપ�",
+        "after": "upgrade કરવાનો વિકલ્પ મળે છે.",
+        "evidence": [
+          {
+            "start": 35.44,
+            "end": 57.34,
+            "language_hint": "gu"
+          }
+        ]
+      },
+      {
+        "kind": "audio_assisted_character_repair",
+        "word_index": 78,
+        "before": " રીત�",
+        "after": "રીતે તપાસવું અને સંસ્થા તરફથી",
+        "evidence": [
+          {
+            "start": 35.44,
+            "end": 57.34,
+            "language_hint": "gu"
+          }
+        ]
+      },
+      {
+        "kind": "audio_assisted_character_repair",
+        "word_index": 81,
+        "before": " નિયામે�",
+        "after": "નિયમિત રીતે જોવાનું કેટલું જરૂરી છે તે પણ",
+        "evidence": [
+          {
+            "start": 35.44,
+            "end": 57.34,
+            "language_hint": "gu"
+          }
+        ]
+      },
+      {
+        "kind": "audio_assisted_character_repair",
+        "word_index": 84,
+        "before": " જુ�",
+        "after": "છું. અમે કોઈ મહત્વની તારીખ ચૂકી જવા",
+        "evidence": [
+          {
+            "start": 35.44,
+            "end": 57.34,
+            "language_hint": "gu"
+          }
+        ]
+      },
+      {
+        "kind": "audio_assisted_character_repair",
+        "word_index": 88,
+        "before": " કાઉન�",
+        "after": "counselling",
+        "evidence": [
+          {
+            "start": 35.44,
+            "end": 57.34,
+            "language_hint": "gu"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "number": 99,
+    "clip_id": "P21_80",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "हेलो ITGN HealthDisk",
+        "after": "Hello IIT GN Helpdesk",
+        "rule": "recognized_service_name_variant"
+      }
+    ]
+  },
+  {
+    "number": 100,
+    "clip_id": "P19_132",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IDGN",
+        "after": "IIT GN",
+        "rule": "acronym_misrecognition"
+      }
+    ]
+  },
+  {
+    "number": 101,
+    "clip_id": "P13_84",
+    "edits": [
+      {
+        "kind": "audio_assisted_character_repair",
+        "word_index": 13,
+        "before": " વેજીટાય�",
+        "after": "vegetarian",
+        "evidence": [
+          {
+            "start": 3.08,
+            "end": 8.78,
+            "language_hint": "gu"
+          }
+        ]
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT Gandhinagar",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT GN Voice Desk",
+        "after": "IIT GN Voice Helpdesk",
+        "rule": "recognized_voice_helpdesk_variant"
+      }
+    ]
+  },
+  {
+    "number": 102,
+    "clip_id": "P22_96",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT Jain",
+        "after": "IIT GN",
+        "rule": "acronym_misrecognition"
+      }
+    ]
+  },
+  {
+    "number": 103,
+    "clip_id": "P20_59",
+    "edits": [
+      {
+        "kind": "audio_assisted_character_repair",
+        "word_index": 25,
+        "before": " વિ�",
+        "after": "વિશે",
+        "evidence": [
+          {
+            "start": 8.22,
+            "end": 13.36,
+            "language_hint": "gu"
+          }
+        ]
+      },
+      {
+        "kind": "audio_assisted_character_repair",
+        "word_index": 46,
+        "before": " �",
+        "after": "",
+        "evidence": [
+          {
+            "start": 20.1,
+            "end": 25.46,
+            "language_hint": "hi"
+          }
+        ]
+      },
+      {
+        "kind": "audio_assisted_character_repair",
+        "word_index": 116,
+        "before": " મ�",
+        "after": "મેળવવાની",
+        "evidence": [
+          {
+            "start": 51.68,
+            "end": 56.98,
+            "language_hint": "hi"
+          }
+        ]
+      },
+      {
+        "kind": "audio_assisted_fragment_join",
+        "before": "વિશે સે",
+        "after": "વિશે"
+      },
+      {
+        "kind": "audio_assisted_fragment_join",
+        "before": "મેળવવાની मेडवान",
+        "after": "મેળવવાની"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT ઘાની નગર",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      }
+    ]
+  },
+  {
+    "number": 105,
+    "clip_id": "P8_34",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "आयाटी अन्नी नगर",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      }
+    ]
+  },
+  {
+    "number": 107,
+    "clip_id": "P19_130",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "हेलो आईएडीजी इन हिल्देस",
+        "after": "Hello IIT GN Helpdesk",
+        "rule": "recognized_service_name_variant"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "करूं ",
+        "after": "",
+        "rule": "greeting_decoder_prefix_cleanup"
+      }
+    ]
+  },
+  {
+    "number": 109,
+    "clip_id": "P13_71",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT ગાંતી નાગા",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT GN વોય્સ હેલ્પ ડેસ્ક",
+        "after": "IIT GN Voice Helpdesk",
+        "rule": "recognized_voice_helpdesk_native_rendering"
+      }
+    ]
+  },
+  {
+    "number": 110,
+    "clip_id": "P16_108",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT Jain",
+        "after": "IIT GN",
+        "rule": "acronym_misrecognition"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT GN Help Desk",
+        "after": "IIT GN Helpdesk",
+        "rule": "helpdesk_spacing_or_misrecognition"
+      }
+    ]
+  },
+  {
+    "number": 111,
+    "clip_id": "P8_33",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT गंधी नगर",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT गंधी नगर",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      }
+    ]
+  },
+  {
+    "number": 112,
+    "clip_id": "P8_39",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "आयाटी गांधी नगर",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "आयाटी गांधी नगर",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      }
+    ]
+  },
+  {
+    "number": 113,
+    "clip_id": "P21_85",
+    "edits": [
+      {
+        "kind": "audio_assisted_character_repair",
+        "word_index": 52,
+        "before": " �",
+        "after": "",
+        "evidence": [
+          {
+            "start": 14.4,
+            "end": 19.44,
+            "language_hint": "hi"
+          }
+        ]
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "हेलो आईटी जैनल हेल्पडेस्ट",
+        "after": "Hello IIT GN Helpdesk",
+        "rule": "recognized_service_name_variant"
+      }
+    ]
+  },
+  {
+    "number": 115,
+    "clip_id": "P16_109",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT Jain",
+        "after": "IIT GN",
+        "rule": "acronym_misrecognition"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT GN Help Desk",
+        "after": "IIT GN Helpdesk",
+        "rule": "helpdesk_spacing_or_misrecognition"
+      }
+    ]
+  },
+  {
+    "number": 116,
+    "clip_id": "P14_89",
+    "edits": [
+      {
+        "kind": "audio_assisted_character_repair",
+        "word_index": 16,
+        "before": " अपडे�",
+        "after": "update",
+        "evidence": [
+          {
+            "start": 5.08,
+            "end": 10.0,
+            "language_hint": "hi"
+          }
+        ]
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "हेलो आईटीजी एंड हेल्पडेस्ट",
+        "after": "Hello IIT GN Helpdesk",
+        "rule": "recognized_service_name_variant"
+      }
+    ]
+  },
+  {
+    "number": 117,
+    "clip_id": "P16_105",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT Jain",
+        "after": "IIT GN",
+        "rule": "acronym_misrecognition"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT GN help desk",
+        "after": "IIT GN Helpdesk",
+        "rule": "helpdesk_spacing_or_misrecognition"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "hello",
+        "after": "Hello",
+        "rule": "greeting_capitalization"
+      }
+    ]
+  },
+  {
+    "number": 118,
+    "clip_id": "P16_112",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT Jain",
+        "after": "IIT GN",
+        "rule": "acronym_misrecognition"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT GN Help Desk",
+        "after": "IIT GN Helpdesk",
+        "rule": "helpdesk_spacing_or_misrecognition"
+      }
+    ]
+  },
+  {
+    "number": 119,
+    "clip_id": "P7_27",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT Gandhinagar",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      }
+    ]
+  },
+  {
+    "number": 120,
+    "clip_id": "P16_99",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT Jain",
+        "after": "IIT GN",
+        "rule": "acronym_misrecognition"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT GN Help Desk",
+        "after": "IIT GN Helpdesk",
+        "rule": "helpdesk_spacing_or_misrecognition"
+      }
+    ]
+  },
+  {
+    "number": 121,
+    "clip_id": "P22_97",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "iit gandhinagar",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      }
+    ]
+  },
+  {
+    "number": 122,
+    "clip_id": "P21_83",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "हेलो आईएटीजी एंड हेल्प डेस्क",
+        "after": "Hello IIT GN Helpdesk",
+        "rule": "recognized_service_name_variant"
+      }
+    ]
+  },
+  {
+    "number": 123,
+    "clip_id": "P13_70",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT गंधिनागर",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT GN वॉइस हेल्प डेस्क",
+        "after": "IIT GN Voice Helpdesk",
+        "rule": "recognized_voice_helpdesk_native_rendering"
+      }
+    ]
+  },
+  {
+    "number": 124,
+    "clip_id": "P19_139",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "हेलो आयोटिजियन हेल्प डेस",
+        "after": "Hello IIT GN Helpdesk",
+        "rule": "recognized_service_name_variant"
+      }
+    ]
+  },
+  {
+    "number": 125,
+    "clip_id": "P8_40",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "आईएटी गांधी नगर",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      }
+    ]
+  },
+  {
+    "number": 128,
+    "clip_id": "P21_84",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "हेलो आईएटीजन हेल्प देस्ट",
+        "after": "Hello IIT GN Helpdesk",
+        "rule": "recognized_service_name_variant"
+      }
+    ]
+  },
+  {
+    "number": 131,
+    "clip_id": "P16_106",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "hello iot gene help desk",
+        "after": "Hello IIT GN Helpdesk",
+        "rule": "recognized_service_name_variant"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "portal ",
+        "after": "",
+        "rule": "greeting_decoder_prefix_cleanup"
+      }
+    ]
+  },
+  {
+    "number": 132,
+    "clip_id": "P5_17",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "आईएटी गांधी नगर",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      }
+    ]
+  },
+  {
+    "number": 134,
+    "clip_id": "P18_119",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT Jain",
+        "after": "IIT GN",
+        "rule": "acronym_misrecognition"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT GN helpdesk",
+        "after": "IIT GN Helpdesk",
+        "rule": "helpdesk_spacing_or_misrecognition"
+      }
+    ]
+  },
+  {
+    "number": 135,
+    "clip_id": "P14_95",
+    "edits": [
+      {
+        "kind": "audio_assisted_character_repair",
+        "word_index": 19,
+        "before": " रिन्य�",
+        "after": "renew",
+        "evidence": [
+          {
+            "start": 6.04,
+            "end": 11.3,
+            "language_hint": "hi"
+          }
+        ]
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "it gn",
+        "after": "IIT GN",
+        "rule": "acronym_misrecognition"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT GN help desk",
+        "after": "IIT GN Helpdesk",
+        "rule": "helpdesk_spacing_or_misrecognition"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "hello",
+        "after": "Hello",
+        "rule": "greeting_capitalization"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "pro ",
+        "after": "",
+        "rule": "greeting_decoder_prefix_cleanup"
+      }
+    ]
+  },
+  {
+    "number": 136,
+    "clip_id": "P20_62",
+    "edits": [
+      {
+        "kind": "audio_assisted_character_repair",
+        "word_index": 23,
+        "before": " પહ�",
+        "after": "પહેલી",
+        "evidence": [
+          {
+            "start": 5.82,
+            "end": 11.0,
+            "language_hint": "gu"
+          }
+        ]
+      },
+      {
+        "kind": "audio_assisted_character_repair",
+        "word_index": 39,
+        "before": " પ�",
+        "after": "પીવાનું સ્વચ્છ પાણી, ગરમ પાણી, કપડાં ધોવાની અને રૂમની સફાઈની સુવિધાઓ",
+        "evidence": [
+          {
+            "start": 12.1,
+            "end": 20.44,
+            "language_hint": "gu"
+          }
+        ]
+      },
+      {
+        "kind": "audio_assisted_character_repair",
+        "word_index": 101,
+        "before": " મ�",
+        "after": "મુશ્કેલી ન પડે",
+        "evidence": [
+          {
+            "start": 44.62,
+            "end": 50.6,
+            "language_hint": "gu"
+          }
+        ]
+      },
+      {
+        "kind": "audio_assisted_character_repair",
+        "word_index": 116,
+        "before": " સ્વિધા�",
+        "after": "સુવિધાઓ",
+        "evidence": [
+          {
+            "start": 52.28,
+            "end": 57.66,
+            "language_hint": "gu"
+          }
+        ]
+      },
+      {
+        "kind": "audio_assisted_fragment_join",
+        "before": "પહેલી पहली",
+        "after": "પહેલી"
+      },
+      {
+        "kind": "audio_assisted_fragment_join",
+        "before": "મુશ્કેલી ન પડે No, put it.",
+        "after": "મુશ્કેલી ન પડે"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "आईटी गंजी नगर",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      }
+    ]
+  },
+  {
+    "number": 137,
+    "clip_id": "P13_69",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT गंधी नगर",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT GN voice help desk",
+        "after": "IIT GN Voice Helpdesk",
+        "rule": "voice_helpdesk_spacing"
+      }
+    ]
+  },
+  {
+    "number": 138,
+    "clip_id": "P21_75",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "हेलो आईएटीजी एन हेल्प इस",
+        "after": "Hello IIT GN Helpdesk",
+        "rule": "recognized_service_name_variant"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "कि लंबर ",
+        "after": "",
+        "rule": "greeting_decoder_prefix_cleanup"
+      }
+    ]
+  },
+  {
+    "number": 139,
+    "clip_id": "P21_76",
+    "edits": [
+      {
+        "kind": "audio_assisted_character_repair",
+        "word_index": 17,
+        "before": " �",
+        "after": "",
+        "evidence": [
+          {
+            "start": 2.42,
+            "end": 7.44,
+            "language_hint": "hi"
+          }
+        ]
+      },
+      {
+        "kind": "audio_assisted_fragment_join",
+        "before": "लाइक Thank वह",
+        "after": "लाइक वह"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "हेलो आईटी जी एंड हेल्प देस्प",
+        "after": "Hello IIT GN Helpdesk",
+        "rule": "recognized_service_name_variant"
+      }
+    ]
+  },
+  {
+    "number": 141,
+    "clip_id": "P16_103",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT Jain",
+        "after": "IIT GN",
+        "rule": "acronym_misrecognition"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT GN Help Desk",
+        "after": "IIT GN Helpdesk",
+        "rule": "helpdesk_spacing_or_misrecognition"
+      }
+    ]
+  }
+]

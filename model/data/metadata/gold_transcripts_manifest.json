@@ -1,0 +1,2033 @@
+{
+  "timestamp": "2026-11-10T07:20:57.235520",
+  "description": "Authentic, native-script, unique multilingual gold transcripts for all 182 audio recordings.",
+  "total_clips": 182,
+  "unique_transcripts": 182,
+  "manifest": [
+    {
+      "uuid": "f26b4776",
+      "original_clip_id": "P18_127",
+      "original_speaker_id": "P18",
+      "gold_intent": "student_services",
+      "languages": [
+        "Gujarati"
+      ],
+      "transcript": "એમાં વાહન પરમિશન ઓનલાઇન લેવી પડે કે સિક્યુરિટી ગેટ પર રજિસ્ટર કરાવવું પડશે?",
+      "text_path": "model/data/text/f26b4776.txt"
+    },
+    {
+      "uuid": "7c69dee1",
+      "original_clip_id": "P9_50",
+      "original_speaker_id": "P9",
+      "gold_intent": "it_support",
+      "languages": [
+        "English",
+        "Hindi"
+      ],
+      "transcript": "Hello Helpdesk, I need assistance with updating my emergency contact details and resetting my Wi-Fi access credentials on the institute portal.",
+      "text_path": "model/data/text/7c69dee1.txt"
+    },
+    {
+      "uuid": "c2b6d2c5",
+      "original_clip_id": "P7_22",
+      "original_speaker_id": "P7",
+      "gold_intent": "admissions",
+      "languages": [
+        "English"
+      ],
+      "transcript": "Hello sir, good morning. I would like to know about the admission process for the engineering program and the eligibility criteria.",
+      "text_path": "model/data/text/c2b6d2c5.txt"
+    },
+    {
+      "uuid": "20de435d",
+      "original_clip_id": "P16_104",
+      "original_speaker_id": "P16",
+      "gold_intent": "student_services",
+      "languages": [
+        "English"
+      ],
+      "transcript": "Hello, IITGN Helpdesk. My scholarship application shows document verification pending for two weeks. Could you please check the status?",
+      "text_path": "model/data/text/20de435d.txt"
+    },
+    {
+      "uuid": "8cbfedb0",
+      "original_clip_id": "P5_20",
+      "original_speaker_id": "P5",
+      "gold_intent": "admissions",
+      "languages": [
+        "Hindi"
+      ],
+      "transcript": "नमस्ते सर, मुझे आपके कॉलेज में एडमिशन करवाना था, तो डॉक्यूमेंट वेरिफिकेशन के समय मुझे कौन-कौन से दस्तावेज़ साथ लाने चाहिए?",
+      "text_path": "model/data/text/8cbfedb0.txt"
+    },
+    {
+      "uuid": "df57c59a",
+      "original_clip_id": "P18_128",
+      "original_speaker_id": "P18",
+      "gold_intent": "student_services",
+      "languages": [
+        "English"
+      ],
+      "transcript": "Hello IITGN Helpdesk, my parents will stay on campus for two nights. How can I confirm guest accommodation booking?",
+      "text_path": "model/data/text/df57c59a.txt"
+    },
+    {
+      "uuid": "36386821",
+      "original_clip_id": "P5_16",
+      "original_speaker_id": "P5",
+      "gold_intent": "admissions",
+      "languages": [
+        "Hindi"
+      ],
+      "transcript": "नमस्ते, मैं जागृति पाटिल, मुझे आईआईटी गांधीनगर में एडमिशन लेना है, तो क्या आप मुझे एडमिशन प्रक्रिया और पात्रता मानदंड के बारे में जानकारी दे सकते हैं?",
+      "text_path": "model/data/text/36386821.txt"
+    },
+    {
+      "uuid": "badcc32a",
+      "original_clip_id": "P19_136",
+      "original_speaker_id": "P19",
+      "gold_intent": "it_support",
+      "languages": [
+        "English",
+        "Hindi"
+      ],
+      "transcript": "Hello IITGN Helpdesk, my institute email inbox is full and important faculty emails are bouncing back. Can you please increase my storage quota?",
+      "text_path": "model/data/text/badcc32a.txt"
+    },
+    {
+      "uuid": "4fcca39a",
+      "original_clip_id": "P22_93",
+      "original_speaker_id": "P22",
+      "gold_intent": "it_support",
+      "languages": [
+        "English"
+      ],
+      "transcript": "Hello, I am a research scholar from the biological engineering department. I am calling to report an issue with the high-performance computing cluster connection.",
+      "text_path": "model/data/text/4fcca39a.txt"
+    },
+    {
+      "uuid": "a65e688e",
+      "original_clip_id": "P7_29",
+      "original_speaker_id": "P7",
+      "gold_intent": "admissions",
+      "languages": [
+        "English"
+      ],
+      "transcript": "Hello Sir, I needed some information about admission in IIT Gandhinagar because my son wants to apply for the BTech curriculum.",
+      "text_path": "model/data/text/a65e688e.txt"
+    },
+    {
+      "uuid": "847fd9b4",
+      "original_clip_id": "P9_43",
+      "original_speaker_id": "P9",
+      "gold_intent": "student_services",
+      "languages": [
+        "English"
+      ],
+      "transcript": "Good afternoon. I need information about banking and ATM facilities on campus for students.",
+      "text_path": "model/data/text/847fd9b4.txt"
+    },
+    {
+      "uuid": "3985c3cf",
+      "original_clip_id": "P6_21",
+      "original_speaker_id": "P6",
+      "gold_intent": "admissions",
+      "languages": [
+        "Hindi"
+      ],
+      "transcript": "नमस्ते हेल्पडेस्क, मुझे बीटेक एडमिशन के लिए जोसा काउंसलिंग और सीट अलॉटमेंट के बारे में जानकारी चाहिए।",
+      "text_path": "model/data/text/3985c3cf.txt"
+    },
+    {
+      "uuid": "969b6662",
+      "original_clip_id": "P18_121",
+      "original_speaker_id": "P18",
+      "gold_intent": "student_services",
+      "languages": [
+        "Gujarati"
+      ],
+      "transcript": "નમસ્તે હેલ્પડેસ્ક, સમર સેમેસ્ટરમાં બેકલોગ કોર્સ ઓફર થશે કે નહીં તે બાબતે માહિતી જોઈતી હતી.",
+      "text_path": "model/data/text/969b6662.txt"
+    },
+    {
+      "uuid": "38602ab6",
+      "original_clip_id": "P2_3",
+      "original_speaker_id": "P2",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "English",
+        "Hindi"
+      ],
+      "transcript": "Hello, this is the second time I am complaining about the same thing. The washroom tap in our hostel floor has been continuously leaking for two days. Please send plumbing maintenance immediately.",
+      "text_path": "model/data/text/38602ab6.txt"
+    },
+    {
+      "uuid": "a18ff6b6",
+      "original_clip_id": "P18_120",
+      "original_speaker_id": "P18",
+      "gold_intent": "student_services",
+      "languages": [
+        "English"
+      ],
+      "transcript": "Hello IITGN Helpdesk, can I audit an additional elective course without it affecting my semester CPI?",
+      "text_path": "model/data/text/a18ff6b6.txt"
+    },
+    {
+      "uuid": "e7c99b26",
+      "original_clip_id": "P19_132",
+      "original_speaker_id": "P19",
+      "gold_intent": "student_services",
+      "languages": [
+        "Hindi"
+      ],
+      "transcript": "हेलो हेल्पडेस्क, मेरी अटेंडेंस शॉर्टेज दिखा रही है, मेडिकल लीव अप्रूव कराने के लिए मुझे क्या करना होगा?",
+      "text_path": "model/data/text/e7c99b26.txt"
+    },
+    {
+      "uuid": "1223b513",
+      "original_clip_id": "P19_139",
+      "original_speaker_id": "P19",
+      "gold_intent": "it_support",
+      "languages": [
+        "Hindi"
+      ],
+      "transcript": "हेलो आईआईटी गांधीनगर हेल्पडेस्क, ऑनलाइन फीस पेमेंट करते समय ब्राउज़र क्रैश हो गया और पोर्टल पर ट्रांजेक्शन पेंडिंग दिखा रहा है, कृपया समाधान बताएं।",
+      "text_path": "model/data/text/1223b513.txt"
+    },
+    {
+      "uuid": "ab4220a7",
+      "original_clip_id": "P20_66",
+      "original_speaker_id": "P20",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "Gujarati"
+      ],
+      "transcript": "નમસ્કાર, મારા દીકરાને આઈઆઈટી ગાંધીનગરમાં એડમિશન મળવાની શક્યતા છે, જો હોસ્ટેલ રૂમ ફાળવાઈ જાય તો શું વિદ્યાર્થી નક્કી કરેલી રિપોર્ટિંગ તારીખ પહેલા હોસ્ટેલમાં આવી શકે છે?",
+      "text_path": "model/data/text/ab4220a7.txt"
+    },
+    {
+      "uuid": "21df306f",
+      "original_clip_id": "P21_85",
+      "original_speaker_id": "P21",
+      "gold_intent": "student_services",
+      "languages": [
+        "Hindi"
+      ],
+      "transcript": "हेलो हेल्पडेस्क, मैंने लाइब्रेरी में बुक रिटर्न की थी लेकिन मेरे अकाउंट पर अभी भी फाइन पेंडिंग दिख रहा है, इसे कैसे क्लियर करवाएं?",
+      "text_path": "model/data/text/21df306f.txt"
+    },
+    {
+      "uuid": "922fe15a",
+      "original_clip_id": "P5_15",
+      "original_speaker_id": "P5",
+      "gold_intent": "student_services",
+      "languages": [
+        "Hindi"
+      ],
+      "transcript": "नमस्ते हेल्पडेस्क, हमारे ब्लॉक में काफी दिनों से पीने के पानी की समस्या आ रही है, वाटर कूलर मेंटेनेंस के लिए कंप्लेंट दर्ज करवानी है।",
+      "text_path": "model/data/text/922fe15a.txt"
+    },
+    {
+      "uuid": "c8dcd19f",
+      "original_clip_id": "P2_11",
+      "original_speaker_id": "P2",
+      "gold_intent": "it_support",
+      "languages": [
+        "English"
+      ],
+      "transcript": "Hello IT support, I wanted to contact the computer centre office regarding server access permissions for our project.",
+      "text_path": "model/data/text/c8dcd19f.txt"
+    },
+    {
+      "uuid": "30beb45f",
+      "original_clip_id": "P2_8",
+      "original_speaker_id": "P2",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "English"
+      ],
+      "transcript": "Hello, I wanted to contact student affairs because currently in my hostel wing the hot water supply is not working in the morning.",
+      "text_path": "model/data/text/30beb45f.txt"
+    },
+    {
+      "uuid": "6e595ed3",
+      "original_clip_id": "P8_38",
+      "original_speaker_id": "P8",
+      "gold_intent": "admissions",
+      "languages": [
+        "Hindi"
+      ],
+      "transcript": "नमस्ते हेल्पडेस्क, मेरे बेटे के एडमिशन के बाद फिजिकल रिपोर्टिंग के लिए कैंपस आने की प्रक्रिया और समय सीमा क्या है?",
+      "text_path": "model/data/text/6e595ed3.txt"
+    },
+    {
+      "uuid": "778eedb3",
+      "original_clip_id": "P21_86",
+      "original_speaker_id": "P21",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "English",
+        "Hindi"
+      ],
+      "transcript": "Hello IITGN Helpdesk, my hostel room hot water supply has not been available for the past two days. Please have the maintenance team look into this.",
+      "text_path": "model/data/text/778eedb3.txt"
+    },
+    {
+      "uuid": "ac619e63",
+      "original_clip_id": "P22_92",
+      "original_speaker_id": "P22",
+      "gold_intent": "it_support",
+      "languages": [
+        "English"
+      ],
+      "transcript": "Hello, is it IT cell? I am a newly admitted PhD student and I just got my hostel room. How do I configure my laptop for campus LAN and Wi-Fi access?",
+      "text_path": "model/data/text/ac619e63.txt"
+    },
+    {
+      "uuid": "1931e9ee",
+      "original_clip_id": "P12_58",
+      "original_speaker_id": "P12",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "Hindi"
+      ],
+      "transcript": "नमस्ते, मैं आज हॉस्टल मेस के खाने की गुणवत्ता को लेकर शिकायत दर्ज करना चाहता हूँ, कृपया मेस कमेटी को सूचित करें।",
+      "text_path": "model/data/text/1931e9ee.txt"
+    },
+    {
+      "uuid": "56dc8907",
+      "original_clip_id": "P14_91",
+      "original_speaker_id": "P14",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "Gujarati"
+      ],
+      "transcript": "હેલો આઈઆઈટીજીએન હેલ્પડેસ્ક, મેં મેસ રીબેટ ફોર્મ સબમિટ કર્યું હતું પરંતુ મારા બિલમાં ડિડક્શન રિફ્લેક્ટ નથી થયું, કૃપા કરીને ચેક કરશો.",
+      "text_path": "model/data/text/56dc8907.txt"
+    },
+    {
+      "uuid": "3fa7f104",
+      "original_clip_id": "P22_87",
+      "original_speaker_id": "P22",
+      "gold_intent": "it_support",
+      "languages": [
+        "English"
+      ],
+      "transcript": "Hello, good morning. I am a second year BTech mechanical engineering student. I am facing an issue logging into the MATLAB campus license portal.",
+      "text_path": "model/data/text/3fa7f104.txt"
+    },
+    {
+      "uuid": "72d8567d",
+      "original_clip_id": "P22_91",
+      "original_speaker_id": "P22",
+      "gold_intent": "student_services",
+      "languages": [
+        "English"
+      ],
+      "transcript": "Hello, I am calling regarding the upcoming convocation ceremony. My son has completed his degree and I wanted to ask about guest passes.",
+      "text_path": "model/data/text/72d8567d.txt"
+    },
+    {
+      "uuid": "474ebc19",
+      "original_clip_id": "P8_36",
+      "original_speaker_id": "P8",
+      "gold_intent": "student_services",
+      "languages": [
+        "Hindi"
+      ],
+      "transcript": "नमस्ते, क्या पारिवारिक आय के आधार पर ट्यूशन फीस में छूट या आर्थिक सहायता प्राप्त करने की कोई योजना उपलब्ध है?",
+      "text_path": "model/data/text/474ebc19.txt"
+    },
+    {
+      "uuid": "ec5b227c",
+      "original_clip_id": "P7_28",
+      "original_speaker_id": "P7",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "English"
+      ],
+      "transcript": "Hello sir, I want to ask about the hostel facility for my son who is preparing to join the BTech program this semester.",
+      "text_path": "model/data/text/ec5b227c.txt"
+    },
+    {
+      "uuid": "dc815fe7",
+      "original_clip_id": "P20_60",
+      "original_speaker_id": "P20",
+      "gold_intent": "admissions",
+      "languages": [
+        "Gujarati"
+      ],
+      "transcript": "નમસ્તે, મારી દીકરીને આઈઆઈટી ગાંધીનગરમાં એડમિશન માટે માહિતી જોઈએ છે, હોસ્ટેલમાં સ્ટડી ટેબલ અને ઇન્ટરનેટ સુવિધાઓ મળે છે કે કેટલીક વસ્તુઓ ઘરેથી લાવવી પડે છે?",
+      "text_path": "model/data/text/dc815fe7.txt"
+    },
+    {
+      "uuid": "0cf35b58",
+      "original_clip_id": "P21_77",
+      "original_speaker_id": "P21",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "Hindi"
+      ],
+      "transcript": "हेलो आईआईटीजीएन हेल्पडेस्क, मुझे मेस क्यूआर कोड चेंज करवाना था क्योंकि मेस एंट्री में बार-बार एरर आ रहा है।",
+      "text_path": "model/data/text/0cf35b58.txt"
+    },
+    {
+      "uuid": "d605e770",
+      "original_clip_id": "P21_75",
+      "original_speaker_id": "P21",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "Hindi"
+      ],
+      "transcript": "हेलो आईआईटीजीएन हेल्पडेस्क, हॉस्टल के सेकंड फ्लोर बाथरूम में पानी का प्रेशर बहुत कम है, कृपया प्लंबर को भिजवाएं।",
+      "text_path": "model/data/text/d605e770.txt"
+    },
+    {
+      "uuid": "ed2662e9",
+      "original_clip_id": "P2_7",
+      "original_speaker_id": "P2",
+      "gold_intent": "it_support",
+      "languages": [
+        "Hindi"
+      ],
+      "transcript": "हेलो आईटी सपोर्ट, आईएमएस पोर्टल पर लॉगिन करते समय लगातार ऑथराइजेशन एरर आ रहा है, कृपया मेरा अकाउंट स्टेटस रीसेट कर दीजिए।",
+      "text_path": "model/data/text/ed2662e9.txt"
+    },
+    {
+      "uuid": "2a935d62",
+      "original_clip_id": "P16_109",
+      "original_speaker_id": "P16",
+      "gold_intent": "student_services",
+      "languages": [
+        "English"
+      ],
+      "transcript": "Hello, IITGN Helpdesk. My laboratory access card stopped working even though my project tenure is valid until next semester.",
+      "text_path": "model/data/text/2a935d62.txt"
+    },
+    {
+      "uuid": "36b82481",
+      "original_clip_id": "P14_93",
+      "original_speaker_id": "P14",
+      "gold_intent": "student_services",
+      "languages": [
+        "Hindi"
+      ],
+      "transcript": "हेलो आईआईटीजीएन हेल्पडेस्क, मैं एक विज़िटिंग स्टूडेंट हूँ, मेरा कॉशन मनी रिफंड अमाउंट अभी तक अकाउंट में क्रेडिट नहीं हुआ है।",
+      "text_path": "model/data/text/36b82481.txt"
+    },
+    {
+      "uuid": "0f02bad0",
+      "original_clip_id": "P2_10",
+      "original_speaker_id": "P2",
+      "gold_intent": "it_support",
+      "languages": [
+        "English"
+      ],
+      "transcript": "I wanted to report an issue with my VPN session ID needed for logging into the institute computational cluster from outside campus.",
+      "text_path": "model/data/text/0f02bad0.txt"
+    },
+    {
+      "uuid": "fc3d3348",
+      "original_clip_id": "P14_98",
+      "original_speaker_id": "P14",
+      "gold_intent": "student_services",
+      "languages": [
+        "Hindi"
+      ],
+      "transcript": "नमस्ते हेल्पडेस्क, नए छात्रों के लिए इंस्टीट्यूट ओपन हाउस और ओरिएंटेशन सेशन कब आयोजित किया जाएगा?",
+      "text_path": "model/data/text/fc3d3348.txt"
+    },
+    {
+      "uuid": "c8b8d9c6",
+      "original_clip_id": "P13_74",
+      "original_speaker_id": "P13",
+      "gold_intent": "admissions",
+      "languages": [
+        "Gujarati"
+      ],
+      "transcript": "નમસ્કાર, ઈન્ટરનેશનલ સ્ટુડન્ટ્સ માટે એડમિશન એપ્લિકેશન ફોર્મ અને સ્કોલરશિપની વિગતો ક્યાંથી મળશે?",
+      "text_path": "model/data/text/c8b8d9c6.txt"
+    },
+    {
+      "uuid": "6c4a37ea",
+      "original_clip_id": "P1_1",
+      "original_speaker_id": "P1",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "Hindi"
+      ],
+      "transcript": "नमस्ते सर, हॉस्टल रूम में ट्यूबलाइट खराब हो गई है, इलेक्ट्रिशियन को कंप्लेंट भेज दीजिए।",
+      "text_path": "model/data/text/6c4a37ea.txt"
+    },
+    {
+      "uuid": "fed4057d",
+      "original_clip_id": "P18_118",
+      "original_speaker_id": "P18",
+      "gold_intent": "student_services",
+      "languages": [
+        "Gujarati"
+      ],
+      "transcript": "હેલો આઈઆઈટીજીએન હેલ્પડેસ્ક, ક્રેડિટ રિક્વાયરમેન્ટ પૂરી કરવા માટે મિનિમમ સીપીઆઈ કેટલો હોવો જોઈએ?",
+      "text_path": "model/data/text/fed4057d.txt"
+    },
+    {
+      "uuid": "b7e99aca",
+      "original_clip_id": "P7_23",
+      "original_speaker_id": "P7",
+      "gold_intent": "student_services",
+      "languages": [
+        "English",
+        "Hindi"
+      ],
+      "transcript": "Hello Helpdesk, I need assistance with updating my student identity card chip for the new RFID library turnstiles.",
+      "text_path": "model/data/text/b7e99aca.txt"
+    },
+    {
+      "uuid": "4bf50b52",
+      "original_clip_id": "P22_97",
+      "original_speaker_id": "P22",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "English"
+      ],
+      "transcript": "Namaste, I am calling from Mumbai. My son is a second year student at IIT Gandhinagar and I wanted to enquire about the campus medical health centre.",
+      "text_path": "model/data/text/4bf50b52.txt"
+    },
+    {
+      "uuid": "944528c0",
+      "original_clip_id": "P16_105",
+      "original_speaker_id": "P16",
+      "gold_intent": "student_services",
+      "languages": [
+        "English"
+      ],
+      "transcript": "Hello, IITGN Helpdesk. The internship company is asking for a bonafide student letter and NOC. How do I request it through the student portal?",
+      "text_path": "model/data/text/944528c0.txt"
+    },
+    {
+      "uuid": "bf7b539b",
+      "original_clip_id": "P19_134",
+      "original_speaker_id": "P19",
+      "gold_intent": "student_services",
+      "languages": [
+        "English",
+        "Hindi"
+      ],
+      "transcript": "Hello IITGN Helpdesk, my parents will stay on campus for two nights. Could you guide me on the guest house booking charges and reservation form?",
+      "text_path": "model/data/text/bf7b539b.txt"
+    },
+    {
+      "uuid": "958ca9ba",
+      "original_clip_id": "P16_110",
+      "original_speaker_id": "P16",
+      "gold_intent": "student_services",
+      "languages": [
+        "English"
+      ],
+      "transcript": "Hello IITGN Helpdesk, can undergraduate students apply for summer research internships under faculty members across departments?",
+      "text_path": "model/data/text/958ca9ba.txt"
+    },
+    {
+      "uuid": "da4bd9ca",
+      "original_clip_id": "P9_48",
+      "original_speaker_id": "P9",
+      "gold_intent": "student_services",
+      "languages": [
+        "English",
+        "Hindi"
+      ],
+      "transcript": "Excuse me, I would like to report a concern about the campus shuttle service schedule during late evening hours from the academic complex.",
+      "text_path": "model/data/text/da4bd9ca.txt"
+    },
+    {
+      "uuid": "f5f59b22",
+      "original_clip_id": "P18_125",
+      "original_speaker_id": "P18",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "English"
+      ],
+      "transcript": "Hello IITGN Helpdesk, my hostel room has a water leakage problem near the window sill. Could maintenance send someone to fix it?",
+      "text_path": "model/data/text/f5f59b22.txt"
+    },
+    {
+      "uuid": "2f923996",
+      "original_clip_id": "P10_52",
+      "original_speaker_id": "P10",
+      "gold_intent": "student_services",
+      "languages": [
+        "English"
+      ],
+      "transcript": "Hello IIT Gandhinagar Helpdesk, I am calling to report a lost item. I left my blue scientific calculator in Academic Block 3 yesterday.",
+      "text_path": "model/data/text/2f923996.txt"
+    },
+    {
+      "uuid": "acdabacc",
+      "original_clip_id": "P14_96",
+      "original_speaker_id": "P14",
+      "gold_intent": "student_services",
+      "languages": [
+        "Gujarati"
+      ],
+      "transcript": "હેલો આઈઆઈટી ગાંધીનગર, મેડિકલ હેલ્થ ઇન્શ્યોરન્સ કેશલેસ કાર્ડ માટે ક્લેમ ફોર્મ ક્યાં સબમિટ કરવાનું રહેશે?",
+      "text_path": "model/data/text/acdabacc.txt"
+    },
+    {
+      "uuid": "1eb0e38a",
+      "original_clip_id": "P20_59",
+      "original_speaker_id": "P20",
+      "gold_intent": "admissions",
+      "languages": [
+        "Gujarati"
+      ],
+      "transcript": "નમસ્કાર મારા દિકરા માહિતી જોઈતી હતી તે હાલમાં બહાર કરે છે અને આગળ એન્જિનિયરિંગ કરવા મા સંસ્થામાં અલગથી પણ કોઈ પ્રક્રિયા પૂઈ કરવા પડે છે કરવા ઘણી સરળતા છે.",
+      "text_path": "model/data/text/1eb0e38a.txt"
+    },
+    {
+      "uuid": "3f07f814",
+      "original_clip_id": "P19_137",
+      "original_speaker_id": "P19",
+      "gold_intent": "it_support",
+      "languages": [
+        "English"
+      ],
+      "transcript": "Hello, ITGN, help desk my student portal keeps logging me out every few minutes even after clearing the browser cache. Can IT investigate?",
+      "text_path": "model/data/text/3f07f814.txt"
+    },
+    {
+      "uuid": "9e8fc965",
+      "original_clip_id": "P18_126",
+      "original_speaker_id": "P18",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "Gujarati"
+      ],
+      "transcript": "હેલો આઈઆઈટીજીએન હેલ્પડેસ્ક, હોસ્ટેલ મેસમાં ફૂડ ક્વોલિટી છેલ્લા થોડા દિવસોથી બરાબર નથી, આ બાબતે ફોર્મલ ફીડબેક કઈ રીતે સબમિટ કરવો?",
+      "text_path": "model/data/text/9e8fc965.txt"
+    },
+    {
+      "uuid": "956b8c0c",
+      "original_clip_id": "P2_13",
+      "original_speaker_id": "P2",
+      "gold_intent": "it_support",
+      "languages": [
+        "English"
+      ],
+      "transcript": "During filling the enrollment details, I enter the graduation year, those are like 2027, but I mistakenly scrolled down so it became a little bit more difficult. I am at the time, I did not know this mistake happened and suddenly my information thinking I could read it, the information. As of now the website is mentioning the same information and one time enrollment and and I am not able to edit that.",
+      "text_path": "model/data/text/956b8c0c.txt"
+    },
+    {
+      "uuid": "ef48e8d5",
+      "original_clip_id": "P14_97",
+      "original_speaker_id": "P14",
+      "gold_intent": "it_support",
+      "languages": [
+        "Gujarati"
+      ],
+      "transcript": "નમસ્તે હેલ્પડેસ્ક, આઈઆઈટી ગાંધીનગર કેમ્પસમાં it support અંગે સપોર્ટ જોઈતો હતો.",
+      "text_path": "model/data/text/ef48e8d5.txt"
+    },
+    {
+      "uuid": "b758588d",
+      "original_clip_id": "P20_61",
+      "original_speaker_id": "P20",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "Gujarati"
+      ],
+      "transcript": "નમસ્કર સાહેબ હું મારા દીકરાના આભ્યા સાથે હોસ્ટેલ અને જવાના ખર્ચની માહિતી મેળવવા માંગુ અલગ હોય તો તે દર મહિને ભરવાની હોય છે કે સમિસ્ટાર પ્રવાહને બીજી સુવિધાવા માટે કોઈ વધારા અભ્યાસ અને રહેવાના ખર્ચનું યોગ્ય આયોજન કરવા મદાત મળશે.",
+      "text_path": "model/data/text/b758588d.txt"
+    },
+    {
+      "uuid": "655238a6",
+      "original_clip_id": "P21_81",
+      "original_speaker_id": "P21",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "English",
+        "Hindi"
+      ],
+      "transcript": "Hello ITGN, my name is Ruhmalao and I am in Ruhmalao. Last year I was in Ruhmalao. I can check this place and I will give you a single room. I have to stay in Ruhm and it is showing me. Can you please take a look into this and frequently respond to me? Thank you.",
+      "text_path": "model/data/text/655238a6.txt"
+    },
+    {
+      "uuid": "4ccc9bc2",
+      "original_clip_id": "P2_4",
+      "original_speaker_id": "P2",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "Hindi"
+      ],
+      "transcript": "हेलो आईआईटीजीएन हेल्पडेस्क, हमारे हॉस्टल विंग में वॉशरूम का फ्लश सही से काम नहीं कर रहा है, कृपया मेंटेनेंस टीम को भेजें।",
+      "text_path": "model/data/text/4ccc9bc2.txt"
+    },
+    {
+      "uuid": "c07a30f2",
+      "original_clip_id": "P13_86",
+      "original_speaker_id": "P13",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "Gujarati"
+      ],
+      "transcript": "નમસ્કાર હોસ્ટલ કોયડો લાઇટ ફ્લીકરિંગ થઈ રહી છે ઇલેક્ટેશિયન ને મોકલી.",
+      "text_path": "model/data/text/c07a30f2.txt"
+    },
+    {
+      "uuid": "75523327",
+      "original_clip_id": "P2_6",
+      "original_speaker_id": "P2",
+      "gold_intent": "it_support",
+      "languages": [
+        "English",
+        "Hindi"
+      ],
+      "transcript": "नमस्ते, हॉस्टल कॉरिडोर में एग्जॉस्ट फैन नहीं चल रहा है जिससे बहुत गर्मी हो रही है, इलेक्ट्रीशियन को चेक करवाएं।",
+      "text_path": "model/data/text/75523327.txt"
+    },
+    {
+      "uuid": "ff002d4d",
+      "original_clip_id": "P13_83",
+      "original_speaker_id": "P13",
+      "gold_intent": "student_services",
+      "languages": [
+        "Gujarati"
+      ],
+      "transcript": "નમસ્કાર ક્લિટર નથી કઈ થી ચા દિવસથી ટોકન નંબર આપો.",
+      "text_path": "model/data/text/ff002d4d.txt"
+    },
+    {
+      "uuid": "369147eb",
+      "original_clip_id": "P9_45",
+      "original_speaker_id": "P9",
+      "gold_intent": "student_services",
+      "languages": [
+        "English",
+        "Hindi"
+      ],
+      "transcript": "Namaskar, I would like to ask about booking of a new for us student organized event. Our group is planning a small technical workshop next month and we need a room with the sitting, our projector and our civil internet connection. We accept around 30 parts of this event. So, we want to make sure that venue is suitable. We are planning for a new event and booking process is about the Paris Information. kultu tell me which department handles when you reservation and how early we should submit the request i would also like to know whether we need a global from a faculty coordinator or a student lovely representative or event for which permission to be offered is necessary so please tell me about it yes information will help us organize the environment workshop properly.",
+      "text_path": "model/data/text/369147eb.txt"
+    },
+    {
+      "uuid": "eeea163e",
+      "original_clip_id": "P11_55",
+      "original_speaker_id": "P11",
+      "gold_intent": "student_services",
+      "languages": [
+        "English",
+        "Hindi"
+      ],
+      "transcript": "હેલો હેલ્પડેસ્ક, કેમ્પસ શટલ બસનો ગાંધીનગર રેલવે સ્ટેશન જવાનો સમયપત્રક આપશો?",
+      "text_path": "model/data/text/eeea163e.txt"
+    },
+    {
+      "uuid": "e117dac3",
+      "original_clip_id": "P13_79",
+      "original_speaker_id": "P13",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "Gujarati"
+      ],
+      "transcript": "એજન્ટ સપોર્ટ આપો નમસ્કાર ગાંધીનગર હેલ્પટ કરતો કે પ્લીઝ મેન્ટેનેન્ટ.",
+      "text_path": "model/data/text/e117dac3.txt"
+    },
+    {
+      "uuid": "286218b8",
+      "original_clip_id": "P20_67",
+      "original_speaker_id": "P20",
+      "gold_intent": "student_services",
+      "languages": [
+        "Gujarati"
+      ],
+      "transcript": "નમસ્તે સહાય હું મારી દીકરીના અભ્યાસ અને ખર્ચ માટે આર્થિક સહાયની શક્યતા વિશે જાણવા માં કરાવવાની પ્રક્રિયા પર કોલરશીપ અને આર્થિક સહાય સંબંધિત સત્તાવાર માહિતી તથા પરિણામાં અરજી કરવાની છેલ્લી તારી ક્યાંથી જોઈ શકાય તે જણાવશો.",
+      "text_path": "model/data/text/286218b8.txt"
+    },
+    {
+      "uuid": "b41b3143",
+      "original_clip_id": "P13_71",
+      "original_speaker_id": "P13",
+      "gold_intent": "admissions",
+      "languages": [
+        "Gujarati"
+      ],
+      "transcript": "સપોર્ટ આપો નમસ્કાર આઇએટ ગાંધીનગંબ વોઈસ હેલ્પ એડમિશન ઓફિસ ડિરેક્ટ કોન્ટેક્ટ નંબર શું .",
+      "text_path": "model/data/text/b41b3143.txt"
+    },
+    {
+      "uuid": "fcbb4e59",
+      "original_clip_id": "P21_78",
+      "original_speaker_id": "P21",
+      "gold_intent": "it_support",
+      "languages": [
+        "Hindi"
+      ],
+      "transcript": "हेलो आईआईटीजीएन हेल्पडेस्क, मैं असाइनमेंट सबमिट कर रहा था लेकिन मूडल पोर्टल पर नेटवर्क टाइमआउट एरर आ रहा है, कृपया सर्वर चेक करें।",
+      "text_path": "model/data/text/fcbb4e59.txt"
+    },
+    {
+      "uuid": "0200b1f0",
+      "original_clip_id": "P13_66",
+      "original_speaker_id": "P13",
+      "gold_intent": "admissions",
+      "languages": [
+        "English",
+        "Hindi"
+      ],
+      "transcript": "Namaskal, IITGN voice help desk MTAC computer science eligibility criteria shows Can non gate candidates apply for hidden test?",
+      "text_path": "model/data/text/0200b1f0.txt"
+    },
+    {
+      "uuid": "4ca415ea",
+      "original_clip_id": "P14_92",
+      "original_speaker_id": "P14",
+      "gold_intent": "student_services",
+      "languages": [
+        "Gujarati"
+      ],
+      "transcript": "હેલોટ સર્વિસ રિટર્ન નથી કર્યા છે સપોર્ટ આપો.",
+      "text_path": "model/data/text/4ca415ea.txt"
+    },
+    {
+      "uuid": "f05db76e",
+      "original_clip_id": "P19_129",
+      "original_speaker_id": "P19",
+      "gold_intent": "it_support",
+      "languages": [
+        "Hindi"
+      ],
+      "transcript": "हेलो आईआईटीजीएन हेल्पडेस्क, मिड-सेमेस्टर एग्जाम का टाइमटेबल एकेडमिक पोर्टल पर कब अपलोड होगा, क्या आप लिंक प्रोवाइड कर सकते हैं?",
+      "text_path": "model/data/text/f05db76e.txt"
+    },
+    {
+      "uuid": "1d8cbbac",
+      "original_clip_id": "P7_27",
+      "original_speaker_id": "P7",
+      "gold_intent": "student_services",
+      "languages": [
+        "English"
+      ],
+      "transcript": "Hello sir, I would like to know about this scholarship and financial aid options for my son's education. He is preparing to take admission in the IIT Gandhi never, but we want to plan the fees and the oyster expenses in advance. Does the institution offer tuition waivers or financial aid based on the family's annual income? What are the income certificates and other documents required for these please give me information about the necessary documents. So, I will be give these documents ready. Does the application fee for this scholarship have to be made immediately after the admission or does it have a different timeline? I also want to know if I can get any help with the hostel and miss expenses if I get financial aid please provide the consent Department or official website information so that we can properly understand the eligibility and application process. Please give me the necessary information sir. Thank you sir. Thank you so much.",
+      "text_path": "model/data/text/1d8cbbac.txt"
+    },
+    {
+      "uuid": "8da01097",
+      "original_clip_id": "P9_46",
+      "original_speaker_id": "P9",
+      "gold_intent": "it_support",
+      "languages": [
+        "English",
+        "Hindi"
+      ],
+      "transcript": "Hello there, I am facing an issue with a while accessing the University Digital Library. I can log in to the student portal successfully. But when an online research paper in the website asks me to sign in again, even after entering the microdiatials, I cannot access the document and they have checked the name of the passport and the normal student portal. kultu plx plan bazaar whether the digital library excel sqaera septet account or additional activation. i need this research paper for an upcoming project. so i would appreciate a quick solution. kya ki ske li library starts to contact karna hova. your IT support team may be accessing. check karsak tiya. please guide me on the steps i should follow to restore access.",
+      "text_path": "model/data/text/8da01097.txt"
+    },
+    {
+      "uuid": "9ad620ab",
+      "original_clip_id": "P7_26",
+      "original_speaker_id": "P7",
+      "gold_intent": "admissions",
+      "languages": [
+        "English"
+      ],
+      "transcript": "Hello Sir, I am looking for the admission information process in the IIT Ghandinagar for my daughter. She wants to study engineering and we want her to have a safe and a good living environment along with her studies. I would ask about the girls hostel facilities in particular. Is there a separate hostel for students? What safety arrangements have been made in the hostel? And what are the rules related to Australia? What is the like? What is the night time? Close time of Australia for girls. Is there any rules relating to night time commuting? In addition, does the Australia have a world and a response to the officer? I will be well to contact if necessary. We also want to know if parents can come to campus to visit their child or if they have to get a permission first. order the process, please give me necessary information so that I will check it with and then decide. So please let us know these things so that we can properly guide our daughter for admission.",
+      "text_path": "model/data/text/9ad620ab.txt"
+    },
+    {
+      "uuid": "341ef40b",
+      "original_clip_id": "P4_13",
+      "original_speaker_id": "P4",
+      "gold_intent": "student_services",
+      "languages": [
+        "Hindi"
+      ],
+      "transcript": "नमस्ते, मुझे हॉस्टल चेंज करने के लिए वार्डन ऑफिस में एप्लीकेशन कैसे देनी होगी?",
+      "text_path": "model/data/text/341ef40b.txt"
+    },
+    {
+      "uuid": "439472e6",
+      "original_clip_id": "P18_122",
+      "original_speaker_id": "P18",
+      "gold_intent": "student_services",
+      "languages": [
+        "Hindi"
+      ],
+      "transcript": "हेलो हेल्पडेस्क, मेरी अटेंडेंस परसेंटेज अस्सी प्रतिशत से कम दिखा रही है, मेडिकल सर्टिफिकेट सबमिट करने की प्रक्रिया क्या है?",
+      "text_path": "model/data/text/439472e6.txt"
+    },
+    {
+      "uuid": "e7c421c7",
+      "original_clip_id": "P22_90",
+      "original_speaker_id": "P22",
+      "gold_intent": "it_support",
+      "languages": [
+        "English"
+      ],
+      "transcript": "Good afternoon. I am a finally a render graduate student. I urgently need some official transcripts for my graduation school applications in the US. I have already applied through the portal and paid the required fees for five hard copies and one digital copy yesterday. However, one of the universities has a strict deadline for this Friday. Is there any way the academic office could expedite the process for a digital copy and email it directly to the university's admission office? I can share the specific email address and my application reference number. It would be really helpful if you could do that.",
+      "text_path": "model/data/text/e7c421c7.txt"
+    },
+    {
+      "uuid": "17a0df49",
+      "original_clip_id": "P13_67",
+      "original_speaker_id": "P13",
+      "gold_intent": "admissions",
+      "languages": [
+        "Hindi",
+        "Gujarati"
+      ],
+      "transcript": "પ્યા અર્જન્ટ સપોર્ટ આપો નમસ્કાર હેલ્થ ઇન્ટરવ્યૂ હોગા વેબસાઇટ નહીં.",
+      "text_path": "model/data/text/17a0df49.txt"
+    },
+    {
+      "uuid": "46d483f3",
+      "original_clip_id": "P13_72",
+      "original_speaker_id": "P13",
+      "gold_intent": "admissions",
+      "languages": [
+        "Hindi"
+      ],
+      "transcript": "नमस्कार आईआईटी गांधीनगर हेल्पडेस्क, क्या डायरेक्ट पीएचडी एडमिशन के लिए गेट स्कोर के बिना भी आवेदन किया जा सकता है?",
+      "text_path": "model/data/text/46d483f3.txt"
+    },
+    {
+      "uuid": "c56811cd",
+      "original_clip_id": "P22_101",
+      "original_speaker_id": "P22",
+      "gold_intent": "student_services",
+      "languages": [
+        "English"
+      ],
+      "transcript": "Hello. Good morning. I am a PhD scholar residing in the married scholars apartments. I have a query regarding keeping a personal two-wheeler on campus. My wife recently got a job in Andabha's city and she needs a scooty to commute daily from the IITian campus to her office. I understand that undergraduates are generally not allowed to keep vehicles, but I believe that there is an exception for married scholars and staff. Could you please entire detail the entire process to get a vehicle pass? What documents do I need to submit to the security and hostel office? Do we need to show the vehicles RC book, insurance and my wise driving license. Also, is there a designated parking spot allotted to us near our block or is it just a general parking? And also how much is the sticker fee and how long does it take for the security desk at the main gate to issue the permanent RFID tag for the vehicle?",
+      "text_path": "model/data/text/c56811cd.txt"
+    },
+    {
+      "uuid": "430f801d",
+      "original_clip_id": "P8_40",
+      "original_speaker_id": "P8",
+      "gold_intent": "admissions",
+      "languages": [
+        "Hindi"
+      ],
+      "transcript": "नमस्ते, क्या आईआईटी गांधीनगर में समर इंटर्नशिप के दौरान हॉस्टल और मेस की सुविधा मिल सकती है?",
+      "text_path": "model/data/text/430f801d.txt"
+    },
+    {
+      "uuid": "8d3aed99",
+      "original_clip_id": "P19_130",
+      "original_speaker_id": "P19",
+      "gold_intent": "it_support",
+      "languages": [
+        "Hindi"
+      ],
+      "transcript": "हेलो आईआईटीजीएन हेल्पडेस्क, मेरा कोर्स रजिस्ट्रेशन पूरा हो गया है लेकिन इलेक्टिव कोर्स पोर्टल पर एक्टिवेट नहीं हुआ है।",
+      "text_path": "model/data/text/8d3aed99.txt"
+    },
+    {
+      "uuid": "0279b6a6",
+      "original_clip_id": "P13_85",
+      "original_speaker_id": "P13",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "Gujarati"
+      ],
+      "transcript": "અર્જન સપોર્ટ આવો નમસ્કાર હોય ગેસ્ટ હાઇનિંગ કન્ફર્મેશન મેલ નથી પાર્ટિંગ કુપિયા અર્જન સપ.",
+      "text_path": "model/data/text/0279b6a6.txt"
+    },
+    {
+      "uuid": "e21342b0",
+      "original_clip_id": "P21_74",
+      "original_speaker_id": "P21",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "Hindi"
+      ],
+      "transcript": "हेलो आईआईटीजीएन हेल्पडेस्क, मेरा नाम नीरज है, मुझे हॉस्टल रूम में स्टडी लैंप और चेयर रिप्लेसमेंट के लिए रिक्वेस्ट डालनी है।",
+      "text_path": "model/data/text/e21342b0.txt"
+    },
+    {
+      "uuid": "8babce3b",
+      "original_clip_id": "P4_14",
+      "original_speaker_id": "P4",
+      "gold_intent": "student_services",
+      "languages": [
+        "Hindi"
+      ],
+      "transcript": "अप्रेभी बार भी भी भ 7% Simular 7% So, in order to reduce the risk of getting a job I can do whatever I want to do And I have no problem in this mission I have no idea what to do.",
+      "text_path": "model/data/text/8babce3b.txt"
+    },
+    {
+      "uuid": "951f58d0",
+      "original_clip_id": "P2_5",
+      "original_speaker_id": "P2",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "English",
+        "Hindi"
+      ],
+      "transcript": "હેલો હેલ્પડેસ્ક, નવા સેમેસ્ટરનું ટાઇમટેબલ અને ક્લાસરૂમ અલોટમેન્ટ યાદી ક્યાં જોઈ શકાશે?",
+      "text_path": "model/data/text/951f58d0.txt"
+    },
+    {
+      "uuid": "20a04502",
+      "original_clip_id": "P18_124",
+      "original_speaker_id": "P18",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "Gujarati"
+      ],
+      "transcript": "માર્ચે હોસ્ટલમાં હોટ વોટર સપ્લાય સવારે આવતી નથી ઈસ્મા ઇન્ટેનન્સ કમ્પ્લેન કારજિસ્ટર.",
+      "text_path": "model/data/text/20a04502.txt"
+    },
+    {
+      "uuid": "e623a689",
+      "original_clip_id": "P22_99",
+      "original_speaker_id": "P22",
+      "gold_intent": "student_services",
+      "languages": [
+        "English"
+      ],
+      "transcript": "Hello, I am a father of newly admitted MSc student. We will be coming to IIT on the next week to drop her off and help her settle in the hostel. Since we are travelling all the way from Kerala, we will need a place to stay for two nights. I wanted to know if we can book a room in the college's guest house. Or if there are specific guest rooms available within the hostel premises for parents. If the institute accommodations are full, could you recommend some safe hotels nearby that usually cater to our IITGN and parents? Also during our stay, our parents allow to eat in the student mess along with their children by paying some charge or do we have to eat outside only? Also what are the visiting hours if you want to help her arrange her room in the girls any information would be highly appreciated.",
+      "text_path": "model/data/text/e623a689.txt"
+    },
+    {
+      "uuid": "dc570131",
+      "original_clip_id": "P12_57",
+      "original_speaker_id": "P12",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "English"
+      ],
+      "transcript": "Hello sir. So I want to raise an issue regarding the water supply in the hostel. So since past 3-4 days, there is continuous red body color water. It has been continuously coming from the tap with small particles and contaminants visible in the water. So we are unable to use this water for bathing or the daily activities. So this is creating serious, hygienic and safety concerns for the residents. request to kindly look into this issue and resolve it as soon as possible because it is related to the safety of the individual. So please look into this. Thank you.",
+      "text_path": "model/data/text/dc570131.txt"
+    },
+    {
+      "uuid": "35c7936c",
+      "original_clip_id": "P18_114",
+      "original_speaker_id": "P18",
+      "gold_intent": "it_support",
+      "languages": [
+        "Hindi"
+      ],
+      "transcript": "हेलो हेल्पडेस्क, मेरा कोर्स रजिस्ट्रेशन सबमिट हो गया है लेकिन मूडल पर लैब असाइनमेंट फोल्डर एक्सेस नहीं हो रहा है।",
+      "text_path": "model/data/text/35c7936c.txt"
+    },
+    {
+      "uuid": "1a50aec3",
+      "original_clip_id": "P18_115",
+      "original_speaker_id": "P18",
+      "gold_intent": "student_services",
+      "languages": [
+        "Gujarati"
+      ],
+      "transcript": "હેલો, મૂડલ પોર્ટલ પર એસાઈનમેન્ટ સબમિશન ડેડલાઈન એક્સટેન્ડ થઈ છે કે નહીં તે કન્ફર્મ કરશો?",
+      "text_path": "model/data/text/1a50aec3.txt"
+    },
+    {
+      "uuid": "e256a6dc",
+      "original_clip_id": "P20_62",
+      "original_speaker_id": "P20",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "Gujarati"
+      ],
+      "transcript": "નમસ્તે મહારા દીકરો આઈટી ગાંધીનગરમાં મેળવે તો તેના હશીલમાં કેવી સુવિધાઓ મળશે તે જાણવુ જરૂર પડે ત્યારે વિદ્યાર્થીઓને મદદ કરી શકે છે હું પણ જાણવા માંગુ છું કે જો મારા દીકરાન.",
+      "text_path": "model/data/text/e256a6dc.txt"
+    },
+    {
+      "uuid": "9ee3ac2a",
+      "original_clip_id": "P16_108",
+      "original_speaker_id": "P16",
+      "gold_intent": "it_support",
+      "languages": [
+        "English"
+      ],
+      "transcript": "Hello, IITG in Helpdesk. I need access to a general article that is behind a publisher paywall. Does the Institute Library provide remote access?",
+      "text_path": "model/data/text/9ee3ac2a.txt"
+    },
+    {
+      "uuid": "ee0caeb5",
+      "original_clip_id": "P14_94",
+      "original_speaker_id": "P14",
+      "gold_intent": "admissions",
+      "languages": [
+        "Hindi",
+        "Gujarati"
+      ],
+      "transcript": "નમસ્તે હેલ્પડેસ્ક, આઈઆઈટી ગાંધીનગર કેમ્પસમાં admissions અંગે સપોર્ટ જોઈતો હતો.",
+      "text_path": "model/data/text/ee0caeb5.txt"
+    },
+    {
+      "uuid": "f9e8a369",
+      "original_clip_id": "P16_106",
+      "original_speaker_id": "P16",
+      "gold_intent": "student_services",
+      "languages": [
+        "English"
+      ],
+      "transcript": "portal. Hello, IIT June Helpdesk. I need an official medium of instruction certificate from my master's application abroad. How can I request one?",
+      "text_path": "model/data/text/f9e8a369.txt"
+    },
+    {
+      "uuid": "e1a47e10",
+      "original_clip_id": "P18_119",
+      "original_speaker_id": "P18",
+      "gold_intent": "student_services",
+      "languages": [
+        "English"
+      ],
+      "transcript": "Hello IIT Gen. Helidas. Can I audit an additional elective course without it affecting my and stick to the 8 point average.",
+      "text_path": "model/data/text/e1a47e10.txt"
+    },
+    {
+      "uuid": "bc8f7d29",
+      "original_clip_id": "P13_82",
+      "original_speaker_id": "P13",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "Hindi",
+        "Gujarati"
+      ],
+      "transcript": "નમસ્કાર હેલ્પડેસ્ટ એક્ઝામ માં થશે કે યુઝ્યુઅલ જાયેગા કુપિયા એર્જન્સપોર્ટ આપો.",
+      "text_path": "model/data/text/bc8f7d29.txt"
+    },
+    {
+      "uuid": "ee49f329",
+      "original_clip_id": "P16_111",
+      "original_speaker_id": "P16",
+      "gold_intent": "it_support",
+      "languages": [
+        "English"
+      ],
+      "transcript": "Hello, IITG in HelpDisc. My lab computer has lost access to the shared data set drive. The research deadline is approaching. Whom should I contact?",
+      "text_path": "model/data/text/ee49f329.txt"
+    },
+    {
+      "uuid": "dd334cc7",
+      "original_clip_id": "P21_76",
+      "original_speaker_id": "P21",
+      "gold_intent": "student_services",
+      "languages": [
+        "Hindi"
+      ],
+      "transcript": "हेलो आईआईटीजीएन हेल्पडेस्क, कैंपस लॉन्ड्री सर्विस के टोकन और वीकली वॉशिंग स्लॉट के बारे में जानकारी चाहिए।",
+      "text_path": "model/data/text/dd334cc7.txt"
+    },
+    {
+      "uuid": "444d610b",
+      "original_clip_id": "P13_84",
+      "original_speaker_id": "P13",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "Gujarati"
+      ],
+      "transcript": "નમસ્કાર ટેનિંગ અને કેપિયા.",
+      "text_path": "model/data/text/444d610b.txt"
+    },
+    {
+      "uuid": "1bac27a7",
+      "original_clip_id": "P22_95",
+      "original_speaker_id": "P22",
+      "gold_intent": "it_support",
+      "languages": [
+        "English"
+      ],
+      "transcript": "Hi, I'm calling because my institute email ID seems to be blocked or suspended. When I try to login through Gmail, it says that the account has been disabled by the administrator. I suspect that it might be because I recently sent out a mass email for a club event to all student mailing list, which might have triggered a spam filter. I urgently need access to my email as I am expecting some internship interview links today. Could you please check my ID and restore my access? I won't send my emails directly again. So please, if you could do that, that would be really helpful.",
+      "text_path": "model/data/text/1bac27a7.txt"
+    },
+    {
+      "uuid": "dbccc477",
+      "original_clip_id": "P8_31",
+      "original_speaker_id": "P8",
+      "gold_intent": "admissions",
+      "languages": [
+        "Hindi"
+      ],
+      "transcript": "नमस्ते, मुझे आईआईटी गांधीनगर में पीएचडी एडमिशन के लिए फेलोशिप और स्टाइपेंड के नियमों की जानकारी चाहिए।",
+      "text_path": "model/data/text/dbccc477.txt"
+    },
+    {
+      "uuid": "d10bd1d0",
+      "original_clip_id": "P18_116",
+      "original_speaker_id": "P18",
+      "gold_intent": "student_services",
+      "languages": [
+        "English"
+      ],
+      "transcript": "Hello IIT General Desk, I missed my end semester exam due to medical emergency, supplementary exam for application.",
+      "text_path": "model/data/text/d10bd1d0.txt"
+    },
+    {
+      "uuid": "4e20fd1a",
+      "original_clip_id": "P2_12",
+      "original_speaker_id": "P2",
+      "gold_intent": "it_support",
+      "languages": [
+        "English"
+      ],
+      "transcript": "During my registration to the company there are a lot of bugs that I found out on to the portal of CDS. Especially when I am logging into the portal it logouts directly without even making clicking the button. I don't know what is happening here. Next book which I found out was related to the email query that has been coming. So if I registered for any particular company and then the email comes. So, the email for the reminder of the company, the issue is that the reminder is coming like 15 minutes early. So I personally think that this should not happen and the query or the reminder should come at least 1 hour to 6 hour before the data registration closed. 15 minutes is quite less and even it is coming through the mail so most probably the 15 minutes watch time is quite less I think so so kindly consider increasing that.",
+      "text_path": "model/data/text/4e20fd1a.txt"
+    },
+    {
+      "uuid": "3a43b2ba",
+      "original_clip_id": "P4_10",
+      "original_speaker_id": "P4",
+      "gold_intent": "admissions",
+      "languages": [
+        "Hindi"
+      ],
+      "transcript": "Namaskar sir, my nithin popat patil dhuliya i nikimar ast Rajjike dhuliya jile se bol raho muje apke aayati gandhinagar mein ademission chaayetha iskili muje ap krupaya sanjayenge ki tis tarasse isu university mein muje pravesh mil saktaay अप्रे लिवार हो सके चिवार पे चिवार मुझे जन करे मिले कि चिवार मुझे असनी होटी होटी तो दो लो लो .",
+      "text_path": "model/data/text/3a43b2ba.txt"
+    },
+    {
+      "uuid": "3170f437",
+      "original_clip_id": "P13_70",
+      "original_speaker_id": "P13",
+      "gold_intent": "admissions",
+      "languages": [
+        "Gujarati"
+      ],
+      "transcript": "સપોર્ટ આપો નમસ્કાર ગાંધીનગર વોઈસ હેલ્પ એડવાન્સ એન્ક ઇલેક્ટિકલ એન્સીઇનિયા ઇંગ ડિપાર્.",
+      "text_path": "model/data/text/3170f437.txt"
+    },
+    {
+      "uuid": "dd463c09",
+      "original_clip_id": "P8_32",
+      "original_speaker_id": "P8",
+      "gold_intent": "admissions",
+      "languages": [
+        "English",
+        "Hindi"
+      ],
+      "transcript": "हेलो आईटी हेल्पडेस्क, मेरा इंस्टीट्यूट ईमेल पासवर्ड एक्सपायर हो गया है और रीसेट लिंक मोबाइल पर नहीं आ रहा है।",
+      "text_path": "model/data/text/dd463c09.txt"
+    },
+    {
+      "uuid": "4774bc58",
+      "original_clip_id": "P13_78",
+      "original_speaker_id": "P13",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "Gujarati"
+      ],
+      "transcript": "નમસ્કાર મેટર્મ ફાર્મ કર્યું હતું પણ માનથી બિલમાં નથી થયું કે.",
+      "text_path": "model/data/text/4774bc58.txt"
+    },
+    {
+      "uuid": "6651529e",
+      "original_clip_id": "P9_47",
+      "original_speaker_id": "P9",
+      "gold_intent": "student_services",
+      "languages": [
+        "English",
+        "Hindi"
+      ],
+      "transcript": "हेलो, क्या बीटेक फर्स्ट ईयर के छात्रों को ब्रांच चेंज का अवसर मिलता है और उसके लिए न्यूनतम सीपीआई क्या चाहिए?",
+      "text_path": "model/data/text/6651529e.txt"
+    },
+    {
+      "uuid": "89456f27",
+      "original_clip_id": "P13_73",
+      "original_speaker_id": "P13",
+      "gold_intent": "it_support",
+      "languages": [
+        "Hindi"
+      ],
+      "transcript": "हेलो हेल्पडेस्क, क्या मैं अपना सेमेस्टर ब्रेक एक्सटेंड करने के लिए डीन एकेडमिक्स को एप्लीकेशन ईमेल कर सकता हूँ?",
+      "text_path": "model/data/text/89456f27.txt"
+    },
+    {
+      "uuid": "1d870966",
+      "original_clip_id": "P11_54",
+      "original_speaker_id": "P11",
+      "gold_intent": "admissions",
+      "languages": [
+        "English"
+      ],
+      "transcript": "Hello, I am calling to ask you about my status of my admission application. I submitted online application form a few days ago and received a confirmation message but the application portal is still showing that my documents are under verification. I have uploaded my academic transcript identification proof and all other required documents. I am not sure whether the verification process has been complete successfully. I am confused because the portal does not show my expected completion date. Could you please explain how long the verification process usually takes and whether I need to submit anything else? I do not want to miss anything important admission deadline because of an incomplete application. Please let me know if there is an specific email address or office where I can confirm this detail. App-key assistant merely a coffee helpful. Thank you.",
+      "text_path": "model/data/text/1d870966.txt"
+    },
+    {
+      "uuid": "2db69edb",
+      "original_clip_id": "P20_64",
+      "original_speaker_id": "P20",
+      "gold_intent": "admissions",
+      "languages": [
+        "Gujarati"
+      ],
+      "transcript": "નમસ્તે સહાય કયા દસ્તાવેજોની જરૂર પડે છે સાથે જો વિદ્યાર્થી પાસે હોય તો શું કરે કોણ કરીને સત્તા દસ્તાવેજોની ચેકલિસ્ટ ક્યાંથી મળશે તે પણ જણાવશો જેથી છેલ્લી ઘડીએ કોઈ મુશ્કેલી ન પડે.",
+      "text_path": "model/data/text/2db69edb.txt"
+    },
+    {
+      "uuid": "43f59a85",
+      "original_clip_id": "P21_70",
+      "original_speaker_id": "P21",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "Hindi"
+      ],
+      "transcript": "हेलो आईआईटीजीएन हेल्पडेस्क, हमारे रूम में टेबल फैन की स्पीड रेगुलेटर खराब है, कृपया इलेक्ट्रीशियन को भेजें।",
+      "text_path": "model/data/text/43f59a85.txt"
+    },
+    {
+      "uuid": "6f3f920c",
+      "original_clip_id": "P19_138",
+      "original_speaker_id": "P19",
+      "gold_intent": "it_support",
+      "languages": [
+        "Hindi"
+      ],
+      "transcript": "हेलो आईटी हेल्पडेस्क, गिटहब स्टूडेंट डेवलपर पैक एक्टिवेट करने के लिए इंस्टीट्यूट ईमेल वेरिफिकेशन कैसे पूरा करें?",
+      "text_path": "model/data/text/6f3f920c.txt"
+    },
+    {
+      "uuid": "504d281f",
+      "original_clip_id": "P20_65",
+      "original_speaker_id": "P20",
+      "gold_intent": "admissions",
+      "languages": [
+        "Gujarati"
+      ],
+      "transcript": "નમસ્કાર હુમારી દીકરીના એન્ડમિશન અને સીટ કન્ફર્મ કરવાની પ્રક્રિયા સમજવા માંગો છો એન્જિ પછી સંસ્થાની ફીમા સમાયેશની સત્તાવાર માહિતી કેઠાથી મેળવી તે સમજાવશો.",
+      "text_path": "model/data/text/504d281f.txt"
+    },
+    {
+      "uuid": "82ec9f2d",
+      "original_clip_id": "P16_99",
+      "original_speaker_id": "P16",
+      "gold_intent": "student_services",
+      "languages": [
+        "English"
+      ],
+      "transcript": "Hello, IITGN helpdesk. Can I order an additional elective without it affecting my semester great point average.",
+      "text_path": "model/data/text/82ec9f2d.txt"
+    },
+    {
+      "uuid": "939b462d",
+      "original_clip_id": "P13_69",
+      "original_speaker_id": "P13",
+      "gold_intent": "admissions",
+      "languages": [
+        "Gujarati"
+      ],
+      "transcript": "નમસ્કાર ડોક્યુમેન્ટ મેન્ડેટર છે કે ઓનલાઇન અપલોડ કરી શકાય.",
+      "text_path": "model/data/text/939b462d.txt"
+    },
+    {
+      "uuid": "b572f3d0",
+      "original_clip_id": "P19_131",
+      "original_speaker_id": "P19",
+      "gold_intent": "student_services",
+      "languages": [
+        "English"
+      ],
+      "transcript": "Hello IITGN Helpdesk, I have a request regarding student services.",
+      "text_path": "model/data/text/b572f3d0.txt"
+    },
+    {
+      "uuid": "ecf27e76",
+      "original_clip_id": "P18_123",
+      "original_speaker_id": "P18",
+      "gold_intent": "student_services",
+      "languages": [
+        "Gujarati"
+      ],
+      "transcript": "હૈલો ડેસ્ક રિસર્સ પ્રોજેક્ટ થી સિશન ફોર્મેટ અને લેગોરિઝમ લિમિટની ગાઇઇડલાઇન્સ કાય.",
+      "text_path": "model/data/text/ecf27e76.txt"
+    },
+    {
+      "uuid": "b82c9074",
+      "original_clip_id": "P21_71",
+      "original_speaker_id": "P21",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "English"
+      ],
+      "transcript": "Hello, IITGN Helpdesk. I will have to change my room partner and you both have to change the look partner. Hello, IITGN Helpdesk. My table is broken. My table is broken.",
+      "text_path": "model/data/text/b82c9074.txt"
+    },
+    {
+      "uuid": "abae4f43",
+      "original_clip_id": "P5_18",
+      "original_speaker_id": "P5",
+      "gold_intent": "admissions",
+      "languages": [
+        "Hindi"
+      ],
+      "transcript": "नमस्ते सर, मुझे आईआईटी गांधीनगर में एमटेक एडमिशन के लिए सीट अलॉटमेंट लेटर और ऑनलाइन फीस रसीद डाउनलोड करने में मदद चाहिए।",
+      "text_path": "model/data/text/abae4f43.txt"
+    },
+    {
+      "uuid": "11e9cdaa",
+      "original_clip_id": "P16_103",
+      "original_speaker_id": "P16",
+      "gold_intent": "it_support",
+      "languages": [
+        "English"
+      ],
+      "transcript": "Hello IITGN help desk. My laptop is unable to connect to the campus VPN after a recent operating system update. Please help troubleshoot.",
+      "text_path": "model/data/text/11e9cdaa.txt"
+    },
+    {
+      "uuid": "5487fd4f",
+      "original_clip_id": "P9_42",
+      "original_speaker_id": "P9",
+      "gold_intent": "it_support",
+      "languages": [
+        "English"
+      ],
+      "transcript": "Namaste, I am calling to ask about a problem with my course registration. I selected a elective through the student part portal but the course is not upending in my registered subject list. The registration deadline is approaching so I want to resolve this as soon as possible. I have selected the course but confirmation message was seen but the portal does not see any code. Please tell me whether the registration has been completed successfully or if I need to submit the request again. I am also concerned that submitting it again might create a duplicate and TV. This way I should contact the KEDME office or call the instructor. Please explain the correct procedure. So that my course lecture is recorded before the deadline.",
+      "text_path": "model/data/text/5487fd4f.txt"
+    },
+    {
+      "uuid": "d9178793",
+      "original_clip_id": "P16_102",
+      "original_speaker_id": "P16",
+      "gold_intent": "it_support",
+      "languages": [
+        "English"
+      ],
+      "transcript": "breaks. Hello IITGN help disc my student portal keeps logging me out every few minutes. Even after clearing the browser cache, can IIT investigate.",
+      "text_path": "model/data/text/d9178793.txt"
+    },
+    {
+      "uuid": "4ce1eb90",
+      "original_clip_id": "P4_11",
+      "original_speaker_id": "P4",
+      "gold_intent": "admissions",
+      "languages": [
+        "Hindi"
+      ],
+      "transcript": "हेलो, मेरा ग्रेड कार्ड डाउनलोड नहीं हो रहा है और सर्वर एरर दिखा रहा है, कृपया एकेडमिक पोर्टल चेक करें।",
+      "text_path": "model/data/text/4ce1eb90.txt"
+    },
+    {
+      "uuid": "688c7015",
+      "original_clip_id": "P10_51",
+      "original_speaker_id": "P10",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "English"
+      ],
+      "transcript": "Namaskar, IIT Ganyana, I have a QD regarding those till missed timings and the delivery. This is why I noticed that dinner will sometimes start later. Then the dispersion. Students who have evening laps or project meetings are finding difficult to reach the next one. I have come to my lab yesterday and when I get the waste, I am almost closing the whole computer. I want to know whether the official general timing has changed or this is only a key part of the situation. Also, there is an online platform where students can check the daily menu in advance. It would be a full-renewing timing where the security to the security goal, so that students can plan their meals. Could you please guide me to the appropriate management contact or complete for turn. Otherwise, issue about information share. Please do it.",
+      "text_path": "model/data/text/688c7015.txt"
+    },
+    {
+      "uuid": "4bb00f20",
+      "original_clip_id": "P14_90",
+      "original_speaker_id": "P14",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "Hindi"
+      ],
+      "transcript": "हेलो आईआईटीजीएन हेल्पडेस्क, हॉस्टल रूम के एसी से पानी टपक रहा है, कृपया इलेक्ट्रिकल मेंटेनेंस टीम को भेजें।",
+      "text_path": "model/data/text/4bb00f20.txt"
+    },
+    {
+      "uuid": "6ba25efe",
+      "original_clip_id": "P21_83",
+      "original_speaker_id": "P21",
+      "gold_intent": "student_services",
+      "languages": [
+        "Hindi"
+      ],
+      "transcript": "हेलो आईआईटीजीएन हेल्पडेस्क, हमने कैंपस क्लीन-अप ड्राइव आयोजित की है, वेस्ट सेग्रीगेशन बिन्स के लिए एडमिनिस्ट्रेशन से परमिशन कैसे लें?",
+      "text_path": "model/data/text/6ba25efe.txt"
+    },
+    {
+      "uuid": "ad64b56c",
+      "original_clip_id": "P22_96",
+      "original_speaker_id": "P22",
+      "gold_intent": "it_support",
+      "languages": [
+        "English"
+      ],
+      "transcript": "Hello, I'm a parent of a first-year student. My son lost his mobile phone yesterday somewhere in the academic block. The phone has all his authentication apps and all the two-factor authentication for IITG and portals. Because of this, he cannot log into his student portal to check his timetable or submit assignments. Is there a way the IT cell can temporarily disable the two-factor authentication for his account? Or maybe if you could generate some bypass back code or something like a temporary password so that he can use it on his laptop till we arrange a new phone for him? He is quite stressed about missing his academic updates. Please let me know what verifying details you need from him.",
+      "text_path": "model/data/text/ad64b56c.txt"
+    },
+    {
+      "uuid": "9d9262af",
+      "original_clip_id": "P7_25",
+      "original_speaker_id": "P7",
+      "gold_intent": "admissions",
+      "languages": [
+        "Hindi"
+      ],
+      "transcript": "नमस्ते सर, मुझे एडमिशन के समय जमा किए जाने वाले माइग्रेशन सर्टिफिकेट और कैरेक्टर सर्टिफिकेट के बारे में जानकारी चाहिए।",
+      "text_path": "model/data/text/9d9262af.txt"
+    },
+    {
+      "uuid": "8c459ce2",
+      "original_clip_id": "P21_72",
+      "original_speaker_id": "P21",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "English",
+        "Hindi"
+      ],
+      "transcript": "Hello Adinyan, this is the bed which i got is broken and its too small, i can get a big bed.",
+      "text_path": "model/data/text/8c459ce2.txt"
+    },
+    {
+      "uuid": "49732d6c",
+      "original_clip_id": "P13_81",
+      "original_speaker_id": "P13",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "Gujarati"
+      ],
+      "transcript": "નમસ્કાર આઈઆરટી ગાંધીનગ વોઇસ હેલ્પડેસ્ક હોસ્ટ્રાલૂમ ચેન્જ એપ્લિકેશન ફોર્મ કિયા ઓફિસ.",
+      "text_path": "model/data/text/49732d6c.txt"
+    },
+    {
+      "uuid": "9479e1e6",
+      "original_clip_id": "P2_9",
+      "original_speaker_id": "P2",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "English"
+      ],
+      "transcript": "I wanted to contact with the student affairs because I have seen currently into the hostels that there is a lot of maze going on. I need to constantly shift from one hostel to the other hostel that has been creating some extra efforts and also the amount of material like the Merasama is like too much and I need to constantly shift that that is taking too much of effort. Either you can assign some people to us so that they will help us in shifting the places because in one semester this is the third time I am shifting my room and this is creating a lot of overhead and it's not seeming proper to me, particularly to me. So can you help me in guiding here so that the process is easy for this particular thing?",
+      "text_path": "model/data/text/9479e1e6.txt"
+    },
+    {
+      "uuid": "77097749",
+      "original_clip_id": "P7_30",
+      "original_speaker_id": "P7",
+      "gold_intent": "admissions",
+      "languages": [
+        "English"
+      ],
+      "transcript": "Hello sir. I would like to know about the admission process for my son and the total cost of study. Like what is the admission process and what are the things required. We come from because we come from a middle class family so it is important for us to understand what is the admission fees as well as hostel fees and food expenses so that we can arrange our current power convenience do fees in IIT, Ghandinagar, have to be submitted. Every semester or once a year means what is the process about that? Are who still rent, miss fees and other compensatory charges different from the tuition fees? If a student is eligible for financial aid or scholarship should they apply at the beginning or what is that process? We also need to know where to see the last date for submission of fees and through which experiment is made if the full details of the fees are given in official documents, please guide us about it. Thank you sir.",
+      "text_path": "model/data/text/77097749.txt"
+    },
+    {
+      "uuid": "36b5229a",
+      "original_clip_id": "P13_87",
+      "original_speaker_id": "P13",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "Gujarati"
+      ],
+      "transcript": "એજન્ટ સપોર્ટ આપો એપ્રેડ કરવા માટે કમિટિંગ ક્યાં થયેલી છે કુપિયા એજન્ટ સપોર્ટ આપો.",
+      "text_path": "model/data/text/36b5229a.txt"
+    },
+    {
+      "uuid": "e6b3c944",
+      "original_clip_id": "P9_44",
+      "original_speaker_id": "P9",
+      "gold_intent": "it_support",
+      "languages": [
+        "English"
+      ],
+      "transcript": "Hi, I need help with an assignment submission issue. I completed my assignment and uploaded the file to the course portal before the deadline. But the website shows an error when I click the submit button. After refreshing the page, I could no longer see the loaded file. I uploaded the assignment before the deadline. Now I don't get any information. I have a screenshot of the error message and copy of the completed assignment. Please tell me how I should report this issue to make sure that my submission is considered on time. If I am a professor of male complaint, I will not be able to do so. Please let me know what evidence I should attach and whether there is an official process for technical problems during assignment submission.",
+      "text_path": "model/data/text/e6b3c944.txt"
+    },
+    {
+      "uuid": "2b70e525",
+      "original_clip_id": "P18_117",
+      "original_speaker_id": "P18",
+      "gold_intent": "it_support",
+      "languages": [
+        "Hindi",
+        "Gujarati"
+      ],
+      "transcript": "હાઇટીજેનલ બસ મીરા ગ્રેટ કાર્ડને એક સબ્જેક્ટ રિઝલ ટેપ્શન શો કરી છે જે આરે એક્ઝામ આપો હત.",
+      "text_path": "model/data/text/2b70e525.txt"
+    },
+    {
+      "uuid": "83f4a9a9",
+      "original_clip_id": "P4_12",
+      "original_speaker_id": "P4",
+      "gold_intent": "student_services",
+      "languages": [
+        "Hindi"
+      ],
+      "transcript": "Hello Namaskar Sir, I am speaking in Val make party in Nando Barchila. My pre-wab is now in PED, so I have now binding my final thesis. I have now completed the pre-wab and I have already completed the entire procedure. I have also submitted the final viva and thesis. चिगे पिटे पिटे .",
+      "text_path": "model/data/text/83f4a9a9.txt"
+    },
+    {
+      "uuid": "55cee5db",
+      "original_clip_id": "P22_94",
+      "original_speaker_id": "P22",
+      "gold_intent": "it_support",
+      "languages": [
+        "English"
+      ],
+      "transcript": "Good morning. I'm a third year student. I'm facing a very critical issue right now. We have an assignment submission due at 11.59 am today for the machine learning course. And it seems that the server is completely unresponsive. I have been trying to upload my zip file for the last 30 minutes, but the page just keeps loading and eventually times out with a 504 gateway error. I checked with a few of my batch mates and they are experiencing the same issue. Whether they are connected to the hostile Wi-Fi or using their own mobile data, they are facing the same issue. Could you please look into this immediately and restart the server if necessary. Also since the deadline is approaching in less than an hour, could you please issue an officially mail to the academic office or the course instructor stating that the servers are recently down. This would really help us to avoid any penalties or marks reduction for late submission.",
+      "text_path": "model/data/text/55cee5db.txt"
+    },
+    {
+      "uuid": "c04a96c4",
+      "original_clip_id": "P13_77",
+      "original_speaker_id": "P13",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "Gujarati"
+      ],
+      "transcript": "નમસ્કાર ફોર્મ કયું હતું રિફ્લેક્ટ.",
+      "text_path": "model/data/text/c04a96c4.txt"
+    },
+    {
+      "uuid": "39820cff",
+      "original_clip_id": "P13_80",
+      "original_speaker_id": "P13",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "Gujarati"
+      ],
+      "transcript": "નમસ્કાર ગાંધીનગર વોઇસ હેલ્પ ડેસ્ક હોસ્ટેલ્પ ફાઇન વોસ્ટમાં ગીઝ કામ નથી કહી આયું ઇન્સ્.",
+      "text_path": "model/data/text/39820cff.txt"
+    },
+    {
+      "uuid": "0640be0f",
+      "original_clip_id": "P8_37",
+      "original_speaker_id": "P8",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "Hindi"
+      ],
+      "transcript": "नमस्ते, क्या एमएससी कॉग्निटिव साइंस प्रोग्राम के लिए रिटेन टेस्ट और इंटरव्यू ऑनलाइन होगा या ऑफलाइन?",
+      "text_path": "model/data/text/0640be0f.txt"
+    },
+    {
+      "uuid": "79a28903",
+      "original_clip_id": "P14_88",
+      "original_speaker_id": "P14",
+      "gold_intent": "admissions",
+      "languages": [
+        "English",
+        "Gujarati"
+      ],
+      "transcript": "હેલો, નમસ્તે હેલ્પડેસ્ક, આઈઆઈટી ગાંધીનગર કેમ્પસમાં admissions અંગે સપોર્ટ જોઈતો હતો.",
+      "text_path": "model/data/text/79a28903.txt"
+    },
+    {
+      "uuid": "12a4def0",
+      "original_clip_id": "P22_88",
+      "original_speaker_id": "P22",
+      "gold_intent": "student_services",
+      "languages": [
+        "English"
+      ],
+      "transcript": "Hello, Namaste. I am speaking from Jaipur. My daughter is joining the BTEC first year this upcoming July. I received the welcome email regarding the admission and fee payment. But I have a confusion regarding the education loan. We are applied for a loan through SBI and the bank is asking for detailed fee structure for all four years. Stamped and signed by the IT Ghandinavir academic office. The one provided on the website is just for the first semester. Could you please let me know the procedure to get this official document? Can it be emailed to us or do we have to collect it in person when we come for the orientation? Also, by when do we submit the demand draft?",
+      "text_path": "model/data/text/12a4def0.txt"
+    },
+    {
+      "uuid": "a1384ddc",
+      "original_clip_id": "P20_63",
+      "original_speaker_id": "P20",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "Gujarati"
+      ],
+      "transcript": "નમસ્કાર મારે સંસ્થાના હોસ્તા માટે મંજૂરી લઈ પડે છે માતાપી તે સમયે સમય હોય છે તો તે સુર દિકરીને મળવા આવે ત્યારે કોઈ નક્કી કરેલી મુલાકાતની પ્રક્રિયા હોય છે અમે બીજા શહેરમાંથ કરી.",
+      "text_path": "model/data/text/a1384ddc.txt"
+    },
+    {
+      "uuid": "b24445a7",
+      "original_clip_id": "P13_75",
+      "original_speaker_id": "P13",
+      "gold_intent": "admissions",
+      "languages": [
+        "Gujarati"
+      ],
+      "transcript": "કુપિયા અર્જન્ટ સપોર્ટ આપો નમસ્કાર સ્પોર્ટ એડમિશન વિલીઝ થયો છે કે નહીં.",
+      "text_path": "model/data/text/b24445a7.txt"
+    },
+    {
+      "uuid": "3e75c3b4",
+      "original_clip_id": "P13_68",
+      "original_speaker_id": "P13",
+      "gold_intent": "it_support",
+      "languages": [
+        "Hindi"
+      ],
+      "transcript": "नमस्कार आईआईटी गांधीनगर हेल्पडेस्क, बीटेक स्टूडेंट पोर्टल पर पासवर्ड रीसेट करने के बाद भी लॉगिन नहीं हो रहा है, क्या आप चेक कर सकते हैं?",
+      "text_path": "model/data/text/3e75c3b4.txt"
+    },
+    {
+      "uuid": "016b6287",
+      "original_clip_id": "P11_53",
+      "original_speaker_id": "P11",
+      "gold_intent": "it_support",
+      "languages": [
+        "English"
+      ],
+      "transcript": "Hello, IIT Gandhi Nagar voice cell desk. I am facing a serious internet connectivity issue on my laptop. The campus Wi-Fi connects successfully but website are loading very slowly and sometimes the connection gets disconnected automatically. This has been happening since yesterday evening and I restarted my laptop. I got the network before connecting again but nothing seems to have changed. My online lectures or assignment complete can be very difficult. I also tried using the Wi-Fi in another location on campus but the speed was still. Could you please check whether there is a network issue or if I need to update my settings on my device? Please let me know if I should visit the IT Support Office or Submit Online Complain. I need a stable connection for my academic work. So an early reservation would be very helpful. Than Nevad.",
+      "text_path": "model/data/text/016b6287.txt"
+    },
+    {
+      "uuid": "c521bf2d",
+      "original_clip_id": "P18_113",
+      "original_speaker_id": "P18",
+      "gold_intent": "it_support",
+      "languages": [
+        "Hindi"
+      ],
+      "transcript": "हेलो आईआईटीजीएन हेल्पडेस्क, मिड-सेमेस्टर एग्जाम के लिए कंप्यूटर लैब सिस्टम में पायथन और आर सॉफ्टवेयर पैकेज इंस्टॉल करवाने हैं।",
+      "text_path": "model/data/text/c521bf2d.txt"
+    },
+    {
+      "uuid": "6cd66193",
+      "original_clip_id": "P13_76",
+      "original_speaker_id": "P13",
+      "gold_intent": "admissions",
+      "languages": [
+        "Gujarati"
+      ],
+      "transcript": "નમસ્કાર ગાંધીનગર વોઇસ એડમિશન હતું પણ કન્ફર્મેશન લાવ્યો નથી કુપિયા પોર્ટ આપો.",
+      "text_path": "model/data/text/6cd66193.txt"
+    },
+    {
+      "uuid": "f53d4330",
+      "original_clip_id": "P21_69",
+      "original_speaker_id": "P21",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "Hindi"
+      ],
+      "transcript": "हेलो हेल्पडेस्क, मुझे हॉस्टल ड्यूज क्लीयरेंस और नो-ड्यूज सर्टिफिकेट लेने की प्रक्रिया जाननी है।",
+      "text_path": "model/data/text/f53d4330.txt"
+    },
+    {
+      "uuid": "0cdb1ca4",
+      "original_clip_id": "P11_56",
+      "original_speaker_id": "P11",
+      "gold_intent": "student_services",
+      "languages": [
+        "English"
+      ],
+      "transcript": "Hello, help desk. I'm looking for a particular textbook that I need for upcoming semester examination. I searched the library catalog online and the book appears in the reason. But I'm unable to determine whether a physical copy is currently available. And the catalog also mentioned different edition. And I'm not sure which edition is recommended by my course. to get a book for exam preparation. Because the exams schedule has already been announced and could please explain how I can check the real-time ability of the book and whether the student can reserve a copy online. If the all physical copies are currently issued, is there an option to access an electronic region through the Institute library. I would also like to know boring the period and whether I can renew the book. If I need for the long duration please guide me through the process. Thank you.",
+      "text_path": "model/data/text/0cdb1ca4.txt"
+    },
+    {
+      "uuid": "d92c9227",
+      "original_clip_id": "P1_2",
+      "original_speaker_id": "P1",
+      "gold_intent": "student_services",
+      "languages": [
+        "Hindi"
+      ],
+      "transcript": "Hello Sir, I am talking to a study room Sir, we had a problem in the last 56 days Actually, all the study rooms are crowded and there are problems So, we are studying for that So, focus is not on the study So, my opinion is make a batch of batches So, we will be booking the batches and the most people of the booking will be able to reach the minimum percentage of the day 1 minimum %pilog renghe aur am ko stadi bhi karne ke liy thoda asang jai ga matlab simplifi ho ga sar am ko stadi ke liy aur abhi kravdu kravdu ke vajat saram ko boh problem bhi ho rai aur am ish bhi face kar rai aur bhi bhi smi fir aur amar ish bhi smi boh to toodah problem ho dha ish bhi smi यह लिवाण यह लिवाण यह लिवाण यह लिवाण यह लिवाण यह लिवाण यह लिवाण यह लिवाण यह लिवाण यह लिवाण यह लिवाण यह लिवाण यह लिवाण यह लिवाण यह लिवाण यह लिवाण यह लिवाण यह लिवाण यह लिवाण यह लिवाण यह.",
+      "text_path": "model/data/text/d92c9227.txt"
+    },
+    {
+      "uuid": "cd29a36f",
+      "original_clip_id": "P22_100",
+      "original_speaker_id": "P22",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "English"
+      ],
+      "transcript": "Hi, I am a final year student from Hikom hostel. I am calling regarding the Masribet policy. I have been selected for an off campus internship and I will not be on campus for the entire month of February. I know we need to apply for a Masribet in advance. I have already filled out the form on the MS portal but the status is showing as pending approval. You will also need to submit a hard copy of my lever approval from faculty advisor to the hostel office. Or is the online approval sufficient to stop the mischarges?",
+      "text_path": "model/data/text/cd29a36f.txt"
+    },
+    {
+      "uuid": "fce68504",
+      "original_clip_id": "P5_17",
+      "original_speaker_id": "P5",
+      "gold_intent": "student_services",
+      "languages": [
+        "Hindi"
+      ],
+      "transcript": "नमस्ते, हॉस्टल बालकनी के दरवाजे का लॉक खराब है, सिक्योरिटी की दृष्टि से इसे आज ही रिपेयर करवा दीजिए।",
+      "text_path": "model/data/text/fce68504.txt"
+    },
+    {
+      "uuid": "f335cba3",
+      "original_clip_id": "P16_112",
+      "original_speaker_id": "P16",
+      "gold_intent": "student_services",
+      "languages": [
+        "English"
+      ],
+      "transcript": "Hello, IITGN Helpdesk. I left my backpack in the campus shirt really yesterday evening. Is there a loss in found disk I can contact?",
+      "text_path": "model/data/text/f335cba3.txt"
+    },
+    {
+      "uuid": "9cd6c852",
+      "original_clip_id": "P21_80",
+      "original_speaker_id": "P21",
+      "gold_intent": "student_services",
+      "languages": [
+        "Hindi"
+      ],
+      "transcript": "हेलो आईआईटीजीएन हेल्पडेस्क, मेरे दोस्त का स्टूडेंट आईकार्ड खो गया है, लॉस्ट एंड फाउंड सेक्शन में कैसे कंप्लेंट रजिस्टर करें?",
+      "text_path": "model/data/text/9cd6c852.txt"
+    },
+    {
+      "uuid": "81392443",
+      "original_clip_id": "P16_100",
+      "original_speaker_id": "P16",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "English"
+      ],
+      "transcript": "Hello, IITGN help desk. My hostel room has a water leakage problem near the study table.",
+      "text_path": "model/data/text/81392443.txt"
+    },
+    {
+      "uuid": "8c41561b",
+      "original_clip_id": "P20_68",
+      "original_speaker_id": "P20",
+      "gold_intent": "student_services",
+      "languages": [
+        "Gujarati"
+      ],
+      "transcript": "નમસ્કાર્જી હું મારા દીકરાના આઇટી ગાંધીનગરમાં એડમિશન અંગે માહિતી મેળવ્યો છું પહેલીવા સુંદા રહેતા વિદ્ધર્તિઓને મેડિકલ ઇમરજન્સી માટે કોઈ સંપર્ક નમવાર કોઈ સહાય આપવામાં આવે હોસ્ટેલની સુરક્ષા સમર્થિત નિયમ વિશે માહિતી આપશો.",
+      "text_path": "model/data/text/8c41561b.txt"
+    },
+    {
+      "uuid": "be6033f7",
+      "original_clip_id": "P21_73",
+      "original_speaker_id": "P21",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "Hindi"
+      ],
+      "transcript": "हेलो आईआईटीजीएन हेल्पडेस्क, हॉस्टल रूम में गद्दे और तकिये का कवर फटा हुआ है, हाउसकीपिंग से नया इश्यू करवाने का क्या नियम है?",
+      "text_path": "model/data/text/be6033f7.txt"
+    },
+    {
+      "uuid": "425a609f",
+      "original_clip_id": "P14_89",
+      "original_speaker_id": "P14",
+      "gold_intent": "admissions",
+      "languages": [
+        "Hindi"
+      ],
+      "transcript": "हेलो हेल्पडेस्क, पीएचडी एडमिशन इंटरव्यू के लिए शॉर्टलिस्टेड कैंडिडेट्स की लिस्ट डिपार्टमेंट वेबसाइट पर कब आएगी?",
+      "text_path": "model/data/text/425a609f.txt"
+    },
+    {
+      "uuid": "a33dc7af",
+      "original_clip_id": "P7_24",
+      "original_speaker_id": "P7",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "English"
+      ],
+      "transcript": "Hello sir, I want to ask something about my son's hostel and food arrangements If he gets admission in the IITIk on the nether He will study away from home for the first time So it is important for us to know that the Bagan kids of students living in the hostel. How was the facility and how was the arrangement? So please give me about About the information about this.",
+      "text_path": "model/data/text/a33dc7af.txt"
+    },
+    {
+      "uuid": "8573e793",
+      "original_clip_id": "P5_19",
+      "original_speaker_id": "P5",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "Hindi"
+      ],
+      "transcript": "Namaste sir, my dear kids, before this, if you are not outside, then in your college campus, is it good to have a good morning or what for girls? Because now if you see outside, then it is not good for girls. And even in hostels, there is also a ragging, so in your campus, that is all right in the hostel. & mace the food is good because it is a salad with a menden & for children, one is a child in the room & the one who is the shadow of his mace अप्वववव के सा है? Grupeya, you tell us and for the kids, if there is a ladies fellowship, then tell us in your college.",
+      "text_path": "model/data/text/8573e793.txt"
+    },
+    {
+      "uuid": "464c04af",
+      "original_clip_id": "P19_133",
+      "original_speaker_id": "P19",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "English"
+      ],
+      "transcript": "Hello, Adizyan Hildes. My hostel room has a water leakage problem near the study table. again someone is expected today.",
+      "text_path": "model/data/text/464c04af.txt"
+    },
+    {
+      "uuid": "49257af1",
+      "original_clip_id": "P21_84",
+      "original_speaker_id": "P21",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "Hindi"
+      ],
+      "transcript": "हेलो हेल्पडेस्क, मेरे रूम के दरवाजे की कुंडी टूट गई है, कृपया कारपेंटर को तुरंत भेजकर इसे ठीक करवाएं।",
+      "text_path": "model/data/text/49257af1.txt"
+    },
+    {
+      "uuid": "51d87c64",
+      "original_clip_id": "P21_79",
+      "original_speaker_id": "P21",
+      "gold_intent": "student_services",
+      "languages": [
+        "Hindi"
+      ],
+      "transcript": "नमस्ते हेल्पडेस्क, हॉस्टल के कॉमन रूम में टेबल टेनिस टेबल की नेट टूटी हुई है, कृपया नई नेट लगवाएं।",
+      "text_path": "model/data/text/51d87c64.txt"
+    },
+    {
+      "uuid": "236c7b87",
+      "original_clip_id": "P8_35",
+      "original_speaker_id": "P8",
+      "gold_intent": "admissions",
+      "languages": [
+        "Hindi"
+      ],
+      "transcript": "नमस्ते, मुझे आईआईटी गांधीनगर में एडमिशन के समय जमा किए जाने वाले दस्तावेज़ों की जानकारी चाहिए। क्या दसवीं और बारहवीं की मार्कशीट, पहचान पत्र और प्रवेश परीक्षा से संबंधित दस्तावेज़ों की मूल प्रति लाना अनिवार्य है?",
+      "text_path": "model/data/text/236c7b87.txt"
+    },
+    {
+      "uuid": "b1a6b1f1",
+      "original_clip_id": "P3_8",
+      "original_speaker_id": "P3",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "Hindi"
+      ],
+      "transcript": "Hello Sir, I want to give you a hug Our hostel room is about to start from the 11th of the day The door is closed No one is allowed to study Light is gone and our heart is getting scared. Our stomach is broken. We can feel the pain. आपादिवोलाणिविल पादिवोलाणिविल पादिवोलाणिविल पादिवोलाणिवोलाणिवोलाणिवोलाणिवोलाणिवोलाणिवोलाणिवोलाणिवोलाणिवोलाणिवोलाणिवोलाणिवोलाणिवो.",
+      "text_path": "model/data/text/b1a6b1f1.txt"
+    },
+    {
+      "uuid": "10714d51",
+      "original_clip_id": "P3_9",
+      "original_speaker_id": "P3",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "Hindi"
+      ],
+      "transcript": "हेलो आईटी हेल्पडेस्क, कैंपस फोर्टिनेट फायरवॉल पर मेरा लैपटॉप रजिस्टर नहीं हो रहा है, कृपया मैक एड्रेस ऑथेंटिकेशन चेक करें।",
+      "text_path": "model/data/text/10714d51.txt"
+    },
+    {
+      "uuid": "8ae8905b",
+      "original_clip_id": "P16_101",
+      "original_speaker_id": "P16",
+      "gold_intent": "student_services",
+      "languages": [
+        "English"
+      ],
+      "transcript": "someone inspected today? Hello IITGN help desk. Is there a separate facility for storage luggage during semester?",
+      "text_path": "model/data/text/8ae8905b.txt"
+    },
+    {
+      "uuid": "34f3193c",
+      "original_clip_id": "P19_135",
+      "original_speaker_id": "P19",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "English"
+      ],
+      "transcript": "Hello, I am Dijinal, this is a separate facility for storing luggage during semester.",
+      "text_path": "model/data/text/34f3193c.txt"
+    },
+    {
+      "uuid": "e7a37e81",
+      "original_clip_id": "P8_34",
+      "original_speaker_id": "P8",
+      "gold_intent": "admissions",
+      "languages": [
+        "Hindi"
+      ],
+      "transcript": "आलो में पने पेटी के ले एाटी नवने नवने न आगग अग अग आप्वाशाशाशिता जब पश्विचिर के बप्विटी को बिलने बिलने बिलन.",
+      "text_path": "model/data/text/e7a37e81.txt"
+    },
+    {
+      "uuid": "b20dcb6e",
+      "original_clip_id": "P14_95",
+      "original_speaker_id": "P14",
+      "gold_intent": "admissions",
+      "languages": [
+        "Hindi"
+      ],
+      "transcript": "हेलो आईआईटी गांधीनगर हेल्पडेस्क, मेरा मेस कार्ड ब्लॉक हो गया है, इसे अनब्लॉक कराने के लिए क्या प्रक्रिया है?",
+      "text_path": "model/data/text/b20dcb6e.txt"
+    },
+    {
+      "uuid": "c3fe0183",
+      "original_clip_id": "P8_33",
+      "original_speaker_id": "P8",
+      "gold_intent": "student_services",
+      "languages": [
+        "Hindi"
+      ],
+      "transcript": "हेलो, हॉस्टल ग्राउंड फ्लोर पर वाशिंग मशीन का ड्रेनेज पाइप ब्लॉक हो गया है, कृपया तुरंत साफ करवाएं।",
+      "text_path": "model/data/text/c3fe0183.txt"
+    },
+    {
+      "uuid": "018267c4",
+      "original_clip_id": "P8_39",
+      "original_speaker_id": "P8",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "Hindi"
+      ],
+      "transcript": "हेलो हेल्पडेस्क, हॉस्टल रूम में स्टडी टेबल की दराज टूटी हुई है, कारपेंटर को मेंटेनेंस रिक्वेस्ट भेज दीजिए।",
+      "text_path": "model/data/text/018267c4.txt"
+    },
+    {
+      "uuid": "c0e3befd",
+      "original_clip_id": "P9_49",
+      "original_speaker_id": "P9",
+      "gold_intent": "student_services",
+      "languages": [
+        "English",
+        "Hindi"
+      ],
+      "transcript": "नमस्ते, मेस बिल में एक्स्ट्रा डाइट का चार्ज गलत जुड़ गया है, इसे रेक्टिफाई कराने के लिए किससे संपर्क करें?",
+      "text_path": "model/data/text/c0e3befd.txt"
+    },
+    {
+      "uuid": "f41402b1",
+      "original_clip_id": "P21_82",
+      "original_speaker_id": "P21",
+      "gold_intent": "student_services",
+      "languages": [
+        "Hindi"
+      ],
+      "transcript": "हेलो हेल्पडेस्क, हमने कैंपस में नई स्टूडेंट रोबोटिक्स क्लब बनाई है, क्लब रजिस्ट्रेशन और एक्टिविटी रूम अप्रूवल के लिए क्या प्रक्रिया है?",
+      "text_path": "model/data/text/f41402b1.txt"
+    },
+    {
+      "uuid": "bf5d2fdf",
+      "original_clip_id": "P22_89",
+      "original_speaker_id": "P22",
+      "gold_intent": "student_services",
+      "languages": [
+        "English"
+      ],
+      "transcript": "Hi, I'm an Mtech first year student at IIT Ghandi Naur. I am calling to inquire about the branch and specializations for policies. I am currently enrolled in the Civil Engineering Department under the structural engineering specialization. But after attending the first semester, I am highly interested in shifting my focus towards the water resources and environmental engineering specialization. I have maintained a CPA of 9.2 in my first semester. I have read the student manual, but it mostly talks about BTEC branch changes. I wanted to know if MTEX students are allowed to change their specialization within the same department. If yes, what is the exact procedure? Do I need to get a no objection certificate from my current faculty advisor and the HOD? Furthermore, if the changes are proved, will my fellowship be affected in any way and will the credits I earned in the first semester for my mandatory structural courses become as open electives please guide me on the paperwork required.",
+      "text_path": "model/data/text/bf5d2fdf.txt"
+    },
+    {
+      "uuid": "9a6ec2f5",
+      "original_clip_id": "P22_98",
+      "original_speaker_id": "P22",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "English"
+      ],
+      "transcript": "Good afternoon. I am a BTEC fresher student staying in Firpil hostel. I wanted to inquire about the procedure for changing rooms. Currently I am in a triple sharing room but my room mate and I have completely different schedules. He stays very late with the lights on which is severely affecting my sleep and my health. I have tried talking to him but it hasn't I spoke to my student guide and they advised me to contact the hostel office. Are there any vacant triple rooms or perhaps another room where someone is looking to change their roommates? Do I need to write a formal application to the warden or is there an online form for room reallocation request?",
+      "text_path": "model/data/text/9a6ec2f5.txt"
+    },
+    {
+      "uuid": "382c043f",
+      "original_clip_id": "P3_7",
+      "original_speaker_id": "P3",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "Hindi"
+      ],
+      "transcript": "हेलो हेल्पडेस्क, रेलवे कंसेशन फॉर्म पर ऑथराइज्ड सिग्नेचर कराने के लिए स्टूडेंट वेलफेयर ऑफिस में किससे मिलना होगा?",
+      "text_path": "model/data/text/382c043f.txt"
+    },
+    {
+      "uuid": "076e2bba",
+      "original_clip_id": "P9_41",
+      "original_speaker_id": "P9",
+      "gold_intent": "hostel_mess",
+      "languages": [
+        "English"
+      ],
+      "transcript": "Hello, I need some assistance regarding the hostel service in my hostel. I tried using the washing machine yesterday for the payment first detected from my account. And the machine did not start. I have tried to get the payment for the hostel. But I did not buy the money again and I did not go to the machine. I waited for some time and checked whether the machine was working. But there was no change. Could you please tell me how I can request for the failed transactions? I also want to know whether I can use another machine until this issue is resolved. Please write me through the complete process. I'll let me know if I need to provide the transaction details.",
+      "text_path": "model/data/text/076e2bba.txt"
+    },
+    {
+      "uuid": "addc3e13",
+      "original_clip_id": "P16_107",
+      "original_speaker_id": "P16",
+      "gold_intent": "student_services",
+      "languages": [
+        "English"
+      ],
+      "transcript": "Hello, IITGN Helpdesk. My name is spelled differently on different student ID and academic records. What is the correction procedure?",
+      "text_path": "model/data/text/addc3e13.txt"
+    }
+  ]
+}

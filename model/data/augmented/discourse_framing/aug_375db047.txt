@@ -1,0 +1,7 @@
+UUID: aug_375db047
+Parent_UUID: b20dcb6e
+Augmentation_Type: discourse_framing
+Similarity_Score: 0.982
+Transcript: मेरा सवाल यह है कि हेलो आईआईटी गांधीनगर हेल्पडेस्क, मेरा मेस कार्ड ब्लॉक हो गया है, इसे अनब्लॉक कराने के लिए क्या प्रक्रिया है?
+Target_Label: hostel_mess
+Spoken_Languages: ['Hindi']

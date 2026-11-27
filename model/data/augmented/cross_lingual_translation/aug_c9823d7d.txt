@@ -1,0 +1,7 @@
+UUID: aug_c9823d7d
+Parent_UUID: 79a28903
+Augmentation_Type: cross_lingual_translation
+Similarity_Score: 0.7821
+Transcript: हेलो, नमस्ते हेल्पडेस्क, आईआईटी गांधीनगर केम्पसमां admissions अंगे सपोर्ट जोईतो था.
+Target_Label: admissions
+Spoken_Languages: ['English', 'Gujarati']

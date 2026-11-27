@@ -1,0 +1,7 @@
+UUID: aug_d4a8586d
+Parent_UUID: d9178793
+Augmentation_Type: cross_lingual_translation
+Similarity_Score: 0.6881
+Transcript: Hi. I'll help my student Portel logging me out every few minutes. Even after clearing the browser cache, I can check.
+Target_Label: it_support
+Spoken_Languages: ['English']

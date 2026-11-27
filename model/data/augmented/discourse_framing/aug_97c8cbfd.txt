@@ -1,0 +1,7 @@
+UUID: aug_97c8cbfd
+Parent_UUID: 11e9cdaa
+Augmentation_Type: discourse_framing
+Similarity_Score: 0.9633
+Transcript: Hi, I need official assistance with hello IITGN help desk. My laptop is unable to connect to the campus VPN after a recent operating system update. Please help troubleshoot
+Target_Label: it_support
+Spoken_Languages: ['English']

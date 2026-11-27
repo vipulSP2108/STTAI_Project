@@ -1,0 +1,1529 @@
+[
+  {
+    "number": 2,
+    "clip_id": "P21_73",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "हेलो आईटीजी एंड हेल्प डेस्ट",
+        "after": "Hello IIT GN Helpdesk",
+        "rule": "recognized_service_name_variant"
+      }
+    ],
+    "corrected_prefix": "कि Hello IIT GN Helpdesk मेरे कुछ बेड़ पर कद्दा मिला है वह बैड से बहुत बड़ा है मेरे को थोड़ी छोटा मिल जाएगा तो सही रहेगा एंड मेरी मेरे यहां "
+  },
+  {
+    "number": 3,
+    "clip_id": "P13_80",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT ગાંધી નાકે",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT GN વોઈસ હેલ્પ",
+        "after": "IIT GN Voice Helpdesk",
+        "rule": "recognized_voice_helpdesk_native_rendering"
+      }
+    ],
+    "corrected_prefix": "નમસ્કાર IIT GN Voice Helpdesk વાસ્યો માં કામ નથી કરી આયું અજંડ પ્લમિંગ છે कुप्या अर्जन्ट सपोर्ट आपो"
+  },
+  {
+    "number": 4,
+    "clip_id": "P16_111",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT Jain",
+        "after": "IIT GN",
+        "rule": "acronym_misrecognition"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT GN Help Desk",
+        "after": "IIT GN Helpdesk",
+        "rule": "helpdesk_spacing_or_misrecognition"
+      }
+    ],
+    "corrected_prefix": "Hello IIT GN Helpdesk, My lab computer has lost access to the shared dataset data set drive the research deadline is approaching whom should"
+  },
+  {
+    "number": 5,
+    "clip_id": "P16_110",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT Gandhinagar",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT Jain",
+        "after": "IIT GN",
+        "rule": "acronym_misrecognition"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT GN Help Desk",
+        "after": "IIT GN Helpdesk",
+        "rule": "helpdesk_spacing_or_misrecognition"
+      }
+    ],
+    "corrected_prefix": "Hello IIT GN Helpdesk. Can undergraduate students apply for summer research internships with IIT GN faculty."
+  },
+  {
+    "number": 7,
+    "clip_id": "P18_114",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "हेलो आईएटीजी एंड एलब्डस",
+        "after": "Hello IIT GN Helpdesk",
+        "rule": "recognized_service_name_variant"
+      }
+    ],
+    "corrected_prefix": "करूं Hello IIT GN Helpdesk मेरा कोर्ट सर्जिस्ट्रेशन हो गया है लेकिन ERP पोर्टल पर सब्जेक्ट शो नहीं हो रहा है प्लीज चेक करवा दो"
+  },
+  {
+    "number": 8,
+    "clip_id": "P7_29",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT Gandhinagar",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "iit kandinagar",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      }
+    ],
+    "corrected_prefix": "Hello sir, I needed some information about admission. admission in the IIT GN because my son has to take admission in the IIT GN so we are i"
+  },
+  {
+    "number": 9,
+    "clip_id": "P20_68",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "आयाटी गहनिरगर",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      }
+    ],
+    "corrected_prefix": "नमस्कार जी, हुँ मारा दिक्राना IIT GN मा એડમિશન આંગે માહીત पहली बार परिवार थी दूर होस्टर में रह वाना चाहिए ते તેની તબ્યત અને શુરક્ષા � हमारा "
+  },
+  {
+    "number": 10,
+    "clip_id": "P18_122",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "allow hydrogen help desk",
+        "after": "Hello IIT GN Helpdesk",
+        "rule": "recognized_service_name_variant"
+      }
+    ],
+    "corrected_prefix": "Hello IIT GN Helpdesk my attendance percentage परसेंटेज में डिस्क्रिप्रेंसी है फैकल्टी के पास जाऊं या एकाडमिक ऑफिस में कंप्लेंट रेस्ट"
+  },
+  {
+    "number": 11,
+    "clip_id": "P16_100",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "Hello, I at Aegean Help Desk",
+        "after": "Hello, IIT GN Helpdesk",
+        "rule": "recognized_service_name_variant"
+      }
+    ],
+    "corrected_prefix": "Hello, IIT GN Helpdesk. My hostel room has a water leakage problem near the study table can"
+  },
+  {
+    "number": 12,
+    "clip_id": "P8_32",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT गांधी नगर",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      }
+    ],
+    "corrected_prefix": "नमस्कार मुझे अपने बेटे के लिए आइड्मिशन आइडमिशन की सुविधा के बारे में उतना है क्या क्या इस साल admission लेने की तैयारी के लिए हो रही है या अ"
+  },
+  {
+    "number": 16,
+    "clip_id": "P19_133",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "Hello, I am Dijan Haldas",
+        "after": "Hello, IIT GN Helpdesk",
+        "rule": "recognized_service_name_variant"
+      }
+    ],
+    "corrected_prefix": "Hello, IIT GN Helpdesk. My hostel room has a leakage problem near the study table can someone expect it today?"
+  },
+  {
+    "number": 18,
+    "clip_id": "P19_138",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "हेलो आर्टी जैन हेल्प लेस्ट",
+        "after": "Hello IIT GN Helpdesk",
+        "rule": "recognized_service_name_variant"
+      }
+    ],
+    "corrected_prefix": "कि Hello IIT GN Helpdesk गिठाव स्टूडेंट डेवलपर पैक के लिए इंस्टूडेट वेरिफिकेशन रिजेक्ट हो गया है और ऑफिशियल स्टूडें� कहां मिलेगा"
+  },
+  {
+    "number": 19,
+    "clip_id": "P18_116",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT Jain",
+        "after": "IIT GN",
+        "rule": "acronym_misrecognition"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT GN Help Desk",
+        "after": "IIT GN Helpdesk",
+        "rule": "helpdesk_spacing_or_misrecognition"
+      }
+    ],
+    "corrected_prefix": "Hello, IIT GN Helpdesk. I missed my end semester exam due to an मेडिकल एमरजेंसी सप्लीमेंट्री एग्जाम के लिए एप्लीके� क्वेश्चन कैसे करूं हुआ ह"
+  },
+  {
+    "number": 20,
+    "clip_id": "P18_115",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT Jain",
+        "after": "IIT GN",
+        "rule": "acronym_misrecognition"
+      }
+    ],
+    "corrected_prefix": "Hello IIT GN Helpdesk Professor has extended the deadline for this करी छे, पैन मूडल पर ओल डेटलाइन जे दिखाया चे सू करया है"
+  },
+  {
+    "number": 21,
+    "clip_id": "P19_129",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "हेलो आईडीजन हेल्पलेस",
+        "after": "Hello IIT GN Helpdesk",
+        "rule": "recognized_service_name_variant"
+      }
+    ],
+    "corrected_prefix": "हुआ है Hello IIT GN Helpdesk मिड सेमेस्टर एग्जाम का टाइम टेबल रिलीज हो गया है क्या मोडल पर अभी तक अपडेट नहीं दिखा रहा कृपया म�"
+  },
+  {
+    "number": 22,
+    "clip_id": "P20_60",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "આયટી ગા�",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      }
+    ],
+    "corrected_prefix": "નમસ્તે હો મારી દીકરીના IIT GN એડમિશન માટે મહિરી મેળી રહવે છું हमें बिजी सेहर में रहिए हैं। तेरी होस्टली व्यास्था अमर माटे खुबज महत्वनी છે જો"
+  },
+  {
+    "number": 23,
+    "clip_id": "P4_11",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT गांधी नगर",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      }
+    ],
+    "corrected_prefix": "कि हेलो सर जी नमस्ते मैं महराश्टर की जलगाव जिले से बोल रहा हूँ मेरा graduation complete है, मुझे आपके IIT GN में मुझे post graduation ग्राजु"
+  },
+  {
+    "number": 24,
+    "clip_id": "P11_55",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT Gandhinagar",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT GN voice help desk",
+        "after": "IIT GN Voice Helpdesk",
+        "rule": "voice_helpdesk_spacing"
+      }
+    ],
+    "corrected_prefix": "Namaskar IIT GN Voice Helpdesk I would like to clarify a question regarding the scholarship application and the semester fee process. regard"
+  },
+  {
+    "number": 25,
+    "clip_id": "P13_76",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT गांधी नगर",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT GN वॉइस हेल्प डिस्क",
+        "after": "IIT GN Voice Helpdesk",
+        "rule": "recognized_voice_helpdesk_native_rendering"
+      }
+    ],
+    "corrected_prefix": "बजट सपोर्ट आपो नमस्कार IIT GN Voice Helpdesk admissions portal पर offer letter accept कर यू हतू परण confirmation email आवियो न थी कुप्या अर्"
+  },
+  {
+    "number": 26,
+    "clip_id": "P7_28",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT Gandhinagar",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      }
+    ],
+    "corrected_prefix": "Hello Sir, I want to ask about the hostel facility for my son he is preparing to take admission in the engineering this year and if he gets "
+  },
+  {
+    "number": 29,
+    "clip_id": "P14_96",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "हेलो आईटीजन हेल्पडेस्क",
+        "after": "Hello IIT GN Helpdesk",
+        "rule": "recognized_service_name_variant"
+      }
+    ],
+    "corrected_prefix": "Hello IIT GN Helpdesk मेडिकल हेल्थ इंशोरेंस कैशलेस कार्ड इश्यू नहीं था तो क्लीम्स डिस्पेंसरी में सबमेट करवाना चाहिए अर्डियन सपोर्ट आप"
+  },
+  {
+    "number": 30,
+    "clip_id": "P10_51",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT Gandhianaga",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT GN voice over desk",
+        "after": "IIT GN Voice Helpdesk",
+        "rule": "recognized_voice_helpdesk_variant"
+      }
+    ],
+    "corrected_prefix": "Namaskar IIT GN Voice Helpdesk I have a query regarding the hostel and most timings and the delivery recently i know just that dinner servic"
+  },
+  {
+    "number": 31,
+    "clip_id": "P20_63",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "आयोटी घंधी नगर",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      }
+    ],
+    "corrected_prefix": "નમશકાર માયારે સંસ્થાના ઓસ્ટેલ मारा दिक्री ने IIT GN में एंडमिशन मड़े ते सुरक्षित अनेसित बद्ध वातारण में रहे ते हमारी चाहिए तू होशल में आवा ज"
+  },
+  {
+    "number": 32,
+    "clip_id": "P18_126",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "हेलो आईएटीजन हेल्पडस",
+        "after": "Hello IIT GN Helpdesk",
+        "rule": "recognized_service_name_variant"
+      }
+    ],
+    "corrected_prefix": "हुआ है Hello IIT GN Helpdesk मिस्मा फूड क्वालिटी लास्ट week the poor chair formal feedback at our of getting a complaint submitted is the sa"
+  },
+  {
+    "number": 35,
+    "clip_id": "P14_94",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "हेलो आईटीजी एंड हेल्पडिस्क",
+        "after": "Hello IIT GN Helpdesk",
+        "rule": "recognized_service_name_variant"
+      }
+    ],
+    "corrected_prefix": "सपोर्ट कीजिए Hello IIT GN Helpdesk जी एडवांस रैंक 3500 पर electrical engineering department my admission malaysia kc prepare support us."
+  },
+  {
+    "number": 36,
+    "clip_id": "P19_136",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "ITGN",
+        "after": "IIT GN",
+        "rule": "acronym_misrecognition"
+      }
+    ],
+    "corrected_prefix": "Hello IIT GN Helpdesk, My institute email inbox is full and important faculty emails are bouncing बाउंसिंग बैक स्टोरेज कैसे क्लियर करो"
+  },
+  {
+    "number": 37,
+    "clip_id": "P14_88",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "हेलो आईटीजी एंड हेल्प बेस्क",
+        "after": "Hello IIT GN Helpdesk",
+        "rule": "recognized_service_name_variant"
+      }
+    ],
+    "corrected_prefix": "कि Hello IIT GN Helpdesk एम टेक कंप्यूटर साइंस एलेजिबिलिटी क्रिटेरिया शूझ है कि नोन गेट कैंडिडिट्स अपलाई"
+  },
+  {
+    "number": 39,
+    "clip_id": "P18_120",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT Jain",
+        "after": "IIT GN",
+        "rule": "acronym_misrecognition"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT GN helpdesk",
+        "after": "IIT GN Helpdesk",
+        "rule": "helpdesk_spacing_or_misrecognition"
+      }
+    ],
+    "corrected_prefix": "Hello IIT GN Helpdesk can I audit an additional elective elective without it affecting my semester grade point"
+  },
+  {
+    "number": 40,
+    "clip_id": "P19_134",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "ITGN",
+        "after": "IIT GN",
+        "rule": "acronym_misrecognition"
+      }
+    ],
+    "corrected_prefix": "Hello IIT GN Helpdesk. My parents will stay on campus for two nights. गेस्ट एकॉमेडेशन की अवेलेबिलिटी और चार्जिस कहां चेक कर"
+  },
+  {
+    "number": 41,
+    "clip_id": "P11_53",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT Gandhinagar",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT GN voice helpdesk",
+        "after": "IIT GN Voice Helpdesk",
+        "rule": "voice_helpdesk_spacing"
+      }
+    ],
+    "corrected_prefix": "Namaskar IIT GN Voice Helpdesk I am facing a serious internet connectivity issue on my laptop the campus Wi-Fi connects successfully but web"
+  },
+  {
+    "number": 42,
+    "clip_id": "P22_88",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT Gandhinagar",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      }
+    ],
+    "corrected_prefix": "Hello! Namaste! I am speaking from Jaipur. My daughter is joining the B.Tech first year this upcoming July. I received the welcome email reg"
+  },
+  {
+    "number": 43,
+    "clip_id": "P14_90",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "हेलो आईटीजी एंड हेल्प डिस्क",
+        "after": "Hello IIT GN Helpdesk",
+        "rule": "recognized_service_name_variant"
+      }
+    ],
+    "corrected_prefix": "आपको Hello IIT GN Helpdesk इसी में से वाटर लीक हो रहा है पेसले दो तीन दिनों से एलेक्ट्रिशियन को अरेंज करवाने में कितने दिन लगेंगे सपोर्ट आपक"
+  },
+  {
+    "number": 45,
+    "clip_id": "P13_85",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "iit kandinaga",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT GN voice help desk",
+        "after": "IIT GN Voice Helpdesk",
+        "rule": "voice_helpdesk_spacing"
+      }
+    ],
+    "corrected_prefix": "urgent support avu namaskar IIT GN Voice Helpdesk guest house dining room booking confirmation mail nothi aavyo for parents visiting next sa"
+  },
+  {
+    "number": 46,
+    "clip_id": "P18_128",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT Jain",
+        "after": "IIT GN",
+        "rule": "acronym_misrecognition"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT GN helpdesk",
+        "after": "IIT GN Helpdesk",
+        "rule": "helpdesk_spacing_or_misrecognition"
+      }
+    ],
+    "corrected_prefix": "Hello, IIT GN Helpdesk. My parents will stay on campus for ટો નાય્ટ ગેસ્ટ અકોમાડ� આવેરેબિલ્ટી અને ચાર્જસ ક્યા ચેક કરી સાખીયે Thank Thank you"
+  },
+  {
+    "number": 47,
+    "clip_id": "P14_93",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "ITGN",
+        "after": "IIT GN",
+        "rule": "acronym_misrecognition"
+      }
+    ],
+    "corrected_prefix": "Hello IIT GN Helpdesk. My visiting student who हूँ but मेरी fee का refundable amount अभी तक refund नहीं किया गया है और कितने दिन लगेंगे plea"
+  },
+  {
+    "number": 48,
+    "clip_id": "P11_54",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT Gandhinagar",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT GN voice help desk",
+        "after": "IIT GN Voice Helpdesk",
+        "rule": "voice_helpdesk_spacing"
+      }
+    ],
+    "corrected_prefix": "Namaskar IIT GN Voice Helpdesk I am calling to ask you about my status of my admission application i submitted online application form of yo"
+  },
+  {
+    "number": 49,
+    "clip_id": "P5_16",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "आईएटी गांधिनगर",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      }
+    ],
+    "corrected_prefix": "हेलो नवस्ते सर मैं जागुरुती पाटिल बात कर रही हूं मुझे IIT GN में आर्काइव डिपार्टमेंट में एडमिशन लेना है और तो कुरुपया मुझे यह बताएं कि वहां "
+  },
+  {
+    "number": 51,
+    "clip_id": "P18_113",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "हेलो आईएटीजी एंड हेल्पडेस्ट",
+        "after": "Hello IIT GN Helpdesk",
+        "rule": "recognized_service_name_variant"
+      }
+    ],
+    "corrected_prefix": "Hello IIT GN Helpdesk मिट सेमिस्टर एग्जाम का टाइम टेबर रिलीज हो गया है क्या मूडल पर अभी तक अपडेट नहीं दिखा � जा रहा है कृपया मदद करें"
+  },
+  {
+    "number": 52,
+    "clip_id": "P7_25",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT Gandhinagar",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      }
+    ],
+    "corrected_prefix": "Hello sir, I need information about the documents to be submitted at at the time of admission in IIT GN. going to take the entrance exam thi"
+  },
+  {
+    "number": 53,
+    "clip_id": "P19_137",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "ITGN",
+        "after": "IIT GN",
+        "rule": "acronym_misrecognition"
+      }
+    ],
+    "corrected_prefix": "Hello IIT GN Helpdesk. My student portal keeps logging me out. every few minutes even after clearing the browser cache can ID investigate"
+  },
+  {
+    "number": 56,
+    "clip_id": "P7_23",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT Gandhinagar",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      }
+    ],
+    "corrected_prefix": "Namaskar, IIT GN, U.S Health desk. I need assistance with my student identity card because it has stopped working at a few access points on "
+  },
+  {
+    "number": 58,
+    "clip_id": "P8_35",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "आयाटी गांधी नगर",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      }
+    ],
+    "corrected_prefix": "नमस्ते मुझे अपने IIT GN में एडमिशन के समय जमा किये जाने वाले दस्तावेजों की जानकारी चाहिए. मेरी बेटी इस वर्ष प्रवेश कर प्रवेश परिशा देने वाली"
+  },
+  {
+    "number": 59,
+    "clip_id": "P8_36",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "आयाटी गांधी नगर",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      }
+    ],
+    "corrected_prefix": "नमस्ते, मैं अपने बेटे की पढ़ाई के लिए रुत्ति और अर्थिक सायेता के के विकल्पों के बारे में जान लेना चाहता हूँ वह IIT GN में एडमिशन लेने की तैय"
+  },
+  {
+    "number": 60,
+    "clip_id": "P19_135",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "हेलो आर्डिजिन हेल्पडस",
+        "after": "Hello IIT GN Helpdesk",
+        "rule": "recognized_service_name_variant"
+      }
+    ],
+    "corrected_prefix": "करें Hello IIT GN Helpdesk इस तेर अ सेपरेट पैसेलिटी for storing luggage during semester."
+  },
+  {
+    "number": 61,
+    "clip_id": "P13_72",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT गांधी नगर",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT GN वॉइस हेल्प डिस्क",
+        "after": "IIT GN Voice Helpdesk",
+        "rule": "recognized_voice_helpdesk_native_rendering"
+      }
+    ],
+    "corrected_prefix": "सपोर्ट आपको नमस्कार IIT GN Voice Helpdesk क्या इंस्टिट्यूट पीएच डिएग्नेशन ओफर करता है for B.Tech graduates with high CPI could be an urgent "
+  },
+  {
+    "number": 65,
+    "clip_id": "P18_117",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "હેલો આયેટી જેન હેલ્પ ડેસ્",
+        "after": "Hello IIT GN Helpdesk",
+        "rule": "recognized_service_name_variant"
+      }
+    ],
+    "corrected_prefix": "Hello IIT GN Helpdesk મેરા show career JRA may exam आपयो हातो"
+  },
+  {
+    "number": 68,
+    "clip_id": "P21_81",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "हेलो आईटी जी एंड हेल्पेस",
+        "after": "Hello IIT GN Helpdesk",
+        "rule": "recognized_service_name_variant"
+      }
+    ],
+    "corrected_prefix": "Hello IIT GN Helpdesk में देखो रूम अलॉट में में स्टोर रूम अलॉट हो चुका है एंड यह आई यह लास्टर भी ऐसा हुआ था तो क्या आप इस पर चेक कर सकते हो "
+  },
+  {
+    "number": 70,
+    "clip_id": "P21_78",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "हेलो आईटी जैन हेल्प दिस्ट",
+        "after": "Hello IIT GN Helpdesk",
+        "rule": "recognized_service_name_variant"
+      }
+    ],
+    "corrected_prefix": "Hello IIT GN Helpdesk क्या में मैंने असाइवेंट कर रखा है तो इस प्लेगरिजम चेक करना था मैंने लाइबरी को मेल किया है � उनका एक दो दिन से कोई रिस्"
+  },
+  {
+    "number": 71,
+    "clip_id": "P10_52",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT Gandhinagar",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT GN voice, help desk",
+        "after": "IIT GN Voice Helpdesk",
+        "rule": "voice_helpdesk_spacing"
+      }
+    ],
+    "corrected_prefix": "Ram Ram, IIT GN Voice Helpdesk. I am calling to report a lost item on campus I think I misplaced my black backpack somewhere between the aca"
+  },
+  {
+    "number": 72,
+    "clip_id": "P13_82",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "आया तिगांति नगर वॉइस हेल्प डिस्क",
+        "after": "IIT GN Voice Helpdesk",
+        "rule": "recognized_service_name_variant"
+      }
+    ],
+    "corrected_prefix": "सपोर्ट आप हो नमस्कार IIT GN Voice Helpdesk एक्जाम वीक मां नाइ� canteen टाइमिंग्स एक्सटेंड थर्से के यूज़ुअल 12 बजे तक कुप्या अर्जेंट सपोर्ट आ"
+  },
+  {
+    "number": 73,
+    "clip_id": "P14_91",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "ITG and",
+        "after": "IIT GN",
+        "rule": "acronym_misrecognition"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT GN Voice Help Desk",
+        "after": "IIT GN Voice Helpdesk",
+        "rule": "voice_helpdesk_spacing"
+      }
+    ],
+    "corrected_prefix": "Hello IIT GN Voice Helpdesk Mass Rebate Forms Submit कर यू हाजव अपन मंस्ली बिल मां डिडक्शन रिफ्लेक्ट नहीं था तो कृपया जिन सपोर्ट आपको"
+  },
+  {
+    "number": 76,
+    "clip_id": "P2_11",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "itg and",
+        "after": "IIT GN",
+        "rule": "acronym_misrecognition"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "itgn",
+        "after": "IIT GN",
+        "rule": "acronym_misrecognition"
+      }
+    ],
+    "corrected_prefix": "um uh i i hello id support so i wanted to contact with the the cds office here because currently i am out of the campus and i'm am able to a"
+  },
+  {
+    "number": 77,
+    "clip_id": "P18_123",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT Jain",
+        "after": "IIT GN",
+        "rule": "acronym_misrecognition"
+      }
+    ],
+    "corrected_prefix": "Hello IIT GN Helpdesk, Research Project Maths Thesis સબમિશન ફોમાટ આને લે�"
+  },
+  {
+    "number": 78,
+    "clip_id": "P14_97",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "ITGN",
+        "after": "IIT GN",
+        "rule": "acronym_misrecognition"
+      }
+    ],
+    "corrected_prefix": "Hello IIT GN Helpdesk, Addie Roome Institute, Wifi Connect, Many Thoughts तो इंकरेक्ट पासवर्ड एरर शो करें छह लैपटॉप में कृपय urgent support"
+  },
+  {
+    "number": 80,
+    "clip_id": "P7_24",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "iit Gandhinagar",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      }
+    ],
+    "corrected_prefix": "Hello Sir, I want to ask something about my son's and food arrangements if he gets admission in the IIT GN he will study away from home for "
+  },
+  {
+    "number": 81,
+    "clip_id": "P4_10",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT गांधी नगर",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      }
+    ],
+    "corrected_prefix": "नमस्कार सर मैं नितिन पोपट પાટીલ દુલ્યા એને કે મા के दुलिया जिले से बोल रहा हूँ मुझे आपके IIT GN में admission चाहिए था इसके लिए मुझे आपको रु"
+  },
+  {
+    "number": 82,
+    "clip_id": "P14_98",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IT gen",
+        "after": "IIT GN",
+        "rule": "acronym_misrecognition"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT GN helpdesk",
+        "after": "IIT GN Helpdesk",
+        "rule": "helpdesk_spacing_or_misrecognition"
+      }
+    ],
+    "corrected_prefix": "hello IIT GN Helpdesk Institute open house session सेशन कब ऑर्गेंज होगा फॉर नियुली एडमिटेड स्टू� students and parents. Please वर्जन सपोर्ट आ"
+  },
+  {
+    "number": 83,
+    "clip_id": "P21_71",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "hello atg and health test",
+        "after": "Hello IIT GN Helpdesk",
+        "rule": "recognized_service_name_variant"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT Jain",
+        "after": "IIT GN",
+        "rule": "acronym_misrecognition"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT GN Health Desk",
+        "after": "IIT GN Helpdesk",
+        "rule": "helpdesk_spacing_or_misrecognition"
+      }
+    ],
+    "corrected_prefix": "Hello IIT GN Helpdesk I would like to change my room partner and we both to change in the root partner Hello IIT GN Helpdesk मेरा टेबल टूट ग"
+  },
+  {
+    "number": 85,
+    "clip_id": "P13_67",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT गांधी नगर",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT GN वाइस हेल्प डेस्क",
+        "after": "IIT GN Voice Helpdesk",
+        "rule": "recognized_voice_helpdesk_native_rendering"
+      }
+    ],
+    "corrected_prefix": "प्या अर्जेंट सपोर्ट आपो नमस्कार IIT GN Voice Helpdesk पीएचडी एड्मिशन्स इंटरव्यू कॉल लेटर कब � रिलीज होगा, वेबसाइट पर अपडेट नहीं हुआ है, कुपि"
+  },
+  {
+    "number": 87,
+    "clip_id": "P18_121",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "hello iot general best",
+        "after": "Hello IIT GN Helpdesk",
+        "rule": "recognized_service_name_variant"
+      }
+    ],
+    "corrected_prefix": "average Hello IIT GN Helpdesk summer semester my backlog course offer थस से एक नेक्स्ट एकडमिक यार सुधी वेट और हुआ हुआ हुआ हु�"
+  },
+  {
+    "number": 88,
+    "clip_id": "P4_13",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "आयाटी गांधी नगर",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      }
+    ],
+    "corrected_prefix": "कि नमस्कार सर मैं नंदुबार जिले से खुणनमुरी गाउ के सुनिल पाटिल बोल रहा हूं मुझे मुझे मेरा लड़का है IIT GN में तो इस साल अमारी तरफ दुशका की सम"
+  },
+  {
+    "number": 89,
+    "clip_id": "P16_104",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT Jain",
+        "after": "IIT GN",
+        "rule": "acronym_misrecognition"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT GN helpdesk",
+        "after": "IIT GN Helpdesk",
+        "rule": "helpdesk_spacing_or_misrecognition"
+      }
+    ],
+    "corrected_prefix": "hello IIT GN Helpdesk my scholarship application shows document verification pending for three weeks. Whom should I contact for an update?"
+  },
+  {
+    "number": 91,
+    "clip_id": "P14_92",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "हेलो आईटी जिन हेल्प डेस्क",
+        "after": "Hello IIT GN Helpdesk",
+        "rule": "recognized_service_name_variant"
+      }
+    ],
+    "corrected_prefix": "Hello IIT GN Helpdesk लॉंडरी सर्विस क्लोस रिटर्न न थी कर रहा for फॉर डेस थी टोकन नंबर 92 छह कृपया अरजन सपोर्ट आपको"
+  },
+  {
+    "number": 92,
+    "clip_id": "P19_131",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IRTGN",
+        "after": "IIT GN",
+        "rule": "acronym_misrecognition"
+      }
+    ],
+    "corrected_prefix": "Hello IIT GN Helpdesk, I missed my in-semester exam due ड्यू टू मेडिकल एमेजेंसी सब्लीमेंटरी एग्जाम के लिए � अपने अपने अपने अपने अपने अपने अप"
+  },
+  {
+    "number": 93,
+    "clip_id": "P13_68",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT गांधी नगर",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT GN वॉइस हेल्प डिस्क",
+        "after": "IIT GN Voice Helpdesk",
+        "rule": "recognized_voice_helpdesk_native_rendering"
+      }
+    ],
+    "corrected_prefix": "नमस्कार IIT GN Voice Helpdesk BTECH Seat એક્સેપ્ટન્સ ફી પેમે શકો છો ખુપ્યા આજ� support"
+  },
+  {
+    "number": 94,
+    "clip_id": "P18_125",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IATG and",
+        "after": "IIT GN",
+        "rule": "acronym_misrecognition"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT GN help desk",
+        "after": "IIT GN Helpdesk",
+        "rule": "helpdesk_spacing_or_misrecognition"
+      }
+    ],
+    "corrected_prefix": "Hello IIT GN Helpdesk, my hostel room has a water leakage leakage problem near this study table can someone inspect it today"
+  },
+  {
+    "number": 95,
+    "clip_id": "P13_73",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT गांधी नगर",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT GN वॉइस हेल्प डिस्क",
+        "after": "IIT GN Voice Helpdesk",
+        "rule": "recognized_voice_helpdesk_native_rendering"
+      }
+    ],
+    "corrected_prefix": "नमस्कार IIT GN Voice Helpdesk MSC Chemistry प्रोग्राम का सिलेबस और फी स्ट्रक्चर डिटेल्स कहां से डाउनलोड कर स कर सकते हैं क्योंकि आज"
+  },
+  {
+    "number": 99,
+    "clip_id": "P21_80",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "हेलो ITGN HealthDisk",
+        "after": "Hello IIT GN Helpdesk",
+        "rule": "recognized_service_name_variant"
+      }
+    ],
+    "corrected_prefix": "Hello IIT GN Helpdesk मेरे को देखने में आया है कि मेरी दोस्त उसके साथ कुछ लोग हरेस्मेंट कर रहे हैं तो मेरे को इसके रिगारिंग कंप्लेंट करनी थी"
+  },
+  {
+    "number": 100,
+    "clip_id": "P19_132",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IDGN",
+        "after": "IIT GN",
+        "rule": "acronym_misrecognition"
+      }
+    ],
+    "corrected_prefix": "Hello IIT GN Helpdesk, My attendance percentage means में डिस्फेरेंसी है फैकल्टी के पास जाऊं या एकैडमिक ऑफिस में कंप्लेंट रेस करो"
+  },
+  {
+    "number": 101,
+    "clip_id": "P13_84",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT Gandhinagar",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT GN Voice Desk",
+        "after": "IIT GN Voice Helpdesk",
+        "rule": "recognized_voice_helpdesk_variant"
+      }
+    ],
+    "corrected_prefix": "Namaskar, IIT GN Voice Helpdesk. West dining hall main chain food ફૂર્ડ અને વેજીટાય� and options separate serve thai che."
+  },
+  {
+    "number": 102,
+    "clip_id": "P22_96",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT Jain",
+        "after": "IIT GN",
+        "rule": "acronym_misrecognition"
+      }
+    ],
+    "corrected_prefix": "Hello, I am a parent of a first-year student. My son lost his mobile phone yesterday somewhere in the academic block. The phone has all his "
+  },
+  {
+    "number": 103,
+    "clip_id": "P20_59",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT ઘાની નગર",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      }
+    ],
+    "corrected_prefix": "कि नमस्कार मारा मारा दिखरान एनिमेशन विषय थोड़ी मायति जोईती थी तेहाल હાલમાં દુરણ બારમાં પ્યાસ કરે છે અને આગળ એંજ આમેં IIT GN વિ� સે માહિતિ મે"
+  },
+  {
+    "number": 105,
+    "clip_id": "P8_34",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "आयाटी अन्नी नगर",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      }
+    ],
+    "corrected_prefix": "हेलो मैं अपनी बेटी के लिए IIT GN में admission की जानकारी लेना चाहता हूं वह इंजीनेरिंग में पढ़ाई करना चाहती है और हम चाहते हैं कि उसकी पढ़ाई"
+  },
+  {
+    "number": 107,
+    "clip_id": "P19_130",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "हेलो आईएडीजी इन हिल्देस",
+        "after": "Hello IIT GN Helpdesk",
+        "rule": "recognized_service_name_variant"
+      }
+    ],
+    "corrected_prefix": "करूं Hello IIT GN Helpdesk मेरा कोर्स रजिस्ट्रेशन हो गया है लेकिन ERP portal पर subject शो नहीं हो रहा है प्लीज चेक करो"
+  },
+  {
+    "number": 109,
+    "clip_id": "P13_71",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT ગાંતી નાગા",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT GN વોય્સ હેલ્પ ડેસ્ક",
+        "after": "IIT GN Voice Helpdesk",
+        "rule": "recognized_voice_helpdesk_native_rendering"
+      }
+    ],
+    "corrected_prefix": "સપોટ આપો નમસ્કાર IIT GN Voice Helpdesk એડમિશન્સ ઓફેસનું ડિરેક્ટ કોણ્ कुप्या अर्जन्ट"
+  },
+  {
+    "number": 110,
+    "clip_id": "P16_108",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT Jain",
+        "after": "IIT GN",
+        "rule": "acronym_misrecognition"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT GN Help Desk",
+        "after": "IIT GN Helpdesk",
+        "rule": "helpdesk_spacing_or_misrecognition"
+      }
+    ],
+    "corrected_prefix": "Hello IIT GN Helpdesk, I need access to a general article that is behind a publisher paywall. Does the institute library provide remote acce"
+  },
+  {
+    "number": 111,
+    "clip_id": "P8_33",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT गंधी नगर",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT गंधी नगर",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      }
+    ],
+    "corrected_prefix": "नमस्कार मैं अपने बेटे के सम्बावित अड्मिशन अड्मिशन और पड़ाई की फुल खर्चे के बारे में जान लेना चाहता हूं हम एक मज्यम परिवार से है इसलिए मेरे ब"
+  },
+  {
+    "number": 112,
+    "clip_id": "P8_39",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "आयाटी गांधी नगर",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "आयाटी गांधी नगर",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      }
+    ],
+    "corrected_prefix": "नमस्ते मुझे वोष्टेल के नेमे के बारे में निर्मों के बारे में जानकारी चाहिए क्योंकि मेरा बेटा अपने IIT GN में admission के बाद घर से दूर जा रह"
+  },
+  {
+    "number": 113,
+    "clip_id": "P21_85",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "हेलो आईटी जैनल हेल्पडेस्ट",
+        "after": "Hello IIT GN Helpdesk",
+        "rule": "recognized_service_name_variant"
+      }
+    ],
+    "corrected_prefix": "Hello IIT GN Helpdesk मैंने लांडरी के रिगारिंग कंप्लेंट डाली थी मेरे दो तीन कपड़े गया हो गया हो गया हो गया है तुमको मिलने रहते मैंने काफी बा"
+  },
+  {
+    "number": 115,
+    "clip_id": "P16_109",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT Jain",
+        "after": "IIT GN",
+        "rule": "acronym_misrecognition"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT GN Help Desk",
+        "after": "IIT GN Helpdesk",
+        "rule": "helpdesk_spacing_or_misrecognition"
+      }
+    ],
+    "corrected_prefix": "Hello IIT GN Helpdesk, my laboratory access card stopped working even though my project registration is active. Can access permissions be ch"
+  },
+  {
+    "number": 117,
+    "clip_id": "P16_105",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT Jain",
+        "after": "IIT GN",
+        "rule": "acronym_misrecognition"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT GN help desk",
+        "after": "IIT GN Helpdesk",
+        "rule": "helpdesk_spacing_or_misrecognition"
+      }
+    ],
+    "corrected_prefix": "hello IIT GN Helpdesk internship company is asking for a bonafide letter and NOC are both documents available through the student"
+  },
+  {
+    "number": 118,
+    "clip_id": "P16_112",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT Jain",
+        "after": "IIT GN",
+        "rule": "acronym_misrecognition"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT GN Help Desk",
+        "after": "IIT GN Helpdesk",
+        "rule": "helpdesk_spacing_or_misrecognition"
+      }
+    ],
+    "corrected_prefix": "Hello IIT GN Helpdesk. I left my backpack in the campus shuttle yesterday evening. Is there a lost and found disk I can contact?"
+  },
+  {
+    "number": 119,
+    "clip_id": "P7_27",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT Gandhinagar",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      }
+    ],
+    "corrected_prefix": "Hello sir, I would like to know about the scholarship and financial aid options for my son's education. He's preparing to take admission in "
+  },
+  {
+    "number": 120,
+    "clip_id": "P16_99",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT Jain",
+        "after": "IIT GN",
+        "rule": "acronym_misrecognition"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT GN Help Desk",
+        "after": "IIT GN Helpdesk",
+        "rule": "helpdesk_spacing_or_misrecognition"
+      }
+    ],
+    "corrected_prefix": "Hello, IIT GN Helpdesk. Can I audit an additional elective without it affecting my semester grade point average"
+  },
+  {
+    "number": 121,
+    "clip_id": "P22_97",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "iit gandhinagar",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      }
+    ],
+    "corrected_prefix": "Namaste I am calling from Mumbai. My son is a second year student at IIT GN staying in i-1 hostel he has been calling me for the past two da"
+  },
+  {
+    "number": 122,
+    "clip_id": "P21_83",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "हेलो आईएटीजी एंड हेल्प डेस्क",
+        "after": "Hello IIT GN Helpdesk",
+        "rule": "recognized_service_name_variant"
+      }
+    ],
+    "corrected_prefix": "Hello IIT GN Helpdesk यहां पर साफ आ रखा है हमने उसको बहुत ही केंद्र डाल रखा है आप जल्दी से किसी को बेच सकते हो तो बेच सकते हो"
+  },
+  {
+    "number": 123,
+    "clip_id": "P13_70",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT गंधिनागर",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT GN वॉइस हेल्प डेस्क",
+        "after": "IIT GN Voice Helpdesk",
+        "rule": "recognized_voice_helpdesk_native_rendering"
+      }
+    ],
+    "corrected_prefix": "और सपोर्ट आपो नमस्कार IIT GN Voice Helpdesk JEE एडवांस रैंक 35 सो पर इलेक्टिकल एंजिनियरिंग डिपार्टमेंट मा एडमिशन Malaysia catch a cupia urge"
+  },
+  {
+    "number": 124,
+    "clip_id": "P19_139",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "हेलो आयोटिजियन हेल्प डेस",
+        "after": "Hello IIT GN Helpdesk",
+        "rule": "recognized_service_name_variant"
+      }
+    ],
+    "corrected_prefix": "Hello IIT GN Helpdesk ओनलाइन फी पेमेंट करते वक्त ब्राउजर क्रेश क्रेश हो गया और पोर्टल ट्रांजेक्शन पेंडिंग दिखा रहा है पेमेंट दो करना सेफ है"
+  },
+  {
+    "number": 125,
+    "clip_id": "P8_40",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "आईएटी गांधी नगर",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      }
+    ],
+    "corrected_prefix": "नमस्कार मैं अपने बेटे के admission की अगली प्रक्रिया के बारे में जान लेना चाहता हूं उसे IIT GN में प्रवेश मिलने की उम्मीद है और हम जानना चाह"
+  },
+  {
+    "number": 128,
+    "clip_id": "P21_84",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "हेलो आईएटीजन हेल्प देस्ट",
+        "after": "Hello IIT GN Helpdesk",
+        "rule": "recognized_service_name_variant"
+      }
+    ],
+    "corrected_prefix": "Hello IIT GN Helpdesk मेरे रूम मेरे रूम का रूम की गुंडी तूड़ गई तूड़ गई उसका स्क्रू बाहर आ गया है तो वह स्कूल स्कूल लगाने का था एंड कबड़ कबड"
+  },
+  {
+    "number": 131,
+    "clip_id": "P16_106",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "hello iot gene help desk",
+        "after": "Hello IIT GN Helpdesk",
+        "rule": "recognized_service_name_variant"
+      }
+    ],
+    "corrected_prefix": "portal Hello IIT GN Helpdesk i need an official medium of instruction certificate for my master's application abroad. How can I request one?"
+  },
+  {
+    "number": 132,
+    "clip_id": "P5_17",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "आईएटी गांधी नगर",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      }
+    ],
+    "corrected_prefix": "सर मुझे एक ऐसा बात पूछनी थी कि मेरे आपके कॉलेज से मतलब IIT GN में से मेरा बीटेक हो चुका है मैंने ड्यूअल डिग्री करिए सीएस और एयाई तो मुझे अब "
+  },
+  {
+    "number": 134,
+    "clip_id": "P18_119",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT Jain",
+        "after": "IIT GN",
+        "rule": "acronym_misrecognition"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT GN helpdesk",
+        "after": "IIT GN Helpdesk",
+        "rule": "helpdesk_spacing_or_misrecognition"
+      }
+    ],
+    "corrected_prefix": "Hello IIT GN Helpdesk, can I audit an additional elective course without it affecting my semester grade point average"
+  },
+  {
+    "number": 135,
+    "clip_id": "P14_95",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "it gn",
+        "after": "IIT GN",
+        "rule": "acronym_misrecognition"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT GN help desk",
+        "after": "IIT GN Helpdesk",
+        "rule": "helpdesk_spacing_or_misrecognition"
+      }
+    ],
+    "corrected_prefix": "pro hello IIT GN Helpdesk obc ncl certificate validity वैलिडिटी डेट कट ऑफ डेट पांची नहीं चलेगी यह रिन्य� करवाना करवाना पड़ेगा प्रेपे अर्जिन "
+  },
+  {
+    "number": 136,
+    "clip_id": "P20_62",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "आईटी गंजी नगर",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      }
+    ],
+    "corrected_prefix": "कि नमस्ते जी मारा दिखरों जो IIT GN में एंडमिशन मिले तो देना કેવી સ્વિધાઓ  મળશે તે જાણવું જાણવું છે તે પહ� पहली बार घरती દુર રહીરે આબ્યાસ કરશ"
+  },
+  {
+    "number": 137,
+    "clip_id": "P13_69",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT गंधी नगर",
+        "after": "IIT GN",
+        "rule": "institution_name_variant"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT GN voice help desk",
+        "after": "IIT GN Voice Helpdesk",
+        "rule": "voice_helpdesk_spacing"
+      }
+    ],
+    "corrected_prefix": "आपको नमस्कार IIT GN Voice Helpdesk document verification माते माते फिजिकल रिपोर्टिंग मैंडेटरी छे कि ऑनलाइन अप"
+  },
+  {
+    "number": 138,
+    "clip_id": "P21_75",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "हेलो आईएटीजी एन हेल्प इस",
+        "after": "Hello IIT GN Helpdesk",
+        "rule": "recognized_service_name_variant"
+      }
+    ],
+    "corrected_prefix": "कि लंबर Hello IIT GN Helpdesk मेरे को पूछना था कि अभी बात्रुम में पानी नहीं आ रहा था बहुत टाइम से तो कब हो जाएगा एंड कितना टाइम देगा अब एक ब"
+  },
+  {
+    "number": 139,
+    "clip_id": "P21_76",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "हेलो आईटी जी एंड हेल्प देस्प",
+        "after": "Hello IIT GN Helpdesk",
+        "rule": "recognized_service_name_variant"
+      }
+    ],
+    "corrected_prefix": "Hello IIT GN Helpdesk मेरे को लॉनरी सिस्टम के बारे में जानने का था लाइक � Thank वह कब आएगा मैंने दो थी एक दो हफ़ते से आ नहीं रहा पता नहीं को"
+  },
+  {
+    "number": 141,
+    "clip_id": "P16_103",
+    "edits": [
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT Jain",
+        "after": "IIT GN",
+        "rule": "acronym_misrecognition"
+      },
+      {
+        "kind": "user_requested_entity_normalization",
+        "before": "IIT GN Help Desk",
+        "after": "IIT GN Helpdesk",
+        "rule": "helpdesk_spacing_or_misrecognition"
+      }
+    ],
+    "corrected_prefix": "Hello IIT GN Helpdesk. My laptop is unable to connect to the campus VPN after a recent operating system update. Please help troubleshoot."
+  }
+]

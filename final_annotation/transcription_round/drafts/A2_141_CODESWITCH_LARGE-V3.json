@@ -1,0 +1,2280 @@
+{
+  "description": "Fresh ASR drafts with local English/Hindi/Gujarati language detection; not human-verified.",
+  "configuration": {
+    "model": {
+      "repository": "Systran/faster-whisper-large-v3",
+      "revision": "edaa852ec7e145841d8ffdb056a99866b5f0a478"
+    },
+    "device": "cuda",
+    "compute_type": "int8_float16",
+    "window_seconds": 6.0,
+    "overlap_seconds": 2.0,
+    "allowed_languages": [
+      "en",
+      "hi",
+      "gu"
+    ],
+    "task": "transcribe",
+    "beam_size": 5,
+    "temperature": 0.0,
+    "vad_filter": false,
+    "word_timestamps": true,
+    "condition_on_previous_text": false,
+    "language": null,
+    "packages": {
+      "faster-whisper": "1.2.1",
+      "ctranslate2": "4.8.1"
+    }
+  },
+  "completed_count": 1,
+  "target_count": 141,
+  "transcripts": [
+    {
+      "number": 1,
+      "clip_id": "P9_41",
+      "uuid": "076e2bba",
+      "assignment_group": "shared_100",
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P9/PTT-20261019-WA0009.wav",
+      "transcript": "Hello, I need some assistance regarding the hostel service in my hostel I tried using the washing machine yesterday but the payment was deducted from my account अकाउंट एंड मशीन डिट नॉट स्टार्ट मैंने दो बार पेमें करने की गोशिश की लेकिन दोनों बार पैसे कर रहे और मशीन फिर भी नहीं चली I waited for some time and checked whether the machine was working but there was no change. Could you please tell me how I can निकस्टर फॉर द फेल्ड ट्रंजेक्शंस क्या मुझे हसल ऑफिस में complain करनी होगी या laundry service के लिए कोई अलग support number है? also want to know whether I can use another machine until this issue is resolved please guide me through the complete process and let me know if I need to provide the transaction details",
+      "status": "machine_draft",
+      "verified_against_audio_for_this_export": false,
+      "audio_sha256": "43f2549d6372c713be68019293b0dee0694a58b07c102cd8e951108ed2d8f14b",
+      "duration_seconds": 45.553,
+      "decode_seconds": 31.19,
+      "script_counts": {
+        "latin": 422,
+        "devanagari": 162,
+        "gujarati": 0,
+        "arabic": 0
+      },
+      "review_flags": [],
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.86,
+          "word": " Hello,",
+          "probability": 0.6943359375
+        },
+        {
+          "start": 0.96,
+          "end": 1.14,
+          "word": " I",
+          "probability": 0.95361328125
+        },
+        {
+          "start": 1.14,
+          "end": 1.38,
+          "word": " need",
+          "probability": 0.9794921875
+        },
+        {
+          "start": 1.38,
+          "end": 1.58,
+          "word": " some",
+          "probability": 0.97802734375
+        },
+        {
+          "start": 1.58,
+          "end": 1.98,
+          "word": " assistance",
+          "probability": 0.98828125
+        },
+        {
+          "start": 1.98,
+          "end": 3.04,
+          "word": " regarding",
+          "probability": 0.80517578125
+        },
+        {
+          "start": 3.04,
+          "end": 3.46,
+          "word": " the",
+          "probability": 0.96630859375
+        },
+        {
+          "start": 3.46,
+          "end": 3.8,
+          "word": " hostel",
+          "probability": 0.8125
+        },
+        {
+          "start": 3.8,
+          "end": 4.12,
+          "word": " service",
+          "probability": 0.736328125
+        },
+        {
+          "start": 4.12,
+          "end": 4.36,
+          "word": " in",
+          "probability": 0.6806640625
+        },
+        {
+          "start": 4.36,
+          "end": 4.54,
+          "word": " my",
+          "probability": 0.98193359375
+        },
+        {
+          "start": 4.54,
+          "end": 4.82,
+          "word": " hostel",
+          "probability": 0.9931640625
+        },
+        {
+          "start": 4.82,
+          "end": 5.06,
+          "word": " I",
+          "probability": 0.328857421875
+        },
+        {
+          "start": 5.1,
+          "end": 5.24,
+          "word": " tried",
+          "probability": 0.97607421875
+        },
+        {
+          "start": 5.24,
+          "end": 5.82,
+          "word": " using",
+          "probability": 0.96240234375
+        },
+        {
+          "start": 5.82,
+          "end": 6.04,
+          "word": " the",
+          "probability": 0.95654296875
+        },
+        {
+          "start": 6.04,
+          "end": 6.24,
+          "word": " washing",
+          "probability": 0.98486328125
+        },
+        {
+          "start": 6.24,
+          "end": 6.54,
+          "word": " machine",
+          "probability": 0.98095703125
+        },
+        {
+          "start": 6.54,
+          "end": 6.84,
+          "word": " yesterday",
+          "probability": 0.9794921875
+        },
+        {
+          "start": 6.84,
+          "end": 7.22,
+          "word": " but",
+          "probability": 0.9580078125
+        },
+        {
+          "start": 7.22,
+          "end": 7.42,
+          "word": " the",
+          "probability": 0.98046875
+        },
+        {
+          "start": 7.42,
+          "end": 7.74,
+          "word": " payment",
+          "probability": 0.99560546875
+        },
+        {
+          "start": 7.74,
+          "end": 7.96,
+          "word": " was",
+          "probability": 0.93017578125
+        },
+        {
+          "start": 7.96,
+          "end": 8.48,
+          "word": " deducted",
+          "probability": 0.988037109375
+        },
+        {
+          "start": 8.48,
+          "end": 8.64,
+          "word": " from",
+          "probability": 0.98974609375
+        },
+        {
+          "start": 8.64,
+          "end": 8.84,
+          "word": " my",
+          "probability": 0.99560546875
+        },
+        {
+          "start": 8.84,
+          "end": 9.12,
+          "word": " account",
+          "probability": 0.99560546875
+        },
+        {
+          "start": 8.86,
+          "end": 9.3,
+          "word": " अकाउंट",
+          "probability": 0.9563802083333334
+        },
+        {
+          "start": 9.3,
+          "end": 9.88,
+          "word": " एंड",
+          "probability": 0.90859375
+        },
+        {
+          "start": 9.88,
+          "end": 10.2,
+          "word": " मशीन",
+          "probability": 0.841162109375
+        },
+        {
+          "start": 10.2,
+          "end": 10.44,
+          "word": " डिट",
+          "probability": 0.776611328125
+        },
+        {
+          "start": 10.44,
+          "end": 10.62,
+          "word": " नॉट",
+          "probability": 0.7219645182291666
+        },
+        {
+          "start": 10.62,
+          "end": 10.94,
+          "word": " स्टार्ट",
+          "probability": 0.9782443576388888
+        },
+        {
+          "start": 10.94,
+          "end": 11.52,
+          "word": " मैंने",
+          "probability": 0.958203125
+        },
+        {
+          "start": 11.52,
+          "end": 11.7,
+          "word": " दो",
+          "probability": 0.97021484375
+        },
+        {
+          "start": 11.7,
+          "end": 11.88,
+          "word": " बार",
+          "probability": 0.90966796875
+        },
+        {
+          "start": 11.88,
+          "end": 12.1,
+          "word": " पेमें",
+          "probability": 0.8885904947916666
+        },
+        {
+          "start": 12.1,
+          "end": 12.36,
+          "word": " करने",
+          "probability": 0.9423828125
+        },
+        {
+          "start": 12.36,
+          "end": 12.52,
+          "word": " की",
+          "probability": 0.992919921875
+        },
+        {
+          "start": 12.52,
+          "end": 12.84,
+          "word": " गोशिश",
+          "probability": 0.89495849609375
+        },
+        {
+          "start": 12.84,
+          "end": 13.1,
+          "word": " की",
+          "probability": 0.992919921875
+        },
+        {
+          "start": 13.08,
+          "end": 14.16,
+          "word": " लेकिन",
+          "probability": 0.9900716145833334
+        },
+        {
+          "start": 14.16,
+          "end": 14.54,
+          "word": " दोनों",
+          "probability": 0.9915364583333334
+        },
+        {
+          "start": 14.54,
+          "end": 14.76,
+          "word": " बार",
+          "probability": 0.905517578125
+        },
+        {
+          "start": 14.76,
+          "end": 15.04,
+          "word": " पैसे",
+          "probability": 0.99296875
+        },
+        {
+          "start": 15.04,
+          "end": 15.26,
+          "word": " कर",
+          "probability": 0.840087890625
+        },
+        {
+          "start": 15.26,
+          "end": 15.46,
+          "word": " रहे",
+          "probability": 0.7845458984375
+        },
+        {
+          "start": 15.46,
+          "end": 15.7,
+          "word": " और",
+          "probability": 0.8382161458333334
+        },
+        {
+          "start": 15.7,
+          "end": 16.04,
+          "word": " मशीन",
+          "probability": 0.96005859375
+        },
+        {
+          "start": 16.04,
+          "end": 16.18,
+          "word": " फिर",
+          "probability": 0.9881591796875
+        },
+        {
+          "start": 16.18,
+          "end": 16.36,
+          "word": " भी",
+          "probability": 0.9884440104166666
+        },
+        {
+          "start": 16.36,
+          "end": 16.72,
+          "word": " नहीं",
+          "probability": 0.99560546875
+        },
+        {
+          "start": 16.72,
+          "end": 16.96,
+          "word": " चली",
+          "probability": 0.9769287109375
+        },
+        {
+          "start": 17.02,
+          "end": 17.14,
+          "word": " I",
+          "probability": 0.9091796875
+        },
+        {
+          "start": 17.14,
+          "end": 17.4,
+          "word": " waited",
+          "probability": 0.9736328125
+        },
+        {
+          "start": 17.4,
+          "end": 17.6,
+          "word": " for",
+          "probability": 0.9990234375
+        },
+        {
+          "start": 17.6,
+          "end": 17.86,
+          "word": " some",
+          "probability": 0.60693359375
+        },
+        {
+          "start": 17.86,
+          "end": 18.08,
+          "word": " time",
+          "probability": 0.99951171875
+        },
+        {
+          "start": 18.08,
+          "end": 18.26,
+          "word": " and",
+          "probability": 0.9697265625
+        },
+        {
+          "start": 18.26,
+          "end": 18.54,
+          "word": " checked",
+          "probability": 0.95458984375
+        },
+        {
+          "start": 18.54,
+          "end": 18.92,
+          "word": " whether",
+          "probability": 0.99267578125
+        },
+        {
+          "start": 18.92,
+          "end": 19.14,
+          "word": " the",
+          "probability": 0.99853515625
+        },
+        {
+          "start": 19.14,
+          "end": 19.4,
+          "word": " machine",
+          "probability": 0.99951171875
+        },
+        {
+          "start": 19.4,
+          "end": 19.6,
+          "word": " was",
+          "probability": 0.99951171875
+        },
+        {
+          "start": 19.6,
+          "end": 19.96,
+          "word": " working",
+          "probability": 0.99951171875
+        },
+        {
+          "start": 19.96,
+          "end": 20.6,
+          "word": " but",
+          "probability": 0.82958984375
+        },
+        {
+          "start": 20.6,
+          "end": 21.02,
+          "word": " there",
+          "probability": 0.9990234375
+        },
+        {
+          "start": 21.04,
+          "end": 21.32,
+          "word": " was",
+          "probability": 0.99560546875
+        },
+        {
+          "start": 21.32,
+          "end": 21.82,
+          "word": " no",
+          "probability": 0.984375
+        },
+        {
+          "start": 21.82,
+          "end": 22.1,
+          "word": " change.",
+          "probability": 0.96533203125
+        },
+        {
+          "start": 22.52,
+          "end": 23.04,
+          "word": " Could",
+          "probability": 0.61767578125
+        },
+        {
+          "start": 23.04,
+          "end": 23.16,
+          "word": " you",
+          "probability": 0.99560546875
+        },
+        {
+          "start": 23.16,
+          "end": 23.34,
+          "word": " please",
+          "probability": 0.986328125
+        },
+        {
+          "start": 23.34,
+          "end": 23.6,
+          "word": " tell",
+          "probability": 0.986328125
+        },
+        {
+          "start": 23.6,
+          "end": 23.78,
+          "word": " me",
+          "probability": 0.98779296875
+        },
+        {
+          "start": 23.78,
+          "end": 24.02,
+          "word": " how",
+          "probability": 0.9541015625
+        },
+        {
+          "start": 24.02,
+          "end": 24.42,
+          "word": " I",
+          "probability": 0.65673828125
+        },
+        {
+          "start": 24.42,
+          "end": 24.96,
+          "word": " can",
+          "probability": 0.9443359375
+        },
+        {
+          "start": 24.98,
+          "end": 25.5,
+          "word": " निकस्टर",
+          "probability": 0.6972384982638888
+        },
+        {
+          "start": 25.5,
+          "end": 26.06,
+          "word": " फॉर",
+          "probability": 0.652001953125
+        },
+        {
+          "start": 26.06,
+          "end": 26.3,
+          "word": " द",
+          "probability": 0.643798828125
+        },
+        {
+          "start": 26.3,
+          "end": 26.68,
+          "word": " फेल्ड",
+          "probability": 0.8377511160714286
+        },
+        {
+          "start": 26.68,
+          "end": 27.4,
+          "word": " ट्रंजेक्शंस",
+          "probability": 0.7798723493303571
+        },
+        {
+          "start": 27.4,
+          "end": 28.04,
+          "word": " क्या",
+          "probability": 0.777099609375
+        },
+        {
+          "start": 28.04,
+          "end": 28.24,
+          "word": " मुझे",
+          "probability": 0.9886881510416666
+        },
+        {
+          "start": 28.24,
+          "end": 28.7,
+          "word": " हसल",
+          "probability": 0.388671875
+        },
+        {
+          "start": 28.7,
+          "end": 29.14,
+          "word": " ऑफिस",
+          "probability": 0.9209798177083334
+        },
+        {
+          "start": 29.02,
+          "end": 29.4,
+          "word": " में",
+          "probability": 0.9915364583333334
+        },
+        {
+          "start": 29.4,
+          "end": 29.64,
+          "word": " complain",
+          "probability": 0.4560546875
+        },
+        {
+          "start": 29.64,
+          "end": 30.06,
+          "word": " करनी",
+          "probability": 0.9891357421875
+        },
+        {
+          "start": 30.06,
+          "end": 30.4,
+          "word": " होगी",
+          "probability": 0.993359375
+        },
+        {
+          "start": 30.4,
+          "end": 30.6,
+          "word": " या",
+          "probability": 0.82373046875
+        },
+        {
+          "start": 30.6,
+          "end": 30.78,
+          "word": " laundry",
+          "probability": 0.81689453125
+        },
+        {
+          "start": 30.78,
+          "end": 31.1,
+          "word": " service",
+          "probability": 0.9921875
+        },
+        {
+          "start": 31.1,
+          "end": 31.4,
+          "word": " के",
+          "probability": 0.990966796875
+        },
+        {
+          "start": 31.4,
+          "end": 31.48,
+          "word": " लिए",
+          "probability": 0.998828125
+        },
+        {
+          "start": 31.48,
+          "end": 31.6,
+          "word": " कोई",
+          "probability": 0.99609375
+        },
+        {
+          "start": 31.6,
+          "end": 31.86,
+          "word": " अलग",
+          "probability": 0.988671875
+        },
+        {
+          "start": 31.86,
+          "end": 32.0,
+          "word": " support",
+          "probability": 0.984375
+        },
+        {
+          "start": 32.0,
+          "end": 32.42,
+          "word": " number",
+          "probability": 0.91748046875
+        },
+        {
+          "start": 32.42,
+          "end": 32.76,
+          "word": " है?",
+          "probability": 0.998046875
+        },
+        {
+          "start": 32.64,
+          "end": 33.96,
+          "word": " also",
+          "probability": 0.9580078125
+        },
+        {
+          "start": 33.96,
+          "end": 34.34,
+          "word": " want",
+          "probability": 0.98681640625
+        },
+        {
+          "start": 34.34,
+          "end": 34.52,
+          "word": " to",
+          "probability": 0.9970703125
+        },
+        {
+          "start": 34.52,
+          "end": 34.68,
+          "word": " know",
+          "probability": 0.99462890625
+        },
+        {
+          "start": 34.68,
+          "end": 35.04,
+          "word": " whether",
+          "probability": 0.95361328125
+        },
+        {
+          "start": 35.04,
+          "end": 35.28,
+          "word": " I",
+          "probability": 0.88623046875
+        },
+        {
+          "start": 35.28,
+          "end": 35.54,
+          "word": " can",
+          "probability": 0.99609375
+        },
+        {
+          "start": 35.54,
+          "end": 35.82,
+          "word": " use",
+          "probability": 0.99267578125
+        },
+        {
+          "start": 35.82,
+          "end": 36.14,
+          "word": " another",
+          "probability": 0.96923828125
+        },
+        {
+          "start": 36.14,
+          "end": 36.52,
+          "word": " machine",
+          "probability": 0.98486328125
+        },
+        {
+          "start": 36.52,
+          "end": 36.86,
+          "word": " until",
+          "probability": 0.95947265625
+        },
+        {
+          "start": 36.88,
+          "end": 37.14,
+          "word": " this",
+          "probability": 0.9638671875
+        },
+        {
+          "start": 37.14,
+          "end": 37.38,
+          "word": " issue",
+          "probability": 0.9716796875
+        },
+        {
+          "start": 37.38,
+          "end": 37.56,
+          "word": " is",
+          "probability": 0.9892578125
+        },
+        {
+          "start": 37.56,
+          "end": 37.88,
+          "word": " resolved",
+          "probability": 0.96484375
+        },
+        {
+          "start": 37.88,
+          "end": 38.22,
+          "word": " please",
+          "probability": 0.63818359375
+        },
+        {
+          "start": 38.22,
+          "end": 38.48,
+          "word": " guide",
+          "probability": 0.63623046875
+        },
+        {
+          "start": 38.48,
+          "end": 38.68,
+          "word": " me",
+          "probability": 0.99267578125
+        },
+        {
+          "start": 38.68,
+          "end": 38.92,
+          "word": " through",
+          "probability": 0.97412109375
+        },
+        {
+          "start": 38.92,
+          "end": 39.18,
+          "word": " the",
+          "probability": 0.99169921875
+        },
+        {
+          "start": 39.18,
+          "end": 39.56,
+          "word": " complete",
+          "probability": 0.603515625
+        },
+        {
+          "start": 39.56,
+          "end": 40.0,
+          "word": " process",
+          "probability": 0.9970703125
+        },
+        {
+          "start": 40.0,
+          "end": 40.3,
+          "word": " and",
+          "probability": 0.9541015625
+        },
+        {
+          "start": 40.3,
+          "end": 40.48,
+          "word": " let",
+          "probability": 0.99072265625
+        },
+        {
+          "start": 40.48,
+          "end": 40.66,
+          "word": " me",
+          "probability": 0.994140625
+        },
+        {
+          "start": 40.66,
+          "end": 40.86,
+          "word": " know",
+          "probability": 0.99853515625
+        },
+        {
+          "start": 40.86,
+          "end": 41.08,
+          "word": " if",
+          "probability": 0.9951171875
+        },
+        {
+          "start": 41.08,
+          "end": 41.32,
+          "word": " I",
+          "probability": 0.9384765625
+        },
+        {
+          "start": 41.32,
+          "end": 41.62,
+          "word": " need",
+          "probability": 0.9736328125
+        },
+        {
+          "start": 41.62,
+          "end": 41.86,
+          "word": " to",
+          "probability": 0.93994140625
+        },
+        {
+          "start": 41.86,
+          "end": 43.3,
+          "word": " provide",
+          "probability": 0.998046875
+        },
+        {
+          "start": 43.3,
+          "end": 43.56,
+          "word": " the",
+          "probability": 0.8740234375
+        },
+        {
+          "start": 43.56,
+          "end": 43.98,
+          "word": " transaction",
+          "probability": 0.9833984375
+        },
+        {
+          "start": 43.98,
+          "end": 44.5,
+          "word": " details",
+          "probability": 0.99755859375
+        }
+      ],
+      "chunks": [
+        {
+          "start": 0.0,
+          "end": 6.0,
+          "detected_language": "en",
+          "language_probabilities": [
+            [
+              "en",
+              0.9746906177760515
+            ],
+            [
+              "hi",
+              0.024973481891368547
+            ],
+            [
+              "gu",
+              0.0003359003325799385
+            ]
+          ],
+          "text": "Hello, I need some assistance regarding the hostel service in my hostel I tried using",
+          "words": [
+            {
+              "start": 0.0,
+              "end": 0.86,
+              "word": " Hello,",
+              "probability": 0.6943359375
+            },
+            {
+              "start": 0.96,
+              "end": 1.14,
+              "word": " I",
+              "probability": 0.95361328125
+            },
+            {
+              "start": 1.14,
+              "end": 1.38,
+              "word": " need",
+              "probability": 0.9794921875
+            },
+            {
+              "start": 1.38,
+              "end": 1.58,
+              "word": " some",
+              "probability": 0.97802734375
+            },
+            {
+              "start": 1.58,
+              "end": 1.98,
+              "word": " assistance",
+              "probability": 0.98828125
+            },
+            {
+              "start": 1.98,
+              "end": 3.04,
+              "word": " regarding",
+              "probability": 0.80517578125
+            },
+            {
+              "start": 3.04,
+              "end": 3.46,
+              "word": " the",
+              "probability": 0.96630859375
+            },
+            {
+              "start": 3.46,
+              "end": 3.8,
+              "word": " hostel",
+              "probability": 0.8125
+            },
+            {
+              "start": 3.8,
+              "end": 4.12,
+              "word": " service",
+              "probability": 0.736328125
+            },
+            {
+              "start": 4.12,
+              "end": 4.36,
+              "word": " in",
+              "probability": 0.6806640625
+            },
+            {
+              "start": 4.36,
+              "end": 4.54,
+              "word": " my",
+              "probability": 0.98193359375
+            },
+            {
+              "start": 4.54,
+              "end": 4.82,
+              "word": " hostel",
+              "probability": 0.9931640625
+            },
+            {
+              "start": 4.82,
+              "end": 5.06,
+              "word": " I",
+              "probability": 0.328857421875
+            },
+            {
+              "start": 5.06,
+              "end": 5.28,
+              "word": " tried",
+              "probability": 0.95263671875
+            },
+            {
+              "start": 5.28,
+              "end": 5.68,
+              "word": " using",
+              "probability": 0.94287109375
+            }
+          ]
+        },
+        {
+          "start": 4.0,
+          "end": 10.0,
+          "detected_language": "en",
+          "language_probabilities": [
+            [
+              "en",
+              0.9973735650328136
+            ],
+            [
+              "hi",
+              0.0026120409136577497
+            ],
+            [
+              "gu",
+              1.4394053528606262e-05
+            ]
+          ],
+          "text": "service in my hostel i tried using the washing machine yesterday but the payment was deducted from my account and the",
+          "words": [
+            {
+              "start": 4.0,
+              "end": 4.24,
+              "word": " service",
+              "probability": 0.1868896484375
+            },
+            {
+              "start": 4.24,
+              "end": 4.36,
+              "word": " in",
+              "probability": 0.81689453125
+            },
+            {
+              "start": 4.36,
+              "end": 4.54,
+              "word": " my",
+              "probability": 0.98583984375
+            },
+            {
+              "start": 4.54,
+              "end": 4.82,
+              "word": " hostel",
+              "probability": 0.904296875
+            },
+            {
+              "start": 4.82,
+              "end": 5.1,
+              "word": " i",
+              "probability": 0.39697265625
+            },
+            {
+              "start": 5.1,
+              "end": 5.24,
+              "word": " tried",
+              "probability": 0.97607421875
+            },
+            {
+              "start": 5.24,
+              "end": 5.82,
+              "word": " using",
+              "probability": 0.96240234375
+            },
+            {
+              "start": 5.82,
+              "end": 6.04,
+              "word": " the",
+              "probability": 0.95654296875
+            },
+            {
+              "start": 6.04,
+              "end": 6.24,
+              "word": " washing",
+              "probability": 0.98486328125
+            },
+            {
+              "start": 6.24,
+              "end": 6.54,
+              "word": " machine",
+              "probability": 0.98095703125
+            },
+            {
+              "start": 6.54,
+              "end": 6.84,
+              "word": " yesterday",
+              "probability": 0.9794921875
+            },
+            {
+              "start": 6.84,
+              "end": 7.22,
+              "word": " but",
+              "probability": 0.9580078125
+            },
+            {
+              "start": 7.22,
+              "end": 7.42,
+              "word": " the",
+              "probability": 0.98046875
+            },
+            {
+              "start": 7.42,
+              "end": 7.74,
+              "word": " payment",
+              "probability": 0.99560546875
+            },
+            {
+              "start": 7.74,
+              "end": 7.96,
+              "word": " was",
+              "probability": 0.93017578125
+            },
+            {
+              "start": 7.96,
+              "end": 8.48,
+              "word": " deducted",
+              "probability": 0.988037109375
+            },
+            {
+              "start": 8.48,
+              "end": 8.64,
+              "word": " from",
+              "probability": 0.98974609375
+            },
+            {
+              "start": 8.64,
+              "end": 8.84,
+              "word": " my",
+              "probability": 0.99560546875
+            },
+            {
+              "start": 8.84,
+              "end": 9.12,
+              "word": " account",
+              "probability": 0.99560546875
+            },
+            {
+              "start": 9.12,
+              "end": 9.8,
+              "word": " and",
+              "probability": 0.85546875
+            },
+            {
+              "start": 9.8,
+              "end": 9.98,
+              "word": " the",
+              "probability": 0.70654296875
+            }
+          ]
+        },
+        {
+          "start": 8.0,
+          "end": 14.0,
+          "detected_language": "hi",
+          "language_probabilities": [
+            [
+              "hi",
+              0.833309374426708
+            ],
+            [
+              "en",
+              0.16666187488534162
+            ],
+            [
+              "gu",
+              2.8750687950275862e-05
+            ]
+          ],
+          "text": "डिटेक्टेड फ्रॉम माय अकाउंट एंड मशीन डिट नॉट स्टार्ट मैंने दो बार पेमें करने की गोशिश की",
+          "words": [
+            {
+              "start": 8.0,
+              "end": 8.48,
+              "word": " डिटेक्टेड",
+              "probability": 0.7727590707632211
+            },
+            {
+              "start": 8.48,
+              "end": 8.7,
+              "word": " फ्रॉम",
+              "probability": 0.9432198660714286
+            },
+            {
+              "start": 8.7,
+              "end": 8.86,
+              "word": " माय",
+              "probability": 0.8107096354166666
+            },
+            {
+              "start": 8.86,
+              "end": 9.3,
+              "word": " अकाउंट",
+              "probability": 0.9563802083333334
+            },
+            {
+              "start": 9.3,
+              "end": 9.88,
+              "word": " एंड",
+              "probability": 0.90859375
+            },
+            {
+              "start": 9.88,
+              "end": 10.2,
+              "word": " मशीन",
+              "probability": 0.841162109375
+            },
+            {
+              "start": 10.2,
+              "end": 10.44,
+              "word": " डिट",
+              "probability": 0.776611328125
+            },
+            {
+              "start": 10.44,
+              "end": 10.62,
+              "word": " नॉट",
+              "probability": 0.7219645182291666
+            },
+            {
+              "start": 10.62,
+              "end": 10.94,
+              "word": " स्टार्ट",
+              "probability": 0.9782443576388888
+            },
+            {
+              "start": 10.94,
+              "end": 11.52,
+              "word": " मैंने",
+              "probability": 0.958203125
+            },
+            {
+              "start": 11.52,
+              "end": 11.7,
+              "word": " दो",
+              "probability": 0.97021484375
+            },
+            {
+              "start": 11.7,
+              "end": 11.88,
+              "word": " बार",
+              "probability": 0.90966796875
+            },
+            {
+              "start": 11.88,
+              "end": 12.1,
+              "word": " पेमें",
+              "probability": 0.8885904947916666
+            },
+            {
+              "start": 12.1,
+              "end": 12.36,
+              "word": " करने",
+              "probability": 0.9423828125
+            },
+            {
+              "start": 12.36,
+              "end": 12.52,
+              "word": " की",
+              "probability": 0.992919921875
+            },
+            {
+              "start": 12.52,
+              "end": 12.84,
+              "word": " गोशिश",
+              "probability": 0.89495849609375
+            },
+            {
+              "start": 12.84,
+              "end": 13.1,
+              "word": " की",
+              "probability": 0.992919921875
+            }
+          ]
+        },
+        {
+          "start": 12.0,
+          "end": 18.0,
+          "detected_language": "hi",
+          "language_probabilities": [
+            [
+              "hi",
+              0.947401308487004
+            ],
+            [
+              "en",
+              0.052591062176671984
+            ],
+            [
+              "gu",
+              7.629336324033172e-06
+            ]
+          ],
+          "text": "experiment करने की कोशिश की लेकिन दोनों बार पैसे कर रहे और मशीन फिर भी नहीं चली आई वेटेड � Thank you.",
+          "words": [
+            {
+              "start": 12.0,
+              "end": 12.14,
+              "word": " experiment",
+              "probability": 0.303466796875
+            },
+            {
+              "start": 12.14,
+              "end": 12.36,
+              "word": " करने",
+              "probability": 0.986328125
+            },
+            {
+              "start": 12.36,
+              "end": 12.54,
+              "word": " की",
+              "probability": 0.968017578125
+            },
+            {
+              "start": 12.54,
+              "end": 12.84,
+              "word": " कोशिश",
+              "probability": 0.9026925223214286
+            },
+            {
+              "start": 12.84,
+              "end": 13.08,
+              "word": " की",
+              "probability": 0.935791015625
+            },
+            {
+              "start": 13.08,
+              "end": 14.16,
+              "word": " लेकिन",
+              "probability": 0.9900716145833334
+            },
+            {
+              "start": 14.16,
+              "end": 14.54,
+              "word": " दोनों",
+              "probability": 0.9915364583333334
+            },
+            {
+              "start": 14.54,
+              "end": 14.76,
+              "word": " बार",
+              "probability": 0.905517578125
+            },
+            {
+              "start": 14.76,
+              "end": 15.04,
+              "word": " पैसे",
+              "probability": 0.99296875
+            },
+            {
+              "start": 15.04,
+              "end": 15.26,
+              "word": " कर",
+              "probability": 0.840087890625
+            },
+            {
+              "start": 15.26,
+              "end": 15.46,
+              "word": " रहे",
+              "probability": 0.7845458984375
+            },
+            {
+              "start": 15.46,
+              "end": 15.7,
+              "word": " और",
+              "probability": 0.8382161458333334
+            },
+            {
+              "start": 15.7,
+              "end": 16.04,
+              "word": " मशीन",
+              "probability": 0.96005859375
+            },
+            {
+              "start": 16.04,
+              "end": 16.18,
+              "word": " फिर",
+              "probability": 0.9881591796875
+            },
+            {
+              "start": 16.18,
+              "end": 16.36,
+              "word": " भी",
+              "probability": 0.9884440104166666
+            },
+            {
+              "start": 16.36,
+              "end": 16.72,
+              "word": " नहीं",
+              "probability": 0.99560546875
+            },
+            {
+              "start": 16.72,
+              "end": 16.96,
+              "word": " चली",
+              "probability": 0.9769287109375
+            },
+            {
+              "start": 16.96,
+              "end": 17.18,
+              "word": " आई",
+              "probability": 0.77197265625
+            },
+            {
+              "start": 17.18,
+              "end": 17.56,
+              "word": " वेटेड",
+              "probability": 0.69476318359375
+            },
+            {
+              "start": 17.56,
+              "end": 17.56,
+              "word": " �",
+              "probability": 0.86328125
+            },
+            {
+              "start": 17.56,
+              "end": 17.68,
+              "word": " Thank",
+              "probability": 0.368896484375
+            },
+            {
+              "start": 17.68,
+              "end": 17.96,
+              "word": " you.",
+              "probability": 0.99853515625
+            }
+          ]
+        },
+        {
+          "start": 16.0,
+          "end": 22.0,
+          "detected_language": "hi",
+          "language_probabilities": [
+            [
+              "hi",
+              0.7504209495568556
+            ],
+            [
+              "en",
+              0.2493586280298301
+            ],
+            [
+              "gu",
+              0.00022042241331435346
+            ]
+          ],
+          "text": "फिर भी नहीं चली, I waited for some time and checked whether the machine was working but there was no",
+          "words": [
+            {
+              "start": 16.0,
+              "end": 16.24,
+              "word": " फिर",
+              "probability": 0.73260498046875
+            },
+            {
+              "start": 16.24,
+              "end": 16.38,
+              "word": " भी",
+              "probability": 0.9720052083333334
+            },
+            {
+              "start": 16.38,
+              "end": 16.72,
+              "word": " नहीं",
+              "probability": 0.9953125
+            },
+            {
+              "start": 16.72,
+              "end": 17.0,
+              "word": " चली,",
+              "probability": 0.990478515625
+            },
+            {
+              "start": 17.02,
+              "end": 17.14,
+              "word": " I",
+              "probability": 0.9091796875
+            },
+            {
+              "start": 17.14,
+              "end": 17.4,
+              "word": " waited",
+              "probability": 0.9736328125
+            },
+            {
+              "start": 17.4,
+              "end": 17.6,
+              "word": " for",
+              "probability": 0.9990234375
+            },
+            {
+              "start": 17.6,
+              "end": 17.86,
+              "word": " some",
+              "probability": 0.60693359375
+            },
+            {
+              "start": 17.86,
+              "end": 18.08,
+              "word": " time",
+              "probability": 0.99951171875
+            },
+            {
+              "start": 18.08,
+              "end": 18.26,
+              "word": " and",
+              "probability": 0.9697265625
+            },
+            {
+              "start": 18.26,
+              "end": 18.54,
+              "word": " checked",
+              "probability": 0.95458984375
+            },
+            {
+              "start": 18.54,
+              "end": 18.92,
+              "word": " whether",
+              "probability": 0.99267578125
+            },
+            {
+              "start": 18.92,
+              "end": 19.14,
+              "word": " the",
+              "probability": 0.99853515625
+            },
+            {
+              "start": 19.14,
+              "end": 19.4,
+              "word": " machine",
+              "probability": 0.99951171875
+            },
+            {
+              "start": 19.4,
+              "end": 19.6,
+              "word": " was",
+              "probability": 0.99951171875
+            },
+            {
+              "start": 19.6,
+              "end": 19.96,
+              "word": " working",
+              "probability": 0.99951171875
+            },
+            {
+              "start": 19.96,
+              "end": 20.6,
+              "word": " but",
+              "probability": 0.82958984375
+            },
+            {
+              "start": 20.6,
+              "end": 21.02,
+              "word": " there",
+              "probability": 0.9990234375
+            },
+            {
+              "start": 21.02,
+              "end": 21.32,
+              "word": " was",
+              "probability": 1.0
+            },
+            {
+              "start": 21.32,
+              "end": 21.8,
+              "word": " no",
+              "probability": 0.9951171875
+            }
+          ]
+        },
+        {
+          "start": 20.0,
+          "end": 26.0,
+          "detected_language": "en",
+          "language_probabilities": [
+            [
+              "en",
+              0.9568697661122191
+            ],
+            [
+              "hi",
+              0.04302884716664454
+            ],
+            [
+              "gu",
+              0.0001013867211364062
+            ]
+          ],
+          "text": "working, but there was no change. Could you please tell me how I can make a star if.",
+          "words": [
+            {
+              "start": 20.0,
+              "end": 20.14,
+              "word": " working,",
+              "probability": 0.04205322265625
+            },
+            {
+              "start": 20.16,
+              "end": 20.64,
+              "word": " but",
+              "probability": 0.98486328125
+            },
+            {
+              "start": 20.64,
+              "end": 21.04,
+              "word": " there",
+              "probability": 0.9873046875
+            },
+            {
+              "start": 21.04,
+              "end": 21.32,
+              "word": " was",
+              "probability": 0.99560546875
+            },
+            {
+              "start": 21.32,
+              "end": 21.82,
+              "word": " no",
+              "probability": 0.984375
+            },
+            {
+              "start": 21.82,
+              "end": 22.1,
+              "word": " change.",
+              "probability": 0.96533203125
+            },
+            {
+              "start": 22.52,
+              "end": 23.04,
+              "word": " Could",
+              "probability": 0.61767578125
+            },
+            {
+              "start": 23.04,
+              "end": 23.16,
+              "word": " you",
+              "probability": 0.99560546875
+            },
+            {
+              "start": 23.16,
+              "end": 23.34,
+              "word": " please",
+              "probability": 0.986328125
+            },
+            {
+              "start": 23.34,
+              "end": 23.6,
+              "word": " tell",
+              "probability": 0.986328125
+            },
+            {
+              "start": 23.6,
+              "end": 23.78,
+              "word": " me",
+              "probability": 0.98779296875
+            },
+            {
+              "start": 23.78,
+              "end": 24.02,
+              "word": " how",
+              "probability": 0.9541015625
+            },
+            {
+              "start": 24.02,
+              "end": 24.42,
+              "word": " I",
+              "probability": 0.65673828125
+            },
+            {
+              "start": 24.42,
+              "end": 24.96,
+              "word": " can",
+              "probability": 0.9443359375
+            },
+            {
+              "start": 24.96,
+              "end": 25.18,
+              "word": " make",
+              "probability": 0.420166015625
+            },
+            {
+              "start": 25.18,
+              "end": 25.3,
+              "word": " a",
+              "probability": 0.9130859375
+            },
+            {
+              "start": 25.3,
+              "end": 25.56,
+              "word": " star",
+              "probability": 0.30419921875
+            },
+            {
+              "start": 25.56,
+              "end": 25.86,
+              "word": " if.",
+              "probability": 0.40185546875
+            }
+          ]
+        },
+        {
+          "start": 24.0,
+          "end": 30.0,
+          "detected_language": "hi",
+          "language_probabilities": [
+            [
+              "hi",
+              0.6635801850552827
+            ],
+            [
+              "en",
+              0.3363507810847224
+            ],
+            [
+              "gu",
+              6.903385999487813e-05
+            ]
+          ],
+          "text": "हुआ है कि निकस्टर फॉर द फेल्ड ट्रंजेक्शंस क्या मुझे हसल ऑफिस में कंप्लेंट कर",
+          "words": [
+            {
+              "start": 24.0,
+              "end": 24.22,
+              "word": " हुआ",
+              "probability": 0.60699462890625
+            },
+            {
+              "start": 24.22,
+              "end": 24.54,
+              "word": " है",
+              "probability": 0.731201171875
+            },
+            {
+              "start": 24.54,
+              "end": 24.98,
+              "word": " कि",
+              "probability": 0.5389404296875
+            },
+            {
+              "start": 24.98,
+              "end": 25.5,
+              "word": " निकस्टर",
+              "probability": 0.6972384982638888
+            },
+            {
+              "start": 25.5,
+              "end": 26.06,
+              "word": " फॉर",
+              "probability": 0.652001953125
+            },
+            {
+              "start": 26.06,
+              "end": 26.3,
+              "word": " द",
+              "probability": 0.643798828125
+            },
+            {
+              "start": 26.3,
+              "end": 26.68,
+              "word": " फेल्ड",
+              "probability": 0.8377511160714286
+            },
+            {
+              "start": 26.68,
+              "end": 27.4,
+              "word": " ट्रंजेक्शंस",
+              "probability": 0.7798723493303571
+            },
+            {
+              "start": 27.4,
+              "end": 28.04,
+              "word": " क्या",
+              "probability": 0.777099609375
+            },
+            {
+              "start": 28.04,
+              "end": 28.24,
+              "word": " मुझे",
+              "probability": 0.9886881510416666
+            },
+            {
+              "start": 28.24,
+              "end": 28.7,
+              "word": " हसल",
+              "probability": 0.388671875
+            },
+            {
+              "start": 28.7,
+              "end": 29.14,
+              "word": " ऑफिस",
+              "probability": 0.9209798177083334
+            },
+            {
+              "start": 29.14,
+              "end": 29.44,
+              "word": " में",
+              "probability": 0.98291015625
+            },
+            {
+              "start": 29.44,
+              "end": 29.84,
+              "word": " कंप्लेंट",
+              "probability": 0.795947265625
+            },
+            {
+              "start": 29.84,
+              "end": 29.98,
+              "word": " कर",
+              "probability": 0.926025390625
+            }
+          ]
+        },
+        {
+          "start": 28.0,
+          "end": 34.0,
+          "detected_language": "hi",
+          "language_probabilities": [
+            [
+              "hi",
+              0.9865697625808241
+            ],
+            [
+              "en",
+              0.013425179173476702
+            ],
+            [
+              "gu",
+              5.058245699226594e-06
+            ]
+          ],
+          "text": "क्या मुझे hostel office में complain करनी होगी या laundry service के लिए कोई अलग support number है?",
+          "words": [
+            {
+              "start": 28.0,
+              "end": 28.1,
+              "word": " क्या",
+              "probability": 0.80145263671875
+            },
+            {
+              "start": 28.1,
+              "end": 28.24,
+              "word": " मुझे",
+              "probability": 0.995849609375
+            },
+            {
+              "start": 28.24,
+              "end": 28.48,
+              "word": " hostel",
+              "probability": 0.76708984375
+            },
+            {
+              "start": 28.48,
+              "end": 29.02,
+              "word": " office",
+              "probability": 0.9619140625
+            },
+            {
+              "start": 29.02,
+              "end": 29.4,
+              "word": " में",
+              "probability": 0.9915364583333334
+            },
+            {
+              "start": 29.4,
+              "end": 29.64,
+              "word": " complain",
+              "probability": 0.4560546875
+            },
+            {
+              "start": 29.64,
+              "end": 30.06,
+              "word": " करनी",
+              "probability": 0.9891357421875
+            },
+            {
+              "start": 30.06,
+              "end": 30.4,
+              "word": " होगी",
+              "probability": 0.993359375
+            },
+            {
+              "start": 30.4,
+              "end": 30.6,
+              "word": " या",
+              "probability": 0.82373046875
+            },
+            {
+              "start": 30.6,
+              "end": 30.78,
+              "word": " laundry",
+              "probability": 0.81689453125
+            },
+            {
+              "start": 30.78,
+              "end": 31.1,
+              "word": " service",
+              "probability": 0.9921875
+            },
+            {
+              "start": 31.1,
+              "end": 31.4,
+              "word": " के",
+              "probability": 0.990966796875
+            },
+            {
+              "start": 31.4,
+              "end": 31.48,
+              "word": " लिए",
+              "probability": 0.998828125
+            },
+            {
+              "start": 31.48,
+              "end": 31.6,
+              "word": " कोई",
+              "probability": 0.99609375
+            },
+            {
+              "start": 31.6,
+              "end": 31.86,
+              "word": " अलग",
+              "probability": 0.988671875
+            },
+            {
+              "start": 31.86,
+              "end": 32.0,
+              "word": " support",
+              "probability": 0.984375
+            },
+            {
+              "start": 32.0,
+              "end": 32.42,
+              "word": " number",
+              "probability": 0.91748046875
+            },
+            {
+              "start": 32.42,
+              "end": 32.76,
+              "word": " है?",
+              "probability": 0.998046875
+            }
+          ]
+        },
+        {
+          "start": 32.0,
+          "end": 38.0,
+          "detected_language": "en",
+          "language_probabilities": [
+            [
+              "en",
+              0.6582426029278955
+            ],
+            [
+              "hi",
+              0.34161312467985283
+            ],
+            [
+              "gu",
+              0.00014427239225161403
+            ]
+          ],
+          "text": "I also want to know whether I can use another machine until this issue is resolved.",
+          "words": [
+            {
+              "start": 32.0,
+              "end": 32.64,
+              "word": " I",
+              "probability": 0.1512451171875
+            },
+            {
+              "start": 32.64,
+              "end": 33.96,
+              "word": " also",
+              "probability": 0.9580078125
+            },
+            {
+              "start": 33.96,
+              "end": 34.34,
+              "word": " want",
+              "probability": 0.98681640625
+            },
+            {
+              "start": 34.34,
+              "end": 34.52,
+              "word": " to",
+              "probability": 0.9970703125
+            },
+            {
+              "start": 34.52,
+              "end": 34.68,
+              "word": " know",
+              "probability": 0.99462890625
+            },
+            {
+              "start": 34.68,
+              "end": 35.04,
+              "word": " whether",
+              "probability": 0.95361328125
+            },
+            {
+              "start": 35.04,
+              "end": 35.28,
+              "word": " I",
+              "probability": 0.88623046875
+            },
+            {
+              "start": 35.28,
+              "end": 35.54,
+              "word": " can",
+              "probability": 0.99609375
+            },
+            {
+              "start": 35.54,
+              "end": 35.82,
+              "word": " use",
+              "probability": 0.99267578125
+            },
+            {
+              "start": 35.82,
+              "end": 36.14,
+              "word": " another",
+              "probability": 0.96923828125
+            },
+            {
+              "start": 36.14,
+              "end": 36.52,
+              "word": " machine",
+              "probability": 0.98486328125
+            },
+            {
+              "start": 36.52,
+              "end": 36.86,
+              "word": " until",
+              "probability": 0.95947265625
+            },
+            {
+              "start": 36.86,
+              "end": 37.14,
+              "word": " this",
+              "probability": 0.96337890625
+            },
+            {
+              "start": 37.14,
+              "end": 37.4,
+              "word": " issue",
+              "probability": 0.9921875
+            },
+            {
+              "start": 37.4,
+              "end": 37.6,
+              "word": " is",
+              "probability": 0.98095703125
+            },
+            {
+              "start": 37.6,
+              "end": 37.74,
+              "word": " resolved.",
+              "probability": 0.994140625
+            }
+          ]
+        },
+        {
+          "start": 36.0,
+          "end": 42.0,
+          "detected_language": "en",
+          "language_probabilities": [
+            [
+              "en",
+              0.9887463288629265
+            ],
+            [
+              "hi",
+              0.01124841294885058
+            ],
+            [
+              "gu",
+              5.258188222951774e-06
+            ]
+          ],
+          "text": "another machine until this issue is resolved please guide me through the complete process and let me know if I need",
+          "words": [
+            {
+              "start": 36.0,
+              "end": 36.24,
+              "word": " another",
+              "probability": 0.6171875
+            },
+            {
+              "start": 36.24,
+              "end": 36.54,
+              "word": " machine",
+              "probability": 0.97900390625
+            },
+            {
+              "start": 36.54,
+              "end": 36.88,
+              "word": " until",
+              "probability": 0.67236328125
+            },
+            {
+              "start": 36.88,
+              "end": 37.14,
+              "word": " this",
+              "probability": 0.9638671875
+            },
+            {
+              "start": 37.14,
+              "end": 37.38,
+              "word": " issue",
+              "probability": 0.9716796875
+            },
+            {
+              "start": 37.38,
+              "end": 37.56,
+              "word": " is",
+              "probability": 0.9892578125
+            },
+            {
+              "start": 37.56,
+              "end": 37.88,
+              "word": " resolved",
+              "probability": 0.96484375
+            },
+            {
+              "start": 37.88,
+              "end": 38.22,
+              "word": " please",
+              "probability": 0.63818359375
+            },
+            {
+              "start": 38.22,
+              "end": 38.48,
+              "word": " guide",
+              "probability": 0.63623046875
+            },
+            {
+              "start": 38.48,
+              "end": 38.68,
+              "word": " me",
+              "probability": 0.99267578125
+            },
+            {
+              "start": 38.68,
+              "end": 38.92,
+              "word": " through",
+              "probability": 0.97412109375
+            },
+            {
+              "start": 38.92,
+              "end": 39.18,
+              "word": " the",
+              "probability": 0.99169921875
+            },
+            {
+              "start": 39.18,
+              "end": 39.56,
+              "word": " complete",
+              "probability": 0.603515625
+            },
+            {
+              "start": 39.56,
+              "end": 40.0,
+              "word": " process",
+              "probability": 0.9970703125
+            },
+            {
+              "start": 40.0,
+              "end": 40.3,
+              "word": " and",
+              "probability": 0.9541015625
+            },
+            {
+              "start": 40.3,
+              "end": 40.48,
+              "word": " let",
+              "probability": 0.99072265625
+            },
+            {
+              "start": 40.48,
+              "end": 40.66,
+              "word": " me",
+              "probability": 0.994140625
+            },
+            {
+              "start": 40.66,
+              "end": 40.86,
+              "word": " know",
+              "probability": 0.99853515625
+            },
+            {
+              "start": 40.86,
+              "end": 41.08,
+              "word": " if",
+              "probability": 0.9951171875
+            },
+            {
+              "start": 41.08,
+              "end": 41.32,
+              "word": " I",
+              "probability": 0.85498046875
+            },
+            {
+              "start": 41.32,
+              "end": 41.56,
+              "word": " need",
+              "probability": 0.9228515625
+            }
+          ]
+        },
+        {
+          "start": 40.0,
+          "end": 45.5535,
+          "detected_language": "en",
+          "language_probabilities": [
+            [
+              "en",
+              0.9970395369080373
+            ],
+            [
+              "hi",
+              0.0029570405912784235
+            ],
+            [
+              "gu",
+              3.4225006843500273e-06
+            ]
+          ],
+          "text": "and let me know if I need to provide the transaction details",
+          "words": [
+            {
+              "start": 40.0,
+              "end": 40.26,
+              "word": " and",
+              "probability": 0.55908203125
+            },
+            {
+              "start": 40.26,
+              "end": 40.5,
+              "word": " let",
+              "probability": 0.97021484375
+            },
+            {
+              "start": 40.5,
+              "end": 40.66,
+              "word": " me",
+              "probability": 0.98779296875
+            },
+            {
+              "start": 40.66,
+              "end": 40.86,
+              "word": " know",
+              "probability": 0.99853515625
+            },
+            {
+              "start": 40.86,
+              "end": 41.08,
+              "word": " if",
+              "probability": 0.98486328125
+            },
+            {
+              "start": 41.08,
+              "end": 41.32,
+              "word": " I",
+              "probability": 0.9384765625
+            },
+            {
+              "start": 41.32,
+              "end": 41.62,
+              "word": " need",
+              "probability": 0.9736328125
+            },
+            {
+              "start": 41.62,
+              "end": 41.86,
+              "word": " to",
+              "probability": 0.93994140625
+            },
+            {
+              "start": 41.86,
+              "end": 43.3,
+              "word": " provide",
+              "probability": 0.998046875
+            },
+            {
+              "start": 43.3,
+              "end": 43.56,
+              "word": " the",
+              "probability": 0.8740234375
+            },
+            {
+              "start": 43.56,
+              "end": 43.98,
+              "word": " transaction",
+              "probability": 0.9833984375
+            },
+            {
+              "start": 43.98,
+              "end": 44.5,
+              "word": " details",
+              "probability": 0.99755859375
+            }
+          ]
+        }
+      ],
+      "generated_at": "2026-11-12T16:43:42.130217+00:00"
+    }
+  ]
+}

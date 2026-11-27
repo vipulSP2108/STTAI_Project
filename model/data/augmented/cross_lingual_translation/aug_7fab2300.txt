@@ -1,0 +1,7 @@
+UUID: aug_7fab2300
+Parent_UUID: 20de435d
+Augmentation_Type: cross_lingual_translation
+Similarity_Score: 0.6364
+Transcript: Hello, IELEGEMMMMMMaka. My GM application shows document authentication for two weeks. Can you check the status?
+Target_Label: student_services
+Spoken_Languages: ['English']

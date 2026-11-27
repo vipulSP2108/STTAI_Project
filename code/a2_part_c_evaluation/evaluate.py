@@ -243,8 +243,28 @@ def run_model_predictions(df, model_version="production"):
         raw_b1_txs.append(b1_raw)
         norm_b1_txs.append(normalise_text(b1_raw))
 
-    # 2. Load Vectorizer
-    vec_path = MODELS_DIR / "proposed_vectorizer.pkl"
+    # 2. Resolve Model Checkpoint and Vectorizer based on model_version alias
+    if model_version in ["staging", "v3", "run-9", "run9"]:
+        head_path = MODELS_DIR / "staging_head.pt"
+        vec_path = MODELS_DIR / "staging_vectorizer.pkl"
+        hidden_dim = 128
+    elif model_version in ["candidate_retrained_v2", "candidate", "retrained"]:
+        head_path = MODELS_DIR / "candidate_retrained_v2.pt"
+        vec_path = MODELS_DIR / "candidate_retrained_vectorizer.pkl"
+        hidden_dim = 64
+    elif model_version in ["active"]:
+        head_path = MODELS_DIR / "active_model_head.pt"
+        vec_path = MODELS_DIR / "active_vectorizer.pkl"
+        hidden_dim = 64
+    else:  # "production", "production_v1", "v2", default
+        head_path = MODELS_DIR / "production_v1_head.pt"
+        vec_path = MODELS_DIR / "proposed_vectorizer.pkl"
+        hidden_dim = 64
+
+    if head_path.exists():
+        head_hash = hashlib.sha256(head_path.read_bytes()).hexdigest()
+        print(f"Loaded Checkpoint: {head_path.name} (SHA-256: {head_hash[:16]}...)")
+
     with open(vec_path, "rb") as f:
         vec = pickle.load(f)
 
@@ -254,12 +274,11 @@ def run_model_predictions(df, model_version="production"):
 
     in_dim = X_asr.shape[1]
     head = nn.Sequential(
-        nn.Linear(in_dim, 64),
+        nn.Linear(in_dim, hidden_dim),
         nn.ReLU(),
         nn.Dropout(0.2),
-        nn.Linear(64, 4)
+        nn.Linear(hidden_dim, 4)
     )
-    head_path = MODELS_DIR / "production_v1_head.pt"
     if head_path.exists():
         sd = torch.load(head_path, weights_only=True)
         head.load_state_dict({k.replace("net.", ""): v for k, v in sd.items()})

@@ -1,0 +1,7 @@
+UUID: aug_74ee3fe7
+Parent_UUID: f5f59b22
+Augmentation_Type: cross_lingual_translation
+Similarity_Score: 0.6255
+Transcript: Hello Ibibswa, my host cell window has a lack of water problem. Can anyone send it to fix it?
+Target_Label: hostel_mess
+Spoken_Languages: ['English']

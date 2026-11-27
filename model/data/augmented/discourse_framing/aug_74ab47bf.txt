@@ -1,0 +1,7 @@
+UUID: aug_74ab47bf
+Parent_UUID: 444d610b
+Augmentation_Type: discourse_framing
+Similarity_Score: 0.9129
+Transcript: નમસ્તે, મારે જાણવું છે કે નમસ્કાર ટેનિંગ અને કેપિયા
+Target_Label: hostel_mess
+Spoken_Languages: ['Gujarati']

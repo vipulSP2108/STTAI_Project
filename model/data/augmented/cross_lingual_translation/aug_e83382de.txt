@@ -1,0 +1,7 @@
+UUID: aug_e83382de
+Parent_UUID: 8573e793
+Augmentation_Type: cross_lingual_translation
+Similarity_Score: 0.5638
+Transcript: Son of a bitch, my dear ones, when this is not out of your mind, is it good to have a good hooligan or that for girl?
+Target_Label: hostel_mess
+Spoken_Languages: ['Hindi']

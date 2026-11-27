@@ -1,7 +1,7 @@
 # CS203 Assignment 1 & 2 - Project 5: Voice Helpdesk ASR
 # Core dependencies strictly pinned with == for exact reproducibility
-torch>=2.1.0
-transformers>=4.35.0
+torch==2.5.1
+transformers==4.46.3
 sounddevice==0.4.6
 soundfile==0.12.1
 librosa==0.10.1
@@ -16,7 +16,7 @@ scipy==1.11.4
 numpy==1.24.4
 matplotlib==3.8.0
 pandas==2.0.3
-dvc==3.67.1
+dvc==3.30.0
 pytest==7.4.3
 pytest-json-report==1.5.0
 

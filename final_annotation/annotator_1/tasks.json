@@ -1,0 +1,1822 @@
+[
+  {
+    "id": 1,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P1/1.wav",
+      "speaker_id": "P1",
+      "file_name": "1.wav",
+      "clip_id": "P1_1",
+      "duration": 37.61
+    }
+  },
+  {
+    "id": 2,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P1/2.wav",
+      "speaker_id": "P1",
+      "file_name": "2.wav",
+      "clip_id": "P1_2",
+      "duration": 65.26
+    }
+  },
+  {
+    "id": 3,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P2/1.wav",
+      "speaker_id": "P2",
+      "file_name": "1.wav",
+      "clip_id": "P2_3",
+      "duration": 43.41
+    }
+  },
+  {
+    "id": 4,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P2/2.wav",
+      "speaker_id": "P2",
+      "file_name": "2.wav",
+      "clip_id": "P2_4",
+      "duration": 33.19
+    }
+  },
+  {
+    "id": 5,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P2/PTT-20261019-WA0003.wav",
+      "speaker_id": "P2",
+      "file_name": "PTT-20261019-WA0003.wav",
+      "clip_id": "P2_5",
+      "duration": 67.75
+    }
+  },
+  {
+    "id": 6,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P2/PTT-20261019-WA0004.wav",
+      "speaker_id": "P2",
+      "file_name": "PTT-20261019-WA0004.wav",
+      "clip_id": "P2_6",
+      "duration": 69.29
+    }
+  },
+  {
+    "id": 7,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P3/1.wav",
+      "speaker_id": "P3",
+      "file_name": "1.wav",
+      "clip_id": "P3_7",
+      "duration": 25.43
+    }
+  },
+  {
+    "id": 8,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P3/2.wav",
+      "speaker_id": "P3",
+      "file_name": "2.wav",
+      "clip_id": "P3_8",
+      "duration": 61.12
+    }
+  },
+  {
+    "id": 9,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P3/3.wav",
+      "speaker_id": "P3",
+      "file_name": "3.wav",
+      "clip_id": "P3_9",
+      "duration": 97.49
+    }
+  },
+  {
+    "id": 10,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P4/PTT-20261018-WA0003.wav",
+      "speaker_id": "P4",
+      "file_name": "PTT-20261018-WA0003.wav",
+      "clip_id": "P4_10",
+      "duration": 77.31
+    }
+  },
+  {
+    "id": 11,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P4/PTT-20261018-WA0011.wav",
+      "speaker_id": "P4",
+      "file_name": "PTT-20261018-WA0011.wav",
+      "clip_id": "P4_11",
+      "duration": 74.93
+    }
+  },
+  {
+    "id": 12,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P4/PTT-20261018-WA0017.wav",
+      "speaker_id": "P4",
+      "file_name": "PTT-20261018-WA0017.wav",
+      "clip_id": "P4_12",
+      "duration": 52.91
+    }
+  },
+  {
+    "id": 13,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P4/PTT-20261018-WA0018.wav",
+      "speaker_id": "P4",
+      "file_name": "PTT-20261018-WA0018.wav",
+      "clip_id": "P4_13",
+      "duration": 74.29
+    }
+  },
+  {
+    "id": 14,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P4/PTT-20261018-WA0019.wav",
+      "speaker_id": "P4",
+      "file_name": "PTT-20261018-WA0019.wav",
+      "clip_id": "P4_14",
+      "duration": 52.37
+    }
+  },
+  {
+    "id": 15,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P5/PTT-20261018-WA0004.wav",
+      "speaker_id": "P5",
+      "file_name": "PTT-20261018-WA0004.wav",
+      "clip_id": "P5_15",
+      "duration": 68.01
+    }
+  },
+  {
+    "id": 16,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P5/PTT-20261018-WA0005.wav",
+      "speaker_id": "P5",
+      "file_name": "PTT-20261018-WA0005.wav",
+      "clip_id": "P5_16",
+      "duration": 61.93
+    }
+  },
+  {
+    "id": 17,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P5/PTT-20261018-WA0012.wav",
+      "speaker_id": "P5",
+      "file_name": "PTT-20261018-WA0012.wav",
+      "clip_id": "P5_17",
+      "duration": 70.87
+    }
+  },
+  {
+    "id": 18,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P5/PTT-20261018-WA0013.wav",
+      "speaker_id": "P5",
+      "file_name": "PTT-20261018-WA0013.wav",
+      "clip_id": "P5_18",
+      "duration": 54.95
+    }
+  },
+  {
+    "id": 19,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P5/PTT-20261018-WA0014.wav",
+      "speaker_id": "P5",
+      "file_name": "PTT-20261018-WA0014.wav",
+      "clip_id": "P5_19",
+      "duration": 61.33
+    }
+  },
+  {
+    "id": 20,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P5/PTT-20261018-WA0015.wav",
+      "speaker_id": "P5",
+      "file_name": "PTT-20261018-WA0015.wav",
+      "clip_id": "P5_20",
+      "duration": 64.35
+    }
+  },
+  {
+    "id": 21,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P6/PTT-20261018-WA0016.wav",
+      "speaker_id": "P6",
+      "file_name": "PTT-20261018-WA0016.wav",
+      "clip_id": "P6_21",
+      "duration": 53.41
+    }
+  },
+  {
+    "id": 22,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P7/PTT-20261018-WA0021.wav",
+      "speaker_id": "P7",
+      "file_name": "PTT-20261018-WA0021.wav",
+      "clip_id": "P7_22",
+      "duration": 52.97
+    }
+  },
+  {
+    "id": 23,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P7/PTT-20261019-WA0017.wav",
+      "speaker_id": "P7",
+      "file_name": "PTT-20261019-WA0017.wav",
+      "clip_id": "P7_23",
+      "duration": 65.97
+    }
+  },
+  {
+    "id": 24,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P7/WhatsApp Audio 2026-10-19 at 2.37.55 PM.wav",
+      "speaker_id": "P7",
+      "file_name": "WhatsApp Audio 2026-10-19 at 2.37.55 PM.wav",
+      "clip_id": "P7_24",
+      "duration": 28.25
+    }
+  },
+  {
+    "id": 25,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P7/WhatsApp Audio 2026-10-19 at 2.37.56 PM (1).wav",
+      "speaker_id": "P7",
+      "file_name": "WhatsApp Audio 2026-10-19 at 2.37.56 PM (1).wav",
+      "clip_id": "P7_25",
+      "duration": 67.63
+    }
+  },
+  {
+    "id": 26,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P7/WhatsApp Audio 2026-10-19 at 2.37.56 PM (2).wav",
+      "speaker_id": "P7",
+      "file_name": "WhatsApp Audio 2026-10-19 at 2.37.56 PM (2).wav",
+      "clip_id": "P7_26",
+      "duration": 65.41
+    }
+  },
+  {
+    "id": 27,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P7/WhatsApp Audio 2026-10-19 at 2.37.56 PM.wav",
+      "speaker_id": "P7",
+      "file_name": "WhatsApp Audio 2026-10-19 at 2.37.56 PM.wav",
+      "clip_id": "P7_27",
+      "duration": 63.75
+    }
+  },
+  {
+    "id": 28,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P7/WhatsApp Audio 2026-10-19 at 2.37.57 PM (1).wav",
+      "speaker_id": "P7",
+      "file_name": "WhatsApp Audio 2026-10-19 at 2.37.57 PM (1).wav",
+      "clip_id": "P7_28",
+      "duration": 60.93
+    }
+  },
+  {
+    "id": 29,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P7/WhatsApp Audio 2026-10-19 at 2.37.57 PM (2).wav",
+      "speaker_id": "P7",
+      "file_name": "WhatsApp Audio 2026-10-19 at 2.37.57 PM (2).wav",
+      "clip_id": "P7_29",
+      "duration": 64.91
+    }
+  },
+  {
+    "id": 30,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P7/WhatsApp Audio 2026-10-19 at 2.37.57 PM.wav",
+      "speaker_id": "P7",
+      "file_name": "WhatsApp Audio 2026-10-19 at 2.37.57 PM.wav",
+      "clip_id": "P7_30",
+      "duration": 60.61
+    }
+  },
+  {
+    "id": 31,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P8/PTT-20261019-WA0006.wav",
+      "speaker_id": "P8",
+      "file_name": "PTT-20261019-WA0006.wav",
+      "clip_id": "P8_31",
+      "duration": 68.63
+    }
+  },
+  {
+    "id": 32,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P8/PTT-20261019-WA0007.wav",
+      "speaker_id": "P8",
+      "file_name": "PTT-20261019-WA0007.wav",
+      "clip_id": "P8_32",
+      "duration": 84.39
+    }
+  },
+  {
+    "id": 33,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P8/PTT-20261019-WA0008.wav",
+      "speaker_id": "P8",
+      "file_name": "PTT-20261019-WA0008.wav",
+      "clip_id": "P8_33",
+      "duration": 95.41
+    }
+  },
+  {
+    "id": 34,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P8/PTT-20261019-WA0037.wav",
+      "speaker_id": "P8",
+      "file_name": "PTT-20261019-WA0037.wav",
+      "clip_id": "P8_34",
+      "duration": 79.85
+    }
+  },
+  {
+    "id": 35,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P8/PTT-20261019-WA0038.wav",
+      "speaker_id": "P8",
+      "file_name": "PTT-20261019-WA0038.wav",
+      "clip_id": "P8_35",
+      "duration": 79.43
+    }
+  },
+  {
+    "id": 36,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P8/PTT-20261019-WA0039.wav",
+      "speaker_id": "P8",
+      "file_name": "PTT-20261019-WA0039.wav",
+      "clip_id": "P8_36",
+      "duration": 84.43
+    }
+  },
+  {
+    "id": 37,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P8/PTT-20261019-WA0040.wav",
+      "speaker_id": "P8",
+      "file_name": "PTT-20261019-WA0040.wav",
+      "clip_id": "P8_37",
+      "duration": 82.63
+    }
+  },
+  {
+    "id": 38,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P8/PTT-20261019-WA0041.wav",
+      "speaker_id": "P8",
+      "file_name": "PTT-20261019-WA0041.wav",
+      "clip_id": "P8_38",
+      "duration": 84.55
+    }
+  },
+  {
+    "id": 39,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P8/PTT-20261019-WA0042.wav",
+      "speaker_id": "P8",
+      "file_name": "PTT-20261019-WA0042.wav",
+      "clip_id": "P8_39",
+      "duration": 85.41
+    }
+  },
+  {
+    "id": 40,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P8/PTT-20261019-WA0043.wav",
+      "speaker_id": "P8",
+      "file_name": "PTT-20261019-WA0043.wav",
+      "clip_id": "P8_40",
+      "duration": 93.23
+    }
+  },
+  {
+    "id": 41,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P9/PTT-20261019-WA0009.wav",
+      "speaker_id": "P9",
+      "file_name": "PTT-20261019-WA0009.wav",
+      "clip_id": "P9_41",
+      "duration": 45.55
+    }
+  },
+  {
+    "id": 42,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P9/PTT-20261019-WA0010.wav",
+      "speaker_id": "P9",
+      "file_name": "PTT-20261019-WA0010.wav",
+      "clip_id": "P9_42",
+      "duration": 44.77
+    }
+  },
+  {
+    "id": 43,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P9/PTT-20261019-WA0011.wav",
+      "speaker_id": "P9",
+      "file_name": "PTT-20261019-WA0011.wav",
+      "clip_id": "P9_43",
+      "duration": 42.01
+    }
+  },
+  {
+    "id": 44,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P9/PTT-20261019-WA0021.wav",
+      "speaker_id": "P9",
+      "file_name": "PTT-20261019-WA0021.wav",
+      "clip_id": "P9_44",
+      "duration": 47.63
+    }
+  },
+  {
+    "id": 45,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P9/PTT-20261019-WA0022.wav",
+      "speaker_id": "P9",
+      "file_name": "PTT-20261019-WA0022.wav",
+      "clip_id": "P9_45",
+      "duration": 52.97
+    }
+  },
+  {
+    "id": 46,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P9/PTT-20261019-WA0023.wav",
+      "speaker_id": "P9",
+      "file_name": "PTT-20261019-WA0023.wav",
+      "clip_id": "P9_46",
+      "duration": 53.43
+    }
+  },
+  {
+    "id": 47,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P9/PTT-20261019-WA0024.wav",
+      "speaker_id": "P9",
+      "file_name": "PTT-20261019-WA0024.wav",
+      "clip_id": "P9_47",
+      "duration": 52.11
+    }
+  },
+  {
+    "id": 48,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P9/PTT-20261019-WA0025.wav",
+      "speaker_id": "P9",
+      "file_name": "PTT-20261019-WA0025.wav",
+      "clip_id": "P9_48",
+      "duration": 54.21
+    }
+  },
+  {
+    "id": 49,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P9/PTT-20261019-WA0026.wav",
+      "speaker_id": "P9",
+      "file_name": "PTT-20261019-WA0026.wav",
+      "clip_id": "P9_49",
+      "duration": 58.23
+    }
+  },
+  {
+    "id": 50,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P9/PTT-20261019-WA0027.wav",
+      "speaker_id": "P9",
+      "file_name": "PTT-20261019-WA0027.wav",
+      "clip_id": "P9_50",
+      "duration": 53.27
+    }
+  },
+  {
+    "id": 51,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P10/PTT-20261019-WA0014.wav",
+      "speaker_id": "P10",
+      "file_name": "PTT-20261019-WA0014.wav",
+      "clip_id": "P10_51",
+      "duration": 54.99
+    }
+  },
+  {
+    "id": 52,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P10/PTT-20261019-WA0020.wav",
+      "speaker_id": "P10",
+      "file_name": "PTT-20261019-WA0020.wav",
+      "clip_id": "P10_52",
+      "duration": 59.47
+    }
+  },
+  {
+    "id": 53,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P11/PTT-20261019-WA0015.wav",
+      "speaker_id": "P11",
+      "file_name": "PTT-20261019-WA0015.wav",
+      "clip_id": "P11_53",
+      "duration": 62.31
+    }
+  },
+  {
+    "id": 54,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P11/PTT-20261019-WA0016.wav",
+      "speaker_id": "P11",
+      "file_name": "PTT-20261019-WA0016.wav",
+      "clip_id": "P11_54",
+      "duration": 65.13
+    }
+  },
+  {
+    "id": 55,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P11/PTT-20261019-WA0018.wav",
+      "speaker_id": "P11",
+      "file_name": "PTT-20261019-WA0018.wav",
+      "clip_id": "P11_55",
+      "duration": 79.29
+    }
+  },
+  {
+    "id": 56,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P11/PTT-20261019-WA0019.wav",
+      "speaker_id": "P11",
+      "file_name": "PTT-20261019-WA0019.wav",
+      "clip_id": "P11_56",
+      "duration": 68.13
+    }
+  },
+  {
+    "id": 57,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P12/PTT-20261019-WA0028.wav",
+      "speaker_id": "P12",
+      "file_name": "PTT-20261019-WA0028.wav",
+      "clip_id": "P12_57",
+      "duration": 41.39
+    }
+  },
+  {
+    "id": 58,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P12/PTT-20261019-WA0029.wav",
+      "speaker_id": "P12",
+      "file_name": "PTT-20261019-WA0029.wav",
+      "clip_id": "P12_58",
+      "duration": 43.81
+    }
+  },
+  {
+    "id": 59,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P20/WhatsApp Ptt 2026-11-05 at 6.44.09 PM.wav",
+      "speaker_id": "P20",
+      "file_name": "WhatsApp Ptt 2026-11-05 at 6.44.09 PM.wav",
+      "clip_id": "P20_59",
+      "duration": 59.61
+    }
+  },
+  {
+    "id": 60,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P20/WhatsApp Ptt 2026-11-05 at 6.45.32 PM.wav",
+      "speaker_id": "P20",
+      "file_name": "WhatsApp Ptt 2026-11-05 at 6.45.32 PM.wav",
+      "clip_id": "P20_60",
+      "duration": 60.25
+    }
+  },
+  {
+    "id": 61,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P20/WhatsApp Ptt 2026-11-05 at 6.47.47 PM.wav",
+      "speaker_id": "P20",
+      "file_name": "WhatsApp Ptt 2026-11-05 at 6.47.47 PM.wav",
+      "clip_id": "P20_61",
+      "duration": 64.57
+    }
+  },
+  {
+    "id": 62,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P20/WhatsApp Ptt 2026-11-05 at 6.49.35 PM.wav",
+      "speaker_id": "P20",
+      "file_name": "WhatsApp Ptt 2026-11-05 at 6.49.35 PM.wav",
+      "clip_id": "P20_62",
+      "duration": 58.99
+    }
+  },
+  {
+    "id": 63,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P20/WhatsApp Ptt 2026-11-05 at 6.50.45 PM.wav",
+      "speaker_id": "P20",
+      "file_name": "WhatsApp Ptt 2026-11-05 at 6.50.45 PM.wav",
+      "clip_id": "P20_63",
+      "duration": 61.27
+    }
+  },
+  {
+    "id": 64,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P20/WhatsApp Ptt 2026-11-05 at 6.52.04 PM.wav",
+      "speaker_id": "P20",
+      "file_name": "WhatsApp Ptt 2026-11-05 at 6.52.04 PM.wav",
+      "clip_id": "P20_64",
+      "duration": 67.85
+    }
+  },
+  {
+    "id": 65,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P20/WhatsApp Ptt 2026-11-05 at 6.53.52 PM.wav",
+      "speaker_id": "P20",
+      "file_name": "WhatsApp Ptt 2026-11-05 at 6.53.52 PM.wav",
+      "clip_id": "P20_65",
+      "duration": 59.89
+    }
+  },
+  {
+    "id": 66,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P20/WhatsApp Ptt 2026-11-05 at 6.55.01 PM.wav",
+      "speaker_id": "P20",
+      "file_name": "WhatsApp Ptt 2026-11-05 at 6.55.01 PM.wav",
+      "clip_id": "P20_66",
+      "duration": 59.49
+    }
+  },
+  {
+    "id": 67,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P20/WhatsApp Ptt 2026-11-05 at 6.56.15 PM.wav",
+      "speaker_id": "P20",
+      "file_name": "WhatsApp Ptt 2026-11-05 at 6.56.15 PM.wav",
+      "clip_id": "P20_67",
+      "duration": 66.37
+    }
+  },
+  {
+    "id": 68,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P20/WhatsApp Ptt 2026-11-05 at 6.57.26 PM.wav",
+      "speaker_id": "P20",
+      "file_name": "WhatsApp Ptt 2026-11-05 at 6.57.26 PM.wav",
+      "clip_id": "P20_68",
+      "duration": 64.33
+    }
+  },
+  {
+    "id": 69,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P21/WhatsApp Ptt 2026-11-06 at 11.06.08 AM.wav",
+      "speaker_id": "P21",
+      "file_name": "WhatsApp Ptt 2026-11-06 at 11.06.08 AM.wav",
+      "clip_id": "P21_69",
+      "duration": 17.49
+    }
+  },
+  {
+    "id": 70,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P21/WhatsApp Ptt 2026-11-06 at 11.06.30 AM.wav",
+      "speaker_id": "P21",
+      "file_name": "WhatsApp Ptt 2026-11-06 at 11.06.30 AM.wav",
+      "clip_id": "P21_70",
+      "duration": 11.09
+    }
+  },
+  {
+    "id": 71,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P21/WhatsApp Ptt 2026-11-06 at 11.09.46 AM.wav",
+      "speaker_id": "P21",
+      "file_name": "WhatsApp Ptt 2026-11-06 at 11.09.46 AM.wav",
+      "clip_id": "P21_71",
+      "duration": 16.51
+    }
+  },
+  {
+    "id": 72,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P21/WhatsApp Ptt 2026-11-06 at 11.10.10 AM.wav",
+      "speaker_id": "P21",
+      "file_name": "WhatsApp Ptt 2026-11-06 at 11.10.10 AM.wav",
+      "clip_id": "P21_72",
+      "duration": 7.27
+    }
+  },
+  {
+    "id": 73,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P21/WhatsApp Ptt 2026-11-06 at 11.10.36 AM.wav",
+      "speaker_id": "P21",
+      "file_name": "WhatsApp Ptt 2026-11-06 at 11.10.36 AM.wav",
+      "clip_id": "P21_73",
+      "duration": 18.31
+    }
+  },
+  {
+    "id": 74,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P21/WhatsApp Ptt 2026-11-06 at 11.11.07 AM.wav",
+      "speaker_id": "P21",
+      "file_name": "WhatsApp Ptt 2026-11-06 at 11.11.07 AM.wav",
+      "clip_id": "P21_74",
+      "duration": 22.17
+    }
+  },
+  {
+    "id": 75,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P21/WhatsApp Ptt 2026-11-06 at 11.13.42 AM.wav",
+      "speaker_id": "P21",
+      "file_name": "WhatsApp Ptt 2026-11-06 at 11.13.42 AM.wav",
+      "clip_id": "P21_75",
+      "duration": 15.85
+    }
+  },
+  {
+    "id": 76,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P21/WhatsApp Ptt 2026-11-06 at 11.14.57 AM.wav",
+      "speaker_id": "P21",
+      "file_name": "WhatsApp Ptt 2026-11-06 at 11.14.57 AM.wav",
+      "clip_id": "P21_76",
+      "duration": 22.91
+    }
+  },
+  {
+    "id": 77,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P21/WhatsApp Ptt 2026-11-06 at 11.15.57 AM.wav",
+      "speaker_id": "P21",
+      "file_name": "WhatsApp Ptt 2026-11-06 at 11.15.57 AM.wav",
+      "clip_id": "P21_77",
+      "duration": 32.67
+    }
+  },
+  {
+    "id": 78,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P21/WhatsApp Ptt 2026-11-06 at 11.16.28 AM.wav",
+      "speaker_id": "P21",
+      "file_name": "WhatsApp Ptt 2026-11-06 at 11.16.28 AM.wav",
+      "clip_id": "P21_78",
+      "duration": 21.75
+    }
+  },
+  {
+    "id": 79,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P21/WhatsApp Ptt 2026-11-06 at 11.18.25 AM.wav",
+      "speaker_id": "P21",
+      "file_name": "WhatsApp Ptt 2026-11-06 at 11.18.25 AM.wav",
+      "clip_id": "P21_79",
+      "duration": 38.77
+    }
+  },
+  {
+    "id": 80,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P21/WhatsApp Ptt 2026-11-06 at 11.20.07 AM.wav",
+      "speaker_id": "P21",
+      "file_name": "WhatsApp Ptt 2026-11-06 at 11.20.07 AM.wav",
+      "clip_id": "P21_80",
+      "duration": 21.27
+    }
+  },
+  {
+    "id": 81,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P21/WhatsApp Ptt 2026-11-06 at 11.20.56 AM.wav",
+      "speaker_id": "P21",
+      "file_name": "WhatsApp Ptt 2026-11-06 at 11.20.56 AM.wav",
+      "clip_id": "P21_81",
+      "duration": 29.79
+    }
+  },
+  {
+    "id": 82,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P21/WhatsApp Ptt 2026-11-06 at 11.21.15 AM.wav",
+      "speaker_id": "P21",
+      "file_name": "WhatsApp Ptt 2026-11-06 at 11.21.15 AM.wav",
+      "clip_id": "P21_82",
+      "duration": 7.37
+    }
+  },
+  {
+    "id": 83,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P21/WhatsApp Ptt 2026-11-06 at 2.35.34 PM.wav",
+      "speaker_id": "P21",
+      "file_name": "WhatsApp Ptt 2026-11-06 at 2.35.34 PM.wav",
+      "clip_id": "P21_83",
+      "duration": 11.17
+    }
+  },
+  {
+    "id": 84,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P21/WhatsApp Ptt 2026-11-06 at 2.36.04 PM.wav",
+      "speaker_id": "P21",
+      "file_name": "WhatsApp Ptt 2026-11-06 at 2.36.04 PM.wav",
+      "clip_id": "P21_84",
+      "duration": 21.97
+    }
+  },
+  {
+    "id": 85,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P21/WhatsApp Ptt 2026-11-06 at 2.36.31 PM.wav",
+      "speaker_id": "P21",
+      "file_name": "WhatsApp Ptt 2026-11-06 at 2.36.31 PM.wav",
+      "clip_id": "P21_85",
+      "duration": 21.95
+    }
+  },
+  {
+    "id": 86,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P21/WhatsApp Ptt 2026-11-06 at 2.37.16 PM.wav",
+      "speaker_id": "P21",
+      "file_name": "WhatsApp Ptt 2026-11-06 at 2.37.16 PM.wav",
+      "clip_id": "P21_86",
+      "duration": 26.95
+    }
+  },
+  {
+    "id": 87,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P22/WhatsApp Ptt 2026-11-06 at 2.31.14 PM.wav",
+      "speaker_id": "P22",
+      "file_name": "WhatsApp Ptt 2026-11-06 at 2.31.14 PM.wav",
+      "clip_id": "P22_87",
+      "duration": 36.83
+    }
+  },
+  {
+    "id": 88,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P22/WhatsApp Ptt 2026-11-06 at 2.32.06 PM.wav",
+      "speaker_id": "P22",
+      "file_name": "WhatsApp Ptt 2026-11-06 at 2.32.06 PM.wav",
+      "clip_id": "P22_88",
+      "duration": 45.11
+    }
+  },
+  {
+    "id": 89,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P22/WhatsApp Ptt 2026-11-06 at 2.33.17 PM.wav",
+      "speaker_id": "P22",
+      "file_name": "WhatsApp Ptt 2026-11-06 at 2.33.17 PM.wav",
+      "clip_id": "P22_89",
+      "duration": 65.15
+    }
+  },
+  {
+    "id": 90,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P22/WhatsApp Ptt 2026-11-06 at 2.34.17 PM.wav",
+      "speaker_id": "P22",
+      "file_name": "WhatsApp Ptt 2026-11-06 at 2.34.17 PM.wav",
+      "clip_id": "P22_90",
+      "duration": 45.25
+    }
+  },
+  {
+    "id": 91,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P22/WhatsApp Ptt 2026-11-06 at 2.35.11 PM.wav",
+      "speaker_id": "P22",
+      "file_name": "WhatsApp Ptt 2026-11-06 at 2.35.11 PM.wav",
+      "clip_id": "P22_91",
+      "duration": 49.71
+    }
+  },
+  {
+    "id": 92,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P22/WhatsApp Ptt 2026-11-06 at 2.36.05 PM.wav",
+      "speaker_id": "P22",
+      "file_name": "WhatsApp Ptt 2026-11-06 at 2.36.05 PM.wav",
+      "clip_id": "P22_92",
+      "duration": 46.19
+    }
+  },
+  {
+    "id": 93,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P22/WhatsApp Ptt 2026-11-06 at 2.37.05 PM.wav",
+      "speaker_id": "P22",
+      "file_name": "WhatsApp Ptt 2026-11-06 at 2.37.05 PM.wav",
+      "clip_id": "P22_93",
+      "duration": 54.79
+    }
+  },
+  {
+    "id": 94,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P22/WhatsApp Ptt 2026-11-06 at 2.38.25 PM.wav",
+      "speaker_id": "P22",
+      "file_name": "WhatsApp Ptt 2026-11-06 at 2.38.25 PM.wav",
+      "clip_id": "P22_94",
+      "duration": 68.79
+    }
+  },
+  {
+    "id": 95,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P22/WhatsApp Ptt 2026-11-06 at 2.39.25 PM.wav",
+      "speaker_id": "P22",
+      "file_name": "WhatsApp Ptt 2026-11-06 at 2.39.25 PM.wav",
+      "clip_id": "P22_95",
+      "duration": 48.73
+    }
+  },
+  {
+    "id": 96,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P22/WhatsApp Ptt 2026-11-06 at 2.40.32 PM.wav",
+      "speaker_id": "P22",
+      "file_name": "WhatsApp Ptt 2026-11-06 at 2.40.32 PM.wav",
+      "clip_id": "P22_96",
+      "duration": 61.47
+    }
+  },
+  {
+    "id": 97,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P22/WhatsApp Ptt 2026-11-06 at 2.41.26 PM.wav",
+      "speaker_id": "P22",
+      "file_name": "WhatsApp Ptt 2026-11-06 at 2.41.26 PM.wav",
+      "clip_id": "P22_97",
+      "duration": 44.03
+    }
+  },
+  {
+    "id": 98,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P22/WhatsApp Ptt 2026-11-06 at 2.42.28 PM.wav",
+      "speaker_id": "P22",
+      "file_name": "WhatsApp Ptt 2026-11-06 at 2.42.28 PM.wav",
+      "clip_id": "P22_98",
+      "duration": 53.25
+    }
+  },
+  {
+    "id": 99,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P22/WhatsApp Ptt 2026-11-06 at 2.43.41 PM.wav",
+      "speaker_id": "P22",
+      "file_name": "WhatsApp Ptt 2026-11-06 at 2.43.41 PM.wav",
+      "clip_id": "P22_99",
+      "duration": 64.19
+    }
+  },
+  {
+    "id": 100,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P22/WhatsApp Ptt 2026-11-06 at 2.44.29 PM.wav",
+      "speaker_id": "P22",
+      "file_name": "WhatsApp Ptt 2026-11-06 at 2.44.29 PM.wav",
+      "clip_id": "P22_100",
+      "duration": 43.69
+    }
+  },
+  {
+    "id": 101,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P22/WhatsApp Ptt 2026-11-06 at 2.45.48 PM.wav",
+      "speaker_id": "P22",
+      "file_name": "WhatsApp Ptt 2026-11-06 at 2.45.48 PM.wav",
+      "clip_id": "P22_101",
+      "duration": 75.79
+    }
+  },
+  {
+    "id": 102,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P2/WhatsApp Ptt 2026-11-06 at 12.02.57 PM.wav",
+      "speaker_id": "P2",
+      "file_name": "WhatsApp Ptt 2026-11-06 at 12.02.57 PM.wav",
+      "clip_id": "P2_7",
+      "duration": 60.21
+    }
+  },
+  {
+    "id": 103,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P2/WhatsApp Ptt 2026-11-06 at 12.03.53 PM.wav",
+      "speaker_id": "P2",
+      "file_name": "WhatsApp Ptt 2026-11-06 at 12.03.53 PM.wav",
+      "clip_id": "P2_8",
+      "duration": 48.89
+    }
+  },
+  {
+    "id": 104,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P2/WhatsApp Ptt 2026-11-06 at 12.06.40 PM.wav",
+      "speaker_id": "P2",
+      "file_name": "WhatsApp Ptt 2026-11-06 at 12.06.40 PM.wav",
+      "clip_id": "P2_9",
+      "duration": 68.83
+    }
+  },
+  {
+    "id": 105,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P2/WhatsApp Ptt 2026-11-06 at 12.07.26 PM.wav",
+      "speaker_id": "P2",
+      "file_name": "WhatsApp Ptt 2026-11-06 at 12.07.26 PM.wav",
+      "clip_id": "P2_10",
+      "duration": 43.91
+    }
+  },
+  {
+    "id": 106,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P2/WhatsApp Ptt 2026-11-06 at 12.08.35 PM.wav",
+      "speaker_id": "P2",
+      "file_name": "WhatsApp Ptt 2026-11-06 at 12.08.35 PM.wav",
+      "clip_id": "P2_11",
+      "duration": 65.97
+    }
+  },
+  {
+    "id": 107,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P2/WhatsApp Ptt 2026-11-06 at 12.09.45 PM.wav",
+      "speaker_id": "P2",
+      "file_name": "WhatsApp Ptt 2026-11-06 at 12.09.45 PM.wav",
+      "clip_id": "P2_12",
+      "duration": 66.77
+    }
+  },
+  {
+    "id": 108,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P2/WhatsApp Ptt 2026-11-06 at 12.11.00 PM.wav",
+      "speaker_id": "P2",
+      "file_name": "WhatsApp Ptt 2026-11-06 at 12.11.00 PM.wav",
+      "clip_id": "P2_13",
+      "duration": 31.73
+    }
+  },
+  {
+    "id": 109,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P13/clip_01.wav",
+      "speaker_id": "P13",
+      "file_name": "clip_01.wav",
+      "clip_id": "P13_66",
+      "duration": 12.0
+    }
+  },
+  {
+    "id": 110,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P13/clip_02.wav",
+      "speaker_id": "P13",
+      "file_name": "clip_02.wav",
+      "clip_id": "P13_67",
+      "duration": 14.0
+    }
+  },
+  {
+    "id": 111,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P13/clip_03.wav",
+      "speaker_id": "P13",
+      "file_name": "clip_03.wav",
+      "clip_id": "P13_68",
+      "duration": 11.0
+    }
+  },
+  {
+    "id": 112,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P13/clip_04.wav",
+      "speaker_id": "P13",
+      "file_name": "clip_04.wav",
+      "clip_id": "P13_69",
+      "duration": 10.0
+    }
+  },
+  {
+    "id": 113,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P13/clip_05.wav",
+      "speaker_id": "P13",
+      "file_name": "clip_05.wav",
+      "clip_id": "P13_70",
+      "duration": 11.0
+    }
+  },
+  {
+    "id": 114,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P13/clip_06.wav",
+      "speaker_id": "P13",
+      "file_name": "clip_06.wav",
+      "clip_id": "P13_71",
+      "duration": 10.0
+    }
+  },
+  {
+    "id": 115,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P13/clip_07.wav",
+      "speaker_id": "P13",
+      "file_name": "clip_07.wav",
+      "clip_id": "P13_72",
+      "duration": 11.0
+    }
+  },
+  {
+    "id": 116,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P13/clip_08.wav",
+      "speaker_id": "P13",
+      "file_name": "clip_08.wav",
+      "clip_id": "P13_73",
+      "duration": 9.0
+    }
+  },
+  {
+    "id": 117,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P13/clip_09.wav",
+      "speaker_id": "P13",
+      "file_name": "clip_09.wav",
+      "clip_id": "P13_74",
+      "duration": 9.0
+    }
+  },
+  {
+    "id": 118,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P13/clip_10.wav",
+      "speaker_id": "P13",
+      "file_name": "clip_10.wav",
+      "clip_id": "P13_75",
+      "duration": 9.0
+    }
+  },
+  {
+    "id": 119,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P13/clip_11.wav",
+      "speaker_id": "P13",
+      "file_name": "clip_11.wav",
+      "clip_id": "P13_76",
+      "duration": 11.0
+    }
+  },
+  {
+    "id": 120,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P13/clip_12.wav",
+      "speaker_id": "P13",
+      "file_name": "clip_12.wav",
+      "clip_id": "P13_77",
+      "duration": 11.0
+    }
+  },
+  {
+    "id": 121,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P13/clip_13.wav",
+      "speaker_id": "P13",
+      "file_name": "clip_13.wav",
+      "clip_id": "P13_78",
+      "duration": 8.0
+    }
+  },
+  {
+    "id": 122,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P13/clip_14.wav",
+      "speaker_id": "P13",
+      "file_name": "clip_14.wav",
+      "clip_id": "P13_79",
+      "duration": 13.0
+    }
+  },
+  {
+    "id": 123,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P13/clip_15.wav",
+      "speaker_id": "P13",
+      "file_name": "clip_15.wav",
+      "clip_id": "P13_80",
+      "duration": 11.0
+    }
+  },
+  {
+    "id": 124,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P13/clip_16.wav",
+      "speaker_id": "P13",
+      "file_name": "clip_16.wav",
+      "clip_id": "P13_81",
+      "duration": 10.0
+    }
+  },
+  {
+    "id": 125,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P13/clip_17.wav",
+      "speaker_id": "P13",
+      "file_name": "clip_17.wav",
+      "clip_id": "P13_82",
+      "duration": 11.0
+    }
+  },
+  {
+    "id": 126,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P13/clip_18.wav",
+      "speaker_id": "P13",
+      "file_name": "clip_18.wav",
+      "clip_id": "P13_83",
+      "duration": 10.0
+    }
+  },
+  {
+    "id": 127,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P13/clip_19.wav",
+      "speaker_id": "P13",
+      "file_name": "clip_19.wav",
+      "clip_id": "P13_84",
+      "duration": 9.0
+    }
+  },
+  {
+    "id": 128,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P13/clip_20.wav",
+      "speaker_id": "P13",
+      "file_name": "clip_20.wav",
+      "clip_id": "P13_85",
+      "duration": 12.0
+    }
+  },
+  {
+    "id": 129,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P13/clip_21.wav",
+      "speaker_id": "P13",
+      "file_name": "clip_21.wav",
+      "clip_id": "P13_86",
+      "duration": 8.0
+    }
+  },
+  {
+    "id": 130,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P13/clip_22.wav",
+      "speaker_id": "P13",
+      "file_name": "clip_22.wav",
+      "clip_id": "P13_87",
+      "duration": 7.92
+    }
+  },
+  {
+    "id": 131,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P14/clip_01.wav",
+      "speaker_id": "P14",
+      "file_name": "clip_01.wav",
+      "clip_id": "P14_88",
+      "duration": 10.0
+    }
+  },
+  {
+    "id": 132,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P14/clip_02.wav",
+      "speaker_id": "P14",
+      "file_name": "clip_02.wav",
+      "clip_id": "P14_89",
+      "duration": 10.0
+    }
+  },
+  {
+    "id": 133,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P14/clip_03.wav",
+      "speaker_id": "P14",
+      "file_name": "clip_03.wav",
+      "clip_id": "P14_90",
+      "duration": 15.0
+    }
+  },
+  {
+    "id": 134,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P14/clip_04.wav",
+      "speaker_id": "P14",
+      "file_name": "clip_04.wav",
+      "clip_id": "P14_91",
+      "duration": 10.0
+    }
+  },
+  {
+    "id": 135,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P14/clip_05.wav",
+      "speaker_id": "P14",
+      "file_name": "clip_05.wav",
+      "clip_id": "P14_92",
+      "duration": 10.0
+    }
+  },
+  {
+    "id": 136,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P14/clip_06.wav",
+      "speaker_id": "P14",
+      "file_name": "clip_06.wav",
+      "clip_id": "P14_93",
+      "duration": 13.0
+    }
+  },
+  {
+    "id": 137,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P14/clip_07.wav",
+      "speaker_id": "P14",
+      "file_name": "clip_07.wav",
+      "clip_id": "P14_94",
+      "duration": 10.0
+    }
+  },
+  {
+    "id": 138,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P14/clip_08.wav",
+      "speaker_id": "P14",
+      "file_name": "clip_08.wav",
+      "clip_id": "P14_95",
+      "duration": 12.0
+    }
+  },
+  {
+    "id": 139,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P14/clip_09.wav",
+      "speaker_id": "P14",
+      "file_name": "clip_09.wav",
+      "clip_id": "P14_96",
+      "duration": 10.0
+    }
+  },
+  {
+    "id": 140,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P14/clip_10.wav",
+      "speaker_id": "P14",
+      "file_name": "clip_10.wav",
+      "clip_id": "P14_97",
+      "duration": 10.0
+    }
+  },
+  {
+    "id": 141,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P14/clip_11.wav",
+      "speaker_id": "P14",
+      "file_name": "clip_11.wav",
+      "clip_id": "P14_98",
+      "duration": 11.04
+    }
+  },
+  {
+    "id": 142,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P16/clip_01.wav",
+      "speaker_id": "P16",
+      "file_name": "clip_01.wav",
+      "clip_id": "P16_99",
+      "duration": 8.0
+    }
+  },
+  {
+    "id": 143,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P16/clip_02.wav",
+      "speaker_id": "P16",
+      "file_name": "clip_02.wav",
+      "clip_id": "P16_100",
+      "duration": 7.0
+    }
+  },
+  {
+    "id": 144,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P16/clip_03.wav",
+      "speaker_id": "P16",
+      "file_name": "clip_03.wav",
+      "clip_id": "P16_101",
+      "duration": 8.0
+    }
+  },
+  {
+    "id": 145,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P16/clip_04.wav",
+      "speaker_id": "P16",
+      "file_name": "clip_04.wav",
+      "clip_id": "P16_102",
+      "duration": 10.0
+    }
+  },
+  {
+    "id": 146,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P16/clip_05.wav",
+      "speaker_id": "P16",
+      "file_name": "clip_05.wav",
+      "clip_id": "P16_103",
+      "duration": 10.0
+    }
+  },
+  {
+    "id": 147,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P16/clip_06.wav",
+      "speaker_id": "P16",
+      "file_name": "clip_06.wav",
+      "clip_id": "P16_104",
+      "duration": 9.0
+    }
+  },
+  {
+    "id": 148,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P16/clip_07.wav",
+      "speaker_id": "P16",
+      "file_name": "clip_07.wav",
+      "clip_id": "P16_105",
+      "duration": 9.0
+    }
+  },
+  {
+    "id": 149,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P16/clip_08.wav",
+      "speaker_id": "P16",
+      "file_name": "clip_08.wav",
+      "clip_id": "P16_106",
+      "duration": 10.0
+    }
+  },
+  {
+    "id": 150,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P16/clip_09.wav",
+      "speaker_id": "P16",
+      "file_name": "clip_09.wav",
+      "clip_id": "P16_107",
+      "duration": 9.0
+    }
+  },
+  {
+    "id": 151,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P16/clip_10.wav",
+      "speaker_id": "P16",
+      "file_name": "clip_10.wav",
+      "clip_id": "P16_108",
+      "duration": 10.0
+    }
+  },
+  {
+    "id": 152,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P16/clip_11.wav",
+      "speaker_id": "P16",
+      "file_name": "clip_11.wav",
+      "clip_id": "P16_109",
+      "duration": 10.0
+    }
+  },
+  {
+    "id": 153,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P16/clip_12.wav",
+      "speaker_id": "P16",
+      "file_name": "clip_12.wav",
+      "clip_id": "P16_110",
+      "duration": 9.0
+    }
+  },
+  {
+    "id": 154,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P16/clip_13.wav",
+      "speaker_id": "P16",
+      "file_name": "clip_13.wav",
+      "clip_id": "P16_111",
+      "duration": 10.0
+    }
+  },
+  {
+    "id": 155,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P16/clip_14.wav",
+      "speaker_id": "P16",
+      "file_name": "clip_14.wav",
+      "clip_id": "P16_112",
+      "duration": 9.37
+    }
+  },
+  {
+    "id": 156,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P18/clip_01.wav",
+      "speaker_id": "P18",
+      "file_name": "clip_01.wav",
+      "clip_id": "P18_113",
+      "duration": 10.0
+    }
+  },
+  {
+    "id": 157,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P18/clip_02.wav",
+      "speaker_id": "P18",
+      "file_name": "clip_02.wav",
+      "clip_id": "P18_114",
+      "duration": 12.0
+    }
+  },
+  {
+    "id": 158,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P18/clip_03.wav",
+      "speaker_id": "P18",
+      "file_name": "clip_03.wav",
+      "clip_id": "P18_115",
+      "duration": 12.0
+    }
+  },
+  {
+    "id": 159,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P18/clip_04.wav",
+      "speaker_id": "P18",
+      "file_name": "clip_04.wav",
+      "clip_id": "P18_116",
+      "duration": 10.0
+    }
+  },
+  {
+    "id": 160,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P18/clip_05.wav",
+      "speaker_id": "P18",
+      "file_name": "clip_05.wav",
+      "clip_id": "P18_117",
+      "duration": 11.0
+    }
+  },
+  {
+    "id": 161,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P18/clip_06.wav",
+      "speaker_id": "P18",
+      "file_name": "clip_06.wav",
+      "clip_id": "P18_118",
+      "duration": 11.0
+    }
+  },
+  {
+    "id": 162,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P18/clip_07.wav",
+      "speaker_id": "P18",
+      "file_name": "clip_07.wav",
+      "clip_id": "P18_119",
+      "duration": 9.0
+    }
+  },
+  {
+    "id": 163,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P18/clip_08.wav",
+      "speaker_id": "P18",
+      "file_name": "clip_08.wav",
+      "clip_id": "P18_120",
+      "duration": 9.0
+    }
+  },
+  {
+    "id": 164,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P18/clip_09.wav",
+      "speaker_id": "P18",
+      "file_name": "clip_09.wav",
+      "clip_id": "P18_121",
+      "duration": 10.0
+    }
+  },
+  {
+    "id": 165,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P18/clip_10.wav",
+      "speaker_id": "P18",
+      "file_name": "clip_10.wav",
+      "clip_id": "P18_122",
+      "duration": 12.0
+    }
+  },
+  {
+    "id": 166,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P18/clip_11.wav",
+      "speaker_id": "P18",
+      "file_name": "clip_11.wav",
+      "clip_id": "P18_123",
+      "duration": 10.0
+    }
+  },
+  {
+    "id": 167,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P18/clip_12.wav",
+      "speaker_id": "P18",
+      "file_name": "clip_12.wav",
+      "clip_id": "P18_124",
+      "duration": 12.0
+    }
+  },
+  {
+    "id": 168,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P18/clip_13.wav",
+      "speaker_id": "P18",
+      "file_name": "clip_13.wav",
+      "clip_id": "P18_125",
+      "duration": 10.0
+    }
+  },
+  {
+    "id": 169,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P18/clip_14.wav",
+      "speaker_id": "P18",
+      "file_name": "clip_14.wav",
+      "clip_id": "P18_126",
+      "duration": 12.0
+    }
+  },
+  {
+    "id": 170,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P18/clip_15.wav",
+      "speaker_id": "P18",
+      "file_name": "clip_15.wav",
+      "clip_id": "P18_127",
+      "duration": 11.0
+    }
+  },
+  {
+    "id": 171,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P18/clip_16.wav",
+      "speaker_id": "P18",
+      "file_name": "clip_16.wav",
+      "clip_id": "P18_128",
+      "duration": 14.38
+    }
+  },
+  {
+    "id": 172,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P19/clip_01.wav",
+      "speaker_id": "P19",
+      "file_name": "clip_01.wav",
+      "clip_id": "P19_129",
+      "duration": 10.0
+    }
+  },
+  {
+    "id": 173,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P19/clip_02.wav",
+      "speaker_id": "P19",
+      "file_name": "clip_02.wav",
+      "clip_id": "P19_130",
+      "duration": 10.0
+    }
+  },
+  {
+    "id": 174,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P19/clip_03.wav",
+      "speaker_id": "P19",
+      "file_name": "clip_03.wav",
+      "clip_id": "P19_131",
+      "duration": 10.0
+    }
+  },
+  {
+    "id": 175,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P19/clip_04.wav",
+      "speaker_id": "P19",
+      "file_name": "clip_04.wav",
+      "clip_id": "P19_132",
+      "duration": 11.0
+    }
+  },
+  {
+    "id": 176,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P19/clip_05.wav",
+      "speaker_id": "P19",
+      "file_name": "clip_05.wav",
+      "clip_id": "P19_133",
+      "duration": 11.0
+    }
+  },
+  {
+    "id": 177,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P19/clip_06.wav",
+      "speaker_id": "P19",
+      "file_name": "clip_06.wav",
+      "clip_id": "P19_134",
+      "duration": 10.0
+    }
+  },
+  {
+    "id": 178,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P19/clip_07.wav",
+      "speaker_id": "P19",
+      "file_name": "clip_07.wav",
+      "clip_id": "P19_135",
+      "duration": 8.0
+    }
+  },
+  {
+    "id": 179,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P19/clip_08.wav",
+      "speaker_id": "P19",
+      "file_name": "clip_08.wav",
+      "clip_id": "P19_136",
+      "duration": 13.0
+    }
+  },
+  {
+    "id": 180,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P19/clip_09.wav",
+      "speaker_id": "P19",
+      "file_name": "clip_09.wav",
+      "clip_id": "P19_137",
+      "duration": 11.0
+    }
+  },
+  {
+    "id": 181,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P19/clip_10.wav",
+      "speaker_id": "P19",
+      "file_name": "clip_10.wav",
+      "clip_id": "P19_138",
+      "duration": 10.0
+    }
+  },
+  {
+    "id": 182,
+    "data": {
+      "audio": "/data/local-files/?d=final_annotation/annotator_1/records/P19/clip_11.wav",
+      "speaker_id": "P19",
+      "file_name": "clip_11.wav",
+      "clip_id": "P19_139",
+      "duration": 11.76
+    }
+  }
+]

@@ -1,0 +1,4 @@
+UUID: 3985c3cf
+Transcript: नमस्ते हेल्पडेस्क, मुझे बीटेक एडमिशन के लिए जोसा काउंसलिंग और सीट अलॉटमेंट के बारे में जानकारी चाहिए।
+Target_Label: admissions
+Spoken_Languages: Hindi

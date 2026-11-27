@@ -1,0 +1,23 @@
+artifact_path: /Users/aai/Desktop/STTAI_Project/mlruns/1/models/m-fc236b0ec0d54151b14c1970d4b86d93/artifacts
+flavors:
+  python_function:
+    config:
+      device: null
+    data: data
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.pytorch
+    pickle_module_name: mlflow.pytorch.pickle_module
+    python_version: 3.13.0
+  pytorch:
+    code: null
+    model_data: data
+    pytorch_version: 2.13.0
+mlflow_version: 3.18.0
+model_id: m-fc236b0ec0d54151b14c1970d4b86d93
+model_size_bytes: 263333
+model_uuid: m-fc236b0ec0d54151b14c1970d4b86d93
+prompts: null
+run_id: 665d604607404065bfa9f593c68a8c15
+utc_time_created: '2026-11-04 06:41:33.990770'

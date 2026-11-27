@@ -1,0 +1,4 @@
+UUID: 6651529e
+Transcript: हेलो, क्या बीटेक फर्स्ट ईयर के छात्रों को ब्रांच चेंज का अवसर मिलता है और उसके लिए न्यूनतम सीपीआई क्या चाहिए?
+Target_Label: student_services
+Spoken_Languages: English, Hindi

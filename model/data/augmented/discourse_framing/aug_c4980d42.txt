@@ -1,0 +1,7 @@
+UUID: aug_c4980d42
+Parent_UUID: bc8f7d29
+Augmentation_Type: discourse_framing
+Similarity_Score: 0.8969
+Transcript: નમસ્તે, મારે જાણવું છે કે નમસ્કાર હેલ્પડેસ્ટ એક્ઝામ માં થશે કે યુઝ્યુઅલ જાયેગા કુપિયા એર્જન્સપોર્ટ આપો
+Target_Label: hostel_mess
+Spoken_Languages: ['Hindi', 'Gujarati']

@@ -1,0 +1,7 @@
+UUID: aug_10cd5827
+Parent_UUID: b24445a7
+Augmentation_Type: cross_lingual_translation
+Similarity_Score: 0.513
+Transcript: कुपिया अर्जन्ट सपोर्ट आपो नमस्कार स्पोर्ट एडमिशन विलीझ थयो हैं के नहीं.
+Target_Label: admissions
+Spoken_Languages: ['Gujarati']

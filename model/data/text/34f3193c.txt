@@ -1,0 +1,4 @@
+UUID: 34f3193c
+Transcript: Hello, I am Dijinal, this is a separate facility for storing luggage during semester.
+Target_Label: hostel_mess
+Spoken_Languages: English

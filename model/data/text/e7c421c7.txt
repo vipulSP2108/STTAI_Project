@@ -1,0 +1,4 @@
+UUID: e7c421c7
+Transcript: Good afternoon. I am a finally a render graduate student. I urgently need some official transcripts for my graduation school applications in the US. I have already applied through the portal and paid the required fees for five hard copies and one digital copy yesterday. However, one of the universities has a strict deadline for this Friday. Is there any way the academic office could expedite the process for a digital copy and email it directly to the university's admission office? I can share the specific email address and my application reference number. It would be really helpful if you could do that.
+Target_Label: it_support
+Spoken_Languages: English

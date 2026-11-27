@@ -1,0 +1,4 @@
+UUID: a18ff6b6
+Transcript: Hello IITGN Helpdesk, can I audit an additional elective course without it affecting my semester CPI?
+Target_Label: student_services
+Spoken_Languages: English

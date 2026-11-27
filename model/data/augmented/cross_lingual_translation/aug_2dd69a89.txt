@@ -1,0 +1,7 @@
+UUID: aug_2dd69a89
+Parent_UUID: 36b5229a
+Augmentation_Type: cross_lingual_translation
+Similarity_Score: 0.5644
+Transcript: एजन्ट सपोर्ट आपो एप्रेड करवा के लिए कमिटिंग कहाँ थयेली हैं कुपिया एजन्ट सपोर्ट आपो.
+Target_Label: hostel_mess
+Spoken_Languages: ['Gujarati']

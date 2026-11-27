@@ -109,8 +109,14 @@ def train_whisper_adaptation(max_steps=50, batch_size=4, lr=5e-5):
     losses = []
     t_start = time.time()
 
+    # Assert audio availability before starting optimization loop
+    available_wavs = list(AUDIO_DIR.glob("*.wav"))
+    if not available_wavs:
+        raise FileNotFoundError(f"Audio directory '{AUDIO_DIR}' contains no WAV files. Pull audio via DVC ('dvc pull') or specify valid audio path.")
+
     print(f"\nExecuting {max_steps} optimization steps on {device.upper()} (batch size = {batch_size})...")
     step = 0
+    empty_attempts = 0
     import whisper
 
     while step < max_steps:
@@ -134,7 +140,11 @@ def train_whisper_adaptation(max_steps=50, batch_size=4, lr=5e-5):
             labels_list.append(label_ids)
 
         if not input_features_list:
+            empty_attempts += 1
+            if empty_attempts >= 5:
+                raise FileNotFoundError(f"Failed to locate valid WAV audio files for 5 consecutive batches in {AUDIO_DIR}. Aborting to prevent infinite loop.")
             continue
+        empty_attempts = 0
 
         feat_tensor = torch.cat(input_features_list, dim=0).to(device)
         max_len = max(l.shape[1] for l in labels_list)

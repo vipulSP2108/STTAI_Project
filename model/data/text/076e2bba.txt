@@ -1,0 +1,4 @@
+UUID: 076e2bba
+Transcript: Hello, I need some assistance regarding the hostel service in my hostel. I tried using the washing machine yesterday for the payment first detected from my account. And the machine did not start. I have tried to get the payment for the hostel. But I did not buy the money again and I did not go to the machine. I waited for some time and checked whether the machine was working. But there was no change. Could you please tell me how I can request for the failed transactions? I also want to know whether I can use another machine until this issue is resolved. Please write me through the complete process. I'll let me know if I need to provide the transaction details.
+Target_Label: hostel_mess
+Spoken_Languages: English

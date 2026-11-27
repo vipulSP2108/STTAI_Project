@@ -1,0 +1,7 @@
+UUID: aug_d7183b13
+Parent_UUID: c8dcd19f
+Augmentation_Type: cross_lingual_translation
+Similarity_Score: 0.8819
+Transcript: For this help I wanted to contact the computer center about the access to the server for my project.
+Target_Label: it_support
+Spoken_Languages: ['English']

@@ -1,7 +1,4 @@
 [core]
-    remote = snapshot
-['remote "snapshot"']
+    remote = local_remote
+['remote "local_remote"']
     url = ../../dvc_remote
-[cache]
-    dir = ../../dvc_cache
-    type = copy

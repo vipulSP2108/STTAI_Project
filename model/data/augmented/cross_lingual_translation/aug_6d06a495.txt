@@ -1,0 +1,7 @@
+UUID: aug_6d06a495
+Parent_UUID: dbccc477
+Augmentation_Type: cross_lingual_translation
+Similarity_Score: 0.6282
+Transcript: નમસ્તે, મને આઈઆઈટી ગાંધીનગર માં પીએચડી એડમિશન ના લિએ ફેલોશિપ અને સ્ટાઇપેંડ ના નિયમોં ની જાનકારી જોઈએ।
+Target_Label: admissions
+Spoken_Languages: ['Hindi']

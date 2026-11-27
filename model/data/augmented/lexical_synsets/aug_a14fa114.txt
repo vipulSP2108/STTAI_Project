@@ -1,0 +1,7 @@
+UUID: aug_a14fa114
+Parent_UUID: 3f07f814
+Augmentation_Type: lexical_synsets
+Similarity_Score: 0.9645
+Transcript: Hello, ITGN, help desk my student intranet page keeps logging me out every few minutes even after clearing the browser cache. Can IT investigate?
+Target_Label: it_support
+Spoken_Languages: ['English']

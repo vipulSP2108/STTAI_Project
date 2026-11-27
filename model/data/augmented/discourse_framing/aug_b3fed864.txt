@@ -1,0 +1,7 @@
+UUID: aug_b3fed864
+Parent_UUID: ac619e63
+Augmentation_Type: discourse_framing
+Similarity_Score: 0.9419
+Transcript: Hi, I need official assistance with hello, is it IT cell? I am a newly admitted PhD student and I just got my hostel room. How do I configure my laptop for campus LAN and Wi-Fi access?
+Target_Label: it_support
+Spoken_Languages: ['English']

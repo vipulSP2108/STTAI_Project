@@ -1,0 +1,7 @@
+UUID: aug_681301a8
+Parent_UUID: e21342b0
+Augmentation_Type: discourse_framing
+Similarity_Score: 0.9401
+Transcript: मेरा सवाल यह है कि हेलो आईआईटीजीएन हेल्पडेस्क, मेरा नाम नीरज है, मुझे हॉस्टल रूम में स्टडी लैंप और चेयर रिप्लेसमेंट के लिए रिक्वेस्ट डालनी है।
+Target_Label: hostel_mess
+Spoken_Languages: ['Hindi']

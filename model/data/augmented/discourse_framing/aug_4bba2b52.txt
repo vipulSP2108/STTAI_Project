@@ -1,0 +1,7 @@
+UUID: aug_4bba2b52
+Parent_UUID: ac619e63
+Augmentation_Type: discourse_framing
+Similarity_Score: 0.9578
+Transcript: Greetings, I wanted to confirm whether hello, is it IT cell? I am a newly admitted PhD student and I just got my hostel room. How do I configure my laptop for campus LAN and Wi-Fi access?
+Target_Label: it_support
+Spoken_Languages: ['English']

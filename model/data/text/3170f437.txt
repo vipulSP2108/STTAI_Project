@@ -1,0 +1,4 @@
+UUID: 3170f437
+Transcript: સપોર્ટ આપો નમસ્કાર ગાંધીનગર વોઈસ હેલ્પ એડવાન્સ એન્ક ઇલેક્ટિકલ એન્સીઇનિયા ઇંગ ડિપાર્.
+Target_Label: admissions
+Spoken_Languages: Gujarati

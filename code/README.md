@@ -40,7 +40,6 @@ python a2_part_e_monitoring/retrain_pipeline.py
 | `a2_part_c_evaluation/` | Unified evaluation CLI with 1,000 bootstrap CIs, slice analysis, 20 categorized errors | `supporting_files/error_analysis.csv`, `MODEL_CARD.md` |
 | `a2_part_d_deployment/` | Revised CPU release, offline validator, FastAPI service and Streamlit UI | `Dockerfile`, `supporting_files/revised_validation.json`, `DOCKER.md` |
 | `a2_part_e_monitoring/` | 5-batch traffic replay, label-free entropy tracking ($r=0.91$), gated retraining | `data/replay/traffic_stream.jsonl`, `data/retraining/`, `TEST_SET_LOG.md` |
-| `scripts/` | Automated ReportLab PDF generator mirroring `report/report2.tex` | `report/report2.pdf` (7 pages) |
 
 ---
 

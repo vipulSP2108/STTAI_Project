@@ -1,0 +1,101 @@
+{
+  "timestamp": "2026-11-09T23:57:58.935327",
+  "total_tasks": 55,
+  "completed_tasks": 55,
+  "completion_rate_pct": 100.0,
+  "intra_rater_reliability": {
+    "evaluated_pairs": 8,
+    "concordant_pairs": 6,
+    "test_retest_agreement_pct": 75.0,
+    "intra_rater_cohens_kappa": 0.6521739130434783,
+    "pair_audits": [
+      {
+        "clip_id": "P4_13",
+        "conflict_type": "admissions <-> student_services",
+        "task_1_id": 2,
+        "task_2_id": 39,
+        "separation_distance": 37,
+        "t1_intent": "student_services",
+        "t2_intent": "student_services",
+        "is_concordant": true
+      },
+      {
+        "clip_id": "P7_28",
+        "conflict_type": "admissions <-> hostel_mess",
+        "task_1_id": 4,
+        "task_2_id": 41,
+        "separation_distance": 37,
+        "t1_intent": "hostel_mess",
+        "t2_intent": "hostel_mess",
+        "is_concordant": true
+      },
+      {
+        "clip_id": "P9_48",
+        "conflict_type": "it_support <-> student_services",
+        "task_1_id": 7,
+        "task_2_id": 43,
+        "separation_distance": 36,
+        "t1_intent": "student_services",
+        "t2_intent": "student_services",
+        "is_concordant": true
+      },
+      {
+        "clip_id": "P14_89",
+        "conflict_type": "admissions <-> it_support",
+        "task_1_id": 9,
+        "task_2_id": 45,
+        "separation_distance": 36,
+        "t1_intent": "admissions",
+        "t2_intent": "admissions",
+        "is_concordant": true
+      },
+      {
+        "clip_id": "P21_81",
+        "conflict_type": "hostel_mess <-> student_services",
+        "task_1_id": 12,
+        "task_2_id": 48,
+        "separation_distance": 36,
+        "t1_intent": "hostel_mess",
+        "t2_intent": "hostel_mess",
+        "is_concordant": true
+      },
+      {
+        "clip_id": "P8_32",
+        "conflict_type": "admissions <-> student_services",
+        "task_1_id": 15,
+        "task_2_id": 50,
+        "separation_distance": 35,
+        "t1_intent": "admissions",
+        "t2_intent": "hostel_mess",
+        "is_concordant": false
+      },
+      {
+        "clip_id": "P19_135",
+        "conflict_type": "hostel_mess <-> student_services",
+        "task_1_id": 17,
+        "task_2_id": 52,
+        "separation_distance": 35,
+        "t1_intent": "hostel_mess",
+        "t2_intent": "student_services",
+        "is_concordant": false
+      },
+      {
+        "clip_id": "P18_113",
+        "conflict_type": "it_support <-> student_services",
+        "task_1_id": 19,
+        "task_2_id": 55,
+        "separation_distance": 36,
+        "t1_intent": "it_support",
+        "t2_intent": "it_support",
+        "is_concordant": true
+      }
+    ]
+  },
+  "lead_time_telemetry": {
+    "mean_s": 153.77421818181816,
+    "median_s": 79.182,
+    "std_s": 472.6981114898403,
+    "rushing_alerts_count": 0,
+    "stalling_alerts_count": 23
+  }
+}

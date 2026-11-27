@@ -1,0 +1,7 @@
+UUID: aug_49d661df
+Parent_UUID: e21342b0
+Augmentation_Type: cross_lingual_translation
+Similarity_Score: 0.6595
+Transcript: હેલો આઈઆઈટીજીએન હેલ્પડેસ્ક, મારું નામ નીરજ છે, મને હોસ્ટેલ રૂમ માં સ્ટડી લૈંપ અને ચેયર રિપ્લેસમેંટ ના લિએ રિક્વેસ્ટ ડાલની છે।
+Target_Label: hostel_mess
+Spoken_Languages: ['Hindi']

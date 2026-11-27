@@ -1,0 +1,4 @@
+UUID: e117dac3
+Transcript: એજન્ટ સપોર્ટ આપો નમસ્કાર ગાંધીનગર હેલ્પટ કરતો કે પ્લીઝ મેન્ટેનેન્ટ.
+Target_Label: hostel_mess
+Spoken_Languages: Gujarati

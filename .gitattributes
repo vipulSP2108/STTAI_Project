@@ -1,3 +1,4 @@
-data/gold_test_set.csv text eol=lf
+data/gold_test_set.csv -text
+data/gold_corrections.csv -text
 code/a2_part_d_deployment/revised-entrypoint.sh text eol=lf
-final_annotation/transcription_round/*.sh text eol=lf
+artefacts/docker_image.tar.gz filter=lfs diff=lfs merge=lfs -text

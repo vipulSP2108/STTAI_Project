@@ -1,0 +1,7 @@
+UUID: aug_98b5985d
+Parent_UUID: b7e99aca
+Augmentation_Type: cross_lingual_translation
+Similarity_Score: 0.7457
+Transcript: Hello helpk, I need to help refresh my student's identity card chips.
+Target_Label: student_services
+Spoken_Languages: ['English', 'Hindi']

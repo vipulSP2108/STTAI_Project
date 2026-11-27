@@ -1,0 +1,7 @@
+UUID: aug_d1454f6a
+Parent_UUID: 504d281f
+Augmentation_Type: cross_lingual_translation
+Similarity_Score: 0.7465
+Transcript: "એરના એંડ સિનેડિનેના અને સ્પરેનિકીકરણ પ્રક્રિયા, ન્યૂ યૉર્ક ના સી. એસ. એસ.
+Target_Label: admissions
+Spoken_Languages: ['Gujarati']

@@ -1,0 +1,7 @@
+UUID: aug_b5b06b71
+Parent_UUID: 3985c3cf
+Augmentation_Type: cross_lingual_translation
+Similarity_Score: 0.6922
+Transcript: Hello Heides, I need to know about Kasscuensing and seating for the Betttenment.
+Target_Label: admissions
+Spoken_Languages: ['Hindi']

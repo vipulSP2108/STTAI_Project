@@ -1,0 +1,7 @@
+UUID: aug_3b37d028
+Parent_UUID: 35c7936c
+Augmentation_Type: cross_lingual_translation
+Similarity_Score: 0.4993
+Transcript: Hello heldeke, my course has been removed but the Labourment folder is not being accessed on mood.
+Target_Label: it_support
+Spoken_Languages: ['Hindi']

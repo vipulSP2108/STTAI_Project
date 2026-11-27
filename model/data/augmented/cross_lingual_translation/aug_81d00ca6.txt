@@ -1,0 +1,7 @@
+UUID: aug_81d00ca6
+Parent_UUID: 4ccc9bc2
+Augmentation_Type: cross_lingual_translation
+Similarity_Score: 0.5528
+Transcript: હેલો આઈઆઈટીજીએન હેલ્પડેસ્ક, હમારે હોસ્ટેલ વિંગ માં વૉશરૂમ નો ફ્લશ સહી થી કામ નથી કર રહા છે, કૃપા કરીને મેંટેનેંસ ટીમ કો ભેજેં૤
+Target_Label: hostel_mess
+Spoken_Languages: ['Hindi']

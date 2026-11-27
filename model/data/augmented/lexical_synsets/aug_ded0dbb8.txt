@@ -1,0 +1,7 @@
+UUID: aug_ded0dbb8
+Parent_UUID: ac619e63
+Augmentation_Type: lexical_synsets
+Similarity_Score: 0.9691
+Transcript: Hello, is it IT cell? I am a newly admitted PhD student and I just got my hall of residence room. How do I configure my laptop for campus LAN and Wi-Fi access?
+Target_Label: it_support
+Spoken_Languages: ['English']

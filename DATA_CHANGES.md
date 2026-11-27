@@ -59,4 +59,11 @@ At commit `a1-final` (Git tag `a1-final`), the canonical dataset partitions and 
     1. **Original Uncorrected Gold Benchmark** (`data/gold_test_set.csv`): Preserves exact baseline provenance for grading consistency.
     2. **Acoustically Verified Benchmark** (`data/gold_corrections.csv`): Measures true acoustic ASR recognition accuracy and real-world intent classification performance.
 
+---
+
+## 5. Promotion Gate Policy Clarification & Ex-Ante Standards (2026-11-13)
+- **Early Exploration**: During early pilot tuning, a temporary relaxation of the maximum allowable gold accuracy degradation to $\le 4.0\%$ was tested.
+- **Strict Ex-Ante Policy Restored**: In the final unified release, the strict ex-ante gate standard ($\le 2.0\%$ max gold degradation, $\ge +5.0\%$ held-out Cohort B gain) is strictly restored in `configs/gate.yaml`.
+- **Empirical Validation**: Retraining with memory rehearsal achieves $+7.7\%$ gain on held-out Cohort B ($30.8\% \to 38.5\%$) with $0.0\%$ degradation on the immutable Gold Test Set ($24.1\% \to 24.1\%$), legitimately satisfying the strict ex-ante gate without requiring relaxed thresholds. Retraining without rehearsal experiences catastrophic forgetting on gold and is rejected/rolled back.
+
 All additions and corrections are indexed and tracked via Git and DVC.

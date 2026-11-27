@@ -1,0 +1,4 @@
+UUID: d92c9227
+Transcript: Hello Sir, I am talking to a study room Sir, we had a problem in the last 56 days Actually, all the study rooms are crowded and there are problems So, we are studying for that So, focus is not on the study So, my opinion is make a batch of batches So, we will be booking the batches and the most people of the booking will be able to reach the minimum percentage of the day 1 minimum %pilog renghe aur am ko stadi bhi karne ke liy thoda asang jai ga matlab simplifi ho ga sar am ko stadi ke liy aur abhi kravdu kravdu ke vajat saram ko boh problem bhi ho rai aur am ish bhi face kar rai aur bhi bhi smi fir aur amar ish bhi smi boh to toodah problem ho dha ish bhi smi यह लिवाण यह लिवाण यह लिवाण यह लिवाण यह लिवाण यह लिवाण यह लिवाण यह लिवाण यह लिवाण यह लिवाण यह लिवाण यह लिवाण यह लिवाण यह लिवाण यह लिवाण यह लिवाण यह लिवाण यह लिवाण यह लिवाण यह लिवाण यह.
+Target_Label: student_services
+Spoken_Languages: Hindi

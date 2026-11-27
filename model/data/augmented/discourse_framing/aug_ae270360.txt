@@ -1,0 +1,7 @@
+UUID: aug_ae270360
+Parent_UUID: 444d610b
+Augmentation_Type: discourse_framing
+Similarity_Score: 0.7608
+Transcript: સાહેબ, થોડી માહિતી જોઈતી હતી કે નમસ્કાર ટેનિંગ અને કેપિયા
+Target_Label: hostel_mess
+Spoken_Languages: ['Gujarati']

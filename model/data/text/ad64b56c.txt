@@ -1,0 +1,4 @@
+UUID: ad64b56c
+Transcript: Hello, I'm a parent of a first-year student. My son lost his mobile phone yesterday somewhere in the academic block. The phone has all his authentication apps and all the two-factor authentication for IITG and portals. Because of this, he cannot log into his student portal to check his timetable or submit assignments. Is there a way the IT cell can temporarily disable the two-factor authentication for his account? Or maybe if you could generate some bypass back code or something like a temporary password so that he can use it on his laptop till we arrange a new phone for him? He is quite stressed about missing his academic updates. Please let me know what verifying details you need from him.
+Target_Label: it_support
+Spoken_Languages: English

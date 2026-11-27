@@ -1,0 +1,4 @@
+UUID: 79a28903
+Transcript: હેલો, નમસ્તે હેલ્પડેસ્ક, આઈઆઈટી ગાંધીનગર કેમ્પસમાં admissions અંગે સપોર્ટ જોઈતો હતો.
+Target_Label: admissions
+Spoken_Languages: English, Gujarati

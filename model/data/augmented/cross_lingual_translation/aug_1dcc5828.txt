@@ -1,0 +1,7 @@
+UUID: aug_1dcc5828
+Parent_UUID: fc3d3348
+Augmentation_Type: cross_lingual_translation
+Similarity_Score: 0.8078
+Transcript: Hi Hepdesk, when will the Institute Open House and Research on the New Students be held?
+Target_Label: student_services
+Spoken_Languages: ['Hindi']

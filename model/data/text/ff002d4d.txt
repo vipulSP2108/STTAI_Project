@@ -1,0 +1,4 @@
+UUID: ff002d4d
+Transcript: નમસ્કાર ક્લિટર નથી કઈ થી ચા દિવસથી ટોકન નંબર આપો.
+Target_Label: student_services
+Spoken_Languages: Gujarati

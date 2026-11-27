@@ -1,0 +1,7 @@
+UUID: aug_d81607bf
+Parent_UUID: df57c59a
+Augmentation_Type: cross_lingual_translation
+Similarity_Score: 0.52
+Transcript: Hello I'll have Suggak, my parents will be at the market for two nights. How can I confirm guest's book?
+Target_Label: student_services
+Spoken_Languages: ['English']

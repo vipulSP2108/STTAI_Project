@@ -1,0 +1,7 @@
+UUID: aug_b7805d00
+Parent_UUID: 4ccc9bc2
+Augmentation_Type: discourse_framing
+Similarity_Score: 0.9463
+Transcript: सर, मुझे एक जानकारी चाहिए कि हेलो आईआईटीजीएन हेल्पडेस्क, हमारे हॉस्टल विंग में वॉशरूम का फ्लश सही से काम नहीं कर रहा है, कृपया मेंटेनेंस टीम को भेजें।
+Target_Label: hostel_mess
+Spoken_Languages: ['Hindi']

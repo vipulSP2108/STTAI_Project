@@ -1,0 +1,7 @@
+UUID: aug_5f5aa1de
+Parent_UUID: 847fd9b4
+Augmentation_Type: cross_lingual_translation
+Similarity_Score: 0.7519
+Transcript: मुझे विद्यार्थियों के लिए बैंकिंग और ऐमममममिटी के बारे में जानकारी की ज़रूरत है ।
+Target_Label: student_services
+Spoken_Languages: ['English']

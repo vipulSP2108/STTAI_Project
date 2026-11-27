@@ -56,6 +56,13 @@ def load(path):
     return out
 
 
+def script_norm(t: str) -> str:
+    """Map Gujarati letters onto the parallel Devanagari code points (U+0A80.. -> U+0900..), so a word
+    typed in Gujarati script by one annotator and in Devanagari by the other compares as the same word.
+    Reported next to the raw WER, never instead of it."""
+    return "".join(chr(ord(ch) - 0x180) if "\u0a80" <= ch <= "\u0aff" else ch for ch in t)
+
+
 def corpus_err(refs, hyps, fn):
     pairs = [(r, h) for r, h in zip(refs, hyps) if r]
     return float(fn([r for r, _ in pairs], [h for _, h in pairs])) if pairs else None
@@ -84,11 +91,13 @@ def main():
     for L in sorted(set(lang)):
         ii = [i for i, l in enumerate(lang) if l == L]
         per_lang[L] = {"n": len(ii), "wer": corpus_err([r1[i] for i in ii], [r2[i] for i in ii], jiwer.wer),
+                       "wer_script_normalised": corpus_err([script_norm(r1[i]) for i in ii], [script_norm(r2[i]) for i in ii], jiwer.wer),
                        "cer": corpus_err([r1[i] for i in ii], [r2[i] for i in ii], jiwer.cer)}
     report = {
         "n_double": len(both),
         "wer_A2_vs_A1": corpus_err(r1, r2, jiwer.wer),
         "wer_A1_vs_A2": corpus_err(r2, r1, jiwer.wer),
+        "wer_A2_vs_A1_script_normalised": corpus_err([script_norm(x) for x in r1], [script_norm(x) for x in r2], jiwer.wer),
         "cer_A2_vs_A1": corpus_err(r1, r2, jiwer.cer),
         "wer_ci95_speaker_bootstrap": [float(np.percentile(boots, 2.5)), float(np.percentile(boots, 97.5))],
         "per_language": per_lang,
@@ -112,6 +121,8 @@ def main():
                 w.writerow(meta + [a1[c]["text"], "double_A1"])
             elif c in singles:
                 w.writerow(meta + [singles[c]["text"], "single_asr_draft_corrected"])
+            elif c in full1 or c in full2:   # shared clip finished by one annotator only (typed from scratch, no draft)
+                w.writerow(meta + [(full1.get(c) or full2.get(c))["text"], "shared_one_annotator"])
     print(json.dumps({k: v for k, v in report.items() if k != "per_clip"}, indent=1))
     print("wrote", out.relative_to(ROOT))
 

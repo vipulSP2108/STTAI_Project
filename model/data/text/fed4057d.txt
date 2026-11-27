@@ -1,0 +1,4 @@
+UUID: fed4057d
+Transcript: હેલો આઈઆઈટીજીએન હેલ્પડેસ્ક, ક્રેડિટ રિક્વાયરમેન્ટ પૂરી કરવા માટે મિનિમમ સીપીઆઈ કેટલો હોવો જોઈએ?
+Target_Label: student_services
+Spoken_Languages: Gujarati

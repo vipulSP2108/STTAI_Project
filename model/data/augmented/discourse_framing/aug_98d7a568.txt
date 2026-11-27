@@ -1,0 +1,7 @@
+UUID: aug_98d7a568
+Parent_UUID: 75523327
+Augmentation_Type: discourse_framing
+Similarity_Score: 0.9398
+Transcript: मेरा सवाल यह है कि नमस्ते, हॉस्टल कॉरिडोर में एग्जॉस्ट फैन नहीं चल रहा है जिससे बहुत गर्मी हो रही है, इलेक्ट्रीशियन को चेक करवाएं।
+Target_Label: it_support
+Spoken_Languages: ['English', 'Hindi']

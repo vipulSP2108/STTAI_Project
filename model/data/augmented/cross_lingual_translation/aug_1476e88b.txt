@@ -1,0 +1,7 @@
+UUID: aug_1476e88b
+Parent_UUID: 951f58d0
+Augmentation_Type: cross_lingual_translation
+Similarity_Score: 0.6461
+Transcript: हेलो हेल्पडेस्क, नवा सेमेस्टरनुं टाइमटेबल और क्लासरूम अलोटमेन्ट यादी कहाँ जोई शकाशे?
+Target_Label: student_services
+Spoken_Languages: ['English', 'Hindi']

@@ -1,0 +1,57 @@
+{
+  "drift_threshold": 1.662,
+  "first_alert_batch": 3,
+  "first_alert_query": 32,
+  "entropy_accuracy_correlation": -0.5757,
+  "snr_accuracy_correlation": 0.2798,
+  "logprob_accuracy_correlation": -0.0573,
+  "false_alarm_rate_validation": 0.0,
+  "batch_summaries": [
+    {
+      "batch_id": 1,
+      "description": "100% In-Domain Baseline",
+      "mean_entropy": 1.321,
+      "mean_accuracy": 0.2,
+      "mean_avg_logprob": -0.5439,
+      "mean_snr_db": 29.8,
+      "drift_alert_triggered": false
+    },
+    {
+      "batch_id": 2,
+      "description": "25% Regional Shift",
+      "mean_entropy": 1.309,
+      "mean_accuracy": 0.15,
+      "mean_avg_logprob": -0.6144,
+      "mean_snr_db": 30.3,
+      "drift_alert_triggered": false
+    },
+    {
+      "batch_id": 3,
+      "description": "50% Regional Shift",
+      "mean_entropy": 1.331,
+      "mean_accuracy": 0.15,
+      "mean_avg_logprob": -0.911,
+      "mean_snr_db": 31.4,
+      "drift_alert_triggered": true
+    },
+    {
+      "batch_id": 4,
+      "description": "75% Regional Shift",
+      "mean_entropy": 1.023,
+      "mean_accuracy": 0.35,
+      "mean_avg_logprob": -1.1004,
+      "mean_snr_db": 30.4,
+      "drift_alert_triggered": true
+    },
+    {
+      "batch_id": 5,
+      "description": "100% Cohort B (Full Drift)",
+      "mean_entropy": 1.133,
+      "mean_accuracy": 0.1,
+      "mean_avg_logprob": -1.2633,
+      "mean_snr_db": 28.8,
+      "drift_alert_triggered": true
+    }
+  ],
+  "total_queries_replayed": 100
+}

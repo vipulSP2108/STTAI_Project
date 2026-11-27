@@ -1,0 +1,4 @@
+UUID: 939b462d
+Transcript: નમસ્કાર ડોક્યુમેન્ટ મેન્ડેટર છે કે ઓનલાઇન અપલોડ કરી શકાય.
+Target_Label: admissions
+Spoken_Languages: Gujarati

@@ -1,0 +1,7 @@
+UUID: aug_13db4624
+Parent_UUID: 6cd66193
+Augmentation_Type: discourse_framing
+Similarity_Score: 0.8133
+Transcript: સર, એક પૂછપરછ છે કે નમસ્કાર ગાંધીનગર વોઇસ એડમિશન હતું પણ કન્ફર્મેશન લાવ્યો નથી કુપિયા પોર્ટ આપો
+Target_Label: admissions
+Spoken_Languages: ['Gujarati']

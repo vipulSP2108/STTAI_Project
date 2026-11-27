@@ -1,0 +1,7 @@
+UUID: aug_85f4ee28
+Parent_UUID: 439472e6
+Augmentation_Type: cross_lingual_translation
+Similarity_Score: 0.6208
+Transcript: Hello Heides, my standress on the frontiers is showing less than eighty percent, what is the procedure of the medical retrogening?
+Target_Label: student_services
+Spoken_Languages: ['Hindi']

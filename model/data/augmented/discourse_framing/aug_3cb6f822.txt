@@ -1,0 +1,7 @@
+UUID: aug_3cb6f822
+Parent_UUID: dd334cc7
+Augmentation_Type: discourse_framing
+Similarity_Score: 0.9159
+Transcript: हेल्पडेस्क से सहायता चाहिए, हेलो आईआईटीजीएन हेल्पडेस्क, कैंपस लॉन्ड्री सर्विस के टोकन और वीकली वॉशिंग स्लॉट के बारे में जानकारी चाहिए।
+Target_Label: student_services
+Spoken_Languages: ['Hindi']

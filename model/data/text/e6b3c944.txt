@@ -1,0 +1,4 @@
+UUID: e6b3c944
+Transcript: Hi, I need help with an assignment submission issue. I completed my assignment and uploaded the file to the course portal before the deadline. But the website shows an error when I click the submit button. After refreshing the page, I could no longer see the loaded file. I uploaded the assignment before the deadline. Now I don't get any information. I have a screenshot of the error message and copy of the completed assignment. Please tell me how I should report this issue to make sure that my submission is considered on time. If I am a professor of male complaint, I will not be able to do so. Please let me know what evidence I should attach and whether there is an official process for technical problems during assignment submission.
+Target_Label: it_support
+Spoken_Languages: English

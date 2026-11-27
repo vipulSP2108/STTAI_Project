@@ -1,0 +1,1755 @@
+{
+ "n_clips": 182,
+ "curated_words_per_sec_median": 1.1993690851735015,
+ "clips_curated_below_0.6_wps": 53,
+ "clips_curated_below_1.0_wps": 74,
+ "same_script_triplets": 7,
+ "median_cer_small_vs_hybrid": 0.4425531914893617,
+ "median_cer_small_vs_curated": 1.7904761904761906,
+ "median_cer_hybrid_vs_curated": 1.5333333333333334,
+ "per_language_median_and_n": {
+  "Code-mixed": {
+   "curated_words_per_sec": [
+    0.9647495361781077,
+    23
+   ],
+   "hybrid_words_per_sec": [
+    1.081916537867079,
+    23
+   ],
+   "cer_hybrid_vs_curated": [
+    1.0,
+    23
+   ],
+   "cer_small_vs_curated": [
+    null,
+    0
+   ],
+   "cer_small_vs_hybrid": [
+    null,
+    0
+   ]
+  },
+  "English": {
+   "curated_words_per_sec": [
+    2.2128395713301376,
+    62
+   ],
+   "hybrid_words_per_sec": [
+    2.1510745891276866,
+    62
+   ],
+   "cer_hybrid_vs_curated": [
+    0.11340202579814768,
+    62
+   ],
+   "cer_small_vs_curated": [
+    0.11108533639684223,
+    4
+   ],
+   "cer_small_vs_hybrid": [
+    0.09037476198199172,
+    4
+   ]
+  },
+  "Gujarati": {
+   "curated_words_per_sec": [
+    1.0909090909090908,
+    37
+   ],
+   "hybrid_words_per_sec": [
+    0.8,
+    37
+   ],
+   "cer_hybrid_vs_curated": [
+    0.35,
+    37
+   ],
+   "cer_small_vs_curated": [
+    null,
+    0
+   ],
+   "cer_small_vs_hybrid": [
+    null,
+    0
+   ]
+  },
+  "Hindi": {
+   "curated_words_per_sec": [
+    0.8612242954098487,
+    60
+   ],
+   "hybrid_words_per_sec": [
+    1.6255959422884243,
+    60
+   ],
+   "cer_hybrid_vs_curated": [
+    1.2445509079558101,
+    60
+   ],
+   "cer_small_vs_curated": [
+    7.067961165048544,
+    3
+   ],
+   "cer_small_vs_hybrid": [
+    0.4611801242236025,
+    3
+   ]
+  }
+ },
+ "conclusion": "Independent ASR systems agree with each other far more than either agrees with the curated text, and the curated text is too short for the audio: the curated strings are not transcripts and are excluded from all WER and training.",
+ "clips": [
+  {
+   "uuid": "f26b4776",
+   "clip_id": "P18_127",
+   "language": "Gujarati",
+   "duration_sec": 11.0,
+   "curated_words_per_sec": 1.1818181818181819,
+   "hybrid_words_per_sec": 0.8181818181818182,
+   "cer_hybrid_vs_curated": 0.36486486486486486
+  },
+  {
+   "uuid": "7c69dee1",
+   "clip_id": "P9_50",
+   "language": "Code-mixed",
+   "duration_sec": 53.27,
+   "curated_words_per_sec": 0.4129904261310306,
+   "hybrid_words_per_sec": 0.8822977285526562,
+   "cer_hybrid_vs_curated": 1.7801418439716312
+  },
+  {
+   "uuid": "c2b6d2c5",
+   "clip_id": "P7_22",
+   "language": "English",
+   "duration_sec": 52.97,
+   "curated_words_per_sec": 0.39645082121955827,
+   "hybrid_words_per_sec": 1.9256182744949972,
+   "cer_hybrid_vs_curated": 3.671875
+  },
+  {
+   "uuid": "20de435d",
+   "clip_id": "P16_104",
+   "language": "English",
+   "duration_sec": 9.0,
+   "curated_words_per_sec": 2.111111111111111,
+   "hybrid_words_per_sec": 2.2222222222222223,
+   "cer_hybrid_vs_curated": 0.25190839694656486
+  },
+  {
+   "uuid": "8cbfedb0",
+   "clip_id": "P5_20",
+   "language": "Hindi",
+   "duration_sec": 64.35,
+   "curated_words_per_sec": 0.3418803418803419,
+   "hybrid_words_per_sec": 1.3830613830613832,
+   "cer_hybrid_vs_curated": 2.9327731092436973
+  },
+  {
+   "uuid": "df57c59a",
+   "clip_id": "P18_128",
+   "language": "English",
+   "duration_sec": 14.38,
+   "curated_words_per_sec": 1.321279554937413,
+   "hybrid_words_per_sec": 1.4603616133518775,
+   "cer_hybrid_vs_curated": 0.49107142857142855
+  },
+  {
+   "uuid": "36386821",
+   "clip_id": "P5_16",
+   "language": "Hindi",
+   "duration_sec": 61.93,
+   "curated_words_per_sec": 0.4359761020507024,
+   "hybrid_words_per_sec": 1.4694009365412564,
+   "cer_hybrid_vs_curated": 2.184931506849315
+  },
+  {
+   "uuid": "badcc32a",
+   "clip_id": "P19_136",
+   "language": "Code-mixed",
+   "duration_sec": 13.0,
+   "curated_words_per_sec": 1.7692307692307692,
+   "hybrid_words_per_sec": 1.5384615384615385,
+   "cer_hybrid_vs_curated": 0.9148936170212766
+  },
+  {
+   "uuid": "4fcca39a",
+   "clip_id": "P22_93",
+   "language": "English",
+   "duration_sec": 54.79,
+   "curated_words_per_sec": 0.45628764373060776,
+   "hybrid_words_per_sec": 1.5513779886840664,
+   "cer_hybrid_vs_curated": 2.0628930817610063
+  },
+  {
+   "uuid": "a65e688e",
+   "clip_id": "P7_29",
+   "language": "English",
+   "duration_sec": 64.91,
+   "curated_words_per_sec": 0.3235248806039131,
+   "hybrid_words_per_sec": 2.480357417963334,
+   "cer_hybrid_vs_curated": 6.064
+  },
+  {
+   "uuid": "847fd9b4",
+   "clip_id": "P9_43",
+   "language": "English",
+   "duration_sec": 42.01,
+   "curated_words_per_sec": 0.33325398714591764,
+   "hybrid_words_per_sec": 3.237324446560343,
+   "cer_hybrid_vs_curated": 7.247191011235955
+  },
+  {
+   "uuid": "3985c3cf",
+   "clip_id": "P6_21",
+   "language": "Hindi",
+   "duration_sec": 53.41,
+   "curated_words_per_sec": 0.3182924545965175,
+   "hybrid_words_per_sec": 1.6289084441115897,
+   "cer_hybrid_vs_curated": 3.5353535353535355
+  },
+  {
+   "uuid": "969b6662",
+   "clip_id": "P18_121",
+   "language": "Gujarati",
+   "duration_sec": 10.0,
+   "curated_words_per_sec": 1.5,
+   "hybrid_words_per_sec": 0.7,
+   "cer_hybrid_vs_curated": 0.6704545454545454
+  },
+  {
+   "uuid": "38602ab6",
+   "clip_id": "P2_3",
+   "language": "Code-mixed",
+   "duration_sec": 43.41,
+   "curated_words_per_sec": 0.7371573370191201,
+   "hybrid_words_per_sec": 0.5759041695461875,
+   "cer_hybrid_vs_curated": 0.875
+  },
+  {
+   "uuid": "a18ff6b6",
+   "clip_id": "P18_120",
+   "language": "English",
+   "duration_sec": 9.0,
+   "curated_words_per_sec": 1.7777777777777777,
+   "hybrid_words_per_sec": 1.8888888888888888,
+   "cer_hybrid_vs_curated": 0.23232323232323232
+  },
+  {
+   "uuid": "e7c99b26",
+   "clip_id": "P19_132",
+   "language": "Hindi",
+   "duration_sec": 11.0,
+   "curated_words_per_sec": 1.6363636363636365,
+   "hybrid_words_per_sec": 1.7272727272727273,
+   "cer_hybrid_vs_curated": 0.69
+  },
+  {
+   "uuid": "1223b513",
+   "clip_id": "P19_139",
+   "language": "Hindi",
+   "duration_sec": 11.76,
+   "curated_words_per_sec": 2.0408163265306123,
+   "hybrid_words_per_sec": 1.870748299319728,
+   "cer_hybrid_vs_curated": 0.4375
+  },
+  {
+   "uuid": "ab4220a7",
+   "clip_id": "P20_66",
+   "language": "Gujarati",
+   "duration_sec": 59.49,
+   "curated_words_per_sec": 0.43704824340225246,
+   "hybrid_words_per_sec": 0.5042864346949066,
+   "cer_hybrid_vs_curated": 0.31097560975609756
+  },
+  {
+   "uuid": "21df306f",
+   "clip_id": "P21_85",
+   "language": "Hindi",
+   "duration_sec": 21.95,
+   "curated_words_per_sec": 1.0933940774487472,
+   "hybrid_words_per_sec": 2.0045558086560367,
+   "cer_hybrid_vs_curated": 1.1496062992125984
+  },
+  {
+   "uuid": "922fe15a",
+   "clip_id": "P5_15",
+   "language": "Hindi",
+   "duration_sec": 68.01,
+   "curated_words_per_sec": 0.3675930010292604,
+   "hybrid_words_per_sec": 1.6027054844875752,
+   "cer_hybrid_vs_curated": 2.9923076923076923
+  },
+  {
+   "uuid": "c8dcd19f",
+   "clip_id": "P2_11",
+   "language": "English",
+   "duration_sec": 65.97,
+   "curated_words_per_sec": 0.2728512960436562,
+   "hybrid_words_per_sec": 2.076701530998939,
+   "cer_hybrid_vs_curated": 5.217391304347826
+  },
+  {
+   "uuid": "30beb45f",
+   "clip_id": "P2_8",
+   "language": "English",
+   "duration_sec": 48.89,
+   "curated_words_per_sec": 0.470443853548783,
+   "hybrid_words_per_sec": 1.6158723665371242,
+   "cer_hybrid_vs_curated": 2.5703125
+  },
+  {
+   "uuid": "6e595ed3",
+   "clip_id": "P8_38",
+   "language": "Hindi",
+   "duration_sec": 84.55,
+   "curated_words_per_sec": 0.2483737433471319,
+   "hybrid_words_per_sec": 1.4902424600827913,
+   "cer_hybrid_vs_curated": 4.919642857142857
+  },
+  {
+   "uuid": "778eedb3",
+   "clip_id": "P21_86",
+   "language": "Code-mixed",
+   "duration_sec": 26.95,
+   "curated_words_per_sec": 0.9647495361781077,
+   "hybrid_words_per_sec": 1.8181818181818181,
+   "cer_hybrid_vs_curated": 1.3517241379310345
+  },
+  {
+   "uuid": "ac619e63",
+   "clip_id": "P22_92",
+   "language": "English",
+   "duration_sec": 46.19,
+   "curated_words_per_sec": 0.6927906473262612,
+   "hybrid_words_per_sec": 2.164970772894566,
+   "cer_hybrid_vs_curated": 2.7430555555555554
+  },
+  {
+   "uuid": "1931e9ee",
+   "clip_id": "P12_58",
+   "language": "Hindi",
+   "duration_sec": 43.81,
+   "curated_words_per_sec": 0.5021684546907098,
+   "hybrid_words_per_sec": 2.122803013010728,
+   "cer_hybrid_vs_curated": 3.1192660550458715
+  },
+  {
+   "uuid": "56dc8907",
+   "clip_id": "P14_91",
+   "language": "Gujarati",
+   "duration_sec": 10.0,
+   "curated_words_per_sec": 2.1,
+   "hybrid_words_per_sec": 0.3,
+   "cer_hybrid_vs_curated": 0.8449612403100775
+  },
+  {
+   "uuid": "3fa7f104",
+   "clip_id": "P22_87",
+   "language": "English",
+   "duration_sec": 36.83,
+   "curated_words_per_sec": 0.65164268259571,
+   "hybrid_words_per_sec": 2.715177844148792,
+   "cer_hybrid_vs_curated": 3.1347517730496453
+  },
+  {
+   "uuid": "72d8567d",
+   "clip_id": "P22_91",
+   "language": "English",
+   "duration_sec": 49.71,
+   "curated_words_per_sec": 0.4626835646751157,
+   "hybrid_words_per_sec": 1.388050694025347,
+   "cer_hybrid_vs_curated": 1.9473684210526316
+  },
+  {
+   "uuid": "474ebc19",
+   "clip_id": "P8_36",
+   "language": "Hindi",
+   "duration_sec": 84.43,
+   "curated_words_per_sec": 0.24872675589245527,
+   "hybrid_words_per_sec": 1.6108018476844723,
+   "cer_hybrid_vs_curated": 5.130841121495327
+  },
+  {
+   "uuid": "ec5b227c",
+   "clip_id": "P7_28",
+   "language": "English",
+   "duration_sec": 60.93,
+   "curated_words_per_sec": 0.37748235680288855,
+   "hybrid_words_per_sec": 2.4126046282619398,
+   "cer_hybrid_vs_curated": 5.871794871794871
+  },
+  {
+   "uuid": "dc815fe7",
+   "clip_id": "P20_60",
+   "language": "Gujarati",
+   "duration_sec": 60.25,
+   "curated_words_per_sec": 0.4149377593360996,
+   "hybrid_words_per_sec": 0.46473029045643155,
+   "cer_hybrid_vs_curated": 0.4768211920529801
+  },
+  {
+   "uuid": "0cf35b58",
+   "clip_id": "P21_77",
+   "language": "Hindi",
+   "duration_sec": 32.67,
+   "curated_words_per_sec": 0.6121824303642485,
+   "hybrid_words_per_sec": 1.6222834404652586,
+   "cer_hybrid_vs_curated": 1.5333333333333334,
+   "cer_small_vs_curated": 1.7904761904761906,
+   "cer_small_vs_hybrid": 0.4425531914893617
+  },
+  {
+   "uuid": "d605e770",
+   "clip_id": "P21_75",
+   "language": "Hindi",
+   "duration_sec": 15.85,
+   "curated_words_per_sec": 1.1987381703470033,
+   "hybrid_words_per_sec": 1.9558359621451105,
+   "cer_hybrid_vs_curated": 0.7889908256880734
+  },
+  {
+   "uuid": "ed2662e9",
+   "clip_id": "P2_7",
+   "language": "Hindi",
+   "duration_sec": 60.21,
+   "curated_words_per_sec": 0.36538780933399767,
+   "hybrid_words_per_sec": 0.6975585450921774,
+   "cer_hybrid_vs_curated": 1.4576271186440677
+  },
+  {
+   "uuid": "2a935d62",
+   "clip_id": "P16_109",
+   "language": "English",
+   "duration_sec": 10.0,
+   "curated_words_per_sec": 1.9,
+   "hybrid_words_per_sec": 2.1,
+   "cer_hybrid_vs_curated": 0.33884297520661155
+  },
+  {
+   "uuid": "36b82481",
+   "clip_id": "P14_93",
+   "language": "Hindi",
+   "duration_sec": 13.0,
+   "curated_words_per_sec": 1.6153846153846154,
+   "hybrid_words_per_sec": 1.8461538461538463,
+   "cer_hybrid_vs_curated": 0.5619834710743802
+  },
+  {
+   "uuid": "0f02bad0",
+   "clip_id": "P2_10",
+   "language": "English",
+   "duration_sec": 43.91,
+   "curated_words_per_sec": 0.501024823502619,
+   "hybrid_words_per_sec": 2.2546117057617856,
+   "cer_hybrid_vs_curated": 3.0153846153846153,
+   "cer_small_vs_curated": 3.1,
+   "cer_small_vs_hybrid": 0.04251012145748988
+  },
+  {
+   "uuid": "fc3d3348",
+   "clip_id": "P14_98",
+   "language": "Hindi",
+   "duration_sec": 11.04,
+   "curated_words_per_sec": 1.4492753623188408,
+   "hybrid_words_per_sec": 1.8115942028985508,
+   "cer_hybrid_vs_curated": 1.063157894736842
+  },
+  {
+   "uuid": "c8b8d9c6",
+   "clip_id": "P13_74",
+   "language": "Gujarati",
+   "duration_sec": 9.0,
+   "curated_words_per_sec": 1.3333333333333333,
+   "hybrid_words_per_sec": 1.3333333333333333,
+   "cer_hybrid_vs_curated": 0.6195652173913043
+  },
+  {
+   "uuid": "6c4a37ea",
+   "clip_id": "P1_1",
+   "language": "Hindi",
+   "duration_sec": 37.61,
+   "curated_words_per_sec": 0.3988300983780909,
+   "hybrid_words_per_sec": 0.850837543206594,
+   "cer_hybrid_vs_curated": 1.3214285714285714
+  },
+  {
+   "uuid": "fed4057d",
+   "clip_id": "P18_118",
+   "language": "Gujarati",
+   "duration_sec": 11.0,
+   "curated_words_per_sec": 1.1818181818181819,
+   "hybrid_words_per_sec": 1.0909090909090908,
+   "cer_hybrid_vs_curated": 0.5376344086021505
+  },
+  {
+   "uuid": "b7e99aca",
+   "clip_id": "P7_23",
+   "language": "Code-mixed",
+   "duration_sec": 65.97,
+   "curated_words_per_sec": 0.2728512960436562,
+   "hybrid_words_per_sec": 0.7276034561164165,
+   "cer_hybrid_vs_curated": 2.3125
+  },
+  {
+   "uuid": "4bf50b52",
+   "clip_id": "P22_97",
+   "language": "English",
+   "duration_sec": 44.03,
+   "curated_words_per_sec": 0.6132182602770838,
+   "hybrid_words_per_sec": 1.4308426073131955,
+   "cer_hybrid_vs_curated": 1.5068493150684932
+  },
+  {
+   "uuid": "944528c0",
+   "clip_id": "P16_105",
+   "language": "English",
+   "duration_sec": 9.0,
+   "curated_words_per_sec": 2.6666666666666665,
+   "hybrid_words_per_sec": 2.2222222222222223,
+   "cer_hybrid_vs_curated": 0.3115942028985507
+  },
+  {
+   "uuid": "bf7b539b",
+   "clip_id": "P19_134",
+   "language": "Code-mixed",
+   "duration_sec": 10.0,
+   "curated_words_per_sec": 2.5,
+   "hybrid_words_per_sec": 2.0,
+   "cer_hybrid_vs_curated": 0.8936170212765957
+  },
+  {
+   "uuid": "958ca9ba",
+   "clip_id": "P16_110",
+   "language": "English",
+   "duration_sec": 9.0,
+   "curated_words_per_sec": 1.7777777777777777,
+   "hybrid_words_per_sec": 1.6666666666666667,
+   "cer_hybrid_vs_curated": 0.2777777777777778
+  },
+  {
+   "uuid": "da4bd9ca",
+   "clip_id": "P9_48",
+   "language": "Code-mixed",
+   "duration_sec": 54.21,
+   "curated_words_per_sec": 0.42427596384430916,
+   "hybrid_words_per_sec": 1.4388489208633093,
+   "cer_hybrid_vs_curated": 2.6470588235294117
+  },
+  {
+   "uuid": "f5f59b22",
+   "clip_id": "P18_125",
+   "language": "English",
+   "duration_sec": 10.0,
+   "curated_words_per_sec": 2.2,
+   "hybrid_words_per_sec": 1.4,
+   "cer_hybrid_vs_curated": 0.376
+  },
+  {
+   "uuid": "2f923996",
+   "clip_id": "P10_52",
+   "language": "English",
+   "duration_sec": 59.47,
+   "curated_words_per_sec": 0.3867496216579788,
+   "hybrid_words_per_sec": 2.639986547839247,
+   "cer_hybrid_vs_curated": 5.757575757575758
+  },
+  {
+   "uuid": "acdabacc",
+   "clip_id": "P14_96",
+   "language": "Gujarati",
+   "duration_sec": 10.0,
+   "curated_words_per_sec": 1.5,
+   "hybrid_words_per_sec": 0.9,
+   "cer_hybrid_vs_curated": 0.5544554455445545
+  },
+  {
+   "uuid": "1eb0e38a",
+   "clip_id": "P20_59",
+   "language": "Gujarati",
+   "duration_sec": 59.61,
+   "curated_words_per_sec": 0.48649555443717496,
+   "hybrid_words_per_sec": 0.48649555443717496,
+   "cer_hybrid_vs_curated": 0.2222222222222222
+  },
+  {
+   "uuid": "3f07f814",
+   "clip_id": "P19_137",
+   "language": "English",
+   "duration_sec": 11.0,
+   "curated_words_per_sec": 2.090909090909091,
+   "hybrid_words_per_sec": 2.0,
+   "cer_hybrid_vs_curated": 0.06716417910447761
+  },
+  {
+   "uuid": "9e8fc965",
+   "clip_id": "P18_126",
+   "language": "Gujarati",
+   "duration_sec": 12.0,
+   "curated_words_per_sec": 1.6666666666666667,
+   "hybrid_words_per_sec": 0.9166666666666666,
+   "cer_hybrid_vs_curated": 0.56
+  },
+  {
+   "uuid": "956b8c0c",
+   "clip_id": "P2_13",
+   "language": "English",
+   "duration_sec": 31.73,
+   "curated_words_per_sec": 2.3006618342262843,
+   "hybrid_words_per_sec": 2.0800504254648597,
+   "cer_hybrid_vs_curated": 0.10353535353535354
+  },
+  {
+   "uuid": "ef48e8d5",
+   "clip_id": "P14_97",
+   "language": "Gujarati",
+   "duration_sec": 10.0,
+   "curated_words_per_sec": 1.1,
+   "hybrid_words_per_sec": 0.4,
+   "cer_hybrid_vs_curated": 0.8157894736842105
+  },
+  {
+   "uuid": "b758588d",
+   "clip_id": "P20_61",
+   "language": "Gujarati",
+   "duration_sec": 64.57,
+   "curated_words_per_sec": 0.6194827319188478,
+   "hybrid_words_per_sec": 0.4646120489391359,
+   "cer_hybrid_vs_curated": 0.3230088495575221
+  },
+  {
+   "uuid": "655238a6",
+   "clip_id": "P21_81",
+   "language": "Code-mixed",
+   "duration_sec": 29.79,
+   "curated_words_per_sec": 1.8798254447801277,
+   "hybrid_words_per_sec": 1.7119838872104733,
+   "cer_hybrid_vs_curated": 0.8515625
+  },
+  {
+   "uuid": "4ccc9bc2",
+   "clip_id": "P2_4",
+   "language": "Hindi",
+   "duration_sec": 33.19,
+   "curated_words_per_sec": 0.6628502561012354,
+   "hybrid_words_per_sec": 1.6872551973485992,
+   "cer_hybrid_vs_curated": 1.4661016949152543
+  },
+  {
+   "uuid": "c07a30f2",
+   "clip_id": "P13_86",
+   "language": "Gujarati",
+   "duration_sec": 8.0,
+   "curated_words_per_sec": 1.375,
+   "hybrid_words_per_sec": 1.375,
+   "cer_hybrid_vs_curated": 0.25757575757575757
+  },
+  {
+   "uuid": "75523327",
+   "clip_id": "P2_6",
+   "language": "Code-mixed",
+   "duration_sec": 69.29,
+   "curated_words_per_sec": 0.28864193967383456,
+   "hybrid_words_per_sec": 1.0246788858421128,
+   "cer_hybrid_vs_curated": 2.740740740740741
+  },
+  {
+   "uuid": "ff002d4d",
+   "clip_id": "P13_83",
+   "language": "Gujarati",
+   "duration_sec": 10.0,
+   "curated_words_per_sec": 1.0,
+   "hybrid_words_per_sec": 1.0,
+   "cer_hybrid_vs_curated": 0.5416666666666666
+  },
+  {
+   "uuid": "369147eb",
+   "clip_id": "P9_45",
+   "language": "Code-mixed",
+   "duration_sec": 52.97,
+   "curated_words_per_sec": 2.586369643194261,
+   "hybrid_words_per_sec": 1.2648669057957334,
+   "cer_hybrid_vs_curated": 0.9140625
+  },
+  {
+   "uuid": "eeea163e",
+   "clip_id": "P11_55",
+   "language": "Code-mixed",
+   "duration_sec": 79.29,
+   "curated_words_per_sec": 0.13873123975280616,
+   "hybrid_words_per_sec": 0.630596544330937,
+   "cer_hybrid_vs_curated": 4.164383561643835
+  },
+  {
+   "uuid": "e117dac3",
+   "clip_id": "P13_79",
+   "language": "Gujarati",
+   "duration_sec": 13.0,
+   "curated_words_per_sec": 0.7692307692307693,
+   "hybrid_words_per_sec": 0.3076923076923077,
+   "cer_hybrid_vs_curated": 0.696969696969697
+  },
+  {
+   "uuid": "286218b8",
+   "clip_id": "P20_67",
+   "language": "Gujarati",
+   "duration_sec": 66.37,
+   "curated_words_per_sec": 0.542413741148109,
+   "hybrid_words_per_sec": 0.5574807895133344,
+   "cer_hybrid_vs_curated": 0.0776255707762557
+  },
+  {
+   "uuid": "b41b3143",
+   "clip_id": "P13_71",
+   "language": "Gujarati",
+   "duration_sec": 10.0,
+   "curated_words_per_sec": 1.3,
+   "hybrid_words_per_sec": 1.3,
+   "cer_hybrid_vs_curated": 0.5783132530120482
+  },
+  {
+   "uuid": "fcbb4e59",
+   "clip_id": "P21_78",
+   "language": "Hindi",
+   "duration_sec": 21.75,
+   "curated_words_per_sec": 1.0574712643678161,
+   "hybrid_words_per_sec": 1.9310344827586208,
+   "cer_hybrid_vs_curated": 1.1181102362204725
+  },
+  {
+   "uuid": "0200b1f0",
+   "clip_id": "P13_66",
+   "language": "Code-mixed",
+   "duration_sec": 12.0,
+   "curated_words_per_sec": 1.5833333333333333,
+   "hybrid_words_per_sec": 0.4166666666666667,
+   "cer_hybrid_vs_curated": 0.968
+  },
+  {
+   "uuid": "4ca415ea",
+   "clip_id": "P14_92",
+   "language": "Gujarati",
+   "duration_sec": 10.0,
+   "curated_words_per_sec": 0.8,
+   "hybrid_words_per_sec": 0.3,
+   "cer_hybrid_vs_curated": 0.6046511627906976
+  },
+  {
+   "uuid": "f05db76e",
+   "clip_id": "P19_129",
+   "language": "Hindi",
+   "duration_sec": 10.0,
+   "curated_words_per_sec": 2.1,
+   "hybrid_words_per_sec": 1.4,
+   "cer_hybrid_vs_curated": 0.5241935483870968
+  },
+  {
+   "uuid": "1d8cbbac",
+   "clip_id": "P7_27",
+   "language": "English",
+   "duration_sec": 63.75,
+   "curated_words_per_sec": 2.5725490196078433,
+   "hybrid_words_per_sec": 1.8352941176470587,
+   "cer_hybrid_vs_curated": 0.2763018065887354
+  },
+  {
+   "uuid": "8da01097",
+   "clip_id": "P9_46",
+   "language": "Code-mixed",
+   "duration_sec": 53.43,
+   "curated_words_per_sec": 2.3582257158899496,
+   "hybrid_words_per_sec": 1.1978289350552125,
+   "cer_hybrid_vs_curated": 0.9118881118881119
+  },
+  {
+   "uuid": "9ad620ab",
+   "clip_id": "P7_26",
+   "language": "English",
+   "duration_sec": 65.41,
+   "curated_words_per_sec": 2.7212964378535394,
+   "hybrid_words_per_sec": 2.614279162207614,
+   "cer_hybrid_vs_curated": 0.024033437826541274
+  },
+  {
+   "uuid": "341ef40b",
+   "clip_id": "P4_13",
+   "language": "Hindi",
+   "duration_sec": 74.29,
+   "curated_words_per_sec": 0.188450666307713,
+   "hybrid_words_per_sec": 1.5749091398573158,
+   "cer_hybrid_vs_curated": 6.447368421052632
+  },
+  {
+   "uuid": "439472e6",
+   "clip_id": "P18_122",
+   "language": "Hindi",
+   "duration_sec": 12.0,
+   "curated_words_per_sec": 1.6666666666666667,
+   "hybrid_words_per_sec": 1.75,
+   "cer_hybrid_vs_curated": 0.7583333333333333
+  },
+  {
+   "uuid": "e7c421c7",
+   "clip_id": "P22_90",
+   "language": "English",
+   "duration_sec": 45.25,
+   "curated_words_per_sec": 2.298342541436464,
+   "hybrid_words_per_sec": 2.2320441988950277,
+   "cer_hybrid_vs_curated": 0.028286189683860232
+  },
+  {
+   "uuid": "17a0df49",
+   "clip_id": "P13_67",
+   "language": "Code-mixed",
+   "duration_sec": 14.0,
+   "curated_words_per_sec": 0.7142857142857143,
+   "hybrid_words_per_sec": 0.21428571428571427,
+   "cer_hybrid_vs_curated": 0.9692307692307692
+  },
+  {
+   "uuid": "46d483f3",
+   "clip_id": "P13_72",
+   "language": "Hindi",
+   "duration_sec": 11.0,
+   "curated_words_per_sec": 1.8181818181818181,
+   "hybrid_words_per_sec": 0.2727272727272727,
+   "cer_hybrid_vs_curated": 0.8928571428571429
+  },
+  {
+   "uuid": "c56811cd",
+   "clip_id": "P22_101",
+   "language": "English",
+   "duration_sec": 75.79,
+   "curated_words_per_sec": 2.2034569204380525,
+   "hybrid_words_per_sec": 2.111096450719092,
+   "cer_hybrid_vs_curated": 0.037162162162162164
+  },
+  {
+   "uuid": "430f801d",
+   "clip_id": "P8_40",
+   "language": "Hindi",
+   "duration_sec": 93.23,
+   "curated_words_per_sec": 0.18234473881797703,
+   "hybrid_words_per_sec": 1.0940684329078623,
+   "cer_hybrid_vs_curated": 4.533333333333333
+  },
+  {
+   "uuid": "8d3aed99",
+   "clip_id": "P19_130",
+   "language": "Hindi",
+   "duration_sec": 10.0,
+   "curated_words_per_sec": 1.9,
+   "hybrid_words_per_sec": 1.8,
+   "cer_hybrid_vs_curated": 0.5172413793103449
+  },
+  {
+   "uuid": "0279b6a6",
+   "clip_id": "P13_85",
+   "language": "Gujarati",
+   "duration_sec": 12.0,
+   "curated_words_per_sec": 1.1666666666666667,
+   "hybrid_words_per_sec": 1.0833333333333333,
+   "cer_hybrid_vs_curated": 0.38372093023255816
+  },
+  {
+   "uuid": "e21342b0",
+   "clip_id": "P21_74",
+   "language": "Hindi",
+   "duration_sec": 22.17,
+   "curated_words_per_sec": 0.9472259810554803,
+   "hybrid_words_per_sec": 2.0748759585024805,
+   "cer_hybrid_vs_curated": 1.2666666666666666
+  },
+  {
+   "uuid": "8babce3b",
+   "clip_id": "P4_14",
+   "language": "Hindi",
+   "duration_sec": 52.37,
+   "curated_words_per_sec": 0.8019858697727708,
+   "hybrid_words_per_sec": 1.6612564445293108,
+   "cer_hybrid_vs_curated": 2.0804597701149423
+  },
+  {
+   "uuid": "951f58d0",
+   "clip_id": "P2_5",
+   "language": "Code-mixed",
+   "duration_sec": 67.75,
+   "curated_words_per_sec": 0.17712177121771217,
+   "hybrid_words_per_sec": 1.2398523985239853,
+   "cer_hybrid_vs_curated": 4.880952380952381
+  },
+  {
+   "uuid": "20a04502",
+   "clip_id": "P18_124",
+   "language": "Gujarati",
+   "duration_sec": 12.0,
+   "curated_words_per_sec": 1.0,
+   "hybrid_words_per_sec": 0.5,
+   "cer_hybrid_vs_curated": 0.524390243902439
+  },
+  {
+   "uuid": "e623a689",
+   "clip_id": "P22_99",
+   "language": "English",
+   "duration_sec": 64.19,
+   "curated_words_per_sec": 2.399127589967285,
+   "hybrid_words_per_sec": 1.5734538090045178,
+   "cer_hybrid_vs_curated": 0.3433962264150943
+  },
+  {
+   "uuid": "dc570131",
+   "clip_id": "P12_57",
+   "language": "English",
+   "duration_sec": 41.39,
+   "curated_words_per_sec": 2.488523798018845,
+   "hybrid_words_per_sec": 2.440202947571877,
+   "cer_hybrid_vs_curated": 0.06306306306306306
+  },
+  {
+   "uuid": "35c7936c",
+   "clip_id": "P18_114",
+   "language": "Hindi",
+   "duration_sec": 12.0,
+   "curated_words_per_sec": 1.6666666666666667,
+   "hybrid_words_per_sec": 1.75,
+   "cer_hybrid_vs_curated": 0.5765765765765766
+  },
+  {
+   "uuid": "1a50aec3",
+   "clip_id": "P18_115",
+   "language": "Gujarati",
+   "duration_sec": 12.0,
+   "curated_words_per_sec": 1.25,
+   "hybrid_words_per_sec": 1.25,
+   "cer_hybrid_vs_curated": 0.6823529411764706
+  },
+  {
+   "uuid": "e256a6dc",
+   "clip_id": "P20_62",
+   "language": "Gujarati",
+   "duration_sec": 58.99,
+   "curated_words_per_sec": 0.5255127987794541,
+   "hybrid_words_per_sec": 0.508560773012375,
+   "cer_hybrid_vs_curated": 0.19411764705882353
+  },
+  {
+   "uuid": "9ee3ac2a",
+   "clip_id": "P16_108",
+   "language": "English",
+   "duration_sec": 10.0,
+   "curated_words_per_sec": 2.4,
+   "hybrid_words_per_sec": 1.6,
+   "cer_hybrid_vs_curated": 0.3617021276595745
+  },
+  {
+   "uuid": "ee0caeb5",
+   "clip_id": "P14_94",
+   "language": "Code-mixed",
+   "duration_sec": 10.0,
+   "curated_words_per_sec": 1.0,
+   "hybrid_words_per_sec": 1.2,
+   "cer_hybrid_vs_curated": 0.9342105263157895
+  },
+  {
+   "uuid": "f9e8a369",
+   "clip_id": "P16_106",
+   "language": "English",
+   "duration_sec": 10.0,
+   "curated_words_per_sec": 2.4,
+   "hybrid_words_per_sec": 2.1,
+   "cer_hybrid_vs_curated": 0.09929078014184398
+  },
+  {
+   "uuid": "e1a47e10",
+   "clip_id": "P18_119",
+   "language": "English",
+   "duration_sec": 9.0,
+   "curated_words_per_sec": 2.4444444444444446,
+   "hybrid_words_per_sec": 2.3333333333333335,
+   "cer_hybrid_vs_curated": 0.041666666666666664
+  },
+  {
+   "uuid": "bc8f7d29",
+   "clip_id": "P13_82",
+   "language": "Code-mixed",
+   "duration_sec": 11.0,
+   "curated_words_per_sec": 1.0,
+   "hybrid_words_per_sec": 0.09090909090909091,
+   "cer_hybrid_vs_curated": 1.0
+  },
+  {
+   "uuid": "ee49f329",
+   "clip_id": "P16_111",
+   "language": "English",
+   "duration_sec": 10.0,
+   "curated_words_per_sec": 2.5,
+   "hybrid_words_per_sec": 2.3,
+   "cer_hybrid_vs_curated": 0.04225352112676056
+  },
+  {
+   "uuid": "dd334cc7",
+   "clip_id": "P21_76",
+   "language": "Hindi",
+   "duration_sec": 22.91,
+   "curated_words_per_sec": 0.7420340462680053,
+   "hybrid_words_per_sec": 2.226102138804016,
+   "cer_hybrid_vs_curated": 1.625
+  },
+  {
+   "uuid": "444d610b",
+   "clip_id": "P13_84",
+   "language": "Gujarati",
+   "duration_sec": 9.0,
+   "curated_words_per_sec": 0.4444444444444444,
+   "hybrid_words_per_sec": 0.4444444444444444,
+   "cer_hybrid_vs_curated": 0.0
+  },
+  {
+   "uuid": "1bac27a7",
+   "clip_id": "P22_95",
+   "language": "English",
+   "duration_sec": 48.73,
+   "curated_words_per_sec": 2.2368151036322597,
+   "hybrid_words_per_sec": 2.19577262466653,
+   "cer_hybrid_vs_curated": 0.043936731107205626
+  },
+  {
+   "uuid": "dbccc477",
+   "clip_id": "P8_31",
+   "language": "Hindi",
+   "duration_sec": 68.63,
+   "curated_words_per_sec": 0.24770508523969112,
+   "hybrid_words_per_sec": 1.3696634125018214,
+   "cer_hybrid_vs_curated": 3.92
+  },
+  {
+   "uuid": "d10bd1d0",
+   "clip_id": "P18_116",
+   "language": "English",
+   "duration_sec": 10.0,
+   "curated_words_per_sec": 1.8,
+   "hybrid_words_per_sec": 2.2,
+   "cer_hybrid_vs_curated": 0.20535714285714285
+  },
+  {
+   "uuid": "4e20fd1a",
+   "clip_id": "P2_12",
+   "language": "English",
+   "duration_sec": 66.77,
+   "curated_words_per_sec": 2.366332185113075,
+   "hybrid_words_per_sec": 2.246517897259248,
+   "cer_hybrid_vs_curated": 0.038882138517618466
+  },
+  {
+   "uuid": "3a43b2ba",
+   "clip_id": "P4_10",
+   "language": "Hindi",
+   "duration_sec": 77.31,
+   "curated_words_per_sec": 0.7631612986677014,
+   "hybrid_words_per_sec": 0.7760962359332557,
+   "cer_hybrid_vs_curated": 0.8545454545454545
+  },
+  {
+   "uuid": "3170f437",
+   "clip_id": "P13_70",
+   "language": "Gujarati",
+   "duration_sec": 11.0,
+   "curated_words_per_sec": 1.0909090909090908,
+   "hybrid_words_per_sec": 1.0,
+   "cer_hybrid_vs_curated": 0.1927710843373494
+  },
+  {
+   "uuid": "dd463c09",
+   "clip_id": "P8_32",
+   "language": "Code-mixed",
+   "duration_sec": 84.39,
+   "curated_words_per_sec": 0.2369949046095509,
+   "hybrid_words_per_sec": 0.8650314018248607,
+   "cer_hybrid_vs_curated": 2.869158878504673
+  },
+  {
+   "uuid": "4774bc58",
+   "clip_id": "P13_78",
+   "language": "Gujarati",
+   "duration_sec": 8.0,
+   "curated_words_per_sec": 1.375,
+   "hybrid_words_per_sec": 1.25,
+   "cer_hybrid_vs_curated": 0.18333333333333332
+  },
+  {
+   "uuid": "6651529e",
+   "clip_id": "P9_47",
+   "language": "Code-mixed",
+   "duration_sec": 52.11,
+   "curated_words_per_sec": 0.4029936672423719,
+   "hybrid_words_per_sec": 1.1897908270965265,
+   "cer_hybrid_vs_curated": 2.7663551401869158
+  },
+  {
+   "uuid": "89456f27",
+   "clip_id": "P13_73",
+   "language": "Hindi",
+   "duration_sec": 9.0,
+   "curated_words_per_sec": 2.111111111111111,
+   "hybrid_words_per_sec": 2.3333333333333335,
+   "cer_hybrid_vs_curated": 0.8899082568807339
+  },
+  {
+   "uuid": "1d870966",
+   "clip_id": "P11_54",
+   "language": "English",
+   "duration_sec": 65.13,
+   "curated_words_per_sec": 2.164900967296177,
+   "hybrid_words_per_sec": 2.1802548748656534,
+   "cer_hybrid_vs_curated": 0.06900584795321638
+  },
+  {
+   "uuid": "2db69edb",
+   "clip_id": "P20_64",
+   "language": "Gujarati",
+   "duration_sec": 67.85,
+   "curated_words_per_sec": 0.4716285924834194,
+   "hybrid_words_per_sec": 0.44215180545320565,
+   "cer_hybrid_vs_curated": 0.15254237288135594
+  },
+  {
+   "uuid": "43f59a85",
+   "clip_id": "P21_70",
+   "language": "Hindi",
+   "duration_sec": 11.09,
+   "curated_words_per_sec": 1.532912533814247,
+   "hybrid_words_per_sec": 2.4346257889990985,
+   "cer_hybrid_vs_curated": 0.8076923076923077
+  },
+  {
+   "uuid": "6f3f920c",
+   "clip_id": "P19_138",
+   "language": "Hindi",
+   "duration_sec": 10.0,
+   "curated_words_per_sec": 1.7,
+   "hybrid_words_per_sec": 1.9,
+   "cer_hybrid_vs_curated": 0.7636363636363637
+  },
+  {
+   "uuid": "504d281f",
+   "clip_id": "P20_65",
+   "language": "Gujarati",
+   "duration_sec": 59.89,
+   "curated_words_per_sec": 0.38403740190348973,
+   "hybrid_words_per_sec": 0.36734012355985973,
+   "cer_hybrid_vs_curated": 0.20394736842105263
+  },
+  {
+   "uuid": "82ec9f2d",
+   "clip_id": "P16_99",
+   "language": "English",
+   "duration_sec": 8.0,
+   "curated_words_per_sec": 2.125,
+   "hybrid_words_per_sec": 2.125,
+   "cer_hybrid_vs_curated": 0.0
+  },
+  {
+   "uuid": "939b462d",
+   "clip_id": "P13_69",
+   "language": "Gujarati",
+   "duration_sec": 10.0,
+   "curated_words_per_sec": 0.9,
+   "hybrid_words_per_sec": 0.8,
+   "cer_hybrid_vs_curated": 0.19642857142857142
+  },
+  {
+   "uuid": "b572f3d0",
+   "clip_id": "P19_131",
+   "language": "English",
+   "duration_sec": 10.0,
+   "curated_words_per_sec": 1.0,
+   "hybrid_words_per_sec": 1.2,
+   "cer_hybrid_vs_curated": 0.578125
+  },
+  {
+   "uuid": "ecf27e76",
+   "clip_id": "P18_123",
+   "language": "Gujarati",
+   "duration_sec": 10.0,
+   "curated_words_per_sec": 1.2,
+   "hybrid_words_per_sec": 1.0,
+   "cer_hybrid_vs_curated": 0.35
+  },
+  {
+   "uuid": "b82c9074",
+   "clip_id": "P21_71",
+   "language": "English",
+   "duration_sec": 16.51,
+   "curated_words_per_sec": 1.877649909145972,
+   "hybrid_words_per_sec": 1.574803149606299,
+   "cer_hybrid_vs_curated": 0.14814814814814814
+  },
+  {
+   "uuid": "abae4f43",
+   "clip_id": "P5_18",
+   "language": "Hindi",
+   "duration_sec": 54.95,
+   "curated_words_per_sec": 0.4003639672429481,
+   "hybrid_words_per_sec": 1.5104640582347588,
+   "cer_hybrid_vs_curated": 2.76271186440678
+  },
+  {
+   "uuid": "11e9cdaa",
+   "clip_id": "P16_103",
+   "language": "English",
+   "duration_sec": 10.0,
+   "curated_words_per_sec": 2.3,
+   "hybrid_words_per_sec": 2.1,
+   "cer_hybrid_vs_curated": 0.03731343283582089
+  },
+  {
+   "uuid": "5487fd4f",
+   "clip_id": "P9_42",
+   "language": "English",
+   "duration_sec": 44.77,
+   "curated_words_per_sec": 2.8143846325664508,
+   "hybrid_words_per_sec": 2.725039088675452,
+   "cer_hybrid_vs_curated": 0.12326869806094183
+  },
+  {
+   "uuid": "d9178793",
+   "clip_id": "P16_102",
+   "language": "English",
+   "duration_sec": 10.0,
+   "curated_words_per_sec": 2.4,
+   "hybrid_words_per_sec": 2.2,
+   "cer_hybrid_vs_curated": 0.06993006993006994
+  },
+  {
+   "uuid": "4ce1eb90",
+   "clip_id": "P4_11",
+   "language": "Hindi",
+   "duration_sec": 74.93,
+   "curated_words_per_sec": 0.26691578806886423,
+   "hybrid_words_per_sec": 1.0276257840651273,
+   "cer_hybrid_vs_curated": 3.090909090909091
+  },
+  {
+   "uuid": "688c7015",
+   "clip_id": "P10_51",
+   "language": "English",
+   "duration_sec": 54.99,
+   "curated_words_per_sec": 2.6186579378068737,
+   "hybrid_words_per_sec": 2.436806692125841,
+   "cer_hybrid_vs_curated": 0.6408010012515645
+  },
+  {
+   "uuid": "4bb00f20",
+   "clip_id": "P14_90",
+   "language": "Hindi",
+   "duration_sec": 15.0,
+   "curated_words_per_sec": 1.2,
+   "hybrid_words_per_sec": 1.9333333333333333,
+   "cer_hybrid_vs_curated": 0.9326923076923077
+  },
+  {
+   "uuid": "6ba25efe",
+   "clip_id": "P21_83",
+   "language": "Hindi",
+   "duration_sec": 11.17,
+   "curated_words_per_sec": 1.8800358102059087,
+   "hybrid_words_per_sec": 2.596239928379588,
+   "cer_hybrid_vs_curated": 0.7
+  },
+  {
+   "uuid": "ad64b56c",
+   "clip_id": "P22_96",
+   "language": "English",
+   "duration_sec": 61.47,
+   "curated_words_per_sec": 2.049780380673499,
+   "hybrid_words_per_sec": 1.5780055311534082,
+   "cer_hybrid_vs_curated": 0.24202898550724639
+  },
+  {
+   "uuid": "9d9262af",
+   "clip_id": "P7_25",
+   "language": "Hindi",
+   "duration_sec": 67.63,
+   "curated_words_per_sec": 0.29572674848440045,
+   "hybrid_words_per_sec": 0.7984622209078812,
+   "cer_hybrid_vs_curated": 2.2155172413793105
+  },
+  {
+   "uuid": "8c459ce2",
+   "clip_id": "P21_72",
+   "language": "Code-mixed",
+   "duration_sec": 7.27,
+   "curated_words_per_sec": 2.8885832187070153,
+   "hybrid_words_per_sec": 0.5502063273727649,
+   "cer_hybrid_vs_curated": 0.9662921348314607
+  },
+  {
+   "uuid": "49732d6c",
+   "clip_id": "P13_81",
+   "language": "Gujarati",
+   "duration_sec": 10.0,
+   "curated_words_per_sec": 1.1,
+   "hybrid_words_per_sec": 1.1,
+   "cer_hybrid_vs_curated": 0.12195121951219512
+  },
+  {
+   "uuid": "9479e1e6",
+   "clip_id": "P2_9",
+   "language": "English",
+   "duration_sec": 68.83,
+   "curated_words_per_sec": 2.0339968037193086,
+   "hybrid_words_per_sec": 1.9322969635333431,
+   "cer_hybrid_vs_curated": 0.06770098730606489
+  },
+  {
+   "uuid": "77097749",
+   "clip_id": "P7_30",
+   "language": "English",
+   "duration_sec": 60.61,
+   "curated_words_per_sec": 2.837815541989771,
+   "hybrid_words_per_sec": 2.705824121432107,
+   "cer_hybrid_vs_curated": 0.05452562704471101
+  },
+  {
+   "uuid": "36b5229a",
+   "clip_id": "P13_87",
+   "language": "Gujarati",
+   "duration_sec": 7.92,
+   "curated_words_per_sec": 1.7676767676767677,
+   "hybrid_words_per_sec": 1.7676767676767677,
+   "cer_hybrid_vs_curated": 0.35
+  },
+  {
+   "uuid": "e6b3c944",
+   "clip_id": "P9_44",
+   "language": "English",
+   "duration_sec": 47.63,
+   "curated_words_per_sec": 2.7923577577157253,
+   "hybrid_words_per_sec": 2.624396388830569,
+   "cer_hybrid_vs_curated": 0.102880658436214
+  },
+  {
+   "uuid": "2b70e525",
+   "clip_id": "P18_117",
+   "language": "Code-mixed",
+   "duration_sec": 11.0,
+   "curated_words_per_sec": 1.5454545454545454,
+   "hybrid_words_per_sec": 1.6363636363636365,
+   "cer_hybrid_vs_curated": 1.1395348837209303
+  },
+  {
+   "uuid": "83f4a9a9",
+   "clip_id": "P4_12",
+   "language": "Hindi",
+   "duration_sec": 52.91,
+   "curated_words_per_sec": 1.0395010395010396,
+   "hybrid_words_per_sec": 1.530901530901531,
+   "cer_hybrid_vs_curated": 1.263537906137184
+  },
+  {
+   "uuid": "55cee5db",
+   "clip_id": "P22_94",
+   "language": "English",
+   "duration_sec": 68.79,
+   "curated_words_per_sec": 2.4567524349469396,
+   "hybrid_words_per_sec": 2.354993458351504,
+   "cer_hybrid_vs_curated": 0.019543973941368076
+  },
+  {
+   "uuid": "c04a96c4",
+   "clip_id": "P13_77",
+   "language": "Gujarati",
+   "duration_sec": 11.0,
+   "curated_words_per_sec": 0.45454545454545453,
+   "hybrid_words_per_sec": 0.5454545454545454,
+   "cer_hybrid_vs_curated": 0.15151515151515152
+  },
+  {
+   "uuid": "39820cff",
+   "clip_id": "P13_80",
+   "language": "Gujarati",
+   "duration_sec": 11.0,
+   "curated_words_per_sec": 1.2727272727272727,
+   "hybrid_words_per_sec": 1.2727272727272727,
+   "cer_hybrid_vs_curated": 0.6190476190476191
+  },
+  {
+   "uuid": "0640be0f",
+   "clip_id": "P8_37",
+   "language": "Hindi",
+   "duration_sec": 82.63,
+   "curated_words_per_sec": 0.19363427326636815,
+   "hybrid_words_per_sec": 1.6458913227641294,
+   "cer_hybrid_vs_curated": 5.979381443298969,
+   "cer_small_vs_curated": 7.298969072164948,
+   "cer_small_vs_hybrid": 0.4611801242236025
+  },
+  {
+   "uuid": "79a28903",
+   "clip_id": "P14_88",
+   "language": "Code-mixed",
+   "duration_sec": 10.0,
+   "curated_words_per_sec": 1.1,
+   "hybrid_words_per_sec": 0.7,
+   "cer_hybrid_vs_curated": 0.9135802469135802
+  },
+  {
+   "uuid": "12a4def0",
+   "clip_id": "P22_88",
+   "language": "English",
+   "duration_sec": 45.11,
+   "curated_words_per_sec": 2.7266681445355796,
+   "hybrid_words_per_sec": 2.637996009753935,
+   "cer_hybrid_vs_curated": 0.03939393939393939
+  },
+  {
+   "uuid": "a1384ddc",
+   "clip_id": "P20_63",
+   "language": "Gujarati",
+   "duration_sec": 61.27,
+   "curated_words_per_sec": 0.5385996409335727,
+   "hybrid_words_per_sec": 0.42435123225069366,
+   "cer_hybrid_vs_curated": 0.18857142857142858
+  },
+  {
+   "uuid": "b24445a7",
+   "clip_id": "P13_75",
+   "language": "Gujarati",
+   "duration_sec": 9.0,
+   "curated_words_per_sec": 1.3333333333333333,
+   "hybrid_words_per_sec": 1.4444444444444444,
+   "cer_hybrid_vs_curated": 0.10144927536231885
+  },
+  {
+   "uuid": "3e75c3b4",
+   "clip_id": "P13_68",
+   "language": "Hindi",
+   "duration_sec": 11.0,
+   "curated_words_per_sec": 2.272727272727273,
+   "hybrid_words_per_sec": 3.6363636363636362,
+   "cer_hybrid_vs_curated": 1.2255639097744362
+  },
+  {
+   "uuid": "016b6287",
+   "clip_id": "P11_53",
+   "language": "English",
+   "duration_sec": 62.31,
+   "curated_words_per_sec": 2.327074305889905,
+   "hybrid_words_per_sec": 2.13448884609212,
+   "cer_hybrid_vs_curated": 0.06159420289855073,
+   "cer_small_vs_curated": 0.07125603864734299,
+   "cer_small_vs_hybrid": 0.11913814955640051
+  },
+  {
+   "uuid": "c521bf2d",
+   "clip_id": "P18_113",
+   "language": "Hindi",
+   "duration_sec": 10.0,
+   "curated_words_per_sec": 2.0,
+   "hybrid_words_per_sec": 2.8,
+   "cer_hybrid_vs_curated": 0.6129032258064516
+  },
+  {
+   "uuid": "6cd66193",
+   "clip_id": "P13_76",
+   "language": "Gujarati",
+   "duration_sec": 11.0,
+   "curated_words_per_sec": 1.0909090909090908,
+   "hybrid_words_per_sec": 0.8181818181818182,
+   "cer_hybrid_vs_curated": 0.36
+  },
+  {
+   "uuid": "f53d4330",
+   "clip_id": "P21_69",
+   "language": "Hindi",
+   "duration_sec": 17.49,
+   "curated_words_per_sec": 0.8576329331046313,
+   "hybrid_words_per_sec": 0.28587764436821045,
+   "cer_hybrid_vs_curated": 0.8279569892473119
+  },
+  {
+   "uuid": "0cdb1ca4",
+   "clip_id": "P11_56",
+   "language": "English",
+   "duration_sec": 68.13,
+   "curated_words_per_sec": 2.2457067371202113,
+   "hybrid_words_per_sec": 2.1723176280639955,
+   "cer_hybrid_vs_curated": 0.01643192488262911,
+   "cer_small_vs_curated": 0.051643192488262914,
+   "cer_small_vs_hybrid": 0.061611374407582936
+  },
+  {
+   "uuid": "d92c9227",
+   "clip_id": "P1_2",
+   "language": "Hindi",
+   "duration_sec": 65.26,
+   "curated_words_per_sec": 2.8041679436101745,
+   "hybrid_words_per_sec": 1.792828685258964,
+   "cer_hybrid_vs_curated": 0.8434163701067615
+  },
+  {
+   "uuid": "cd29a36f",
+   "clip_id": "P22_100",
+   "language": "English",
+   "duration_sec": 43.69,
+   "curated_words_per_sec": 2.2659647516594186,
+   "hybrid_words_per_sec": 2.128633554589151,
+   "cer_hybrid_vs_curated": 0.033203125
+  },
+  {
+   "uuid": "fce68504",
+   "clip_id": "P5_17",
+   "language": "Hindi",
+   "duration_sec": 70.87,
+   "curated_words_per_sec": 0.26809651474530827,
+   "hybrid_words_per_sec": 1.6085790884718498,
+   "cer_hybrid_vs_curated": 4.752577319587629
+  },
+  {
+   "uuid": "f335cba3",
+   "clip_id": "P16_112",
+   "language": "English",
+   "duration_sec": 9.37,
+   "curated_words_per_sec": 2.56136606189968,
+   "hybrid_words_per_sec": 2.24119530416222,
+   "cer_hybrid_vs_curated": 0.046875
+  },
+  {
+   "uuid": "9cd6c852",
+   "clip_id": "P21_80",
+   "language": "Hindi",
+   "duration_sec": 21.27,
+   "curated_words_per_sec": 0.9402914903620122,
+   "hybrid_words_per_sec": 2.068641278796427,
+   "cer_hybrid_vs_curated": 1.2148760330578512
+  },
+  {
+   "uuid": "81392443",
+   "clip_id": "P16_100",
+   "language": "English",
+   "duration_sec": 7.0,
+   "curated_words_per_sec": 2.2857142857142856,
+   "hybrid_words_per_sec": 2.142857142857143,
+   "cer_hybrid_vs_curated": 0.011764705882352941
+  },
+  {
+   "uuid": "8c41561b",
+   "clip_id": "P20_68",
+   "language": "Gujarati",
+   "duration_sec": 64.33,
+   "curated_words_per_sec": 0.4974351002642624,
+   "hybrid_words_per_sec": 0.5129799471475206,
+   "cer_hybrid_vs_curated": 0.06046511627906977
+  },
+  {
+   "uuid": "be6033f7",
+   "clip_id": "P21_73",
+   "language": "Hindi",
+   "duration_sec": 18.31,
+   "curated_words_per_sec": 1.2561441835062808,
+   "hybrid_words_per_sec": 2.566903331512835,
+   "cer_hybrid_vs_curated": 1.1900826446280992
+  },
+  {
+   "uuid": "425a609f",
+   "clip_id": "P14_89",
+   "language": "Hindi",
+   "duration_sec": 10.0,
+   "curated_words_per_sec": 1.6,
+   "hybrid_words_per_sec": 0.2,
+   "cer_hybrid_vs_curated": 0.926605504587156
+  },
+  {
+   "uuid": "a33dc7af",
+   "clip_id": "P7_24",
+   "language": "English",
+   "duration_sec": 28.25,
+   "curated_words_per_sec": 2.5486725663716814,
+   "hybrid_words_per_sec": 2.15929203539823,
+   "cer_hybrid_vs_curated": 0.09289617486338798
+  },
+  {
+   "uuid": "8573e793",
+   "clip_id": "P5_19",
+   "language": "Hindi",
+   "duration_sec": 61.33,
+   "curated_words_per_sec": 1.9077123756725909,
+   "hybrid_words_per_sec": 1.4348605902494702,
+   "cer_hybrid_vs_curated": 0.8403669724770643
+  },
+  {
+   "uuid": "464c04af",
+   "clip_id": "P19_133",
+   "language": "English",
+   "duration_sec": 11.0,
+   "curated_words_per_sec": 1.8181818181818181,
+   "hybrid_words_per_sec": 1.8181818181818181,
+   "cer_hybrid_vs_curated": 0.08620689655172414
+  },
+  {
+   "uuid": "49257af1",
+   "clip_id": "P21_84",
+   "language": "Hindi",
+   "duration_sec": 21.97,
+   "curated_words_per_sec": 0.8648156577150661,
+   "hybrid_words_per_sec": 2.1847974510696404,
+   "cer_hybrid_vs_curated": 1.5204081632653061
+  },
+  {
+   "uuid": "51d87c64",
+   "clip_id": "P21_79",
+   "language": "Hindi",
+   "duration_sec": 38.77,
+   "curated_words_per_sec": 0.4900696414753675,
+   "hybrid_words_per_sec": 1.2638638122259478,
+   "cer_hybrid_vs_curated": 1.8842105263157896
+  },
+  {
+   "uuid": "236c7b87",
+   "clip_id": "P8_35",
+   "language": "Hindi",
+   "duration_sec": 79.43,
+   "curated_words_per_sec": 0.4532292584665743,
+   "hybrid_words_per_sec": 1.0323555331738636,
+   "cer_hybrid_vs_curated": 1.3317307692307692
+  },
+  {
+   "uuid": "b1a6b1f1",
+   "clip_id": "P3_8",
+   "language": "Hindi",
+   "duration_sec": 61.12,
+   "curated_words_per_sec": 0.8835078534031414,
+   "hybrid_words_per_sec": 1.2925392670157068,
+   "cer_hybrid_vs_curated": 0.9073033707865169
+  },
+  {
+   "uuid": "10714d51",
+   "clip_id": "P3_9",
+   "language": "Hindi",
+   "duration_sec": 97.49,
+   "curated_words_per_sec": 0.20514924607652069,
+   "hybrid_words_per_sec": 1.230895476459124,
+   "cer_hybrid_vs_curated": 4.361344537815126
+  },
+  {
+   "uuid": "8ae8905b",
+   "clip_id": "P16_101",
+   "language": "English",
+   "duration_sec": 8.0,
+   "curated_words_per_sec": 2.125,
+   "hybrid_words_per_sec": 2.125,
+   "cer_hybrid_vs_curated": 0.045454545454545456
+  },
+  {
+   "uuid": "34f3193c",
+   "clip_id": "P19_135",
+   "language": "English",
+   "duration_sec": 8.0,
+   "curated_words_per_sec": 1.75,
+   "hybrid_words_per_sec": 1.625,
+   "cer_hybrid_vs_curated": 0.23170731707317074
+  },
+  {
+   "uuid": "e7a37e81",
+   "clip_id": "P8_34",
+   "language": "Hindi",
+   "duration_sec": 79.85,
+   "curated_words_per_sec": 0.27551659361302444,
+   "hybrid_words_per_sec": 1.1772072636192863,
+   "cer_hybrid_vs_curated": 3.7830188679245285
+  },
+  {
+   "uuid": "b20dcb6e",
+   "clip_id": "P14_95",
+   "language": "Hindi",
+   "duration_sec": 12.0,
+   "curated_words_per_sec": 1.5833333333333333,
+   "hybrid_words_per_sec": 1.9166666666666667,
+   "cer_hybrid_vs_curated": 0.9523809523809523
+  },
+  {
+   "uuid": "c3fe0183",
+   "clip_id": "P8_33",
+   "language": "Hindi",
+   "duration_sec": 95.41,
+   "curated_words_per_sec": 0.18865946965726862,
+   "hybrid_words_per_sec": 1.1424378995912379,
+   "cer_hybrid_vs_curated": 4.8
+  },
+  {
+   "uuid": "018267c4",
+   "clip_id": "P8_39",
+   "language": "Hindi",
+   "duration_sec": 85.41,
+   "curated_words_per_sec": 0.2107481559536354,
+   "hybrid_words_per_sec": 1.3932794754712563,
+   "cer_hybrid_vs_curated": 4.815533980582524,
+   "cer_small_vs_curated": 7.067961165048544,
+   "cer_small_vs_hybrid": 0.9893428063943162
+  },
+  {
+   "uuid": "c0e3befd",
+   "clip_id": "P9_49",
+   "language": "Code-mixed",
+   "duration_sec": 58.23,
+   "curated_words_per_sec": 0.34346556757685043,
+   "hybrid_words_per_sec": 1.081916537867079,
+   "cer_hybrid_vs_curated": 3.0194174757281553
+  },
+  {
+   "uuid": "f41402b1",
+   "clip_id": "P21_82",
+   "language": "Hindi",
+   "duration_sec": 7.37,
+   "curated_words_per_sec": 2.9850746268656714,
+   "hybrid_words_per_sec": 2.306648575305292,
+   "cer_hybrid_vs_curated": 0.7272727272727273
+  },
+  {
+   "uuid": "bf5d2fdf",
+   "clip_id": "P22_89",
+   "language": "English",
+   "duration_sec": 65.15,
+   "curated_words_per_sec": 2.563315425940138,
+   "hybrid_words_per_sec": 2.486569455103607,
+   "cer_hybrid_vs_curated": 0.04276985743380855
+  },
+  {
+   "uuid": "9a6ec2f5",
+   "clip_id": "P22_98",
+   "language": "English",
+   "duration_sec": 53.25,
+   "curated_words_per_sec": 2.272300469483568,
+   "hybrid_words_per_sec": 2.215962441314554,
+   "cer_hybrid_vs_curated": 0.07656967840735068
+  },
+  {
+   "uuid": "382c043f",
+   "clip_id": "P3_7",
+   "language": "Hindi",
+   "duration_sec": 25.43,
+   "curated_words_per_sec": 0.7078254030672434,
+   "hybrid_words_per_sec": 0.19661816751867872,
+   "cer_hybrid_vs_curated": 0.8468468468468469
+  },
+  {
+   "uuid": "076e2bba",
+   "clip_id": "P9_41",
+   "language": "English",
+   "duration_sec": 45.55,
+   "curated_words_per_sec": 2.7442371020856204,
+   "hybrid_words_per_sec": 3.1394072447859496,
+   "cer_hybrid_vs_curated": 0.8246951219512195,
+   "cer_small_vs_curated": 0.15091463414634146,
+   "cer_small_vs_hybrid": 0.6013289036544851
+  },
+  {
+   "uuid": "addc3e13",
+   "clip_id": "P16_107",
+   "language": "English",
+   "duration_sec": 9.0,
+   "curated_words_per_sec": 2.2222222222222223,
+   "hybrid_words_per_sec": 2.0,
+   "cer_hybrid_vs_curated": 0.031007751937984496
+  }
+ ]
+}

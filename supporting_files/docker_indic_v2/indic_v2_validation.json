@@ -1,0 +1,388 @@
+{
+  "model_version": "indic-v2-lid-router-b3-expert",
+  "asr_revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+  "revisions": {
+    "faster-whisper-base": "Systran/faster-whisper-base@ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+    "whisper-hindi-small": "vasista22/whisper-hindi-small@fb4a24afc20c42906deed31c3689e4be31da41fe",
+    "whisper-gujarati-base": "vasista22/whisper-gujarati-base@59c972a6f00f529efc7c9b631dff338157561ed9",
+    "minilm": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2@e8f8c211226b894fcb81acc59f3b34ba3efd5f42"
+  },
+  "git_commit": "82e2ce25b386deb0b332666220e36d9ce2956d71",
+  "source_tree": "working-tree",
+  "split": "revised_release_test",
+  "speaker_split_sha256": "f4c9e915f3be0b954e74a2c6587ecee1f40be250ad95b6f8a4cbb2212cfc9403",
+  "sample_count": 40,
+  "intent_accuracy": 0.6,
+  "intent_macro_f1": 0.6016568570748138,
+  "language_route_accuracy": 0.75,
+  "wer": null,
+  "cer": null,
+  "wer_reference_count": 0,
+  "wer_status": "not computed: no human transcripts bundled (curated text withdrawn)",
+  "cpu_latency_ms_p50": 39979.869999999995,
+  "cpu_latency_ms_p95": 161568.5499999999,
+  "cpu_rtf": 1.9994226948221978,
+  "peak_rss_mib": 2039.84,
+  "predictions": [
+    {
+      "uuid": "f26b4776",
+      "expected_intent": "student_services",
+      "intent": "it_support",
+      "confidence": 0.3663,
+      "expected_route": "gu",
+      "language": "hi",
+      "latency_ms": 41410.91
+    },
+    {
+      "uuid": "df57c59a",
+      "expected_intent": "student_services",
+      "intent": "student_services",
+      "confidence": 0.3311,
+      "expected_route": "en",
+      "language": "hi",
+      "latency_ms": 40838.27
+    },
+    {
+      "uuid": "badcc32a",
+      "expected_intent": "it_support",
+      "intent": "it_support",
+      "confidence": 0.4043,
+      "expected_route": "hi",
+      "language": "en",
+      "latency_ms": 22009.27
+    },
+    {
+      "uuid": "969b6662",
+      "expected_intent": "student_services",
+      "intent": "admissions",
+      "confidence": 0.3189,
+      "expected_route": "gu",
+      "language": "hi",
+      "latency_ms": 38629.53
+    },
+    {
+      "uuid": "a18ff6b6",
+      "expected_intent": "student_services",
+      "intent": "student_services",
+      "confidence": 0.3275,
+      "expected_route": "en",
+      "language": "en",
+      "latency_ms": 15091.19
+    },
+    {
+      "uuid": "e7c99b26",
+      "expected_intent": "student_services",
+      "intent": "student_services",
+      "confidence": 0.3612,
+      "expected_route": "hi",
+      "language": "hi",
+      "latency_ms": 39534.46
+    },
+    {
+      "uuid": "1223b513",
+      "expected_intent": "it_support",
+      "intent": "it_support",
+      "confidence": 0.6096,
+      "expected_route": "hi",
+      "language": "hi",
+      "latency_ms": 39317.5
+    },
+    {
+      "uuid": "6e595ed3",
+      "expected_intent": "admissions",
+      "intent": "admissions",
+      "confidence": 0.3679,
+      "expected_route": "hi",
+      "language": "hi",
+      "latency_ms": 127028.61
+    },
+    {
+      "uuid": "474ebc19",
+      "expected_intent": "student_services",
+      "intent": "student_services",
+      "confidence": 0.4382,
+      "expected_route": "hi",
+      "language": "hi",
+      "latency_ms": 122000.29
+    },
+    {
+      "uuid": "fed4057d",
+      "expected_intent": "student_services",
+      "intent": "student_services",
+      "confidence": 0.3621,
+      "expected_route": "gu",
+      "language": "en",
+      "latency_ms": 15351.36
+    },
+    {
+      "uuid": "bf7b539b",
+      "expected_intent": "student_services",
+      "intent": "student_services",
+      "confidence": 0.3198,
+      "expected_route": "hi",
+      "language": "hi",
+      "latency_ms": 39349.59
+    },
+    {
+      "uuid": "f5f59b22",
+      "expected_intent": "hostel_mess",
+      "intent": "hostel_mess",
+      "confidence": 0.53,
+      "expected_route": "en",
+      "language": "hi",
+      "latency_ms": 39565.71
+    },
+    {
+      "uuid": "3f07f814",
+      "expected_intent": "it_support",
+      "intent": "it_support",
+      "confidence": 0.6592,
+      "expected_route": "en",
+      "language": "en",
+      "latency_ms": 15281.97
+    },
+    {
+      "uuid": "9e8fc965",
+      "expected_intent": "hostel_mess",
+      "intent": "student_services",
+      "confidence": 0.3035,
+      "expected_route": "gu",
+      "language": "hi",
+      "latency_ms": 40076.56
+    },
+    {
+      "uuid": "f05db76e",
+      "expected_intent": "it_support",
+      "intent": "hostel_mess",
+      "confidence": 0.3279,
+      "expected_route": "hi",
+      "language": "hi",
+      "latency_ms": 38148.73
+    },
+    {
+      "uuid": "439472e6",
+      "expected_intent": "student_services",
+      "intent": "student_services",
+      "confidence": 0.3508,
+      "expected_route": "hi",
+      "language": "hi",
+      "latency_ms": 39883.18
+    },
+    {
+      "uuid": "430f801d",
+      "expected_intent": "admissions",
+      "intent": "student_services",
+      "confidence": 0.3524,
+      "expected_route": "hi",
+      "language": "hi",
+      "latency_ms": 190724.62
+    },
+    {
+      "uuid": "8d3aed99",
+      "expected_intent": "it_support",
+      "intent": "it_support",
+      "confidence": 0.4346,
+      "expected_route": "hi",
+      "language": "hi",
+      "latency_ms": 45136.09
+    },
+    {
+      "uuid": "20a04502",
+      "expected_intent": "hostel_mess",
+      "intent": "hostel_mess",
+      "confidence": 0.3424,
+      "expected_route": "gu",
+      "language": "en",
+      "latency_ms": 17402.74
+    },
+    {
+      "uuid": "35c7936c",
+      "expected_intent": "it_support",
+      "intent": "student_services",
+      "confidence": 0.3016,
+      "expected_route": "hi",
+      "language": "hi",
+      "latency_ms": 39191.61
+    },
+    {
+      "uuid": "1a50aec3",
+      "expected_intent": "student_services",
+      "intent": "admissions",
+      "confidence": 0.3532,
+      "expected_route": "gu",
+      "language": "gu",
+      "latency_ms": 17452.64
+    },
+    {
+      "uuid": "e1a47e10",
+      "expected_intent": "student_services",
+      "intent": "student_services",
+      "confidence": 0.3145,
+      "expected_route": "en",
+      "language": "en",
+      "latency_ms": 21682.9
+    },
+    {
+      "uuid": "dbccc477",
+      "expected_intent": "admissions",
+      "intent": "admissions",
+      "confidence": 0.4962,
+      "expected_route": "hi",
+      "language": "hi",
+      "latency_ms": 123064.51
+    },
+    {
+      "uuid": "d10bd1d0",
+      "expected_intent": "student_services",
+      "intent": "student_services",
+      "confidence": 0.3573,
+      "expected_route": "en",
+      "language": "en",
+      "latency_ms": 16559.12
+    },
+    {
+      "uuid": "dd463c09",
+      "expected_intent": "admissions",
+      "intent": "admissions",
+      "confidence": 0.3625,
+      "expected_route": "hi",
+      "language": "hi",
+      "latency_ms": 123400.52
+    },
+    {
+      "uuid": "6f3f920c",
+      "expected_intent": "it_support",
+      "intent": "student_services",
+      "confidence": 0.3172,
+      "expected_route": "hi",
+      "language": "hi",
+      "latency_ms": 72124.68
+    },
+    {
+      "uuid": "b572f3d0",
+      "expected_intent": "student_services",
+      "intent": "hostel_mess",
+      "confidence": 0.3025,
+      "expected_route": "en",
+      "language": "hi",
+      "latency_ms": 40879.11
+    },
+    {
+      "uuid": "ecf27e76",
+      "expected_intent": "student_services",
+      "intent": "admissions",
+      "confidence": 0.4001,
+      "expected_route": "gu",
+      "language": "gu",
+      "latency_ms": 18166.78
+    },
+    {
+      "uuid": "2b70e525",
+      "expected_intent": "it_support",
+      "intent": "student_services",
+      "confidence": 0.3671,
+      "expected_route": "gu",
+      "language": "en",
+      "latency_ms": 15634.81
+    },
+    {
+      "uuid": "0640be0f",
+      "expected_intent": "hostel_mess",
+      "intent": "student_services",
+      "confidence": 0.3728,
+      "expected_route": "hi",
+      "language": "hi",
+      "latency_ms": 137981.15
+    },
+    {
+      "uuid": "c521bf2d",
+      "expected_intent": "it_support",
+      "intent": "hostel_mess",
+      "confidence": 0.3774,
+      "expected_route": "hi",
+      "language": "hi",
+      "latency_ms": 42056.67
+    },
+    {
+      "uuid": "464c04af",
+      "expected_intent": "hostel_mess",
+      "intent": "hostel_mess",
+      "confidence": 0.621,
+      "expected_route": "en",
+      "language": "en",
+      "latency_ms": 22716.17
+    },
+    {
+      "uuid": "236c7b87",
+      "expected_intent": "admissions",
+      "intent": "admissions",
+      "confidence": 0.4146,
+      "expected_route": "hi",
+      "language": "hi",
+      "latency_ms": 141703.83
+    },
+    {
+      "uuid": "b1a6b1f1",
+      "expected_intent": "hostel_mess",
+      "intent": "hostel_mess",
+      "confidence": 0.6436,
+      "expected_route": "hi",
+      "language": "hi",
+      "latency_ms": 117973.08
+    },
+    {
+      "uuid": "10714d51",
+      "expected_intent": "hostel_mess",
+      "intent": "hostel_mess",
+      "confidence": 0.517,
+      "expected_route": "hi",
+      "language": "hi",
+      "latency_ms": 230163.55
+    },
+    {
+      "uuid": "34f3193c",
+      "expected_intent": "hostel_mess",
+      "intent": "student_services",
+      "confidence": 0.4853,
+      "expected_route": "en",
+      "language": "en",
+      "latency_ms": 15327.43
+    },
+    {
+      "uuid": "e7a37e81",
+      "expected_intent": "admissions",
+      "intent": "student_services",
+      "confidence": 0.3678,
+      "expected_route": "hi",
+      "language": "hi",
+      "latency_ms": 131660.96
+    },
+    {
+      "uuid": "c3fe0183",
+      "expected_intent": "student_services",
+      "intent": "student_services",
+      "confidence": 0.4096,
+      "expected_route": "hi",
+      "language": "hi",
+      "latency_ms": 160034.02
+    },
+    {
+      "uuid": "018267c4",
+      "expected_intent": "hostel_mess",
+      "intent": "student_services",
+      "confidence": 0.3739,
+      "expected_route": "hi",
+      "language": "hi",
+      "latency_ms": 128236.32
+    },
+    {
+      "uuid": "382c043f",
+      "expected_intent": "hostel_mess",
+      "intent": "hostel_mess",
+      "confidence": 0.5475,
+      "expected_route": "hi",
+      "language": "hi",
+      "latency_ms": 42809.33
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+UUID: aug_08f21efe
+Parent_UUID: 6e595ed3
+Augmentation_Type: discourse_framing
+Similarity_Score: 0.9653
+Transcript: नमस्ते सर, इस बारे में बताएं कि नमस्ते हेल्पडेस्क, मेरे बेटे के एडमिशन के बाद फिजिकल रिपोर्टिंग के लिए कैंपस आने की प्रक्रिया और समय सीमा क्या है?
+Target_Label: admissions
+Spoken_Languages: ['Hindi']

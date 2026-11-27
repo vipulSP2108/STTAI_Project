@@ -1,0 +1,7 @@
+UUID: aug_c8c9d8f9
+Parent_UUID: ab4220a7
+Augmentation_Type: cross_lingual_translation
+Similarity_Score: 0.662
+Transcript: नमस्कार, मेरे दीकराने आईआईटी गांधीनगरमां एडमिशन मळवानी शक्यता हैं, जो हॉस्टल रूम फाळवाई जाय तो क्या विद्यार्थी नक्की करेली रिपोर्टिंग तारीख पहेला होस्टेलमां आवी शके हैं?
+Target_Label: hostel_mess
+Spoken_Languages: ['Gujarati']

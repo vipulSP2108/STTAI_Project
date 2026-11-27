@@ -1,0 +1,2940 @@
+{
+ "engine": "Indic routing by annotator tag, greedy (temperature 0, no fallback), VAD, no prompt",
+ "clips": [
+  {
+   "uuid": "016b6287",
+   "speaker": "P11",
+   "languages": [
+    "English"
+   ],
+   "route": "en",
+   "transcription": "Hello, IIT Gandhi Nagar voice cell desk. I am facing a serious internet connectivity issue on my laptop. The campus Wi-Fi connects successfully but website are loading very slowly and sometimes the connection gets disconnected automatically. This has been happening since yesterday evening and I restarted my laptop. I got the network before connecting again but nothing seems to have changed. My online lectures or assignment complete can be very difficult. I also tried using the Wi-Fi in another location on campus but the speed was still. Could you please check whether there is a network issue or if I need to update my settings on my device? Please let me know if I should visit the IT Support Office or Submit Online Complain. I need a stable connection for my academic work. So an early reservation would be very helpful. Than Nevad.",
+   "avg_logprob": -0.38901741712117455,
+   "min_logprob": -0.4237554967403412,
+   "no_speech_prob": 0.3437679708003998,
+   "compression_ratio": 1.4410949410949412,
+   "n_segments": 12,
+   "audio_sec": 62.3135,
+   "decode_sec": 6.91
+  },
+  {
+   "uuid": "018267c4",
+   "speaker": "P8",
+   "languages": [
+    "Hindi"
+   ],
+   "route": "hi",
+   "transcription": "नमस्ते मुझे वोट के नियम के बारे में नियमों के बारे में जानकारी चाहिए क्योंकि मेरा बेटा अपने आईआईटी गांधी नगर में एडमिशन के बाद घर से दूर जा रहा है मैं जानना चाहता हूं कि आईआईटी गांधी नगर में वोट में रहने वाले विद्या विद्यार्थियों को सप्ताह में जाना होता है या कुछ दिनों के लिए घर लौटना हो तो क्या उसे पहले ही अनुमति लेनी पड़ती है क्या इसके लिए कोई ऑनलाइन छुट्टी का आवेदन करना होता है या होस्टल वार्ड को सूचना देने का पर्याप्त देना पर्य इस दौरान उन्होंने बताया कि प्रदेश में पिछले चौबिस घंटों में एक सौ बासठ लोगों की मौत हो चुकी है जबकि एक सौ बासठ लोगों की मौत हो चुकी है",
+   "avg_logprob": -0.11388597290266848,
+   "min_logprob": -0.28525825600389026,
+   "no_speech_prob": 5.91708626725603e-08,
+   "compression_ratio": 2.417170745308429,
+   "n_segments": 3,
+   "audio_sec": 85.4135,
+   "decode_sec": 36.82
+  },
+  {
+   "uuid": "0200b1f0",
+   "speaker": "P13",
+   "languages": [
+    "English",
+    "Hindi"
+   ],
+   "route": "hi",
+   "transcription": "नमस्कार आईआईटीजीएन वॉइस हेल्प डेस्क",
+   "avg_logprob": -0.095616614818573,
+   "min_logprob": -0.095616614818573,
+   "no_speech_prob": 2.8832235806752066e-14,
+   "compression_ratio": 1.1975308641975309,
+   "n_segments": 1,
+   "audio_sec": 12.0005,
+   "decode_sec": 4.94
+  },
+  {
+   "uuid": "0279b6a6",
+   "speaker": "P13",
+   "languages": [
+    "Gujarati"
+   ],
+   "route": "gu",
+   "transcription": "અર્જન સપોર્ટ આવો નમસ્કાર હોય ગેસ્ટ હાઇનિંગ કન્ફર્મેશન મેલ નથી પાર્ટિંગ કુપિયા અર્જન સપ",
+   "avg_logprob": -0.023293803797827823,
+   "min_logprob": -0.023293803797827826,
+   "no_speech_prob": 9.372481457603499e-09,
+   "compression_ratio": 1.7984496124031009,
+   "n_segments": 1,
+   "audio_sec": 12.0005,
+   "decode_sec": 9.6
+  },
+  {
+   "uuid": "0640be0f",
+   "speaker": "P8",
+   "languages": [
+    "Hindi"
+   ],
+   "route": "hi",
+   "transcription": "नमस्ते मैं अपने बेटे के लिए वोट और खाने पीने की सुविधा के बारे में कुछ कुछ लेना चाहता हूं अगर उससे एडमिशन आईआईटी गांधी नगर में मिल जाता है तो वह पहली बार घर से दूर निकल रहा है पढ़ाई के लिए इसके इसलिए हमारे लिए य भोजन की व्यवस्था क्या है क्या मेश में नाश्ता दोपहर में खाना और रात को खाना नियमित रूप से मिलता है मिलता है क्या मेश का शुल्क वोस्टल फीस के साथ जमा करना पड़ता है या अलग से भुगतान करना पड़ता है मेरे बेटे को कुछ खाद्य पदार्थों होने पर संबंधित अधिकारियों से बात की जा सकती है रुपये करके उसके नंबर संपर्क नंबर बताइए इसके अलावा अगर विद्यार्थी छुट्टियों में घर आश्रयदाता है तो उसी दौरान मेज की शुल्क के नियम क्या है इसके बारे में रुपये करके हमें भ",
+   "avg_logprob": -0.03657299927199262,
+   "min_logprob": -0.04579276296827528,
+   "no_speech_prob": 3.69596376906256e-07,
+   "compression_ratio": 2.410978741158558,
+   "n_segments": 3,
+   "audio_sec": 82.6335,
+   "decode_sec": 39.42
+  },
+  {
+   "uuid": "076e2bba",
+   "speaker": "P9",
+   "languages": [
+    "English"
+   ],
+   "route": "en",
+   "transcription": "Hello, I need some assistance regarding the hostel service in my hostel. I tried using the washing machine yesterday for the payment first detected from my account. And the machine did not start. I have tried to get the payment for the hostel. But I did not buy the money again and I did not go to the machine. I waited for some time and checked whether the machine was working. But there was no change. Could you please tell me how I can request for the failed transactions? I also want to know whether I can use another machine until this issue is resolved. Please write me through the complete process. I'll let me know if I need to provide the transaction details.",
+   "avg_logprob": -0.5836532280041984,
+   "min_logprob": -0.6822501611092995,
+   "no_speech_prob": 0.2901525714180686,
+   "compression_ratio": 1.692962022272652,
+   "n_segments": 11,
+   "audio_sec": 45.5535,
+   "decode_sec": 7.18
+  },
+  {
+   "uuid": "0cdb1ca4",
+   "speaker": "P11",
+   "languages": [
+    "English"
+   ],
+   "route": "en",
+   "transcription": "Hello, help desk. I'm looking for a particular textbook that I need for upcoming semester examination. I searched the library catalog online and the book appears in the reason. But I'm unable to determine whether a physical copy is currently available. And the catalog also mentioned different edition. And I'm not sure which edition is recommended by my course. to get a book for exam preparation. Because the exams schedule has already been announced and could please explain how I can check the real-time ability of the book and whether the student can reserve a copy online. If the all physical copies are currently issued, is there an option to access an electronic region through the Institute library. I would also like to know boring the period and whether I can renew the book. If I need for the long duration please guide me through the process. Thank you.",
+   "avg_logprob": -0.37911643797598377,
+   "min_logprob": -0.5651833320009536,
+   "no_speech_prob": 0.44015101840098697,
+   "compression_ratio": 1.5490570935810046,
+   "n_segments": 12,
+   "audio_sec": 68.1335,
+   "decode_sec": 6.96
+  },
+  {
+   "uuid": "0cf35b58",
+   "speaker": "P21",
+   "languages": [
+    "Hindi"
+   ],
+   "route": "hi",
+   "transcription": "हेलो एडीजीएन हेल्प डेस्क मेरे को मैच का क्यू आर चेन करवाने का था क्योंकि मैच का खाना मेरे को आगा पसंद नहीं आ रहा पोषक तो मोहनी मोहनी में सही रहेगा भोपाल में खाना बड़ा खराब है उसमें कुछ भी बनाये जा रहे दाल में बस पानी होता है और � चलेगा थैंक यू",
+   "avg_logprob": -0.08648074768153015,
+   "min_logprob": -0.08734932157728408,
+   "no_speech_prob": 1.7124878425034407e-10,
+   "compression_ratio": 1.5941277286667868,
+   "n_segments": 2,
+   "audio_sec": 32.6735,
+   "decode_sec": 12.99
+  },
+  {
+   "uuid": "0f02bad0",
+   "speaker": "P2",
+   "languages": [
+    "English"
+   ],
+   "route": "en",
+   "transcription": "I wanted to have this particular session ID that I need for logging into my system out of the campus because currently I am out of the campus and I am not able to access the portal of the ITGN and I need to register for the upcoming session like the upcoming semester. But due to I am not able to access the portal itself, I am not able to even register for the next semester. So kindly, you can share what are the process that we can do or any session idea or something through which I can log into the system.",
+   "avg_logprob": -0.2222492097235077,
+   "min_logprob": -0.31364964398126755,
+   "no_speech_prob": 0.1610733824116843,
+   "compression_ratio": 1.5700699055508076,
+   "n_segments": 7,
+   "audio_sec": 43.9135,
+   "decode_sec": 3.2
+  },
+  {
+   "uuid": "10714d51",
+   "speaker": "P3",
+   "languages": [
+    "Hindi"
+   ],
+   "route": "hi",
+   "transcription": "हैलो सर, हमें एक तपलीक है, हमारा फैन जो है वो धीरे चलता है इस लिए उसको धारना चाहिए, दूरदर्शन करना चाहिए, इसलिए लाइट भी जीरो लगाना चाहिए हॉस्टल में, तो हमारे यहाँ गर्मी ज्यादा है इसीलिए पहन जल्दी से सुधारो. हमारा शौचालय क्या भारणा फूट चुका है. इसीलिए हमको शौचालय में बेटा नहीं आता है. बहुत तपलिक होती है. पानी कम आता है, इसीलिए, ऑस्ट्रेल की ज्यादा से ज्यादा तपलिक सुधारनी चाहिए. हॉस्टल में हम सोते हैं, तब दारावनी आवाज़ आती है इसलिए सर हम बताते हैं कि ज्यादा से ज्यादा तबलिक सुधारो. हमें लड़के मारने की धमकी देते हैं इसलिए हमको एडमिशन करने के लिए हम कुछ तो प्रॉब्लम बताते हैं उसे कोई ध्यान नहीं देता है मेरे लगाने चाहिए.",
+   "avg_logprob": -0.1242520185704276,
+   "min_logprob": -0.20925435247057575,
+   "no_speech_prob": 1.2341165787711971e-10,
+   "compression_ratio": 2.05115341326357,
+   "n_segments": 7,
+   "audio_sec": 97.4933125,
+   "decode_sec": 32.04
+  },
+  {
+   "uuid": "11e9cdaa",
+   "speaker": "P16",
+   "languages": [
+    "English"
+   ],
+   "route": "en",
+   "transcription": "Hello IITGN help desk. My laptop is unable to connect to the campus VPN after a recent operating system update. Please help troubleshoot.",
+   "avg_logprob": -0.4520993490476866,
+   "min_logprob": -0.4520993490476866,
+   "no_speech_prob": 0.0453592874109745,
+   "compression_ratio": 1.191304347826087,
+   "n_segments": 3,
+   "audio_sec": 10.0,
+   "decode_sec": 1.02
+  },
+  {
+   "uuid": "1223b513",
+   "speaker": "P19",
+   "languages": [
+    "Hindi"
+   ],
+   "route": "hi",
+   "transcription": "हेलो ऑनलाइन पेमेंट करते वक्त ब्राउजर क्रैश हो गया और अब पोर्टल ट्रांजैक्शन पेंडिंग दिखा रहा है पेमेंट दोबारा करना सेफ है",
+   "avg_logprob": -0.04762210843081657,
+   "min_logprob": -0.04762210843081658,
+   "no_speech_prob": 1.1349368710458774e-12,
+   "compression_ratio": 1.9272727272727272,
+   "n_segments": 1,
+   "audio_sec": 11.76,
+   "decode_sec": 5.1
+  },
+  {
+   "uuid": "12a4def0",
+   "speaker": "P22",
+   "languages": [
+    "English"
+   ],
+   "route": "en",
+   "transcription": "Hello, Namaste. I am speaking from Jaipur. My daughter is joining the BTEC first year this upcoming July. I received the welcome email regarding the admission and fee payment. But I have a confusion regarding the education loan. We are applied for a loan through SBI and the bank is asking for detailed fee structure for all four years. Stamped and signed by the IT Ghandinavir academic office. The one provided on the website is just for the first semester. Could you please let me know the procedure to get this official document? Can it be emailed to us or do we have to collect it in person when we come for the orientation? Also, by when do we submit the demand draft?",
+   "avg_logprob": -0.22580401348224283,
+   "min_logprob": -0.2540250160755255,
+   "no_speech_prob": 0.5680772797627882,
+   "compression_ratio": 1.554944396407811,
+   "n_segments": 11,
+   "audio_sec": 45.1135,
+   "decode_sec": 3.4
+  },
+  {
+   "uuid": "17a0df49",
+   "speaker": "P13",
+   "languages": [
+    "Hindi",
+    "Gujarati"
+   ],
+   "route": "gu",
+   "transcription": "પ્યા અર્જન્ટ સપોર્ટ આપો નમસ્કાર હેલ્થ ઇન્ટરવ્યૂ હોગા વેબસાઇટ નહીં",
+   "avg_logprob": -0.039003470034777436,
+   "min_logprob": -0.039003470034777436,
+   "no_speech_prob": 6.419692555326151e-10,
+   "compression_ratio": 1.5945945945945945,
+   "n_segments": 1,
+   "audio_sec": 14.0005625,
+   "decode_sec": 2.64
+  },
+  {
+   "uuid": "1931e9ee",
+   "speaker": "P12",
+   "languages": [
+    "Hindi"
+   ],
+   "route": "hi",
+   "transcription": "मैं आज हॉस्टल की मैं इसमें मिलने वाले खाने को लेकर शिकायत दर्ज करना चाहता हूँ या रोज एक जैसे ही खाना मिलता है मेनू में दोनों टाइम आलू या आलू रहता है जैसे कि अपना आलू मटर आलू भिंडी आलू पर वन आलू गोभी आलू चना मालू कश्मीर दर्ज करना चाहता हूं कि रोज एक जैसा खाना खाकर बोर हो गए मैनो में थोड़ा बदलाव करें और मैनो में आलू की सब्जियों के अलावा दूसरा भी कुछ शामिल है और क्वालिटी पर भी ध्यान कर दे तो प्लीज लुक इन टू दिस्ट",
+   "avg_logprob": -0.08178233612716959,
+   "min_logprob": -0.084977176040411,
+   "no_speech_prob": 2.756381095592175e-10,
+   "compression_ratio": 2.269726203089277,
+   "n_segments": 2,
+   "audio_sec": 43.8135,
+   "decode_sec": 15.27
+  },
+  {
+   "uuid": "1a50aec3",
+   "speaker": "P18",
+   "languages": [
+    "Gujarati"
+   ],
+   "route": "gu",
+   "transcription": "હેલો આઇડીજી પ્રોફેસર ઇ અસાઇનમેન્ટ નહીં નહીં ડેટલાઇન એક્સચેન્ટ કરી છે મોડલ પર ડેટલાઇન જ�",
+   "avg_logprob": -0.018914811346266006,
+   "min_logprob": -0.018914811346266006,
+   "no_speech_prob": 3.0597147536969016e-13,
+   "compression_ratio": 1.8346456692913387,
+   "n_segments": 1,
+   "audio_sec": 12.0,
+   "decode_sec": 3.04
+  },
+  {
+   "uuid": "1bac27a7",
+   "speaker": "P22",
+   "languages": [
+    "English"
+   ],
+   "route": "en",
+   "transcription": "Hi, I'm calling because my institute email ID seems to be blocked or suspended. When I try to login through Gmail, it says that the account has been disabled by the administrator. I suspect that it might be because I recently sent out a mass email for a club event to all student mailing list, which might have triggered a spam filter. I urgently need access to my email as I am expecting some internship interview links today. Could you please check my ID and restore my access? I won't send my emails directly again. So please, if you could do that, that would be really helpful.",
+   "avg_logprob": -0.2534888984045656,
+   "min_logprob": -0.3420798798076442,
+   "no_speech_prob": 0.49207839369773865,
+   "compression_ratio": 1.4854284179425195,
+   "n_segments": 8,
+   "audio_sec": 48.7335,
+   "decode_sec": 2.71
+  },
+  {
+   "uuid": "1d870966",
+   "speaker": "P11",
+   "languages": [
+    "English"
+   ],
+   "route": "en",
+   "transcription": "Hello, I am calling to ask you about my status of my admission application. I submitted online application form a few days ago and received a confirmation message but the application portal is still showing that my documents are under verification. I have uploaded my academic transcript identification proof and all other required documents. I am not sure whether the verification process has been complete successfully. I am confused because the portal does not show my expected completion date. Could you please explain how long the verification process usually takes and whether I need to submit anything else? I do not want to miss anything important admission deadline because of an incomplete application. Please let me know if there is an specific email address or office where I can confirm this detail. App-key assistant merely a coffee helpful. Thank you.",
+   "avg_logprob": -0.3780113740053151,
+   "min_logprob": -0.7590686281522115,
+   "no_speech_prob": 0.5283616930246353,
+   "compression_ratio": 1.5358759475275914,
+   "n_segments": 12,
+   "audio_sec": 65.1335,
+   "decode_sec": 4.29
+  },
+  {
+   "uuid": "1d8cbbac",
+   "speaker": "P7",
+   "languages": [
+    "English"
+   ],
+   "route": "en",
+   "transcription": "Hello sir, I would like to know about this scholarship and financial aid options for my son's education. He is preparing to take admission in the IIT Gandhi never, but we want to plan the fees and the oyster expenses in advance. Does the institution offer tuition waivers or financial aid based on the family's annual income? What are the income certificates and other documents required for these please give me information about the necessary documents. So, I will be give these documents ready. Does the application fee for this scholarship have to be made immediately after the admission or does it have a different timeline? I also want to know if I can get any help with the hostel and miss expenses if I get financial aid please provide the consent Department or official website information so that we can properly understand the eligibility and application process. Please give me the necessary information sir. Thank you sir. Thank you so much.",
+   "avg_logprob": -0.26470878412159027,
+   "min_logprob": -0.33224553796980116,
+   "no_speech_prob": 0.22134089584533984,
+   "compression_ratio": 1.553790949922878,
+   "n_segments": 13,
+   "audio_sec": 63.7535,
+   "decode_sec": 4.76
+  },
+  {
+   "uuid": "1eb0e38a",
+   "speaker": "P20",
+   "languages": [
+    "Gujarati"
+   ],
+   "route": "gu",
+   "transcription": "નમસ્કાર મારા દિકરા માહિતી જોઈતી હતી તે હાલમાં બહાર કરે છે અને આગળ એન્જિનિયરિંગ કરવા મા સંસ્થામાં અલગથી પણ કોઈ પ્રક્રિયા પૂઈ કરવા પડે છે કરવા ઘણી સરળતા છે",
+   "avg_logprob": -0.015503854595661268,
+   "min_logprob": -0.021164550483226775,
+   "no_speech_prob": 1.7730776663560377e-07,
+   "compression_ratio": 1.6968050423820908,
+   "n_segments": 2,
+   "audio_sec": 59.6135,
+   "decode_sec": 6.77
+  },
+  {
+   "uuid": "20a04502",
+   "speaker": "P18",
+   "languages": [
+    "Gujarati"
+   ],
+   "route": "gu",
+   "transcription": "માર્ચે હોસ્ટલમાં હોટ વોટર સપ્લાય સવારે આવતી નથી ઈસ્મા ઇન્ટેનન્સ કમ્પ્લેન કારજિસ્ટર",
+   "avg_logprob": -0.02939291635519779,
+   "min_logprob": -0.029392916355197786,
+   "no_speech_prob": 1.1454882598016525e-09,
+   "compression_ratio": 1.8064516129032258,
+   "n_segments": 1,
+   "audio_sec": 12.0,
+   "decode_sec": 3.42
+  },
+  {
+   "uuid": "20de435d",
+   "speaker": "P16",
+   "languages": [
+    "English"
+   ],
+   "route": "en",
+   "transcription": "Hello, IIT Jane help desk. My scholarship application shows document verification pending for three weeks. whom should I contact for an update?",
+   "avg_logprob": -0.564043090630897,
+   "min_logprob": -0.6001297452233054,
+   "no_speech_prob": 0.06448265351355076,
+   "compression_ratio": 0.9611742424242424,
+   "n_segments": 2,
+   "audio_sec": 9.0,
+   "decode_sec": 1.39
+  },
+  {
+   "uuid": "21df306f",
+   "speaker": "P21",
+   "languages": [
+    "Hindi"
+   ],
+   "route": "hi",
+   "transcription": "हेलो आईटीजन हेल्प डेस्क मैने लॉन्द्री के रिगार्डिंग कंप्लेंट डाली थी. मेरे दो तीन कपड़े गाया वो गाया वो वेतन को मिलने रहते हैं. मैने काफी बार उधर जाकर क्वारी की लेकिन उनका रिस्पॉन्स यही आ रहा है कि नेक्स ट्रे में आ जाए�",
+   "avg_logprob": -0.1273023944430881,
+   "min_logprob": -0.1273023944430881,
+   "no_speech_prob": 8.204837091858874e-13,
+   "compression_ratio": 2.241106719367589,
+   "n_segments": 1,
+   "audio_sec": 21.9535,
+   "decode_sec": 9.97
+  },
+  {
+   "uuid": "236c7b87",
+   "speaker": "P8",
+   "languages": [
+    "Hindi"
+   ],
+   "route": "hi",
+   "transcription": "नमस्ते मुझे अपने आईआईटी गांधी नगर में एडमिशन के समय जमा किए जाने वाले दस्तावेजों की जानकारी चाहिए मेरी बेटी इस वर्ष प्रवेश प्रवेश परीक्षा देने वाली है और हम सभी से सभी सभी जरूरत जो कांग्रेस है वो तैया रखना चाहत पत्र और प्रवेश परीक्षा के संबंधित दस्तावेज की आवश्यकता है यदि विद्यार्थी आरक्षित श्रेणी से संबंधित है तो क्या प्रमाण पत्र निर्धारित प्रारूप में होना चाहिए इसके अलावा क्या मेडिकल सर्टिफिकेट पासपोर्ट सहित फोटो आकर रिपोर्टिंग करना पड़ेगा कैंपस में आने के समय",
+   "avg_logprob": -0.042392246905892085,
+   "min_logprob": -0.0705331086825866,
+   "no_speech_prob": 5.67006989286393e-07,
+   "compression_ratio": 1.9913205862054968,
+   "n_segments": 3,
+   "audio_sec": 79.4335,
+   "decode_sec": 21.97
+  },
+  {
+   "uuid": "286218b8",
+   "speaker": "P20",
+   "languages": [
+    "Gujarati"
+   ],
+   "route": "gu",
+   "transcription": "નમસ્તે સહાય હું મારી દીકરીના અભ્યાસ અને ખર્ચ માટે આર્થિક સહાયની શક્યતા વિશે જાણવા માં� કરાવવાની પ્રક્રિયા પર કોલરશીપ અને આર્થિક સહાય સંબંધિત સત્તાવાર માહિતી તથા પરિણામાં � અરજી કરવાની છેલ્લી તારી ક્યાંથી જોઈ શકાય તે જણાવશો",
+   "avg_logprob": -0.025767677642443636,
+   "min_logprob": -0.0477518457836575,
+   "no_speech_prob": 1.5929535333665537e-07,
+   "compression_ratio": 1.6422619344747833,
+   "n_segments": 3,
+   "audio_sec": 66.3735,
+   "decode_sec": 8.86
+  },
+  {
+   "uuid": "2a935d62",
+   "speaker": "P16",
+   "languages": [
+    "English"
+   ],
+   "route": "en",
+   "transcription": "Hello, IITGN Helpdesk. My laboratory access card stopped working even though my project registration is active. Can access permissions be checked?",
+   "avg_logprob": -0.4908080680029733,
+   "min_logprob": -0.4908080680029733,
+   "no_speech_prob": 0.11413689702749252,
+   "compression_ratio": 1.1774193548387097,
+   "n_segments": 2,
+   "audio_sec": 10.0,
+   "decode_sec": 0.99
+  },
+  {
+   "uuid": "2b70e525",
+   "speaker": "P18",
+   "languages": [
+    "Hindi",
+    "Gujarati"
+   ],
+   "route": "gu",
+   "transcription": "હાઇટીજેનલ બસ મીરા ગ્રેટ કાર્ડને એક સબ્જેક્ટ રિઝલ ટેપ્શન શો કરી છે જે આરે એક્ઝામ આપો હત",
+   "avg_logprob": -0.048922577963935,
+   "min_logprob": -0.048922577963935,
+   "no_speech_prob": 5.267050901328063e-13,
+   "compression_ratio": 1.6865671641791045,
+   "n_segments": 1,
+   "audio_sec": 11.0,
+   "decode_sec": 3.74
+  },
+  {
+   "uuid": "2db69edb",
+   "speaker": "P20",
+   "languages": [
+    "Gujarati"
+   ],
+   "route": "gu",
+   "transcription": "નમસ્તે સહાય કયા દસ્તાવેજોની જરૂર પડે છે સાથે જો વિદ્યાર્થી પાસે હોય તો શું કરે કોણ કરીને સત્તા દસ્તાવેજોની ચેકલિસ્ટ ક્યાંથી મળશે તે પણ જણાવશો જેથી છેલ્લી ઘડીએ કોઈ મુશ્કેલી ન પડે",
+   "avg_logprob": -0.03963117956369744,
+   "min_logprob": -0.05574747732469252,
+   "no_speech_prob": 2.5603711358475795e-07,
+   "compression_ratio": 1.4661207486587955,
+   "n_segments": 3,
+   "audio_sec": 67.8535,
+   "decode_sec": 7.11
+  },
+  {
+   "uuid": "2f923996",
+   "speaker": "P10",
+   "languages": [
+    "English"
+   ],
+   "route": "en",
+   "transcription": "Ramnam Ayatigandh Nagarho is a health guest. I am calling to report a lost item on campus. I think I misplaced my black backpack somewhere between the academic building and the library I studied up to. The back contains a notebook, where there was some stationary and few personal items. I have already checked the classrooms, I visited and asked a couple of friends with a day of notice, but I have not been able to locate it. Backmate, some important study methods be, usually I would really appreciate any assistance in funding. Could you please tell me whether the student has lost or found this or an online reporting system where student can register missing belongings? I would also like to know if there is any designated office where I can check whether someone has submitted the bag. If required, I can provide more details of description of backpack. and its context. We are meeting reporting process but are there any things?",
+   "avg_logprob": -0.5803081906875379,
+   "min_logprob": -1.143961375951767,
+   "no_speech_prob": 0.5117443482081095,
+   "compression_ratio": 1.5427565619015435,
+   "n_segments": 15,
+   "audio_sec": 59.4735,
+   "decode_sec": 4.58
+  },
+  {
+   "uuid": "30beb45f",
+   "speaker": "P2",
+   "languages": [
+    "English"
+   ],
+   "route": "en",
+   "transcription": "Hello, so I wanted to contact with the student affairs because currently in my hostel I am saying this there is the constant noise coming from the people playing here in the basketball code that we have in this particular hostel, hostel F. And still I saw that the like people are playing, I just share, I just said them not to make much noise but still they are making this noise. So what is the possible ways to overcome this particular thing because they are not playing during the zero hours but they are playing and making noise so that that should not be happened. This disturbs the other people's including me.",
+   "avg_logprob": -0.30672051635584663,
+   "min_logprob": -0.3099492738644282,
+   "no_speech_prob": 0.3060489424637386,
+   "compression_ratio": 1.652228489385704,
+   "n_segments": 7,
+   "audio_sec": 48.8935,
+   "decode_sec": 2.73
+  },
+  {
+   "uuid": "3170f437",
+   "speaker": "P13",
+   "languages": [
+    "Gujarati"
+   ],
+   "route": "gu",
+   "transcription": "સપોર્ટ આપો નમસ્કાર ગાંધીનગર વોઈસ હેલ્પ એડવાન્સ એન્ક ઇલેક્ટિકલ એન્સીઇનિયા ઇંગ ડિપાર્�",
+   "avg_logprob": -0.03261587036980523,
+   "min_logprob": -0.03261587036980523,
+   "no_speech_prob": 7.921847178238295e-09,
+   "compression_ratio": 1.6911764705882353,
+   "n_segments": 1,
+   "audio_sec": 11.0004375,
+   "decode_sec": 3.45
+  },
+  {
+   "uuid": "341ef40b",
+   "speaker": "P4",
+   "languages": [
+    "Hindi"
+   ],
+   "route": "hi",
+   "transcription": "नमस्कार, सर, मैं नंदबार जिले से खुन्ना अमेरिका के सुनील पटेल बोल रहा हूँ, मुझे मेरा लड़का है, आईआईटी गांधीनगर में तो इस साल हमारी तरफ दुष्का की समस्या की वजह से सूखा पड़ा है इसकी वजह से सबकी गवर्नमेंट की महापुर हो ग आईटी गांधी नगर में पड़ता है तो उसकी भी माप होगी क्या या अब भी कुछ दुष्का के सूखा के तौर पर कुछ उपाय करते है जो कि बच्चों को और उनके पैरेंट्स को कुछ राहत मिल सकती है और क्या इस साल की पूरी भी भरना कंपलसरी होगा कृप्या में साल की फी अरेंज करने में और नेक्स्ट ईयर की फीस जमा करने में और अगर राहत मिलेगी तो बड़ी रुपया होगी रुपया में मार्गदर्शन करें",
+   "avg_logprob": -0.09843612606004239,
+   "min_logprob": -0.13449905819363064,
+   "no_speech_prob": 2.64025445025536e-10,
+   "compression_ratio": 2.163385389998293,
+   "n_segments": 3,
+   "audio_sec": 74.2935,
+   "decode_sec": 23.19
+  },
+  {
+   "uuid": "34f3193c",
+   "speaker": "P19",
+   "languages": [
+    "English"
+   ],
+   "route": "en",
+   "transcription": "Hello, I am Dijinal, this is a separate facility for storing luggage during semester.",
+   "avg_logprob": -0.9312568821690299,
+   "min_logprob": -0.9312568821690299,
+   "no_speech_prob": 0.4513958692550659,
+   "compression_ratio": 1.0625,
+   "n_segments": 1,
+   "audio_sec": 8.0,
+   "decode_sec": 0.85
+  },
+  {
+   "uuid": "35c7936c",
+   "speaker": "P18",
+   "languages": [
+    "Hindi"
+   ],
+   "route": "hi",
+   "transcription": "हैलो आईडीजीएनएलड्स मेरा कोर्ट सजिस्ट्रेशन हो गया है लेकिन ईआरपी पोर्टल पर सब्जेक्ट शो नहीं हो रहा है प्लीज चेक करवा दो.",
+   "avg_logprob": -0.09585810211988595,
+   "min_logprob": -0.09585810211988596,
+   "no_speech_prob": 6.742311570162585e-11,
+   "compression_ratio": 1.8855421686746987,
+   "n_segments": 1,
+   "audio_sec": 12.0,
+   "decode_sec": 5.33
+  },
+  {
+   "uuid": "36386821",
+   "speaker": "P5",
+   "languages": [
+    "Hindi"
+   ],
+   "route": "hi",
+   "transcription": "हैलो नमस्ते सर मैं जागरूकता पाटिल बात कर रही हूँ मुझे आईआईटी गांधीनगर में आर्कव डिपार्टमेंट में एडमिशन लेना है तो रुपया मुझे यह बताए कि वहाँ पे कौनसे कौनसे सब्जेक्ट रैंक कितनी आनी चाहिए कितने लोग एडमिशन ल जगह पर विजिट करनी पड़ती है और प्लेसमेंट कैसा है कितने तक पैकेज मिल सकते हैं रूपया ये सब बात हमें बताए और मैं जो है मैं इसका शेड्यूल कैसा है वहाँ पे हॉस्टल के रूम कैसे है रूम सर्विस कैसे दी जाती है ये सब हमें बताए और वहाँ पे � वो सब आप हमें बताएं",
+   "avg_logprob": -0.06512880078798178,
+   "min_logprob": -0.07491032600402832,
+   "no_speech_prob": 5.732491416089146e-09,
+   "compression_ratio": 1.8616010223858268,
+   "n_segments": 3,
+   "audio_sec": 61.9335,
+   "decode_sec": 19.9
+  },
+  {
+   "uuid": "369147eb",
+   "speaker": "P9",
+   "languages": [
+    "English",
+    "Hindi"
+   ],
+   "route": "hi",
+   "transcription": "नमस्कार आई वुड लाइट टू आर्ट अबार्ड मुकिंग ऑफ एज फॉर एस स्टूडेंट ऑपरेट इवेंट वर्क ग्रुप प्लेनिंग स्मॉल टेक्निकल वर्कशॉप नेक्स्ट मंत्र एवेन वी नीडा रूम विद सीटिंग अप लॉजेक्टर एवेन आर्ट इव एड हाउ अर्ली वी शोड सेमिन्ट रिक्वेस्ट आई वॉल्स लाइक टू नो वेदर वी नीडे फ्रॉम फैकल्टी कोऑर्डिनेटर और स्टूडेंट प्लब रिप्रेजेंटेटिव अगर इवेंट के लिए कोई परमिशन फॉर्म भरना जरूरी है तो पुलिस उसके बा",
+   "avg_logprob": -0.18042414676906393,
+   "min_logprob": -0.21323986053466798,
+   "no_speech_prob": 9.3193757290215e-12,
+   "compression_ratio": 2.1902780186116413,
+   "n_segments": 2,
+   "audio_sec": 52.9735,
+   "decode_sec": 18.07
+  },
+  {
+   "uuid": "36b5229a",
+   "speaker": "P13",
+   "languages": [
+    "Gujarati"
+   ],
+   "route": "gu",
+   "transcription": "એજન્ટ સપોર્ટ આપો એપ્રેડ કરવા માટે કમિટિંગ ક્યાં થયેલી છે કુપિયા એજન્ટ સપોર્ટ આપો",
+   "avg_logprob": -0.019221875564169103,
+   "min_logprob": -0.019221875564169103,
+   "no_speech_prob": 1.1885898857144639e-05,
+   "compression_ratio": 1.8608695652173912,
+   "n_segments": 1,
+   "audio_sec": 7.9180625,
+   "decode_sec": 5.17
+  },
+  {
+   "uuid": "36b82481",
+   "speaker": "P14",
+   "languages": [
+    "Hindi"
+   ],
+   "route": "hi",
+   "transcription": "हेलो आईटीजी एन हेल्प डेस्क. मैं विज़रइंग स्टूडेंट हूँ, बट मेरी, फीकर रिफॉर्न्डेबल अमाउंट अभी तक रिफॉर्न्ड नहीं किया गया है और कितने दिन लगेंगे.",
+   "avg_logprob": -0.12399451289520369,
+   "min_logprob": -0.16204323853765215,
+   "no_speech_prob": 2.3142906283487214e-11,
+   "compression_ratio": 1.8378613861386137,
+   "n_segments": 3,
+   "audio_sec": 13.0001875,
+   "decode_sec": 16.81
+  },
+  {
+   "uuid": "382c043f",
+   "speaker": "P3",
+   "languages": [
+    "Hindi"
+   ],
+   "route": "hi",
+   "transcription": "हैलो सर हमको हॉस्टल के.",
+   "avg_logprob": -0.21636484628138336,
+   "min_logprob": -0.21636484628138336,
+   "no_speech_prob": 1.836550356237865e-10,
+   "compression_ratio": 1.0350877192982457,
+   "n_segments": 1,
+   "audio_sec": 25.4293125,
+   "decode_sec": 2.5
+  },
+  {
+   "uuid": "38602ab6",
+   "speaker": "P2",
+   "languages": [
+    "English",
+    "Hindi"
+   ],
+   "route": "hi",
+   "transcription": "हैलो. उसका अल्टरनेटिव है सपोज की दो है उधर लेकिन तो एक है उसका तो उसको रिपेयर करना जल्दी मांगता है यार करो यार थोड़ा",
+   "avg_logprob": -0.4498976007576468,
+   "min_logprob": -0.5949764422007969,
+   "no_speech_prob": 1.1720883152932515e-08,
+   "compression_ratio": 1.2421212121212122,
+   "n_segments": 2,
+   "audio_sec": 43.4133125,
+   "decode_sec": 9.8
+  },
+  {
+   "uuid": "39820cff",
+   "speaker": "P13",
+   "languages": [
+    "Gujarati"
+   ],
+   "route": "gu",
+   "transcription": "નમસ્કાર ગાંધીનગર વોઇસ હેલ્પ ડેસ્ક હોસ્ટેલ્પ ફાઇન વોસ્ટમાં ગીઝ કામ નથી કહી આયું ઇન્સ્�",
+   "avg_logprob": -0.03291378551059299,
+   "min_logprob": -0.03291378551059299,
+   "no_speech_prob": 4.4597420201242244e-10,
+   "compression_ratio": 1.7615384615384615,
+   "n_segments": 1,
+   "audio_sec": 11.0004375,
+   "decode_sec": 4.88
+  },
+  {
+   "uuid": "3985c3cf",
+   "speaker": "P6",
+   "languages": [
+    "Hindi"
+   ],
+   "route": "hi",
+   "transcription": "नमस्ते सर मैं यहाँ पे मेरे लड़के का एडमिशन के लिए आई हूँ यह पे प्रोसीजर कैसी एडमिशन के लिए निरिंग में एडमिशन करने का ये क्या डॉक्यूमेंट लगेगा हमको यहाँ पे वो भी बता दो हमको यहाँ पे उस खाने का वगैर लड़कियों का कैसा � कौन से टीचर कौन से टीचर को मिलना पड़ेगा कौन से टीचर को कौन से यहाँ पे जाना प्लोर पे जाना पड़ेगा हमको सब मैथिलाखाई मतपतजाएँ इन्फॉर्मेशन के लिए काफी जानकारी के लिए काफी जाना पड़ेगा हमको डॉक्यूमेंट्स का भी बराब",
+   "avg_logprob": -0.1302539917737684,
+   "min_logprob": -0.16003960715399848,
+   "no_speech_prob": 1.6024165189199024e-09,
+   "compression_ratio": 2.5992067963134056,
+   "n_segments": 2,
+   "audio_sec": 53.4135,
+   "decode_sec": 18.93
+  },
+  {
+   "uuid": "3a43b2ba",
+   "speaker": "P4",
+   "languages": [
+    "Hindi"
+   ],
+   "route": "hi",
+   "transcription": "नमस्कार सर मैं नितिन पोपट पाटिल दुलिया महाराष्ट्र राज्य के दुलिया जिले से बोल रहा हूँ इसके लिए मुझे कितने मार्ग सोना जेबलए में और उसके बाद मुझे फाइनली कितना खर्च आएगा कितने वर्ष तक मुझे पढ़ाई करनी होगी और इसके लिए क्या क्या एप्लीकेशन करना पड़ेगा उसके लिए कितना खर्च आएगा तो कृपया मुझे इसकी जानकारी मिलेगी तो मुझे आसानी होगी",
+   "avg_logprob": -0.07090297677992152,
+   "min_logprob": -0.0843617958681924,
+   "no_speech_prob": 2.5538693933235823e-07,
+   "compression_ratio": 1.9204055455488238,
+   "n_segments": 3,
+   "audio_sec": 77.3135,
+   "decode_sec": 21.87
+  },
+  {
+   "uuid": "3e75c3b4",
+   "speaker": "P13",
+   "languages": [
+    "Hindi"
+   ],
+   "route": "hi",
+   "transcription": "उपराष्ट्रपति एम वेंकैया ने भी लोगों से अपने विचार और सुझाने के लिए प्रेरित करते हुए उन्होंने कहा कि वे प्रेरित करते हुए उन्हें प्रेरित करते हुए उन्हें प्रेरित करते हुए उन्हें प्रेरित करते हुए उन्हें प्रेरित करते हुए उ",
+   "avg_logprob": -0.27420657263861764,
+   "min_logprob": -0.27420657263861764,
+   "no_speech_prob": 1.6892124634834693e-13,
+   "compression_ratio": 3.5153374233128836,
+   "n_segments": 1,
+   "audio_sec": 11.0004375,
+   "decode_sec": 9.42
+  },
+  {
+   "uuid": "3f07f814",
+   "speaker": "P19",
+   "languages": [
+    "English"
+   ],
+   "route": "en",
+   "transcription": "Hello, ITGN, help desk my student portal keeps logging me out every few minutes even after clearing the browser cache. Can IT investigate?",
+   "avg_logprob": -0.6231378018856049,
+   "min_logprob": -0.6231378018856049,
+   "no_speech_prob": 0.017575347796082497,
+   "compression_ratio": 1.1596638655462186,
+   "n_segments": 3,
+   "audio_sec": 11.0,
+   "decode_sec": 1.1
+  },
+  {
+   "uuid": "3fa7f104",
+   "speaker": "P22",
+   "languages": [
+    "English"
+   ],
+   "route": "en",
+   "transcription": "Hello, good morning. I am a second year BTEC mechanical engineering student. I am calling regarding the course registration for the upcoming semester. I was trying to add an HSS elective, specifically introduction to psychology, but the IMS portal is showing a prerequisite error, even though there are no prerequisite listed in the course handout. Can you please check if there is a glitch in the system? Also, tomorrow is the last jet for Adro. So I am a bit worried about that I would miss out on this course. Do I need to get an email approval from the course instructor to get this sorted?",
+   "avg_logprob": -0.24255493938260303,
+   "min_logprob": -0.4283901810646057,
+   "no_speech_prob": 0.4246388640668657,
+   "compression_ratio": 1.5803110803110803,
+   "n_segments": 9,
+   "audio_sec": 36.8335,
+   "decode_sec": 3.25
+  },
+  {
+   "uuid": "425a609f",
+   "speaker": "P14",
+   "languages": [
+    "Hindi"
+   ],
+   "route": "hi",
+   "transcription": "सपोर्ट आपको.",
+   "avg_logprob": -0.41382110118865967,
+   "min_logprob": -0.41382110118865967,
+   "no_speech_prob": 4.2310759388285157e-13,
+   "compression_ratio": 0.8205128205128205,
+   "n_segments": 1,
+   "audio_sec": 10.0001875,
+   "decode_sec": 2.45
+  },
+  {
+   "uuid": "430f801d",
+   "speaker": "P8",
+   "languages": [
+    "Hindi"
+   ],
+   "route": "hi",
+   "transcription": "नमस्कार मैं अपने बेटे के एडमिशन की अगली प्रक्रिया के बारे में जान लेना चाहता हूँ उसे आईआईटी गांधीनगर में प्रवेश मिलने की उम्मीद है और हम जानना चाहते है कि इस सीट के आवंटित होने के बाद आउट होने के बाद किन किन चरणों में चरणों में � उन्होंने बताया कि प्रदेश में अब तक एक लाख छियासी हजार छः सौ छियासी लोगों की मृत्यु के बाद अब तक एक लाख छः हजार छः सौ छः सौ छः सौ छः हैं और उसके बाद दस्तावेजों का सत्यापन होता है इस दौरान उन्होंने प्रदेश के लोगों को जागरूक करने के लिए प्रतिबद्ध है चरण छूट न जाए",
+   "avg_logprob": -0.23012752418779295,
+   "min_logprob": -0.39168574700230047,
+   "no_speech_prob": 1.2491895437738388e-07,
+   "compression_ratio": 1.9424778033984667,
+   "n_segments": 5,
+   "audio_sec": 93.2335,
+   "decode_sec": 38.29
+  },
+  {
+   "uuid": "439472e6",
+   "speaker": "P18",
+   "languages": [
+    "Hindi"
+   ],
+   "route": "hi",
+   "transcription": "करवायु पाण्ड से अलोहाइडिजन हेलिडेस्क मेरा अटेंडेंस परसेंटेज में डिस्कप्रेंसी है. फैकलिटी के पास जाऊं या एकेडमिक ऑफिस में कंप्लेंट रेस्क",
+   "avg_logprob": -0.14579360015891693,
+   "min_logprob": -0.14579360015891693,
+   "no_speech_prob": 3.153391718753451e-13,
+   "compression_ratio": 2.0279329608938546,
+   "n_segments": 1,
+   "audio_sec": 12.0,
+   "decode_sec": 6.0
+  },
+  {
+   "uuid": "43f59a85",
+   "speaker": "P21",
+   "languages": [
+    "Hindi"
+   ],
+   "route": "hi",
+   "transcription": "हैलो आईडीजे डेस्क मेरे को मेंटीनेंस कराने का था इसी का इसी खराब हो चुका है और लेटिकल भी आ रहे आखिर के बाद चेक कर दोगे क्या",
+   "avg_logprob": -0.11858588675173318,
+   "min_logprob": -0.11858588675173318,
+   "no_speech_prob": 9.983987378156534e-13,
+   "compression_ratio": 1.9746835443037976,
+   "n_segments": 1,
+   "audio_sec": 11.0935,
+   "decode_sec": 5.32
+  },
+  {
+   "uuid": "444d610b",
+   "speaker": "P13",
+   "languages": [
+    "Gujarati"
+   ],
+   "route": "gu",
+   "transcription": "નમસ્કાર ટેનિંગ અને કેપિયા",
+   "avg_logprob": -0.07330774682671276,
+   "min_logprob": -0.07330774682671276,
+   "no_speech_prob": 5.4783431263638604e-11,
+   "compression_ratio": 1.0454545454545454,
+   "n_segments": 1,
+   "audio_sec": 9.000375,
+   "decode_sec": 1.29
+  },
+  {
+   "uuid": "464c04af",
+   "speaker": "P19",
+   "languages": [
+    "English"
+   ],
+   "route": "en",
+   "transcription": "Hello, Adizyan Hildes. My hostel room has a water leakage problem near the study table. again someone is expected today",
+   "avg_logprob": -0.7280390727327534,
+   "min_logprob": -0.8479997366666794,
+   "no_speech_prob": 0.19589830935001373,
+   "compression_ratio": 0.9215322829780661,
+   "n_segments": 2,
+   "audio_sec": 11.0,
+   "decode_sec": 1.52
+  },
+  {
+   "uuid": "46d483f3",
+   "speaker": "P13",
+   "languages": [
+    "Hindi"
+   ],
+   "route": "hi",
+   "transcription": "सपोर्ट आपको नमस्कार",
+   "avg_logprob": -0.16583895621200404,
+   "min_logprob": -0.16583895621200404,
+   "no_speech_prob": 1.2665645713217516e-13,
+   "compression_ratio": 0.9636363636363636,
+   "n_segments": 1,
+   "audio_sec": 11.0004375,
+   "decode_sec": 2.22
+  },
+  {
+   "uuid": "474ebc19",
+   "speaker": "P8",
+   "languages": [
+    "Hindi"
+   ],
+   "route": "hi",
+   "transcription": "नमस्ते मैं अपने बेटे की पढ़ाई के लिए छात्रवृत्ति और आर्थिक सहायता के विकल्पों के बारे में जान लेना चाहता हूँ वह आईआईटी गांधी नगर में एडमिशन लेने की तैयारी कर रहा है लेकिन हम चाहते हैं कि जो फीस है और वोटियल के खर्च के य वैश्विक आया के आधार पर ट्यूशन फी में छूट या आर्थिक सहायता दी जा सकती है इसलिए आय प्रमाण पत्र और अन्य कोई दस्तावेजों की आवश्यकता है क्या छात्र रूपती के लिए शिशु रूपती के लिए आवेदन एडमिशन के तुरंत बात करना होता आता हूं कि आर्थिक सहायता मिलने पर पोस्टल या मेज के खर्चों में भी मदद मिल सकती है या नहीं रुपया संबंधित विभाग या अधिकृत वेबसाइट की जानकारी हमें दे ताकि हम पात्र और आवेदन की भी प्रक्रिया से सही ढंग से समझ ले इसके बारे में आ",
+   "avg_logprob": -0.051094817250726274,
+   "min_logprob": -0.054257750511169434,
+   "no_speech_prob": 2.3569998101417392e-07,
+   "compression_ratio": 2.2592521230726956,
+   "n_segments": 3,
+   "audio_sec": 84.4335,
+   "decode_sec": 27.08
+  },
+  {
+   "uuid": "4774bc58",
+   "speaker": "P13",
+   "languages": [
+    "Gujarati"
+   ],
+   "route": "gu",
+   "transcription": "નમસ્કાર મેટર્મ ફાર્મ કર્યું હતું પણ માનથી બિલમાં નથી થયું કે",
+   "avg_logprob": -0.03371460468701597,
+   "min_logprob": -0.03371460468701597,
+   "no_speech_prob": 5.255452961705487e-09,
+   "compression_ratio": 1.6666666666666667,
+   "n_segments": 1,
+   "audio_sec": 8.000375,
+   "decode_sec": 3.37
+  },
+  {
+   "uuid": "49257af1",
+   "speaker": "P21",
+   "languages": [
+    "Hindi"
+   ],
+   "route": "hi",
+   "transcription": "हेलो आइडिजन हैद बेस्ट मेरे रूम का रूम की कुंडी टूट गई उसका स्क्रूब आ गया तो स्कूल लगाने का था एण्ड कवर्ड में भी सेम इशू आ रहे उसका हैण्डर बाहर आया जा रहा है तो आप किसी को बेचके टिक्कर मेक्स टूट डेस में टिक्कर आ सक",
+   "avg_logprob": -0.1774715444776747,
+   "min_logprob": -0.1774715444776747,
+   "no_speech_prob": 1.348130049434737e-13,
+   "compression_ratio": 2.3405172413793105,
+   "n_segments": 1,
+   "audio_sec": 21.9735,
+   "decode_sec": 9.13
+  },
+  {
+   "uuid": "49732d6c",
+   "speaker": "P13",
+   "languages": [
+    "Gujarati"
+   ],
+   "route": "gu",
+   "transcription": "નમસ્કાર આઈઆરટી ગાંધીનગ વોઇસ હેલ્પડેસ્ક હોસ્ટ્રાલૂમ ચેન્જ એપ્લિકેશન ફોર્મ કિયા ઓફિસ�",
+   "avg_logprob": -0.03427805423736572,
+   "min_logprob": -0.03427805423736572,
+   "no_speech_prob": 1.6699332194836103e-10,
+   "compression_ratio": 1.624113475177305,
+   "n_segments": 1,
+   "audio_sec": 10.0004375,
+   "decode_sec": 4.05
+  },
+  {
+   "uuid": "4bb00f20",
+   "speaker": "P14",
+   "languages": [
+    "Hindi"
+   ],
+   "route": "hi",
+   "transcription": "आपको हेलो आईटीजीएन हेल्प डेस्क एसी में से वॉटर लीक हो रहा है पिछले दो तीन दिनों से इलेक्ट्रिशियन को अरेंज करवाने में कितने दिन लगेंगे कृप्या सपोर्ट आपको",
+   "avg_logprob": -0.07413250506844049,
+   "min_logprob": -0.07413250506844049,
+   "no_speech_prob": 1.1128199924048676e-11,
+   "compression_ratio": 2.0618556701030926,
+   "n_segments": 1,
+   "audio_sec": 15.00025,
+   "decode_sec": 9.85
+  },
+  {
+   "uuid": "4bf50b52",
+   "speaker": "P22",
+   "languages": [
+    "English"
+   ],
+   "route": "en",
+   "transcription": "Namaste, I am calling from Mumbai. My son is a second year student at IIT in Anandena, staying in Iwan hostel. He has been calling me for the past two days saying that the air conditioning in his room is completely ineffective. So, it is getting extremely hot during the afternoon. He mentioned that he has already registered a complaint on the hostel maintenance portal, but nobody has come to check it yet. ticket number he shared with me is 4452. Can you please escalate this issue to the electrical maintenance team? It is very difficult for him to study in the room in this heat.",
+   "avg_logprob": -0.3182369468256308,
+   "min_logprob": -0.34544195770059977,
+   "no_speech_prob": 0.17940696742799547,
+   "compression_ratio": 1.5417414928397108,
+   "n_segments": 9,
+   "audio_sec": 44.0335,
+   "decode_sec": 3.42
+  },
+  {
+   "uuid": "4ca415ea",
+   "speaker": "P14",
+   "languages": [
+    "Gujarati"
+   ],
+   "route": "gu",
+   "transcription": "હેલોટ સર્વિસ રિટર્ન નથી કર્યા છે સપોર્ટ આપો",
+   "avg_logprob": -0.038396521754886795,
+   "min_logprob": -0.038396521754886795,
+   "no_speech_prob": 5.385835111226811e-10,
+   "compression_ratio": 1.369047619047619,
+   "n_segments": 1,
+   "audio_sec": 10.000125,
+   "decode_sec": 2.31
+  },
+  {
+   "uuid": "4ccc9bc2",
+   "speaker": "P2",
+   "languages": [
+    "Hindi"
+   ],
+   "route": "hi",
+   "transcription": "हेलो. थोड़ा कंप्लेंट था हमारा जो है वो रहा है और उसका उसके वजह से वो जो हमारा कमोड वाला बाथरूम है वो पूरा फुल हो चुका है वो ब्लॉक हो गया है तो उससे पेरी था कि वो एक रिजॉल कर दो और दूसरा यह था कि वो बेसिंग भी उपलॉक हो गया है उसमें",
+   "avg_logprob": -0.1278705519447288,
+   "min_logprob": -0.16302025689019098,
+   "no_speech_prob": 6.239199608348844e-11,
+   "compression_ratio": 2.4045299145299146,
+   "n_segments": 2,
+   "audio_sec": 33.1946875,
+   "decode_sec": 17.54
+  },
+  {
+   "uuid": "4ce1eb90",
+   "speaker": "P4",
+   "languages": [
+    "Hindi"
+   ],
+   "route": "hi",
+   "transcription": "हैलो सर्जन नमस्ते मैं महाराष्ट्र के जिले से बोल रहा हूँ और मुझे मेरा सिलेक्शन के लिए, यूईटी देनी पड़ेगी या कोई इंग्लाम है तो रूपया मुझे वहाँ की हॉस्टल के बारे में मैस के बारे में जानकारी दीजिए और कितनी फीज लगेगी कितना खर्च आएगा और वहाँ रायपुर में कॉम्पिटिटिव ए� आगे जाकर पीड़ी के लिए अपना कर सकता है और पॉलिटिक्स लेकर कौन का कर कर सकता है उपहाई मुझे इसके बारे में थोड़ी जान कर दीजिए",
+   "avg_logprob": -0.12177254907367731,
+   "min_logprob": -0.15101247304870236,
+   "no_speech_prob": 8.009346131922687e-10,
+   "compression_ratio": 1.8790664602352916,
+   "n_segments": 3,
+   "audio_sec": 74.9335,
+   "decode_sec": 21.46
+  },
+  {
+   "uuid": "4e20fd1a",
+   "speaker": "P2",
+   "languages": [
+    "English"
+   ],
+   "route": "en",
+   "transcription": "During my registration to the company there are a lot of bugs that I found out on to the portal of CDS. Especially when I am logging into the portal it logouts directly without even making clicking the button. I don't know what is happening here. Next book which I found out was related to the email query that has been coming. So if I registered for any particular company and then the email comes. So, the email for the reminder of the company, the issue is that the reminder is coming like 15 minutes early. So I personally think that this should not happen and the query or the reminder should come at least 1 hour to 6 hour before the data registration closed. 15 minutes is quite less and even it is coming through the mail so most probably the 15 minutes watch time is quite less I think so so kindly consider increasing that.",
+   "avg_logprob": -0.2837492840744296,
+   "min_logprob": -0.5349966511130333,
+   "no_speech_prob": 0.38797479766336357,
+   "compression_ratio": 1.5355642773865201,
+   "n_segments": 11,
+   "audio_sec": 66.7735,
+   "decode_sec": 5.02
+  },
+  {
+   "uuid": "4fcca39a",
+   "speaker": "P22",
+   "languages": [
+    "English"
+   ],
+   "route": "en",
+   "transcription": "Hello, I'm a research scholar from the biological engineering department. I am calling to raise a request regarding software licensing and VPN access. Due to a family emergency, I have to work from home for the next three weeks. My research heavily lies on MATLAB and a specific toolbox that is licensed to our institute's network. Can you please guide me on how to set up the 14-net VPN on my personal windows desktop so that I can access the license server remotely. Also our lab just purchased a new network printer and we need a static IP assigned to it. Should I raise two separate tickets on the IT help desk for the issue or okay, you initiate it from your end.",
+   "avg_logprob": -0.29324971633953056,
+   "min_logprob": -0.304251216008113,
+   "no_speech_prob": 0.36988893523812294,
+   "compression_ratio": 1.4800266814337495,
+   "n_segments": 8,
+   "audio_sec": 54.7935,
+   "decode_sec": 3.13
+  },
+  {
+   "uuid": "504d281f",
+   "speaker": "P20",
+   "languages": [
+    "Gujarati"
+   ],
+   "route": "gu",
+   "transcription": "નમસ્કાર હુમારી દીકરીના એન્ડમિશન અને સીટ કન્ફર્મ કરવાની પ્રક્રિયા સમજવા માંગો છો એન્જિ� પછી સંસ્થાની ફીમા સમાયેશની સત્તાવાર માહિતી કેઠાથી મેળવી તે સમજાવશો",
+   "avg_logprob": -0.028623885640805768,
+   "min_logprob": -0.031134362084170183,
+   "no_speech_prob": 5.3350254214379333e-08,
+   "compression_ratio": 1.681159420289855,
+   "n_segments": 2,
+   "audio_sec": 59.8935,
+   "decode_sec": 7.09
+  },
+  {
+   "uuid": "51d87c64",
+   "speaker": "P21",
+   "languages": [
+    "Hindi"
+   ],
+   "route": "hi",
+   "transcription": "हैलो आईटीजेइन एमए को रूम बुक कराने के थे क्लासरूम के इवेंट के लिए आई गेस्ट मेरे को एबीएन वनों थ्री में दो दिन के लिए चाहे होगा वीकेंड वीकेंड के लिए ये इवेंट में हमारा हैकेथॉन होने वाला है जहाँ पे सारे लोग रहेंगे खाने वाने के खाने के लिए",
+   "avg_logprob": -0.13078352476996555,
+   "min_logprob": -0.1363672868491293,
+   "no_speech_prob": 3.2160156943116316e-11,
+   "compression_ratio": 1.9618497733649902,
+   "n_segments": 2,
+   "audio_sec": 38.7735,
+   "decode_sec": 11.33
+  },
+  {
+   "uuid": "5487fd4f",
+   "speaker": "P9",
+   "languages": [
+    "English"
+   ],
+   "route": "en",
+   "transcription": "Namaste, I am calling to ask about a problem with my course registration. I selected a elective through the student part portal but the course is not upending in my registered subject list. The registration deadline is approaching so I want to resolve this as soon as possible. I have selected the course but confirmation message was seen but the portal does not see any code. Please tell me whether the registration has been completed successfully or if I need to submit the request again. I am also concerned that submitting it again might create a duplicate and TV. This way I should contact the KEDME office or call the instructor. Please explain the correct procedure. So that my course lecture is recorded before the deadline.",
+   "avg_logprob": -0.5476618848638614,
+   "min_logprob": -0.6254482322505542,
+   "no_speech_prob": 0.335825588968065,
+   "compression_ratio": 1.59479772503836,
+   "n_segments": 9,
+   "audio_sec": 44.7735,
+   "decode_sec": 3.08
+  },
+  {
+   "uuid": "55cee5db",
+   "speaker": "P22",
+   "languages": [
+    "English"
+   ],
+   "route": "en",
+   "transcription": "Good morning. I'm a third year student. I'm facing a very critical issue right now. We have an assignment submission due at 11.59 am today for the machine learning course. And it seems that the server is completely unresponsive. I have been trying to upload my zip file for the last 30 minutes, but the page just keeps loading and eventually times out with a 504 gateway error. I checked with a few of my batch mates and they are experiencing the same issue. Whether they are connected to the hostile Wi-Fi or using their own mobile data, they are facing the same issue. Could you please look into this immediately and restart the server if necessary. Also since the deadline is approaching in less than an hour, could you please issue an officially mail to the academic office or the course instructor stating that the servers are recently down. This would really help us to avoid any penalties or marks reduction for late submission.",
+   "avg_logprob": -0.21739061078752867,
+   "min_logprob": -0.2942847338589755,
+   "no_speech_prob": 0.29298299144614826,
+   "compression_ratio": 1.5419716818021902,
+   "n_segments": 11,
+   "audio_sec": 68.7935,
+   "decode_sec": 4.36
+  },
+  {
+   "uuid": "56dc8907",
+   "speaker": "P14",
+   "languages": [
+    "Gujarati"
+   ],
+   "route": "gu",
+   "transcription": "હાઇટી મેરીબેટ ફોર્મ સબિટ કર્યું આપણી બિલ્મા ડિડક્શન રિફ્લેક્ટ નહતો",
+   "avg_logprob": -0.0727409897165166,
+   "min_logprob": -0.0727409897165166,
+   "no_speech_prob": 7.490489895012331e-10,
+   "compression_ratio": 1.592920353982301,
+   "n_segments": 1,
+   "audio_sec": 10.0001875,
+   "decode_sec": 2.94
+  },
+  {
+   "uuid": "655238a6",
+   "speaker": "P21",
+   "languages": [
+    "English",
+    "Hindi"
+   ],
+   "route": "hi",
+   "transcription": "हैलो आईटीजी एंड टेस्ट मेरे को रूम अलॉट पेन में स्टोर रूम अलॉट हो चुका है ये लास्ट ऐर भी ऐसा हुआ था तो क्या आप इस पर चेक कर सकते हैं और ये जल से जल हो सके तो मेरे के सिंगल रूम दे दो क्योंकि काफी सारा सामान्य उसके रूम पर रहना",
+   "avg_logprob": -0.1194946723514133,
+   "min_logprob": -0.1194946723514133,
+   "no_speech_prob": 9.856629401561179e-12,
+   "compression_ratio": 2.385593220338983,
+   "n_segments": 1,
+   "audio_sec": 29.7935,
+   "decode_sec": 10.58
+  },
+  {
+   "uuid": "6651529e",
+   "speaker": "P9",
+   "languages": [
+    "English",
+    "Hindi"
+   ],
+   "route": "hi",
+   "transcription": "गुड मॉर्निंग आई मीट गाइडेस्ट रिलॉयनिंग इंटरशिप वेरिफिकेशन लेटर कॉम इंस्टीट्यूट आई एवी न आई टू समिट ऑफिशियल डॉक्यूमेंट कॉम्फॉर्मिंग में स्टूडेंट स्टेटस एंड एकेडमिक एप्लीशन एज पार्ट ऑ� लेटेस्ट लाइट टू बैद रिक्वेस्ट करने में कुछ लगते हैं तो क्या मैं एप्लिकेशन की रिप्सेप या कोई टेम्परेरी कंफॉर्मेशन समिट कर सकता हूँ प्लीज एंड प्रोसेस आई कैन मीट द कंपनी स्ट्रेट लिंक",
+   "avg_logprob": -0.20524267866118723,
+   "min_logprob": -0.2157511626349555,
+   "no_speech_prob": 9.641977293623968e-13,
+   "compression_ratio": 2.1939115929941617,
+   "n_segments": 2,
+   "audio_sec": 52.1135,
+   "decode_sec": 15.96
+  },
+  {
+   "uuid": "688c7015",
+   "speaker": "P10",
+   "languages": [
+    "English"
+   ],
+   "route": "en",
+   "transcription": "Namaskar, IIT Ganyana, I have a QD regarding those till missed timings and the delivery. This is why I noticed that dinner will sometimes start later. Then the dispersion. Students who have evening laps or project meetings are finding difficult to reach the next one. I have come to my lab yesterday and when I get the waste, I am almost closing the whole computer. I want to know whether the official general timing has changed or this is only a key part of the situation. Also, there is an online platform where students can check the daily menu in advance. It would be a full-renewing timing where the security to the security goal, so that students can plan their meals. Could you please guide me to the appropriate management contact or complete for turn. Otherwise, issue about information share. Please do it.",
+   "avg_logprob": -0.8373952741587642,
+   "min_logprob": -0.9136824190616608,
+   "no_speech_prob": 0.5329530353729541,
+   "compression_ratio": 1.4719344443204487,
+   "n_segments": 13,
+   "audio_sec": 54.9935,
+   "decode_sec": 4.13
+  },
+  {
+   "uuid": "6ba25efe",
+   "speaker": "P21",
+   "languages": [
+    "Hindi"
+   ],
+   "route": "hi",
+   "transcription": "हेलो आईडीजी एंड हेल्प डेस्क यहाँ पे साप रखा है हमने उसको बचे केंद्र में डाल रखा है आप जल्दी से किसी को बेच सकते हैं बेच सकते हैं",
+   "avg_logprob": -0.11860049976647355,
+   "min_logprob": -0.11860049976647355,
+   "no_speech_prob": 1.0483523771309677e-11,
+   "compression_ratio": 2.0628930817610063,
+   "n_segments": 1,
+   "audio_sec": 11.1735,
+   "decode_sec": 6.19
+  },
+  {
+   "uuid": "6c4a37ea",
+   "speaker": "P1",
+   "languages": [
+    "Hindi"
+   ],
+   "route": "hi",
+   "transcription": "हैलो, हॉस्टल की रिगर्डिंग बात करना था. और अभी दस दिन के बाद एग्जाम भी आ रहा है हमारा तो उसके लिए प्लीज़ सर सपोर्ट कीजिए सर थैंक यू थैंक यू सर",
+   "avg_logprob": -0.10629321869850787,
+   "min_logprob": -0.12030562847143128,
+   "no_speech_prob": 1.1724165041582246e-10,
+   "compression_ratio": 1.5133889758302903,
+   "n_segments": 2,
+   "audio_sec": 37.6106875,
+   "decode_sec": 8.76
+  },
+  {
+   "uuid": "6cd66193",
+   "speaker": "P13",
+   "languages": [
+    "Gujarati"
+   ],
+   "route": "gu",
+   "transcription": "નમસ્કાર ગાંધીનગર વોઇસ એડમિશન હતું પણ કન્ફર્મેશન લાવ્યો નથી કુપિયા પોર્ટ આપો",
+   "avg_logprob": -0.03168384030685952,
+   "min_logprob": -0.03168384030685952,
+   "no_speech_prob": 1.1681525080575739e-08,
+   "compression_ratio": 1.573643410852713,
+   "n_segments": 1,
+   "audio_sec": 11.0004375,
+   "decode_sec": 2.93
+  },
+  {
+   "uuid": "6e595ed3",
+   "speaker": "P8",
+   "languages": [
+    "Hindi"
+   ],
+   "route": "hi",
+   "transcription": "हैलो मैं अपने बेटे के एडमिशन के बाद कैंपस पहुंचने और रिपोर्टिंग की प्रक्रिया के बारे में जान लेना चाहता हूं हम दूसरे राज्य से रहते हैं इसलिए अगर उसका चयन अपने यहां आईआईटी गांधी नगर में हुआ तो हमें यात्रा और रहने क इसके लिए बताइए कि एडमिशन कंफर्म होने के बाद विद्यार्थियों को कैम्पस में किस तारीख को रिपोर्टिंग करना होगा और क्या रिपोर्टिंग के लिए कोई नियमित समय निश्चित किया गया है क्या विद्यार्थी के साथ माता पिता भी आ सकते हैं अगर हम या उपाय करके उसके लिए सुझाव उपलब्ध है उपलब्ध कीजिए मैं यह भी जानना चाहता हूं कि रिपोर्टिंग के समय वोट का कमरा मिल सकता है या उसके लिए अलग सी प्रक्रिया करना पड़ती है उपाय करके अधिकाधिक रिपोर्टिंग निर्देशक कहा मिलें",
+   "avg_logprob": -0.035684747900454145,
+   "min_logprob": -0.044115836885240345,
+   "no_speech_prob": 8.009926122330239e-07,
+   "compression_ratio": 2.368687217897252,
+   "n_segments": 3,
+   "audio_sec": 84.5535,
+   "decode_sec": 26.0
+  },
+  {
+   "uuid": "6f3f920c",
+   "speaker": "P19",
+   "languages": [
+    "Hindi"
+   ],
+   "route": "hi",
+   "transcription": "हेलो आरटीजी एप गिटवर स्टूडेंट डेवलपर पैक के लिए इन्स्ट्यूडेंट वेरिफिकेशन रिजेक्ट हो गया है ऑफिशियल स्टूडेंट स्टेटस सर्टिफिकेट कहाँ मिलेगा",
+   "avg_logprob": -0.12049922237366985,
+   "min_logprob": -0.12049922237366986,
+   "no_speech_prob": 5.142916040951073e-12,
+   "compression_ratio": 2.0726256983240225,
+   "n_segments": 1,
+   "audio_sec": 10.0,
+   "decode_sec": 7.49
+  },
+  {
+   "uuid": "72d8567d",
+   "speaker": "P22",
+   "languages": [
+    "English"
+   ],
+   "route": "en",
+   "transcription": "Hello, I am calling regarding the upcoming convocation ceremony. My son has completed his PhD in chemistry this year and we are very excited to attend. We received the invitation, but I have a few practical questions. Since we will be traveling with my elderly parents, I wanted to know how long the entire ceremony usually lasts. Also regarding the dress code, the email mentions traditional Indian attire, but is there a specific color code we need to adhere to for the PhD scholars and their families. Also do we need to RSVB for the number of guests attending the HIT after this ceremony? Or is it open to all family members accompanying the graduation student?",
+   "avg_logprob": -0.2453895249851766,
+   "min_logprob": -0.30092839023162576,
+   "no_speech_prob": 0.30272970100243884,
+   "compression_ratio": 1.5322373018500128,
+   "n_segments": 9,
+   "audio_sec": 49.7135,
+   "decode_sec": 3.43
+  },
+  {
+   "uuid": "75523327",
+   "speaker": "P2",
+   "languages": [
+    "English",
+    "Hindi"
+   ],
+   "route": "hi",
+   "transcription": "हैलो वॉन्ट टू रिसेट माय स्टूडेंट पोर्टल पासवर्ड ट्राइंग लॉग मॉर्निंग वेबसाइट पासवर्ड इनकरेक्ट टाइम नॉट टाइम थ्री टू फाइव टाइम आई रिसेट एक बट स्टील एव नॉट गेटिंग द दिलिंग टू रिसेट एट एव एव एसो मैने स्पैम वगैरह बीच एक तो मैने स्पैम वगैरह बीच एक किया है स्पैम वगैरह मैं कुछ दिख नहीं रहा है मैने का� फास्ट वर्ड रिसेट करके एटलिस्ट में भेज देना ताकि मैं एटलिस्ट पोर्टल को लॉग इन कर पाए",
+   "avg_logprob": -0.16317038558645436,
+   "min_logprob": -0.19311685138278536,
+   "no_speech_prob": 7.284927310190781e-10,
+   "compression_ratio": 2.1091110577631125,
+   "n_segments": 3,
+   "audio_sec": 69.2935,
+   "decode_sec": 20.59
+  },
+  {
+   "uuid": "77097749",
+   "speaker": "P7",
+   "languages": [
+    "English"
+   ],
+   "route": "en",
+   "transcription": "Hello sir. I would like to know about the admission process for my son and the total cost of study. Like what is the admission process and what are the things required. We come from because we come from a middle class family so it is important for us to understand what is the admission fees as well as hostel fees and food expenses so that we can arrange our current power convenience do fees in IIT, Ghandinagar, have to be submitted. Every semester or once a year means what is the process about that? Are who still rent, miss fees and other compensatory charges different from the tuition fees? If a student is eligible for financial aid or scholarship should they apply at the beginning or what is that process? We also need to know where to see the last date for submission of fees and through which experiment is made if the full details of the fees are given in official documents, please guide us about it. Thank you sir.",
+   "avg_logprob": -0.4241237838900044,
+   "min_logprob": -0.51320495042536,
+   "no_speech_prob": 0.5408885542835508,
+   "compression_ratio": 1.5601146553740877,
+   "n_segments": 14,
+   "audio_sec": 60.6135,
+   "decode_sec": 4.27
+  },
+  {
+   "uuid": "778eedb3",
+   "speaker": "P21",
+   "languages": [
+    "English",
+    "Hindi"
+   ],
+   "route": "hi",
+   "transcription": "हेलो आईटीजीएन हेलो आईटीजीएन हेल्प डेस्क. मेरे रूम की सफाई करने वाला दो तीन बीच से आया नहीं है. हमने बात की भैया से जो दूसरी जगह जाते हैं उन्होंने कहा कि उनका कोई इश्यू है बट हमने पूछा कि आप कर सकते है नहीं तो उन्होंने बता क",
+   "avg_logprob": -0.08904817369249134,
+   "min_logprob": -0.08904817369249132,
+   "no_speech_prob": 3.31803313123602e-12,
+   "compression_ratio": 2.473913043478261,
+   "n_segments": 1,
+   "audio_sec": 26.9535,
+   "decode_sec": 11.03
+  },
+  {
+   "uuid": "79a28903",
+   "speaker": "P14",
+   "languages": [
+    "English",
+    "Gujarati"
+   ],
+   "route": "gu",
+   "transcription": "હેલો",
+   "avg_logprob": -0.1547376119664737,
+   "min_logprob": -0.1547376119664737,
+   "no_speech_prob": 5.523633772597236e-10,
+   "compression_ratio": 0.5714285714285714,
+   "n_segments": 1,
+   "audio_sec": 10.000125,
+   "decode_sec": 0.82
+  },
+  {
+   "uuid": "7c69dee1",
+   "speaker": "P9",
+   "languages": [
+    "English",
+    "Hindi"
+   ],
+   "route": "hi",
+   "transcription": "नमस्ते, आई नीड असिस्टेंट फॉर्म नमस्ते इन्वेस्ट इन्वेस्ट इन्वॉर्मेशन इन केस ऑफ इन्वेस्ट इन्वेस्ट इन्वेस्ट इन्वेस्ट इन्वेस्ट इन्वेस्ट इन्वेस्ट इन्वेस्ट इन्वेस्ट इन्वेस्ट इन्वेस्ट इन्वेस्ट इ चेंज नहीं और बैदल टू सेमिटर रिक्वेस्ट स्टूडेंट ऑफिस लाइक टू नो एफ एनी सपोर्टिंग डॉक्यूमेंट्स रिक्वायर्ड अगर मैं ऑनलाइन इक्वेस्ट सेमिट करता हूँ तो चेंज इफ्लेक्ट होने में कितना समय लग सकता है प्लीज गाइ�",
+   "avg_logprob": -0.1643682975289207,
+   "min_logprob": -0.18180577807956272,
+   "no_speech_prob": 1.881221090363483e-12,
+   "compression_ratio": 3.3122741098586506,
+   "n_segments": 2,
+   "audio_sec": 53.2735,
+   "decode_sec": 20.59
+  },
+  {
+   "uuid": "81392443",
+   "speaker": "P16",
+   "languages": [
+    "English"
+   ],
+   "route": "en",
+   "transcription": "Hello, IITGN help desk. My hostel room has a water leakage problem near the study table.",
+   "avg_logprob": -0.46904325043713607,
+   "min_logprob": -0.46904325043713607,
+   "no_speech_prob": 0.07441785931587219,
+   "compression_ratio": 1.035294117647059,
+   "n_segments": 2,
+   "audio_sec": 7.0,
+   "decode_sec": 1.16
+  },
+  {
+   "uuid": "82ec9f2d",
+   "speaker": "P16",
+   "languages": [
+    "English"
+   ],
+   "route": "en",
+   "transcription": "Hello, IITGN helpdesk. Can I order an additional elective without it affecting my semester great point average.",
+   "avg_logprob": -0.6468274167418947,
+   "min_logprob": -0.8818400246756417,
+   "no_speech_prob": 0.07808087719604373,
+   "compression_ratio": 0.874384236453202,
+   "n_segments": 2,
+   "audio_sec": 8.0,
+   "decode_sec": 1.78
+  },
+  {
+   "uuid": "83f4a9a9",
+   "speaker": "P4",
+   "languages": [
+    "Hindi"
+   ],
+   "route": "hi",
+   "transcription": "हैलो नमस्कार सर मैं वाल्मिक पाटी नंदवा जिले से बोल रहा हूँ मेरा प्रिय वाहब हो गया पीडी का तो मुझे अब फाइनल मैंने बाइंडिंग कर लिए प्रिय वाहब ने सुझाई हुई सभी दुरुस्त या मैंने कर लिए और करेक्शन हो गया मैंने फाइनल वाह कितने दिन लगेंगे मुझे फाइनल वाईवा के लिए मेरा फाइनल वाईवा कम से कितने दिनों में होगा और उसके लिए मुझे क्या पीपीटी करनी पड़ेगी और क्या क्या प्रिपरेशन करना पड़ेगा कृपया करके हमें इसकी जानकारी दीजिएगा",
+   "avg_logprob": -0.09167840920792023,
+   "min_logprob": -0.11898670938279894,
+   "no_speech_prob": 3.416675494784249e-08,
+   "compression_ratio": 2.462508434547908,
+   "n_segments": 2,
+   "audio_sec": 52.9135,
+   "decode_sec": 21.77
+  },
+  {
+   "uuid": "847fd9b4",
+   "speaker": "P9",
+   "languages": [
+    "English"
+   ],
+   "route": "en",
+   "transcription": "Good afternoon. I need information about vital banking information on campus I distance to really started using our tool earlier to travel between Australia and academia. I am not sure where the students are allowed to part their vital management. I have been working in a part of the area, but I do not know where the students are going to go. Could you tell me whether I need to register my vital with campus at MSNF registration? If registration is required please let me know which document I should submit. Whether there is any fear, I will not let the other parties get into trouble. I will not take it as a shit if you could also run into the official parking rules all the department-sponsored firms in the Beijing Student Parking.",
+   "avg_logprob": -0.8318945970043546,
+   "min_logprob": -0.9533589597333941,
+   "no_speech_prob": 0.5336176504691442,
+   "compression_ratio": 1.6628846866889138,
+   "n_segments": 9,
+   "audio_sec": 42.0135,
+   "decode_sec": 4.18
+  },
+  {
+   "uuid": "8573e793",
+   "speaker": "P5",
+   "languages": [
+    "Hindi"
+   ],
+   "route": "hi",
+   "transcription": "नमस्तक सर, मेरी बच्ची इसके पहले कैंपस बाहर नहीं रही है तो आपके कॉलेज कैंपस में अच्छी खासी सुविधा है क्या गर्ल्स के लिए क्यूँकी अब बाहर का माहौल देखा जाए तो गर्ल्स के लिए इतना अच्छा नहीं है और हॉस्टल में भी रैगिंग व� क्योंकि वो सैलेट वगैरह मेंटेन मेंटेन होता है और बच्चों के लिए एक ही रूम में कितने बच्चे रहते है और जो अपना में इसका शडूल है वो कैसा है रूपया आप हमें बताए और जो बच्चियों के लिए कुछ लेडी फेलोशिप वगैरह है क्या आपके कॉल बताइए",
+   "avg_logprob": -0.06846222236283248,
+   "min_logprob": -0.12638845145702363,
+   "no_speech_prob": 2.1583799654963562e-09,
+   "compression_ratio": 1.7841157205240175,
+   "n_segments": 3,
+   "audio_sec": 61.3335,
+   "decode_sec": 20.31
+  },
+  {
+   "uuid": "89456f27",
+   "speaker": "P13",
+   "languages": [
+    "Hindi"
+   ],
+   "route": "hi",
+   "transcription": "प्रधानमंत्री नरेन्द्र मोदी ने आज राष्ट्रपति एम एस सी केमिस्ट्री प्रोग्राम का सिलेबस और फीस्ट्रक्चर डिटेल्स कहाँ से डाउनलोड कर सकते हैं",
+   "avg_logprob": -0.15575126292822244,
+   "min_logprob": -0.15575126292822244,
+   "no_speech_prob": 2.646907215977934e-12,
+   "compression_ratio": 2.011173184357542,
+   "n_segments": 1,
+   "audio_sec": 9.000375,
+   "decode_sec": 6.64
+  },
+  {
+   "uuid": "8ae8905b",
+   "speaker": "P16",
+   "languages": [
+    "English"
+   ],
+   "route": "en",
+   "transcription": "someone inspected today? Hello IITGN help desk. Is there a separate facility for storage luggage during semester?",
+   "avg_logprob": -0.5206674460707039,
+   "min_logprob": -0.5206674460707039,
+   "no_speech_prob": 0.07084213942289352,
+   "compression_ratio": 1.118811881188119,
+   "n_segments": 2,
+   "audio_sec": 8.0,
+   "decode_sec": 0.97
+  },
+  {
+   "uuid": "8babce3b",
+   "speaker": "P4",
+   "languages": [
+    "Hindi"
+   ],
+   "route": "hi",
+   "transcription": "नमस्तक जी मैं नितिन पटेल बोल रहा हूँ मेरा राज्य शास्त्र विषय में पूर्व ग्रैजू तो आये और मैं महाराष्ट्र विधि मंडल के विधुवड़ी पक्ष का अगदन सन दो हजार चौदह से चौबीस तक का मैं अगदन कर रहा हूँ पीडित संशोधन कर रहा सेवन परसेंट सिमिलर सेवन परसेंट आया तो उसमें कम करने के लिए मुझे कुछ उपाय सो जाए कि मैं क्या कर सकता हूँ जिस वजह से मेरे सिमिलरिटी कम हो और मुझे इसी समिशन में कोई दिक्कत न आए इसके लिए मुझे कुछ जानकरी है सहायता दे",
+   "avg_logprob": -0.11846068617732244,
+   "min_logprob": -0.1469791539510091,
+   "no_speech_prob": 3.2874795333898144e-11,
+   "compression_ratio": 2.341115702479339,
+   "n_segments": 2,
+   "audio_sec": 52.3735,
+   "decode_sec": 17.14
+  },
+  {
+   "uuid": "8c41561b",
+   "speaker": "P20",
+   "languages": [
+    "Gujarati"
+   ],
+   "route": "gu",
+   "transcription": "નમસ્કાર્જી હું મારા દીકરાના આઇટી ગાંધીનગરમાં એડમિશન અંગે માહિતી મેળવ્યો છું પહેલીવા� સુંદા રહેતા વિદ્ધર્તિઓને મેડિકલ ઇમરજન્સી માટે કોઈ સંપર્ક નમવાર કોઈ સહાય આપવામાં આવે હોસ્ટેલની સુરક્ષા સમર્થિત નિયમ વિશે માહિતી આપશો",
+   "avg_logprob": -0.028822636582949073,
+   "min_logprob": -0.03488056765662299,
+   "no_speech_prob": 8.147656754160595e-07,
+   "compression_ratio": 1.5612626862331134,
+   "n_segments": 3,
+   "audio_sec": 64.3335,
+   "decode_sec": 9.55
+  },
+  {
+   "uuid": "8c459ce2",
+   "speaker": "P21",
+   "languages": [
+    "English",
+    "Hindi"
+   ],
+   "route": "hi",
+   "transcription": "बड़ा मिल सकता है",
+   "avg_logprob": -0.349809651573499,
+   "min_logprob": -0.349809651573499,
+   "no_speech_prob": 4.244760738649628e-13,
+   "compression_ratio": 0.875,
+   "n_segments": 1,
+   "audio_sec": 7.2735,
+   "decode_sec": 2.61
+  },
+  {
+   "uuid": "8cbfedb0",
+   "speaker": "P5",
+   "languages": [
+    "Hindi"
+   ],
+   "route": "hi",
+   "transcription": "नमस्ती सर, मुझे आपके कॉलेज में एडमिशन करवाना था, तो डॉक्यूमेंट डॉक्यूमेंट वेरीफिकेशन के वक्त हमें कौनसे-कौनसे डॉक्यूमेंट साथ लेना चाहिए और वो फीस्ट्रक्चर जो है उसके हिसाब से जो हमें लोन लेना है वो वो भी उसी के सा� हमारे फाइनेंशियल कंडीशन थोड़ी वीक है तो मुझे कौनसे कौनसे एजुकेशन लोन मिलेंगे और वो लोन जो है वो लोन हमें कॉलेज की कैंपस में से मिलेंगे या बाहर के प्राइवेट बैंकों में से लेना पड़ेगा यह बताइए और डॉक्यूमेंट वेरिफिके और कौन से कौन से डॉक्यूमेंट लगेंगे हमें कृपया बताइए",
+   "avg_logprob": -0.046155741294598075,
+   "min_logprob": -0.05145493083530002,
+   "no_speech_prob": 9.825319728246537e-09,
+   "compression_ratio": 2.0607184987492366,
+   "n_segments": 3,
+   "audio_sec": 64.3535,
+   "decode_sec": 22.75
+  },
+  {
+   "uuid": "8d3aed99",
+   "speaker": "P19",
+   "languages": [
+    "Hindi"
+   ],
+   "route": "hi",
+   "transcription": "हेलो आईडीजी मेरा कोर्ट रजिस्ट्रेशन हो गया लेकिन आरपी पोर्टल पर सब्जेक्ट नहीं हो रहा है प्लीज चेक कर",
+   "avg_logprob": -0.09476889043210823,
+   "min_logprob": -0.09476889043210823,
+   "no_speech_prob": 1.3340067717138027e-08,
+   "compression_ratio": 1.7876712328767124,
+   "n_segments": 1,
+   "audio_sec": 10.0,
+   "decode_sec": 5.4
+  },
+  {
+   "uuid": "8da01097",
+   "speaker": "P9",
+   "languages": [
+    "English",
+    "Hindi"
+   ],
+   "route": "hi",
+   "transcription": "हैलो देयर एवं किसी व विद वाइल एक्सप्रेस द यूनिवर्सिटी डिजिटल्स लाइब्रेरी आई कैल लॉगिन टू द स्टूडेंट पोर्टल सक्सेसफुली बट वैन इन ऑनलाइन रिसर्च पेपर इन द वेबसाइट आक्स मी टू साइनियन इन आप्टे न्यूँ � डिजिटल एक्सेस अपाउंट एडिशन एक्टिवेशन प्रोजेक्ट प्रोजेक्ट क्या इसके लिए लाइब्रेरी स्टाफ से कॉन्टेक्ट करना होगा या आईटी सपोर्ट टीम मेरी सेटिंग सेक कर सकती है प्लीज़ गाइड मी आउट फॉलो टू डिस्टोर एक्सेस",
+   "avg_logprob": -0.2021160961820015,
+   "min_logprob": -0.2295251613193088,
+   "no_speech_prob": 1.731049704349185e-12,
+   "compression_ratio": 2.2574971708789136,
+   "n_segments": 2,
+   "audio_sec": 53.4335,
+   "decode_sec": 16.9
+  },
+  {
+   "uuid": "922fe15a",
+   "speaker": "P5",
+   "languages": [
+    "Hindi"
+   ],
+   "route": "hi",
+   "transcription": "नमस्ते सर मैं जलगाव जिले से अम्मल नेरतालु के से जाड़ी घाव से बात कर रही हूँ हमारे गाँव में लगभग पंद्रह से बीस दिनों से पानी नहीं आ रहा है हमने नगर पालिके में बहुत सारे कंप्लेंट भी दर्ज करी है लेकिन कहीं से भी पानी उपलब्ध न उसे नोटिस जमा कर लिए उन लोगों को बोला है कि हमें हमारे कोल में पानी नहीं आ रहा है बहुत सारे तकलीफ है हमें उठाने पड़ रही है तो आप जल्द से जल्द हमें पानी भेजे वो बार बार एक बार बता रहे कि हम लोग कोशिश कर रहे वो पाइप लाइन टू� हमारी सहायता करें हमारी जो तकनीक है उसका निकाले",
+   "avg_logprob": -0.06801268623163607,
+   "min_logprob": -0.09125135540962219,
+   "no_speech_prob": 5.837885144818264e-07,
+   "compression_ratio": 2.0703039836624306,
+   "n_segments": 3,
+   "audio_sec": 68.0135,
+   "decode_sec": 20.97
+  },
+  {
+   "uuid": "939b462d",
+   "speaker": "P13",
+   "languages": [
+    "Gujarati"
+   ],
+   "route": "gu",
+   "transcription": "નમસ્કાર ડોક્યુમેન્ટ મેન્ડેટર છે કે ઓનલાઇન અપલોડ કરી શકાય",
+   "avg_logprob": -0.008158400705134546,
+   "min_logprob": -0.008158400705134546,
+   "no_speech_prob": 7.857616224349329e-10,
+   "compression_ratio": 1.52,
+   "n_segments": 1,
+   "audio_sec": 10.0004375,
+   "decode_sec": 2.89
+  },
+  {
+   "uuid": "944528c0",
+   "speaker": "P16",
+   "languages": [
+    "English"
+   ],
+   "route": "en",
+   "transcription": "Hello, IITGN HelpDisc. Internship Company is asking for a bonafide letter and NOC. Are both documents available through the students?",
+   "avg_logprob": -0.4540826350450516,
+   "min_logprob": -0.4540826350450516,
+   "no_speech_prob": 0.018204303458333015,
+   "compression_ratio": 1.1176470588235294,
+   "n_segments": 3,
+   "audio_sec": 9.0,
+   "decode_sec": 1.19
+  },
+  {
+   "uuid": "9479e1e6",
+   "speaker": "P2",
+   "languages": [
+    "English"
+   ],
+   "route": "en",
+   "transcription": "I wanted to contact with the student affairs because I have seen currently into the hostels that there is a lot of maze going on. I need to constantly shift from one hostel to the other hostel that has been creating some extra efforts and also the amount of material like the Merasama is like too much and I need to constantly shift that that is taking too much of effort. Either you can assign some people to us so that they will help us in shifting the places because in one semester this is the third time I am shifting my room and this is creating a lot of overhead and it's not seeming proper to me, particularly to me. So can you help me in guiding here so that the process is easy for this particular thing?",
+   "avg_logprob": -0.32141828344725415,
+   "min_logprob": -0.36639898067170923,
+   "no_speech_prob": 0.13576803397801188,
+   "compression_ratio": 1.5722141214300671,
+   "n_segments": 9,
+   "audio_sec": 68.8335,
+   "decode_sec": 3.91
+  },
+  {
+   "uuid": "951f58d0",
+   "speaker": "P2",
+   "languages": [
+    "English",
+    "Hindi"
+   ],
+   "route": "hi",
+   "transcription": "हैलो आई वोड लाइक टू रिक्वेस्ट मेंटेन शू एंड माई हॉस्टल्स मेकिंग लॉउड लॉउड नॉइस पास फ्यूडेज स्पेशल वेन आई यूज इट ऑन हाई यू स्पेट राइट राइट स्वीटिंग ऑफ इट बट लाइट स्वीटिंग ऑफ ऑगेन एं� नींद नहीं आ पा रही है अच्छे से और आपको तो पता ये कि उन्हें कितनी जरूरी होती है प्लीज़ टेल मी ले आउ टू समिट पर्टिकुलर फॉर्म मेंटेनेंस रिक्वेस्ट अल्सो एक डिसीजन अर्जेंट रिक्वेस्ट बिकॉज प्रीवियस ली आई ऑल्सो कॉन कॉन्टैक्ट कर सकता हूँ इसके बारे मेरे को जानना था",
+   "avg_logprob": -0.161445084488236,
+   "min_logprob": -0.22474203745524088,
+   "no_speech_prob": 8.748802145704578e-11,
+   "compression_ratio": 2.0113752323508214,
+   "n_segments": 3,
+   "audio_sec": 67.7535,
+   "decode_sec": 22.39
+  },
+  {
+   "uuid": "956b8c0c",
+   "speaker": "P2",
+   "languages": [
+    "English"
+   ],
+   "route": "en",
+   "transcription": "During filling the enrollment details, I enter the graduation year, those are like 2027, but I mistakenly scrolled down so it became a little bit more difficult. I am at the time, I did not know this mistake happened and suddenly my information thinking I could read it, the information. As of now the website is mentioning the same information and one time enrollment and and I am not able to edit that.",
+   "avg_logprob": -0.4664079638302472,
+   "min_logprob": -0.4824703633785248,
+   "no_speech_prob": 0.3334628107647101,
+   "compression_ratio": 1.5102564102564102,
+   "n_segments": 6,
+   "audio_sec": 31.7335,
+   "decode_sec": 3.65
+  },
+  {
+   "uuid": "958ca9ba",
+   "speaker": "P16",
+   "languages": [
+    "English"
+   ],
+   "route": "en",
+   "transcription": "Hello IITG in help desk can undergraduate students apply for summer research internships with IIT Gandhi Nagar faculty.",
+   "avg_logprob": -0.6350600378853934,
+   "min_logprob": -0.6350600378853934,
+   "no_speech_prob": 0.09597371518611908,
+   "compression_ratio": 1.1442307692307692,
+   "n_segments": 2,
+   "audio_sec": 9.0,
+   "decode_sec": 1.08
+  },
+  {
+   "uuid": "969b6662",
+   "speaker": "P18",
+   "languages": [
+    "Gujarati"
+   ],
+   "route": "gu",
+   "transcription": "સમગ્ર માં બેક કોર્સ ઓફર એકનેક્સ્ટ એકેડેમી સુધી",
+   "avg_logprob": -0.06029094028472901,
+   "min_logprob": -0.060290940284729005,
+   "no_speech_prob": 1.003494890028378e-05,
+   "compression_ratio": 1.441860465116279,
+   "n_segments": 1,
+   "audio_sec": 10.0,
+   "decode_sec": 2.31
+  },
+  {
+   "uuid": "9a6ec2f5",
+   "speaker": "P22",
+   "languages": [
+    "English"
+   ],
+   "route": "en",
+   "transcription": "Good afternoon. I am a BTEC fresher student staying in Firpil hostel. I wanted to inquire about the procedure for changing rooms. Currently I am in a triple sharing room but my room mate and I have completely different schedules. He stays very late with the lights on which is severely affecting my sleep and my health. I have tried talking to him but it hasn't I spoke to my student guide and they advised me to contact the hostel office. Are there any vacant triple rooms or perhaps another room where someone is looking to change their roommates? Do I need to write a formal application to the warden or is there an online form for room reallocation request?",
+   "avg_logprob": -0.2614894911353323,
+   "min_logprob": -0.28678685426712036,
+   "no_speech_prob": 0.5494793142591204,
+   "compression_ratio": 1.5639167613737546,
+   "n_segments": 7,
+   "audio_sec": 53.2535,
+   "decode_sec": 3.17
+  },
+  {
+   "uuid": "9ad620ab",
+   "speaker": "P7",
+   "languages": [
+    "English"
+   ],
+   "route": "en",
+   "transcription": "Hello Sir, I am looking for the admission information process in the IIT Ghandinagar for my daughter. She wants to study engineering and we want her to have a safe and a good living environment along with her studies. I would ask about the girls hostel facilities in particular. Is there a separate hostel for students? What safety arrangements have been made in the hostel? And what are the rules related to Australia? What is the like? What is the night time? Close time of Australia for girls. Is there any rules relating to night time commuting? In addition, does the Australia have a world and a response to the officer? I will be well to contact if necessary. We also want to know if parents can come to campus to visit their child or if they have to get a permission first. order the process, please give me necessary information so that I will check it with and then decide. So please let us know these things so that we can properly guide our daughter for admission.",
+   "avg_logprob": -0.3323737845144467,
+   "min_logprob": -0.4118085013194518,
+   "no_speech_prob": 0.4933348613626817,
+   "compression_ratio": 1.618411303689231,
+   "n_segments": 17,
+   "audio_sec": 65.4135,
+   "decode_sec": 4.89
+  },
+  {
+   "uuid": "9cd6c852",
+   "speaker": "P21",
+   "languages": [
+    "Hindi"
+   ],
+   "route": "hi",
+   "transcription": "हेलो आईटीजी एंड हेल्प डेस्क मेरे को देखते हैं कि मेरी दोस्त उसके साथ कुछ लोग रेसमेंट कर रहे तो मेरे को इसके रिकॉर्निंग कंप्लेंट करने थी तो उसके कहा कंप्लेंट करने की रहेगी और आगे फॉर द प्रोसेस क्या होगी एंड लाइक इट्स वे",
+   "avg_logprob": -0.08889612303839789,
+   "min_logprob": -0.08889612303839789,
+   "no_speech_prob": 1.517373032777769e-10,
+   "compression_ratio": 2.45021645021645,
+   "n_segments": 1,
+   "audio_sec": 21.2735,
+   "decode_sec": 9.14
+  },
+  {
+   "uuid": "9d9262af",
+   "speaker": "P7",
+   "languages": [
+    "Hindi"
+   ],
+   "route": "hi",
+   "transcription": "इन्फॉर्मेशन अबाउट द डॉक्यूमेंट्स एडमिशन इन आईटी गांधी लगाई इस गोइंग टू टेक द इंट्रांस एग्जाम द इंड वॉन्ड टू हैव पेपर रेडी रिक्वायर्ड और स्टूडेंट बिलॉन्ग रिजर्व कैटेगरी सर्टिफिकेट फॉर्मैट सबमिट मेडिकल सर्टिफिकेट पासपोर्ट डिक्लेरेशन लेट मी नो डॉक्यूमेंट अपलोड ऑनलाइन और ये रिपोर्टिंग टू कैंपस तो देर वी नो ट्रवल लेट इस डॉक्यूमेंट करेक्ट",
+   "avg_logprob": -0.19472186871758046,
+   "min_logprob": -0.28789605085666364,
+   "no_speech_prob": 4.750745622994028e-12,
+   "compression_ratio": 1.7459261664197083,
+   "n_segments": 3,
+   "audio_sec": 67.6335,
+   "decode_sec": 19.22
+  },
+  {
+   "uuid": "9e8fc965",
+   "speaker": "P18",
+   "languages": [
+    "Gujarati"
+   ],
+   "route": "gu",
+   "transcription": "હાલો આઇડિજન હેલ્બેસમેસ્માં ફૂડ ક્વોલિટી લાસ ફ્યુ વ્યુકથી પૂર છે ફોર્મલ ફીડબેર્ડ કમ�",
+   "avg_logprob": -0.04574278036753336,
+   "min_logprob": -0.04574278036753337,
+   "no_speech_prob": 2.466721826799301e-10,
+   "compression_ratio": 1.6666666666666667,
+   "n_segments": 1,
+   "audio_sec": 12.0,
+   "decode_sec": 4.37
+  },
+  {
+   "uuid": "9ee3ac2a",
+   "speaker": "P16",
+   "languages": [
+    "English"
+   ],
+   "route": "en",
+   "transcription": "Hello, IITG in Helpdesk. I need access to a general article that is behind a publisher paywall. Does the Institute Library provide remote access?",
+   "avg_logprob": -0.44795167838272293,
+   "min_logprob": -0.44795167838272293,
+   "no_speech_prob": 0.14063405990600586,
+   "compression_ratio": 1.1983471074380165,
+   "n_segments": 2,
+   "audio_sec": 10.0,
+   "decode_sec": 1.25
+  },
+  {
+   "uuid": "a1384ddc",
+   "speaker": "P20",
+   "languages": [
+    "Gujarati"
+   ],
+   "route": "gu",
+   "transcription": "નમસ્કાર મારે સંસ્થાના હોસ્તા માટે મંજૂરી લઈ પડે છે માતાપી તે સમયે સમય હોય છે તો તે સુર� દિકરીને મળવા આવે ત્યારે કોઈ નક્કી કરેલી મુલાકાતની પ્રક્રિયા હોય છે અમે બીજા શહેરમાંથ� કરી",
+   "avg_logprob": -0.03572762047562147,
+   "min_logprob": -0.07271679964932529,
+   "no_speech_prob": 3.483823043613314e-07,
+   "compression_ratio": 1.338156230234029,
+   "n_segments": 3,
+   "audio_sec": 61.2735,
+   "decode_sec": 7.95
+  },
+  {
+   "uuid": "a18ff6b6",
+   "speaker": "P18",
+   "languages": [
+    "English"
+   ],
+   "route": "en",
+   "transcription": "Hello I it is Angelidus, can I audit an additional elective without it affecting my semester grade point?",
+   "avg_logprob": -0.6815517246723175,
+   "min_logprob": -0.6815517246723175,
+   "no_speech_prob": 0.20927521586418152,
+   "compression_ratio": 1.1538461538461537,
+   "n_segments": 2,
+   "audio_sec": 9.0,
+   "decode_sec": 0.81
+  },
+  {
+   "uuid": "a33dc7af",
+   "speaker": "P7",
+   "languages": [
+    "English"
+   ],
+   "route": "en",
+   "transcription": "Hello sir, I want to ask something about my son's hostel and food arrangements If he gets admission in the IITIk on the nether He will study away from home for the first time So it is important for us to know that the Bagan kids of students living in the hostel. How was the facility and how was the arrangement? So please give me about About the information about this",
+   "avg_logprob": -0.4523225138061924,
+   "min_logprob": -0.4523225138061925,
+   "no_speech_prob": 0.23477454483509064,
+   "compression_ratio": 1.618421052631579,
+   "n_segments": 7,
+   "audio_sec": 28.2535,
+   "decode_sec": 2.06
+  },
+  {
+   "uuid": "a65e688e",
+   "speaker": "P7",
+   "languages": [
+    "English"
+   ],
+   "route": "en",
+   "transcription": "Hello Sir, I needed some information about admission in the IIT Gandhi Nagar because my son have to take admission in the IIT Gandhi Nagar. So we are inquired here for the whole admission process and my son is currently studying in the class 12th and he wants to pursue engineering. So we want to know about what is the whole process to get admission here and what exams do I have to give the JWL remains first and then pass JWL advance exam. Also please provide the application dates and counseling procedure. We also have to understand which document should be prepared for the admission. If the complete information is available or any official website then please kindly provide us the name or link of that website so that we can check all these necessary things according to us and so that we can prepare in this process so that we can ready for this whole process. Thank you sir.",
+   "avg_logprob": -0.3110361253471343,
+   "min_logprob": -0.3447971276584126,
+   "no_speech_prob": 0.36462241812394214,
+   "compression_ratio": 1.638760254980991,
+   "n_segments": 13,
+   "audio_sec": 64.9135,
+   "decode_sec": 4.2
+  },
+  {
+   "uuid": "ab4220a7",
+   "speaker": "P20",
+   "languages": [
+    "Gujarati"
+   ],
+   "route": "gu",
+   "transcription": "નમસ્કાર મારા દીકરાને આઇટી ગાંધીનગરમાં એડમિશન મળવાની શક્યતા છે એટલે હોસ્ટેલ ફાળવણી વિ જો રૂમ ફાળવાઈ જાય તો શું વિદ્યાર્થી નકી કરેલી રિપોટિંગ તારીખ પહેલા હોશલમાં આવી શકે છ�",
+   "avg_logprob": -0.014763010565969138,
+   "min_logprob": -0.015204679701063368,
+   "no_speech_prob": 3.284440286410728e-08,
+   "compression_ratio": 1.6418067226890756,
+   "n_segments": 2,
+   "audio_sec": 59.4935,
+   "decode_sec": 8.32
+  },
+  {
+   "uuid": "abae4f43",
+   "speaker": "P5",
+   "languages": [
+    "Hindi"
+   ],
+   "route": "hi",
+   "transcription": "हैलो नमस्ते सर मेरी गोबली में अड़िस्टो मार्किंग आई है तो अब मुझे आपके कॉलेज में एडमिशन लेना है तो मेरी फाइनेंशियल कंडीशन इतनी अच्छी नहीं है तो प्लीज़ आप हमें बताएंगे कि आपके यहाँ पे एडमिशन लेने पे कौनसी कौनसी अपना जो बीटेक का जो कोर्स है कोर्स कोर्स कितने मतलब चार साल के कितने फीस लगेगी हॉस्टल की मैच की और अपने कॉलेज की ड्यूशन फी मिलाके और उसके हिसाब से हमें कितना एजुकेशन लोन मिल सकता है कृप्या आप हमें बताए और हमें",
+   "avg_logprob": -0.07145720761581076,
+   "min_logprob": -0.07331251462300618,
+   "no_speech_prob": 9.073952960542142e-11,
+   "compression_ratio": 2.3914531414531415,
+   "n_segments": 2,
+   "audio_sec": 54.9535,
+   "decode_sec": 17.02
+  },
+  {
+   "uuid": "ac619e63",
+   "speaker": "P22",
+   "languages": [
+    "English"
+   ],
+   "route": "en",
+   "transcription": "Hello, is it IT sale? I'm a newly admitted PhD student and I just got my hostel room yesterday. I'm trying to connect my personal laptop to the campus Wi-Fi But I'm facing some issues. I can see the IT agent secure and a Jerome networks, but when I enter my LDA the app credentials. It keeps saying authentication failed. I have already reset my password once through the portal and my email is working fine on my phone. So the password is correct. I am using a Mac. Are there any specific security certificates that I need to download and install first?",
+   "avg_logprob": -0.44819377057995186,
+   "min_logprob": -0.4494165366804096,
+   "no_speech_prob": 0.6331392696925572,
+   "compression_ratio": 1.4595295840748381,
+   "n_segments": 7,
+   "audio_sec": 46.1935,
+   "decode_sec": 2.95
+  },
+  {
+   "uuid": "acdabacc",
+   "speaker": "P14",
+   "languages": [
+    "Gujarati"
+   ],
+   "route": "gu",
+   "transcription": "હેલોઆઇટીજીને મેડિકલ હેલ્થ ઇન્શ્યોરિંગ કેશલસ કાર્ડ એશની કાઠવો ક્લીમરીમાં સબમે કરવાન�",
+   "avg_logprob": -0.03640860663519965,
+   "min_logprob": -0.03640860663519965,
+   "no_speech_prob": 5.494139587725044e-10,
+   "compression_ratio": 1.6474820143884892,
+   "n_segments": 1,
+   "audio_sec": 10.0001875,
+   "decode_sec": 3.57
+  },
+  {
+   "uuid": "ad64b56c",
+   "speaker": "P22",
+   "languages": [
+    "English"
+   ],
+   "route": "en",
+   "transcription": "Hello, I'm a parent of a first-year student. My son lost his mobile phone yesterday somewhere in the academic block. The phone has all his authentication apps and all the two-factor authentication for IITG and portals. Because of this, he cannot log into his student portal to check his timetable or submit assignments. Is there a way the IT cell can temporarily disable the two-factor authentication for his account? Or maybe if you could generate some bypass back code or something like a temporary password so that he can use it on his laptop till we arrange a new phone for him? He is quite stressed about missing his academic updates. Please let me know what verifying details you need from him.",
+   "avg_logprob": -0.1988555851487481,
+   "min_logprob": -0.3203278599040849,
+   "no_speech_prob": 0.21453910693526268,
+   "compression_ratio": 1.424350175967823,
+   "n_segments": 8,
+   "audio_sec": 61.4735,
+   "decode_sec": 3.7
+  },
+  {
+   "uuid": "addc3e13",
+   "speaker": "P16",
+   "languages": [
+    "English"
+   ],
+   "route": "en",
+   "transcription": "Hello, IITGN help this. My name is spelled differently on different student ID and academic records. What is the correction procedure?",
+   "avg_logprob": -0.4929954767227173,
+   "min_logprob": -0.49299547672271726,
+   "no_speech_prob": 0.058580055832862854,
+   "compression_ratio": 1.1754385964912282,
+   "n_segments": 3,
+   "audio_sec": 9.0,
+   "decode_sec": 1.08
+  },
+  {
+   "uuid": "b1a6b1f1",
+   "speaker": "P3",
+   "languages": [
+    "Hindi"
+   ],
+   "route": "hi",
+   "transcription": "हैलो हैलो सर हम तुमसे एक तकराद करना चाहते हैं हमारे ऑस्टल का रूम है उसके बाद रोज ग्यारह बजे दरवाजा कड़कड़ा था है कोई भी मुझे हमको स्टडी करने में दिक्कत आती है लाइट चल जाती है और हमारा खिलकी में से दरवाजे आवाज आती है और हमारा बैठक एक पेड़ टूट गया है वो गिर सकता है कभी भी हमको पढ़ाई करने में डिस्ट्रिक्ट पौधा है फिर आप हमारी एक समस्या है म्यास में जब अच्छा नहीं है घोटिया",
+   "avg_logprob": -0.12411537556227972,
+   "min_logprob": -0.14925844274776082,
+   "no_speech_prob": 1.1134762903375339e-10,
+   "compression_ratio": 2.154525838983686,
+   "n_segments": 4,
+   "audio_sec": 61.12,
+   "decode_sec": 21.02
+  },
+  {
+   "uuid": "b20dcb6e",
+   "speaker": "P14",
+   "languages": [
+    "Hindi"
+   ],
+   "route": "hi",
+   "transcription": "आपको हेलो आईटीजीएम हेल्प डेस्क. ओबीसीएनसीएल सर्टिफिकेट वैलिटीटी डेट कट ऑफ डेट पाचशी नहीं चलेगी ये रिन्यू करवाना पड़ेगा. प्रेपर ऑडियम सपोर्ट आपको.",
+   "avg_logprob": -0.16904039500076648,
+   "min_logprob": -0.16904039500076648,
+   "no_speech_prob": 8.020385570961519e-13,
+   "compression_ratio": 1.9845360824742269,
+   "n_segments": 1,
+   "audio_sec": 12.0001875,
+   "decode_sec": 6.74
+  },
+  {
+   "uuid": "b24445a7",
+   "speaker": "P13",
+   "languages": [
+    "Gujarati"
+   ],
+   "route": "gu",
+   "transcription": "કુપિયા અર્જન્ટ સપોર્ટ આપો નમસ્કાર સ્પોર્ટ એડમિશન વિલીઝ થયો છે કે નહીં",
+   "avg_logprob": -0.021988261102156324,
+   "min_logprob": -0.021988261102156324,
+   "no_speech_prob": 8.62398721324098e-08,
+   "compression_ratio": 1.5546218487394958,
+   "n_segments": 1,
+   "audio_sec": 9.000375,
+   "decode_sec": 2.82
+  },
+  {
+   "uuid": "b41b3143",
+   "speaker": "P13",
+   "languages": [
+    "Gujarati"
+   ],
+   "route": "gu",
+   "transcription": "સપોર્ટ આપો નમસ્કાર આઇએટ ગાંધીનગંબ વોઈસ હેલ્પ એડમિશન ઓફિસ ડિરેક્ટ કોન્ટેક્ટ નંબર શું �",
+   "avg_logprob": -0.02833959870868259,
+   "min_logprob": -0.02833959870868259,
+   "no_speech_prob": 1.0507014813754267e-08,
+   "compression_ratio": 1.7218045112781954,
+   "n_segments": 1,
+   "audio_sec": 10.0004375,
+   "decode_sec": 4.15
+  },
+  {
+   "uuid": "b572f3d0",
+   "speaker": "P19",
+   "languages": [
+    "English"
+   ],
+   "route": "en",
+   "transcription": "",
+   "avg_logprob": -5.0,
+   "min_logprob": -5.0,
+   "no_speech_prob": 1.0,
+   "compression_ratio": 0.0,
+   "n_segments": 0,
+   "audio_sec": 10.0,
+   "decode_sec": 1.19
+  },
+  {
+   "uuid": "b758588d",
+   "speaker": "P20",
+   "languages": [
+    "Gujarati"
+   ],
+   "route": "gu",
+   "transcription": "નમસ્કર સાહેબ હું મારા દીકરાના આભ્યા સાથે હોસ્ટેલ અને જવાના ખર્ચની માહિતી મેળવવા માંગુ અલગ હોય તો તે દર મહિને ભરવાની હોય છે કે સમિસ્ટાર પ્રવાહને બીજી સુવિધાવા માટે કોઈ વધારા� અભ્યાસ અને રહેવાના ખર્ચનું યોગ્ય આયોજન કરવા મદાત મળશે",
+   "avg_logprob": -0.018992618857573928,
+   "min_logprob": -0.02594896952311198,
+   "no_speech_prob": 2.1523094751290293e-06,
+   "compression_ratio": 1.6250680598677458,
+   "n_segments": 3,
+   "audio_sec": 64.5735,
+   "decode_sec": 10.91
+  },
+  {
+   "uuid": "b7e99aca",
+   "speaker": "P7",
+   "languages": [
+    "English",
+    "Hindi"
+   ],
+   "route": "hi",
+   "transcription": "नमस्कार लोकेशन डिफिकल्टी मैने कार्ड को मल्टीपल टाइम्स ट्राई किए लेकिन प्लीज टेल मी वेदर कार्ड एक्टिविटेड रिक्वेस्ट रिप्लेसमेंट लाइट टू नो प्रोसीजर फॉर गेटिंग न्यू गार्ड इन्फॉर्म मी अबाउट द ऑफिस टाइमिंग � आई यूज द कार्ड रेगुलरली फॉर कैंपस एक्सेस वेरी अर्जेंट थैंक यू सर थैंक यू सो मच",
+   "avg_logprob": -0.15153434182191564,
+   "min_logprob": -0.5176840960979462,
+   "no_speech_prob": 1.762782583242482e-09,
+   "compression_ratio": 1.5157863901018924,
+   "n_segments": 3,
+   "audio_sec": 65.9735,
+   "decode_sec": 15.35
+  },
+  {
+   "uuid": "b82c9074",
+   "speaker": "P21",
+   "languages": [
+    "English"
+   ],
+   "route": "en",
+   "transcription": "Hello, IITGN help this. I will have to change my room partner and you both have to change the look partner. Hello, IITGN help this. My table is broken. My table is broken.",
+   "avg_logprob": -0.3895012788605271,
+   "min_logprob": -0.38950127886052716,
+   "no_speech_prob": 0.1874145120382309,
+   "compression_ratio": 1.5981308411214954,
+   "n_segments": 5,
+   "audio_sec": 16.5135,
+   "decode_sec": 1.5
+  },
+  {
+   "uuid": "badcc32a",
+   "speaker": "P19",
+   "languages": [
+    "English",
+    "Hindi"
+   ],
+   "route": "hi",
+   "transcription": "ब्रिक्स हेलो आईटीजीएन हेल्पस माइंस्टीट्यूट ईमेल इन बॉक्स इस फुल एंड इंपॉर्टेंट फैगल्टी ईमेल्स बाउंस बैक स्टोरेज कैसे क्लियर करे",
+   "avg_logprob": -0.17329547487456226,
+   "min_logprob": -0.17329547487456223,
+   "no_speech_prob": 9.688544237718144e-12,
+   "compression_ratio": 2.029585798816568,
+   "n_segments": 1,
+   "audio_sec": 13.0,
+   "decode_sec": 6.31
+  },
+  {
+   "uuid": "bc8f7d29",
+   "speaker": "P13",
+   "languages": [
+    "Hindi",
+    "Gujarati"
+   ],
+   "route": "gu",
+   "transcription": "નમસ્કાર હેલ્પડેસ્ટ એક્ઝામ માં થશે કે યુઝ્યુઅલ જાયેગા કુપિયા એર્જન્સપોર્ટ આપો",
+   "avg_logprob": -0.029359781061825543,
+   "min_logprob": -0.029359781061825546,
+   "no_speech_prob": 9.348043931822758e-06,
+   "compression_ratio": 1.625,
+   "n_segments": 1,
+   "audio_sec": 11.0004375,
+   "decode_sec": 3.63
+  },
+  {
+   "uuid": "be6033f7",
+   "speaker": "P21",
+   "languages": [
+    "Hindi"
+   ],
+   "route": "hi",
+   "transcription": "हेलो एटीजी एन हेल्प डेस्क मेरे कुछ बेड पर एकदम मिला है वो बेड से बहुत बडा है मेरे को छोटा एकदम मिल जाएगा तो सी जाएगा एंड मेरे मेरे यहाँ वॉल पर कुछ किसी ने पेंटिंग कर रखी है तो उसका क्या हो सकता है एक बार आप चेक कर लेना",
+   "avg_logprob": -0.10838456739224661,
+   "min_logprob": -0.10838456739224661,
+   "no_speech_prob": 2.759161510379471e-10,
+   "compression_ratio": 2.4210526315789473,
+   "n_segments": 1,
+   "audio_sec": 18.3135,
+   "decode_sec": 11.2
+  },
+  {
+   "uuid": "bf5d2fdf",
+   "speaker": "P22",
+   "languages": [
+    "English"
+   ],
+   "route": "en",
+   "transcription": "Hi, I'm an Mtech first year student at IIT Ghandi Naur. I am calling to inquire about the branch and specializations for policies. I am currently enrolled in the Civil Engineering Department under the structural engineering specialization. But after attending the first semester, I am highly interested in shifting my focus towards the water resources and environmental engineering specialization. I have maintained a CPA of 9.2 in my first semester. I have read the student manual, but it mostly talks about BTEC branch changes. I wanted to know if MTEX students are allowed to change their specialization within the same department. If yes, what is the exact procedure? Do I need to get a no objection certificate from my current faculty advisor and the HOD? Furthermore, if the changes are proved, will my fellowship be affected in any way and will the credits I earned in the first semester for my mandatory structural courses become as open electives please guide me on the paperwork required.",
+   "avg_logprob": -0.3305267098833687,
+   "min_logprob": -0.4695336553785536,
+   "no_speech_prob": 0.32020889923853035,
+   "compression_ratio": 1.5558709608245214,
+   "n_segments": 17,
+   "audio_sec": 65.1535,
+   "decode_sec": 6.25
+  },
+  {
+   "uuid": "bf7b539b",
+   "speaker": "P19",
+   "languages": [
+    "English",
+    "Hindi"
+   ],
+   "route": "hi",
+   "transcription": "हेलो डिजन हेल्प डेस्क माय पैरेंट्स विरिष्टेयर कैंपस फॉर टू नाइट गेस्ट कमेटिशन की अवेलेबिलिटी और चार्ज कहा चेक कर सकते",
+   "avg_logprob": -0.192692949087359,
+   "min_logprob": -0.192692949087359,
+   "no_speech_prob": 2.542152415224014e-13,
+   "compression_ratio": 1.8848484848484848,
+   "n_segments": 1,
+   "audio_sec": 10.0,
+   "decode_sec": 6.79
+  },
+  {
+   "uuid": "c04a96c4",
+   "speaker": "P13",
+   "languages": [
+    "Gujarati"
+   ],
+   "route": "gu",
+   "transcription": "નમસ્કાર ફોર્મ કયું હતું રિફ્લેક્ટ",
+   "avg_logprob": -0.028394885826855898,
+   "min_logprob": -0.028394885826855898,
+   "no_speech_prob": 3.168901807626412e-10,
+   "compression_ratio": 1.2133333333333334,
+   "n_segments": 1,
+   "audio_sec": 11.0004375,
+   "decode_sec": 2.49
+  },
+  {
+   "uuid": "c07a30f2",
+   "speaker": "P13",
+   "languages": [
+    "Gujarati"
+   ],
+   "route": "gu",
+   "transcription": "નમસ્કાર હોસ્ટલ કોયડો લાઇટ ફ્લીકરિંગ થઈ રહી છે ઇલેક્ટેશિયન ને મોકલી",
+   "avg_logprob": -0.027143575545758178,
+   "min_logprob": -0.027143575545758178,
+   "no_speech_prob": 3.034868132090196e-05,
+   "compression_ratio": 1.5478260869565217,
+   "n_segments": 1,
+   "audio_sec": 8.000375,
+   "decode_sec": 6.71
+  },
+  {
+   "uuid": "c0e3befd",
+   "speaker": "P9",
+   "languages": [
+    "English",
+    "Hindi"
+   ],
+   "route": "hi",
+   "transcription": "हैलो आई एम लुकिंग फॉर इन्फॉर्मेशन अबार्ड बोर्डिंग इक्विपमेंट्स फॉर एंड एकेडमिक प्रोजेक्ट में टीम इस वर्किंग ऑन ऑफ प्रोटोटेक बी नीड अफ यू बेसिक इलेक्ट्रॉनिक कंपोनेंट्स एंड टेस्टिंग टूल्स फॉर � क्यूमेंट अवेलेबल थ्रू लबलेटरी और टेक्निकल का क्लब और अदर कैपस फैसिलिटी. आई वुल्ड ऑलसो लाइक टू नू इफ इन इफ इन इफ यू प्रूबल फ्रॉव प्रॉब्लेट सुपरवाइजर बिफॉर बोवर्डिंग एनीथिक इक्यूमेंट इशू",
+   "avg_logprob": -0.210615178409505,
+   "min_logprob": -0.28600992838541667,
+   "no_speech_prob": 1.1029858938086529e-12,
+   "compression_ratio": 2.255656108597285,
+   "n_segments": 2,
+   "audio_sec": 58.2335,
+   "decode_sec": 21.07
+  },
+  {
+   "uuid": "c2b6d2c5",
+   "speaker": "P7",
+   "languages": [
+    "English"
+   ],
+   "route": "en",
+   "transcription": "Hello sir, good morning. I would like to know about the admission process for the engineering course. I have completed my 12th grade in science and I want to understand which documents are required for admission and should I submit my original marksheet, transfer certificate and other gun or other photocopies are needed or is it sufficient? Also can I complete? So I can complete the application form online or do I need to visit the college office? I would also like to confirm the last date of course submitting the application. Could you please explain the complete process and let me know if there is any application fee? Thank you sir. Thank you for your help.",
+   "avg_logprob": -0.32958379737874016,
+   "min_logprob": -0.3363498249431936,
+   "no_speech_prob": 0.2537421494722366,
+   "compression_ratio": 1.6007639419404125,
+   "n_segments": 10,
+   "audio_sec": 52.9735,
+   "decode_sec": 3.06
+  },
+  {
+   "uuid": "c3fe0183",
+   "speaker": "P8",
+   "languages": [
+    "Hindi"
+   ],
+   "route": "hi",
+   "transcription": "नमस्कार, मैं अपने बेटे के संभावित एडमिशन और पढ़ाई की खुल खर्च के बारे में जान लेना चाहता हूँ. हम एक मध्यम परिवार से है इसलिए मेरे बेटे का एडमिशन अपने आईआईटी गांधीनगर में हुआ अगर हुआ तो उसके लिए कितनी फीस लग स ऑस्टल की और खाने पीने का खर्च समझने के लिए शिशुरुति के अत्र विद्यार्थी है विद्यार्थी के लिए कोई आवेदन करना पड़ता है तो क्या शुरुआत में ही वो आवेदन करना चाहिए हमें यह भी जानना चाहता है फीस जमा करने की अंतिम तारीख से कहा है भुगतान किस पर अध्यम से किया जाता है यदि फी कृपया करके इसके बारे में हमें मार्गदर्शन करें",
+   "avg_logprob": -0.06577838151494245,
+   "min_logprob": -0.09131455801902934,
+   "no_speech_prob": 4.866453901636834e-10,
+   "compression_ratio": 1.8649585112938527,
+   "n_segments": 4,
+   "audio_sec": 95.4135,
+   "decode_sec": 24.18
+  },
+  {
+   "uuid": "c521bf2d",
+   "speaker": "P18",
+   "languages": [
+    "Hindi"
+   ],
+   "route": "hi",
+   "transcription": "हेलो आईटीजी एंड हेल्प डेस्क. मिड से मिस्टर एग्जाम का टाइम टेबल रिलीज हो गया है क्या. मूडल पर अभी तक अपडेट नहीं दिखा रहा है कृपया मदद.",
+   "avg_logprob": -0.08123623972682104,
+   "min_logprob": -0.08123623972682104,
+   "no_speech_prob": 1.313869429919734e-10,
+   "compression_ratio": 1.9261363636363635,
+   "n_segments": 1,
+   "audio_sec": 10.0,
+   "decode_sec": 5.88
+  },
+  {
+   "uuid": "c56811cd",
+   "speaker": "P22",
+   "languages": [
+    "English"
+   ],
+   "route": "en",
+   "transcription": "Hello. Good morning. I am a PhD scholar residing in the married scholars apartments. I have a query regarding keeping a personal two-wheeler on campus. My wife recently got a job in Andabha's city and she needs a scooty to commute daily from the IITian campus to her office. I understand that undergraduates are generally not allowed to keep vehicles, but I believe that there is an exception for married scholars and staff. Could you please entire detail the entire process to get a vehicle pass? What documents do I need to submit to the security and hostel office? Do we need to show the vehicles RC book, insurance and my wise driving license. Also, is there a designated parking spot allotted to us near our block or is it just a general parking? And also how much is the sticker fee and how long does it take for the security desk at the main gate to issue the permanent RFID tag for the vehicle?",
+   "avg_logprob": -0.29469861487436555,
+   "min_logprob": -0.38354305922985077,
+   "no_speech_prob": 0.2831936763091521,
+   "compression_ratio": 1.5061657402082935,
+   "n_segments": 11,
+   "audio_sec": 75.7935,
+   "decode_sec": 4.71
+  },
+  {
+   "uuid": "c8b8d9c6",
+   "speaker": "P13",
+   "languages": [
+    "Gujarati"
+   ],
+   "route": "gu",
+   "transcription": "સપોર્ટ આપો નમસ્કાર હોય સ્ટુડન્ટ માટે એડમિશન એપ્લિકેશન ફોર્મ અને સ્કોલરશિપ શું છે",
+   "avg_logprob": -0.014658936536607317,
+   "min_logprob": -0.014658936536607315,
+   "no_speech_prob": 3.193775410181843e-05,
+   "compression_ratio": 1.728,
+   "n_segments": 1,
+   "audio_sec": 9.000375,
+   "decode_sec": 3.81
+  },
+  {
+   "uuid": "c8dcd19f",
+   "speaker": "P2",
+   "languages": [
+    "English"
+   ],
+   "route": "en",
+   "transcription": "I, I, I, hello ID support. So I wanted to contact with the, the CDS office here because currently I'm out of the campus and I'm able to access the CDS portal. Also, there are like, I, I also tried via ITG and VPN, but still the issue is continuing. Is there any other thing that should I I should try or it is only possible via the internet connection of ITGM because the upcoming registration for the company is been active and I am not able to register to that company. So what are the other possible ways through which I can do it is filling the form okay itself or like with the mail or it is necessary to be accessing the portal and doing this stuff. So kindly help me into this particular process so that I can register for the company.",
+   "avg_logprob": -0.2892118881271676,
+   "min_logprob": -0.3668723408179947,
+   "no_speech_prob": 0.3487063894669215,
+   "compression_ratio": 1.4923771615738728,
+   "n_segments": 9,
+   "audio_sec": 65.9735,
+   "decode_sec": 4.0
+  },
+  {
+   "uuid": "cd29a36f",
+   "speaker": "P22",
+   "languages": [
+    "English"
+   ],
+   "route": "en",
+   "transcription": "Hi, I am a final year student from Hikom hostel. I am calling regarding the Masribet policy. I have been selected for an off campus internship and I will not be on campus for the entire month of February. I know we need to apply for a Masribet in advance. I have already filled out the form on the MS portal but the status is showing as pending approval. You will also need to submit a hard copy of my lever approval from faculty advisor to the hostel office. Or is the online approval sufficient to stop the mischarges?",
+   "avg_logprob": -0.3414782427235293,
+   "min_logprob": -0.4757406653427496,
+   "no_speech_prob": 0.21575664449483156,
+   "compression_ratio": 1.4993245975152538,
+   "n_segments": 8,
+   "audio_sec": 43.6935,
+   "decode_sec": 2.63
+  },
+  {
+   "uuid": "d10bd1d0",
+   "speaker": "P18",
+   "languages": [
+    "English"
+   ],
+   "route": "en",
+   "transcription": "Hello IIT General Desk, I missed my end semester exam due to medical emergency, supplementary exam for application.",
+   "avg_logprob": -0.5608313987995016,
+   "min_logprob": -0.5608313987995016,
+   "no_speech_prob": 0.2311970442533493,
+   "compression_ratio": 1.15,
+   "n_segments": 2,
+   "audio_sec": 10.0,
+   "decode_sec": 0.85
+  },
+  {
+   "uuid": "d605e770",
+   "speaker": "P21",
+   "languages": [
+    "Hindi"
+   ],
+   "route": "hi",
+   "transcription": "हेलो आईटीजीएन हेल्थ देस्ट मेरे को पूछना था कि अभी बाथरूम में पानी नहीं आ रहा था बहुत टाइम से तो कब हो जाएगा एंड कितना टाइम देगा एक बार बचा दो",
+   "avg_logprob": -0.0808937901800329,
+   "min_logprob": -0.0808937901800329,
+   "no_speech_prob": 1.112482241744095e-11,
+   "compression_ratio": 2.016759776536313,
+   "n_segments": 1,
+   "audio_sec": 15.8535,
+   "decode_sec": 7.91
+  },
+  {
+   "uuid": "d9178793",
+   "speaker": "P16",
+   "languages": [
+    "English"
+   ],
+   "route": "en",
+   "transcription": "breaks. Hello IITGN help disc my student portal keeps logging me out every few minutes. Even after clearing the browser cache, can IIT investigate",
+   "avg_logprob": -0.4632054517666499,
+   "min_logprob": -0.4632054517666499,
+   "no_speech_prob": 0.08920371532440186,
+   "compression_ratio": 1.1967213114754098,
+   "n_segments": 2,
+   "audio_sec": 10.0,
+   "decode_sec": 1.38
+  },
+  {
+   "uuid": "d92c9227",
+   "speaker": "P1",
+   "languages": [
+    "Hindi"
+   ],
+   "route": "hi",
+   "transcription": "हैलो. स्टडी रूम से बात कर रहा था सिर लास्ट फाइव सिक्स डेज से हमको प्रॉब्लम आ रहा था स्टडी रूम में. एक्चुअली स्टडी रूम में सब लोग ज्यादा क्राउड भी होता है और प्रॉब्लम भी होते है तो उसके लिए ऐसा हो रहा है तो फोकस नहीं हो रहा है स्टडी पर तो मेरा मतलब एक ओपिनियन था मेरे हिसाब से बैच बना दो तो बैच के हिसाब से हम लोग बुकिं� और हम इश्यू भी फेस कर रहे हैं और बीच बीच में फिर हमारे इज्यू में बहुत थोड़ा प्रॉब्लम होता है इसलिए फिर उसके लिए आप क्या सपोर्ट कर पाएंगे वही आपसे जानना था सर बाकी कुछ नहीं हम तो हमारे हिसाब से तो ट्राई कर रहे हैं सर अं�",
+   "avg_logprob": -0.06718141686100342,
+   "min_logprob": -0.1168818473815918,
+   "no_speech_prob": 1.5329122138307838e-09,
+   "compression_ratio": 2.343653644670682,
+   "n_segments": 4,
+   "audio_sec": 65.2586875,
+   "decode_sec": 25.9
+  },
+  {
+   "uuid": "da4bd9ca",
+   "speaker": "P9",
+   "languages": [
+    "English",
+    "Hindi"
+   ],
+   "route": "hi",
+   "transcription": "एक्स्यूज़ मी. आई वुल लाइक टू रिपोर्ट अबाउट द फर्स्ट रविज़ ड्यूरिंग द पास्ट फीट लाई यूज़ ली डेटिव इन द अकेडमिक एरिया इन द रेजिडेंशल एरिया इन द शेडल टाइम ऑन सेवरल ऑपरेशन्स. दिस हैज मेड डिफिक आई विल ऑल सो लाइट टू नो वेदर द शटल शटल हैजर डिसेंडली चेंज और एफ देर ए टू रिसीप अपडेट अवार्ड डिलियन क्या ट्रांसफर्ट ऑफिस को मेल करना सही रहेगा या कैंपस है ब्लैक्स पर कंप्लेंट रजिस्टर कर सकते हैं हाई होप देस इ�",
+   "avg_logprob": -0.2477285824304048,
+   "min_logprob": -0.27485399881998696,
+   "no_speech_prob": 8.815215437219404e-13,
+   "compression_ratio": 2.1204239087284464,
+   "n_segments": 2,
+   "audio_sec": 54.2135,
+   "decode_sec": 17.11
+  },
+  {
+   "uuid": "dbccc477",
+   "speaker": "P8",
+   "languages": [
+    "Hindi"
+   ],
+   "route": "hi",
+   "transcription": "नमस्कार मुझे आईआईटी गांधी नगर में अपने बेटे के एडमिशन के बारे में कुछ जानकारी चाहिए थी मेरा बेटा अभी बारहवीं कक्षा में पड़ रहा है और वह आगे चलकर इंजीनियरिंग करना चाहता है हम जानना चाहते है कि यहाँ एडमिशन लेने के � एडवांस एडवांस की परीक्षा पास करनी पड़ती है इसके अलावा आवेदन की तार के और काउंसिलिंग की प्रक्रिया के बारे में भी बताइए हमें यह समझना है कि एडमिशन के लिए कौन कौन से दस्तावेज तैयार रखनी चाहिए अगर किसी एकाधिकारी वेबसा खुफा करके नाम बताइए ताकि हम पूरी प्रक्रिया पूरी कर सकते हैं",
+   "avg_logprob": -0.029913201798376768,
+   "min_logprob": -0.07257835732565986,
+   "no_speech_prob": 1.284078676722089e-09,
+   "compression_ratio": 2.078568665960108,
+   "n_segments": 3,
+   "audio_sec": 68.6335,
+   "decode_sec": 20.44
+  },
+  {
+   "uuid": "dc570131",
+   "speaker": "P12",
+   "languages": [
+    "English"
+   ],
+   "route": "en",
+   "transcription": "Hello sir. So I want to raise an issue regarding the water supply in the hostel. So since past 3-4 days, there is continuous red body color water. It has been continuously coming from the tap with small particles and contaminants visible in the water. So we are unable to use this water for bathing or the daily activities. So this is creating serious, hygienic and safety concerns for the residents. request to kindly look into this issue and resolve it as soon as possible because it is related to the safety of the individual. So please look into this. Thank you.",
+   "avg_logprob": -0.3368155696895881,
+   "min_logprob": -0.4080896682517473,
+   "no_speech_prob": 0.352508775212548,
+   "compression_ratio": 1.5560395888264742,
+   "n_segments": 11,
+   "audio_sec": 41.3935,
+   "decode_sec": 3.42
+  },
+  {
+   "uuid": "dc815fe7",
+   "speaker": "P20",
+   "languages": [
+    "Gujarati"
+   ],
+   "route": "gu",
+   "transcription": "નમસ્ત્ર હોં મારી દીકરીને આનિર્ણગરમાં એડમિશન માટે માહિતી મળી છે તમારા છે તે બહાર ત્યાં અફેસ ટેબલ અને ઇન્ટરનેટ સુવિધાઓ મળે છે કે કેટલીક વસ્તુઓ ઘરેથી લાવી પડે છે અલગથી કરવાની હ� હવે જે ફ્રેડ",
+   "avg_logprob": -0.049637415323135536,
+   "min_logprob": -0.255414176513167,
+   "no_speech_prob": 2.286168458024799e-06,
+   "compression_ratio": 1.4476911019546679,
+   "n_segments": 3,
+   "audio_sec": 60.2535,
+   "decode_sec": 15.83
+  },
+  {
+   "uuid": "dd334cc7",
+   "speaker": "P21",
+   "languages": [
+    "Hindi"
+   ],
+   "route": "hi",
+   "transcription": "हेलो आईटीजी देश मेरे को लोगो सिस्टम के बारे में जानने का था लेकिन वो कब आएगा मैंने एक दो हफ्ते से आ नहीं रहा पता नहीं कोई इसे लाइक बैग नहीं रखे हुए थे लेकिन बैग नहीं रहे तो आज को बता दे क्योंकि हमें हर बार वो स्मार्ट लोग",
+   "avg_logprob": -0.12802536010742188,
+   "min_logprob": -0.12802536010742188,
+   "no_speech_prob": 1.7684949641869063e-12,
+   "compression_ratio": 2.393162393162393,
+   "n_segments": 1,
+   "audio_sec": 22.9135,
+   "decode_sec": 10.19
+  },
+  {
+   "uuid": "dd463c09",
+   "speaker": "P8",
+   "languages": [
+    "English",
+    "Hindi"
+   ],
+   "route": "hi",
+   "transcription": "नमस्कार मुझे अपने बेटे के लिए एडमिशन की सुविधा के बारे में इतना है क्या इस साल एडमिशन लेने की तैयारी की हो रही है क्योंकि हम गुजरात की से काफी दूर रहते हैं जानना चाहता हूं कि कमरे में कितने विद्यार्थी रहते हैं क्या पढ़ाई के लिए सभी विद्यार्थियों को टेबल कुर्सी अलमारी की सुविधा उपलब्ध की जाती है रुपये इसके बारे में सही जानकारी दे ताकि हम अपने बच्चे के लिए रहने की व्यवस्थ",
+   "avg_logprob": -0.04442227222308908,
+   "min_logprob": -0.0683439015632584,
+   "no_speech_prob": 1.0398848097429672e-08,
+   "compression_ratio": 1.8741067207024653,
+   "n_segments": 3,
+   "audio_sec": 84.3935,
+   "decode_sec": 16.57
+  },
+  {
+   "uuid": "df57c59a",
+   "speaker": "P18",
+   "languages": [
+    "English"
+   ],
+   "route": "en",
+   "transcription": "Hello IITG and Heldus, my parents will stay on campus for two nights, guest accommodation, and charge us. Check the carry saki.",
+   "avg_logprob": -0.9370821529021177,
+   "min_logprob": -1.553744114935398,
+   "no_speech_prob": 0.30375348031520844,
+   "compression_ratio": 0.8983957219251337,
+   "n_segments": 3,
+   "audio_sec": 14.3813125,
+   "decode_sec": 1.62
+  },
+  {
+   "uuid": "e117dac3",
+   "speaker": "P13",
+   "languages": [
+    "Gujarati"
+   ],
+   "route": "gu",
+   "transcription": "એજન્ટ સપોર્ટ આપો નમસ્કાર ગાંધીનગર હેલ્પટ કરતો કે પ્લીઝ મેન્ટેનેન્ટ",
+   "avg_logprob": -0.05248725012114102,
+   "min_logprob": -0.05248725012114102,
+   "no_speech_prob": 5.899745136872525e-09,
+   "compression_ratio": 1.651376146788991,
+   "n_segments": 1,
+   "audio_sec": 13.0005625,
+   "decode_sec": 2.63
+  },
+  {
+   "uuid": "e1a47e10",
+   "speaker": "P18",
+   "languages": [
+    "English"
+   ],
+   "route": "en",
+   "transcription": "Hello IIT Gen. Helidas. Can I audit an additional elective course without it affecting my and stick to the 8 point average.",
+   "avg_logprob": -0.6889229097836455,
+   "min_logprob": -0.9958815574645996,
+   "no_speech_prob": 0.2302825078368187,
+   "compression_ratio": 0.9259684361549498,
+   "n_segments": 2,
+   "audio_sec": 9.0,
+   "decode_sec": 1.37
+  },
+  {
+   "uuid": "e21342b0",
+   "speaker": "P21",
+   "languages": [
+    "Hindi"
+   ],
+   "route": "hi",
+   "transcription": "हैलो आईटीजीएम हैडबस्ट. मेरे यहाँ ये पंखा चल नहीं रहा एंड इसी में पानी टपकता या रहा है जो सीधा स्विटज बोर्ड पर आ रहा है जिससे आईएस रिलिटिकल इशूज हो सकते है तो क्या आप एक बार चेक कर लोगे एंड पंकियों में से बहुत रो",
+   "avg_logprob": -0.17214817682902017,
+   "min_logprob": -0.17214817682902017,
+   "no_speech_prob": 2.6648388357086716e-13,
+   "compression_ratio": 2.138888888888889,
+   "n_segments": 1,
+   "audio_sec": 22.1735,
+   "decode_sec": 8.19
+  },
+  {
+   "uuid": "e256a6dc",
+   "speaker": "P20",
+   "languages": [
+    "Gujarati"
+   ],
+   "route": "gu",
+   "transcription": "નમસ્તે મહારા દીકરો આઈટી ગાંધીનગરમાં મેળવે તો તેના હશીલમાં કેવી સુવિધાઓ મળશે તે જાણવુ જરૂર પડે ત્યારે વિદ્યાર્થીઓને મદદ કરી શકે છે હું પણ જાણવા માંગુ છું કે જો મારા દીકરાન�",
+   "avg_logprob": -0.01503089798343078,
+   "min_logprob": -0.020153287251790365,
+   "no_speech_prob": 3.3247427100313587e-07,
+   "compression_ratio": 1.674074074074074,
+   "n_segments": 2,
+   "audio_sec": 58.9935,
+   "decode_sec": 6.52
+  },
+  {
+   "uuid": "e623a689",
+   "speaker": "P22",
+   "languages": [
+    "English"
+   ],
+   "route": "en",
+   "transcription": "Hello, I am a father of newly admitted MSc student. We will be coming to IIT on the next week to drop her off and help her settle in the hostel. Since we are travelling all the way from Kerala, we will need a place to stay for two nights. I wanted to know if we can book a room in the college's guest house. Or if there are specific guest rooms available within the hostel premises for parents. If the institute accommodations are full, could you recommend some safe hotels nearby that usually cater to our ITG and parents? Also during our stay, our parents allow to eat in the student mess along with their children by paying some charge or do we have to eat outside only? Also what are the visiting hours if you want to help her arrange her room in the girls any information would be highly appreciated.",
+   "avg_logprob": -0.24528406514284606,
+   "min_logprob": -0.5867793023586273,
+   "no_speech_prob": 0.3156060359694741,
+   "compression_ratio": 1.5360985079196536,
+   "n_segments": 11,
+   "audio_sec": 64.1935,
+   "decode_sec": 4.17
+  },
+  {
+   "uuid": "e6b3c944",
+   "speaker": "P9",
+   "languages": [
+    "English"
+   ],
+   "route": "en",
+   "transcription": "Hi, I need help with an assignment submission issue. I completed my assignment and uploaded the file to the course portal before the deadline. But the website shows an error when I click the submit button. After refreshing the page, I could no longer see the loaded file. I uploaded the assignment before the deadline. Now I don't get any information. I have a screenshot of the error message and copy of the completed assignment. Please tell me how I should report this issue to make sure that my submission is considered on time. If I am a professor of male complaint, I will not be able to do so. Please let me know what evidence I should attach and whether there is an official process for technical problems during assignment submission.",
+   "avg_logprob": -0.4573825202623853,
+   "min_logprob": -0.5089211455162834,
+   "no_speech_prob": 0.3893204391002655,
+   "compression_ratio": 1.7126458739980897,
+   "n_segments": 10,
+   "audio_sec": 47.6335,
+   "decode_sec": 3.26
+  },
+  {
+   "uuid": "e7a37e81",
+   "speaker": "P8",
+   "languages": [
+    "Hindi"
+   ],
+   "route": "hi",
+   "transcription": "हैलो मैं अपनी बेटी के लिए आईआईटी अन्दीनगर में एडमिशन की जानकारी लेना चाहता हूँ वह इंजीनियरिंग में पढ़ाई करना चाहती है और हम चाहते है कि उसकी पढ़ाई के साथ सुरक्षा तथा अच्छा रहने के वातावरण मिले मुझे विशेष रू इसके अलावा वार्डन या कोई जिम्मेदार अधिकारी उपलब्ध रहते हैं जिनकी जरूरत पड़ने पर हम उनको संपर्क कर सकते हैं हम यह भी जानना चाहते हैं कि वार्डन या कोई जिम्मेदार अधिकारी उपलब्ध रहते हैं जिनकी जरूरत पड़ने पर हम उनको सं इस बार प्रदेश में पिछले चौबिस घंटों में तेज बारिश की गई है",
+   "avg_logprob": -0.14806872387258718,
+   "min_logprob": -0.4008930086186438,
+   "no_speech_prob": 7.236597839484679e-07,
+   "compression_ratio": 2.2806598199104893,
+   "n_segments": 3,
+   "audio_sec": 79.8535,
+   "decode_sec": 19.42
+  },
+  {
+   "uuid": "e7c421c7",
+   "speaker": "P22",
+   "languages": [
+    "English"
+   ],
+   "route": "en",
+   "transcription": "Good afternoon. I am a finally a render graduate student. I urgently need some official transcripts for my graduation school applications in the US. I have already applied through the portal and paid the required fees for five hard copies and one digital copy yesterday. However, one of the universities has a strict deadline for this Friday. Is there any way the academic office could expedite the process for a digital copy and email it directly to the university's admission office? I can share the specific email address and my application reference number. It would be really helpful if you could do that.",
+   "avg_logprob": -0.24725694962487682,
+   "min_logprob": -0.29555336038271585,
+   "no_speech_prob": 0.3830373116901943,
+   "compression_ratio": 1.542327488180023,
+   "n_segments": 7,
+   "audio_sec": 45.2535,
+   "decode_sec": 3.14
+  },
+  {
+   "uuid": "e7c99b26",
+   "speaker": "P19",
+   "languages": [
+    "Hindi"
+   ],
+   "route": "hi",
+   "transcription": "एलोवेजन हेल्प डेस्क मेरे अटेंडेंस परसेंटेज में डिस्पेरेंसी है फैकल्टी के पास जाऊं या एकेडमिक ऑफिस में कंप्लेंट ट्रेस करूँ",
+   "avg_logprob": -0.13647285837567213,
+   "min_logprob": -0.13647285837567213,
+   "no_speech_prob": 7.368124999018733e-10,
+   "compression_ratio": 2.018633540372671,
+   "n_segments": 1,
+   "audio_sec": 11.0,
+   "decode_sec": 5.09
+  },
+  {
+   "uuid": "ec5b227c",
+   "speaker": "P7",
+   "languages": [
+    "English"
+   ],
+   "route": "en",
+   "transcription": "Hello sir, I want to ask about the Uster facility for my son. He is preparing to take admission in the engineering this year and if he gets selected in the IT Gandhi Nagar, then he will be able to stay in the campus as our women is quite far from Gujarat. So we are here for the enquiry of this whole process. Are Uster's provided to all first year students or do they have to apply separately? is the hostel room allocated at the time of admission or is it processed later? I also want to know how many students live in the room and whether the basic amenities like taevers, chairs, cupboards are available for study. Please provide all the details and accurate information about this so that we can understand your child's living arrangements in advance so that we can prepare according to that as well. Thank you so much.",
+   "avg_logprob": -0.33707771815881205,
+   "min_logprob": -0.526024118065834,
+   "no_speech_prob": 0.29036340303719044,
+   "compression_ratio": 1.5196817675078547,
+   "n_segments": 12,
+   "audio_sec": 60.9335,
+   "decode_sec": 3.94
+  },
+  {
+   "uuid": "ecf27e76",
+   "speaker": "P18",
+   "languages": [
+    "Gujarati"
+   ],
+   "route": "gu",
+   "transcription": "હૈલો ડેસ્ક રિસર્સ પ્રોજેક્ટ થી સિશન ફોર્મેટ અને લેગોરિઝમ લિમિટની ગાઇઇડલાઇન્સ કાય",
+   "avg_logprob": -0.04059017023374868,
+   "min_logprob": -0.04059017023374868,
+   "no_speech_prob": 3.5903875073017844e-07,
+   "compression_ratio": 1.676923076923077,
+   "n_segments": 1,
+   "audio_sec": 10.0,
+   "decode_sec": 3.17
+  },
+  {
+   "uuid": "ed2662e9",
+   "speaker": "P2",
+   "languages": [
+    "Hindi"
+   ],
+   "route": "hi",
+   "transcription": "हैलो हैलो हैलडेस्ट पोर्टल ड्यूरिंग गेटिंग कॉन्स्टेंट यू आर नॉट अलाउड टू पासवर्ड ऑफ ईमेल ऑफ माइन इस करेक्ट चेक मल्टीपल टाइम्स बट स्टील इट इज नॉट एबल टू गिविंग मी एक्सिस टाइम्स शो एनीथिंग पेज पर लाइव फॉर रजिस्ट्रेशन नॉट बी एल टू रोल कोर्स",
+   "avg_logprob": -0.20513274321782507,
+   "min_logprob": -0.2495931363105774,
+   "no_speech_prob": 5.574986002357396e-12,
+   "compression_ratio": 1.876654020542241,
+   "n_segments": 2,
+   "audio_sec": 60.2135,
+   "decode_sec": 11.06
+  },
+  {
+   "uuid": "ee0caeb5",
+   "speaker": "P14",
+   "languages": [
+    "Hindi",
+    "Gujarati"
+   ],
+   "route": "gu",
+   "transcription": "પેલેક્ચર છે",
+   "avg_logprob": -0.06512896219889323,
+   "min_logprob": -0.06512896219889323,
+   "no_speech_prob": 5.882047844352201e-07,
+   "compression_ratio": 0.8378378378378378,
+   "n_segments": 1,
+   "audio_sec": 10.000125,
+   "decode_sec": 0.94
+  },
+  {
+   "uuid": "ee49f329",
+   "speaker": "P16",
+   "languages": [
+    "English"
+   ],
+   "route": "en",
+   "transcription": "Hello, IITG in HelpDisc. My lab computer has lost access to the shared data set drive. The research deadline is approaching. Whom should I contact?",
+   "avg_logprob": -0.49659707397222513,
+   "min_logprob": -0.4965970739722252,
+   "no_speech_prob": 0.012595896609127522,
+   "compression_ratio": 1.185483870967742,
+   "n_segments": 2,
+   "audio_sec": 10.0,
+   "decode_sec": 0.99
+  },
+  {
+   "uuid": "eeea163e",
+   "speaker": "P11",
+   "languages": [
+    "English",
+    "Hindi"
+   ],
+   "route": "hi",
+   "transcription": "नमस्कार नमस्कार स्कॉलरशिप फेरिफिकेशन टू बी कंप्लीटेड बिफोर पेइंग सेमिस्टर फीज और बहुत प्रोसेस कैन कंटिन्यू इंडिपेंडेट मुझे पेमेंट को लेकर कन्फ्यूजन है और मैं नहीं चाहता कि डेडलाइन में हो जाए और कोई इसमें दिक्कत आए तो इसक अवेलेबल फाइनैंशल असिस्टेंट ऑप्शन फॉर स्टूडेंट ऑफिस स्कॉलरशिप सेक्शन प्रोपरेट कॉन्टेक्ट प्रोसीजर धन्यवाद",
+   "avg_logprob": -0.15851372947158288,
+   "min_logprob": -0.2531733232385972,
+   "no_speech_prob": 2.183353907970568e-09,
+   "compression_ratio": 1.7904761904761903,
+   "n_segments": 3,
+   "audio_sec": 79.2935,
+   "decode_sec": 24.28
+  },
+  {
+   "uuid": "ef48e8d5",
+   "speaker": "P14",
+   "languages": [
+    "Gujarati"
+   ],
+   "route": "gu",
+   "transcription": "કરે છેલ્લે",
+   "avg_logprob": -0.0656625101963679,
+   "min_logprob": -0.0656625101963679,
+   "no_speech_prob": 1.4517850104311947e-06,
+   "compression_ratio": 0.8484848484848485,
+   "n_segments": 1,
+   "audio_sec": 10.000125,
+   "decode_sec": 1.98
+  },
+  {
+   "uuid": "f05db76e",
+   "speaker": "P19",
+   "languages": [
+    "Hindi"
+   ],
+   "route": "hi",
+   "transcription": "हेलो डीजन हेल्पलेस मिड सेमेसर एग्जाम का टाइम टेबल रिलीज हो गया है क्या",
+   "avg_logprob": -0.13729363761536062,
+   "min_logprob": -0.13729363761536062,
+   "no_speech_prob": 4.985359347564611e-11,
+   "compression_ratio": 1.6,
+   "n_segments": 1,
+   "audio_sec": 10.0,
+   "decode_sec": 6.44
+  },
+  {
+   "uuid": "f26b4776",
+   "speaker": "P18",
+   "languages": [
+    "Gujarati"
+   ],
+   "route": "gu",
+   "transcription": "એમાં તે પર મિશન ઓનલાઇન લેવી કે સેક્યુરિટી રજિસ્ટર છે",
+   "avg_logprob": -0.034235375205965805,
+   "min_logprob": -0.034235375205965805,
+   "no_speech_prob": 2.1985208792374422e-11,
+   "compression_ratio": 1.422680412371134,
+   "n_segments": 1,
+   "audio_sec": 11.0,
+   "decode_sec": 3.48
+  },
+  {
+   "uuid": "f335cba3",
+   "speaker": "P16",
+   "languages": [
+    "English"
+   ],
+   "route": "en",
+   "transcription": "Hello, IITGN Helpdesk. I left my backpack in the campus shirt really yesterday evening. Is there a loss in found disk I can contact?",
+   "avg_logprob": -0.5586962252855302,
+   "min_logprob": -0.5586962252855301,
+   "no_speech_prob": 0.012547275051474571,
+   "compression_ratio": 1.1578947368421053,
+   "n_segments": 3,
+   "audio_sec": 9.3735,
+   "decode_sec": 1.63
+  },
+  {
+   "uuid": "f41402b1",
+   "speaker": "P21",
+   "languages": [
+    "Hindi"
+   ],
+   "route": "hi",
+   "transcription": "हेलो है हमारे यहाँ सुसाइड रखिए एक बंदा गिर गए आप जल्दी से एंबुलेंस भेज सकते हो क्या",
+   "avg_logprob": -0.11000011075328994,
+   "min_logprob": -0.11000011075328994,
+   "no_speech_prob": 6.917592583824406e-13,
+   "compression_ratio": 1.6165413533834587,
+   "n_segments": 1,
+   "audio_sec": 7.3735,
+   "decode_sec": 5.25
+  },
+  {
+   "uuid": "f53d4330",
+   "speaker": "P21",
+   "languages": [
+    "Hindi"
+   ],
+   "route": "hi",
+   "transcription": "हेलो आईटीजी एंड हेल्प डेस्क",
+   "avg_logprob": -0.21050810091423267,
+   "min_logprob": -0.21050810091423267,
+   "no_speech_prob": 1.4026843055126026e-11,
+   "compression_ratio": 1.106060606060606,
+   "n_segments": 1,
+   "audio_sec": 17.4935,
+   "decode_sec": 2.93
+  },
+  {
+   "uuid": "f5f59b22",
+   "speaker": "P18",
+   "languages": [
+    "English"
+   ],
+   "route": "en",
+   "transcription": "curvy, hello IITG and help desk, my hostel room has a water leakage problem near this study table. Can someone inspect it today?",
+   "avg_logprob": -0.5358302593231201,
+   "min_logprob": -0.5358302593231201,
+   "no_speech_prob": 0.2924305200576782,
+   "compression_ratio": 1.1743119266055047,
+   "n_segments": 3,
+   "audio_sec": 10.0,
+   "decode_sec": 1.06
+  },
+  {
+   "uuid": "f9e8a369",
+   "speaker": "P16",
+   "languages": [
+    "English"
+   ],
+   "route": "en",
+   "transcription": "portal. Hello, IIT June help this. I need an official medium of instruction certificate from my master's application abroad. How can I request one?",
+   "avg_logprob": -0.4842967001928223,
+   "min_logprob": -0.48429670019282234,
+   "no_speech_prob": 0.08228602260351181,
+   "compression_ratio": 1.2148760330578512,
+   "n_segments": 2,
+   "audio_sec": 10.0,
+   "decode_sec": 1.0
+  },
+  {
+   "uuid": "fc3d3348",
+   "speaker": "P14",
+   "languages": [
+    "Hindi"
+   ],
+   "route": "hi",
+   "transcription": "हेलो आईटी डिस्क. इंस्टीट्यूट ओपन हाउस सेशन कप और गैरस होगा, फॉर न्यूअली एडमिटेड स्टूडेंट्स एण्ड पेरेंट्स कृप्या अर्जेंट सपोर्ट आपो.",
+   "avg_logprob": -0.1398153828967149,
+   "min_logprob": -0.1398153828967149,
+   "no_speech_prob": 2.7909486245529525e-13,
+   "compression_ratio": 1.8756756756756756,
+   "n_segments": 1,
+   "audio_sec": 11.043625,
+   "decode_sec": 5.89
+  },
+  {
+   "uuid": "fcbb4e59",
+   "speaker": "P21",
+   "languages": [
+    "Hindi"
+   ],
+   "route": "hi",
+   "transcription": "हैलो आईडीजेन हेल्पडेस्ट क्या मैने असाइनमेंट कर रखा है तो प्लेगरिज्म चेक करना था मैने लाइबरी को मेल किया है लेकिन उनका एक दो दिन से रिस्पॉन्स नहीं आया तो आगे प्रोसेस क्या रहेगी क्या बता सकते हो और उसमें लाइक कब तक आएगा क्",
+   "avg_logprob": -0.10948195245530871,
+   "min_logprob": -0.1094819524553087,
+   "no_speech_prob": 7.483281572531753e-13,
+   "compression_ratio": 2.3346938775510204,
+   "n_segments": 1,
+   "audio_sec": 21.7535,
+   "decode_sec": 9.53
+  },
+  {
+   "uuid": "fce68504",
+   "speaker": "P5",
+   "languages": [
+    "Hindi"
+   ],
+   "route": "hi",
+   "transcription": "सर मुझे एक ऐसी बात पूछनी थी कि मेरे आपके कॉलेज से मतलब आईआईटी गांधीनगर में से मेरा बीटेक हो चुका है मैंने ड्यूअल डिग्री करी है सीएस और तो मुझे अब ऐसा पूछना था कि मैं आगे एमएस करूँ या कैंपस थ्रू सिलेक्शन होकर मैं आ� और एमएस बाहर जाकर करे की इधर ही करे एमएस करने से कुछ फायदे होएंगे और लॉस होगे हमें ये बताए और एमएस करके आगे अपॉर्चूनिटी है भी या नहीं भी क्योंकि अगर सीनियर लोगों का अगर देखा जाए तो बहुत से लोग बीटेक करके कैंपस थ्र तो कैंपस भी मतलब बहुत सी कंपनी एमएस और एमटेक वालों को रेफर नहीं करती तो एमएस करना चाहिए या नहीं करना चाहिए",
+   "avg_logprob": -0.06507714709865871,
+   "min_logprob": -0.07091040505303277,
+   "no_speech_prob": 1.8932472372242456e-10,
+   "compression_ratio": 2.1856434416773243,
+   "n_segments": 3,
+   "audio_sec": 70.8735,
+   "decode_sec": 27.66
+  },
+  {
+   "uuid": "fed4057d",
+   "speaker": "P18",
+   "languages": [
+    "Gujarati"
+   ],
+   "route": "gu",
+   "transcription": "પ્લીસ હલ હૈલો આઈડીજી બેસ્ક કેલીટ રિક્વાયર્મેન્ટ્સ કમ્પ્લીટ કરવામાં તે મિનિમમ સીપી ક",
+   "avg_logprob": -0.031986042128668894,
+   "min_logprob": -0.031986042128668894,
+   "no_speech_prob": 3.9936580265020893e-07,
+   "compression_ratio": 1.7307692307692308,
+   "n_segments": 1,
+   "audio_sec": 11.0,
+   "decode_sec": 5.18
+  },
+  {
+   "uuid": "ff002d4d",
+   "speaker": "P13",
+   "languages": [
+    "Gujarati"
+   ],
+   "route": "gu",
+   "transcription": "નમસ્કાર ક્લિટર નથી કઈ થી ચા દિવસથી ટોકન નંબર આપો",
+   "avg_logprob": -0.030209787550472444,
+   "min_logprob": -0.030209787550472444,
+   "no_speech_prob": 3.989876162791006e-08,
+   "compression_ratio": 1.3846153846153846,
+   "n_segments": 1,
+   "audio_sec": 10.0004375,
+   "decode_sec": 2.76
+  }
+ ]
+}

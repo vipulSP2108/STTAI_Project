@@ -1,0 +1,4 @@
+UUID: 369147eb
+Transcript: Namaskar, I would like to ask about booking of a new for us student organized event. Our group is planning a small technical workshop next month and we need a room with the sitting, our projector and our civil internet connection. We accept around 30 parts of this event. So, we want to make sure that venue is suitable. We are planning for a new event and booking process is about the Paris Information. kultu tell me which department handles when you reservation and how early we should submit the request i would also like to know whether we need a global from a faculty coordinator or a student lovely representative or event for which permission to be offered is necessary so please tell me about it yes information will help us organize the environment workshop properly.
+Target_Label: student_services
+Spoken_Languages: English, Hindi

@@ -1,0 +1,7 @@
+UUID: aug_cf05c60c
+Parent_UUID: 944528c0
+Augmentation_Type: pivot_latin
+Similarity_Score: 0.9628
+Transcript: Hello, IITGN Helpdesk. The internship company is asking for a bonafide student letter and NOC. How do I formal solicit it through the student portal?
+Target_Label: student_services
+Spoken_Languages: ['English']

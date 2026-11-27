@@ -1,0 +1,7 @@
+UUID: aug_dd81fbe2
+Parent_UUID: 9d9262af
+Augmentation_Type: cross_lingual_translation
+Similarity_Score: 0.5912
+Transcript: हाय सर, मैं आदमिन के समय इकट्ठा किया जा रहा हूँ निम्न प्रमाणपत्र और चरित्र प्रमाणपत्र के बारे में जानना होगा.
+Target_Label: admissions
+Spoken_Languages: ['Hindi']

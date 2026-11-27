@@ -1,0 +1,7 @@
+UUID: aug_14d4d942
+Parent_UUID: c521bf2d
+Augmentation_Type: cross_lingual_translation
+Similarity_Score: 0.5261
+Transcript: હેલો આઈઆઈટીજીએન હેલ્પડેસ્ક, મિડ-સેમેસ્ટર એગ્જામ ના લિએ કંપ્યૂટર લૈબ સિસ્ટમ માં પાયથન અને આર સૉફ્ટવેયર પૈકેજ ઇંસ્ટૉલ કરવાને છે।
+Target_Label: it_support
+Spoken_Languages: ['Hindi']

@@ -1,11 +1,11 @@
 # CS203 Assignment 1 & 2 - Project 5: Voice Helpdesk ASR
 # Core dependencies strictly pinned with == for exact reproducibility
-torch>=2.1.0
-transformers>=4.35.0
+torch==2.5.1
+transformers==4.46.3
 sounddevice==0.4.6
 soundfile==0.12.1
 librosa==0.10.1
-openai-whisper>=20231117
+openai-whisper==20231117
 jiwer==4.0.0
 pandera==0.17.2
 audiomentations==0.33.0

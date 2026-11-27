@@ -1,0 +1,7 @@
+UUID: aug_aea8d002
+Parent_UUID: 6e595ed3
+Augmentation_Type: cross_lingual_translation
+Similarity_Score: 0.7382
+Transcript: Hello Heides, what is the course of the camp and the time limit for the Futical Reporting of My Son?
+Target_Label: admissions
+Spoken_Languages: ['Hindi']

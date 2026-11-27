@@ -1,0 +1,7 @@
+UUID: aug_2e4e7734
+Parent_UUID: 30beb45f
+Augmentation_Type: cross_lingual_translation
+Similarity_Score: 0.8631
+Transcript: हैलो, मैं विद्यार्थी के मामलों से संपर्क करना चाहता था क्योंकि वर्तमान में मेरे होस्टल पानी की आपूर्ति सुबह काम नहीं कर रही है.
+Target_Label: hostel_mess
+Spoken_Languages: ['English']

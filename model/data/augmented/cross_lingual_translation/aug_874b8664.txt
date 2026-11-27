@@ -1,0 +1,7 @@
+UUID: aug_874b8664
+Parent_UUID: b20dcb6e
+Augmentation_Type: cross_lingual_translation
+Similarity_Score: 0.5253
+Transcript: હેલો આઈઆઈટી ગાંધીનગર હેલ્પડેસ્ક, મારું મેસ કાર્ડ બ્લૉક હો ગયા છે, ઇસે અનબ્લૉક કરાને ના લિએ શું પ્રક્રિયા છે?
+Target_Label: hostel_mess
+Spoken_Languages: ['Hindi']

@@ -1,0 +1,17 @@
+{
+  "status": "pass",
+  "network_mode": "none",
+  "api_health_http": 200,
+  "streamlit_health_http": 200,
+  "predict_http": 200,
+  "invalid_wav_http": 400,
+  "streamlit_example_prediction": true,
+  "model": {
+    "model_version": "revised-whisper-base-char-tfidf-v1",
+    "asr_revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+    "git_commit": "a4baf80aaab5d83290280d268720d9ddb1b29129",
+    "source_tree": "working-tree"
+  },
+  "api_intent": "it_support",
+  "api_latency_ms": 3641.49
+}

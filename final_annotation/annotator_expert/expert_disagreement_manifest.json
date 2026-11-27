@@ -1,0 +1,827 @@
+{
+  "timestamp": "2026-11-09T20:38:20.376614",
+  "total_disagreements": 47,
+  "corpus_total": 182,
+  "conflict_breakdown": {
+    "admissions <-> student_services": 10,
+    "it_support <-> student_services": 15,
+    "admissions <-> hostel_mess": 9,
+    "hostel_mess <-> student_services": 10,
+    "admissions <-> it_support": 3
+  },
+  "tasks": [
+    {
+      "adjudication_task_id": 1,
+      "original_task_id": 13,
+      "speaker_id": "P4",
+      "file_name": "PTT-20261018-WA0018.wav",
+      "clip_id": "P4_13",
+      "a1_intent": "student_services",
+      "a2_intent": "admissions",
+      "a1_langs": [
+        "Hindi"
+      ],
+      "a2_langs": [
+        "Hindi"
+      ],
+      "conflict_type": "admissions <-> student_services",
+      "applicable_rule": "Rule 2: admissions vs. student_services \u2014 Prospective Intake/Seat Offer vs. Enrolled Student Affairs"
+    },
+    {
+      "adjudication_task_id": 2,
+      "original_task_id": 14,
+      "speaker_id": "P4",
+      "file_name": "PTT-20261018-WA0019.wav",
+      "clip_id": "P4_14",
+      "a1_intent": "student_services",
+      "a2_intent": "it_support",
+      "a1_langs": [
+        "Hindi"
+      ],
+      "a2_langs": [
+        "Hindi"
+      ],
+      "conflict_type": "it_support <-> student_services",
+      "applicable_rule": "Rule 1: it_support vs. student_services \u2014 Digital Infrastructure vs. Administrative Policy/Physical Facility"
+    },
+    {
+      "adjudication_task_id": 3,
+      "original_task_id": 15,
+      "speaker_id": "P5",
+      "file_name": "PTT-20261018-WA0004.wav",
+      "clip_id": "P5_15",
+      "a1_intent": "hostel_mess",
+      "a2_intent": "admissions",
+      "a1_langs": [
+        "Hindi"
+      ],
+      "a2_langs": [
+        "Hindi"
+      ],
+      "conflict_type": "admissions <-> hostel_mess",
+      "applicable_rule": "Rule 4: admissions vs. hostel_mess \u2014 Freshman Reporting/Registration vs. Room Allotment/Mess Possession"
+    },
+    {
+      "adjudication_task_id": 4,
+      "original_task_id": 16,
+      "speaker_id": "P5",
+      "file_name": "PTT-20261018-WA0005.wav",
+      "clip_id": "P5_16",
+      "a1_intent": "student_services",
+      "a2_intent": "admissions",
+      "a1_langs": [
+        "Hindi"
+      ],
+      "a2_langs": [
+        "Hindi"
+      ],
+      "conflict_type": "admissions <-> student_services",
+      "applicable_rule": "Rule 2: admissions vs. student_services \u2014 Prospective Intake/Seat Offer vs. Enrolled Student Affairs"
+    },
+    {
+      "adjudication_task_id": 5,
+      "original_task_id": 17,
+      "speaker_id": "P5",
+      "file_name": "PTT-20261018-WA0012.wav",
+      "clip_id": "P5_17",
+      "a1_intent": "student_services",
+      "a2_intent": "admissions",
+      "a1_langs": [
+        "Hindi"
+      ],
+      "a2_langs": [
+        "Hindi"
+      ],
+      "conflict_type": "admissions <-> student_services",
+      "applicable_rule": "Rule 2: admissions vs. student_services \u2014 Prospective Intake/Seat Offer vs. Enrolled Student Affairs"
+    },
+    {
+      "adjudication_task_id": 6,
+      "original_task_id": 19,
+      "speaker_id": "P5",
+      "file_name": "PTT-20261018-WA0014.wav",
+      "clip_id": "P5_19",
+      "a1_intent": "hostel_mess",
+      "a2_intent": "student_services",
+      "a1_langs": [
+        "Hindi"
+      ],
+      "a2_langs": [
+        "Hindi"
+      ],
+      "conflict_type": "hostel_mess <-> student_services",
+      "applicable_rule": "Rule 3: hostel_mess vs. student_services \u2014 Residential Room/Mess Rebate vs. Campus Wide Amenities"
+    },
+    {
+      "adjudication_task_id": 7,
+      "original_task_id": 24,
+      "speaker_id": "P7",
+      "file_name": "WhatsApp Audio 2026-10-19 at 2.37.55 PM.wav",
+      "clip_id": "P7_24",
+      "a1_intent": "hostel_mess",
+      "a2_intent": "admissions",
+      "a1_langs": [
+        "English"
+      ],
+      "a2_langs": [
+        "English"
+      ],
+      "conflict_type": "admissions <-> hostel_mess",
+      "applicable_rule": "Rule 4: admissions vs. hostel_mess \u2014 Freshman Reporting/Registration vs. Room Allotment/Mess Possession"
+    },
+    {
+      "adjudication_task_id": 8,
+      "original_task_id": 27,
+      "speaker_id": "P7",
+      "file_name": "WhatsApp Audio 2026-10-19 at 2.37.56 PM.wav",
+      "clip_id": "P7_27",
+      "a1_intent": "student_services",
+      "a2_intent": "admissions",
+      "a1_langs": [
+        "English"
+      ],
+      "a2_langs": [
+        "English"
+      ],
+      "conflict_type": "admissions <-> student_services",
+      "applicable_rule": "Rule 2: admissions vs. student_services \u2014 Prospective Intake/Seat Offer vs. Enrolled Student Affairs"
+    },
+    {
+      "adjudication_task_id": 9,
+      "original_task_id": 28,
+      "speaker_id": "P7",
+      "file_name": "WhatsApp Audio 2026-10-19 at 2.37.57 PM (1).wav",
+      "clip_id": "P7_28",
+      "a1_intent": "hostel_mess",
+      "a2_intent": "admissions",
+      "a1_langs": [
+        "English"
+      ],
+      "a2_langs": [
+        "English"
+      ],
+      "conflict_type": "admissions <-> hostel_mess",
+      "applicable_rule": "Rule 4: admissions vs. hostel_mess \u2014 Freshman Reporting/Registration vs. Room Allotment/Mess Possession"
+    },
+    {
+      "adjudication_task_id": 10,
+      "original_task_id": 32,
+      "speaker_id": "P8",
+      "file_name": "PTT-20261019-WA0007.wav",
+      "clip_id": "P8_32",
+      "a1_intent": "student_services",
+      "a2_intent": "admissions",
+      "a1_langs": [
+        "Hindi"
+      ],
+      "a2_langs": [
+        "Hindi"
+      ],
+      "conflict_type": "admissions <-> student_services",
+      "applicable_rule": "Rule 2: admissions vs. student_services \u2014 Prospective Intake/Seat Offer vs. Enrolled Student Affairs"
+    },
+    {
+      "adjudication_task_id": 11,
+      "original_task_id": 33,
+      "speaker_id": "P8",
+      "file_name": "PTT-20261019-WA0008.wav",
+      "clip_id": "P8_33",
+      "a1_intent": "student_services",
+      "a2_intent": "admissions",
+      "a1_langs": [
+        "Hindi"
+      ],
+      "a2_langs": [
+        "Hindi"
+      ],
+      "conflict_type": "admissions <-> student_services",
+      "applicable_rule": "Rule 2: admissions vs. student_services \u2014 Prospective Intake/Seat Offer vs. Enrolled Student Affairs"
+    },
+    {
+      "adjudication_task_id": 12,
+      "original_task_id": 36,
+      "speaker_id": "P8",
+      "file_name": "PTT-20261019-WA0039.wav",
+      "clip_id": "P8_36",
+      "a1_intent": "student_services",
+      "a2_intent": "admissions",
+      "a1_langs": [
+        "Hindi"
+      ],
+      "a2_langs": [
+        "Hindi"
+      ],
+      "conflict_type": "admissions <-> student_services",
+      "applicable_rule": "Rule 2: admissions vs. student_services \u2014 Prospective Intake/Seat Offer vs. Enrolled Student Affairs"
+    },
+    {
+      "adjudication_task_id": 13,
+      "original_task_id": 48,
+      "speaker_id": "P9",
+      "file_name": "PTT-20261019-WA0025.wav",
+      "clip_id": "P9_48",
+      "a1_intent": "student_services",
+      "a2_intent": "it_support",
+      "a1_langs": [
+        "English",
+        "Hindi"
+      ],
+      "a2_langs": [
+        "English"
+      ],
+      "conflict_type": "it_support <-> student_services",
+      "applicable_rule": "Rule 1: it_support vs. student_services \u2014 Digital Infrastructure vs. Administrative Policy/Physical Facility"
+    },
+    {
+      "adjudication_task_id": 14,
+      "original_task_id": 54,
+      "speaker_id": "P11",
+      "file_name": "PTT-20261019-WA0016.wav",
+      "clip_id": "P11_54",
+      "a1_intent": "admissions",
+      "a2_intent": "it_support",
+      "a1_langs": [
+        "English"
+      ],
+      "a2_langs": [
+        "English"
+      ],
+      "conflict_type": "admissions <-> it_support",
+      "applicable_rule": "Rule 2/1 Principle: admissions vs. it_support \u2014 Candidate Application Portal vs. Central Institute IT/LDAP"
+    },
+    {
+      "adjudication_task_id": 15,
+      "original_task_id": 55,
+      "speaker_id": "P11",
+      "file_name": "PTT-20261019-WA0018.wav",
+      "clip_id": "P11_55",
+      "a1_intent": "student_services",
+      "a2_intent": "it_support",
+      "a1_langs": [
+        "English",
+        "Hindi"
+      ],
+      "a2_langs": [
+        "English"
+      ],
+      "conflict_type": "it_support <-> student_services",
+      "applicable_rule": "Rule 1: it_support vs. student_services \u2014 Digital Infrastructure vs. Administrative Policy/Physical Facility"
+    },
+    {
+      "adjudication_task_id": 16,
+      "original_task_id": 61,
+      "speaker_id": "P20",
+      "file_name": "WhatsApp Ptt 2026-11-05 at 6.47.47 PM.wav",
+      "clip_id": "P20_61",
+      "a1_intent": "hostel_mess",
+      "a2_intent": "admissions",
+      "a1_langs": [
+        "Gujarati"
+      ],
+      "a2_langs": [
+        "Gujarati"
+      ],
+      "conflict_type": "admissions <-> hostel_mess",
+      "applicable_rule": "Rule 4: admissions vs. hostel_mess \u2014 Freshman Reporting/Registration vs. Room Allotment/Mess Possession"
+    },
+    {
+      "adjudication_task_id": 17,
+      "original_task_id": 62,
+      "speaker_id": "P20",
+      "file_name": "WhatsApp Ptt 2026-11-05 at 6.49.35 PM.wav",
+      "clip_id": "P20_62",
+      "a1_intent": "hostel_mess",
+      "a2_intent": "admissions",
+      "a1_langs": [
+        "Gujarati"
+      ],
+      "a2_langs": [
+        "Gujarati"
+      ],
+      "conflict_type": "admissions <-> hostel_mess",
+      "applicable_rule": "Rule 4: admissions vs. hostel_mess \u2014 Freshman Reporting/Registration vs. Room Allotment/Mess Possession"
+    },
+    {
+      "adjudication_task_id": 18,
+      "original_task_id": 63,
+      "speaker_id": "P20",
+      "file_name": "WhatsApp Ptt 2026-11-05 at 6.50.45 PM.wav",
+      "clip_id": "P20_63",
+      "a1_intent": "hostel_mess",
+      "a2_intent": "admissions",
+      "a1_langs": [
+        "Gujarati"
+      ],
+      "a2_langs": [
+        "Gujarati"
+      ],
+      "conflict_type": "admissions <-> hostel_mess",
+      "applicable_rule": "Rule 4: admissions vs. hostel_mess \u2014 Freshman Reporting/Registration vs. Room Allotment/Mess Possession"
+    },
+    {
+      "adjudication_task_id": 19,
+      "original_task_id": 66,
+      "speaker_id": "P20",
+      "file_name": "WhatsApp Ptt 2026-11-05 at 6.55.01 PM.wav",
+      "clip_id": "P20_66",
+      "a1_intent": "hostel_mess",
+      "a2_intent": "admissions",
+      "a1_langs": [
+        "Gujarati"
+      ],
+      "a2_langs": [
+        "Gujarati"
+      ],
+      "conflict_type": "admissions <-> hostel_mess",
+      "applicable_rule": "Rule 4: admissions vs. hostel_mess \u2014 Freshman Reporting/Registration vs. Room Allotment/Mess Possession"
+    },
+    {
+      "adjudication_task_id": 20,
+      "original_task_id": 67,
+      "speaker_id": "P20",
+      "file_name": "WhatsApp Ptt 2026-11-05 at 6.56.15 PM.wav",
+      "clip_id": "P20_67",
+      "a1_intent": "student_services",
+      "a2_intent": "hostel_mess",
+      "a1_langs": [
+        "Gujarati"
+      ],
+      "a2_langs": [
+        "Gujarati"
+      ],
+      "conflict_type": "hostel_mess <-> student_services",
+      "applicable_rule": "Rule 3: hostel_mess vs. student_services \u2014 Residential Room/Mess Rebate vs. Campus Wide Amenities"
+    },
+    {
+      "adjudication_task_id": 21,
+      "original_task_id": 68,
+      "speaker_id": "P20",
+      "file_name": "WhatsApp Ptt 2026-11-05 at 6.57.26 PM.wav",
+      "clip_id": "P20_68",
+      "a1_intent": "hostel_mess",
+      "a2_intent": "admissions",
+      "a1_langs": [
+        "Gujarati"
+      ],
+      "a2_langs": [
+        "Gujarati"
+      ],
+      "conflict_type": "admissions <-> hostel_mess",
+      "applicable_rule": "Rule 4: admissions vs. hostel_mess \u2014 Freshman Reporting/Registration vs. Room Allotment/Mess Possession"
+    },
+    {
+      "adjudication_task_id": 22,
+      "original_task_id": 69,
+      "speaker_id": "P21",
+      "file_name": "WhatsApp Ptt 2026-11-06 at 11.06.08 AM.wav",
+      "clip_id": "P21_69",
+      "a1_intent": "hostel_mess",
+      "a2_intent": "admissions",
+      "a1_langs": [
+        "Hindi"
+      ],
+      "a2_langs": [
+        "Hindi"
+      ],
+      "conflict_type": "admissions <-> hostel_mess",
+      "applicable_rule": "Rule 4: admissions vs. hostel_mess \u2014 Freshman Reporting/Registration vs. Room Allotment/Mess Possession"
+    },
+    {
+      "adjudication_task_id": 23,
+      "original_task_id": 76,
+      "speaker_id": "P21",
+      "file_name": "WhatsApp Ptt 2026-11-06 at 11.14.57 AM.wav",
+      "clip_id": "P21_76",
+      "a1_intent": "student_services",
+      "a2_intent": "hostel_mess",
+      "a1_langs": [
+        "Hindi"
+      ],
+      "a2_langs": [
+        "Hindi"
+      ],
+      "conflict_type": "hostel_mess <-> student_services",
+      "applicable_rule": "Rule 3: hostel_mess vs. student_services \u2014 Residential Room/Mess Rebate vs. Campus Wide Amenities"
+    },
+    {
+      "adjudication_task_id": 24,
+      "original_task_id": 81,
+      "speaker_id": "P21",
+      "file_name": "WhatsApp Ptt 2026-11-06 at 11.20.56 AM.wav",
+      "clip_id": "P21_81",
+      "a1_intent": "hostel_mess",
+      "a2_intent": "student_services",
+      "a1_langs": [
+        "Hindi"
+      ],
+      "a2_langs": [
+        "Hindi"
+      ],
+      "conflict_type": "hostel_mess <-> student_services",
+      "applicable_rule": "Rule 3: hostel_mess vs. student_services \u2014 Residential Room/Mess Rebate vs. Campus Wide Amenities"
+    },
+    {
+      "adjudication_task_id": 25,
+      "original_task_id": 85,
+      "speaker_id": "P21",
+      "file_name": "WhatsApp Ptt 2026-11-06 at 2.36.31 PM.wav",
+      "clip_id": "P21_85",
+      "a1_intent": "student_services",
+      "a2_intent": "hostel_mess",
+      "a1_langs": [
+        "Hindi"
+      ],
+      "a2_langs": [
+        "Hindi"
+      ],
+      "conflict_type": "hostel_mess <-> student_services",
+      "applicable_rule": "Rule 3: hostel_mess vs. student_services \u2014 Residential Room/Mess Rebate vs. Campus Wide Amenities"
+    },
+    {
+      "adjudication_task_id": 26,
+      "original_task_id": 88,
+      "speaker_id": "P22",
+      "file_name": "WhatsApp Ptt 2026-11-06 at 2.32.06 PM.wav",
+      "clip_id": "P22_88",
+      "a1_intent": "student_services",
+      "a2_intent": "admissions",
+      "a1_langs": [
+        "English"
+      ],
+      "a2_langs": [
+        "English"
+      ],
+      "conflict_type": "admissions <-> student_services",
+      "applicable_rule": "Rule 2: admissions vs. student_services \u2014 Prospective Intake/Seat Offer vs. Enrolled Student Affairs"
+    },
+    {
+      "adjudication_task_id": 27,
+      "original_task_id": 96,
+      "speaker_id": "P22",
+      "file_name": "WhatsApp Ptt 2026-11-06 at 2.40.32 PM.wav",
+      "clip_id": "P22_96",
+      "a1_intent": "student_services",
+      "a2_intent": "it_support",
+      "a1_langs": [
+        "English"
+      ],
+      "a2_langs": [
+        "English"
+      ],
+      "conflict_type": "it_support <-> student_services",
+      "applicable_rule": "Rule 1: it_support vs. student_services \u2014 Digital Infrastructure vs. Administrative Policy/Physical Facility"
+    },
+    {
+      "adjudication_task_id": 28,
+      "original_task_id": 99,
+      "speaker_id": "P22",
+      "file_name": "WhatsApp Ptt 2026-11-06 at 2.43.41 PM.wav",
+      "clip_id": "P22_99",
+      "a1_intent": "hostel_mess",
+      "a2_intent": "student_services",
+      "a1_langs": [
+        "English"
+      ],
+      "a2_langs": [
+        "English"
+      ],
+      "conflict_type": "hostel_mess <-> student_services",
+      "applicable_rule": "Rule 3: hostel_mess vs. student_services \u2014 Residential Room/Mess Rebate vs. Campus Wide Amenities"
+    },
+    {
+      "adjudication_task_id": 29,
+      "original_task_id": 106,
+      "speaker_id": "P2",
+      "file_name": "WhatsApp Ptt 2026-11-06 at 12.08.35 PM.wav",
+      "clip_id": "P2_11",
+      "a1_intent": "it_support",
+      "a2_intent": "student_services",
+      "a1_langs": [
+        "English"
+      ],
+      "a2_langs": [
+        "English"
+      ],
+      "conflict_type": "it_support <-> student_services",
+      "applicable_rule": "Rule 1: it_support vs. student_services \u2014 Digital Infrastructure vs. Administrative Policy/Physical Facility"
+    },
+    {
+      "adjudication_task_id": 30,
+      "original_task_id": 111,
+      "speaker_id": "P13",
+      "file_name": "clip_03.wav",
+      "clip_id": "P13_68",
+      "a1_intent": "admissions",
+      "a2_intent": "it_support",
+      "a1_langs": [
+        "Gujarati"
+      ],
+      "a2_langs": [
+        "English",
+        "Gujarati"
+      ],
+      "conflict_type": "admissions <-> it_support",
+      "applicable_rule": "Rule 2/1 Principle: admissions vs. it_support \u2014 Candidate Application Portal vs. Central Institute IT/LDAP"
+    },
+    {
+      "adjudication_task_id": 31,
+      "original_task_id": 117,
+      "speaker_id": "P13",
+      "file_name": "clip_09.wav",
+      "clip_id": "P13_74",
+      "a1_intent": "student_services",
+      "a2_intent": "admissions",
+      "a1_langs": [
+        "Gujarati"
+      ],
+      "a2_langs": [
+        "English",
+        "Gujarati"
+      ],
+      "conflict_type": "admissions <-> student_services",
+      "applicable_rule": "Rule 2: admissions vs. student_services \u2014 Prospective Intake/Seat Offer vs. Enrolled Student Affairs"
+    },
+    {
+      "adjudication_task_id": 32,
+      "original_task_id": 125,
+      "speaker_id": "P13",
+      "file_name": "clip_17.wav",
+      "clip_id": "P13_82",
+      "a1_intent": "hostel_mess",
+      "a2_intent": "student_services",
+      "a1_langs": [
+        "Hindi",
+        "Gujarati"
+      ],
+      "a2_langs": [
+        "English",
+        "Gujarati"
+      ],
+      "conflict_type": "hostel_mess <-> student_services",
+      "applicable_rule": "Rule 3: hostel_mess vs. student_services \u2014 Residential Room/Mess Rebate vs. Campus Wide Amenities"
+    },
+    {
+      "adjudication_task_id": 33,
+      "original_task_id": 126,
+      "speaker_id": "P13",
+      "file_name": "clip_18.wav",
+      "clip_id": "P13_83",
+      "a1_intent": "hostel_mess",
+      "a2_intent": "student_services",
+      "a1_langs": [
+        "Gujarati"
+      ],
+      "a2_langs": [
+        "English",
+        "Gujarati"
+      ],
+      "conflict_type": "hostel_mess <-> student_services",
+      "applicable_rule": "Rule 3: hostel_mess vs. student_services \u2014 Residential Room/Mess Rebate vs. Campus Wide Amenities"
+    },
+    {
+      "adjudication_task_id": 34,
+      "original_task_id": 132,
+      "speaker_id": "P14",
+      "file_name": "clip_02.wav",
+      "clip_id": "P14_89",
+      "a1_intent": "admissions",
+      "a2_intent": "it_support",
+      "a1_langs": [
+        "Hindi"
+      ],
+      "a2_langs": [
+        "English",
+        "Hindi"
+      ],
+      "conflict_type": "admissions <-> it_support",
+      "applicable_rule": "Rule 2/1 Principle: admissions vs. it_support \u2014 Candidate Application Portal vs. Central Institute IT/LDAP"
+    },
+    {
+      "adjudication_task_id": 35,
+      "original_task_id": 138,
+      "speaker_id": "P14",
+      "file_name": "clip_08.wav",
+      "clip_id": "P14_95",
+      "a1_intent": "student_services",
+      "a2_intent": "admissions",
+      "a1_langs": [
+        "Hindi"
+      ],
+      "a2_langs": [
+        "English",
+        "Hindi"
+      ],
+      "conflict_type": "admissions <-> student_services",
+      "applicable_rule": "Rule 2: admissions vs. student_services \u2014 Prospective Intake/Seat Offer vs. Enrolled Student Affairs"
+    },
+    {
+      "adjudication_task_id": 36,
+      "original_task_id": 148,
+      "speaker_id": "P16",
+      "file_name": "clip_07.wav",
+      "clip_id": "P16_105",
+      "a1_intent": "student_services",
+      "a2_intent": "it_support",
+      "a1_langs": [
+        "Hindi"
+      ],
+      "a2_langs": [
+        "English"
+      ],
+      "conflict_type": "it_support <-> student_services",
+      "applicable_rule": "Rule 1: it_support vs. student_services \u2014 Digital Infrastructure vs. Administrative Policy/Physical Facility"
+    },
+    {
+      "adjudication_task_id": 37,
+      "original_task_id": 149,
+      "speaker_id": "P16",
+      "file_name": "clip_08.wav",
+      "clip_id": "P16_106",
+      "a1_intent": "student_services",
+      "a2_intent": "it_support",
+      "a1_langs": [
+        "English"
+      ],
+      "a2_langs": [
+        "English"
+      ],
+      "conflict_type": "it_support <-> student_services",
+      "applicable_rule": "Rule 1: it_support vs. student_services \u2014 Digital Infrastructure vs. Administrative Policy/Physical Facility"
+    },
+    {
+      "adjudication_task_id": 38,
+      "original_task_id": 150,
+      "speaker_id": "P16",
+      "file_name": "clip_09.wav",
+      "clip_id": "P16_107",
+      "a1_intent": "it_support",
+      "a2_intent": "student_services",
+      "a1_langs": [
+        "English"
+      ],
+      "a2_langs": [
+        "English"
+      ],
+      "conflict_type": "it_support <-> student_services",
+      "applicable_rule": "Rule 1: it_support vs. student_services \u2014 Digital Infrastructure vs. Administrative Policy/Physical Facility"
+    },
+    {
+      "adjudication_task_id": 39,
+      "original_task_id": 151,
+      "speaker_id": "P16",
+      "file_name": "clip_10.wav",
+      "clip_id": "P16_108",
+      "a1_intent": "student_services",
+      "a2_intent": "it_support",
+      "a1_langs": [
+        "English"
+      ],
+      "a2_langs": [
+        "English"
+      ],
+      "conflict_type": "it_support <-> student_services",
+      "applicable_rule": "Rule 1: it_support vs. student_services \u2014 Digital Infrastructure vs. Administrative Policy/Physical Facility"
+    },
+    {
+      "adjudication_task_id": 40,
+      "original_task_id": 152,
+      "speaker_id": "P16",
+      "file_name": "clip_11.wav",
+      "clip_id": "P16_109",
+      "a1_intent": "it_support",
+      "a2_intent": "student_services",
+      "a1_langs": [
+        "English"
+      ],
+      "a2_langs": [
+        "English"
+      ],
+      "conflict_type": "it_support <-> student_services",
+      "applicable_rule": "Rule 1: it_support vs. student_services \u2014 Digital Infrastructure vs. Administrative Policy/Physical Facility"
+    },
+    {
+      "adjudication_task_id": 41,
+      "original_task_id": 156,
+      "speaker_id": "P18",
+      "file_name": "clip_01.wav",
+      "clip_id": "P18_113",
+      "a1_intent": "student_services",
+      "a2_intent": "it_support",
+      "a1_langs": [
+        "Hindi"
+      ],
+      "a2_langs": [
+        "English",
+        "Hindi"
+      ],
+      "conflict_type": "it_support <-> student_services",
+      "applicable_rule": "Rule 1: it_support vs. student_services \u2014 Digital Infrastructure vs. Administrative Policy/Physical Facility"
+    },
+    {
+      "adjudication_task_id": 42,
+      "original_task_id": 158,
+      "speaker_id": "P18",
+      "file_name": "clip_03.wav",
+      "clip_id": "P18_115",
+      "a1_intent": "student_services",
+      "a2_intent": "it_support",
+      "a1_langs": [
+        "Gujarati"
+      ],
+      "a2_langs": [
+        "English",
+        "Gujarati"
+      ],
+      "conflict_type": "it_support <-> student_services",
+      "applicable_rule": "Rule 1: it_support vs. student_services \u2014 Digital Infrastructure vs. Administrative Policy/Physical Facility"
+    },
+    {
+      "adjudication_task_id": 43,
+      "original_task_id": 165,
+      "speaker_id": "P18",
+      "file_name": "clip_10.wav",
+      "clip_id": "P18_122",
+      "a1_intent": "student_services",
+      "a2_intent": "it_support",
+      "a1_langs": [
+        "Hindi"
+      ],
+      "a2_langs": [
+        "English",
+        "Hindi"
+      ],
+      "conflict_type": "it_support <-> student_services",
+      "applicable_rule": "Rule 1: it_support vs. student_services \u2014 Digital Infrastructure vs. Administrative Policy/Physical Facility"
+    },
+    {
+      "adjudication_task_id": 44,
+      "original_task_id": 166,
+      "speaker_id": "P18",
+      "file_name": "clip_11.wav",
+      "clip_id": "P18_123",
+      "a1_intent": "student_services",
+      "a2_intent": "it_support",
+      "a1_langs": [
+        "Gujarati"
+      ],
+      "a2_langs": [
+        "English",
+        "Gujarati"
+      ],
+      "conflict_type": "it_support <-> student_services",
+      "applicable_rule": "Rule 1: it_support vs. student_services \u2014 Digital Infrastructure vs. Administrative Policy/Physical Facility"
+    },
+    {
+      "adjudication_task_id": 45,
+      "original_task_id": 170,
+      "speaker_id": "P18",
+      "file_name": "clip_15.wav",
+      "clip_id": "P18_127",
+      "a1_intent": "hostel_mess",
+      "a2_intent": "student_services",
+      "a1_langs": [
+        "Gujarati"
+      ],
+      "a2_langs": [
+        "English",
+        "Gujarati"
+      ],
+      "conflict_type": "hostel_mess <-> student_services",
+      "applicable_rule": "Rule 3: hostel_mess vs. student_services \u2014 Residential Room/Mess Rebate vs. Campus Wide Amenities"
+    },
+    {
+      "adjudication_task_id": 46,
+      "original_task_id": 173,
+      "speaker_id": "P19",
+      "file_name": "clip_02.wav",
+      "clip_id": "P19_130",
+      "a1_intent": "student_services",
+      "a2_intent": "it_support",
+      "a1_langs": [
+        "Hindi"
+      ],
+      "a2_langs": [
+        "Hindi"
+      ],
+      "conflict_type": "it_support <-> student_services",
+      "applicable_rule": "Rule 1: it_support vs. student_services \u2014 Digital Infrastructure vs. Administrative Policy/Physical Facility"
+    },
+    {
+      "adjudication_task_id": 47,
+      "original_task_id": 178,
+      "speaker_id": "P19",
+      "file_name": "clip_07.wav",
+      "clip_id": "P19_135",
+      "a1_intent": "hostel_mess",
+      "a2_intent": "student_services",
+      "a1_langs": [
+        "English"
+      ],
+      "a2_langs": [
+        "English"
+      ],
+      "conflict_type": "hostel_mess <-> student_services",
+      "applicable_rule": "Rule 3: hostel_mess vs. student_services \u2014 Residential Room/Mess Rebate vs. Campus Wide Amenities"
+    }
+  ]
+}

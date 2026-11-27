@@ -1,0 +1,7 @@
+UUID: aug_aae8dba4
+Parent_UUID: 0640be0f
+Augmentation_Type: cross_lingual_translation
+Similarity_Score: 0.9031
+Transcript: हाय, क्या एमएससी जांच और सृजनात्मक विज्ञान कार्यक्रम या ऑफ़लाइन के लिए ऑनलाइन इंटरव्यू लिया जाएगा?
+Target_Label: hostel_mess
+Spoken_Languages: ['Hindi']

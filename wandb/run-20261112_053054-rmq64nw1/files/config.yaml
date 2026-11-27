@@ -1,0 +1,56 @@
+_wandb:
+    value:
+        cli_version: 0.31.0
+        e:
+            01a1cd0e-af0c-73a5-a10b-b6c4f363b24d:
+                codePath: code/a2_part_b_tuning/sync_wandb.py
+                codePathLocal: code/a2_part_b_tuning/sync_wandb.py
+                email: vipulapatil21@gmail.com
+                executable: /Library/Frameworks/Python.framework/Versions/3.13/bin/python3
+                git:
+                    commit: 7607e5fbe1e5f49b3ab58b10f8a88b68bca1ea28
+                    remote: https://github.com/vipulSP2108/STTAI_Project.git
+                host: Vipuls-MacBook-Air-5.local
+                os: macOS-14.5-arm64-arm-64bit-Mach-O
+                program: /Users/aai/Desktop/STTAI_Project/code/a2_part_b_tuning/sync_wandb.py
+                python: CPython 3.13.0
+                root: /Users/aai/Desktop/STTAI_Project
+                startedAt: "2026-11-12T00:00:54.022362Z"
+                writerId: 01a1cd0e-af0c-73a5-a10b-b6c4f363b24d
+        m: []
+        python_version: 3.13.0
+        t:
+            "3":
+                - 2
+                - 13
+                - 15
+                - 16
+                - 62
+            "4": 3.13.0
+            "5": 0.31.0
+            "10":
+                - 20
+            "12": 0.31.0
+            "13": darwin-arm64
+architecture:
+    value: Whisper-Base ASR Transcripts + TF-IDF + MLP Router
+dropout:
+    value: 0.2
+epochs:
+    value: 35
+git_commit:
+    value: 17ace7b40c7fc5161082392218a569d78e33b617
+hidden_dim:
+    value: 128
+learning_rate:
+    value: 0.01
+mlflow_run_id:
+    value: 730256f77a9a4e8eae7ad7b9aab1a08d
+ngram_max:
+    value: 1
+run_num:
+    value: 9
+seed:
+    value: 42
+val_split:
+    value: data/splits/val.csv (17 clips, speaker-disjoint)

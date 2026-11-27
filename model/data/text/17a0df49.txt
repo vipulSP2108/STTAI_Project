@@ -1,0 +1,4 @@
+UUID: 17a0df49
+Transcript: પ્યા અર્જન્ટ સપોર્ટ આપો નમસ્કાર હેલ્થ ઇન્ટરવ્યૂ હોગા વેબસાઇટ નહીં.
+Target_Label: admissions
+Spoken_Languages: Hindi, Gujarati

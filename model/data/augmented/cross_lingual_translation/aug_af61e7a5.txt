@@ -1,0 +1,7 @@
+UUID: aug_af61e7a5
+Parent_UUID: e7a37e81
+Augmentation_Type: cross_lingual_translation
+Similarity_Score: 0.5738
+Transcript: આલો માં પને પેટી ના લે એાટી નવને નવને ન આગગ અગ અગ આપ્વાશાશાશિતા જબ પશ્વિચિર ના બપ્વિટી કો બિલને બિલને બિલન.
+Target_Label: admissions
+Spoken_Languages: ['Hindi']

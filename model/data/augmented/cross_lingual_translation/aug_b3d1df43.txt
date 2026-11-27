@@ -1,0 +1,7 @@
+UUID: aug_b3d1df43
+Parent_UUID: ed2662e9
+Augmentation_Type: cross_lingual_translation
+Similarity_Score: 0.676
+Transcript: नमस्कार, IMS समर्थन, IMS पोर्टल के लॉगिन के दौरान, स्थिर स्थिरांक आ रहा है, कृपया अपनी स्थिति रीसेट करें.
+Target_Label: it_support
+Spoken_Languages: ['Hindi']

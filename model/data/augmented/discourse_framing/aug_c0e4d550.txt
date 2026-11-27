@@ -1,0 +1,7 @@
+UUID: aug_c0e4d550
+Parent_UUID: a65e688e
+Augmentation_Type: discourse_framing
+Similarity_Score: 0.9608
+Transcript: Greetings, I wanted to confirm whether hello Sir, I needed some information about admission in IIT Gandhinagar because my son wants to apply for the BTech curriculum
+Target_Label: admissions
+Spoken_Languages: ['English']

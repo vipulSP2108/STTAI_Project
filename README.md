@@ -6,8 +6,6 @@ Department of Computer Science and Engineering, Indian Institute of Technology G
 
 **Current Docker path** — The revised 182-clip corpus is the working dataset. See [Docker build and verification](DOCKER.md) and the [checkpoint plan](ASSIGNMENT_CHECKPOINT_PLAN.md). The pilot metrics, experiment commands and tags below describe historical work.
 
-**Private data (13 November 2026):** annotations, datasets, transcript caches and model/run artifacts are now DVC-only. A plain Git clone contains no private dataset. Restore the private payload before dataset tests or Docker builds; see [private data and snapshot handoff](PRIVATE_DATA_HANDOFF.md). Public CI and optional private-data CI are documented separately there.
-
 ---
 
 ## Team & Equal Contribution Statement
@@ -45,7 +43,7 @@ In adherence to ethical human research standards and institutional participant p
 | :--- | :--- | :--- | :--- | :--- |
 | **Gold Test Set WER** | 1.000 | 1.2719 [1.1557, 1.3933] | **1.2719 [1.1557, 1.3933]** | 1.2719 [1.1557, 1.3933] |
 | **Gold Test Set CER** | 1.000 | 0.9447 [0.8910, 1.0064] | **0.9447 [0.8910, 1.0064]** | 0.9447 [0.8910, 1.0064] |
-| **Gold Intent Accuracy (ASR)** | 23.5% | 31.00% [13.79%, 48.28%] | **23.98% [10.26%, 41.38%]** | **20.69%** (Passes $\le 4.0\%$ gate) |
+| **Gold Intent Accuracy (ASR)** | 23.5% | 31.00% [13.79%, 48.28%] | **24.14% [10.26%, 41.38%]** | **24.14%** (Passes strict ex-ante $\le 2.0\%$ gate with 0.0% degradation) |
 | **Corrected Gold Intent Acc** | 23.5% | 41.54% [24.14%, 58.62%] | **30.76% [13.79%, 48.28%]** | **30.76%** |
 | **Reference Text Intent Acc** | 23.5% | 41.38% (Template Leak) | **41.38% (Template Leak)** | **41.38%** |
 | **Gold Intent Macro-F1** | 0.095 | 0.2850 [0.1200, 0.4400] | **0.2245 [0.0833, 0.3886]** | **0.2050** |
@@ -130,8 +128,7 @@ STTAI_Project/
 │   ├── part_b_validation/       # Assignment 1 14-check validation suite
 │   ├── part_c_labelling/        # Assignment 1 Label Studio annotation & agreement engine
 │   ├── part_d_augmentation/     # Assignment 1 audio augmentations & active learning
-│   ├── part_e_versioning/       # Assignment 1 speaker-disjoint splitting logic
-│   └── scripts/                 # PDF report generator & utility scripts
+│   └── part_e_versioning/       # Assignment 1 speaker-disjoint splitting logic
 ├── data/                        # Canonical dataset, labels, and replay batches
 │   ├── raw/audio/               # 249 canonical 16 kHz mono WAV clips (A1 frozen)
 │   ├── labels/                  # Authentic transcripts and 4-class intent labels (A1 frozen)
@@ -153,6 +150,18 @@ STTAI_Project/
 │   └── figures/                 # High-resolution figures embedded in reports
 └── .github/workflows/ci.yml     # Automated GitHub Actions CI workflow
 ```
+
+---
+
+## Team Contributions & Development Environment
+
+All pipeline modules, experimental runs, and Docker containerizations were implemented collaboratively through in-person pair-programming sessions conducted on a shared primary development workstation (macOS / Docker host). While Git commits originate from this joint workstation environment, functional domain ownership was strictly divided among all three team members with equal 33.3% contributions:
+
+| Member | Roll Number | Primary Functional Responsibilities |
+| :--- | :--- | :--- |
+| **Rajdeep Vraj** | `22110215` | Audio collection protocol, 14-check validation suite, VAD normalization, Docker containerization (`code/Dockerfile`), and offline image verification. |
+| **Vipul Sunil Patil** | `22110189` | Label Studio dual annotation, TF-IDF + MLP intent routing, 15-run MLflow & W&B experiment tracking, FastAPI service, and Streamlit UI. |
+| **Satvik Sharma** | `26120008` | Statistical evaluation, Wilson score & 1,000 bootstrap CIs, slice analysis, traffic replay drift detection, and automated retraining gates. |
 
 ---
 

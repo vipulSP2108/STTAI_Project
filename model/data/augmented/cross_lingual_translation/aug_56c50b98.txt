@@ -1,0 +1,7 @@
+UUID: aug_56c50b98
+Parent_UUID: f41402b1
+Augmentation_Type: cross_lingual_translation
+Similarity_Score: 0.8748
+Transcript: हैलो, हम कैम्प में नए रोबोट क्लब बनाया है, क्लबा और एक tata के लिए प्रक्रिया क्या है?
+Target_Label: student_services
+Spoken_Languages: ['Hindi']

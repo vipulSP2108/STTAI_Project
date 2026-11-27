@@ -1,0 +1,7 @@
+UUID: aug_6553f096
+Parent_UUID: 847fd9b4
+Augmentation_Type: discourse_framing
+Similarity_Score: 0.9623
+Transcript: Sir, I have a quick inquiry regarding good afternoon. I need information about banking and ATM facilities on campus for students
+Target_Label: student_services
+Spoken_Languages: ['English']

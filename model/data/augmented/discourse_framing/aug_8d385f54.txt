@@ -1,0 +1,7 @@
+UUID: aug_8d385f54
+Parent_UUID: dd463c09
+Augmentation_Type: discourse_framing
+Similarity_Score: 0.9745
+Transcript: हेल्पडेस्क से सहायता चाहिए, हेलो आईटी हेल्पडेस्क, मेरा इंस्टीट्यूट ईमेल पासवर्ड एक्सपायर हो गया है और रीसेट लिंक मोबाइल पर नहीं आ रहा है।
+Target_Label: it_support
+Spoken_Languages: ['English', 'Hindi']

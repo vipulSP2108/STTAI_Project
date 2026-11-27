@@ -1,0 +1,3 @@
+param_training_data,metric_val_intent_acc,run_id
+Train + Augmented (231 clips),0.2941176470588235,55609985a09b4531bcf04619995a91be
+Train Only (171 clips),0.2352941176470588,f9b404cce3e74e1e95639488fb717a7e

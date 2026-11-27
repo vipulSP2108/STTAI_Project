@@ -1,0 +1,7 @@
+UUID: aug_b05b340b
+Parent_UUID: 77097749
+Augmentation_Type: cross_lingual_translation
+Similarity_Score: 0.6126
+Transcript: Hi. I want to know what the total cost of my son's process is and what is required. Let's come from us because we came from a middle class because it's important to understand what payment is as good as payment and what food we can provide, and once we can, we can know what the rest of the rest of the charges in a bar, and the charges at the rest of the charges are still being made.
+Target_Label: admissions
+Spoken_Languages: ['English']
