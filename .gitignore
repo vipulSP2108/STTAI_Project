@@ -99,6 +99,8 @@ roundT_audio_A2.zip
 # Submission packages (generated from git repository for upload)
 CS203_A2_Project5_*.zip
 CS203_A1_Project5_*.zip
+CS203_Project5_*.zip
+presentation_docs.zip
 Assignment_*.zip
 
 # Secrets: never commit (W&B key lives in .env locally)
